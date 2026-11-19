@@ -14,7 +14,7 @@ describe('applyDisplayMode', () => {
 
   it('sets the popup in popup mode', async () => {
     await applyDisplayMode('popup');
-    expect(setPopup).toHaveBeenLastCalledWith({ popup: 'popup.html' });
+    expect(setPopup).toHaveBeenLastCalledWith({ popup: 'summary-popup.html' });
   });
 
   it('clears the popup in side panel mode', async () => {

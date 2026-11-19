@@ -1,4 +1,83 @@
 {
-  "extName": { "message": "Browse Resume AI" },
-  "extDescription": { "message": "Resume a páxina web actual cun clic, usando a túa subscrición de Claude ou ChatGPT." }
+  "extName": {
+    "message": "Browse Resume AI"
+  },
+  "extDescription": {
+    "message": "Resume a páxina web actual cun clic, usando a túa subscrición de Claude ou ChatGPT."
+  },
+  "ui_provider": {
+    "message": "Provedor"
+  },
+  "ui_model": {
+    "message": "Modelo"
+  },
+  "ui_length": {
+    "message": "Lonxitude"
+  },
+  "ui_language": {
+    "message": "Idioma do resumo"
+  },
+  "length_short": {
+    "message": "Curto"
+  },
+  "length_medium": {
+    "message": "Medio"
+  },
+  "length_long": {
+    "message": "Longo"
+  },
+  "ui_settings": {
+    "message": "Axustes"
+  },
+  "ui_copy": {
+    "message": "Copiar"
+  },
+  "ui_copied": {
+    "message": "Copiado"
+  },
+  "ui_regenerate": {
+    "message": "Volver resumir"
+  },
+  "ui_try_again": {
+    "message": "Tentar de novo"
+  },
+  "ui_working": {
+    "message": "Resumindo…"
+  },
+  "ui_idle_hint": {
+    "message": "Preme a icona da extensión para resumir esta páxina."
+  },
+  "ui_truncated": {
+    "message": "A páxina era longa; só se resumiu a primeira parte."
+  },
+  "error_page_unreadable": {
+    "message": "Non se pode ler esta páxina. As páxinas do navegador, a Chrome Web Store e os PDF non están soportados."
+  },
+  "error_no_content": {
+    "message": "Non se atopou texto de artigo nesta páxina."
+  },
+  "error_needs_click": {
+    "message": "Preme a icona da extensión para resumir esta páxina. Despois de navegar, a extensión necesita un clic novo para lela."
+  },
+  "error_host_missing": {
+    "message": "O compoñente local non está instalado ou non responde. No cartafol da extensión, executa: ./native-host/install.sh"
+  },
+  "error_claude_missing": {
+    "message": "Non se atopou Claude Code. Instálao e executa de novo ./native-host/install.sh"
+  },
+  "error_claude_auth": {
+    "message": "Claude Code non ten a sesión iniciada. Executa claude nun terminal e inicia sesión."
+  },
+  "error_codex_signed_out": {
+    "message": "Codex non ten a sesión iniciada. Executa codex login nun terminal."
+  },
+  "error_codex_not_eligible": {
+    "message": "O teu plan de ChatGPT non se pode usar para isto. Escolle outro provedor."
+  },
+  "error_usage_limit": {
+    "message": "Chegaches ao límite de uso do teu plan. Téntao máis tarde ou escolle outro provedor."
+  },
+  "error_provider_failed": {
+    "message": "O provedor fallou mentres escribía o resumo. Téntao de novo."
+  }
 }
