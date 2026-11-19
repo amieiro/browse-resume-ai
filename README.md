@@ -84,6 +84,84 @@ pdokiakaaeffjlabmofdppjakdhaimpi
 | `sidePanel` | Show summaries in the side panel. |
 | `nativeMessaging` | Talk to the local component. |
 
+## For AI agents
+
+This section is for a coding agent (Claude Code, Codex or similar) asked to set the extension up on
+a user's machine.
+
+### What this is
+
+A Chrome Manifest V3 extension (WXT + TypeScript) plus a local Chrome native messaging host
+(`native-host/`, plain Node, no dependencies). The extension extracts the article from the active
+tab and sends the prompt to the host; the host runs `claude --print` or `codex exec` and streams the
+text back. The user's Claude or ChatGPT subscription pays for the summaries; there are no API keys
+to configure.
+
+### Install
+
+1. Check the prerequisites. Stop and tell the user what is missing if any check fails.
+
+   ```sh
+   uname                  # must print Darwin (the installer supports macOS only)
+   node --version         # 18 or later
+   command -v claude      # Claude Code, for the Claude provider
+   command -v codex       # Codex CLI, for the Codex provider (at least one of the two)
+   ```
+
+   Do not log the user in yourself. If `claude` or `codex` is not logged in, ask the user to run
+   `claude` (then `/login`) or `codex login`.
+
+2. Build the extension and install the host:
+
+   ```sh
+   git clone https://github.com/amieiro/browse-resume-ai.git
+   cd browse-resume-ai
+   npm install
+   npm run build              # output in .output/chrome-mv3
+   ./native-host/install.sh   # prints the node, claude and codex paths it found
+   ```
+
+3. Check that the host answers. This must print a `pong` with `claudeFound` and/or `codexFound`
+   set to `true`:
+
+   ```sh
+   node --input-type=module -e "
+   import { spawn } from 'node:child_process';
+   import { encodeMessage, createDecoder } from './native-host/lib/framing.mjs';
+   const host = spawn(process.env.HOME + '/Library/Application Support/browse-resume-ai/launcher.sh');
+   host.stdout.on('data', createDecoder((m) => { console.log(JSON.stringify(m)); host.stdin.end(); }));
+   host.stdin.write(encodeMessage({ type: 'ping' }));
+   "
+   ```
+
+4. Hand over to the user for the last step. Loading an unpacked extension needs Chrome's Developer
+   mode and a native folder picker, which an agent should not and usually cannot operate. Give the
+   user these instructions:
+   - Open `chrome://extensions` and turn on **Developer mode**.
+   - Click **Load unpacked** and choose the `.output/chrome-mv3` folder (give the absolute path).
+   - Check that the extension ID is `pdokiakaaeffjlabmofdppjakdhaimpi`, then pin the extension
+     and click its icon on an article.
+
+### Rules
+
+- Never pass the user's Claude subscription token to the extension or to any other tool. Claude is
+  reached only through the user's own Claude Code.
+- Do not change the flags in `native-host/lib/runner.mjs` or `native-host/lib/codex-runner.mjs`
+  without re-running the prompt-injection check described in their comments: the page text is
+  untrusted and the model must have no tool that runs commands or reads files.
+- Run `./native-host/install.sh` again after moving the repository or upgrading Node, Claude Code
+  or Codex, because the launcher stores absolute paths.
+
+### Troubleshooting
+
+| What the extension shows | Cause | Fix |
+|---|---|---|
+| The local component isn't installed or isn't answering | Host manifest missing, or the extension ID differs | Run `./native-host/install.sh`; check the ID in `chrome://extensions` |
+| Claude Code wasn't found / Codex wasn't found | The CLI moved or was not installed when the installer ran | Install it and run `./native-host/install.sh` again |
+| Claude Code isn't logged in | The Claude Code sign-in expired | The user runs `claude auth login` |
+| Codex isn't logged in | Codex is signed out | The user runs `codex login` |
+| No article text was found | The page is an app, a login wall or too short | Expected; try an article page |
+
 ## Development
 
 ```sh
