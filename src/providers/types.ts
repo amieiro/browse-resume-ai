@@ -7,6 +7,7 @@ export type SummaryErrorCode =
   | 'host_missing'
   | 'claude_missing'
   | 'claude_auth'
+  | 'codex_missing'
   | 'codex_signed_out'
   | 'codex_not_eligible'
   | 'usage_limit'

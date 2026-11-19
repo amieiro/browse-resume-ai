@@ -14,12 +14,15 @@ pdokiakaaeffjlabmofdppjakdhaimpi
 
 The native messaging host only accepts this ID.
 
-## Local component for Claude
+## Local component
 
-Claude subscriptions can only be used through Claude Code, so summaries with Claude go through a
-small local program (a Chrome native messaging host) that runs `claude --print` with no tools.
+Claude subscriptions can only be used through Claude Code, and Sign in with ChatGPT only accepts
+redirects to `127.0.0.1`, which an extension cannot receive. So both providers go through a small
+local program (a Chrome native messaging host) that runs `claude --print` or `codex exec` with no
+tools that can run commands or read files.
 
-Requirements: macOS, Google Chrome, Node.js 18 or later, and Claude Code logged in (run `claude` once).
+Requirements: macOS, Google Chrome, Node.js 18 or later, and Claude Code and/or Codex logged in
+(run `claude` or `codex login` once).
 
 ```sh
 ./native-host/install.sh     # run again after moving the repository or upgrading Node or Claude Code

@@ -29,6 +29,9 @@ function run(mode, extra = {}) {
   return { done, handle, events, getText: () => text, record };
 }
 
+// Spawning node processes is slow when the whole suite runs in parallel.
+const waitFor = (fn) => vi.waitFor(fn, { timeout: 5000, interval: 20 });
+
 afterEach(() => vi.unstubAllEnvs());
 
 describe('runClaude', () => {
@@ -53,7 +56,7 @@ describe('runClaude', () => {
     await r.done;
     const { cwd } = JSON.parse(readFileSync(r.record, 'utf8'));
     expect(cwd).toContain('browse-resume-ai-');
-    await vi.waitFor(() => expect(existsSync(cwd)).toBe(false));
+    await waitFor(() => expect(existsSync(cwd)).toBe(false));
   });
 
   it('maps a login failure to claude_auth', async () => {
@@ -82,7 +85,7 @@ describe('runClaude', () => {
 
   it('cancel kills the child without reporting', async () => {
     const r = run('hang');
-    await vi.waitFor(() => expect(r.getText()).toBe('partial'));
+    await waitFor(() => expect(r.getText()).toBe('partial'));
     r.handle.cancel();
     await new Promise((res) => setTimeout(res, 300));
     expect(r.events).toEqual([]);

@@ -79,5 +79,8 @@
   },
   "error_provider_failed": {
     "message": "O provedor fallou mentres escribía o resumo. Téntao de novo."
+  },
+  "error_codex_missing": {
+    "message": "Non se atopou Codex. Instálao e executa de novo ./native-host/install.sh"
   }
 }

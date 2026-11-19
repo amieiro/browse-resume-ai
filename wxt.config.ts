@@ -13,7 +13,7 @@ export default defineConfig({
     description: '__MSG_extDescription__',
     default_locale: 'en',
     key: EXTENSION_KEY,
-    permissions: ['activeTab', 'scripting', 'storage', 'sidePanel', 'nativeMessaging', 'identity'],
+    permissions: ['activeTab', 'scripting', 'storage', 'sidePanel', 'nativeMessaging'],
     action: {},
     side_panel: { default_path: 'sidepanel.html' },
   },

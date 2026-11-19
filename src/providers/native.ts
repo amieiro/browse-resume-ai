@@ -13,7 +13,14 @@ type HostMessage =
 type NativePort = ReturnType<typeof browser.runtime.connectNative>;
 
 /** Error codes the host may send that the extension shows as they are. */
-const PASSTHROUGH: SummaryErrorCode[] = ['claude_missing', 'claude_auth', 'provider_failed'];
+const PASSTHROUGH: SummaryErrorCode[] = [
+  'claude_missing',
+  'claude_auth',
+  'codex_missing',
+  'codex_signed_out',
+  'usage_limit',
+  'provider_failed',
+];
 
 function connect(): NativePort {
   return browser.runtime.connectNative(HOST_NAME);

@@ -2,7 +2,7 @@ export const HOST_NAME = 'com.browse_resume_ai.host';
 export const EXTENSION_ID = 'pdokiakaaeffjlabmofdppjakdhaimpi';
 export const VERSION = '0.1.0';
 export const MODEL_PATTERN = /^[A-Za-z0-9][A-Za-z0-9._\[\]-]{0,63}$/;
-export const PROVIDERS = ['claude'];
+export const PROVIDERS = ['claude', 'codex'];
 
 /** Returns null when the message is a valid request, otherwise a reason. */
 export function validateRequest(msg) {

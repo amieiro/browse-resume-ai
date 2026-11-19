@@ -79,5 +79,8 @@
   },
   "error_provider_failed": {
     "message": "The provider failed while writing the summary. Try again."
+  },
+  "error_codex_missing": {
+    "message": "Codex wasn't found. Install it, then run ./native-host/install.sh again."
   }
 }
