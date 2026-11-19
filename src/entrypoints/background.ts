@@ -1,7 +1,7 @@
 import { browser } from 'wxt/browser';
 import { applyDisplayMode } from '@/lib/display-mode';
 import { extractFromTab } from '@/lib/injection';
-import { parsePortName, type BackgroundToUi, type UiToBackground } from '@/lib/messages';
+import { parsePortName, type BackgroundToUi, type SummaryStartedBroadcast, type UiToBackground } from '@/lib/messages';
 import { loadSettings } from '@/lib/settings';
 import { Summarizer } from '@/lib/summarizer';
 import { getProvider } from '@/providers';
@@ -23,6 +23,8 @@ export default defineBackground(() => {
     if (tab.id === undefined) return;
     void browser.sidePanel.open({ tabId: tab.id });
     void summarizer.start(tab.id, { force: false });
+    const started: SummaryStartedBroadcast = { type: 'summary-started', tabId: tab.id };
+    browser.runtime.sendMessage(started).catch(() => {});
   });
 
   browser.runtime.onConnect.addListener((port) => {

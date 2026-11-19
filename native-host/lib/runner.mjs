@@ -31,10 +31,17 @@ export function claudeArgs(model) {
 }
 
 const AUTH_PATTERN = /\/login|not logged in|log in|authenticat|oauth|credential/i;
+const LIMIT_PATTERN = /usage limit|hit your limit|limit reached|rate limit/i;
+
+export function classifyClaudeError(detail) {
+  if (LIMIT_PATTERN.test(detail)) return 'usage_limit';
+  if (AUTH_PATTERN.test(detail)) return 'claude_auth';
+  return 'provider_failed';
+}
 
 /**
  * Runs claude once. Exactly one of onDone / onError is called, unless cancel() was called first.
- * onError codes: claude_missing, claude_auth, provider_failed.
+ * onError codes: claude_missing, claude_auth, usage_limit, provider_failed.
  */
 export function runClaude({ claudePath, model, prompt, onText, onDone, onError }) {
   return runProcess({
@@ -42,7 +49,7 @@ export function runClaude({ claudePath, model, prompt, onText, onDone, onError }
     args: () => claudeArgs(model),
     prompt,
     parser: createClaudeStreamParser(onText),
-    classifyError: (detail) => (AUTH_PATTERN.test(detail) ? 'claude_auth' : 'provider_failed'),
+    classifyError: classifyClaudeError,
     missingCode: 'claude_missing',
     onDone,
     onError,

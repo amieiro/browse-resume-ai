@@ -23,6 +23,13 @@ const DISABLED_FEATURES = [
   'tool_suggest',
   'sleep_tool',
   'multi_agent',
+  'view_image',
+  'image_generation',
+  'goals',
+  'browser_use_external',
+  'browser_use_full_cdp_access',
+  'in_app_local_automation',
+  'remote_plugin',
 ];
 
 export function codexArgs(model, cwd) {

@@ -10,3 +10,7 @@ export function parsePortName(name: string): number | null {
 
 export type UiToBackground = { type: 'start'; force: boolean };
 export type BackgroundToUi = { type: 'state'; state: SummaryState };
+
+/** Broadcast with runtime.sendMessage when a summary starts outside a UI port (an icon click), so a
+ * side panel whose port died with the suspended service worker reconnects. */
+export type SummaryStartedBroadcast = { type: 'summary-started'; tabId: number };

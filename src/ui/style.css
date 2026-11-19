@@ -55,6 +55,8 @@ main { flex: 1; padding: 12px; overflow-wrap: anywhere; }
 .progress::after { content: ''; display: inline-block; width: 1em; animation: dots 1.2s steps(4) infinite; }
 @keyframes dots { 0% { content: ''; } 25% { content: '.'; } 50% { content: '..'; } 75% { content: '...'; } }
 .error { background: var(--error-bg); color: var(--error-fg); padding: 8px 10px; border-radius: 6px; margin: 0 0 10px; }
+.error p { margin: 0; }
+.error .detail { margin-top: 4px; font-size: 12px; opacity: 0.85; white-space: pre-wrap; }
 .summary p { margin: 0 0 10px; }
 .summary ul { margin: 0 0 10px; padding-left: 20px; }
 .notice { background: var(--notice-bg); padding: 6px 10px; border-radius: 6px; font-size: 13px; }

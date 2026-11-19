@@ -20,6 +20,9 @@ process.stdin.on('end', () => {
   } else if (mode === 'fail') {
     process.stderr.write('something broke\n');
     process.exit(2);
+  } else if (mode === 'limit') {
+    process.stdout.write('{"type":"result","is_error":true,"result":"You\'ve hit your usage limit · resets 3pm"}\n');
+    process.exit(1);
   } else if (mode === 'fail-warn') {
     process.stderr.write('Warning: this sign-in ends in 3 days. Run claude auth login before then.\n');
     process.exit(2);

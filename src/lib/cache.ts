@@ -29,3 +29,9 @@ export async function setCached(tabId: number, entry: CachedSummary): Promise<vo
 export async function clearCached(tabId: number): Promise<void> {
   await browser.storage.session.remove(storageKey(tabId));
 }
+
+/** The tab's last summary, whatever page or settings it was for (used after a service worker restart). */
+export async function getLastCached(tabId: number): Promise<CachedSummary | null> {
+  const result = await browser.storage.session.get(storageKey(tabId));
+  return (result[storageKey(tabId)] as CachedSummary | undefined) ?? null;
+}

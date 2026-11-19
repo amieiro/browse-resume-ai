@@ -65,6 +65,12 @@ describe('runClaude', () => {
     expect(r.events).toEqual(['error:claude_auth']);
   });
 
+  it('maps a usage limit to usage_limit', async () => {
+    const r = run('limit');
+    await r.done;
+    expect(r.events).toEqual(['error:usage_limit']);
+  });
+
   it('maps another failure to provider_failed', async () => {
     const r = run('fail');
     await r.done;

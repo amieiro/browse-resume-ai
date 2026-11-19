@@ -112,6 +112,11 @@ describe('summary view states', () => {
     expect(button('regenerate').textContent).toBe('[ui_try_again]');
   });
 
+  it('an error shows the provider detail when there is one', () => {
+    mount().setState({ status: 'error', code: 'usage_limit', title: 'T', text: '', truncated: false, detail: 'resets 3pm' });
+    expect(root.querySelector('[data-role="detail"]')?.textContent).toBe('resets 3pm');
+  });
+
   it('needs_click hides Summarize again', () => {
     mount().setState({ status: 'error', code: 'needs_click', title: '', text: '', truncated: false });
     expect(root.textContent).toContain('[error_needs_click]');

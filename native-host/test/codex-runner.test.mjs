@@ -47,7 +47,18 @@ describe('runCodex', () => {
     expect(rec.argv).toEqual(
       expect.arrayContaining(['--json', '--ephemeral', '--sandbox', 'read-only', '-m', 'gpt-6-luna', '--ignore-user-config']),
     );
-    for (const feature of ['shell_tool', 'unified_exec', 'code_mode_host']) {
+    for (const feature of [
+      'shell_tool',
+      'unified_exec',
+      'code_mode_host',
+      'view_image',
+      'image_generation',
+      'goals',
+      'browser_use_external',
+      'browser_use_full_cdp_access',
+      'in_app_local_automation',
+      'remote_plugin',
+    ]) {
       expect(rec.argv[rec.argv.indexOf(feature) - 1]).toBe('--disable');
     }
     expect(rec.argv.at(-1)).toBe('-');

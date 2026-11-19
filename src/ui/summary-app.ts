@@ -1,6 +1,7 @@
 import { browser } from 'wxt/browser';
-import { portName, type BackgroundToUi, type UiToBackground } from '@/lib/messages';
+import type { SummaryStartedBroadcast } from '@/lib/messages';
 import { loadSettings, saveSettings } from '@/lib/settings';
+import { createPortClient } from './port-client';
 import { mountSummaryView } from './summary-view';
 
 interface Options {
@@ -10,19 +11,19 @@ interface Options {
   followActiveTab: boolean;
 }
 
-type Port = ReturnType<typeof browser.runtime.connect>;
-
 async function activeTabId(): Promise<number | undefined> {
   const [tab] = await browser.tabs.query({ active: true, currentWindow: true });
   return tab?.id;
 }
 
 export async function startSummaryApp(root: HTMLElement, options: Options): Promise<void> {
-  let port: Port | null = null;
-  const send = (msg: UiToBackground) => port?.postMessage(msg);
+  const client = createPortClient(
+    (name) => browser.runtime.connect({ name }),
+    (state) => view.setState(state),
+  );
 
   const view = mountSummaryView(root, await loadSettings(), {
-    onRegenerate: () => send({ type: 'start', force: true }),
+    onRegenerate: () => client.send({ type: 'start', force: true }),
     onSettingsChange: (patch) => void saveSettings(patch),
     onOpenOptions: () => void browser.runtime.openOptionsPage(),
   });
@@ -31,23 +32,20 @@ export async function startSummaryApp(root: HTMLElement, options: Options): Prom
     if (area === 'local' && 'settings' in changes) void loadSettings().then(view.setSettings);
   });
 
-  const attach = (tabId: number) => {
-    port?.disconnect();
-    port = browser.runtime.connect({ name: portName(tabId) });
-    port.onMessage.addListener((msg: BackgroundToUi) => {
-      if (msg.type === 'state') view.setState(msg.state);
-    });
-  };
+  // An icon click while the service worker slept: our port is dead, reopen it to see the new summary.
+  browser.runtime.onMessage.addListener((msg: SummaryStartedBroadcast) => {
+    if (msg?.type === 'summary-started' && msg.tabId === client.tabId()) client.ensureConnected();
+  });
 
   const tabId = await activeTabId();
   if (tabId === undefined) return;
-  attach(tabId);
-  if (options.startOnOpen) send({ type: 'start', force: false });
+  client.attach(tabId);
+  if (options.startOnOpen) client.send({ type: 'start', force: false });
 
   if (options.followActiveTab) {
     const { id: windowId } = await browser.windows.getCurrent();
     browser.tabs.onActivated.addListener((info) => {
-      if (info.windowId === windowId) attach(info.tabId);
+      if (info.windowId === windowId) client.attach(info.tabId);
     });
   }
 }

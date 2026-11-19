@@ -45,8 +45,12 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   const progress = el('div', { className: 'progress', textContent: t('ui_working') });
   progress.dataset.role = 'progress';
   const hint = el('p', { className: 'hint' });
-  const error = el('p', { className: 'error' });
+  const error = el('div', { className: 'error' });
   error.setAttribute('role', 'alert');
+  const errorText = el('p', {});
+  const errorDetail = el('p', { className: 'detail' });
+  errorDetail.dataset.role = 'detail';
+  error.append(errorText, errorDetail);
   const summary = el('div', { className: 'summary' });
   summary.dataset.role = 'summary';
   summary.setAttribute('aria-live', 'polite');
@@ -77,7 +81,9 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     hint.textContent = t('ui_idle_hint');
     progress.hidden = !(s.status === 'running' && !s.text);
     error.hidden = s.status !== 'error';
-    error.textContent = s.status === 'error' ? t(`error_${s.code}`) : '';
+    errorText.textContent = s.status === 'error' ? t(`error_${s.code}`) : '';
+    errorDetail.textContent = s.status === 'error' ? (s.detail ?? '') : '';
+    errorDetail.hidden = !errorDetail.textContent;
     if (hasContent) renderMarkdown(s.text, summary);
     else summary.replaceChildren();
     notice.hidden = !(hasContent && s.truncated && s.text);

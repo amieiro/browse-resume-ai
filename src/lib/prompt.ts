@@ -18,8 +18,14 @@ const LENGTH_RULES: Record<SummaryLength, string> = {
   long: 'Length: about 400 words, as a short paragraph, then the key points, then notable details.',
 };
 
+/** Removes the markers until none is left, so fragments cannot rebuild one ("ARTICARTICLE>>>LE>>>"). */
 function stripDelimiters(value: string): string {
-  return value.split(ARTICLE_OPEN).join('').split(ARTICLE_CLOSE).join('');
+  let previous: string;
+  do {
+    previous = value;
+    value = value.split(ARTICLE_OPEN).join('').split(ARTICLE_CLOSE).join('');
+  } while (value !== previous);
+  return value;
 }
 
 export function buildPrompt(article: Article, length: SummaryLength, language: LanguageCode): string {

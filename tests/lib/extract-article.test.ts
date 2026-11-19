@@ -31,14 +31,15 @@ describe('extractArticle', () => {
   });
 
   it('falls back to <main> when Readability finds nothing', () => {
-    const d = doc(`<body><main><div>${'Short line here. '.repeat(25)}</div></main></body>`);
+    const sentence = 'This is a plain sentence with enough words to read as prose. ';
+    const d = doc(`<body><main><div>${sentence.repeat(12)}</div></main></body>`);
     const a = extractArticle(d, 'https://e.com/m');
     expect(a).not.toBeNull();
-    expect(a!.text).toContain('Short line here.');
+    expect(a!.text).toContain('This is a plain sentence');
   });
 
   it('cuts long text at the cap and marks it truncated', () => {
-    const long = Array.from({ length: 300 }, (_, i) => `<p>${'lorem ipsum dolor sit amet '.repeat(20)}${i}</p>`).join('');
+    const long = Array.from({ length: 300 }, (_, i) => `<p>${'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '.repeat(10)}${i}</p>`).join('');
     const a = extractArticle(doc(`<body><article>${long}</article></body>`), 'https://e.com/l');
     expect(a!.text.length).toBe(MAX_ARTICLE_CHARS);
     expect(a!.truncated).toBe(true);
@@ -50,5 +51,28 @@ describe('extractArticle', () => {
 
   it('returns null for a whitespace-only body', () => {
     expect(extractArticle(doc('<body>   \n  </body>'), 'https://e.com/w')).toBeNull();
+  });
+
+  it('returns null for a login wall with a form and a cookie notice', () => {
+    const html = `<body><header>Brand</header><main>
+      <h1>Sign in to continue</h1>
+      <form><label>Email address</label><input type="email"><label>Password</label><input type="password">
+      <button>Sign in</button><a href="/forgot">Forgot your password?</a><a href="/join">Create an account</a></form>
+      <div class="cookies">We use cookies to improve your experience. By continuing you accept our cookie policy. <button>Accept all</button><button>Reject</button></div>
+      </main></body>`;
+    expect(extractArticle(doc(html), 'https://e.com/login')).toBeNull();
+  });
+
+  it('returns null for an app shell with a link sidebar and a table of labels', () => {
+    const links = Array.from({ length: 30 }, (_, i) => `<a href="/f${i}">Folder number ${i}</a>`).join('');
+    const rows = Array.from({ length: 20 }, (_, i) => `<tr><td>Sender ${i}</td><td>Subject line ${i}</td><td>10:${i} AM</td></tr>`).join('');
+    const html = `<body><div class="sidebar">${links}</div><div class="list"><table>${rows}</table></div></body>`;
+    expect(extractArticle(doc(html), 'https://e.com/mail')).toBeNull();
+  });
+
+  it('ignores hidden text in the fallback', () => {
+    const sentence = 'This is a plain sentence with enough words to read as prose. ';
+    const html = `<body><main><div hidden>${sentence.repeat(12)}</div><div style="display:none">${sentence.repeat(12)}</div><p>Menu</p></main></body>`;
+    expect(extractArticle(doc(html), 'https://e.com/h')).toBeNull();
   });
 });

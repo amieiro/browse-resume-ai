@@ -153,6 +153,16 @@ describe('Summarizer', () => {
     expect(t.s.getState(1)).toMatchObject({ status: 'error', code: 'claude_auth' });
   });
 
+  it('keeps the provider error detail for the user', async () => {
+    const t = setup(
+      provider(async function* () {
+        throw new SummaryError('usage_limit', 'resets 3pm');
+      }),
+    );
+    await t.s.start(1, { force: false });
+    expect(t.s.getState(1)).toMatchObject({ status: 'error', code: 'usage_limit', detail: 'resets 3pm' });
+  });
+
   it('a new start supersedes the running one', async () => {
     let first: AbortSignal | undefined;
     let n = 0;
@@ -173,6 +183,58 @@ describe('Summarizer', () => {
     expect(first!.aborted).toBe(true);
     expect(t.s.getState(1)).toMatchObject({ status: 'done', text: 'Second' });
     expect(t.states.some((s) => s.status === 'error')).toBe(false);
+  });
+
+  it('a non-forced start on the same page attaches to the running request', async () => {
+    let first: AbortSignal | undefined;
+    const p = provider((signal) => ((first ??= signal), waitForAbort(signal)));
+    const t = setup(p);
+    const running = t.s.start(1, { force: false });
+    await vi.waitFor(() => expect(t.s.getState(1)).toMatchObject({ text: 'partial' }));
+    await t.s.start(1, { force: false });
+    expect(p.calls).toBe(1);
+    expect(first!.aborted).toBe(false);
+    expect(t.s.getState(1)).toMatchObject({ status: 'running', text: 'partial' });
+    t.s.forget(1);
+    await running;
+  });
+
+  it('a non-forced start on another page replaces the running request', async () => {
+    let first: AbortSignal | undefined;
+    let n = 0;
+    const p = provider((signal) => (++n === 1 ? ((first = signal), waitForAbort(signal)) : chunks('B')));
+    const extract = vi
+      .fn<SummarizerDeps['extract']>()
+      .mockResolvedValueOnce(article)
+      .mockResolvedValueOnce({ ...article, url: 'https://e.com/b', title: 'B' });
+    const t = setup(p, { extract });
+    const running = t.s.start(1, { force: false });
+    await vi.waitFor(() => expect(first).toBeDefined());
+    await t.s.start(1, { force: false });
+    await running;
+    expect(first!.aborted).toBe(true);
+    expect(t.s.getState(1)).toMatchObject({ status: 'done', title: 'B', text: 'B' });
+  });
+
+  it('a subscriber after a restart gets the last summary of the tab', async () => {
+    const p = provider(() => chunks('Hello'));
+    await setup(p).s.start(1, { force: false });
+    const t2 = setup(p);
+    const seen: SummaryState[] = [];
+    t2.s.subscribe(1, (st) => seen.push(st));
+    await vi.waitFor(() => expect(seen.at(-1)).toMatchObject({ status: 'done', text: 'Hello' }));
+    expect(p.calls).toBe(1);
+  });
+
+  it('restoring never overrides a newer state', async () => {
+    const p = provider(() => chunks('Old'));
+    await setup(p).s.start(1, { force: false });
+    const t2 = setup(provider(() => chunks('New')));
+    const seen: SummaryState[] = [];
+    t2.s.subscribe(1, (st) => seen.push(st));
+    await t2.s.start(1, { force: true });
+    await new Promise((r) => setTimeout(r, 20));
+    expect(t2.s.getState(1)).toMatchObject({ status: 'done', text: 'New' });
   });
 
   it('gives a late subscriber the text so far', async () => {

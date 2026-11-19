@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { fakeBrowser } from 'wxt/testing/fake-browser';
-import { cacheKey, clearCached, getCached, setCached } from '@/lib/cache';
+import { cacheKey, clearCached, getCached, getLastCached, setCached } from '@/lib/cache';
 
 const base = { provider: 'claude' as const, model: 'sonnet', length: 'medium' as const, language: 'gl' as const };
 const entry = (key: string, text = 'summary') => ({ key, title: 'T', text, truncated: false });
@@ -42,5 +42,11 @@ describe('summary cache', () => {
     await setCached(1, entry('k1'));
     await clearCached(1);
     expect(await getCached(1, 'k1')).toBeNull();
+  });
+
+  it('returns the last entry of a tab whatever its key', async () => {
+    expect(await getLastCached(1)).toBeNull();
+    await setCached(1, entry('k1', 'last'));
+    expect((await getLastCached(1))?.text).toBe('last');
   });
 });
