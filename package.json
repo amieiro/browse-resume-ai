@@ -1,0 +1,25 @@
+{
+  "name": "browse-resume-ai",
+  "description": "Summarize the current web page with one click, using your Claude or ChatGPT subscription.",
+  "version": "0.1.0",
+  "private": true,
+  "license": "GPL-2.0-or-later",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "compile": "tsc --noEmit",
+    "test": "vitest run",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.12",
+    "wxt": "^0.21.5"
+  }
+}
