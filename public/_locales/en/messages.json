@@ -82,5 +82,32 @@
   },
   "error_codex_missing": {
     "message": "Codex wasn't found. Install it, then run ./native-host/install.sh again."
+  },
+  "options_title": {
+    "message": "Browse Resume AI settings"
+  },
+  "options_defaults": {
+    "message": "Defaults"
+  },
+  "options_display_mode": {
+    "message": "Show summaries in"
+  },
+  "options_mode_sidepanel": {
+    "message": "Side panel"
+  },
+  "options_mode_popup": {
+    "message": "Popup"
+  },
+  "options_model_list": {
+    "message": "Models (one per line)"
+  },
+  "options_models_empty": {
+    "message": "The model list can't be empty."
+  },
+  "options_ready": {
+    "message": "Ready"
+  },
+  "options_help": {
+    "message": "Summaries go through the local component, which runs Claude Code or Codex on this computer with your subscription. Page text is sent only to the provider you choose."
   }
 }

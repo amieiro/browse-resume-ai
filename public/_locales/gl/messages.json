@@ -82,5 +82,32 @@
   },
   "error_codex_missing": {
     "message": "Non se atopou Codex. Instálao e executa de novo ./native-host/install.sh"
+  },
+  "options_title": {
+    "message": "Axustes de Browse Resume AI"
+  },
+  "options_defaults": {
+    "message": "Valores por defecto"
+  },
+  "options_display_mode": {
+    "message": "Mostrar os resumos en"
+  },
+  "options_mode_sidepanel": {
+    "message": "Panel lateral"
+  },
+  "options_mode_popup": {
+    "message": "Popup"
+  },
+  "options_model_list": {
+    "message": "Modelos (un por liña)"
+  },
+  "options_models_empty": {
+    "message": "A lista de modelos non pode estar baleira."
+  },
+  "options_ready": {
+    "message": "Listo"
+  },
+  "options_help": {
+    "message": "Os resumos pasan polo compoñente local, que executa Claude Code ou Codex neste ordenador coa túa subscrición. O texto da páxina só se envía ao provedor que escollas."
   }
 }
