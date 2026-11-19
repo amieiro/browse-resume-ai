@@ -1,5 +1,5 @@
 import { browser } from 'wxt/browser';
-import { isLanguageCode, type LanguageCode } from './languages';
+import { matchLanguage, type LanguageCode } from './languages';
 
 export type ProviderId = 'claude' | 'codex';
 export type SummaryLength = 'short' | 'medium' | 'long';
@@ -10,6 +10,8 @@ export interface Settings {
   provider: ProviderId;
   length: SummaryLength;
   language: LanguageCode;
+  /** Interface language: 'auto' follows the browser. */
+  uiLanguage: 'auto' | LanguageCode;
   /** Selected model per provider. */
   models: Record<ProviderId, string>;
   /** User-editable model list per provider. */
@@ -19,12 +21,12 @@ export interface Settings {
 const STORAGE_KEY = 'settings';
 
 export function defaultSettings(uiLanguage: string): Settings {
-  const base = uiLanguage.toLowerCase().split(/[-_]/)[0] ?? '';
   return {
     displayMode: 'sidepanel',
     provider: 'claude',
     length: 'medium',
-    language: isLanguageCode(base) ? base : 'en',
+    language: matchLanguage(uiLanguage) ?? 'en-US',
+    uiLanguage: 'auto',
     models: { claude: 'sonnet', codex: 'gpt-6.2-sol' },
     modelLists: {
       claude: ['sonnet', 'opus', 'haiku', 'fable'],
@@ -35,12 +37,16 @@ export function defaultSettings(uiLanguage: string): Settings {
 
 function merge(defaults: Settings, stored: Partial<Settings> | undefined): Settings {
   if (!stored) return defaults;
-  return {
+  const merged = {
     ...defaults,
     ...stored,
     models: { ...defaults.models, ...stored.models },
     modelLists: { ...defaults.modelLists, ...stored.modelLists },
   };
+  // Codes from older versions ("gl", "en") or no longer in the list are mapped or reset.
+  merged.language = matchLanguage(merged.language) ?? defaults.language;
+  if (merged.uiLanguage !== 'auto') merged.uiLanguage = matchLanguage(merged.uiLanguage) ?? 'auto';
+  return merged;
 }
 
 export async function loadSettings(): Promise<Settings> {

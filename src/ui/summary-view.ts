@@ -107,7 +107,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     handlers.onSettingsChange({ length: settings.length });
   });
   language.addEventListener('change', () => {
-    settings = { ...settings, language: language.value as Settings['language'] };
+    settings = { ...settings, language: language.value };
     handlers.onSettingsChange({ language: settings.language });
   });
   options.addEventListener('click', () => handlers.onOpenOptions());

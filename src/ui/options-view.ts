@@ -51,12 +51,19 @@ export function mountOptionsView(root: HTMLElement, initial: Settings, deps: Opt
     (['short', 'medium', 'long'] as SummaryLength[]).map((l) => ({ value: l, label: t(`length_${l}`) })),
     settings.length,
   );
-  const language = select('language', LANGUAGES.map((l) => ({ value: l.code, label: l.nativeName })), settings.language);
+  const languageOptions = LANGUAGES.map((l) => ({ value: l.code, label: l.nativeName }));
+  const language = select('language', languageOptions, settings.language);
+  const uiLanguage = select(
+    'uiLanguage',
+    [{ value: 'auto', label: t('options_ui_language_auto') }, ...languageOptions],
+    settings.uiLanguage,
+  );
 
   displayMode.addEventListener('change', () => deps.onSave({ displayMode: displayMode.value as DisplayMode }));
   provider.addEventListener('change', () => deps.onSave({ provider: provider.value as ProviderId }));
   length.addEventListener('change', () => deps.onSave({ length: length.value as SummaryLength }));
-  language.addEventListener('change', () => deps.onSave({ language: language.value as Settings['language'] }));
+  language.addEventListener('change', () => deps.onSave({ language: language.value }));
+  uiLanguage.addEventListener('change', () => deps.onSave({ uiLanguage: uiLanguage.value }));
 
   const statusChecks: Promise<void>[] = [];
   const providerSections = PROVIDERS.map(({ id, label }) => {
@@ -121,6 +128,7 @@ export function mountOptionsView(root: HTMLElement, initial: Settings, deps: Opt
       'fieldset',
       {},
       el('legend', { textContent: t('options_defaults') }),
+      row(t('options_ui_language'), uiLanguage),
       row(t('options_display_mode'), displayMode),
       row(t('ui_provider'), provider),
       row(t('ui_length'), length),

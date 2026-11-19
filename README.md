@@ -5,10 +5,12 @@ subscription you already pay for: Claude (through Claude Code) or ChatGPT (throu
 keys, no pay-per-use billing.
 
 - One click on the toolbar icon summarizes the page with your saved settings.
-- Choose the provider and model, the length (short, medium, long) and the summary language
-  (Galician, Spanish, English, Portuguese, French, German, Italian, Catalan, Basque).
+- Choose the provider and model, the length (short, medium, long) and the summary language.
 - The summary appears in the side panel or in a popup; you pick which in the settings.
-- Interface in English and Galician.
+- 201 languages, for both the summary and the interface: the languages of
+  [translate.wordpress.org](https://translate.wordpress.org/), with BCP 47 codes (ISO 639 language,
+  ISO 3166 region, e.g. `gl-ES`, `pt-BR`) and ISO 639 names. The interface follows the browser
+  language or the one you choose in the settings.
 
 Status: personal project, Chrome on macOS. A Firefox build is planned.
 
@@ -178,6 +180,10 @@ Layout:
   extractor injected into pages.
 - `src/lib/`: settings, prompt, extraction, Markdown rendering, cache and the per-tab summarizer.
 - `src/providers/`: one module per provider behind a common interface.
+- `src/lib/language-list.ts`: the language list; `src/locales/<code>.json`: interface strings, one
+  file per language, with `en-US.json` as the source. The interface translations other than
+  `en-US` and `gl-ES` were machine-translated and have not been reviewed by native speakers;
+  corrections are welcome.
 - `native-host/`: the native messaging host (plain Node, no dependencies) and its installer.
 
 ## Licence
