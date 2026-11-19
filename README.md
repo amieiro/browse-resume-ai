@@ -26,16 +26,76 @@ Status: personal project, Chrome on macOS. A Firefox build is planned.
 
 ## Install
 
+The repository includes the latest build in [`dist/chrome`](dist/chrome), ready to load in Chrome.
+You do not need to build anything; you only need Node.js for the local component.
+
+### 1. Get the code and install the local component
+
 ```sh
 git clone https://github.com/amieiro/browse-resume-ai.git
 cd browse-resume-ai
-npm install
-npm run build
 ./native-host/install.sh
 ```
 
-Then open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked** and choose
-`.output/chrome-mv3`. Pin the extension and click its icon on any article.
+The installer prints the `node`, `claude` and `codex` it found. It needs at least one of `claude`
+and `codex`, logged in.
+
+### 2. Turn on Developer mode
+
+Open `chrome://extensions` and turn on **Developer mode**, at the top right.
+
+<img src="media/install/1-developer-mode.png" alt="The Developer mode switch at the top right of chrome://extensions" width="800">
+
+### 3. Load the extension
+
+Click **Load unpacked**.
+
+<img src="media/install/2-load-unpacked.png" alt="The Load unpacked button below the page title" width="800">
+
+In the folder picker, choose the `dist/chrome` folder inside the repository and click **Select**.
+On macOS you can press <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> and paste the full path, for
+example `~/browse-resume-ai/dist/chrome`.
+
+### 4. Check the extension ID
+
+The card must show the ID `pdokiakaaeffjlabmofdppjakdhaimpi`. The local component only answers
+this ID, so if it differs you loaded a different folder.
+
+<img src="media/install/3-installed.png" alt="The extension card with its ID and the reload button" width="800">
+
+Chrome may list the extension under **Safety check** with "Chrome can't verify where this
+extension comes from". That is normal for an extension loaded from a folder; keep it.
+
+If the icon is not in the toolbar, open the puzzle-piece menu next to the address bar and pin
+**Browse Resume AI**.
+
+### 5. Check the settings
+
+Click the gear in the panel, or **Details → Extension options** on the card. Both providers should
+say **Ready**. If one says the local component is not installed, run `./native-host/install.sh`
+again. Here you also choose the interface language, where summaries are shown (side panel or
+popup), and the defaults.
+
+<img src="media/install/4-settings.png" alt="The settings page with the interface language and both providers ready" width="800">
+
+### 6. Summarize a page
+
+Open an article and click the extension icon. The summary appears in the side panel; the selectors
+at the top change the provider, model, length and language for the next summary.
+
+<img src="media/install/5-summary.png" alt="A summary of the Wikipedia article on the Galician language in the side panel" width="420">
+
+### Update
+
+```sh
+cd browse-resume-ai
+git pull
+./native-host/install.sh   # only needed if native-host/ changed, harmless otherwise
+```
+
+Then, in `chrome://extensions`, click the reload arrow on the extension card (marked in the
+screenshot of step 4), or **Update** at the top of the page. Chrome does not pick up the new files
+until you do.
 
 ### Why a local component?
 
@@ -113,13 +173,11 @@ to configure.
    Do not log the user in yourself. If `claude` or `codex` is not logged in, ask the user to run
    `claude` (then `/login`) or `codex login`.
 
-2. Build the extension and install the host:
+2. Get the code and install the host. The extension is already built in `dist/chrome`:
 
    ```sh
    git clone https://github.com/amieiro/browse-resume-ai.git
    cd browse-resume-ai
-   npm install
-   npm run build              # output in .output/chrome-mv3
    ./native-host/install.sh   # prints the node, claude and codex paths it found
    ```
 
@@ -140,9 +198,10 @@ to configure.
    mode and a native folder picker, which an agent should not and usually cannot operate. Give the
    user these instructions:
    - Open `chrome://extensions` and turn on **Developer mode**.
-   - Click **Load unpacked** and choose the `.output/chrome-mv3` folder (give the absolute path).
+   - Click **Load unpacked** and choose the `dist/chrome` folder (give the absolute path).
    - Check that the extension ID is `pdokiakaaeffjlabmofdppjakdhaimpi`, then pin the extension
      and click its icon on an article.
+   - The **Install** section above has screenshots of each step; point the user to it.
 
 ### Rules
 
@@ -153,6 +212,10 @@ to configure.
   untrusted and the model must have no tool that runs commands or reads files.
 - Run `./native-host/install.sh` again after moving the repository or upgrading Node, Claude Code
   or Codex, because the launcher stores absolute paths.
+- After changing the source, run `npm run dist` and commit `dist/chrome` with the change, so the
+  prebuilt extension in the repository stays current. If the change is visible in the screenshots,
+  run `npm run screenshots` (it opens a separate Chrome with a temporary profile) and commit
+  `media/install` too.
 
 ### Troubleshooting
 
@@ -170,6 +233,8 @@ to configure.
 npm install
 npm run dev       # Chrome with the extension loaded and live reload
 npm run build     # production build in .output/chrome-mv3
+npm run dist      # build and copy it to dist/chrome, the prebuilt folder kept in the repository
+npm run screenshots  # regenerate media/install/*.png (needs the native host installed)
 npm test          # unit tests (extension and native host)
 npm run compile   # type check
 ```
