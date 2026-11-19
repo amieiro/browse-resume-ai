@@ -11,13 +11,16 @@
     "zip": "wxt zip",
     "compile": "tsc --noEmit",
     "test": "vitest run",
-    "postinstall": "wxt prepare"
+    "postinstall": "wxt prepare",
+    "dist": "wxt build && rm -rf dist/chrome && mkdir -p dist && cp -R .output/chrome-mv3 dist/chrome",
+    "screenshots": "node scripts/screenshots.mjs"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0"
   },
   "devDependencies": {
     "jsdom": "^25.0.1",
+    "puppeteer-core": "^25.18.1",
     "typescript": "^7.0.2",
     "vitest": "^4.1.12",
     "wxt": "^0.21.5"
