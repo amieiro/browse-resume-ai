@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it, vi, type Mock } from 'vitest';
 import { fakeBrowser } from 'wxt/testing/fake-browser';
+import { setMessages } from '@/lib/i18n';
 import { defaultSettings, type Settings } from '@/lib/settings';
 import { mountOptionsView, parseModelList } from '@/ui/options-view';
 import type { Availability } from '@/providers/types';
@@ -25,7 +26,8 @@ async function mount(settings: Settings = defaultSettings('en')) {
 
 beforeEach(() => {
   fakeBrowser.reset();
-  (fakeBrowser.i18n as any).getMessage = (key: string) => `[${key}]`;
+  // Show the message key so tests can see which message is shown.
+  setMessages(new Proxy({}, { get: (_t, key) => `[${String(key)}]` }));
   root = document.createElement('div');
   onSave = vi.fn<(patch: Partial<Settings>) => void>();
   availability = { claude: { ok: true }, codex: { ok: true } };
@@ -38,12 +40,20 @@ describe('parseModelList', () => {
 });
 
 describe('options view', () => {
+  it('offers automatic plus every language for the interface', async () => {
+    await mount();
+    const options = [...field<HTMLSelectElement>('uiLanguage').options];
+    expect(options[0]).toMatchObject({ value: 'auto', textContent: '[options_ui_language_auto]' });
+    expect(options.length).toBe(202);
+  });
+
   it('shows the settings', async () => {
-    await mount({ ...defaultSettings('en'), displayMode: 'popup', length: 'long', language: 'gl' });
+    await mount({ ...defaultSettings('en'), displayMode: 'popup', length: 'long', language: 'gl-ES', uiLanguage: 'fr-FR' });
     expect(field<HTMLSelectElement>('displayMode').value).toBe('popup');
     expect(field<HTMLSelectElement>('provider').value).toBe('claude');
     expect(field<HTMLSelectElement>('length').value).toBe('long');
-    expect(field<HTMLSelectElement>('language').value).toBe('gl');
+    expect(field<HTMLSelectElement>('language').value).toBe('gl-ES');
+    expect(field<HTMLSelectElement>('uiLanguage').value).toBe('fr-FR');
     expect(field<HTMLTextAreaElement>('models-claude').value).toBe('sonnet\nopus\nhaiku\nfable');
     expect(field<HTMLSelectElement>('model-claude').value).toBe('sonnet');
   });
@@ -52,7 +62,9 @@ describe('options view', () => {
     ['displayMode', 'popup', { displayMode: 'popup' }],
     ['provider', 'codex', { provider: 'codex' }],
     ['length', 'short', { length: 'short' }],
-    ['language', 'es', { language: 'es' }],
+    ['language', 'es-ES', { language: 'es-ES' }],
+    ['uiLanguage', 'gl-ES', { uiLanguage: 'gl-ES' }],
+    ['uiLanguage', 'auto', { uiLanguage: 'auto' }],
   ])('saves %s', async (name, value, patch) => {
     await mount();
     change(field<HTMLSelectElement>(name), value);

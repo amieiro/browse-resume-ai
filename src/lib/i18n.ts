@@ -1,10 +1,48 @@
-import { browser } from 'wxt/browser';
+import { isRtl, matchLanguage, type LanguageCode } from './languages';
 
-/** Localized UI string; falls back to the key so a missing message is visible, not blank. */
-export function t(key: string): string {
+// The extension picks its interface language itself (a setting), so it cannot use chrome.i18n,
+// which always follows the browser. Each locale is a separate chunk, loaded on demand.
+type Messages = Record<string, string>;
+
+const loaders = import.meta.glob<Messages>('../locales/*.json', { import: 'default' });
+const FALLBACK = 'en-US';
+
+let messages: Messages = {};
+let fallback: Messages = {};
+
+async function load(code: LanguageCode): Promise<Messages | null> {
+  const loader = loaders[`../locales/${code}.json`];
+  if (!loader) return null;
   try {
-    return browser.i18n.getMessage(key as any) || key;
+    return await loader();
   } catch {
-    return key;
+    return null;
   }
+}
+
+/** For tests: replace the loaded messages. */
+export function setMessages(current: Messages, english: Messages = {}): void {
+  messages = current;
+  fallback = english;
+}
+
+/** Loads the interface strings for a language and sets the document's lang and dir. */
+export async function initI18n(code: LanguageCode): Promise<void> {
+  const english = (await load(FALLBACK)) ?? {};
+  setMessages(code === FALLBACK ? english : ((await load(code)) ?? {}), english);
+  if (typeof document !== 'undefined') {
+    document.documentElement.lang = code;
+    document.documentElement.dir = isRtl(code) ? 'rtl' : 'ltr';
+  }
+}
+
+/** The interface language to use for a setting ('auto' follows the browser). */
+export function resolveUiLanguage(setting: 'auto' | LanguageCode, browserLanguage: string): LanguageCode {
+  if (setting !== 'auto') return matchLanguage(setting) ?? FALLBACK;
+  return matchLanguage(browserLanguage) ?? FALLBACK;
+}
+
+/** Localized UI string; falls back to English, then to the key so a gap is visible, not blank. */
+export function t(key: string): string {
+  return messages[key] || fallback[key] || key;
 }

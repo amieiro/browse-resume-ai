@@ -1,6 +1,7 @@
 import { browser } from 'wxt/browser';
 import type { SummaryStartedBroadcast } from '@/lib/messages';
 import { loadSettings, saveSettings } from '@/lib/settings';
+import { bootPage } from './boot';
 import { createPortClient } from './port-client';
 import { mountSummaryView } from './summary-view';
 
@@ -22,7 +23,7 @@ export async function startSummaryApp(root: HTMLElement, options: Options): Prom
     (state) => view.setState(state),
   );
 
-  const view = mountSummaryView(root, await loadSettings(), {
+  const view = mountSummaryView(root, await bootPage(), {
     onRegenerate: () => client.send({ type: 'start', force: true }),
     onSettingsChange: (patch) => void saveSettings(patch),
     onOpenOptions: () => void browser.runtime.openOptionsPage(),

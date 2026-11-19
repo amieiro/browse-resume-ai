@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { fakeBrowser } from 'wxt/testing/fake-browser';
+import { setMessages } from '@/lib/i18n';
 import { defaultSettings } from '@/lib/settings';
 import { mountSummaryView, type SummaryViewHandlers } from '@/ui/summary-view';
 
@@ -19,8 +20,8 @@ const change = (el: HTMLSelectElement, value: string) => {
 
 beforeEach(() => {
   fakeBrowser.reset();
-  // Return the message key so tests can see which message is shown.
-  (fakeBrowser.i18n as any).getMessage = (key: string) => `[${key}]`;
+  // Show the message key so tests can see which message is shown.
+  setMessages(new Proxy({}, { get: (_t, key) => `[${String(key)}]` }));
   root = document.createElement('div');
   handlers = { onRegenerate: vi.fn(), onSettingsChange: vi.fn(), onOpenOptions: vi.fn() };
 });
@@ -32,8 +33,8 @@ describe('summary view selectors', () => {
     expect(select('model').value).toBe('sonnet');
     expect([...select('model').options].map((o) => o.value)).toEqual(['sonnet', 'opus', 'haiku', 'fable']);
     expect(select('length').value).toBe('medium');
-    expect(select('language').value).toBe('en');
-    expect(select('language').options.length).toBe(9);
+    expect(select('language').value).toBe('en-US');
+    expect(select('language').options.length).toBe(201);
   });
 
   it('changing provider repopulates the models and saves', () => {
@@ -58,8 +59,8 @@ describe('summary view selectors', () => {
 
   it('changing language saves it', () => {
     mount();
-    change(select('language'), 'gl');
-    expect(handlers.onSettingsChange).toHaveBeenCalledWith({ language: 'gl' });
+    change(select('language'), 'gl-ES');
+    expect(handlers.onSettingsChange).toHaveBeenCalledWith({ language: 'gl-ES' });
   });
 
   it('setSettings updates the selectors', () => {
