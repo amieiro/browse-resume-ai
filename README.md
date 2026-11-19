@@ -1,5 +1,33 @@
 # Browse Resume AI
 
+<!-- toc -->
+
+**Contents**
+
+- [Browse Resume AI](#browse-resume-ai)
+  - [Requirements](#requirements)
+  - [Install](#install)
+    - [1. Get the code and install the local component](#1-get-the-code-and-install-the-local-component)
+    - [2. Turn on Developer mode](#2-turn-on-developer-mode)
+    - [3. Load the extension](#3-load-the-extension)
+    - [4. Check the extension ID](#4-check-the-extension-id)
+    - [5. Check the settings](#5-check-the-settings)
+    - [6. Summarize a page](#6-summarize-a-page)
+    - [Update](#update)
+    - [Why a local component?](#why-a-local-component)
+  - [Extension ID](#extension-id)
+  - [Privacy](#privacy)
+  - [Permissions](#permissions)
+  - [For AI agents](#for-ai-agents)
+    - [What this is](#what-this-is)
+    - [Install](#install-1)
+    - [Rules](#rules)
+    - [Troubleshooting](#troubleshooting)
+  - [Development](#development)
+  - [Licence](#licence)
+
+<!-- tocstop -->
+
 A Chrome extension that summarizes the article in the current tab with one click, using the AI
 subscription you already pay for: Claude (through Claude Code) or ChatGPT (through Codex). No API
 keys, no pay-per-use billing.
@@ -216,6 +244,8 @@ to configure.
   prebuilt extension in the repository stays current. If the change is visible in the screenshots,
   run `npm run screenshots` (it opens a separate Chrome with a temporary profile) and commit
   `media/install` too.
+- After adding, renaming or removing a heading in this README, run `npm run readme-toc` to update
+  the table of contents at the top.
 
 ### Troubleshooting
 
@@ -235,6 +265,7 @@ npm run dev       # Chrome with the extension loaded and live reload
 npm run build     # production build in .output/chrome-mv3
 npm run dist      # build and copy it to dist/chrome, the prebuilt folder kept in the repository
 npm run screenshots  # regenerate media/install/*.png (needs the native host installed)
+npm run readme-toc   # regenerate the table of contents at the top of this README
 npm test          # unit tests (extension and native host)
 npm run compile   # type check
 ```

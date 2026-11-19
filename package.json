@@ -13,7 +13,8 @@
     "test": "vitest run",
     "postinstall": "wxt prepare",
     "dist": "wxt build && rm -rf dist/chrome && mkdir -p dist && cp -R .output/chrome-mv3 dist/chrome",
-    "screenshots": "node scripts/screenshots.mjs"
+    "screenshots": "node scripts/screenshots.mjs",
+    "readme-toc": "node scripts/readme-toc.mjs"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0"

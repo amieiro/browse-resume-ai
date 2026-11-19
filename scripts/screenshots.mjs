@@ -16,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer-core';
 import { build } from 'vite';
 import { createDecoder, encodeMessage } from '../native-host/lib/framing.mjs';
+import { addBorder } from './add-border.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const EXTENSION_DIR = join(ROOT, 'dist/chrome');
@@ -89,11 +90,15 @@ async function markDeep(page, selector, pad) {
   if (!ok) throw new Error(`Element not found: ${selector}`);
 }
 
-async function shot(page, name) {
+// Width at which the README shows each screenshot (the border must look 1px wide there).
+const DISPLAY_WIDTH = { panel: 420, page: 800 };
+
+async function shot(page, name, displayWidth = DISPLAY_WIDTH.page) {
   const user = homedir().split('/').pop();
   await page.evaluate((patterns) => window.__blurPrivate(patterns), [homedir(), `/${user}/`, user]);
   await sleep(300);
   await page.screenshot({ path: join(OUT, name) });
+  addBorder(join(OUT, name), displayWidth);
   console.log('wrote', join('media/install', name));
 }
 
@@ -227,7 +232,7 @@ try {
   await sleep(1500);
   await withHelpers(panel);
   await panel.evaluate(() => window.__mark(document.querySelector('.toolbar'), 2));
-  await shot(panel, '5-summary.png');
+  await shot(panel, '5-summary.png', DISPLAY_WIDTH.panel);
 } finally {
   await browser.close();
   rmSync(userDataDir, { recursive: true, force: true });
