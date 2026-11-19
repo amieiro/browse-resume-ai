@@ -1,0 +1,113 @@
+{
+  "extName": {
+    "message": "Browse Resume AI"
+  },
+  "extDescription": {
+    "message": "Summarize the current web page with one click, using your Claude or ChatGPT subscription."
+  },
+  "ui_provider": {
+    "message": "Provider"
+  },
+  "ui_model": {
+    "message": "Model"
+  },
+  "ui_length": {
+    "message": "Length"
+  },
+  "ui_language": {
+    "message": "Summary language"
+  },
+  "length_short": {
+    "message": "Short"
+  },
+  "length_medium": {
+    "message": "Medium"
+  },
+  "length_long": {
+    "message": "Long"
+  },
+  "ui_settings": {
+    "message": "Settings"
+  },
+  "ui_copy": {
+    "message": "Copy"
+  },
+  "ui_copied": {
+    "message": "Copied"
+  },
+  "ui_regenerate": {
+    "message": "Summarize again"
+  },
+  "ui_try_again": {
+    "message": "Try again"
+  },
+  "ui_working": {
+    "message": "Summarizing…"
+  },
+  "ui_idle_hint": {
+    "message": "Click the extension icon to summarize this page."
+  },
+  "ui_truncated": {
+    "message": "This page was long; only the first part was summarized."
+  },
+  "error_page_unreadable": {
+    "message": "This page can't be read. Browser pages, the Chrome Web Store and PDFs are not supported."
+  },
+  "error_no_content": {
+    "message": "No article text was found on this page."
+  },
+  "error_needs_click": {
+    "message": "Click the extension icon to summarize this page. After the tab navigates, the extension needs a new click to read it."
+  },
+  "error_host_missing": {
+    "message": "The local component isn't installed or isn't answering. In the extension's folder, run: ./native-host/install.sh"
+  },
+  "error_claude_missing": {
+    "message": "Claude Code wasn't found. Install it, then run ./native-host/install.sh again."
+  },
+  "error_claude_auth": {
+    "message": "Claude Code isn't logged in. Run claude in a terminal and log in."
+  },
+  "error_codex_signed_out": {
+    "message": "Codex isn't logged in. Run codex login in a terminal."
+  },
+  "error_codex_not_eligible": {
+    "message": "Your ChatGPT plan can't be used for this. Choose another provider."
+  },
+  "error_usage_limit": {
+    "message": "You've reached your plan's usage limit. Try again later or choose another provider."
+  },
+  "error_provider_failed": {
+    "message": "The provider failed while writing the summary. Try again."
+  },
+  "error_codex_missing": {
+    "message": "Codex wasn't found. Install it, then run ./native-host/install.sh again."
+  },
+  "options_title": {
+    "message": "Browse Resume AI settings"
+  },
+  "options_defaults": {
+    "message": "Defaults"
+  },
+  "options_display_mode": {
+    "message": "Show summaries in"
+  },
+  "options_mode_sidepanel": {
+    "message": "Side panel"
+  },
+  "options_mode_popup": {
+    "message": "Popup"
+  },
+  "options_model_list": {
+    "message": "Models (one per line)"
+  },
+  "options_models_empty": {
+    "message": "The model list can't be empty."
+  },
+  "options_ready": {
+    "message": "Ready"
+  },
+  "options_help": {
+    "message": "Summaries go through the local component, which runs Claude Code or Codex on this computer with your subscription. Page text is sent only to the provider you choose."
+  }
+}

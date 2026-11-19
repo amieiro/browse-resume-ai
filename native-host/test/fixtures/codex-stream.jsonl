@@ -1,0 +1,7 @@
+{"type":"thread.started","thread_id":"00000000-0000-0000-0000-000000000000"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"reasoning","text":"thinking"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"I'll summarize the article."}}
+{"type":"item.completed","item":{"id":"item_3","type":"agent_message","text":"Ola ñandú 🙂\n\n- punto clave"}}
+{"type":"turn.completed","usage":{"input_tokens":10,"output_tokens":5}}

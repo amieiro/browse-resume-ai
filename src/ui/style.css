@@ -1,0 +1,68 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --border: #d1d9e0;
+  --accent: #2563eb;
+  --accent-fg: #ffffff;
+  --error-bg: #fff1f0;
+  --error-fg: #a40e26;
+  --notice-bg: #fff8c5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1d21;
+    --fg: #e6e8eb;
+    --muted: #9aa4af;
+    --border: #3a3f46;
+    --accent: #5b8def;
+    --error-bg: #3a1d20;
+    --error-fg: #ffb4b8;
+    --notice-bg: #3a3420;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font: 14px/1.5 system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+body.popup { width: 380px; max-height: 580px; }
+#app { display: flex; flex-direction: column; min-height: 100vh; }
+body.popup #app { min-height: 0; }
+.toolbar {
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  padding: 10px 12px; border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; background: var(--bg);
+}
+select, button { font: inherit; color: inherit; }
+select {
+  flex: 1 1 70px; min-width: 0; padding: 4px 6px;
+  border: 1px solid var(--border); border-radius: 6px; background: var(--bg);
+}
+button {
+  padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--bg); cursor: pointer;
+}
+button:disabled { opacity: 0.5; cursor: default; }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
+button.icon { padding: 4px 8px; flex: 0 0 auto; }
+main { flex: 1; padding: 12px; overflow-wrap: anywhere; }
+.title { font-size: 15px; margin: 0 0 8px; }
+.hint, .progress { color: var(--muted); margin: 0; }
+.progress::after { content: ''; display: inline-block; width: 1em; animation: dots 1.2s steps(4) infinite; }
+@keyframes dots { 0% { content: ''; } 25% { content: '.'; } 50% { content: '..'; } 75% { content: '...'; } }
+.error { background: var(--error-bg); color: var(--error-fg); padding: 8px 10px; border-radius: 6px; margin: 0 0 10px; }
+.error p { margin: 0; }
+.error .detail { margin-top: 4px; font-size: 12px; opacity: 0.85; white-space: pre-wrap; }
+.summary p { margin: 0 0 10px; }
+.summary ul { margin: 0 0 10px; padding-left: 20px; }
+.notice { background: var(--notice-bg); padding: 6px 10px; border-radius: 6px; font-size: 13px; }
+.actions {
+  display: flex; gap: 8px; justify-content: flex-end;
+  padding: 10px 12px; border-top: 1px solid var(--border);
+  position: sticky; bottom: 0; background: var(--bg);
+}
+[hidden] { display: none !important; }
