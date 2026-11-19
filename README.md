@@ -14,6 +14,22 @@ pdokiakaaeffjlabmofdppjakdhaimpi
 
 The native messaging host only accepts this ID.
 
+## Local component for Claude
+
+Claude subscriptions can only be used through Claude Code, so summaries with Claude go through a
+small local program (a Chrome native messaging host) that runs `claude --print` with no tools.
+
+Requirements: macOS, Google Chrome, Node.js 18 or later, and Claude Code logged in (run `claude` once).
+
+```sh
+./native-host/install.sh     # run again after moving the repository or upgrading Node or Claude Code
+./native-host/uninstall.sh
+```
+
+The installer writes a launcher to `~/Library/Application Support/browse-resume-ai/` and the host
+manifest to `~/Library/Application Support/Google/Chrome/NativeMessagingHosts/`. The host only
+accepts connections from the extension ID above.
+
 ## Development
 
 ```sh
