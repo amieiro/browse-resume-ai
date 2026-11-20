@@ -48,5 +48,14 @@
   "options_models_refresh": "Las legir ara",
   "error_file_access": "Per resumir de fichièrs d'aqueste ordenador, dobrissètz los Detalhs de l'extension dins chrome://extensions e activatz Autorizar l'accès a las URL de fichièr.",
   "error_pdf_unreadable": "Se pòt pas dobrir aqueste PDF. Benlèu es protegit per un senhal o damatjat.",
-  "error_pdf_no_text": "Aqueste PDF a pas cap de tèxte de resumir. Benlèu es fach d'imatges numerizats."
+  "error_pdf_no_text": "Aqueste PDF a pas cap de tèxte de resumir. Benlèu es fach d'imatges numerizats.",
+  "ui_history": "Istoric",
+  "history_title": "Istoric dels resumits",
+  "history_search": "Cercar dins los resumits",
+  "history_empty": "Encara cap de resumit. Apareisson aquí a mesura que los fasètz.",
+  "history_no_results": "Cap de resumit correspond pas a la recèrca.",
+  "history_delete": "Suprimir",
+  "history_clear": "Escafar l'istoric",
+  "history_clear_confirm": "Clicatz tornamai per tot suprimir",
+  "options_history": "Gardar un istoric dels resumits (sus aqueste ordenador)"
 }

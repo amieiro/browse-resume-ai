@@ -48,5 +48,14 @@
   "options_models_refresh": "Házir oqıw",
   "error_file_access": "Bul kompyuterdegi fayllardı juwmaqlaw ushın chrome://extensions betinde keńeytpeniń Tolıǵıraq bólimin ashıń hám Fayl URL mánzillerine kiriwge ruqsat beriw sazlawın qosıń.",
   "error_pdf_unreadable": "Bul PDF faylın ashıw múmkin emes. Ol parol menen qorǵalǵan yamasa zaqımlanǵan bolıwı múmkin.",
-  "error_pdf_no_text": "Bul PDF faylında juwmaqlaw ushın tekst joq. Ol skanerlengen súwretlerden turıwı múmkin."
+  "error_pdf_no_text": "Bul PDF faylında juwmaqlaw ushın tekst joq. Ol skanerlengen súwretlerden turıwı múmkin.",
+  "ui_history": "Tariyx",
+  "history_title": "Juwmaqlawlar tariyxı",
+  "history_search": "Juwmaqlawlardan izlew",
+  "history_empty": "Ele juwmaqlawlar joq. Olar siz jasaǵan sayın usı jerde payda boladı.",
+  "history_no_results": "Izlewge sáykes keletuǵın juwmaqlaw joq.",
+  "history_delete": "Óshiriw",
+  "history_clear": "Tariyxtı tazalaw",
+  "history_clear_confirm": "Hámmesin óshiriw ushın jáne basıń",
+  "options_history": "Juwmaqlawlar tariyxın saqlaw (usı kompyuterde)"
 }

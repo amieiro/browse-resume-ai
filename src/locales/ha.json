@@ -48,5 +48,14 @@
   "options_models_refresh": "Karanta su yanzu",
   "error_file_access": "Don taƙaita fayiloli a wannan kwamfuta, buɗe Bayanai na tsawaitawar a chrome://extensions kuma kunna Ba da damar shiga URL na fayil.",
   "error_pdf_unreadable": "Ba za a iya buɗe wannan PDF ba. Wataƙila an kare shi da kalmar sirri ko ya lalace.",
-  "error_pdf_no_text": "Wannan PDF ba shi da rubutun da za a taƙaita. Wataƙila an yi shi ne da hotunan da aka duba (scan)."
+  "error_pdf_no_text": "Wannan PDF ba shi da rubutun da za a taƙaita. Wataƙila an yi shi ne da hotunan da aka duba (scan).",
+  "ui_history": "Tarihi",
+  "history_title": "Tarihin taƙaitawa",
+  "history_search": "Bincika taƙaitawa",
+  "history_empty": "Babu taƙaitawa tukuna. Za su bayyana a nan yayin da kake yin su.",
+  "history_no_results": "Babu taƙaitawar da ta dace da binciken.",
+  "history_delete": "Share",
+  "history_clear": "Share tarihi",
+  "history_clear_confirm": "Sake dannawa don share duka",
+  "options_history": "Ajiye tarihin taƙaitawa (a wannan kwamfuta)"
 }

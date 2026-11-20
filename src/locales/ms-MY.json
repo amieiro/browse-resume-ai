@@ -48,5 +48,14 @@
   "options_models_refresh": "Baca sekarang",
   "error_file_access": "Untuk meringkaskan fail pada komputer ini, buka Butiran sambungan dalam chrome://extensions dan hidupkan Benarkan akses kepada URL fail.",
   "error_pdf_unreadable": "PDF ini tidak dapat dibuka. PDF ini mungkin dilindungi kata laluan atau rosak.",
-  "error_pdf_no_text": "PDF ini tiada teks untuk diringkaskan. PDF ini mungkin terdiri daripada imej yang diimbas."
+  "error_pdf_no_text": "PDF ini tiada teks untuk diringkaskan. PDF ini mungkin terdiri daripada imej yang diimbas.",
+  "ui_history": "Sejarah",
+  "history_title": "Sejarah ringkasan",
+  "history_search": "Cari ringkasan",
+  "history_empty": "Belum ada ringkasan. Ringkasan akan muncul di sini apabila anda membuatnya.",
+  "history_no_results": "Tiada ringkasan yang sepadan dengan carian.",
+  "history_delete": "Padam",
+  "history_clear": "Kosongkan sejarah",
+  "history_clear_confirm": "Klik sekali lagi untuk memadam semua",
+  "options_history": "Simpan sejarah ringkasan (pada komputer ini)"
 }

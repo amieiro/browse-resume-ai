@@ -48,5 +48,14 @@
   "options_models_refresh": "Legi ilin nun",
   "error_file_access": "Por resumi dosierojn en ĉi tiu komputilo, malfermu la Detalojn de la etendaĵo en chrome://extensions kaj ŝaltu Permesi aliron al dosieraj URL-oj.",
   "error_pdf_unreadable": "Ne eblas malfermi ĉi tiun PDF-dosieron. Eble ĝi estas protektita per pasvorto aŭ difektita.",
-  "error_pdf_no_text": "Ĉi tiu PDF-dosiero ne havas tekston por resumi. Eble ĝi konsistas el skanitaj bildoj."
+  "error_pdf_no_text": "Ĉi tiu PDF-dosiero ne havas tekston por resumi. Eble ĝi konsistas el skanitaj bildoj.",
+  "ui_history": "Historio",
+  "history_title": "Historio de resumoj",
+  "history_search": "Serĉi en la resumoj",
+  "history_empty": "Ankoraŭ neniuj resumoj. Ili aperas ĉi tie dum vi faras ilin.",
+  "history_no_results": "Neniu resumo kongruas kun la serĉo.",
+  "history_delete": "Forigi",
+  "history_clear": "Vakigi la historion",
+  "history_clear_confirm": "Alklaku denove por forigi ĉion",
+  "options_history": "Konservi historion de resumoj (en ĉi tiu komputilo)"
 }

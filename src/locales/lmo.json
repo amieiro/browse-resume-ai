@@ -48,5 +48,14 @@
   "options_models_refresh": "Lesele adess",
   "error_file_access": "Per riassumer i file de quell computer chì, derva i Dettai de l'estension in chrome://extensions e impizza Permett l'access ai URL di file.",
   "error_pdf_unreadable": "Se pò minga dervì quell PDF chì. El podariss vess protegiuu de ona password o danegiaa.",
-  "error_pdf_no_text": "Quell PDF chì el gh'ha minga de test de riassumer. El podariss vess faa de imagin scansionaa."
+  "error_pdf_no_text": "Quell PDF chì el gh'ha minga de test de riassumer. El podariss vess faa de imagin scansionaa.",
+  "ui_history": "Cronologia",
+  "history_title": "Cronologia di riassunt",
+  "history_search": "Cerca in di riassunt",
+  "history_empty": "Gh'è anmò nissun riassunt. Compariran chì man man che te i fet.",
+  "history_no_results": "Nissun riassunt el corrispond a la ricerca.",
+  "history_delete": "Scancella",
+  "history_clear": "Scancella la cronologia",
+  "history_clear_confirm": "Schiscia anmò per scancellà tuscòss",
+  "options_history": "Tegn una cronologia di riassunt (in su quell computer chì)"
 }

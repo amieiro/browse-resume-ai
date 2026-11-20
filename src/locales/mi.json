@@ -48,5 +48,14 @@
   "options_models_refresh": "Pānuitia ināianei",
   "error_file_access": "Hei whakarāpopoto i ngā kōnae kei tēnei rorohiko, huakina ngā Taipitopito o te toronga i chrome://extensions, ka whakakā i te Tukua te uru ki ngā URL kōnae.",
   "error_pdf_unreadable": "Kāore e taea te huaki i tēnei PDF. Tērā pea he mea tiaki ki te kupuhipa, kua pakaru rānei.",
-  "error_pdf_no_text": "Kāore he kuputuhi hei whakarāpopoto i tēnei PDF. Tērā pea he mea hanga ki ngā whakaahua kua karapatia."
+  "error_pdf_no_text": "Kāore he kuputuhi hei whakarāpopoto i tēnei PDF. Tērā pea he mea hanga ki ngā whakaahua kua karapatia.",
+  "ui_history": "Hītori",
+  "history_title": "Hītori whakarāpopototanga",
+  "history_search": "Rapua ngā whakarāpopototanga",
+  "history_empty": "Kāore anō he whakarāpopototanga. Ka puta mai i konei ina hangaia e koe.",
+  "history_no_results": "Kāore he whakarāpopototanga e ōrite ana ki te rapunga.",
+  "history_delete": "Mukua",
+  "history_clear": "Mukua te hītori",
+  "history_clear_confirm": "Pāwhiritia anō kia mukua katoa",
+  "options_history": "Puritia he hītori o ngā whakarāpopototanga (ki tēnei rorohiko)"
 }

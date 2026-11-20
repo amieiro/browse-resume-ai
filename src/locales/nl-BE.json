@@ -48,5 +48,14 @@
   "options_models_refresh": "Nu lezen",
   "error_file_access": "Om bestanden op deze computer samen te vatten, open je de Details van de extensie in chrome://extensions en zet je Toegang tot bestands-URL's toestaan aan.",
   "error_pdf_unreadable": "Deze PDF kan niet geopend worden. Hij is mogelijk beveiligd met een wachtwoord of beschadigd.",
-  "error_pdf_no_text": "Deze PDF bevat geen tekst om samen te vatten. Hij bestaat mogelijk uit gescande afbeeldingen."
+  "error_pdf_no_text": "Deze PDF bevat geen tekst om samen te vatten. Hij bestaat mogelijk uit gescande afbeeldingen.",
+  "ui_history": "Geschiedenis",
+  "history_title": "Geschiedenis van samenvattingen",
+  "history_search": "Samenvattingen doorzoeken",
+  "history_empty": "Nog geen samenvattingen. Ze verschijnen hier zodra je ze maakt.",
+  "history_no_results": "Geen samenvattingen komen overeen met de zoekopdracht.",
+  "history_delete": "Verwijderen",
+  "history_clear": "Geschiedenis wissen",
+  "history_clear_confirm": "Klik nogmaals om alles te verwijderen",
+  "options_history": "Een geschiedenis van samenvattingen bijhouden (op deze computer)"
 }

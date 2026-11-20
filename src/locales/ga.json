@@ -48,5 +48,14 @@
   "options_models_refresh": "Léigh anois iad",
   "error_file_access": "Chun achoimre a dhéanamh ar chomhaid ar an ríomhaire seo, oscail Sonraí an tsínidh in chrome://extensions agus cas air Ceadaigh rochtain ar URLanna comhaid.",
   "error_pdf_unreadable": "Ní féidir an PDF seo a oscailt. B'fhéidir go bhfuil sé cosanta le pasfhocal nó go bhfuil sé damáistithe.",
-  "error_pdf_no_text": "Níl aon téacs sa PDF seo le hachoimre a dhéanamh air. B'fhéidir gur íomhánna scanta atá ann."
+  "error_pdf_no_text": "Níl aon téacs sa PDF seo le hachoimre a dhéanamh air. B'fhéidir gur íomhánna scanta atá ann.",
+  "ui_history": "Stair",
+  "history_title": "Stair na n-achoimrí",
+  "history_search": "Cuardaigh sna hachoimrí",
+  "history_empty": "Níl aon achoimrí ann fós. Taispeánfar anseo iad de réir mar a dhéanann tú iad.",
+  "history_no_results": "Níl aon achoimre ag teacht leis an gcuardach.",
+  "history_delete": "Scrios",
+  "history_clear": "Glan an stair",
+  "history_clear_confirm": "Cliceáil arís chun gach rud a scriosadh",
+  "options_history": "Coinnigh stair na n-achoimrí (ar an ríomhaire seo)"
 }

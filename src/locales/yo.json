@@ -48,5 +48,14 @@
   "options_models_refresh": "Kà wọ́n báyìí",
   "error_file_access": "Láti ṣe àkópọ̀ àwọn fáìlì tó wà lórí kọ̀ǹpútà yìí, ṣí Àwọn Àlàyé àfikún náà ní chrome://extensions kí o sì tan Gba àyè láti wọlé sí àwọn URL fáìlì.",
   "error_pdf_unreadable": "A kò lè ṣí PDF yìí. Ó lè jẹ́ pé ọ̀rọ̀ aṣínà ni a fi dáàbò bò ó tàbí ó ti bàjẹ́.",
-  "error_pdf_no_text": "PDF yìí kò ní ọ̀rọ̀ kankan láti ṣe àkópọ̀ rẹ̀. Ó lè jẹ́ pé àwọn àwòrán tí a skáànì ni a fi ṣe é."
+  "error_pdf_no_text": "PDF yìí kò ní ọ̀rọ̀ kankan láti ṣe àkópọ̀ rẹ̀. Ó lè jẹ́ pé àwọn àwòrán tí a skáànì ni a fi ṣe é.",
+  "ui_history": "Ìtàn",
+  "history_title": "Ìtàn àwọn àkópọ̀",
+  "history_search": "Wá nínú àwọn àkópọ̀",
+  "history_empty": "Kò sí àkópọ̀ kankan síbẹ̀. Wọ́n máa hàn níbí bí o ṣe ń ṣe wọ́n.",
+  "history_no_results": "Kò sí àkópọ̀ tó bá ìwádìí náà mu.",
+  "history_delete": "Pa rẹ́",
+  "history_clear": "Pa ìtàn rẹ́",
+  "history_clear_confirm": "Tẹ̀ ẹ́ lẹ́ẹ̀kan sí i láti pa gbogbo rẹ̀ rẹ́",
+  "options_history": "Tọ́jú ìtàn àwọn àkópọ̀ (lórí kọ̀ǹpútà yìí)"
 }

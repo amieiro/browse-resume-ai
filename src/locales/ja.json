@@ -48,5 +48,14 @@
   "options_models_refresh": "今すぐ読み込む",
   "error_file_access": "このパソコン上のファイルを要約するには、chrome://extensions で拡張機能の「詳細」を開き、「ファイルの URL へのアクセスを許可する」をオンにしてください。",
   "error_pdf_unreadable": "この PDF を開けません。パスワードで保護されているか、破損している可能性があります。",
-  "error_pdf_no_text": "この PDF には要約できるテキストがありません。スキャンした画像で構成されている可能性があります。"
+  "error_pdf_no_text": "この PDF には要約できるテキストがありません。スキャンした画像で構成されている可能性があります。",
+  "ui_history": "履歴",
+  "history_title": "要約の履歴",
+  "history_search": "要約を検索",
+  "history_empty": "まだ要約はありません。要約を作成すると、ここに表示されます。",
+  "history_no_results": "検索に一致する要約はありません。",
+  "history_delete": "削除",
+  "history_clear": "履歴を消去",
+  "history_clear_confirm": "もう一度クリックするとすべて削除します",
+  "options_history": "要約の履歴を保存する（このコンピュータ上）"
 }

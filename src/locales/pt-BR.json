@@ -48,5 +48,14 @@
   "options_models_refresh": "Ler agora",
   "error_file_access": "Para resumir arquivos neste computador, abra os Detalhes da extensão em chrome://extensions e ative Permitir acesso aos URLs de arquivo.",
   "error_pdf_unreadable": "Não é possível abrir este PDF. Ele pode estar protegido por senha ou corrompido.",
-  "error_pdf_no_text": "Este PDF não tem texto para resumir. Ele pode ser composto de imagens digitalizadas."
+  "error_pdf_no_text": "Este PDF não tem texto para resumir. Ele pode ser composto de imagens digitalizadas.",
+  "ui_history": "Histórico",
+  "history_title": "Histórico de resumos",
+  "history_search": "Pesquisar nos resumos",
+  "history_empty": "Ainda não há resumos. Eles aparecem aqui conforme você os cria.",
+  "history_no_results": "Nenhum resumo corresponde à pesquisa.",
+  "history_delete": "Excluir",
+  "history_clear": "Limpar histórico",
+  "history_clear_confirm": "Clique de novo para excluir tudo",
+  "options_history": "Manter um histórico de resumos (neste computador)"
 }

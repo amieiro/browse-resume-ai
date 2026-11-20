@@ -48,5 +48,14 @@
   "options_models_refresh": "Lesa þá núna",
   "error_file_access": "Til að draga saman skrár á þessari tölvu skaltu opna Upplýsingar viðbótarinnar á chrome://extensions og kveikja á Leyfa aðgang að vefslóðum skráa.",
   "error_pdf_unreadable": "Ekki er hægt að opna þessa PDF-skrá. Hún gæti verið varin með aðgangsorði eða skemmd.",
-  "error_pdf_no_text": "Þessi PDF-skrá inniheldur engan texta til að draga saman. Hún gæti verið gerð úr skönnuðum myndum."
+  "error_pdf_no_text": "Þessi PDF-skrá inniheldur engan texta til að draga saman. Hún gæti verið gerð úr skönnuðum myndum.",
+  "ui_history": "Ferill",
+  "history_title": "Ferill samantekta",
+  "history_search": "Leita í samantektum",
+  "history_empty": "Engar samantektir enn. Þær birtast hér jafnóðum og þú gerir þær.",
+  "history_no_results": "Engin samantekt passar við leitina.",
+  "history_delete": "Eyða",
+  "history_clear": "Hreinsa feril",
+  "history_clear_confirm": "Smelltu aftur til að eyða öllu",
+  "options_history": "Halda feril samantekta (á þessari tölvu)"
 }

@@ -48,5 +48,14 @@
   "options_models_refresh": "지금 읽기",
   "error_file_access": "이 컴퓨터의 파일을 요약하려면 chrome://extensions에서 확장 프로그램의 세부정보를 열고 파일 URL에 대한 액세스 허용을 사용 설정하세요.",
   "error_pdf_unreadable": "이 PDF를 열 수 없습니다. 비밀번호로 보호되어 있거나 손상되었을 수 있습니다.",
-  "error_pdf_no_text": "이 PDF에는 요약할 텍스트가 없습니다. 스캔한 이미지로 이루어져 있을 수 있습니다."
+  "error_pdf_no_text": "이 PDF에는 요약할 텍스트가 없습니다. 스캔한 이미지로 이루어져 있을 수 있습니다.",
+  "ui_history": "기록",
+  "history_title": "요약 기록",
+  "history_search": "요약 검색",
+  "history_empty": "아직 요약이 없습니다. 요약을 만들면 여기에 표시됩니다.",
+  "history_no_results": "검색과 일치하는 요약이 없습니다.",
+  "history_delete": "삭제",
+  "history_clear": "기록 지우기",
+  "history_clear_confirm": "모두 삭제하려면 다시 클릭하세요",
+  "options_history": "요약 기록 보관(이 컴퓨터에 저장)"
 }

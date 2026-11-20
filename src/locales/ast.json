@@ -48,5 +48,14 @@
   "options_models_refresh": "Lleeles agora",
   "error_file_access": "Pa resumir ficheros d'esti ordenador, abri los Detalles de la estensión en chrome://extensions y activa Permitir l'accesu a URLs de ficheros.",
   "error_pdf_unreadable": "Nun se pue abrir esti PDF. Ye posible que tea protexíu con contraseña o estropiáu.",
-  "error_pdf_no_text": "Esti PDF nun tien testu pa resumir. Ye posible que tea fechu d'imáxenes escaniaes."
+  "error_pdf_no_text": "Esti PDF nun tien testu pa resumir. Ye posible que tea fechu d'imáxenes escaniaes.",
+  "ui_history": "Historial",
+  "history_title": "Historial de resumes",
+  "history_search": "Buscar nos resumes",
+  "history_empty": "Entá nun hai resumes. Apaecen equí a midida que los faes.",
+  "history_no_results": "Nengún resume concasa cola busca.",
+  "history_delete": "Desaniciar",
+  "history_clear": "Llimpiar l'historial",
+  "history_clear_confirm": "Primi otra vegada pa desanicialo too",
+  "options_history": "Guardar un historial de resumes (nesti ordenador)"
 }

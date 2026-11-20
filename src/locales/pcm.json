@@ -48,5 +48,14 @@
   "options_models_refresh": "Read dem now",
   "error_file_access": "To summarize files wey dey dis computer, open di extension Details for chrome://extensions and on Allow access to file URLs.",
   "error_pdf_unreadable": "We no fit open dis PDF. E fit get password wey dey protect am, or e don spoil.",
-  "error_pdf_no_text": "Dis PDF no get text wey we fit summarize. E fit be say na scanned pictures dem take make am."
+  "error_pdf_no_text": "Dis PDF no get text wey we fit summarize. E fit be say na scanned pictures dem take make am.",
+  "ui_history": "History",
+  "history_title": "Summary history",
+  "history_search": "Search di summaries",
+  "history_empty": "No summary dey yet. Dem go show here as you dey make dem.",
+  "history_no_results": "No summary match di search.",
+  "history_delete": "Delete",
+  "history_clear": "Clear history",
+  "history_clear_confirm": "Click again make e delete everything",
+  "options_history": "Keep history of summaries (for dis computer)"
 }

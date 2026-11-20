@@ -48,5 +48,14 @@
   "options_models_refresh": "Lei cumò",
   "error_file_access": "Par fâ il sunt dai files di chest computer, vierç i Detais de estension in chrome://extensions e ative Permet l'acès ai URL dai files.",
   "error_pdf_unreadable": "No si pues vierzi chest PDF. Al podarès jessi protezût cuntune password o ruvinât.",
-  "error_pdf_no_text": "Chest PDF nol à test di cui fâ il sunt. Al podarès jessi fat di imagjins scanerizadis."
+  "error_pdf_no_text": "Chest PDF nol à test di cui fâ il sunt. Al podarès jessi fat di imagjins scanerizadis.",
+  "ui_history": "Cronologjie",
+  "history_title": "Cronologjie dai sunts",
+  "history_search": "Cîr tai sunts",
+  "history_empty": "Ancjemò nissun sunt. A comparissin achì a man a man che tu ju fasis.",
+  "history_no_results": "Nissun sunt al corispuint ae ricercje.",
+  "history_delete": "Elimine",
+  "history_clear": "Nete la cronologjie",
+  "history_clear_confirm": "Fâs clic di gnûf par eliminâ dut",
+  "options_history": "Ten une cronologjie dai sunts (su chest computer)"
 }

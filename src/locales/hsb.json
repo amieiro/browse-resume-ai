@@ -48,5 +48,14 @@
   "options_models_refresh": "Nětko čitać",
   "error_file_access": "Zo byšće dataje na tutym ličaku zjał, wočińće Podrobnosće rozšěrjenja w chrome://extensions a zmóžńće Přistup k datajowym URL dowolić.",
   "error_pdf_unreadable": "Tutón PDF njeda so wočinić. Snano je z hesłom škitany abo wobškodźeny.",
-  "error_pdf_no_text": "Tutón PDF žadyn tekst za zjeće nima. Snano so ze skanowanych wobrazow składuje."
+  "error_pdf_no_text": "Tutón PDF žadyn tekst za zjeće nima. Snano so ze skanowanych wobrazow składuje.",
+  "ui_history": "Historija",
+  "history_title": "Historija zjećow",
+  "history_search": "Zjeća přepytać",
+  "history_empty": "Hišće žane zjeća njejsu. Zjewja so tu, hdyž je tworiće.",
+  "history_no_results": "Žane zjeće pytanju njewotpowěduje.",
+  "history_delete": "Zhašeć",
+  "history_clear": "Historiju wuprózdnić",
+  "history_clear_confirm": "Klikńće hišće raz, zo byšće wšitko zhašał",
+  "options_history": "Historiju zjećow składować (na tutym ličaku)"
 }

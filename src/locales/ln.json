@@ -48,5 +48,14 @@
   "options_models_refresh": "Tánga yangó sikoyo",
   "error_file_access": "Mpo na kokúmisa mikanda ya ordinatɛ́rɛ oyo na mokuse, fungolá Détails ya extension na chrome://extensions mpé pelisá Autoriser l'accès aux URL de fichier.",
   "error_pdf_unreadable": "PDF oyo ekoki kofungwama té. Ekoki kozala ebatelami na mot de passe to ebebi.",
-  "error_pdf_no_text": "PDF oyo ezalí na makomi ya kokúmisa na mokuse té. Ekoki kozala esalemi na bilili oyo ba-scanner."
+  "error_pdf_no_text": "PDF oyo ezalí na makomi ya kokúmisa na mokuse té. Ekoki kozala esalemi na bilili oyo ba-scanner.",
+  "ui_history": "Lisoló",
+  "history_title": "Lisoló ya makúsé",
+  "history_search": "Luká na makúsé",
+  "history_empty": "Makúsé ezalí naino té. Ekobima áwa ntángo okosála yangó.",
+  "history_no_results": "Likúsé moko té ekokani na boluki.",
+  "history_delete": "Longola",
+  "history_clear": "Pétolá lisoló",
+  "history_clear_confirm": "Fína lisúsu mpo na kolongola nyónso",
+  "options_history": "Bomba lisoló ya makúsé (na ordinatɛ́ɛ oyo)"
 }

@@ -48,5 +48,14 @@
   "options_models_refresh": "Vakio izao",
   "error_file_access": "Mba hamintinana ireo rakitra ao amin'ity solosaina ity, sokafy ny Antsipiriany momba ilay fanitarana ao amin'ny chrome://extensions ary alefaso ny Avelao hiditra amin'ny URL-n'ny rakitra.",
   "error_pdf_unreadable": "Tsy azo sokafana ity PDF ity. Mety voaaro amin'ny tenimiafina izy na simba.",
-  "error_pdf_no_text": "Tsy misy lahatsoratra azo fintinina ity PDF ity. Mety ho sary voaskana no namoronana azy."
+  "error_pdf_no_text": "Tsy misy lahatsoratra azo fintinina ity PDF ity. Mety ho sary voaskana no namoronana azy.",
+  "ui_history": "Tantara",
+  "history_title": "Tantaran'ny famintinana",
+  "history_search": "Karohy ao amin'ny famintinana",
+  "history_empty": "Mbola tsy misy famintinana. Hiseho eto izy ireo rehefa manao azy ianao.",
+  "history_no_results": "Tsy misy famintinana mifanaraka amin'ny fikarohana.",
+  "history_delete": "Fafao",
+  "history_clear": "Fafao ny tantara",
+  "history_clear_confirm": "Tsindrio indray mba hamafana ny rehetra",
+  "options_history": "Tehirizo ny tantaran'ny famintinana (amin'ity solosaina ity)"
 }

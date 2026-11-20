@@ -48,5 +48,14 @@
   "options_models_refresh": "Leghjele avà",
   "error_file_access": "Per riassume i schedarii di st'urdinatore, aprite i Detaglii di l'estensione in chrome://extensions è attivate Permette l'accessu à l'URL di i schedarii.",
   "error_pdf_unreadable": "Ùn si pò apre stu PDF. Pò esse prutettu da una parolla d'intesa o guastu.",
-  "error_pdf_no_text": "Stu PDF ùn hà nisun testu à riassume. Pò esse fattu d'imagine scannerizate."
+  "error_pdf_no_text": "Stu PDF ùn hà nisun testu à riassume. Pò esse fattu d'imagine scannerizate.",
+  "ui_history": "Cronolugia",
+  "history_title": "Cronolugia di i riassunti",
+  "history_search": "Circà in i riassunti",
+  "history_empty": "Ùn ci hè ancu nisun riassuntu. Cumparisceranu quì à misura chì i fate.",
+  "history_no_results": "Nisun riassuntu currisponde à a ricerca.",
+  "history_delete": "Squassà",
+  "history_clear": "Squassà a cronolugia",
+  "history_clear_confirm": "Cliccate torna per squassà tuttu",
+  "options_history": "Cunservà una cronolugia di i riassunti (nant'à st'urdinatore)"
 }

@@ -48,5 +48,14 @@
   "options_models_refresh": "Nunc lege",
   "error_file_access": "Ut fasciculos in hoc computatro summatim reddas, aperi Singula extensionis in chrome://extensions et activa Accessum ad URL fasciculorum permitte.",
   "error_pdf_unreadable": "Hic PDF aperiri non potest. Fortasse tessera protegitur aut corruptus est.",
-  "error_pdf_no_text": "Hic PDF nullum textum habet quem summatim reddas. Fortasse ex imaginibus digitaliter exceptis constat."
+  "error_pdf_no_text": "Hic PDF nullum textum habet quem summatim reddas. Fortasse ex imaginibus digitaliter exceptis constat.",
+  "ui_history": "Historia",
+  "history_title": "Historia summariorum",
+  "history_search": "Summaria quaere",
+  "history_empty": "Nulla adhuc summaria. Hic apparebunt cum ea feceris.",
+  "history_no_results": "Nulla summaria quaesitioni respondent.",
+  "history_delete": "Dele",
+  "history_clear": "Historiam purga",
+  "history_clear_confirm": "Iterum preme ut omnia deleas",
+  "options_history": "Historiam summariorum serva (in hoc computatro)"
 }

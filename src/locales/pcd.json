@@ -48,5 +48,14 @@
   "options_models_refresh": "Les lire asteure",
   "error_file_access": "Pour résumer des fichiers d’chl’ordinateu-chi, ouvrez les Détails d’l’extinsion dins chrome://extensions pi mettez in route Autoriser l’accès aux URL de fichier.",
   "error_pdf_unreadable": "O n’put point ouvrir chl’ PDF-chi. I put ête protégé par un mot d’passe ou abimé.",
-  "error_pdf_no_text": "Chl’ PDF-chi n’a point d’tekse à résumer. I put ête fait d’images scannées."
+  "error_pdf_no_text": "Chl’ PDF-chi n’a point d’tekse à résumer. I put ête fait d’images scannées.",
+  "ui_history": "Historique",
+  "history_title": "Historique des résumés",
+  "history_search": "Cacher dins les résumés",
+  "history_empty": "Point d’résumés incore. Is apparaitront ichi à mesure qu’ vous les faites.",
+  "history_no_results": "Nul résumé n’corrind à l’recherche.",
+  "history_delete": "Effacher",
+  "history_clear": "Effacher l’historique",
+  "history_clear_confirm": "Cliquez cor eune fos pour tout effacher",
+  "options_history": "Wérder un historique des résumés (su chl’ ordinateur-chi)"
 }

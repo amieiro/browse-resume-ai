@@ -48,5 +48,14 @@
   "options_models_refresh": "Odczytaj teraz",
   "error_file_access": "Aby streszczać pliki na tym komputerze, otwórz Szczegóły rozszerzenia w chrome://extensions i włącz opcję Zezwalaj na dostęp do adresów URL plików.",
   "error_pdf_unreadable": "Nie można otworzyć tego pliku PDF. Może być chroniony hasłem lub uszkodzony.",
-  "error_pdf_no_text": "Ten plik PDF nie zawiera tekstu do streszczenia. Może składać się z zeskanowanych obrazów."
+  "error_pdf_no_text": "Ten plik PDF nie zawiera tekstu do streszczenia. Może składać się z zeskanowanych obrazów.",
+  "ui_history": "Historia",
+  "history_title": "Historia podsumowań",
+  "history_search": "Szukaj w podsumowaniach",
+  "history_empty": "Nie ma jeszcze podsumowań. Pojawią się tutaj, gdy je utworzysz.",
+  "history_no_results": "Żadne podsumowanie nie pasuje do wyszukiwania.",
+  "history_delete": "Usuń",
+  "history_clear": "Wyczyść historię",
+  "history_clear_confirm": "Kliknij ponownie, aby usunąć wszystko",
+  "options_history": "Przechowuj historię podsumowań (na tym komputerze)"
 }

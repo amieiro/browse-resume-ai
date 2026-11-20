@@ -48,5 +48,14 @@
   "options_models_refresh": "Niha bixwîne",
   "error_file_access": "Ji bo kurtekirina pelên li ser vê komputerê, di chrome://extensions de Hûrguliyên pêvekê veke û Destûrê bide gihîştina URLyên pelan veke.",
   "error_pdf_unreadable": "Ev PDF nayê vekirin. Dibe ku bi şîfreyê hatibe parastin an jî xera bûbe.",
-  "error_pdf_no_text": "Di vê PDFê de nivîsek ji bo kurtekirinê tune ye. Dibe ku ji wêneyên skankirî hatibe çêkirin."
+  "error_pdf_no_text": "Di vê PDFê de nivîsek ji bo kurtekirinê tune ye. Dibe ku ji wêneyên skankirî hatibe çêkirin.",
+  "ui_history": "Dîrok",
+  "history_title": "Dîroka kurtasiyan",
+  "history_search": "Li kurtasiyan bigere",
+  "history_empty": "Hê kurtasî tune ne. Dema ku tu wan çêkî, ew ê li vir xuya bibin.",
+  "history_no_results": "Tu kurtasî li gorî lêgerînê nîne.",
+  "history_delete": "Jê bibe",
+  "history_clear": "Dîrokê paqij bike",
+  "history_clear_confirm": "Ji bo jêbirina hemûyan dîsa bitikîne",
+  "options_history": "Dîroka kurtasiyan biparêze (li ser vê komputerê)"
 }

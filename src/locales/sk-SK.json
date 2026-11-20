@@ -48,5 +48,14 @@
   "options_models_refresh": "Načítať teraz",
   "error_file_access": "Ak chcete zhrnúť súbory v tomto počítači, otvorte Podrobnosti rozšírenia na stránke chrome://extensions a zapnite Povoliť prístup k webovým adresám súborov.",
   "error_pdf_unreadable": "Tento súbor PDF nie je možné otvoriť. Môže byť chránený heslom alebo poškodený.",
-  "error_pdf_no_text": "Tento súbor PDF neobsahuje žiadny text na zhrnutie. Môže byť tvorený naskenovanými obrázkami."
+  "error_pdf_no_text": "Tento súbor PDF neobsahuje žiadny text na zhrnutie. Môže byť tvorený naskenovanými obrázkami.",
+  "ui_history": "História",
+  "history_title": "História zhrnutí",
+  "history_search": "Hľadať v zhrnutiach",
+  "history_empty": "Zatiaľ žiadne zhrnutia. Zobrazia sa tu, keď ich vytvoríte.",
+  "history_no_results": "Vyhľadávaniu nezodpovedá žiadne zhrnutie.",
+  "history_delete": "Odstrániť",
+  "history_clear": "Vymazať históriu",
+  "history_clear_confirm": "Opätovným kliknutím odstránite všetko",
+  "options_history": "Uchovávať históriu zhrnutí (v tomto počítači)"
 }

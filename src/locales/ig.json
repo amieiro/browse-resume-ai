@@ -48,5 +48,14 @@
   "options_models_refresh": "Gụọ ha ugbu a",
   "error_file_access": "Iji chịkọta faịlụ ndị dị na kọmputa a, mepee Nkọwa ndọtị ahụ na chrome://extensions ma gbanye Kwe ka ọ nweta URL faịlụ.",
   "error_pdf_unreadable": "Enweghị ike imepe PDF a. Ọ nwere ike ịbụ na e ji paswọọdụ chebe ya ma ọ bụ na o mebiri emebi.",
-  "error_pdf_no_text": "PDF a enweghị ederede a ga-achịkọta. Ọ nwere ike ịbụ na e ji foto e nyochara (scan) mee ya."
+  "error_pdf_no_text": "PDF a enweghị ederede a ga-achịkọta. Ọ nwere ike ịbụ na e ji foto e nyochara (scan) mee ya.",
+  "ui_history": "Akụkọ ihe mere",
+  "history_title": "Akụkọ nchịkọta",
+  "history_search": "Chọọ n'ime nchịkọta",
+  "history_empty": "Enweghị nchịkọta ọ bụla ugbu a. Ha ga-apụta ebe a ka ị na-eme ha.",
+  "history_no_results": "Ọ dịghị nchịkọta dabara na nchọta ahụ.",
+  "history_delete": "Hichapụ",
+  "history_clear": "Hichapụ akụkọ ihe mere",
+  "history_clear_confirm": "Pịa ọzọ iji hichapụ ihe niile",
+  "options_history": "Debe akụkọ nchịkọta (na kọmputa a)"
 }

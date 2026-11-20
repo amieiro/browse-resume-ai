@@ -48,5 +48,14 @@
   "options_models_refresh": "ሕጂ ኣንብቦም",
   "error_file_access": "ኣብዚ ኮምፒተር ዘለዉ ፋይላት ንምጽማቕ፡ ኣብ chrome://extensions ዝርዝራት ናይቲ ተወሳኺ ክፈት፡ ድሕሪኡ ናብ URL ፋይላት ምእታው ፍቐድ ኣንቅሕ።",
   "error_pdf_unreadable": "እዚ PDF ክኽፈት ኣይክእልን። ብመሕለፊ ቃል ዝተሓለወ ወይ ዝተበላሸወ ክኸውን ይኽእል።",
-  "error_pdf_no_text": "እዚ PDF ዝጽመቕ ጽሑፍ የብሉን። ካብ ዝተሰከኑ ስእልታት ዝተሰርሐ ክኸውን ይኽእል።"
+  "error_pdf_no_text": "እዚ PDF ዝጽመቕ ጽሑፍ የብሉን። ካብ ዝተሰከኑ ስእልታት ዝተሰርሐ ክኸውን ይኽእል።",
+  "ui_history": "ታሪኽ",
+  "history_title": "ታሪኽ ጽማቝታት",
+  "history_search": "ኣብ ጽማቝታት ድለ",
+  "history_empty": "ገና ጽማቝታት የለዉን። ክትሰርሖም ከለኻ ኣብዚ ይርኣዩ።",
+  "history_no_results": "ምስቲ ምድላይ ዝሰማማዕ ጽማቝ የለን።",
+  "history_delete": "ደምስስ",
+  "history_clear": "ታሪኽ ኣጽሪ",
+  "history_clear_confirm": "ኩሉ ንምድምሳስ ደጊምካ ጠውቕ",
+  "options_history": "ታሪኽ ጽማቝታት ዓቅብ (ኣብዚ ኮምፒዩተር)"
 }

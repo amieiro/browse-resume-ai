@@ -11,6 +11,8 @@ export interface CachedSummary {
   source?: 'selection';
   /** Questions asked about the summary, with their answers. */
   qa?: QaItem[];
+  /** The summary's entry in the history, to add the questions to it. */
+  historyId?: string;
 }
 
 type KeyInput = Pick<Settings, 'provider' | 'length' | 'language'> & { model: string };

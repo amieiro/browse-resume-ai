@@ -48,5 +48,14 @@
   "options_models_refresh": "Llegeix-les ara",
   "error_file_access": "Per resumir fitxers d'aquest ordinador, obriu els Detalls de l'extensió a chrome://extensions i activeu Permet l'accés als URL de fitxers.",
   "error_pdf_unreadable": "No es pot obrir aquest PDF. Pot ser que estigui protegit amb contrasenya o malmès.",
-  "error_pdf_no_text": "Aquest PDF no té text per resumir. Pot ser que estigui format per imatges escanejades."
+  "error_pdf_no_text": "Aquest PDF no té text per resumir. Pot ser que estigui format per imatges escanejades.",
+  "ui_history": "Historial",
+  "history_title": "Historial de resums",
+  "history_search": "Cerca als resums",
+  "history_empty": "Encara no hi ha cap resum. Apareixen aquí a mesura que els feu.",
+  "history_no_results": "Cap resum no coincideix amb la cerca.",
+  "history_delete": "Suprimeix",
+  "history_clear": "Esborra l'historial",
+  "history_clear_confirm": "Feu clic de nou per suprimir-ho tot",
+  "options_history": "Desa un historial dels resums (en aquest ordinador)"
 }

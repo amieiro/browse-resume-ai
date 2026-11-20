@@ -48,5 +48,14 @@
   "options_models_refresh": "Zisome sasa",
   "error_file_access": "Ili kufupisha faili zilizo kwenye kompyuta hii, fungua Maelezo ya kiendelezi katika chrome://extensions kisha uwashe Ruhusu ufikiaji wa URL za faili.",
   "error_pdf_unreadable": "PDF hii haiwezi kufunguliwa. Huenda imelindwa kwa nenosiri au imeharibika.",
-  "error_pdf_no_text": "PDF hii haina maandishi ya kufupisha. Huenda imeundwa kwa picha zilizochanganuliwa."
+  "error_pdf_no_text": "PDF hii haina maandishi ya kufupisha. Huenda imeundwa kwa picha zilizochanganuliwa.",
+  "ui_history": "Historia",
+  "history_title": "Historia ya muhtasari",
+  "history_search": "Tafuta katika muhtasari",
+  "history_empty": "Bado hakuna muhtasari. Itaonekana hapa unapoitengeneza.",
+  "history_no_results": "Hakuna muhtasari unaolingana na utafutaji.",
+  "history_delete": "Futa",
+  "history_clear": "Futa historia",
+  "history_clear_confirm": "Bofya tena ili kufuta yote",
+  "options_history": "Hifadhi historia ya muhtasari (kwenye kompyuta hii)"
 }

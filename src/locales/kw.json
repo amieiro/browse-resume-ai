@@ -48,5 +48,14 @@
   "options_models_refresh": "Redyewgh i lemmyn",
   "error_file_access": "Rag berrhe restrennow war an jynn-amontya ma, igor Manylyon an ystynnans yn chrome://extensions ha trel war Gasa hedhas dhe URLs restrennow.",
   "error_pdf_unreadable": "Ny yll an PDF ma bos igerys. Martesen yma ger-tremena orth y witha, po ev yw dregys.",
-  "error_pdf_no_text": "Nyns eus tekst dhe verrhe y'n PDF ma. Martesen yth yw gwrys a imajys skannys."
+  "error_pdf_no_text": "Nyns eus tekst dhe verrhe y'n PDF ma. Martesen yth yw gwrys a imajys skannys.",
+  "ui_history": "Istori",
+  "history_title": "Istori an berrheansow",
+  "history_search": "Hwilas y'n berrheansow",
+  "history_empty": "Nyns eus berrheans vyth hwath. Y a omdhiskwa omma ha why orth aga gul.",
+  "history_no_results": "Nyns eus berrheans vyth ow kevelsi gans an hwilas.",
+  "history_delete": "Dilea",
+  "history_clear": "Klerhe an istori",
+  "history_clear_confirm": "Klyckyewgh arta rag dilea oll",
+  "options_history": "Gwitha istori an berrheansow (y'n jynn-amontya ma)"
 }

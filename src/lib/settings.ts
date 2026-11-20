@@ -22,6 +22,8 @@ export interface Settings {
   modelLists: Record<ProviderId, string[]>;
   /** Models the user added by hand, shown after the detected ones. */
   extraModels: Record<ProviderId, string[]>;
+  /** Keep finished summaries in the history (on this computer only). */
+  keepHistory: boolean;
   /** Names to show for detected models (from the catalog; never stored). */
   modelLabels?: Partial<Record<ProviderId, Record<string, string>>>;
 }
@@ -43,6 +45,7 @@ export function defaultSettings(uiLanguage: string): Settings {
       ollama: [],
     },
     extraModels: { claude: [], codex: [], ollama: [] },
+    keepHistory: true,
   };
 }
 

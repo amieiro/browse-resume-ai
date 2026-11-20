@@ -48,5 +48,14 @@
   "options_models_refresh": "ܩܪܝ ܐܢܝܢ ܗܫܐ",
   "error_file_access": "ܕܬܦܣܘܩ ܦܘܪ̈ܣܐ ܕܒܗܢܐ ܚܫܘܒܐ، ܦܬܚ ܦܘܪ̈ܫܢܐ ܕܬܘܣܦܬܐ ܒ chrome://extensions ܘܫܪܐ ܫܒܘܩ ܡܛܝܬܐ ܠ URL ܕܦܘܪ̈ܣܐ.",
   "error_pdf_unreadable": "ܗܢܐ PDF ܠܐ ܡܫܟܚ ܠܡܬܦܬܚܘ. ܡܫܟܚ ܕܢܗܘܐ ܢܛܝܪܐ ܒܡܠܬܐ ܕܥܒܘܪܐ ܐܘ ܡܚܒܠܐ.",
-  "error_pdf_no_text": "ܒܗܢܐ PDF ܠܝܬ ܟܬܒܐ ܠܬܦܣܘܩܐ. ܡܫܟܚ ܕܢܗܘܐ ܥܒܝܕܐ ܡܢ ܨܘܪ̈ܬܐ ܡܣܩܢ̈ܐ."
+  "error_pdf_no_text": "ܒܗܢܐ PDF ܠܝܬ ܟܬܒܐ ܠܬܦܣܘܩܐ. ܡܫܟܚ ܕܢܗܘܐ ܥܒܝܕܐ ܡܢ ܨܘܪ̈ܬܐ ܡܣܩܢ̈ܐ.",
+  "ui_history": "ܬܫܥܝܬܐ",
+  "history_title": "ܬܫܥܝܬܐ ܕܦܣܝܩܬܐ",
+  "history_search": "ܒܨܝ ܒܦܣܝܩܬܐ",
+  "history_empty": "ܥܕܡܐ ܠܗܫܐ ܠܝܬ ܦܣܝܩܬܐ. ܡܬܚܙܝܢ ܗܪܟܐ ܐܝܟ ܕܥܒܕ ܐܢܬ ܠܗܝܢ.",
+  "history_no_results": "ܠܝܬ ܦܣܝܩܬܐ ܕܡܫܬܘܝܐ ܠܒܥܬܐ.",
+  "history_delete": "ܫܘܦ",
+  "history_clear": "ܫܘܦ ܬܫܥܝܬܐ",
+  "history_clear_confirm": "ܛܪܘܦ ܬܘܒ ܕܬܫܘܦ ܟܠ ܡܕܡ",
+  "options_history": "ܢܛܘܪ ܬܫܥܝܬܐ ܕܦܣܝܩܬܐ (ܒܗܢܐ ܚܫܘܒܐ)"
 }

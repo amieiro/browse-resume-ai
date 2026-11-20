@@ -48,5 +48,14 @@
   "options_models_refresh": "Läs in dem nu",
   "error_file_access": "Om du vill sammanfatta filer på den här datorn öppnar du tilläggets Information på chrome://extensions och aktiverar Tillåt åtkomst till webbadresser för filer.",
   "error_pdf_unreadable": "Den här PDF-filen kan inte öppnas. Den kan vara lösenordsskyddad eller skadad.",
-  "error_pdf_no_text": "Den här PDF-filen har ingen text att sammanfatta. Den kan bestå av skannade bilder."
+  "error_pdf_no_text": "Den här PDF-filen har ingen text att sammanfatta. Den kan bestå av skannade bilder.",
+  "ui_history": "Historik",
+  "history_title": "Sammanfattningshistorik",
+  "history_search": "Sök i sammanfattningarna",
+  "history_empty": "Inga sammanfattningar än. De visas här när du skapar dem.",
+  "history_no_results": "Inga sammanfattningar matchar sökningen.",
+  "history_delete": "Ta bort",
+  "history_clear": "Rensa historik",
+  "history_clear_confirm": "Klicka igen för att ta bort allt",
+  "options_history": "Spara en historik över sammanfattningar (på den här datorn)"
 }

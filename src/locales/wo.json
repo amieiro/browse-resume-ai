@@ -48,5 +48,14 @@
   "options_models_refresh": "Jàng leen léegi",
   "error_file_access": "Ngir tënk ay fichier yu nekk ci ordinatëer bii, ubbil Leeral yi ci yokkute bi ci chrome://extensions te taal May jot ci URL yu fichier yi.",
   "error_pdf_unreadable": "Mënuñu ubbi PDF bii. Man na am mu aar ak baatu jàll walla mu yàqu.",
-  "error_pdf_no_text": "PDF bii amul benn mbind bu ñu mën a tënk. Man na am mu defaru ak ay nataal yu ñu skane."
+  "error_pdf_no_text": "PDF bii amul benn mbind bu ñu mën a tënk. Man na am mu defaru ak ay nataal yu ñu skane.",
+  "ui_history": "Taariix",
+  "history_title": "Taariixu tënk yi",
+  "history_search": "Seet ci tënk yi",
+  "history_empty": "Amagul benn tënk. Dinañu feeñ fii bu nga leen defee.",
+  "history_no_results": "Amul benn tënk bu dëppoo ak seet gi.",
+  "history_delete": "Far",
+  "history_clear": "Far taariix bi",
+  "history_clear_confirm": "Bësal ci beneen yoon ngir far lépp",
+  "options_history": "Denc taariixu tënk yi (ci ordinatëer bii)"
 }

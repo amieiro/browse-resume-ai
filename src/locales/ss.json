@@ -48,5 +48,14 @@
   "options_models_refresh": "Lufundze nyalo",
   "error_file_access": "Kute ufinyete emafayela lakulelikhompyutha, vula Imininingwane yesengeto ku-chrome://extensions bese uvula Vumela kufinyelela kuma-URL emafayela.",
   "error_pdf_unreadable": "Le-PDF ayivuleki. Kungenteka ivikelwe ngephasiwedi noma yonakele.",
-  "error_pdf_no_text": "Le-PDF ayinawo umbhalo longawufinyeta. Kungenteka yentiwe ngetitfombe letiskeniwe."
+  "error_pdf_no_text": "Le-PDF ayinawo umbhalo longawufinyeta. Kungenteka yentiwe ngetitfombe letiskeniwe.",
+  "ui_history": "Umlandvo",
+  "history_title": "Umlandvo wetifinyeto",
+  "history_search": "Sesha etifinyetweni",
+  "history_empty": "Kute tifinyeto okwanyalo. Titawuvela lapha njengoba utenta.",
+  "history_no_results": "Kute sifinyeto lesifanana nekusesha.",
+  "history_delete": "Sula",
+  "history_clear": "Sula umlandvo",
+  "history_clear_confirm": "Chofoza futsi kute usule konkhe",
+  "options_history": "Gcina umlandvo wetifinyeto (kulelikhompyutha)"
 }

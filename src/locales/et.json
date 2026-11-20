@@ -48,5 +48,14 @@
   "options_models_refresh": "Loe need kohe",
   "error_file_access": "Selle arvuti failidest kokkuvõtte tegemiseks ava chrome://extensions lehel laienduse Üksikasjad ja lülita sisse Luba juurdepääs failide URL-idele.",
   "error_pdf_unreadable": "Seda PDF-faili ei saa avada. See võib olla parooliga kaitstud või kahjustatud.",
-  "error_pdf_no_text": "Selles PDF-failis pole teksti, millest kokkuvõtet teha. See võib koosneda skannitud piltidest."
+  "error_pdf_no_text": "Selles PDF-failis pole teksti, millest kokkuvõtet teha. See võib koosneda skannitud piltidest.",
+  "ui_history": "Ajalugu",
+  "history_title": "Kokkuvõtete ajalugu",
+  "history_search": "Otsi kokkuvõtetest",
+  "history_empty": "Kokkuvõtteid veel pole. Need ilmuvad siia, kui neid teed.",
+  "history_no_results": "Otsingule ei vasta ükski kokkuvõte.",
+  "history_delete": "Kustuta",
+  "history_clear": "Tühjenda ajalugu",
+  "history_clear_confirm": "Klõpsa uuesti, et kõik kustutada",
+  "options_history": "Hoia kokkuvõtete ajalugu (selles arvutis)"
 }

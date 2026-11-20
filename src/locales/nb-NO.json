@@ -48,5 +48,14 @@
   "options_models_refresh": "Les dem nå",
   "error_file_access": "For å oppsummere filer på denne datamaskinen, åpne Detaljer for utvidelsen i chrome://extensions og slå på Tillat tilgang til fil-nettadresser.",
   "error_pdf_unreadable": "Denne PDF-en kan ikke åpnes. Den kan være passordbeskyttet eller skadet.",
-  "error_pdf_no_text": "Denne PDF-en har ingen tekst å oppsummere. Den kan bestå av skannede bilder."
+  "error_pdf_no_text": "Denne PDF-en har ingen tekst å oppsummere. Den kan bestå av skannede bilder.",
+  "ui_history": "Historikk",
+  "history_title": "Sammendragshistorikk",
+  "history_search": "Søk i sammendragene",
+  "history_empty": "Ingen sammendrag ennå. De vises her etter hvert som du lager dem.",
+  "history_no_results": "Ingen sammendrag samsvarer med søket.",
+  "history_delete": "Slett",
+  "history_clear": "Tøm historikken",
+  "history_clear_confirm": "Klikk igjen for å slette alt",
+  "options_history": "Behold en historikk over sammendrag (på denne datamaskinen)"
 }

@@ -48,5 +48,14 @@
   "options_models_refresh": "Les teir nú",
   "error_file_access": "Fyri at gera samandrátt av fílum á hesi teldu, lat Smálutir hjá víðkanini upp í chrome://extensions og tendra Loyv atgongd til fílu-URL'ar.",
   "error_pdf_unreadable": "Hetta PDF-skjalið kann ikki latast upp. Tað kann vera vart við loyniorði ella skatt.",
-  "error_pdf_no_text": "Hetta PDF-skjalið hevur ongan tekst at gera samandrátt av. Tað kann vera gjørt av skannaðum myndum."
+  "error_pdf_no_text": "Hetta PDF-skjalið hevur ongan tekst at gera samandrátt av. Tað kann vera gjørt av skannaðum myndum.",
+  "ui_history": "Søga",
+  "history_title": "Søga um samandráttir",
+  "history_search": "Leita í samandráttunum",
+  "history_empty": "Enn eingir samandráttir. Teir koma her, so hvørt sum tú gert teir.",
+  "history_no_results": "Eingin samandráttur samsvarar við leitingina.",
+  "history_delete": "Strika",
+  "history_clear": "Rudda søguna",
+  "history_clear_confirm": "Trýst aftur fyri at strika alt",
+  "options_history": "Goym eina søgu um samandráttir (á hesi teldu)"
 }

@@ -48,5 +48,14 @@
   "options_models_refresh": "Lèghe·las como",
   "error_file_access": "Pro resumire archìvios in custu elaboradore, aberi sos Detàllios de s'estensione in chrome://extensions e ativa Permite s'atzessu a sos URL de sos archìvios.",
   "error_pdf_unreadable": "Custu PDF non si podet abèrrere. Podet èssere protetu cun una crae o dannigiadu.",
-  "error_pdf_no_text": "Custu PDF non tenet testu de resumire. Podet èssere fatu de immàgines iscansionadas."
+  "error_pdf_no_text": "Custu PDF non tenet testu de resumire. Podet èssere fatu de immàgines iscansionadas.",
+  "ui_history": "Cronologia",
+  "history_title": "Cronologia de sos resumos",
+  "history_search": "Chirca in sos resumos",
+  "history_empty": "Galu non b'at resumos. Ant a apàrrere inoghe a manu a manu chi los faghes.",
+  "history_no_results": "Nissunu resumu currispondet a sa chirca.",
+  "history_delete": "Cantzella",
+  "history_clear": "Cantzella sa cronologia",
+  "history_clear_confirm": "Incarca torra pro cantzellare totu",
+  "options_history": "Mantene una cronologia de sos resumos (in custu computer)"
 }

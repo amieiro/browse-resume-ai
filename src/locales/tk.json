@@ -48,5 +48,14 @@
   "options_models_refresh": "Häzir okaň",
   "error_file_access": "Bu kompýuterdäki faýllary gysgaltmak üçin chrome://extensions sahypasynda giňeltmäniň Jikme-jikliklerini açyň we Faýl URL-lerine girmäge rugsat ber funksiýasyny açyň.",
   "error_pdf_unreadable": "Bu PDF faýlyny açyp bolmaýar. Ol parol bilen goralan ýa-da zaýalanan bolup biler.",
-  "error_pdf_no_text": "Bu PDF faýlynda gysgaltmak üçin tekst ýok. Ol skanirlenen suratlardan ybarat bolup biler."
+  "error_pdf_no_text": "Bu PDF faýlynda gysgaltmak üçin tekst ýok. Ol skanirlenen suratlardan ybarat bolup biler.",
+  "ui_history": "Taryh",
+  "history_title": "Gysgaça mazmunlaryň taryhy",
+  "history_search": "Gysgaça mazmunlarda gözle",
+  "history_empty": "Entek gysgaça mazmun ýok. Olary dörediňizçe şu ýerde peýda bolar.",
+  "history_no_results": "Gözlege laýyk gelýän gysgaça mazmun ýok.",
+  "history_delete": "Poz",
+  "history_clear": "Taryhy arassala",
+  "history_clear_confirm": "Hemmesini pozmak üçin ýene basyň",
+  "options_history": "Gysgaça mazmunlaryň taryhyny sakla (bu kompýuterde)"
 }

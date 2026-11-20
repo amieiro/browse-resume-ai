@@ -48,5 +48,14 @@
   "options_models_refresh": "Lesa nan awor",
   "error_file_access": "Pa resumí archivonan riba e computer aki, habri e Detalles di e extension den chrome://extensions i activa Permiti acceso na URL di archivo.",
   "error_pdf_unreadable": "No por habri e PDF aki. E por ta protegí cu un contraseña of dañá.",
-  "error_pdf_no_text": "E PDF aki no tin texto pa resumí. E por ta trahá di imagennan scaneá."
+  "error_pdf_no_text": "E PDF aki no tin texto pa resumí. E por ta trahá di imagennan scaneá.",
+  "ui_history": "Historia",
+  "history_title": "Historia di resumennan",
+  "history_search": "Busca den e resumennan",
+  "history_empty": "Ainda no tin resumen. Nan ta aparece aki segun bo ta haci nan.",
+  "history_no_results": "Ningun resumen no ta cuadra cu e busqueda.",
+  "history_delete": "Borra",
+  "history_clear": "Limpia historia",
+  "history_clear_confirm": "Klik un biaha mas pa borra tur",
+  "options_history": "Warda un historia di resumennan (riba e computer aki)"
 }

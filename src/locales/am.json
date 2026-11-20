@@ -48,5 +48,14 @@
   "options_models_refresh": "አሁን አንብባቸው",
   "error_file_access": "በዚህ ኮምፒውተር ላይ ያሉ ፋይሎችን ለማጠቃለል፣ በchrome://extensions ውስጥ የቅጥያውን ዝርዝሮች ይክፈቱ እና የፋይል ዩአርኤሎችን መዳረሻ ፍቀድን ያብሩ።",
   "error_pdf_unreadable": "ይህ PDF ሊከፈት አይችልም። በይለፍ ቃል የተጠበቀ ወይም የተበላሸ ሊሆን ይችላል።",
-  "error_pdf_no_text": "ይህ PDF የሚጠቃለል ጽሑፍ የለውም። ከተቃኙ ምስሎች የተሠራ ሊሆን ይችላል።"
+  "error_pdf_no_text": "ይህ PDF የሚጠቃለል ጽሑፍ የለውም። ከተቃኙ ምስሎች የተሠራ ሊሆን ይችላል።",
+  "ui_history": "ታሪክ",
+  "history_title": "የማጠቃለያዎች ታሪክ",
+  "history_search": "ማጠቃለያዎቹን ይፈልጉ",
+  "history_empty": "እስካሁን ምንም ማጠቃለያ የለም። ሲሰሯቸው እዚህ ይታያሉ።",
+  "history_no_results": "ከፍለጋው ጋር የሚዛመድ ማጠቃለያ የለም።",
+  "history_delete": "ሰርዝ",
+  "history_clear": "ታሪክን አጽዳ",
+  "history_clear_confirm": "ሁሉንም ለመሰረዝ እንደገና ጠቅ ያድርጉ",
+  "options_history": "የማጠቃለያዎችን ታሪክ አቆይ (በዚህ ኮምፒውተር ላይ)"
 }

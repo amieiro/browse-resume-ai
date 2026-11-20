@@ -48,5 +48,14 @@
   "options_models_refresh": "Read them now",
   "error_file_access": "To summarize files on this computer, open the extension's Details in chrome://extensions and turn on Allow access to file URLs.",
   "error_pdf_unreadable": "This PDF can't be opened. It may be protected with a password or damaged.",
-  "error_pdf_no_text": "This PDF has no text to summarize. It may be made of scanned images."
+  "error_pdf_no_text": "This PDF has no text to summarize. It may be made of scanned images.",
+  "ui_history": "History",
+  "history_title": "Summary history",
+  "history_search": "Search the summaries",
+  "history_empty": "No summaries yet. They appear here as you make them.",
+  "history_no_results": "No summaries match the search.",
+  "history_delete": "Delete",
+  "history_clear": "Clear history",
+  "history_clear_confirm": "Click again to delete all",
+  "options_history": "Keep a history of summaries (on this computer)"
 }

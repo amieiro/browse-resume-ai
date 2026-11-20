@@ -48,5 +48,14 @@
   "options_models_refresh": "Ehon foro",
   "error_file_access": "Ey kompiutar or fail óilor sóddo goríbollá, chrome://extensions ot extension or Details hulo aar Allow access to file URLs on goró.",
   "error_pdf_unreadable": "Ey PDF yán hulifarer no. Íba fasword dí héfazot gorá ói farer, nóile nosto ói gesé.",
-  "error_pdf_no_text": "Ey PDF yán ot sóddo goríbollá kunó lekha nái. Íba skén gorá sobi dí bana ói farer."
+  "error_pdf_no_text": "Ey PDF yán ot sóddo goríbollá kunó lekha nái. Íba skén gorá sobi dí bana ói farer.",
+  "ui_history": "Itihash",
+  "history_title": "Sóti hotha or itihash",
+  "history_search": "Sóti hotha ót tuwáo",
+  "history_empty": "Ehonó hono sóti hotha nái. Tuñí banáile ita ehán ot dehá zaibo.",
+  "history_no_results": "Tuwáibar lot milé erán hono sóti hotha nái.",
+  "history_delete": "Delete gor",
+  "history_clear": "Itihash saf gor",
+  "history_clear_confirm": "Beggún delete goríbar lla arbar klik gor",
+  "options_history": "Sóti hotha or itihash rakh (ey kompiutar ot)"
 }

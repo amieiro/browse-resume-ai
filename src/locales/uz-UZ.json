@@ -48,5 +48,14 @@
   "options_models_refresh": "Hozir o‘qish",
   "error_file_access": "Bu kompyuterdagi fayllarning xulosasini olish uchun chrome://extensions sahifasida kengaytmaning Tafsilotlar bo‘limini oching va Fayl URL manzillariga ruxsat berish parametrini yoqing.",
   "error_pdf_unreadable": "Bu PDF faylni ochib bo‘lmaydi. U parol bilan himoyalangan yoki shikastlangan bo‘lishi mumkin.",
-  "error_pdf_no_text": "Bu PDF faylda xulosa uchun matn yo‘q. U skanerlangan rasmlardan iborat bo‘lishi mumkin."
+  "error_pdf_no_text": "Bu PDF faylda xulosa uchun matn yo‘q. U skanerlangan rasmlardan iborat bo‘lishi mumkin.",
+  "ui_history": "Tarix",
+  "history_title": "Xulosalar tarixi",
+  "history_search": "Xulosalardan qidirish",
+  "history_empty": "Hozircha xulosalar yo‘q. Ularni yaratganingizda shu yerda paydo bo‘ladi.",
+  "history_no_results": "Qidiruvga mos xulosa topilmadi.",
+  "history_delete": "O‘chirish",
+  "history_clear": "Tarixni tozalash",
+  "history_clear_confirm": "Hammasini o‘chirish uchun yana bosing",
+  "options_history": "Xulosalar tarixini saqlash (shu kompyuterda)"
 }

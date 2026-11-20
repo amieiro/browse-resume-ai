@@ -48,5 +48,14 @@
   "options_models_refresh": "Læs dem nu",
   "error_file_access": "Hvis du vil opsummere filer på denne computer, skal du åbne udvidelsens Detaljer i chrome://extensions og slå Tillad adgang til filwebadresser til.",
   "error_pdf_unreadable": "Denne PDF kan ikke åbnes. Den er muligvis beskyttet med en adgangskode eller beskadiget.",
-  "error_pdf_no_text": "Denne PDF har ingen tekst at opsummere. Den består muligvis af scannede billeder."
+  "error_pdf_no_text": "Denne PDF har ingen tekst at opsummere. Den består muligvis af scannede billeder.",
+  "ui_history": "Historik",
+  "history_title": "Opsummeringshistorik",
+  "history_search": "Søg i opsummeringerne",
+  "history_empty": "Ingen opsummeringer endnu. De vises her, efterhånden som du laver dem.",
+  "history_no_results": "Ingen opsummeringer matcher søgningen.",
+  "history_delete": "Slet",
+  "history_clear": "Ryd historik",
+  "history_clear_confirm": "Klik igen for at slette alle",
+  "options_history": "Gem en historik over opsummeringer (på denne computer)"
 }

@@ -48,5 +48,14 @@
   "options_models_refresh": "Amma dubbisi",
   "error_file_access": "Faayiloota kompiitara kana irra jiran cuunfuuf, chrome://extensions keessatti Bal'ina dabalataa bani, Faayila URL akka argatu eeyyami banii.",
   "error_pdf_unreadable": "PDF kun banamuu hin danda'u. Jecha icciitiin eegamee ykn miidhamee ta'uu danda'a.",
-  "error_pdf_no_text": "PDF kun barreeffama cuunfamu hin qabu. Suuraalee iskaanii irraa hojjetame ta'uu danda'a."
+  "error_pdf_no_text": "PDF kun barreeffama cuunfamu hin qabu. Suuraalee iskaanii irraa hojjetame ta'uu danda'a.",
+  "ui_history": "Seenaa",
+  "history_title": "Seenaa cuunfaawwanii",
+  "history_search": "Cuunfaawwan keessa barbaadi",
+  "history_empty": "Ammaaf cuunfaan hin jiru. Akkuma isaan hojjettuun asitti mul'atu.",
+  "history_no_results": "Cuunfaan barbaacha waliin walsimu hin jiru.",
+  "history_delete": "Haqi",
+  "history_clear": "Seenaa qulqulleessi",
+  "history_clear_confirm": "Hunda haquuf ammas cuqaasi",
+  "options_history": "Seenaa cuunfaawwanii qabadhu (kompiitara kana irratti)"
 }

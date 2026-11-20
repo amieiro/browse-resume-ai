@@ -48,5 +48,14 @@
   "options_models_refresh": "'A tai'o i teie nei",
   "error_file_access": "No te fa'apoto i te mau fichier i ni'a i teie roro uira, 'a pāheru i te mau Ha'amāramaramara'a o te fa'arahira'a i roto i chrome://extensions e 'a fa'a'ohipa i te Fa'ati'a i te tomora'a i te mau URL fichier.",
   "error_pdf_unreadable": "'Aita teie PDF e nehenehe e iriti. Peneia'e ua pārurū-hia 'oia e te hō'ē parau huna, 'aore ra ua ino.",
-  "error_pdf_no_text": "'Aita e papa'ira'a i roto i teie PDF no te fa'apoto. Peneia'e ua hāmanihia 'oia i te mau hoho'a i 'apo-hia na roto i te scanner."
+  "error_pdf_no_text": "'Aita e papa'ira'a i roto i teie PDF no te fa'apoto. Peneia'e ua hāmanihia 'oia i te mau hoho'a i 'apo-hia na roto i te scanner.",
+  "ui_history": "'Ā'amu",
+  "history_title": "'Ā'amu o te tātarara'a poto",
+  "history_search": "'Imi i roto i te tātarara'a poto",
+  "history_empty": "'Aita ā e tātarara'a poto. E fa'a'itehia mai i 'ō nei ia hāmani 'oe.",
+  "history_no_results": "'Aita e tātarara'a poto e tū'ati i te 'imira'a.",
+  "history_delete": "Fa'a'ore",
+  "history_clear": "Fa'a'ore i te 'ā'amu",
+  "history_clear_confirm": "Pata fa'ahou no te fa'a'ore i te mau mea ato'a",
+  "options_history": "Ha'apa'o i te 'ā'amu o te tātarara'a poto (i ni'a i teie roro uira)"
 }

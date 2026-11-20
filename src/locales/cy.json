@@ -48,5 +48,14 @@
   "options_models_refresh": "Darllen nhw nawr",
   "error_file_access": "I grynhoi ffeiliau ar y cyfrifiadur hwn, agorwch Manylion yr estyniad yn chrome://extensions a throi Caniatáu mynediad i URLau ffeiliau ymlaen.",
   "error_pdf_unreadable": "Does dim modd agor y PDF hwn. Efallai ei fod wedi'i ddiogelu â chyfrinair neu wedi'i ddifrodi.",
-  "error_pdf_no_text": "Does dim testun i'w grynhoi yn y PDF hwn. Efallai ei fod wedi'i wneud o ddelweddau wedi'u sganio."
+  "error_pdf_no_text": "Does dim testun i'w grynhoi yn y PDF hwn. Efallai ei fod wedi'i wneud o ddelweddau wedi'u sganio.",
+  "ui_history": "Hanes",
+  "history_title": "Hanes crynodebau",
+  "history_search": "Chwilio'r crynodebau",
+  "history_empty": "Dim crynodebau eto. Maen nhw'n ymddangos yma wrth i chi eu creu.",
+  "history_no_results": "Does dim crynodebau'n cyfateb i'r chwiliad.",
+  "history_delete": "Dileu",
+  "history_clear": "Clirio'r hanes",
+  "history_clear_confirm": "Cliciwch eto i ddileu'r cyfan",
+  "options_history": "Cadw hanes o grynodebau (ar y cyfrifiadur hwn)"
 }

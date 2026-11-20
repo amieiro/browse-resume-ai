@@ -456,5 +456,65 @@ describe('Summarizer', () => {
       expect(t.deps.extract).not.toHaveBeenCalled();
     });
   });
+
+  describe('history', () => {
+    function withHistory(p: Provider, settings: Partial<Settings> = {}) {
+      const history = { add: vi.fn(async () => 'h1'), updateQuestions: vi.fn(async () => {}) };
+      return { ...setup(p, { history }, settings), history };
+    }
+
+    it('keeps each new summary, with what it was made with', async () => {
+      const t = withHistory(provider(() => chunks('Summary')), { length: 'short', language: 'gl-ES' });
+      await t.s.start(1, { force: false });
+      expect(t.history.add).toHaveBeenCalledWith({
+        url: 'https://e.com/a',
+        title: 'Title',
+        text: 'Summary',
+        truncated: false,
+        provider: 'claude',
+        model: 'sonnet',
+        length: 'short',
+        language: 'gl-ES',
+      });
+    });
+
+    it('marks selections, and does not keep a summary served from the cache again', async () => {
+      const t = withHistory(provider(() => chunks('Summary')));
+      await t.s.startSelection(1, { url: 'https://e.com/a', title: 'Page', selectionText: '' });
+      expect(t.history.add).toHaveBeenLastCalledWith(expect.objectContaining({ source: 'selection', text: 'Summary' }));
+      await t.s.start(1, { force: false });
+      await t.s.start(1, { force: false });
+      expect(t.history.add).toHaveBeenCalledTimes(2);
+    });
+
+    it('keeps nothing when the history is off, or when the summary fails', async () => {
+      const off = withHistory(provider(() => chunks('Summary')), { keepHistory: false });
+      await off.s.start(1, { force: false });
+      expect(off.history.add).not.toHaveBeenCalled();
+      const failing = withHistory(
+        provider(async function* () {
+          yield 'Part';
+          throw new Error('boom');
+        }),
+      );
+      await failing.s.start(1, { force: false });
+      expect(failing.history.add).not.toHaveBeenCalled();
+    });
+
+    it('adds the questions and answers to the entry, also after a service worker restart', async () => {
+      let n = 0;
+      const p = provider(() => (n++ === 0 ? chunks('Summary') : chunks('Answer')));
+      const t = withHistory(p);
+      await t.s.start(1, { force: false });
+      await t.s.ask(1, 'Q?');
+      expect(t.history.updateQuestions).toHaveBeenLastCalledWith('h1', [{ question: 'Q?', answer: 'Answer', status: 'done' }]);
+
+      const t2 = withHistory(provider(() => chunks('Second')));
+      t2.s.subscribe(1, () => {});
+      await vi.waitFor(() => expect(t2.s.getState(1)).toMatchObject({ status: 'done' }));
+      await t2.s.ask(1, 'Again?');
+      expect(t2.history.updateQuestions).toHaveBeenLastCalledWith('h1', expect.arrayContaining([expect.objectContaining({ question: 'Again?' })]));
+    });
+  });
 });
 

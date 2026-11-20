@@ -48,5 +48,14 @@
   "options_models_refresh": "Leyer-las agora",
   "error_file_access": "Pa resumir fichers d'este ordinador, ubre os Detalles de l'extensión en chrome://extensions y activa Permitir l'acceso a URL de fichers.",
   "error_pdf_unreadable": "No se puede ubrir este PDF. Puede estar protechiu con clau u malmeso.",
-  "error_pdf_no_text": "Este PDF no tiene texto pa resumir. Puede estar feito d'imachens escaneadas."
+  "error_pdf_no_text": "Este PDF no tiene texto pa resumir. Puede estar feito d'imachens escaneadas.",
+  "ui_history": "Historial",
+  "history_title": "Historial de resumens",
+  "history_search": "Buscar en os resumens",
+  "history_empty": "Encara no i hai garra resumen. Amaneixen aquí a mida que los fas.",
+  "history_no_results": "Garra resumen no coincide con a busqueda.",
+  "history_delete": "Borrar",
+  "history_clear": "Borrar l'historial",
+  "history_clear_confirm": "Fe clic atra vegada pa borrar-lo tot",
+  "options_history": "Alzar un historial d'os resumens (en este ordinador)"
 }

@@ -48,5 +48,14 @@
   "options_models_refresh": "Lees ze noen",
   "error_file_access": "Um bestanden op disse computer samen te vatten, maak de Details van de extensie lös in chrome://extensions en zet Toegang tot bestands-URL's toestaan an.",
   "error_pdf_unreadable": "Disse PDF kan nich lösmaakt wodn. Hee is meschien met n wachtwoord beveiligd of beschadigd.",
-  "error_pdf_no_text": "Disse PDF hef gin tekst um samen te vatten. Hee besteet meschien oet escande ofbeeldingen."
+  "error_pdf_no_text": "Disse PDF hef gin tekst um samen te vatten. Hee besteet meschien oet escande ofbeeldingen.",
+  "ui_history": "Geschiedenis",
+  "history_title": "Geschiedenis van samenvattingen",
+  "history_search": "Zeuk in de samenvattingen",
+  "history_empty": "Nog gin samenvattingen. Ze verschient hier as ie ze maakt.",
+  "history_no_results": "Gin samenvattingen dee bie de zeukopdracht passt.",
+  "history_delete": "Wegdoon",
+  "history_clear": "Geschiedenis wissen",
+  "history_clear_confirm": "Klik nog n keer um alles weg te doon",
+  "options_history": "Hol n geschiedenis van samenvattingen bie (op disse computer)"
 }

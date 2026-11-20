@@ -48,5 +48,14 @@
   "options_models_refresh": "Ɣer-itent tura",
   "error_file_access": "I usegzel n yifuyla n uselkim-a, ldi Talqayt n usiɣzef deg chrome://extensions syen rmed Sireg anekcum ɣer tansiwin URL n yifuyla.",
   "error_pdf_unreadable": "PDF-a ur yezmir ara ad yeldi. Ahat yettwammesten s wawal uffir neɣ yexsar.",
-  "error_pdf_no_text": "PDF-a ulac deg-s aḍris i usegzel. Ahat yettwag s tugniwin yettwasekanin."
+  "error_pdf_no_text": "PDF-a ulac deg-s aḍris i usegzel. Ahat yettwag s tugniwin yettwasekanin.",
+  "ui_history": "Amazray",
+  "history_title": "Amazray n igzulen",
+  "history_search": "Nadi deg igzulen",
+  "history_empty": "Ulac igzulen akka tura. Ad d-banen da mi ara ten-txedmeḍ.",
+  "history_no_results": "Ulac agzul yemṣadan d unadi.",
+  "history_delete": "Kkes",
+  "history_clear": "Sfeḍ amazray",
+  "history_clear_confirm": "Sit tikkelt-nniḍen akken ad tekkseḍ kullec",
+  "options_history": "Ḥrez amazray n igzulen (deg uselkim-a)"
 }

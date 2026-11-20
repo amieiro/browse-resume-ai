@@ -48,5 +48,14 @@
   "options_models_refresh": "立即讀取",
   "error_file_access": "如要摘要此電腦上的檔案，請在 chrome://extensions 開啟擴充功能的「詳細資料」，然後開啟「允許存取檔案網址」。",
   "error_pdf_unreadable": "無法開啟此 PDF。檔案可能受密碼保護或已損毀。",
-  "error_pdf_no_text": "此 PDF 沒有可摘要的文字。檔案可能由掃描圖片組成。"
+  "error_pdf_no_text": "此 PDF 沒有可摘要的文字。檔案可能由掃描圖片組成。",
+  "ui_history": "歷史記錄",
+  "history_title": "摘要歷史記錄",
+  "history_search": "搜尋摘要",
+  "history_empty": "尚未有摘要。產生的摘要會顯示在這裡。",
+  "history_no_results": "沒有與搜尋相符的摘要。",
+  "history_delete": "刪除",
+  "history_clear": "清除歷史記錄",
+  "history_clear_confirm": "再按一下即可全部刪除",
+  "options_history": "保留摘要歷史記錄（在此電腦上）"
 }

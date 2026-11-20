@@ -48,5 +48,14 @@
   "options_models_refresh": "Načíst je nyní",
   "error_file_access": "Chcete-li shrnout soubory v tomto počítači, otevřete v chrome://extensions Podrobnosti rozšíření a zapněte Povolit přístup k adresám URL souborů.",
   "error_pdf_unreadable": "Tento soubor PDF nelze otevřít. Může být chráněn heslem nebo poškozen.",
-  "error_pdf_no_text": "Tento soubor PDF neobsahuje žádný text ke shrnutí. Může se skládat z naskenovaných obrázků."
+  "error_pdf_no_text": "Tento soubor PDF neobsahuje žádný text ke shrnutí. Může se skládat z naskenovaných obrázků.",
+  "ui_history": "Historie",
+  "history_title": "Historie shrnutí",
+  "history_search": "Hledat ve shrnutích",
+  "history_empty": "Zatím žádná shrnutí. Objeví se tady, jakmile nějaká vytvoříte.",
+  "history_no_results": "Hledání neodpovídá žádné shrnutí.",
+  "history_delete": "Smazat",
+  "history_clear": "Vymazat historii",
+  "history_clear_confirm": "Kliknutím znovu smažete vše",
+  "options_history": "Uchovávat historii shrnutí (v tomto počítači)"
 }

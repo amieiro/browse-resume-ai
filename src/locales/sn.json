@@ -48,5 +48,14 @@
   "options_models_refresh": "Zviverenge izvozvi",
   "error_file_access": "Kuti upfupise mafaira ari pakombiyuta ino, vhura Ruzivo rweekisitenshoni pa chrome://extensions ubva wabatidza Bvumira kuwana maURL emafaira.",
   "error_pdf_unreadable": "PDF iyi haigone kuvhurwa. Inogona kunge yakachengetedzwa nepasiwedhi kana kuti yakakuvara.",
-  "error_pdf_no_text": "PDF iyi haina mavara ekupfupisa. Inogona kunge yakagadzirwa nemifananidzo yakaskenwa."
+  "error_pdf_no_text": "PDF iyi haina mavara ekupfupisa. Inogona kunge yakagadzirwa nemifananidzo yakaskenwa.",
+  "ui_history": "Nhoroondo",
+  "history_title": "Nhoroondo yezvidimbu",
+  "history_search": "Tsvaga muzvidimbu",
+  "history_empty": "Hapana zvidimbu parizvino. Zvinoonekwa pano paunozviita.",
+  "history_no_results": "Hapana chidimbu chinoenderana nekutsvaga.",
+  "history_delete": "Dzima",
+  "history_clear": "Dzima nhoroondo",
+  "history_clear_confirm": "Dzvanya zvakare kuti udzime zvese",
+  "options_history": "Chengeta nhoroondo yezvidimbu (pakombiyuta ino)"
 }

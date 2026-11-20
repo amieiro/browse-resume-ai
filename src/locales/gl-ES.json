@@ -48,5 +48,14 @@
   "options_models_refresh": "Lelas agora",
   "error_file_access": "Para resumir ficheiros deste ordenador, abre os Detalles da extensión en chrome://extensions e activa Permitir o acceso aos URL de ficheiros.",
   "error_pdf_unreadable": "Non se pode abrir este PDF. Pode estar protexido con contrasinal ou danado.",
-  "error_pdf_no_text": "Este PDF non ten texto que resumir. Pode estar feito de imaxes escaneadas."
+  "error_pdf_no_text": "Este PDF non ten texto que resumir. Pode estar feito de imaxes escaneadas.",
+  "ui_history": "Historial",
+  "history_title": "Historial de resumos",
+  "history_search": "Buscar nos resumos",
+  "history_empty": "Aínda non hai resumos. Aparecen aquí a medida que os fas.",
+  "history_no_results": "Ningún resumo coincide coa busca.",
+  "history_delete": "Borrar",
+  "history_clear": "Borrar o historial",
+  "history_clear_confirm": "Preme de novo para borralo todo",
+  "options_history": "Gardar un historial dos resumos (neste ordenador)"
 }

@@ -48,5 +48,14 @@
   "options_models_refresh": "Pročitaj ih sada",
   "error_file_access": "Da biste saželi datoteke na ovom računalu, otvorite Pojedinosti proširenja na chrome://extensions i uključite Dopusti pristup URL-ovima datoteka.",
   "error_pdf_unreadable": "Ovaj se PDF ne može otvoriti. Možda je zaštićen zaporkom ili oštećen.",
-  "error_pdf_no_text": "Ovaj PDF nema teksta za sažimanje. Možda se sastoji od skeniranih slika."
+  "error_pdf_no_text": "Ovaj PDF nema teksta za sažimanje. Možda se sastoji od skeniranih slika.",
+  "ui_history": "Povijest",
+  "history_title": "Povijest sažetaka",
+  "history_search": "Pretraži sažetke",
+  "history_empty": "Još nema sažetaka. Pojavit će se ovdje kako ih budete stvarali.",
+  "history_no_results": "Nijedan sažetak ne odgovara pretraživanju.",
+  "history_delete": "Izbriši",
+  "history_clear": "Očisti povijest",
+  "history_clear_confirm": "Kliknite ponovno za brisanje svega",
+  "options_history": "Čuvaj povijest sažetaka (na ovom računalu)"
 }

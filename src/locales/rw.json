@@ -48,5 +48,14 @@
   "options_models_refresh": "Bisome ubu",
   "error_file_access": "Kugira ngo ukore incamake y'amadosiye ari kuri iyi mudasobwa, fungura Ibisobanuro by'umugereka muri chrome://extensions maze ufungure Emerera kugera kuri URL z'amadosiye.",
   "error_pdf_unreadable": "Iyi PDF ntishobora gufungurwa. Ishobora kuba irinzwe n'ijambobanga cyangwa yangiritse.",
-  "error_pdf_no_text": "Iyi PDF nta nyandiko ifite yo gukorerwa incamake. Ishobora kuba igizwe n'amashusho yasikanywe."
+  "error_pdf_no_text": "Iyi PDF nta nyandiko ifite yo gukorerwa incamake. Ishobora kuba igizwe n'amashusho yasikanywe.",
+  "ui_history": "Amateka",
+  "history_title": "Amateka y'incamake",
+  "history_search": "Shakisha mu ncamake",
+  "history_empty": "Nta ncamake zirabaho. Zizajya zigaragara hano uko uzikora.",
+  "history_no_results": "Nta ncamake ihuye n'ibyo washakishije.",
+  "history_delete": "Siba",
+  "history_clear": "Siba amateka",
+  "history_clear_confirm": "Ongera ukande kugira ngo usibe byose",
+  "options_history": "Bika amateka y'incamake (kuri iyi mudasobwa)"
 }

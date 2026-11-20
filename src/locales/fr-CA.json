@@ -48,5 +48,14 @@
   "options_models_refresh": "Les lire maintenant",
   "error_file_access": "Pour résumer des fichiers de cet ordinateur, ouvrez les Détails de l'extension dans chrome://extensions et activez Autoriser l'accès aux URL de fichier.",
   "error_pdf_unreadable": "Impossible d'ouvrir ce PDF. Il est peut-être protégé par un mot de passe ou endommagé.",
-  "error_pdf_no_text": "Ce PDF ne contient aucun texte à résumer. Il est peut-être composé d'images numérisées."
+  "error_pdf_no_text": "Ce PDF ne contient aucun texte à résumer. Il est peut-être composé d'images numérisées.",
+  "ui_history": "Historique",
+  "history_title": "Historique des résumés",
+  "history_search": "Rechercher dans les résumés",
+  "history_empty": "Aucun résumé pour l'instant. Ils apparaissent ici au fur et à mesure.",
+  "history_no_results": "Aucun résumé ne correspond à la recherche.",
+  "history_delete": "Supprimer",
+  "history_clear": "Effacer l'historique",
+  "history_clear_confirm": "Cliquez de nouveau pour tout supprimer",
+  "options_history": "Conserver un historique des résumés (sur cet ordinateur)"
 }

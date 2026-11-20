@@ -93,4 +93,5 @@ form.ask input {
   position: sticky; bottom: 0; background: var(--bg);
 }
 .actions .buttons { display: flex; gap: 8px; justify-content: flex-end; }
+.actions .spacer { flex: 1; }
 [hidden] { display: none !important; }

@@ -1,6 +1,7 @@
 import { browser } from 'wxt/browser';
 import { catalogDeps } from '@/lib/catalog-deps';
 import { applyDisplayMode } from '@/lib/display-mode';
+import { addToHistory, updateHistoryQuestions } from '@/lib/history';
 import { extractFromTab, selectionFromTab } from '@/lib/injection';
 import { menuTitles } from '@/lib/menu-strings';
 import { ensureFreshCatalog, refreshCatalog } from '@/lib/model-catalog';
@@ -13,7 +14,13 @@ const MENU_SELECTION = 'summarize-selection';
 const MENU_PAGE = 'summarize-page';
 
 export default defineBackground(() => {
-  const summarizer = new Summarizer({ extract: extractFromTab, extractSelection: selectionFromTab, loadSettings, getProvider });
+  const summarizer = new Summarizer({
+    extract: (tabId) => extractFromTab(tabId),
+    extractSelection: selectionFromTab,
+    loadSettings,
+    getProvider,
+    history: { add: (entry) => addToHistory(entry), updateQuestions: updateHistoryQuestions },
+  });
 
   // Kept in memory so a menu click can open the right view at once: the side panel only opens
   // inside the click gesture, before anything is awaited.

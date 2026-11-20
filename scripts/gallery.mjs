@@ -51,6 +51,8 @@ const SHOTS = [
     questions: ['What does GrapheneOS ask regulators to do?', 'Which phone makers does it mention?'],
   },
   { name: 'feature-pdf', page: 'arxiv', language: 'en-US', length: 'medium', mode: 'panel' },
+  // The history page, with short summaries of the pages above.
+  { name: 'feature-history', mode: 'history', language: 'en-US', length: 'short', pages: ['arxiv', 'newscientist', 'securityweek'] },
 ];
 
 const HEIGHT = 820;
@@ -229,6 +231,44 @@ async function captureView(browser, id, shot, entry) {
   return { png, width, height: clip ? clip.height : height };
 }
 
+/** The history page with real summaries of some pages (one with a question), newest first. */
+async function historyShot(browser, id, shot, read, buildPrompt, buildQuestionPrompt) {
+  const entries = [];
+  let when = Date.UTC(2026, 10, 20, 9, 15);
+  for (const name of shot.pages) {
+    const article = await read(name);
+    console.log(`summarizing ${name} for the history...`);
+    const text = await summarizeWithHost(buildPrompt(article, shot.length, shot.language), { model: MODEL });
+    const entry = {
+      id: name, createdAt: when, url: article.url, title: article.title, text, truncated: article.truncated,
+      provider: 'claude', model: MODEL, length: shot.length, language: shot.language,
+      ...(article.format ? { format: article.format } : {}),
+    };
+    if (name === 'newscientist') {
+      const question = 'How many patients were treated?';
+      const answer = await summarizeWithHost(buildQuestionPrompt(article, text, [], question, shot.language), { model: MODEL });
+      entry.qa = [{ question, answer, status: 'done' }];
+    }
+    entries.unshift(entry);
+    when += 47 * 60 * 1000;
+  }
+  const page = await browser.newPage();
+  await page.setViewport({ width: 900, height: HEIGHT, deviceScaleFactor: SCALE });
+  await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'light' }]);
+  await page.goto(`chrome-extension://${id}/history.html`);
+  await page.evaluate(async (list, language) => {
+    await chrome.storage.local.set({ history: list, settings: { uiLanguage: language, language } });
+  }, entries, shot.language);
+  await page.reload();
+  await sleep(1500);
+  const file = join(OUT, `${shot.name}.png`);
+  await page.screenshot({ path: file });
+  await page.close();
+  execFileSync('sips', ['-Z', String(DISPLAY_WIDTH * 2), file], { stdio: 'ignore' });
+  addBorder(file, DISPLAY_WIDTH);
+  console.log('wrote', join('media/gallery', `${shot.name}.png`));
+}
+
 /** Puts the page and the view together as Chrome shows them, and saves the result. */
 async function compose(browser, shot, articlePng, view) {
   const html = shot.mode === 'panel'
@@ -283,6 +323,16 @@ try {
   };
   const extracted = {};
   for (const shot of SHOTS.filter((s) => !ONLY || s.name === ONLY)) {
+    if (shot.mode === 'history') {
+      await historyShot(browser, id, shot, async (name) => {
+        const page = await openArticle(browser, PAGES[name], WINDOW_WIDTH);
+        let article = await page.evaluate(extractScript);
+        if (article?.pdf) article = await readPdf(article);
+        await page.close();
+        return article;
+      }, buildPrompt, buildQuestionPrompt);
+      continue;
+    }
     const width = shot.mode === 'panel' ? WINDOW_WIDTH - PANEL_WIDTH - 1 : WINDOW_WIDTH;
     const page = await openArticle(browser, PAGES[shot.page], width);
     extracted[shot.page] ??= await page.evaluate(extractScript);

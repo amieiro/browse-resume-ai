@@ -48,5 +48,14 @@
   "options_models_refresh": "Lezile oua",
   "error_file_access": "Pe riassumme i file de sto computer, arvi i Dettaggi de l'estenscion in chrome://extensions e attiva Permetti l'accesso a-i URL di file.",
   "error_pdf_unreadable": "No se peu arvî sto PDF. O poriæ ëse protezzuo da 'na password ò dannezzou.",
-  "error_pdf_no_text": "Sto PDF o no l'à de testo da riassumme. O poriæ ëse fæto de inmagini scannerizæ."
+  "error_pdf_no_text": "Sto PDF o no l'à de testo da riassumme. O poriæ ëse fæto de inmagini scannerizæ.",
+  "ui_history": "Cronologia",
+  "history_title": "Cronologia di riassunti",
+  "history_search": "Çerca inti riassunti",
+  "history_empty": "Ancon nisciun riassunto. Compaian chi man man che ti i fæ.",
+  "history_no_results": "Nisciun riassunto o corisponde a-a riçerca.",
+  "history_delete": "Scancella",
+  "history_clear": "Scancella a cronologia",
+  "history_clear_confirm": "Clicca torna pe scancellâ tutto",
+  "options_history": "Tegni a cronologia di riassunti (in sce sto computer)"
 }

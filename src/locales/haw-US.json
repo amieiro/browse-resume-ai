@@ -48,5 +48,14 @@
   "options_models_refresh": "Heluhelu iā lākou i kēia manawa",
   "error_file_access": "No ka hōʻuluʻulu ʻana i nā faila ma kēia kamepiula, e wehe i nā Kikoʻī o ka hoʻolōʻihi ma chrome://extensions a e hoʻā i ka ʻAe i ke komo ʻana i nā URL faila.",
   "error_pdf_unreadable": "ʻAʻole hiki ke wehe i kēia PDF. Ua pale ʻia paha me ka ʻōlelo huna, a i ʻole ua pōʻino.",
-  "error_pdf_no_text": "ʻAʻohe kikokikona ma kēia PDF e hōʻuluʻulu ai. Ua hana ʻia paha me nā kiʻi i kāpena ʻia."
+  "error_pdf_no_text": "ʻAʻohe kikokikona ma kēia PDF e hōʻuluʻulu ai. Ua hana ʻia paha me nā kiʻi i kāpena ʻia.",
+  "ui_history": "Moʻolelo",
+  "history_title": "Moʻolelo o nā hōʻuluʻulu",
+  "history_search": "E huli i nā hōʻuluʻulu",
+  "history_empty": "ʻAʻohe hōʻuluʻulu i kēia manawa. E ʻike ʻia lākou ma ʻaneʻi i kou hana ʻana iā lākou.",
+  "history_no_results": "ʻAʻohe hōʻuluʻulu e like me ka huli ʻana.",
+  "history_delete": "Holoi",
+  "history_clear": "Holoi i ka moʻolelo",
+  "history_clear_confirm": "E kaomi hou e holoi i nā mea a pau",
+  "options_history": "E mālama i ka moʻolelo o nā hōʻuluʻulu (ma kēia kamepiula)"
 }

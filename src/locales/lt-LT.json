@@ -48,5 +48,14 @@
   "options_models_refresh": "Nuskaityti dabar",
   "error_file_access": "Kad galėtumėte apibendrinti šiame kompiuteryje esančius failus, chrome://extensions atidarykite plėtinio Išsami informacija ir įjunkite Leisti pasiekti failų URL.",
   "error_pdf_unreadable": "Šio PDF failo atidaryti nepavyksta. Jis gali būti apsaugotas slaptažodžiu arba sugadintas.",
-  "error_pdf_no_text": "Šiame PDF faile nėra teksto, kurį būtų galima apibendrinti. Jį gali sudaryti nuskaityti vaizdai."
+  "error_pdf_no_text": "Šiame PDF faile nėra teksto, kurį būtų galima apibendrinti. Jį gali sudaryti nuskaityti vaizdai.",
+  "ui_history": "Istorija",
+  "history_title": "Santraukų istorija",
+  "history_search": "Ieškoti santraukose",
+  "history_empty": "Santraukų dar nėra. Jos atsiras čia, kai jas sukursite.",
+  "history_no_results": "Paiešką atitinkančių santraukų nėra.",
+  "history_delete": "Ištrinti",
+  "history_clear": "Išvalyti istoriją",
+  "history_clear_confirm": "Spustelėkite dar kartą, kad ištrintumėte viską",
+  "options_history": "Saugoti santraukų istoriją (šiame kompiuteryje)"
 }

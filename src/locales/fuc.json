@@ -48,5 +48,14 @@
   "options_models_refresh": "Janngu ɗi jooni",
   "error_file_access": "Ngam timminde fiilde ɗe ordinateer ɗoo, uddit Cifooji ɓeyditte ngel e chrome://extensions, hurmin Yamir naatgol e URL fiilde.",
   "error_pdf_unreadable": "Ngal PDF waawaa udditeede. Ina waawi wonde ngal reenaama e finnde walla ngal bonii.",
-  "error_pdf_no_text": "Ngal PDF alaa binndi timminteeɗi. Ina waawi wonde ngal waɗaama e nate scannaaɗe."
+  "error_pdf_no_text": "Ngal PDF alaa binndi timminteeɗi. Ina waawi wonde ngal waɗaama e nate scannaaɗe.",
+  "ui_history": "Taariika",
+  "history_title": "Taariika timmooje",
+  "history_search": "Yiylo e nder timmooje ɗee",
+  "history_empty": "Alaa timmoode tawo. Ɗe peeñay ɗoo nde mbaɗataa ɗe.",
+  "history_no_results": "Alaa timmoode fotndiinde e njiylaw ngal.",
+  "history_delete": "Momtu",
+  "history_clear": "Momtu taariika",
+  "history_clear_confirm": "Dobo kadi ngam momtude fof",
+  "options_history": "Hisnu taariika timmooje (e ndee ordinateer)"
 }

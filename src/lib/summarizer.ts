@@ -1,5 +1,6 @@
 import { cacheKey, clearCached, getCached, getLastCached, setCached } from './cache';
 import { buildPrompt, MAX_ARTICLE_CHARS, type Article } from './prompt';
+import type { HistoryEntry } from './history';
 import { buildQuestionPrompt } from './question-prompt';
 import type { ProviderId, Settings } from './settings';
 import { SummaryError, type Provider, type SummaryErrorCode } from '@/providers/types';
@@ -40,6 +41,11 @@ export interface SummarizerDeps {
   extractSelection(tabId: number, frameId?: number): Promise<string | null>;
   loadSettings(): Promise<Settings>;
   getProvider(id: ProviderId): Provider;
+  /** Where finished summaries are kept, when the history is on. */
+  history?: {
+    add(entry: Omit<HistoryEntry, 'id' | 'createdAt'>): Promise<string>;
+    updateQuestions(id: string, qa: QaItem[]): Promise<void>;
+  };
 }
 
 type Listener = (state: SummaryState) => void;
@@ -64,6 +70,8 @@ export class Summarizer {
   private selections = new Map<number, SelectionRequest>();
   /** The text each tab's summary was made from, for questions about it. */
   private articles = new Map<number, { article: Article; kind: Kind }>();
+  /** The history entry of each tab's summary, for its questions. */
+  private historyIds = new Map<number, string>();
   /** The question being answered in each tab. */
   private asking = new Map<number, AbortController>();
 
@@ -91,6 +99,7 @@ export class Summarizer {
     this.listeners.delete(tabId);
     this.selections.delete(tabId);
     this.articles.delete(tabId);
+    this.historyIds.delete(tabId);
     void clearCached(tabId);
   }
 
@@ -201,6 +210,7 @@ export class Summarizer {
         const cached = await getCached(tabId, key);
         if (cached) {
           const qa = cached.qa?.length ? { qa: cached.qa } : {};
+          if (cached.historyId) this.historyIds.set(tabId, cached.historyId);
           set({ status: 'done', title: cached.title, text: cached.text, truncated: cached.truncated, ...tag, ...qa });
           return;
         }
@@ -218,7 +228,9 @@ export class Summarizer {
         set({ status: 'running', title, text, truncated, ...tag });
       }
       if (!isCurrent()) return;
-      await setCached(tabId, { key, title, text, truncated, ...tag });
+      const historyId = await this.keep(tabId, article, settings, text, kind);
+      if (!isCurrent()) return;
+      await setCached(tabId, { key, title, text, truncated, ...tag, ...(historyId ? { historyId } : {}) });
       set({ status: 'done', title, text, truncated, ...tag });
     } catch (error) {
       set(errorState(codeOf(error), { title, text, truncated }, kind, detailOf(error)));
@@ -306,6 +318,32 @@ export class Summarizer {
     if (!entry || state?.status !== 'done') return;
     const qa = (state.qa ?? []).filter((item) => item.status !== 'running');
     await setCached(tabId, { ...entry, qa });
+    const historyId = this.historyIds.get(tabId) ?? entry.historyId;
+    if (historyId) await this.deps.history?.updateQuestions(historyId, qa).catch(() => {});
+  }
+
+  /** Adds a finished summary to the history, when it is on; resolves to its id. */
+  private async keep(tabId: number, article: Article, settings: Settings, text: string, kind: Kind): Promise<string | undefined> {
+    this.historyIds.delete(tabId);
+    if (!this.deps.history || settings.keepHistory === false) return undefined;
+    try {
+      const id = await this.deps.history.add({
+        url: article.url,
+        title: article.title,
+        text,
+        truncated: article.truncated,
+        ...(kind === 'selection' ? { source: 'selection' as const } : {}),
+        ...(article.format ? { format: article.format } : {}),
+        provider: settings.provider,
+        model: settings.models[settings.provider],
+        length: settings.length,
+        language: settings.language,
+      });
+      this.historyIds.set(tabId, id);
+      return id;
+    } catch {
+      return undefined;
+    }
   }
 
   private bumpGeneration(tabId: number): number {

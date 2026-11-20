@@ -9,6 +9,7 @@ export interface SummaryViewHandlers {
   onSettingsChange(patch: Partial<Settings>): void;
   onOpenOptions(): void;
   onAsk(question: string): void;
+  onOpenHistory(): void;
 }
 
 const PROVIDER_LABELS: Record<ProviderId, string> = { claude: 'Claude', codex: 'Codex', ollama: 'Ollama' };
@@ -70,6 +71,8 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   question.setAttribute('aria-label', t('ui_ask_placeholder'));
   const ask = el('button', { name: 'ask', type: 'submit', textContent: t('ui_ask') });
   const askForm = el('form', { className: 'ask' }, question, ask);
+  const history = el('button', { name: 'history', type: 'button', className: 'icon', textContent: '🕘', title: t('ui_history') });
+  history.setAttribute('aria-label', t('ui_history'));
   const copy = el('button', { name: 'copy', type: 'button', textContent: t('ui_copy') });
   const regenerate = el('button', { name: 'regenerate', type: 'button', className: 'primary' });
 
@@ -77,7 +80,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     el('header', { className: 'toolbar' }, provider, model, length, language, options),
     el('main', {}, source, title, progress, hint, error, summary, notice, qaList),
     // The question field stays in the sticky footer, reachable however long the answers get.
-    el('footer', { className: 'actions' }, askForm, el('div', { className: 'buttons' }, copy, regenerate)),
+    el('footer', { className: 'actions' }, askForm, el('div', { className: 'buttons' }, history, el('span', { className: 'spacer' }), copy, regenerate)),
   );
 
   function renderSelectors() {
@@ -146,6 +149,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     handlers.onSettingsChange({ language: settings.language });
   });
   options.addEventListener('click', () => handlers.onOpenOptions());
+  history.addEventListener('click', () => handlers.onOpenHistory());
   askForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const text = question.value.trim();

@@ -14,6 +14,7 @@ export interface OptionsViewDeps {
   modelsCheckedAt?: number | null;
   /** Reads the model lists again now. */
   onRefreshModels?(): Promise<void>;
+  onOpenHistory?(): void;
 }
 
 const PROVIDERS: { id: ProviderId; label: string }[] = [
@@ -73,6 +74,15 @@ export function mountOptionsView(root: HTMLElement, initial: Settings, deps: Opt
   length.addEventListener('change', () => deps.onSave({ length: length.value as SummaryLength }));
   language.addEventListener('change', () => deps.onSave({ language: language.value }));
   uiLanguage.addEventListener('change', () => deps.onSave({ uiLanguage: uiLanguage.value }));
+
+  const keepHistory = el('input', { type: 'checkbox', name: 'keepHistory', id: 'keepHistory', checked: settings.keepHistory });
+  keepHistory.addEventListener('change', () => deps.onSave({ keepHistory: keepHistory.checked }));
+  const historyControls = el('div', { className: 'history-option' }, keepHistory);
+  if (deps.onOpenHistory) {
+    const open = el('button', { type: 'button', name: 'open-history', textContent: t('ui_history') });
+    open.addEventListener('click', () => deps.onOpenHistory!());
+    historyControls.append(open);
+  }
 
   const statusChecks: Promise<void>[] = [];
   const providerSections = PROVIDERS.map(({ id, label }) => {
@@ -138,6 +148,7 @@ export function mountOptionsView(root: HTMLElement, initial: Settings, deps: Opt
       row(t('ui_provider'), provider),
       row(t('ui_length'), length),
       row(t('ui_language'), language),
+      row(t('options_history'), historyControls),
     ),
     modelsInfo(),
     ...providerSections,

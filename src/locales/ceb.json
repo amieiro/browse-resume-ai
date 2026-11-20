@@ -48,5 +48,14 @@
   "options_models_refresh": "Basaha karon",
   "error_file_access": "Aron ma-summarize ang mga file niini nga kompyuter, ablihi ang Details sa extension sa chrome://extensions ug i-on ang Allow access to file URLs.",
   "error_pdf_unreadable": "Dili maablihan kini nga PDF. Basin giprotektahan kini og password o nadaot.",
-  "error_pdf_no_text": "Walay teksto nga ma-summarize niini nga PDF. Basin hinimo kini sa mga na-scan nga hulagway."
+  "error_pdf_no_text": "Walay teksto nga ma-summarize niini nga PDF. Basin hinimo kini sa mga na-scan nga hulagway.",
+  "ui_history": "Kasaysayan",
+  "history_title": "Kasaysayan sa mga summary",
+  "history_search": "Pangitaa sa mga summary",
+  "history_empty": "Wala pay mga summary. Makita kini dinhi samtang maghimo ka niini.",
+  "history_no_results": "Walay summary nga mitugma sa pagpangita.",
+  "history_delete": "Papasa",
+  "history_clear": "Hawani ang kasaysayan",
+  "history_clear_confirm": "I-klik pag-usab aron mapapas ang tanan",
+  "options_history": "Tipigi ang kasaysayan sa mga summary (niini nga kompyuter)"
 }

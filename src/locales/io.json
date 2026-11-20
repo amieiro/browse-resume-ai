@@ -48,5 +48,14 @@
   "options_models_refresh": "Lektar li nun",
   "error_file_access": "Por rezumar arkivi en ica komputilo, apertez la Detali di la extensajo en chrome://extensions ed aktivigez Permisar aceso ad URL di arkivi.",
   "error_pdf_unreadable": "Ica PDF ne povas apertesar. Ol forsan protektesas per pasvorto o esas domajita.",
-  "error_pdf_no_text": "Ica PDF havas nula texto rezumenda. Ol forsan konsistas ek skanita imaji."
+  "error_pdf_no_text": "Ica PDF havas nula texto rezumenda. Ol forsan konsistas ek skanita imaji.",
+  "ui_history": "Historio",
+  "history_title": "Historio di rezumi",
+  "history_search": "Serchar en la rezumi",
+  "history_empty": "Ankore nula rezumi. Li aparos hike dum ke vu facas li.",
+  "history_no_results": "Nula rezumo korespondas a la serchado.",
+  "history_delete": "Efacar",
+  "history_clear": "Vakuigar historio",
+  "history_clear_confirm": "Kliktez itere por efacar omno",
+  "options_history": "Konservar historio di rezumi (en ica komputilo)"
 }

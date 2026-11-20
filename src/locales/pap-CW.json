@@ -48,5 +48,14 @@
   "options_models_refresh": "Lesa nan awor",
   "error_file_access": "Pa resumí archivonan riba e kòmpiuter aki, habri e Detayenan di e èkstenshon den chrome://extensions i aktivá Permití akseso na URL di archivo.",
   "error_pdf_unreadable": "No por habri e PDF aki. E por ta protehá ku un kontraseña òf dañá.",
-  "error_pdf_no_text": "E PDF aki no tin teksto pa resumí. E por ta traha di imágennan skèn."
+  "error_pdf_no_text": "E PDF aki no tin teksto pa resumí. E por ta traha di imágennan skèn.",
+  "ui_history": "Historia",
+  "history_title": "Historia di resúmennan",
+  "history_search": "Buska den e resúmennan",
+  "history_empty": "Ainda no tin resúmen. Nan ta aparesé aki segun bo ta hasi nan.",
+  "history_no_results": "Ningun resúmen no ta kuadra ku e búsqueda.",
+  "history_delete": "Kita",
+  "history_clear": "Limpia historia",
+  "history_clear_confirm": "Klek un biaha mas pa kita tur",
+  "options_history": "Warda un historia di resúmennan (riba e kòmpiuter aki)"
 }

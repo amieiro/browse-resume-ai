@@ -48,5 +48,14 @@
   "options_models_refresh": "قراهم دابا",
   "error_file_access": "باش تلخّص الملفات اللي فهاد الكمبيوتر، حل «التفاصيل» ديال الإضافة ف chrome://extensions وشعل «السماح بالوصول إلى عناوين URL للملفات».",
   "error_pdf_unreadable": "ما يمكنش نحلّو هاد PDF. يمكن محمي بكلمة السر ولا خاسر.",
-  "error_pdf_no_text": "هاد PDF ما فيه حتى نص باش نلخّصوه. يمكن مصاوب من تصاور مسكانيين."
+  "error_pdf_no_text": "هاد PDF ما فيه حتى نص باش نلخّصوه. يمكن مصاوب من تصاور مسكانيين.",
+  "ui_history": "السجل",
+  "history_title": "سجل الملخصات",
+  "history_search": "قلّب فالملخصات",
+  "history_empty": "مازال ما كاين حتى ملخص. غادي يبانو هنا ملي تديرهم.",
+  "history_no_results": "حتى ملخص ما كيطابق البحث.",
+  "history_delete": "مسح",
+  "history_clear": "خوي السجل",
+  "history_clear_confirm": "ضغط عاوتاني باش تمسح كلشي",
+  "options_history": "خلّي سجل ديال الملخصات (فهاد الكمبيوتر)"
 }

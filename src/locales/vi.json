@@ -48,5 +48,14 @@
   "options_models_refresh": "Đọc ngay",
   "error_file_access": "Để tóm tắt các tệp trên máy tính này, hãy mở phần Chi tiết của tiện ích trong chrome://extensions và bật Cho phép truy cập vào URL của tệp.",
   "error_pdf_unreadable": "Không thể mở tệp PDF này. Tệp có thể được bảo vệ bằng mật khẩu hoặc bị hỏng.",
-  "error_pdf_no_text": "Tệp PDF này không có văn bản để tóm tắt. Tệp có thể được tạo từ hình ảnh quét."
+  "error_pdf_no_text": "Tệp PDF này không có văn bản để tóm tắt. Tệp có thể được tạo từ hình ảnh quét.",
+  "ui_history": "Lịch sử",
+  "history_title": "Lịch sử tóm tắt",
+  "history_search": "Tìm trong các bản tóm tắt",
+  "history_empty": "Chưa có bản tóm tắt nào. Các bản tóm tắt sẽ xuất hiện ở đây khi bạn tạo.",
+  "history_no_results": "Không có bản tóm tắt nào khớp với tìm kiếm.",
+  "history_delete": "Xóa",
+  "history_clear": "Xóa lịch sử",
+  "history_clear_confirm": "Nhấp lần nữa để xóa tất cả",
+  "options_history": "Lưu lịch sử tóm tắt (trên máy tính này)"
 }

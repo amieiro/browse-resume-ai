@@ -23,7 +23,7 @@ beforeEach(() => {
   // Show the message key so tests can see which message is shown.
   setMessages(new Proxy({}, { get: (_t, key) => `[${String(key)}]` }));
   root = document.createElement('div');
-  handlers = { onRegenerate: vi.fn(), onSettingsChange: vi.fn(), onOpenOptions: vi.fn(), onAsk: vi.fn() };
+  handlers = { onRegenerate: vi.fn(), onSettingsChange: vi.fn(), onOpenOptions: vi.fn(), onAsk: vi.fn(), onOpenHistory: vi.fn() };
 });
 
 describe('summary view selectors', () => {
@@ -220,6 +220,12 @@ describe('summary view states', () => {
     const option = [...select('model').options].find((o) => o.value === 'sonnet')!;
     expect(option.textContent).toBe('Sonnet 5.5');
     expect([...select('model').options].find((o) => o.value === 'opus')!.textContent).toBe('opus');
+  });
+
+  it('opens the history', () => {
+    mount();
+    button('history').click();
+    expect(handlers.onOpenHistory).toHaveBeenCalled();
   });
 });
 

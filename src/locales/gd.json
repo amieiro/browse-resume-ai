@@ -48,5 +48,14 @@
   "options_models_refresh": "Leugh an-dràsta iad",
   "error_file_access": "Airson gearr-chunntas a dhèanamh air faidhlichean air a’ choimpiutair seo, fosgail Mion-fhiosrachadh an leudachain ann an chrome://extensions agus cuir an comas Ceadaich inntrigeadh gu URLaichean fhaidhlichean.",
   "error_pdf_unreadable": "Cha ghabh am PDF seo fosgladh. Dh’fhaoidte gu bheil e dìonta le facal-faire no gu bheil e air a mhilleadh.",
-  "error_pdf_no_text": "Chan eil teacsa sam bith sa PDF seo airson gearr-chunntas a dhèanamh air. Dh’fhaoidte gu bheil e air a dhèanamh de dhealbhan sganaichte."
+  "error_pdf_no_text": "Chan eil teacsa sam bith sa PDF seo airson gearr-chunntas a dhèanamh air. Dh’fhaoidte gu bheil e air a dhèanamh de dhealbhan sganaichte.",
+  "ui_history": "Eachdraidh",
+  "history_title": "Eachdraidh nan gearr-chunntasan",
+  "history_search": "Lorg sna gearr-chunntasan",
+  "history_empty": "Chan eil gearr-chunntas ann fhathast. Nochdaidh iad an-seo mar a nì thu iad.",
+  "history_no_results": "Chan eil gearr-chunntas a’ freagairt ris an lorg.",
+  "history_delete": "Sguab às",
+  "history_clear": "Falamhaich an eachdraidh",
+  "history_clear_confirm": "Briog a-rithist airson a h-uile càil a sguabadh às",
+  "options_history": "Cùm eachdraidh nan gearr-chunntasan (air a’ choimpiutair seo)"
 }

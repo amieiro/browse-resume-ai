@@ -48,5 +48,14 @@
   "options_models_refresh": "Lèzile desso",
   "error_file_access": "Par riasumar i file su sto computer, verzi i Detaji de l'estension in chrome://extensions e ativa Parmeti l'aceso ai URL dei file.",
   "error_pdf_unreadable": "No se pol vèrzar sto PDF. El podarìa èsar protezesto co na password o danejà.",
-  "error_pdf_no_text": "Sto PDF no'l ga testo da riasumar. El podarìa èsar fato de imàzeni scansionàe."
+  "error_pdf_no_text": "Sto PDF no'l ga testo da riasumar. El podarìa èsar fato de imàzeni scansionàe.",
+  "ui_history": "Cronologia",
+  "history_title": "Cronologia dei riasunti",
+  "history_search": "Serca nei riasunti",
+  "history_empty": "Gnancora nisun riasunto. I conparirà cuà man man che te i fa.",
+  "history_no_results": "Nisun riasunto el corisponde a la riserca.",
+  "history_delete": "Scancela",
+  "history_clear": "Scancela la cronologia",
+  "history_clear_confirm": "Struca da novo par scancelar tuto",
+  "options_history": "Tien na cronologia dei riasunti (so sto computer)"
 }

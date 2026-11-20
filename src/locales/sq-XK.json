@@ -48,5 +48,14 @@
   "options_models_refresh": "Lexoji tani",
   "error_file_access": "Për të përmbledhur skedarë në këtë kompjuter, hap Detajet e shtesës te chrome://extensions dhe aktivizo Lejo qasjen në URL-të e skedarëve.",
   "error_pdf_unreadable": "Ky PDF nuk mund të hapet. Mund të jetë i mbrojtur me fjalëkalim ose i dëmtuar.",
-  "error_pdf_no_text": "Ky PDF nuk ka tekst për t'u përmbledhur. Mund të jetë i përbërë nga imazhe të skanuara."
+  "error_pdf_no_text": "Ky PDF nuk ka tekst për t'u përmbledhur. Mund të jetë i përbërë nga imazhe të skanuara.",
+  "ui_history": "Historiku",
+  "history_title": "Historiku i përmbledhjeve",
+  "history_search": "Kërko te përmbledhjet",
+  "history_empty": "Ende nuk ka përmbledhje. Do të shfaqen këtu, ndërsa i krijon.",
+  "history_no_results": "Asnjë përmbledhje nuk përputhet me kërkimin.",
+  "history_delete": "Fshi",
+  "history_clear": "Pastro historikun",
+  "history_clear_confirm": "Kliko sërish për t'i fshirë të gjitha",
+  "options_history": "Mbaj historik të përmbledhjeve (në këtë kompjuter)"
 }

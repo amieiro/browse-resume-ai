@@ -48,5 +48,14 @@
   "options_models_refresh": "Lufunde ngoku",
   "error_file_access": "Ukuze ushwankathele iifayile kule khompyutha, vula Iinkcukacha zesandiso kwi-chrome://extensions uze uvule Vumela ukufikelela kwii-URL zefayile.",
   "error_pdf_unreadable": "Le PDF ayinakuvulwa. Isenokuba ikhuselwe ngephaswedi okanye yonakele.",
-  "error_pdf_no_text": "Le PDF ayinambhalo onokushwankathelwa. Isenokuba yenziwe ngemifanekiso eskeniweyo."
+  "error_pdf_no_text": "Le PDF ayinambhalo onokushwankathelwa. Isenokuba yenziwe ngemifanekiso eskeniweyo.",
+  "ui_history": "Imbali",
+  "history_title": "Imbali yezishwankathelo",
+  "history_search": "Khangela kwizishwankathelo",
+  "history_empty": "Akukabikho zishwankathelo. Ziya kuvela apha njengoko uzenza.",
+  "history_no_results": "Akukho sishwankathelo sihambelana nokukhangela.",
+  "history_delete": "Cima",
+  "history_clear": "Cima imbali",
+  "history_clear_confirm": "Cofa kwakhona ukuze ucime konke",
+  "options_history": "Gcina imbali yezishwankathelo (kule khompyutha)"
 }

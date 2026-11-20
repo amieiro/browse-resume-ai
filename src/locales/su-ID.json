@@ -48,5 +48,14 @@
   "options_models_refresh": "Baca ayeuna",
   "error_file_access": "Pikeun nyimpulkeun file dina ieu komputer, buka Rincian éksténsi di chrome://extensions teras hurungkeun Idinan aksés ka URL file.",
   "error_pdf_unreadable": "Ieu PDF teu bisa dibuka. Panginten ditangtayungan ku kecap konci atanapi ruksak.",
-  "error_pdf_no_text": "Ieu PDF teu gaduh téks pikeun disimpulkeun. Panginten diwangun ku gambar hasil scan."
+  "error_pdf_no_text": "Ieu PDF teu gaduh téks pikeun disimpulkeun. Panginten diwangun ku gambar hasil scan.",
+  "ui_history": "Riwayat",
+  "history_title": "Riwayat kasimpulan",
+  "history_search": "Paluruh kasimpulan",
+  "history_empty": "Can aya kasimpulan. Engké bakal némbongan di dieu saban anjeun nyieun.",
+  "history_no_results": "Euweuh kasimpulan nu cocog jeung pamaluruhan.",
+  "history_delete": "Pupus",
+  "history_clear": "Pupus riwayat",
+  "history_clear_confirm": "Klik deui pikeun mupus sadayana",
+  "options_history": "Simpen riwayat kasimpulan (dina ieu komputer)"
 }

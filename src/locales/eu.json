@@ -48,5 +48,14 @@
   "options_models_refresh": "Irakurri orain",
   "error_file_access": "Ordenagailu honetako fitxategiak laburtzeko, ireki luzapenaren Xehetasunak chrome://extensions orrian eta aktibatu Eman fitxategien URLetarako sarbidea.",
   "error_pdf_unreadable": "Ezin da PDF hau ireki. Baliteke pasahitz bidez babestuta edo hondatuta egotea.",
-  "error_pdf_no_text": "PDF honek ez du laburtzeko testurik. Baliteke eskaneatutako irudiz osatuta egotea."
+  "error_pdf_no_text": "PDF honek ez du laburtzeko testurik. Baliteke eskaneatutako irudiz osatuta egotea.",
+  "ui_history": "Historia",
+  "history_title": "Laburpenen historia",
+  "history_search": "Bilatu laburpenetan",
+  "history_empty": "Oraindik ez dago laburpenik. Egin ahala agertuko dira hemen.",
+  "history_no_results": "Ez dago bilaketarekin bat datorren laburpenik.",
+  "history_delete": "Ezabatu",
+  "history_clear": "Garbitu historia",
+  "history_clear_confirm": "Egin klik berriro guztia ezabatzeko",
+  "options_history": "Gorde laburpenen historia (ordenagailu honetan)"
 }

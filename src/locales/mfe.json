@@ -48,5 +48,14 @@
   "options_models_refresh": "Lir zot aster",
   "error_file_access": "Pou rezime bann fisie lor sa lordinater-la, ouver Détails extansion-la dan chrome://extensions ek aktiv Autoriser l'accès aux URL de fichier.",
   "error_pdf_unreadable": "Pa kapav ouver sa PDF-la. Kapav li protez par enn modpas ouswa li abime.",
-  "error_pdf_no_text": "Sa PDF-la pena okenn text pou rezime. Kapav li fer ar bann zimaz skane."
+  "error_pdf_no_text": "Sa PDF-la pena okenn text pou rezime. Kapav li fer ar bann zimaz skane.",
+  "ui_history": "Istorik",
+  "history_title": "Istorik rezime",
+  "history_search": "Rod dan rezime",
+  "history_empty": "Pena okenn rezime ankor. Zot pou aparet isi kan ou fer zot.",
+  "history_no_results": "Okenn rezime pa koresponn ar rechers-la.",
+  "history_delete": "Efase",
+  "history_clear": "Efas istorik-la",
+  "history_clear_confirm": "Klik ankor enn fwa pou efas tou",
+  "options_history": "Gard enn istorik rezime (lor sa ordinater-la)"
 }

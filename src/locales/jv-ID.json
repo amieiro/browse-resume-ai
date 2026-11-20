@@ -48,5 +48,14 @@
   "options_models_refresh": "Waca saiki",
   "error_file_access": "Kanggo ngringkes file ing komputer iki, bukak Rincian ekstensi ing chrome://extensions banjur aktifake Idinake akses menyang URL file.",
   "error_pdf_unreadable": "PDF iki ora bisa dibukak. Bisa uga direksa nganggo sandhi utawa rusak.",
-  "error_pdf_no_text": "PDF iki ora ana teks sing bisa diringkes. Bisa uga isine gambar asil pindaian."
+  "error_pdf_no_text": "PDF iki ora ana teks sing bisa diringkes. Bisa uga isine gambar asil pindaian.",
+  "ui_history": "Riwayat",
+  "history_title": "Riwayat ringkesan",
+  "history_search": "Goleki ing ringkesan",
+  "history_empty": "Durung ana ringkesan. Ringkesan bakal katon ing kene nalika sampeyan nggawe.",
+  "history_no_results": "Ora ana ringkesan sing cocog karo panelusuran.",
+  "history_delete": "Busak",
+  "history_clear": "Resiki riwayat",
+  "history_clear_confirm": "Klik maneh kanggo mbusak kabeh",
+  "options_history": "Simpen riwayat ringkesan (ing komputer iki)"
 }

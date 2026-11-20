@@ -48,5 +48,14 @@
   "options_models_refresh": "Xlẽ wo fifia",
   "error_file_access": "Be nàƒo kɔmpiuta sia dzi faɛlwo ƒe nya ta la, ʋu extension la ƒe Details le chrome://extensions eye nàtrɔ Allow access to file URLs ɖe edzi.",
   "error_pdf_unreadable": "Womate ŋu aʋu PDF sia o. Ðewohĩ wotsɔ password ʋlie alo egblẽ.",
-  "error_pdf_no_text": "Nuŋɔŋlɔ aɖeke mele PDF sia me si woaƒo eƒe nya ta o. Ðewohĩ wotsɔ nɔnɔmetata siwo wo scan la wɔe."
+  "error_pdf_no_text": "Nuŋɔŋlɔ aɖeke mele PDF sia me si woaƒo eƒe nya ta o. Ðewohĩ wotsɔ nɔnɔmetata siwo wo scan la wɔe.",
+  "ui_history": "Ŋutinya",
+  "history_title": "Nyakpɔkpɔwo ƒe ŋutinya",
+  "history_search": "Di le nyakpɔkpɔwo me",
+  "history_empty": "Nyakpɔkpɔ aɖeke mele afi sia haɖe o. Woado ɖe afi sia ne èle wo wɔm.",
+  "history_no_results": "Nyakpɔkpɔ aɖeke mesɔ kple didi la o.",
+  "history_delete": "Tutui",
+  "history_clear": "Tutu ŋutinya",
+  "history_clear_confirm": "Gazi edzi ake be nàtutu wo katã",
+  "options_history": "Dzra nyakpɔkpɔwo ƒe ŋutinya ɖo (le kɔmpiuta sia dzi)"
 }

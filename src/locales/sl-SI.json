@@ -48,5 +48,14 @@
   "options_models_refresh": "Preberi zdaj",
   "error_file_access": "Če želite povzeti datoteke v tem računalniku, odprite Podrobnosti razširitve na strani chrome://extensions in vklopite Dovoli dostop do URL-jev datotek.",
   "error_pdf_unreadable": "Te datoteke PDF ni mogoče odpreti. Morda je zaščitena z geslom ali poškodovana.",
-  "error_pdf_no_text": "Ta datoteka PDF nima besedila za povzemanje. Morda je sestavljena iz optično prebranih slik."
+  "error_pdf_no_text": "Ta datoteka PDF nima besedila za povzemanje. Morda je sestavljena iz optično prebranih slik.",
+  "ui_history": "Zgodovina",
+  "history_title": "Zgodovina povzetkov",
+  "history_search": "Iskanje po povzetkih",
+  "history_empty": "Povzetkov še ni. Tu se bodo prikazali, ko jih boste ustvarili.",
+  "history_no_results": "Iskanju ne ustreza noben povzetek.",
+  "history_delete": "Izbriši",
+  "history_clear": "Počisti zgodovino",
+  "history_clear_confirm": "Kliknite znova, da izbrišete vse",
+  "options_history": "Hrani zgodovino povzetkov (v tem računalniku)"
 }

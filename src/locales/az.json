@@ -48,5 +48,14 @@
   "options_models_refresh": "İndi oxu",
   "error_file_access": "Bu kompüterdəki faylların xülasəsi üçün chrome://extensions səhifəsində artırmanın Detallar bölməsini açın və Fayl URL-lərinə girişə icazə verin seçimini aktiv edin.",
   "error_pdf_unreadable": "Bu PDF faylını açmaq mümkün deyil. O, parol ilə qorunmuş və ya zədələnmiş ola bilər.",
-  "error_pdf_no_text": "Bu PDF faylında xülasə ediləcək mətn yoxdur. O, skan edilmiş şəkillərdən ibarət ola bilər."
+  "error_pdf_no_text": "Bu PDF faylında xülasə ediləcək mətn yoxdur. O, skan edilmiş şəkillərdən ibarət ola bilər.",
+  "ui_history": "Tarixçə",
+  "history_title": "Xülasə tarixçəsi",
+  "history_search": "Xülasələrdə axtarın",
+  "history_empty": "Hələ xülasə yoxdur. Onları yaratdıqca burada görünəcək.",
+  "history_no_results": "Axtarışa uyğun xülasə yoxdur.",
+  "history_delete": "Sil",
+  "history_clear": "Tarixçəni təmizlə",
+  "history_clear_confirm": "Hamısını silmək üçün yenidən klikləyin",
+  "options_history": "Xülasələrin tarixçəsini saxla (bu kompüterdə)"
 }

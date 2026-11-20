@@ -48,5 +48,14 @@
   "options_models_refresh": "Przeczytej je teroz",
   "error_file_access": "Coby podsumować zbiory na tym kōmputrze, ôtwōrz Szczegōły rozszyrzynio w chrome://extensions i załōncz Zezwalej na dostymp do adresōw URL zbiorōw.",
   "error_pdf_unreadable": "Niy idzie ôtworzić tego zbioru PDF. Może być zabezpieczōny hasłym abo poszkodzōny.",
-  "error_pdf_no_text": "W tym zbiorze PDF niy ma tekstu do podsumowanio. Może sie skłodać ze zeskanowanych ôbrozkōw."
+  "error_pdf_no_text": "W tym zbiorze PDF niy ma tekstu do podsumowanio. Może sie skłodać ze zeskanowanych ôbrozkōw.",
+  "ui_history": "Historyjo",
+  "history_title": "Historyjo podsumowań",
+  "history_search": "Szukej w podsumowaniach",
+  "history_empty": "Niy ma jeszcze żodnych podsumowań. Pokażōm sie sam, jak bydziesz je robić.",
+  "history_no_results": "Żodne podsumowanie niy pasuje do wyszukowanio.",
+  "history_delete": "Usuń",
+  "history_clear": "Wyczyść historyjo",
+  "history_clear_confirm": "Kliknij jeszcze roz, coby usunōńć wszyjsko",
+  "options_history": "Trzimej historyjo podsumowań (na tym kōmputrze)"
 }

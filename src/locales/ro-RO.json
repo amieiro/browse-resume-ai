@@ -48,5 +48,14 @@
   "options_models_refresh": "Citește-le acum",
   "error_file_access": "Pentru a rezuma fișiere de pe acest computer, deschide Detalii pentru extensie în chrome://extensions și activează Permite accesul la adresele URL ale fișierelor.",
   "error_pdf_unreadable": "Acest PDF nu poate fi deschis. Poate fi protejat cu parolă sau deteriorat.",
-  "error_pdf_no_text": "Acest PDF nu conține text de rezumat. Poate fi alcătuit din imagini scanate."
+  "error_pdf_no_text": "Acest PDF nu conține text de rezumat. Poate fi alcătuit din imagini scanate.",
+  "ui_history": "Istoric",
+  "history_title": "Istoricul rezumatelor",
+  "history_search": "Caută în rezumate",
+  "history_empty": "Încă nu există rezumate. Apar aici pe măsură ce le creezi.",
+  "history_no_results": "Niciun rezumat nu corespunde căutării.",
+  "history_delete": "Șterge",
+  "history_clear": "Golește istoricul",
+  "history_clear_confirm": "Dă clic din nou pentru a șterge tot",
+  "options_history": "Păstrează un istoric al rezumatelor (pe acest computer)"
 }

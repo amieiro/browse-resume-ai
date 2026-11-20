@@ -48,5 +48,14 @@
   "options_models_refresh": "Hadda akhri",
   "error_file_access": "Si aad u soo koobto faylasha kombiyuutarkan, fur Faahfaahinta kordhinta ee chrome://extensions oo shid U oggolow gelitaanka URL-yada faylka.",
   "error_pdf_unreadable": "PDF-kan lama furi karo. Waxaa laga yaabaa in lagu ilaaliyay furaha sirta ah ama uu dhaawacmay.",
-  "error_pdf_no_text": "PDF-kan ma laha qoraal la soo koobo. Waxaa laga yaabaa inuu ka kooban yahay sawirro la iskaan gareeyay."
+  "error_pdf_no_text": "PDF-kan ma laha qoraal la soo koobo. Waxaa laga yaabaa inuu ka kooban yahay sawirro la iskaan gareeyay.",
+  "ui_history": "Taariikh",
+  "history_title": "Taariikhda soo koobidda",
+  "history_search": "Ka raadi soo koobidda",
+  "history_empty": "Weli soo koobid ma jirto. Halkan ayay ka soo muuqan doonaan markaad samayso.",
+  "history_no_results": "Ma jiro soo koobid u dhigma raadinta.",
+  "history_delete": "Tirtir",
+  "history_clear": "Nadiifi taariikhda",
+  "history_clear_confirm": "Mar kale guji si aad wax walba u tirtirto",
+  "options_history": "Hay taariikhda soo koobidda (kombiyuutarkan)"
 }

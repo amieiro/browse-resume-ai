@@ -48,5 +48,14 @@
   "options_models_refresh": "Basahin ngayon",
   "error_file_access": "Para ibuod ang mga file sa computer na ito, buksan ang Mga Detalye ng extension sa chrome://extensions at i-on ang Payagan ang access sa mga URL ng file.",
   "error_pdf_unreadable": "Hindi mabuksan ang PDF na ito. Maaaring protektado ito ng password o sira.",
-  "error_pdf_no_text": "Walang tekstong maibubuod sa PDF na ito. Maaaring binubuo ito ng mga na-scan na larawan."
+  "error_pdf_no_text": "Walang tekstong maibubuod sa PDF na ito. Maaaring binubuo ito ng mga na-scan na larawan.",
+  "ui_history": "Kasaysayan",
+  "history_title": "Kasaysayan ng mga buod",
+  "history_search": "Maghanap sa mga buod",
+  "history_empty": "Wala pang mga buod. Lalabas sila rito habang gumagawa ka.",
+  "history_no_results": "Walang buod na tumutugma sa paghahanap.",
+  "history_delete": "Burahin",
+  "history_clear": "I-clear ang kasaysayan",
+  "history_clear_confirm": "I-click ulit para burahin lahat",
+  "options_history": "Magtago ng kasaysayan ng mga buod (sa computer na ito)"
 }

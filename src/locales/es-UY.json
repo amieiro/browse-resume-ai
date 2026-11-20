@@ -48,5 +48,14 @@
   "options_models_refresh": "Leerlas ahora",
   "error_file_access": "Para resumir archivos de esta computadora, abrí los Detalles de la extensión en chrome://extensions y activá Permitir acceso a URL de archivo.",
   "error_pdf_unreadable": "No se puede abrir este PDF. Es posible que esté protegido con contraseña o dañado.",
-  "error_pdf_no_text": "Este PDF no tiene texto para resumir. Es posible que esté formado por imágenes escaneadas."
+  "error_pdf_no_text": "Este PDF no tiene texto para resumir. Es posible que esté formado por imágenes escaneadas.",
+  "ui_history": "Historial",
+  "history_title": "Historial de resúmenes",
+  "history_search": "Buscar en los resúmenes",
+  "history_empty": "Aún no hay resúmenes. Aparecerán acá a medida que los hagas.",
+  "history_no_results": "Ningún resumen coincide con la búsqueda.",
+  "history_delete": "Eliminar",
+  "history_clear": "Borrar historial",
+  "history_clear_confirm": "Hacé clic otra vez para borrar todo",
+  "options_history": "Guardar un historial de resúmenes (en esta computadora)"
 }

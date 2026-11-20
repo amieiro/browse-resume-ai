@@ -48,5 +48,14 @@
   "options_models_refresh": "ⵖⵔ ⵜⵏⵜ ⴷⵖⵉ",
   "error_file_access": "ⴰⴷ ⵜⵙⴳⵣⵍⴷ ⵉⴼⴰⵢⵍⵓⵜⵏ ⵏ ⵓⵙⵎⴰⴳ ⴰⴷ, ⵕⵥⵎ ⵉⴼⵔⴷⵉⵙⵏ ⵏ ⵓⵙⵖⵣⴼ ⴳ chrome://extensions ⵜⵙⵙⴽⵔⴷ ⴰⵊⵊ ⴰⴽⵛⵛⵓⵎ ⵖⵔ URL ⵏ ⵉⴼⴰⵢⵍⵓⵜⵏ.",
   "error_pdf_unreadable": "ⵓⵔ ⵉⵜⵜⵓⵕⵥⴰⵎ PDF ⴰⴷ. ⵉⵣⵎⵔ ⴰⴷ ⵉⵜⵜⵓⵃⴹⵓ ⵙ ⵜⴳⵓⵔⵉ ⵏ ⵓⵣⵔⴰⵢ ⵏⵖ ⵉⵅⵚⵕ.",
-  "error_pdf_no_text": "PDF ⴰⴷ ⵓⵔ ⴷⴰⵔⵙ ⴰⴹⵔⵉⵙ ⴰⴷ ⵉⵜⵜⵓⵙⴳⵣⵍ. ⵉⵣⵎⵔ ⴰⴷ ⵢⴰⴳ ⵜⵉⵡⵍⴰⴼⵉⵏ ⵉⵜⵜⵓⵙⴽⴰⵏⵏⵉⵏ."
+  "error_pdf_no_text": "PDF ⴰⴷ ⵓⵔ ⴷⴰⵔⵙ ⴰⴹⵔⵉⵙ ⴰⴷ ⵉⵜⵜⵓⵙⴳⵣⵍ. ⵉⵣⵎⵔ ⴰⴷ ⵢⴰⴳ ⵜⵉⵡⵍⴰⴼⵉⵏ ⵉⵜⵜⵓⵙⴽⴰⵏⵏⵉⵏ.",
+  "ui_history": "ⴰⵎⵣⵔⵓⵢ",
+  "history_title": "ⴰⵎⵣⵔⵓⵢ ⵏ ⵉⵙⴳⵣⵓⵍⵏ",
+  "history_search": "ⵔⵣⵓ ⴳ ⵉⵙⴳⵣⵓⵍⵏ",
+  "history_empty": "ⵓⵔ ⵍⵍⵉⵏ ⵉⵙⴳⵣⵓⵍⵏ ⵖⴰⵙ. ⴰⴷ ⴷ ⴱⴰⵢⵏⵏ ⴷⴰ ⵎⵍⵎⵉ ⵜⵏ ⵜⵙⴽⴰⵔⴷ.",
+  "history_no_results": "ⵓⵔ ⵉⵍⵍⵉ ⴽⵔⴰ ⵏ ⵓⵙⴳⵣⵓⵍ ⵉⵎⵙⴰⵙⴰⵏ ⴷ ⵓⵔⵣⵣⵓ.",
+  "history_delete": "ⴽⴽⵙ",
+  "history_clear": "ⵙⴼⴹ ⴰⵎⵣⵔⵓⵢ",
+  "history_clear_confirm": "ⵙⵙⵉⵔⵎ ⵜⵉⴽⴽⵍⵜ ⵢⴰⴹⵏ ⴰⴷ ⵜⴽⴽⵙⴷ ⴽⵓⵍⵍⵓ",
+  "options_history": "ⵃⴹⵓ ⴰⵎⵣⵔⵓⵢ ⵏ ⵉⵙⴳⵣⵓⵍⵏ (ⴳ ⵓⵙⵎⵙⵙⵓ ⴰⴷ)"
 }

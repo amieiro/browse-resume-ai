@@ -48,5 +48,14 @@
   "options_models_refresh": "Lenn anezho bremañ",
   "error_file_access": "Evit diverrañ restroù an urzhiataer-mañ, digorit Munudoù an askouezh e chrome://extensions ha gweredekait Aotren an haeziñ d'an URLoù restr.",
   "error_pdf_unreadable": "N'haller ket digeriñ ar PDF-mañ. Gwarezet eo gant ur ger-tremen pe gwastet marteze.",
-  "error_pdf_no_text": "N'eus testenn ebet da ziverrañ er PDF-mañ. Graet eo gant skeudennoù skanet marteze."
+  "error_pdf_no_text": "N'eus testenn ebet da ziverrañ er PDF-mañ. Graet eo gant skeudennoù skanet marteze.",
+  "ui_history": "Istor",
+  "history_title": "Istor an diverradennoù",
+  "history_search": "Klask en diverradennoù",
+  "history_empty": "Diverradenn ebet c'hoazh. Dont a reont amañ a-feur ma vezont graet ganeoc'h.",
+  "history_no_results": "Diverradenn ebet ne glot gant ar c'hlask.",
+  "history_delete": "Dilemel",
+  "history_clear": "Skarzhañ an istor",
+  "history_clear_confirm": "Klikit en-dro evit dilemel pep tra",
+  "options_history": "Mirout un istor eus an diverradennoù (war an urzhiataer-mañ)"
 }

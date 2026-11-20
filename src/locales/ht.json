@@ -48,5 +48,14 @@
   "options_models_refresh": "Li yo kounye a",
   "error_file_access": "Pou rezime fichye ki sou òdinatè sa a, louvri Detay ekstansyon an nan chrome://extensions epi aktive Pèmèt aksè nan URL fichye yo.",
   "error_pdf_unreadable": "Nou pa ka louvri PDF sa a. Li ka pwoteje ak yon modpas oswa li ka domaje.",
-  "error_pdf_no_text": "PDF sa a pa gen tèks pou rezime. Li ka fèt ak imaj ki eskane."
+  "error_pdf_no_text": "PDF sa a pa gen tèks pou rezime. Li ka fèt ak imaj ki eskane.",
+  "ui_history": "Istorik",
+  "history_title": "Istorik rezime yo",
+  "history_search": "Chèche nan rezime yo",
+  "history_empty": "Poko gen rezime. Y ap parèt la a pandan w ap fè yo.",
+  "history_no_results": "Pa gen rezime ki koresponn ak rechèch la.",
+  "history_delete": "Efase",
+  "history_clear": "Efase istorik la",
+  "history_clear_confirm": "Klike ankò pou efase tout",
+  "options_history": "Kenbe yon istorik rezime yo (sou òdinatè sa a)"
 }

@@ -48,5 +48,14 @@
   "options_models_refresh": "Maanna atuakkit",
   "error_file_access": "Qarasaasiami matumani filit eqikkarniarukkit, chrome://extensions-imi ilassutip Paasissutissartai ammakkit, Allow access to file URLs aallartillugu.",
   "error_pdf_unreadable": "PDF-i una ammarneqarsinnaanngilaq. Isissutissamik illersorneqarsimassaaq imaluunniit aserorsimassaaq.",
-  "error_pdf_no_text": "PDF-imi uani allagaqanngilaq eqikkarneqarsinnaasumik. Assinik scannerikkanik sanaajusinnaavoq."
+  "error_pdf_no_text": "PDF-imi uani allagaqanngilaq eqikkarneqarsinnaasumik. Assinik scannerikkanik sanaajusinnaavoq.",
+  "ui_history": "Oqaluttuarisaaneq",
+  "history_title": "Eqikkaanerit oqaluttuarisaanerat",
+  "history_search": "Eqikkaanerni ujarlerit",
+  "history_empty": "Suli eqikkaanertaqanngilaq. Eqikkaanerit pilersikkakkit maani takussaassapput.",
+  "history_no_results": "Eqikkaanerit ujarlernermut naleqquttunik peqanngilaq.",
+  "history_delete": "Peeruk",
+  "history_clear": "Oqaluttuarisaaneq peeruk",
+  "history_clear_confirm": "Tamaasa peerniarukkit ataasiarlutit tooruk",
+  "options_history": "Eqikkaanerit oqaluttuarisaanerat toqqortaruk (qarasaasiami matumani)"
 }

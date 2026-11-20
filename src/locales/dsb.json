@@ -48,5 +48,14 @@
   "options_models_refresh": "Něnto cytaś",
   "error_file_access": "Aby dataje na toś tom licadle zespominał, wócyńśo Drobnostki rozšyrjenja w chrome://extensions a zašaltujśo Pśistup k datajowym URL dowóliś.",
   "error_pdf_unreadable": "Toś ten PDF njedajo se wócyniś. Snaź jo z gronidłom šćitany abo wobškóźony.",
-  "error_pdf_no_text": "Toś ten PDF njama tekst, kótaryž dajo se zespominaś. Snaź wobstoj ze skanowanych wobrazow."
+  "error_pdf_no_text": "Toś ten PDF njama tekst, kótaryž dajo se zespominaś. Snaź wobstoj ze skanowanych wobrazow.",
+  "ui_history": "Historija",
+  "history_title": "Historija zespominanjow",
+  "history_search": "Pytaś w zespominanjach",
+  "history_empty": "Hyšći žedne zespominanja. Pokažu se how, gaž je napórajośo.",
+  "history_no_results": "Žedne zespominanje njewótpowědujo pytanjeju.",
+  "history_delete": "Wulašowaś",
+  "history_clear": "Historiju wuprozniś",
+  "history_clear_confirm": "Klikniśo hyšći raz, aby wšykno wulašował",
+  "options_history": "Historiju zespominanjow wobchowaś (na toś tom licadle)"
 }

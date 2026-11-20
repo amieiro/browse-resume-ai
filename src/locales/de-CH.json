@@ -48,5 +48,14 @@
   "options_models_refresh": "Jetzt lesen",
   "error_file_access": "Um Dateien auf diesem Computer zusammenzufassen, öffne in chrome://extensions die Details der Erweiterung und aktiviere Zugriff auf Datei-URLs zulassen.",
   "error_pdf_unreadable": "Dieses PDF kann nicht geöffnet werden. Es ist möglicherweise passwortgeschützt oder beschädigt.",
-  "error_pdf_no_text": "Dieses PDF enthält keinen Text zum Zusammenfassen. Es besteht möglicherweise aus gescannten Bildern."
+  "error_pdf_no_text": "Dieses PDF enthält keinen Text zum Zusammenfassen. Es besteht möglicherweise aus gescannten Bildern.",
+  "ui_history": "Verlauf",
+  "history_title": "Verlauf der Zusammenfassungen",
+  "history_search": "Zusammenfassungen durchsuchen",
+  "history_empty": "Noch keine Zusammenfassungen. Sie erscheinen hier, sobald du welche erstellst.",
+  "history_no_results": "Keine Zusammenfassung entspricht der Suche.",
+  "history_delete": "Löschen",
+  "history_clear": "Verlauf löschen",
+  "history_clear_confirm": "Erneut klicken, um alle zu löschen",
+  "options_history": "Verlauf der Zusammenfassungen speichern (auf diesem Computer)"
 }

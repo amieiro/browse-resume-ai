@@ -48,5 +48,14 @@
   "options_models_refresh": "Les liére ora",
   "error_file_access": "Por rèsumar des fichiérs de ceti ordenator, uvrâd los Dètalys de l'èxtension dens chrome://extensions et activâd Ôtorisar l'accès a les URL de fichiér.",
   "error_pdf_unreadable": "Ceti PDF pôt pas étre uvèrt. Pôt-étre qu'il est protègiê per un mot de pâssa ou ben abîmâ.",
-  "error_pdf_no_text": "Ceti PDF at gins de tèxto a rèsumar. Pôt-étre qu'il est fêt d'émâges scanâs."
+  "error_pdf_no_text": "Ceti PDF at gins de tèxto a rèsumar. Pôt-étre qu'il est fêt d'émâges scanâs.",
+  "ui_history": "Historico",
+  "history_title": "Historico des rèsumâs",
+  "history_search": "Chèrchiér dens los rèsumâs",
+  "history_empty": "Gins de rèsumâ por ora. Aparéssont ique a mesera que vos los fâtes.",
+  "history_no_results": "Gins de rèsumâ corrèspond a la rechèrche.",
+  "history_delete": "Suprimar",
+  "history_clear": "Èfaciér l'historico",
+  "history_clear_confirm": "Clicâd dinkor por tot suprimar",
+  "options_history": "Gouardar un historico des rèsumâs (sur ceti ordenator)"
 }

@@ -9,6 +9,7 @@ a model running on your own computer through Ollama. No API keys, no pay-per-use
 - Select some text and right-click **Summarize the selection** to summarize only that part, for
   pages where the article is not found or when you want one section.
 - Ask questions about the page under the summary; the answers come from the page text only.
+- A history of your summaries, with search, kept only on your computer.
 - PDFs open in Chrome are summarized too, from their text (read with
   [pdf.js](https://mozilla.github.io/pdf.js/) inside the extension).
 - Choose the provider and model, the length (short, medium, long) and the summary language.
@@ -67,6 +68,10 @@ _Questions about the page: the answers appear under the summary and come from th
 <img src="media/gallery/feature-pdf.png" alt="The paper Attention Is All You Need open in Chrome's PDF viewer, and its summary in the side panel" width="800">
 
 _PDFs: a paper from arXiv in Chrome's PDF viewer, summarized from its text._
+
+<img src="media/gallery/feature-history.png" alt="The history page with three summaries, one of them of a PDF and one with a question and its answer" width="800">
+
+_The history: every summary, with its questions, searchable and kept only on this computer._
 
 <img src="media/gallery/securityweek-en-US-short.png" alt="A short summary of SecurityWeek in English (United States), in the side panel" width="800">
 
@@ -203,6 +208,12 @@ the selectors at the top change the provider, model, length and language for the
 use another shortcut, open `chrome://extensions/shortcuts`. If another extension already has
 <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>, Chrome leaves this one without a shortcut; set one there.
 
+Every summary goes to the **History** (the 🕘 button under the summary, or in the settings): a page
+with all of them, newest first, a search that ignores case and accents, and buttons to copy or
+delete each one or clear them all. It keeps the last 500 summaries in the extension's storage on
+this computer and is never sent anywhere; turn it off in the settings with **Keep a history of
+summaries**.
+
 A PDF open in Chrome is summarized the same way: the extension downloads the file and reads its
 text. PDFs made of scanned images have no text to read. For PDFs on your computer (`file://`), turn
 on **Allow access to file URLs** in the extension's **Details** in `chrome://extensions`.
@@ -276,10 +287,12 @@ pdokiakaaeffjlabmofdppjakdhaimpi
 - The extension reads a page only when you click its icon (`activeTab`). It never reads pages in
   the background.
 - The article text (at most 100,000 characters), its title and URL go to the local component and
-  from there to the provider you selected (Anthropic or OpenAI), under your own account. Nothing is
+  from there to the provider you selected (Anthropic or OpenAI, or Ollama on your computer), under your own account. Nothing is
   sent anywhere else.
 - The last summary of each tab is kept for the browser session, so clicking the icon again on the
   same page does not spend your quota. It is cleared when the tab closes.
+- The history keeps your summaries (with their page titles, URLs and questions) in the extension's
+  storage on this computer only. Turn it off or clear it at any time.
 
 ## Permissions
 
@@ -287,7 +300,7 @@ pdokiakaaeffjlabmofdppjakdhaimpi
 |---|---|
 | `activeTab` | Read the page you clicked the icon or the menu on. |
 | `scripting` | Run the article extractor (Mozilla Readability) in that page. |
-| `storage` | Save your settings and the per-tab summary for the session. |
+| `storage` | Save your settings, the history of summaries and the per-tab summary for the session. |
 | `sidePanel` | Show summaries in the side panel. |
 | `nativeMessaging` | Talk to the local component. |
 | `offscreen` | Read PDFs with pdf.js in a hidden extension page (a service worker cannot run pdf.js). |

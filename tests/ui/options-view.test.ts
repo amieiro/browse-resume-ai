@@ -89,6 +89,19 @@ describe('options view', () => {
     expect(onSave).toHaveBeenLastCalledWith(patch as Partial<Settings>);
   });
 
+  it('saves the history setting and opens the history', async () => {
+    const onOpenHistory = vi.fn();
+    const view = mountOptionsView(root, defaultSettings('en'), { onSave, checkAvailability: async (id) => availability[id]!, onOpenHistory });
+    await view.ready;
+    const box = field<HTMLInputElement>('keepHistory');
+    expect(box.checked).toBe(true);
+    box.checked = false;
+    box.dispatchEvent(new Event('change'));
+    expect(onSave).toHaveBeenLastCalledWith({ keepHistory: false });
+    root.querySelector<HTMLButtonElement>('button[name="open-history"]')!.click();
+    expect(onOpenHistory).toHaveBeenCalled();
+  });
+
   it('saves the selected model of a provider', async () => {
     await mount();
     change(field<HTMLSelectElement>('model-claude'), 'opus');

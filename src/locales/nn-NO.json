@@ -48,5 +48,14 @@
   "options_models_refresh": "Les dei no",
   "error_file_access": "For å samanfatte filer på denne datamaskina, opna Detaljar for utvidinga i chrome://extensions og slå på Tillat tilgang til fil-nettadresser.",
   "error_pdf_unreadable": "Denne PDF-en kan ikkje opnast. Han kan vere passordverna eller skadd.",
-  "error_pdf_no_text": "Denne PDF-en har ingen tekst å samanfatte. Han kan vere laga av skanna bilete."
+  "error_pdf_no_text": "Denne PDF-en har ingen tekst å samanfatte. Han kan vere laga av skanna bilete.",
+  "ui_history": "Historikk",
+  "history_title": "Samandragshistorikk",
+  "history_search": "Søk i samandraga",
+  "history_empty": "Ingen samandrag enno. Dei blir viste her etter kvart som du lagar dei.",
+  "history_no_results": "Ingen samandrag samsvarer med søket.",
+  "history_delete": "Slett",
+  "history_clear": "Tøm historikken",
+  "history_clear_confirm": "Klikk igjen for å slette alt",
+  "options_history": "Ta vare på ein historikk over samandrag (på denne datamaskina)"
 }

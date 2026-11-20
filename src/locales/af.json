@@ -48,5 +48,14 @@
   "options_models_refresh": "Lees hulle nou",
   "error_file_access": "Om lêers op hierdie rekenaar op te som, maak die uitbreiding se Besonderhede in chrome://extensions oop en skakel Laat toegang tot lêer-URL's toe aan.",
   "error_pdf_unreadable": "Hierdie PDF kan nie oopgemaak word nie. Dit is dalk met 'n wagwoord beskerm of beskadig.",
-  "error_pdf_no_text": "Hierdie PDF het geen teks om op te som nie. Dit bestaan dalk uit geskandeerde beelde."
+  "error_pdf_no_text": "Hierdie PDF het geen teks om op te som nie. Dit bestaan dalk uit geskandeerde beelde.",
+  "ui_history": "Geskiedenis",
+  "history_title": "Opsommingsgeskiedenis",
+  "history_search": "Deursoek die opsommings",
+  "history_empty": "Nog geen opsommings nie. Hulle verskyn hier soos jy dit maak.",
+  "history_no_results": "Geen opsommings pas by die soektog nie.",
+  "history_delete": "Skrap",
+  "history_clear": "Vee geskiedenis uit",
+  "history_clear_confirm": "Klik weer om alles te skrap",
+  "options_history": "Hou 'n geskiedenis van opsommings (op hierdie rekenaar)"
 }

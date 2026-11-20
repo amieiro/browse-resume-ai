@@ -48,5 +48,14 @@
   "options_models_refresh": "Lèggili ora",
   "error_file_access": "Pi riassumiri file supra stu computer, apri li Dittagli di l'estinsioni nta chrome://extensions e attiva Pirmetti l'accessu ê URL dî file.",
   "error_pdf_unreadable": "Stu PDF nun si pò apriri. Pò èssiri prutettu cu na password o danniggiatu.",
-  "error_pdf_no_text": "Stu PDF nun havi testu di riassumiri. Pò èssiri fattu di mmàggini scanniati."
+  "error_pdf_no_text": "Stu PDF nun havi testu di riassumiri. Pò èssiri fattu di mmàggini scanniati.",
+  "ui_history": "Crunuluggìa",
+  "history_title": "Crunuluggìa dî riassunti",
+  "history_search": "Cerca nta li riassunti",
+  "history_empty": "Ancora nun ci sunnu riassunti. Cumpàrinu ccà a misura ca li fai.",
+  "history_no_results": "Nuddu riassuntu currispunni â ricerca.",
+  "history_delete": "Scancella",
+  "history_clear": "Scancella la crunuluggìa",
+  "history_clear_confirm": "Clicca arrè pi scancillari tuttu",
+  "options_history": "Teni na crunuluggìa dî riassunti (nta stu computer)"
 }

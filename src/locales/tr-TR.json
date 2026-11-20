@@ -48,5 +48,14 @@
   "options_models_refresh": "Şimdi oku",
   "error_file_access": "Bu bilgisayardaki dosyaları özetlemek için chrome://extensions sayfasında uzantının Ayrıntılar bölümünü açın ve Dosya URL'lerine erişime izin ver seçeneğini etkinleştirin.",
   "error_pdf_unreadable": "Bu PDF açılamıyor. Parola korumalı veya hasarlı olabilir.",
-  "error_pdf_no_text": "Bu PDF'de özetlenecek metin yok. Taranmış görüntülerden oluşuyor olabilir."
+  "error_pdf_no_text": "Bu PDF'de özetlenecek metin yok. Taranmış görüntülerden oluşuyor olabilir.",
+  "ui_history": "Geçmiş",
+  "history_title": "Özet geçmişi",
+  "history_search": "Özetlerde ara",
+  "history_empty": "Henüz özet yok. Özet oluşturdukça burada görünür.",
+  "history_no_results": "Aramayla eşleşen özet yok.",
+  "history_delete": "Sil",
+  "history_clear": "Geçmişi temizle",
+  "history_clear_confirm": "Tümünü silmek için yeniden tıklayın",
+  "options_history": "Özet geçmişini tut (bu bilgisayarda)"
 }

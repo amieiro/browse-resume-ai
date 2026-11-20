@@ -48,5 +48,14 @@
   "options_models_refresh": "Baca sekarang",
   "error_file_access": "Untuk meringkas file di komputer ini, buka Detail ekstensi di chrome://extensions lalu aktifkan Izinkan akses ke URL file.",
   "error_pdf_unreadable": "PDF ini tidak dapat dibuka. Mungkin dilindungi sandi atau rusak.",
-  "error_pdf_no_text": "PDF ini tidak memiliki teks untuk diringkas. Mungkin berisi gambar hasil pindaian."
+  "error_pdf_no_text": "PDF ini tidak memiliki teks untuk diringkas. Mungkin berisi gambar hasil pindaian.",
+  "ui_history": "Riwayat",
+  "history_title": "Riwayat ringkasan",
+  "history_search": "Cari di ringkasan",
+  "history_empty": "Belum ada ringkasan. Ringkasan akan muncul di sini saat Anda membuatnya.",
+  "history_no_results": "Tidak ada ringkasan yang cocok dengan pencarian.",
+  "history_delete": "Hapus",
+  "history_clear": "Hapus riwayat",
+  "history_clear_confirm": "Klik lagi untuk menghapus semua",
+  "options_history": "Simpan riwayat ringkasan (di komputer ini)"
 }

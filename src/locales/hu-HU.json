@@ -48,5 +48,14 @@
   "options_models_refresh": "Beolvasás most",
   "error_file_access": "A számítógépen lévő fájlok összefoglalásához nyisd meg a bővítmény Részletek oldalát a chrome://extensions címen, és kapcsold be a Hozzáférés engedélyezése a fájl URL-ekhez beállítást.",
   "error_pdf_unreadable": "Ez a PDF nem nyitható meg. Lehet, hogy jelszóval védett vagy sérült.",
-  "error_pdf_no_text": "Ebben a PDF-ben nincs összefoglalható szöveg. Lehet, hogy beszkennelt képekből áll."
+  "error_pdf_no_text": "Ebben a PDF-ben nincs összefoglalható szöveg. Lehet, hogy beszkennelt képekből áll.",
+  "ui_history": "Előzmények",
+  "history_title": "Összefoglalók előzményei",
+  "history_search": "Keresés az összefoglalókban",
+  "history_empty": "Még nincsenek összefoglalók. Itt jelennek meg, ahogy elkészíted őket.",
+  "history_no_results": "Egyetlen összefoglaló sem felel meg a keresésnek.",
+  "history_delete": "Törlés",
+  "history_clear": "Előzmények törlése",
+  "history_clear_confirm": "Kattints újra az összes törléséhez",
+  "options_history": "Összefoglalók előzményeinek megőrzése (ezen a számítógépen)"
 }

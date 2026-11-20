@@ -48,5 +48,14 @@
   "options_models_refresh": "立即读取",
   "error_file_access": "如需总结此计算机上的文件，请在 chrome://extensions 中打开该扩展程序的“详情”，然后开启“允许访问文件网址”。",
   "error_pdf_unreadable": "无法打开此 PDF。它可能受密码保护或已损坏。",
-  "error_pdf_no_text": "此 PDF 中没有可总结的文本。它可能由扫描图片组成。"
+  "error_pdf_no_text": "此 PDF 中没有可总结的文本。它可能由扫描图片组成。",
+  "ui_history": "历史记录",
+  "history_title": "摘要历史记录",
+  "history_search": "搜索摘要",
+  "history_empty": "还没有摘要。生成的摘要会显示在这里。",
+  "history_no_results": "没有与搜索匹配的摘要。",
+  "history_delete": "删除",
+  "history_clear": "清除历史记录",
+  "history_clear_confirm": "再次点击即可全部删除",
+  "options_history": "保存摘要历史记录（在此电脑上）"
 }

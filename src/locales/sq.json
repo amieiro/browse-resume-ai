@@ -48,5 +48,14 @@
   "options_models_refresh": "Lexojini tani",
   "error_file_access": "Për të përmbledhur kartela në këtë kompjuter, hapni Hollësitë e zgjerimit te chrome://extensions dhe aktivizoni Lejo hyrje te URL kartelash.",
   "error_pdf_unreadable": "Ky PDF s'mund të hapet. Mund të jetë i mbrojtur me fjalëkalim ose i dëmtuar.",
-  "error_pdf_no_text": "Ky PDF s'ka tekst për t'u përmbledhur. Mund të jetë i përbërë nga figura të skanuara."
+  "error_pdf_no_text": "Ky PDF s'ka tekst për t'u përmbledhur. Mund të jetë i përbërë nga figura të skanuara.",
+  "ui_history": "Historiku",
+  "history_title": "Historiku i përmbledhjeve",
+  "history_search": "Kërkoni te përmbledhjet",
+  "history_empty": "Ende s'ka përmbledhje. Do të shfaqen këtu, ndërsa i krijoni.",
+  "history_no_results": "Asnjë përmbledhje nuk përputhet me kërkimin.",
+  "history_delete": "Fshije",
+  "history_clear": "Pastro historikun",
+  "history_clear_confirm": "Klikoni sërish për t'i fshirë të gjitha",
+  "options_history": "Mbaj një historik përmbledhjesh (në këtë kompjuter)"
 }

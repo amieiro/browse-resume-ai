@@ -48,5 +48,14 @@
   "options_models_refresh": "Xà ye dìn",
   "error_file_access": "Bo na kpɛ́n xó fichier ɖěɖee ɖò ordinateur elɔ jí lɛ é tɔn ɔ, hun Détails extension ɔ tɔn ɖò chrome://extensions bo zé Autoriser l'accès aux URL de fichier dó jí.",
   "error_pdf_unreadable": "È sixu hun PDF elɔ ǎ. Bɔ é sixu ɖò mɔ̌ ɖɔ è ɖó mɔ̌ xwé ná é kpo xó ɖě kpo, alǒ é gble.",
-  "error_pdf_no_text": "Wekpa ɖě ɖò PDF elɔ mɛ bo è na kpɛ́n xó tɔn ǎ. É sixu ɖò mɔ̌ ɖɔ foto e è scanné lɛ wɛ è zán bo blo é."
+  "error_pdf_no_text": "Wekpa ɖě ɖò PDF elɔ mɛ bo è na kpɛ́n xó tɔn ǎ. É sixu ɖò mɔ̌ ɖɔ foto e è scanné lɛ wɛ è zán bo blo é.",
+  "ui_history": "Tan ɖé ko jɛ",
+  "history_title": "Xókpɛ́n e ko ɖó lɛ é",
+  "history_search": "Ba nǔ ɖò xókpɛ́n lɛ mɛ",
+  "history_empty": "Xókpɛ́n ɖě ɖè ǎ jɛ̀ẁ. Yě na sɔ́ te ɖò fí ɖò hwenu e a ɖò ye bló wɛ é.",
+  "history_no_results": "Xókpɛ́n ɖě sɔgbe xá nǔ e a ba é ǎ.",
+  "history_delete": "Sú",
+  "history_clear": "Sú xókpɛ́n e ko ɖó lɛ é bǐ",
+  "history_clear_confirm": "Zín dó jí ɖevo bo na sú bǐ",
+  "options_history": "Hɛn xókpɛ́n e ko ɖó lɛ é ɖó (ɖò òɖíntɔ́ elɔ jí)"
 }

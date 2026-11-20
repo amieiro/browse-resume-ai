@@ -48,5 +48,14 @@
   "options_models_refresh": "Elo liesen",
   "error_file_access": "Fir Dateien op dësem Computer zesummenzefaassen, maach d'Detailer vun der Extensioun op chrome://extensions op a schalt Zougrëff op Datei-URLen erlaben un.",
   "error_pdf_unreadable": "Dëse PDF kann net opgemaach ginn. E kéint mat engem Passwuert geschützt oder beschiedegt sinn.",
-  "error_pdf_no_text": "Dëse PDF huet keen Text fir zesummenzefaassen. E kéint aus gescannte Biller bestoen."
+  "error_pdf_no_text": "Dëse PDF huet keen Text fir zesummenzefaassen. E kéint aus gescannte Biller bestoen.",
+  "ui_history": "Verlaf",
+  "history_title": "Verlaf vun de Resuméen",
+  "history_search": "An de Resuméen sichen",
+  "history_empty": "Nach keng Resuméen. Si erschéngen hei, soubal Dir se maacht.",
+  "history_no_results": "Keng Resuméen passen op d'Sich.",
+  "history_delete": "Läschen",
+  "history_clear": "Verlaf läschen",
+  "history_clear_confirm": "Klickt nach eng Kéier, fir alles ze läschen",
+  "options_history": "E Verlaf vun de Resuméen halen (op dësem Computer)"
 }

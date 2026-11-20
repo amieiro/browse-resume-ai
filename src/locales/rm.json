@@ -48,5 +48,14 @@
   "options_models_refresh": "Leger ussa",
   "error_file_access": "Per resumar datotecas sin quest computer, avra ils Detagls da l'extensiun en chrome://extensions ed activescha Permetter l'access a URLs da datotecas.",
   "error_pdf_unreadable": "Quest PDF na po betg vegnir avert. El è forsa protegì cun in pled-clav u donnegià.",
-  "error_pdf_no_text": "Quest PDF na cuntegna nagin text per resumar. El consista forsa da maletgs scannads."
+  "error_pdf_no_text": "Quest PDF na cuntegna nagin text per resumar. El consista forsa da maletgs scannads.",
+  "ui_history": "Cronologia",
+  "history_title": "Cronologia da las resumaziuns",
+  "history_search": "Tschertgar en las resumaziuns",
+  "history_empty": "Anc naginas resumaziuns. Ellas cumparan qua, uschespert che ti las fas.",
+  "history_no_results": "Naginas resumaziuns na correspundan a la tschertga.",
+  "history_delete": "Stizzar",
+  "history_clear": "Stizzar la cronologia",
+  "history_clear_confirm": "Clicca anc ina giada per stizzar tut",
+  "options_history": "Tegnair ina cronologia da las resumaziuns (sin quest computer)"
 }

@@ -48,5 +48,14 @@
   "options_models_refresh": "Lufunde manje",
   "error_file_access": "Ukuze ufinyeze amafayela akule khompyutha, vula Imininingwane yesandiso ku-chrome://extensions bese uvula Vumela ukufinyelela kuma-URL wefayela.",
   "error_pdf_unreadable": "Le PDF ayikwazi ukuvulwa. Kungenzeka ivikelwe ngephasiwedi noma yonakele.",
-  "error_pdf_no_text": "Le PDF ayinawo umbhalo ongafinyezwa. Kungenzeka yakhiwe ngezithombe ezisekeniwe."
+  "error_pdf_no_text": "Le PDF ayinawo umbhalo ongafinyezwa. Kungenzeka yakhiwe ngezithombe ezisekeniwe.",
+  "ui_history": "Umlando",
+  "history_title": "Umlando wezifinyezo",
+  "history_search": "Sesha ezifinyezweni",
+  "history_empty": "Azikabikho izifinyezo. Zizovela lapha njengoba uzenza.",
+  "history_no_results": "Asikho isifinyezo esifana nosesho.",
+  "history_delete": "Susa",
+  "history_clear": "Sula umlando",
+  "history_clear_confirm": "Chofoza futhi ukuze ususe konke",
+  "options_history": "Gcina umlando wezifinyezo (kule khompyutha)"
 }

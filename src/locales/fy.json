@@ -48,5 +48,14 @@
   "options_models_refresh": "No lêze",
   "error_file_access": "Om bestannen op dizze kompjûter gear te fetsjen, iepenje de Details fan de útwreiding yn chrome://extensions en set Tagong ta bestâns-URL's tastean oan.",
   "error_pdf_unreadable": "Dizze PDF kin net iepene wurde. Miskien is er beskerme mei in wachtwurd of is er skansearre.",
-  "error_pdf_no_text": "Dizze PDF hat gjin tekst om gear te fetsjen. Miskien bestiet er út scande ôfbyldingen."
+  "error_pdf_no_text": "Dizze PDF hat gjin tekst om gear te fetsjen. Miskien bestiet er út scande ôfbyldingen.",
+  "ui_history": "Skiednis",
+  "history_title": "Skiednis fan gearfettingen",
+  "history_search": "Sykje yn de gearfettingen",
+  "history_empty": "Noch gjin gearfettingen. Se ferskine hjir as jo se meitsje.",
+  "history_no_results": "Gjin gearfettingen komme oerien mei de sykopdracht.",
+  "history_delete": "Fuortsmite",
+  "history_clear": "Skiednis wiskje",
+  "history_clear_confirm": "Klik nochris om alles fuort te smiten",
+  "options_history": "In skiednis fan gearfettingen bewarje (op dizze kompjûter)"
 }

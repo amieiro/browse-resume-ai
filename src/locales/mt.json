@@ -48,5 +48,14 @@
   "options_models_refresh": "Aqrahom issa",
   "error_file_access": "Biex tagħmel sommarju tal-fajls fuq dan il-kompjuter, iftaħ id-Dettalji tal-estensjoni f'chrome://extensions u ixgħel Ippermetti l-aċċess għall-URLs tal-fajls.",
   "error_pdf_unreadable": "Dan il-PDF ma jistax jinfetaħ. Jista' jkun protett b'password jew bil-ħsara.",
-  "error_pdf_no_text": "Dan il-PDF m'għandux test x'tagħmel sommarju tiegħu. Jista' jkun magħmul minn stampi skenjati."
+  "error_pdf_no_text": "Dan il-PDF m'għandux test x'tagħmel sommarju tiegħu. Jista' jkun magħmul minn stampi skenjati.",
+  "ui_history": "Storja",
+  "history_title": "Storja tas-sommarji",
+  "history_search": "Fittex fis-sommarji",
+  "history_empty": "Għad m'hemm l-ebda sommarju. Jidhru hawn hekk kif tagħmilhom.",
+  "history_no_results": "L-ebda sommarju ma jaqbel mat-tfittxija.",
+  "history_delete": "Ħassar",
+  "history_clear": "Ħassar l-istorja",
+  "history_clear_confirm": "Erġa' kklikkja biex tħassar kollox",
+  "options_history": "Żomm storja tas-sommarji (fuq dan il-kompjuter)"
 }

@@ -24,6 +24,7 @@ async function main() {
     version: browser.runtime.getManifest().version,
     baseModels: (id) => baseModels(stored, catalog, id),
     modelsCheckedAt: catalog?.checkedAt ?? null,
+    onOpenHistory: () => void browser.tabs.create({ url: browser.runtime.getURL('/history.html') }),
     onRefreshModels: async () => {
       await refreshCatalog(catalogDeps());
       location.reload();

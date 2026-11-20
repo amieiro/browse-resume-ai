@@ -48,5 +48,14 @@
   "options_models_refresh": "Zisome kati",
   "error_file_access": "Okufunza mu bufunze fayiro eziri ku kompyuta eno, ggulawo Details z'ekyongerwako mu chrome://extensions era otandike Allow access to file URLs.",
   "error_pdf_unreadable": "PDF eno tesobola kuggulwawo. Eyinza okuba ng'ekuumibwa n'ekigambo ky'okuyingira oba eyonoonese.",
-  "error_pdf_no_text": "PDF eno terina bigambo bya kufunza. Eyinza okuba ng'ekoleddwa mu bifaananyi ebisikaanidwa."
+  "error_pdf_no_text": "PDF eno terina bigambo bya kufunza. Eyinza okuba ng'ekoleddwa mu bifaananyi ebisikaanidwa.",
+  "ui_history": "Ebyafaayo",
+  "history_title": "Ebyafaayo by'ebifunze",
+  "history_search": "Noonya mu bifunze",
+  "history_empty": "Tewannabaawo bifunze. Bijja kulabika wano ng'obikola.",
+  "history_no_results": "Tewali bifunze bikwatagana n'ky'onoonya.",
+  "history_delete": "Ggyawo",
+  "history_clear": "Sangula ebyafaayo",
+  "history_clear_confirm": "Nyiga nate okuggyawo byonna",
+  "options_history": "Kuuma ebyafaayo by'ebifunze (ku kompyuta eno)"
 }

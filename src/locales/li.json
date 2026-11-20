@@ -48,5 +48,14 @@
   "options_models_refresh": "Lees ze noe",
   "error_file_access": "Um bestande op dees computer same te vatte, äöpen de Details vaan de extensie in chrome://extensions en zet Toegang tot bestands-URL's toestaon aan.",
   "error_pdf_unreadable": "Dees PDF kin neet geäöpend weure. Hae is mesjiens mit e wachwoord beveilig of besjadig.",
-  "error_pdf_no_text": "Dees PDF haet gein tèks um same te vatte. Hae besteit mesjiens oet gesjande aafbeeldinge."
+  "error_pdf_no_text": "Dees PDF haet gein tèks um same te vatte. Hae besteit mesjiens oet gesjande aafbeeldinge.",
+  "ui_history": "Gesjiedenis",
+  "history_title": "Gesjiedenis vaan saamevattinge",
+  "history_search": "Zeuk in de saamevattinge",
+  "history_empty": "Nog gein saamevattinge. Ze versjijne hie wienste ze maaks.",
+  "history_no_results": "Gein saamevattinge passe bij de zeukopdrach.",
+  "history_delete": "Wisse",
+  "history_clear": "Gesjiedenis wisse",
+  "history_clear_confirm": "Klik nog ins om alles te wisse",
+  "options_history": "Hawt 'n gesjiedenis vaan saamevattinge bij (op deze computer)"
 }

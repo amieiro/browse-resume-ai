@@ -48,5 +48,14 @@
   "options_models_refresh": "İndi oxu",
   "error_file_access": "Bu kompüterdəki faylları özətləmək üçün chrome://extensions səhifəsində əlavənin Detallar bölməsini açın və Fayl URL-lərinə girişə icazə verin seçimini aktiv edin.",
   "error_pdf_unreadable": "Bu PDF açıla bilmir. Şifrə ilə qorunmuş və ya zədələnmiş ola bilər.",
-  "error_pdf_no_text": "Bu PDF-də özətləniləcək mətn yoxdur. Skan edilmiş şəkillərdən ibarət ola bilər."
+  "error_pdf_no_text": "Bu PDF-də özətləniləcək mətn yoxdur. Skan edilmiş şəkillərdən ibarət ola bilər.",
+  "ui_history": "Tarixçə",
+  "history_title": "Özət tarixçəsi",
+  "history_search": "Özətlərdə axtarın",
+  "history_empty": "Hələ özət yoxdur. Onları yaratdıqca burada görünəcək.",
+  "history_no_results": "Axtarışa uyğun özət yoxdur.",
+  "history_delete": "Sil",
+  "history_clear": "Tarixçəni təmizlə",
+  "history_clear_confirm": "Hamısını silmək üçün yenidən klikləyin",
+  "options_history": "Özətlərin tarixçəsini saxla (bu kompüterdə)"
 }
