@@ -56,4 +56,48 @@ describe('renderMarkdown', () => {
     renderMarkdown('second', el);
     expect(el.textContent).toBe('second');
   });
+
+  it('renders # headings as h2 and deeper ones as h3, without the hashes', () => {
+    const el = render('# Top\n\n## Key points\n- a\n\n### Details\ntext');
+    expect([...el.querySelectorAll('h2')].map((h) => h.textContent)).toEqual(['Top', 'Key points']);
+    expect(el.querySelector('h3')?.textContent).toBe('Details');
+    expect(el.textContent).not.toContain('#');
+  });
+
+  it('ends a list at a heading', () => {
+    const el = render('- a\n## Next\n- b');
+    expect(el.querySelectorAll('ul').length).toBe(2);
+  });
+
+  it('renders numbered lines as an ordered list', () => {
+    const el = render('1. one\n2. two');
+    expect(el.querySelectorAll('ol li').length).toBe(2);
+    expect(el.querySelector('ol li')?.textContent).toBe('one');
+  });
+
+  it('renders `code` and keeps ** inside it literal', () => {
+    const code = render('set `a**b` now').querySelector('p code');
+    expect(code?.textContent).toBe('a**b');
+  });
+
+  it('renders *italic* and _italic_', () => {
+    const el = render('an *important* and _key_ word');
+    expect([...el.querySelectorAll('em')].map((e) => e.textContent)).toEqual(['important', 'key']);
+  });
+
+  it('keeps snake_case names and lone asterisks literal', () => {
+    const el = render('session_upload_progress costs 2 * 3');
+    expect(el.querySelector('em')).toBeNull();
+    expect(el.textContent).toBe('session_upload_progress costs 2 * 3');
+  });
+
+  it('renders bold and italic inside list items and headings', () => {
+    const el = render('- **Lead:** an *early* result');
+    expect(el.querySelector('li strong')?.textContent).toBe('Lead:');
+    expect(el.querySelector('li em')?.textContent).toBe('early');
+  });
+
+  it('drops horizontal rules', () => {
+    expect(render('a\n\n---\n\nb').textContent).toBe('ab');
+  });
 });

@@ -1,10 +1,27 @@
 # Browse Resume AI
 
+A Chrome extension that summarizes the article in the current tab with one click, using the AI
+subscription you already pay for: Claude (through Claude Code) or ChatGPT (through Codex). No API
+keys, no pay-per-use billing.
+
+- One click on the toolbar icon summarizes the page with your saved settings.
+- Choose the provider and model, the length (short, medium, long) and the summary language.
+- The summary appears in the side panel or in a popup; you pick which in the settings.
+- 201 languages, for both the summary and the interface: the languages of
+  [translate.wordpress.org](https://translate.wordpress.org/), with BCP 47 codes (ISO 639 language,
+  ISO 3166 region, e.g. `gl-ES`, `pt-BR`) and ISO 639 names. The interface follows the browser
+  language or the one you choose in the settings.
+
+Status: personal project. Works on macOS, Linux and Windows with Google Chrome (and Chromium on
+Linux and Windows). macOS and Linux are tested end to end; Windows is tested only through its
+installer scripts, not on a Windows machine yet. A Firefox build is planned.
+
 <!-- toc -->
 
 **Contents**
 
 - [Browse Resume AI](#browse-resume-ai)
+  - [Screenshots](#screenshots)
   - [Requirements](#requirements)
   - [Install](#install)
     - [1. Get the code and install the local component](#1-get-the-code-and-install-the-local-component)
@@ -28,21 +45,51 @@
 
 <!-- tocstop -->
 
-A Chrome extension that summarizes the article in the current tab with one click, using the AI
-subscription you already pay for: Claude (through Claude Code) or ChatGPT (through Codex). No API
-keys, no pay-per-use billing.
+## Screenshots
 
-- One click on the toolbar icon summarizes the page with your saved settings.
-- Choose the provider and model, the length (short, medium, long) and the summary language.
-- The summary appears in the side panel or in a popup; you pick which in the settings.
-- 201 languages, for both the summary and the interface: the languages of
-  [translate.wordpress.org](https://translate.wordpress.org/), with BCP 47 codes (ISO 639 language,
-  ISO 3166 region, e.g. `gl-ES`, `pt-BR`) and ISO 639 names. The interface follows the browser
-  language or the one you choose in the settings.
+Real summaries of real pages, made with Claude Sonnet, in several languages and the three lengths.
+The interface follows the summary language here; both can be set apart in the settings.
 
-Status: personal project. Works on macOS, Linux and Windows with Google Chrome (and Chromium on
-Linux and Windows). macOS and Linux are tested end to end; Windows is tested only through its
-installer scripts, not on a Windows machine yet. A Firefox build is planned.
+<img src="media/gallery/securityweek-en-US-short.png" alt="A short summary of SecurityWeek in English (United States), in the side panel" width="800">
+
+_SecurityWeek: short summary in English (United States), in the side panel._
+
+<img src="media/gallery/newscientist-gl-ES-long.png" alt="A long summary of New Scientist in Galician, in the side panel" width="800">
+
+_New Scientist: long summary in Galician, in the side panel._
+
+<img src="media/gallery/grapheneos-ja-medium.png" alt="A medium summary of a GrapheneOS thread on Mastodon in Japanese, in the popup" width="800">
+
+_A GrapheneOS thread on Mastodon: medium summary in Japanese, in the popup._
+
+<details>
+<summary>Six more: Spanish, French, German, Portuguese, Italian and Arabic</summary>
+
+<img src="media/gallery/securityweek-es-ES-medium.png" alt="A medium summary of SecurityWeek in Spanish (Spain), in the popup" width="800">
+
+_SecurityWeek: medium summary in Spanish (Spain), in the popup._
+
+<img src="media/gallery/securityweek-fr-FR-long.png" alt="A long summary of SecurityWeek in French (France), in the side panel" width="800">
+
+_SecurityWeek: long summary in French (France), in the side panel._
+
+<img src="media/gallery/newscientist-de-DE-short.png" alt="A short summary of New Scientist in German, in the popup" width="800">
+
+_New Scientist: short summary in German, in the popup._
+
+<img src="media/gallery/newscientist-pt-BR-medium.png" alt="A medium summary of New Scientist in Portuguese (Brazil), in the side panel" width="800">
+
+_New Scientist: medium summary in Portuguese (Brazil), in the side panel._
+
+<img src="media/gallery/grapheneos-it-IT-short.png" alt="A short summary of a GrapheneOS thread on Mastodon in Italian, in the side panel" width="800">
+
+_A GrapheneOS thread on Mastodon: short summary in Italian, in the side panel._
+
+<img src="media/gallery/grapheneos-ar-long.png" alt="A long summary of a GrapheneOS thread on Mastodon in Arabic, in the side panel" width="800">
+
+_A GrapheneOS thread on Mastodon: long summary in Arabic, right to left, in the side panel._
+
+</details>
 
 ## Requirements
 
@@ -271,8 +318,9 @@ to configure.
   or Codex, because the launcher stores absolute paths.
 - After changing the source, run `npm run dist` and commit `dist/chrome` with the change, so the
   prebuilt extension in the repository stays current. If the change is visible in the screenshots,
-  run `npm run screenshots` (it opens a separate Chrome with a temporary profile) and commit
-  `media/install` too.
+  run `npm run screenshots` and `npm run gallery` (they open a separate Chrome with a temporary
+  profile, and the gallery makes nine real summaries) and commit `media/install` and
+  `media/gallery` too.
 - After adding, renaming or removing a heading in this README, run `npm run readme-toc` to update
   the table of contents at the top.
 
@@ -294,6 +342,7 @@ npm run dev       # Chrome with the extension loaded and live reload
 npm run build     # production build in .output/chrome-mv3
 npm run dist      # build and copy it to dist/chrome, the prebuilt folder kept in the repository
 npm run screenshots  # regenerate media/install/*.png (needs the native host installed)
+npm run gallery      # regenerate media/gallery/*.png: real summaries of real pages (same need)
 npm run readme-toc   # regenerate the table of contents at the top of this README
 npm test          # unit tests (extension and native host)
 npm run compile   # type check
