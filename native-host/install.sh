@@ -1,5 +1,6 @@
 #!/bin/sh
-# Installs the Browse Resume AI native messaging host for Google Chrome on macOS.
+# Installs the Browse Resume AI native messaging host for Google Chrome (and Chromium on Linux)
+# on macOS and Linux. On Windows, use install.ps1.
 # Safe to run again (for example after moving the repository or upgrading Node or Claude Code).
 set -eu
 
@@ -8,15 +9,25 @@ EXTENSION_ID="pdokiakaaeffjlabmofdppjakdhaimpi"
 
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 HOST_SCRIPT="$SCRIPT_DIR/host.mjs"
-SUPPORT_DIR="$HOME/Library/Application Support/browse-resume-ai"
-LAUNCHER="$SUPPORT_DIR/launcher.sh"
-MANIFEST_DIR="$HOME/Library/Application Support/Google/Chrome/NativeMessagingHosts"
-MANIFEST="$MANIFEST_DIR/$HOST_NAME.json"
 
-if [ "$(uname)" != "Darwin" ]; then
-  echo "This installer supports macOS only." >&2
-  exit 1
-fi
+# Where the launcher goes, and the browsers' NativeMessagingHosts folders (one per line).
+case "$(uname)" in
+  Darwin)
+    SUPPORT_DIR="$HOME/Library/Application Support/browse-resume-ai"
+    MANIFEST_DIRS="$HOME/Library/Application Support/Google/Chrome/NativeMessagingHosts"
+    ;;
+  Linux)
+    SUPPORT_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/browse-resume-ai"
+    CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}"
+    MANIFEST_DIRS="$CONFIG_DIR/google-chrome/NativeMessagingHosts
+$CONFIG_DIR/chromium/NativeMessagingHosts"
+    ;;
+  *)
+    echo "This installer supports macOS and Linux. On Windows, run native-host\\install.ps1 in PowerShell." >&2
+    exit 1
+    ;;
+esac
+LAUNCHER="$SUPPORT_DIR/launcher.sh"
 
 NODE_BIN=$(command -v node || true)
 CLAUDE_BIN=$(command -v claude || true)
@@ -39,7 +50,7 @@ for bin in "$CLAUDE_BIN" "$CODEX_BIN"; do
 done
 HOST_PATH="$HOST_PATH:/usr/bin:/bin:/usr/sbin:/sbin"
 
-mkdir -p "$SUPPORT_DIR" "$MANIFEST_DIR"
+mkdir -p "$SUPPORT_DIR"
 
 cat > "$LAUNCHER" <<LAUNCHER_EOF
 #!/bin/sh
@@ -48,14 +59,20 @@ cat > "$LAUNCHER" <<LAUNCHER_EOF
 export PATH="$HOST_PATH"
 export CLAUDE_BIN="${CLAUDE_BIN:-/nonexistent/claude}"
 export CODEX_BIN="${CODEX_BIN:-/nonexistent/codex}"
-# Claude Code finds its login in the macOS keychain by user name.
+# Claude Code finds its login (the macOS keychain, or the user's files on Linux) by user name.
 export USER="\${USER:-\$(/usr/bin/id -un)}"
 export LOGNAME="\${LOGNAME:-\$USER}"
 exec "$NODE_BIN" "$HOST_SCRIPT" "\$@"
 LAUNCHER_EOF
 chmod 755 "$LAUNCHER"
 
-cat > "$MANIFEST" <<MANIFEST_EOF
+MANIFESTS=""
+OLD_IFS=$IFS
+IFS='
+'
+for dir in $MANIFEST_DIRS; do
+  mkdir -p "$dir"
+  cat > "$dir/$HOST_NAME.json" <<MANIFEST_EOF
 {
   "name": "$HOST_NAME",
   "description": "Browse Resume AI local host",
@@ -64,10 +81,13 @@ cat > "$MANIFEST" <<MANIFEST_EOF
   "allowed_origins": ["chrome-extension://$EXTENSION_ID/"]
 }
 MANIFEST_EOF
+  MANIFESTS="$MANIFESTS
+  manifest: $dir/$HOST_NAME.json"
+done
+IFS=$OLD_IFS
 
 echo "Installed $HOST_NAME"
 echo "  node:     $NODE_BIN"
 echo "  claude:   ${CLAUDE_BIN:-not found}"
 echo "  codex:    ${CODEX_BIN:-not found}"
-echo "  launcher: $LAUNCHER"
-echo "  manifest: $MANIFEST"
+echo "  launcher: $LAUNCHER$MANIFESTS"
