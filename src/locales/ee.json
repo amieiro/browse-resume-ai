@@ -30,8 +30,6 @@
   "options_display_mode": "Fia nyakpɔkpɔwo le",
   "options_mode_sidepanel": "Axadzi ƒe akpa",
   "options_mode_popup": "Popup",
-  "options_model_list": "Kpɔɖeŋuwo (ɖeka le fli ɖesiaɖe dzi)",
-  "options_models_empty": "Kpɔɖeŋuwo ƒe xexlẽdzesi mate ŋu anɔ ƒuƒlu o.",
   "options_ready": "Le klalo",
   "options_help": "Nyakpɔkpɔwo toa teƒea ƒe akpa si le kɔmpiuta sia dzi la me: ewɔa Claude Code alo Codex kple wò subscription, alo model aɖe le Ollama me. Axa la ƒe nuŋlɔɖi yia nunanala si nètia la gbɔ ɖeɖeko.",
   "options_ui_language": "Interface ƒe gbe",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Bia biabia aɖe tso axa sia ŋu",
   "ui_ask": "Bia",
   "error_ollama_missing": "Ollama mele dɔ wɔm le kɔmpiuta sia dzi o. Tsɔe de eme tso ollama.com eye nàʋui, emegbe nàgadze agbagba ake.",
-  "error_ollama_model_missing": "Womeɖe model sia ɖe Ollama me haɖe o. Wɔ ollama pull kple model la ƒe ŋkɔ (le kpɔɖeŋu me, ollama pull llama3.2), emegbe nàgadze agbagba ake."
+  "error_ollama_model_missing": "Womeɖe model sia ɖe Ollama me haɖe o. Wɔ ollama pull kple model la ƒe ŋkɔ (le kpɔɖeŋu me, ollama pull llama3.2), emegbe nàgadze agbagba ake.",
+  "options_more_models": "Model bubuwo (ɖeka ɖe fli ɖesiaɖe dzi)",
+  "options_models_checked": "Woxlẽ model ƒe xexlẽdzesiwo le {date}.",
+  "options_models_never": "Womexlẽ model ƒe xexlẽdzesiwo haɖe o.",
+  "options_models_auto": "Wotso Claude Code, Codex kple Ollama me, eye wogaxlẽa wo zi ɖeka gbe sia gbe, ne wowɔ Claude Code alo Codex yeyee, kple ne wowɔ extension la yeyee.",
+  "options_models_refresh": "Xlẽ wo fifia"
 }

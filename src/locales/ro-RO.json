@@ -30,8 +30,6 @@
   "options_display_mode": "Afișează rezumatele în",
   "options_mode_sidepanel": "Panou lateral",
   "options_mode_popup": "Fereastră pop-up",
-  "options_model_list": "Modele (câte unul pe linie)",
-  "options_models_empty": "Lista de modele nu poate fi goală.",
   "options_ready": "Gata",
   "options_help": "Rezumatele trec prin componenta locală de pe acest computer: aceasta rulează Claude Code sau Codex cu abonamentul tău, ori un model în Ollama. Textul paginii este trimis doar furnizorului pe care îl alegi.",
   "options_ui_language": "Limba interfeței",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Pune o întrebare despre această pagină",
   "ui_ask": "Întreabă",
   "error_ollama_missing": "Ollama nu rulează pe acest computer. Instalează-l de pe ollama.com și deschide-l, apoi încearcă din nou.",
-  "error_ollama_model_missing": "Acest model nu este descărcat în Ollama. Rulează ollama pull cu numele modelului (de exemplu, ollama pull llama3.2), apoi încearcă din nou."
+  "error_ollama_model_missing": "Acest model nu este descărcat în Ollama. Rulează ollama pull cu numele modelului (de exemplu, ollama pull llama3.2), apoi încearcă din nou.",
+  "options_more_models": "Mai multe modele (câte unul pe rând)",
+  "options_models_checked": "Listele de modele citite pe {date}.",
+  "options_models_never": "Listele de modele nu au fost citite încă.",
+  "options_models_auto": "Provin din Claude Code, Codex și Ollama și sunt citite din nou o dată pe zi, când Claude Code sau Codex este actualizat și când extensia este actualizată.",
+  "options_models_refresh": "Citește-le acum"
 }

@@ -30,8 +30,6 @@
   "options_display_mode": "Tampilake ringkesan ing",
   "options_mode_sidepanel": "Panel sisih",
   "options_mode_popup": "Popup",
-  "options_model_list": "Model (siji saben baris)",
-  "options_models_empty": "Dhaptar model ora kena kosong.",
   "options_ready": "Siap",
   "options_help": "Ringkesan liwat komponen lokal ing komputer iki: komponen iki nglakokake Claude Code utawa Codex nganggo langganan sampeyan, utawa model ing Ollama. Teks kaca mung dikirim menyang panyedhiya sing sampeyan pilih.",
   "options_ui_language": "Basa antarmuka",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Takon babagan kaca iki",
   "ui_ask": "Takon",
   "error_ollama_missing": "Ollama ora mlaku ing komputer iki. Pasang saka ollama.com lan bukak, banjur jajal maneh.",
-  "error_ollama_model_missing": "Model iki durung diundhuh ing Ollama. Lakokna ollama pull karo jeneng modhèle (contoné, ollama pull llama3.2), banjur jajal maneh."
+  "error_ollama_model_missing": "Model iki durung diundhuh ing Ollama. Lakokna ollama pull karo jeneng modhèle (contoné, ollama pull llama3.2), banjur jajal maneh.",
+  "options_more_models": "Model liyane (siji saben baris)",
+  "options_models_checked": "Dhaptar model diwaca tanggal {date}.",
+  "options_models_never": "Dhaptar model durung diwaca.",
+  "options_models_auto": "Dhaptar iki asalé saka Claude Code, Codex lan Ollama, lan diwaca manèh sepisan saben dina, nalika Claude Code utawa Codex dianyari, lan nalika ekstensi dianyari.",
+  "options_models_refresh": "Waca saiki"
 }

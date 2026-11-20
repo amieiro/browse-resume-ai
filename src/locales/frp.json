@@ -30,8 +30,6 @@
   "options_display_mode": "Montrar los rèsumâs dens",
   "options_mode_sidepanel": "Panél de flanc",
   "options_mode_popup": "Fenétra surgéssenta",
-  "options_model_list": "Modèlos (yon per legne)",
-  "options_models_empty": "La lista des modèlos pôt pas étre voueda.",
   "options_ready": "Prèst",
   "options_help": "Los rèsumâs passont per lo composent local de ceti ordenator : il fât corre Claude Code ou ben Codex avouéc voutron abonament, ou ben un modèlo dens Ollama. Lo tèxto de la pâge est mandâ ren qu'u fornissor que vos chouèsésséd.",
   "options_ui_language": "Lengoua de l'entèrface",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Possâd una quèstion sur ceta pâge",
   "ui_ask": "Demandar",
   "error_ollama_missing": "Ollama tôrne pas sur ceti ordenator. Enstalâd-lo dês ollama.com, uvrâd-lo, pués tornâd èprovar.",
-  "error_ollama_model_missing": "Ceti modèlo est pas tèlèchargiê dens Ollama. Ègzécutâd ollama pull avouéc lo nom du modèlo (per ègzemplo, ollama pull llama3.2), pués tornâd èprovar."
+  "error_ollama_model_missing": "Ceti modèlo est pas tèlèchargiê dens Ollama. Ègzécutâd ollama pull avouéc lo nom du modèlo (per ègzemplo, ollama pull llama3.2), pués tornâd èprovar.",
+  "options_more_models": "Ôtros modèlos (yon per legne)",
+  "options_models_checked": "Lists de modèlos liêtes lo {date}.",
+  "options_models_never": "Les lists de modèlos sont p'oncor étâs liêtes.",
+  "options_models_auto": "Vegnont de Claude Code, Codex et Ollama, et sont reliêtes yon côp per jorn, quand Claude Code ou ben Codex est betâ a jorn, et quand l'èxtension est betâye a jorn.",
+  "options_models_refresh": "Les liére ora"
 }

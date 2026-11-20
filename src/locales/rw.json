@@ -30,8 +30,6 @@
   "options_display_mode": "Erekana incamake muri",
   "options_mode_sidepanel": "Akanama ko ku ruhande",
   "options_mode_popup": "Idirishya ryigaragaza",
-  "options_model_list": "Moderi (imwe kuri buri murongo)",
-  "options_models_empty": "Urutonde rwa moderi ntirushobora kuba rurimo ubusa.",
   "options_ready": "Byiteguye",
   "options_help": "Incamake zinyura mu gice cyo kuri iyi mudasobwa: gitangiza Claude Code cyangwa Codex ukoresheje ifatabuguzi ryawe, cyangwa moderi muri Ollama. Inyandiko ya paji yoherezwa gusa ku utanga serivisi wahisemo.",
   "options_ui_language": "Ururimi rw'imigaragarire",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Baza ikibazo kuri uru rupapuro",
   "ui_ask": "Baza",
   "error_ollama_missing": "Ollama ntikora kuri iyi mudasobwa. Yinjize uyikuye kuri ollama.com hanyuma uyifungure, maze wongere ugerageze.",
-  "error_ollama_model_missing": "Iyi moderi ntiyakuwe muri Ollama. Tangiza ollama pull n'izina rya moderi (urugero, ollama pull llama3.2), maze wongere ugerageze."
+  "error_ollama_model_missing": "Iyi moderi ntiyakuwe muri Ollama. Tangiza ollama pull n'izina rya moderi (urugero, ollama pull llama3.2), maze wongere ugerageze.",
+  "options_more_models": "Izindi moderi (imwe kuri buri murongo)",
+  "options_models_checked": "Urutonde rwa moderi rwasomwe ku wa {date}.",
+  "options_models_never": "Urutonde rwa moderi ntirurasomwa.",
+  "options_models_auto": "Ruturuka muri Claude Code, Codex na Ollama, kandi rwongera gusomwa rimwe ku munsi, iyo Claude Code cyangwa Codex bivuguruwe, n'iyo umugereka uvuguruwe.",
+  "options_models_refresh": "Bisome ubu"
 }

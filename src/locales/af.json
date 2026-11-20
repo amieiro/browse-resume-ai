@@ -30,8 +30,6 @@
   "options_display_mode": "Wys opsommings in",
   "options_mode_sidepanel": "Sypaneel",
   "options_mode_popup": "Opspringer",
-  "options_model_list": "Modelle (een per reël)",
-  "options_models_empty": "Die modellys kan nie leeg wees nie.",
   "options_ready": "Gereed",
   "options_help": "Opsommings gaan deur die plaaslike komponent op hierdie rekenaar: dit laat loop Claude Code of Codex met jou intekening, of 'n model in Ollama. Bladsyteks word net na die verskaffer gestuur wat jy kies.",
   "options_ui_language": "Koppelvlaktaal",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Vra 'n vraag oor hierdie bladsy",
   "ui_ask": "Vra",
   "error_ollama_missing": "Ollama loop nie op hierdie rekenaar nie. Installeer dit vanaf ollama.com en maak dit oop, en probeer dan weer.",
-  "error_ollama_model_missing": "Hierdie model is nie in Ollama afgelaai nie. Voer ollama pull met die modelnaam uit (byvoorbeeld ollama pull llama3.2) en probeer dan weer."
+  "error_ollama_model_missing": "Hierdie model is nie in Ollama afgelaai nie. Voer ollama pull met die modelnaam uit (byvoorbeeld ollama pull llama3.2) en probeer dan weer.",
+  "options_more_models": "Meer modelle (een per reël)",
+  "options_models_checked": "Modellyste gelees op {date}.",
+  "options_models_never": "Die modellyste is nog nie gelees nie.",
+  "options_models_auto": "Hulle kom van Claude Code, Codex en Ollama, en word een keer per dag weer gelees, wanneer Claude Code of Codex bygewerk word, en wanneer die uitbreiding bygewerk word.",
+  "options_models_refresh": "Lees hulle nou"
 }

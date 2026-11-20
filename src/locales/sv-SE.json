@@ -30,8 +30,6 @@
   "options_display_mode": "Visa sammanfattningar i",
   "options_mode_sidepanel": "Sidopanel",
   "options_mode_popup": "Popup",
-  "options_model_list": "Modeller (en per rad)",
-  "options_models_empty": "Modellistan får inte vara tom.",
   "options_ready": "Klar",
   "options_help": "Sammanfattningarna går via den lokala komponenten på den här datorn: den kör Claude Code eller Codex med ditt abonnemang, eller en modell i Ollama. Sidans text skickas bara till den leverantör du väljer.",
   "options_ui_language": "Gränssnittsspråk",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Ställ en fråga om den här sidan",
   "ui_ask": "Fråga",
   "error_ollama_missing": "Ollama körs inte på den här datorn. Installera det från ollama.com och öppna det, och försök sedan igen.",
-  "error_ollama_model_missing": "Den här modellen är inte nedladdad i Ollama. Kör ollama pull med modellens namn (till exempel ollama pull llama3.2) och försök sedan igen."
+  "error_ollama_model_missing": "Den här modellen är inte nedladdad i Ollama. Kör ollama pull med modellens namn (till exempel ollama pull llama3.2) och försök sedan igen.",
+  "options_more_models": "Fler modeller (en per rad)",
+  "options_models_checked": "Modellistorna lästes in {date}.",
+  "options_models_never": "Modellistorna har inte lästs in än.",
+  "options_models_auto": "De kommer från Claude Code, Codex och Ollama och läses in igen en gång om dagen, när Claude Code eller Codex uppdateras och när tillägget uppdateras.",
+  "options_models_refresh": "Läs in dem nu"
 }

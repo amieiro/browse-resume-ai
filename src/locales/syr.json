@@ -30,8 +30,6 @@
   "options_display_mode": "ܚܘܝ ܦܣܝܩܬܐ ܒ",
   "options_mode_sidepanel": "ܦܢܝܬܐ ܓܒܝܬܐ",
   "options_mode_popup": "ܟܘܬܐ ܫܘܪܝܬܐ",
-  "options_model_list": "ܕܡܘܬܐ (ܚܕܐ ܒܟܠ ܣܪܛܐ)",
-  "options_models_empty": "ܪܫܝܡܬܐ ܕܕܡܘܬܐ ܠܐ ܡܫܟܚܐ ܕܬܗܘܐ ܣܦܝܩܬܐ.",
   "options_ready": "ܡܛܝܒ",
   "options_help": "ܦܣܝܩܬܐ ܥܒܪܢ ܒܝܕ ܡܢܝܢܐ ܕܘܟܝܐ ܕܥܠ ܗܢܐ ܚܫܘܒܐ: ܡܦܥܠ Claude Code ܐܘ Codex ܥܡ ܡܫܬܘܬܦܘܬܐ ܕܝܠܟ، ܐܘ ܕܘܡܝܐ ܒ Ollama. ܟܬܒܐ ܕܦܐܬܐ ܡܫܬܕܪ ܒܠܚܘܕ ܠܡܛܝܒܢܐ ܕܓܒܝܬ.",
   "options_ui_language": "ܠܫܢܐ ܕܦܪܨܘܦܐ",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "ܫܐܠ ܫܘܐܠܐ ܥܠ ܗܢܐ ܦܐܬܐ",
   "ui_ask": "ܫܐܠ",
   "error_ollama_missing": "Ollama ܠܐ ܦܥܠ ܥܠ ܗܢܐ ܚܫܘܒܐ. ܬܩܢܝܗܝ ܡܢ ollama.com ܘܦܬܚܝܗܝ، ܘܒܬܪܟܢ ܢܣܝ ܡܢ ܕܪܝܫ.",
-  "error_ollama_model_missing": "ܗܢܐ ܕܘܡܝܐ ܠܐ ܐܬܚܬ ܒ Ollama. ܦܥܠ ollama pull ܥܡ ܫܡܐ ܕܕܘܡܝܐ (ܠܡܬܠ، ollama pull llama3.2)، ܘܒܬܪܟܢ ܢܣܝ ܡܢ ܕܪܝܫ."
+  "error_ollama_model_missing": "ܗܢܐ ܕܘܡܝܐ ܠܐ ܐܬܚܬ ܒ Ollama. ܦܥܠ ollama pull ܥܡ ܫܡܐ ܕܕܘܡܝܐ (ܠܡܬܠ، ollama pull llama3.2)، ܘܒܬܪܟܢ ܢܣܝ ܡܢ ܕܪܝܫ.",
+  "options_more_models": "ܕܡܘܝܬܐ ܐܚܪܢܝܬܐ (ܚܕܐ ܒܟܠ ܣܪܛܐ)",
+  "options_models_checked": "ܪ̈ܫܝܡܬܐ ܕܕܡܘܝܬܐ ܐܬܩܪܝ ܒ {date}.",
+  "options_models_never": "ܪ̈ܫܝܡܬܐ ܕܕܡܘܝܬܐ ܠܐ ܐܬܩܪܝ ܥܕܡܐ ܠܗܫܐ.",
+  "options_models_auto": "ܐܬܝܢ ܡܢ Claude Code، Codex ܘ Ollama، ܘܡܬܩܪܝܢ ܡܢ ܕܪܝܫ ܚܕܐ ܙܒܢܬܐ ܒܝܘܡܐ، ܟܕ ܡܬܚܕܬ Claude Code ܐܘ Codex، ܘܟܕ ܡܬܚܕܬܐ ܬܘܣܦܬܐ.",
+  "options_models_refresh": "ܩܪܝ ܐܢܝܢ ܗܫܐ"
 }

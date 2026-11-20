@@ -6,6 +6,15 @@ import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const mode = process.env.FAKE_MODE ?? 'ok';
+if (process.argv.includes('--version')) {
+  process.stdout.write(`${process.env.FAKE_VERSION ?? 'codex-cli 0.169.0'}\n`);
+  process.exit(0);
+}
+if (process.argv[2] === 'debug' && process.argv[3] === 'models') {
+  if (process.env.FAKE_MODELS === 'fail') process.exit(1);
+  process.stdout.write(readFileSync(join(here, 'codex-models.json')));
+  process.exit(0);
+}
 let stdin = '';
 process.stdin.on('data', (d) => (stdin += d));
 process.stdin.on('end', () => {

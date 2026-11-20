@@ -30,8 +30,6 @@
   "options_display_mode": "ສະແດງບົດສະຫຼຸບໃນ",
   "options_mode_sidepanel": "ແຜງດ້ານຂ້າງ",
   "options_mode_popup": "ປັອບອັບ",
-  "options_model_list": "ໂມເດວ (ໜຶ່ງລາຍການຕໍ່ແຖວ)",
-  "options_models_empty": "ລາຍຊື່ໂມເດວບໍ່ສາມາດຫວ່າງເປົ່າໄດ້.",
   "options_ready": "ພ້ອມແລ້ວ",
   "options_help": "ບົດສະຫຼຸບຜ່ານອົງປະກອບພາຍໃນເຄື່ອງໃນຄອມພິວເຕີນີ້: ມັນແລ່ນ Claude Code ຫຼື Codex ດ້ວຍການສະໝັກໃຊ້ຂອງທ່ານ, ຫຼື ໂມເດວໃນ Ollama. ຂໍ້ຄວາມຂອງໜ້າຈະຖືກສົ່ງໄປຫາຜູ້ໃຫ້ບໍລິການທີ່ທ່ານເລືອກເທົ່ານັ້ນ.",
   "options_ui_language": "ພາສາຂອງສ່ວນຕິດຕໍ່",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "ຖາມຄຳຖາມກ່ຽວກັບໜ້ານີ້",
   "ui_ask": "ຖາມ",
   "error_ollama_missing": "Ollama ບໍ່ໄດ້ແລ່ນຢູ່ໃນຄອມພິວເຕີນີ້. ຕິດຕັ້ງມັນຈາກ ollama.com ແລະ ເປີດມັນ, ແລ້ວລອງໃໝ່ອີກຄັ້ງ.",
-  "error_ollama_model_missing": "ໂມເດວນີ້ຍັງບໍ່ໄດ້ດາວໂຫຼດໃນ Ollama. ແລ່ນ ollama pull ພ້ອມຊື່ໂມເດວ (ຕົວຢ່າງ: ollama pull llama3.2), ແລ້ວລອງໃໝ່ອີກຄັ້ງ."
+  "error_ollama_model_missing": "ໂມເດວນີ້ຍັງບໍ່ໄດ້ດາວໂຫຼດໃນ Ollama. ແລ່ນ ollama pull ພ້ອມຊື່ໂມເດວ (ຕົວຢ່າງ: ollama pull llama3.2), ແລ້ວລອງໃໝ່ອີກຄັ້ງ.",
+  "options_more_models": "ໂມເດວເພີ່ມເຕີມ (ໜຶ່ງລາຍການຕໍ່ແຖວ)",
+  "options_models_checked": "ອ່ານລາຍຊື່ໂມເດວເມື່ອ {date}.",
+  "options_models_never": "ຍັງບໍ່ທັນໄດ້ອ່ານລາຍຊື່ໂມເດວເທື່ອ.",
+  "options_models_auto": "ລາຍຊື່ເຫຼົ່ານີ້ມາຈາກ Claude Code, Codex ແລະ Ollama, ແລະຈະຖືກອ່ານຄືນມື້ລະເທື່ອ, ເມື່ອ Claude Code ຫຼື Codex ຖືກອັບເດດ, ແລະເມື່ອສ່ວນຂະຫຍາຍຖືກອັບເດດ.",
+  "options_models_refresh": "ອ່ານດຽວນີ້"
 }

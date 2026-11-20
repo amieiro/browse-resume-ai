@@ -30,8 +30,6 @@
   "options_display_mode": "ସାରାଂଶ ଦେଖାଇବା ସ୍ଥାନ",
   "options_mode_sidepanel": "ପାର୍ଶ୍ୱ ପ୍ୟାନେଲ",
   "options_mode_popup": "ପପଅପ",
-  "options_model_list": "ମଡେଲଗୁଡ଼ିକ (ପ୍ରତି ଧାଡ଼ିରେ ଗୋଟିଏ)",
-  "options_models_empty": "ମଡେଲ ତାଲିକା ଖାଲି ରହିପାରିବ ନାହିଁ।",
   "options_ready": "ପ୍ରସ୍ତୁତ",
   "options_help": "ସାରାଂଶଗୁଡ଼ିକ ଏହି କମ୍ପ୍ୟୁଟରରେ ଥିବା ସ୍ଥାନୀୟ ଉପାଦାନ ଦେଇ ଯାଏ: ଏହା ଆପଣଙ୍କ ସଦସ୍ୟତା ସହିତ Claude Code କିମ୍ବା Codex, କିମ୍ବା Ollama ରେ ଥିବା ଏକ ମଡେଲ ଚଲାଏ। ପୃଷ୍ଠାର ପାଠ୍ୟ କେବଳ ଆପଣ ବାଛିଥିବା ପ୍ରଦାନକାରୀଙ୍କୁ ପଠାଯାଏ।",
   "options_ui_language": "ଇଣ୍ଟରଫେସ ଭାଷା",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "ଏହି ପୃଷ୍ଠା ବିଷୟରେ ପ୍ରଶ୍ନ ପଚାରନ୍ତୁ",
   "ui_ask": "ପଚାରନ୍ତୁ",
   "error_ollama_missing": "ଏହି କମ୍ପ୍ୟୁଟରରେ Ollama ଚାଲୁନାହିଁ। ଏହାକୁ ollama.com ରୁ ଇନଷ୍ଟଲ କରି ଖୋଲନ୍ତୁ, ତା’ପରେ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
-  "error_ollama_model_missing": "ଏହି ମଡେଲ Ollama ରେ ଡାଉନଲୋଡ ହୋଇନାହିଁ। ମଡେଲର ନାମ ସହିତ ollama pull ଚଲାନ୍ତୁ (ଉଦାହରଣ ସ୍ୱରୂପ, ollama pull llama3.2), ତା’ପରେ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।"
+  "error_ollama_model_missing": "ଏହି ମଡେଲ Ollama ରେ ଡାଉନଲୋଡ ହୋଇନାହିଁ। ମଡେଲର ନାମ ସହିତ ollama pull ଚଲାନ୍ତୁ (ଉଦାହରଣ ସ୍ୱରୂପ, ollama pull llama3.2), ତା’ପରେ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
+  "options_more_models": "ଅଧିକ ମଡେଲ (ପ୍ରତି ଧାଡ଼ିରେ ଗୋଟିଏ)",
+  "options_models_checked": "ମଡେଲ ତାଲିକା {date} ରେ ପଢ଼ାଯାଇଛି।",
+  "options_models_never": "ମଡେଲ ତାଲିକା ଏପର୍ଯ୍ୟନ୍ତ ପଢ଼ାଯାଇନାହିଁ।",
+  "options_models_auto": "ସେଗୁଡ଼ିକ Claude Code, Codex ଏବଂ Ollama ରୁ ଆସେ, ଏବଂ ଦିନକୁ ଥରେ, Claude Code କିମ୍ବା Codex ଅପଡେଟ୍ ହେଲେ, ଏବଂ ଏକ୍ସଟେନସନ୍ ଅପଡେଟ୍ ହେଲେ ପୁଣି ପଢ଼ାଯାଏ।",
+  "options_models_refresh": "ବର୍ତ୍ତମାନ ପଢ଼ନ୍ତୁ"
 }

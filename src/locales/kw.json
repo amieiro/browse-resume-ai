@@ -30,8 +30,6 @@
   "options_display_mode": "Diskwedhes berrheansow yn",
   "options_mode_sidepanel": "Panel tenewan",
   "options_mode_popup": "Fenester ow tardha",
-  "options_model_list": "Patronow (onan pub linen)",
-  "options_models_empty": "Ny yll rol an patronow bos gwag.",
   "options_ready": "Parys",
   "options_help": "Berrheansow a dremen der an rann leel war an jynn-amontya ma: hi a res Claude Code po Codex gans agas koumanans, po model yn Ollama. Nyns yw tekst an folen danvenys saw dhe'n provier a dhewisowgh.",
   "options_ui_language": "Yeth an ynterfas",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Govynn qwestyon a-dro dhe'n folen ma",
   "ui_ask": "Govynn",
   "error_ollama_missing": "Nyns yw Ollama ow resek war an jynn-amontya ma. Stallyewgh ev a ollama.com ha'y igeri, ena assayewgh arta.",
-  "error_ollama_model_missing": "Nyns yw an model ma iskargys yn Ollama. Resewgh ollama pull gans hanow an model (rag ensampel, ollama pull llama3.2), ena assayewgh arta."
+  "error_ollama_model_missing": "Nyns yw an model ma iskargys yn Ollama. Resewgh ollama pull gans hanow an model (rag ensampel, ollama pull llama3.2), ena assayewgh arta.",
+  "options_more_models": "Moy a batronyow (onan pub linen)",
+  "options_models_checked": "Rolyow patronyow redys war {date}.",
+  "options_models_never": "Ny veu an rolyow patronyow redys hwath.",
+  "options_models_auto": "I a dheu dhyworth Claude Code, Codex hag Ollama, hag i a vydh redys arta unwyth pub dydh, pan vydh Claude Code po Codex nowydhhes, ha pan vydh an ystynnans nowydhhes.",
+  "options_models_refresh": "Redyewgh i lemmyn"
 }

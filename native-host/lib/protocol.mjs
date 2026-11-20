@@ -22,7 +22,7 @@ export const PROVIDERS = ['claude', 'codex', 'ollama'];
 /** Returns null when the message is a valid request, otherwise a reason. */
 export function validateRequest(msg) {
   if (!msg || typeof msg !== 'object') return 'not an object';
-  if (msg.type === 'ping') return null;
+  if (msg.type === 'ping' || msg.type === 'models' || msg.type === 'versions') return null;
   if (typeof msg.id !== 'string' || !msg.id || msg.id.length > 100) return 'missing id';
   if (msg.type === 'cancel') return null;
   if (msg.type !== 'summarize') return 'unknown type';

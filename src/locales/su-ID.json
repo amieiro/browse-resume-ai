@@ -30,8 +30,6 @@
   "options_display_mode": "Témbongkeun kasimpulan dina",
   "options_mode_sidepanel": "Panél sisi",
   "options_mode_popup": "Popup",
-  "options_model_list": "Modél (hiji per baris)",
-  "options_models_empty": "Daptar modél teu kenging kosong.",
   "options_ready": "Siap",
   "options_help": "Kasimpulan ngaliwatan komponén lokal dina ieu komputer: éta ngajalankeun Claude Code atanapi Codex nganggo langganan anjeun, atanapi modél dina Ollama. Téks kaca ngan dikirim ka panyadia anu anjeun pilih.",
   "options_ui_language": "Basa antarbeungeut",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Tanyakeun perkara kaca ieu",
   "ui_ask": "Tanya",
   "error_ollama_missing": "Ollama teu jalan dina ieu komputer. Pasang tina ollama.com teras buka, lajeng cobian deui.",
-  "error_ollama_model_missing": "Modél ieu teu acan diunduh dina Ollama. Jalankeun ollama pull sareng nami modélna (contona, ollama pull llama3.2), lajeng cobian deui."
+  "error_ollama_model_missing": "Modél ieu teu acan diunduh dina Ollama. Jalankeun ollama pull sareng nami modélna (contona, ollama pull llama3.2), lajeng cobian deui.",
+  "options_more_models": "Modél séjén (hiji per baris)",
+  "options_models_checked": "Daptar modél dibaca dina {date}.",
+  "options_models_never": "Daptar modél can kungsi dibaca.",
+  "options_models_auto": "Daptar éta asalna ti Claude Code, Codex jeung Ollama, sarta dibaca deui sakali sapoé, nalika Claude Code atawa Codex diropéa, jeung nalika éksténsi diropéa.",
+  "options_models_refresh": "Baca ayeuna"
 }

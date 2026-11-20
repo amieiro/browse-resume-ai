@@ -30,8 +30,6 @@
   "options_display_mode": "ⵙⵎⴰⵍ ⵉⵙⴳⵣⵓⵍⵏ ⴳ",
   "options_mode_sidepanel": "ⵜⴰⴼⵍⵡⵉⵜ ⵜⴰⵎⴷⴷⴰⴷⵜ",
   "options_mode_popup": "ⵜⴰⵙⵓⵔⵜ ⵜⴰⵏⴱⵔⴰⵣⵜ",
-  "options_model_list": "ⵉⵎⴷⵢⴰⵜⵏ (ⵢⴰⵏ ⴳ ⵢⴰⵏ ⵓⵣⵔⵉⴳ)",
-  "options_models_empty": "ⵓⵔ ⵜⵣⵎⵉⵔ ⵜⵍⴳⴰⵎⵜ ⵏ ⵉⵎⴷⵢⴰⵜⵏ ⴰⴷ ⵜⵉⵍⵉ ⵜⵅⵡⴰ.",
   "options_ready": "ⵉⵡⵊⴷ",
   "options_help": "ⵉⵙⴳⵣⵓⵍⵏ ⴰⵔ ⵣⵔⵔⵉⵏ ⵙⴳ ⵓⵙⵖⵏ ⴰⴷⵖⴰⵔⴰⵏ ⴳ ⵓⵙⵎⵙⵙⵓ ⴰⴷ: ⵉⵙⵙⴽⴰⵔ Claude Code ⵏⵖ Codex ⵙ ⵓⵎⵜⵜⴰⵡⵉ ⵏⵏⴽ, ⵏⵖ ⵢⴰⵏ ⵓⵎⵓⴷⵉⵍ ⴳ Ollama. ⴰⴹⵔⵉⵙ ⵏ ⵜⴰⵙⵏⴰ ⵖⴰⵙ ⵉ ⵓⵙⵎⴰⴳ ⵍⵍⵉ ⵜⵙⵜⵉⴷ ⴰⵢⴷ ⵉⵜⵜⵓⵣⵏⴰⵏ.",
   "options_ui_language": "ⵜⵓⵜⵍⴰⵢⵜ ⵏ ⵜⴳⴰⵔⵙⵜ",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "ⵙⵇⵙⴰ ⵖⴼ ⵜⴰⵙⵏⴰ ⴰⴷ",
   "ui_ask": "ⵙⵇⵙⴰ",
   "error_ollama_missing": "Ollama ⵓⵔ ⵉⵜⵜⵎⵓⵙⵙⵓ ⴳ ⵓⵙⵎⵙⵙⵓ ⴰⴷ. ⵙⵔⵙ ⵜ ⵣⴳ ollama.com ⵜⵕⵥⵎⴷ ⵜ, ⴷⴼⴼⵉⵔ ⴰⵙ ⴰⵔⵎ ⵜⵉⴽⴽⵍⵜ ⵢⴰⴹⵏ.",
-  "error_ollama_model_missing": "ⴰⵎⵓⴷⵉⵍ ⴰⴷ ⵓⵔ ⵉⵜⵜⵓⵙⵙⴰⴳⵎ ⴳ Ollama. ⵙⵙⴽⵔ ollama pull ⴷ ⵢⵉⵙⵎ ⵏ ⵓⵎⵓⴷⵉⵍ (ⵙ ⵓⵎⴷⵢⴰ, ollama pull llama3.2), ⴷⴼⴼⵉⵔ ⴰⵙ ⴰⵔⵎ ⵜⵉⴽⴽⵍⵜ ⵢⴰⴹⵏ."
+  "error_ollama_model_missing": "ⴰⵎⵓⴷⵉⵍ ⴰⴷ ⵓⵔ ⵉⵜⵜⵓⵙⵙⴰⴳⵎ ⴳ Ollama. ⵙⵙⴽⵔ ollama pull ⴷ ⵢⵉⵙⵎ ⵏ ⵓⵎⵓⴷⵉⵍ (ⵙ ⵓⵎⴷⵢⴰ, ollama pull llama3.2), ⴷⴼⴼⵉⵔ ⴰⵙ ⴰⵔⵎ ⵜⵉⴽⴽⵍⵜ ⵢⴰⴹⵏ.",
+  "options_more_models": "ⵓⴳⴳⴰⵔ ⵏ ⵉⵎⴷⵢⴰⵜⵏ (ⵢⴰⵏ ⴳ ⵢⴰⵏ ⵓⵣⵔⵉⵔⴳ)",
+  "options_models_checked": "ⵜⵜⵓⵖⵔⴰⵏⵜ ⵜⵍⴳⴰⵎⵉⵏ ⵏ ⵉⵎⴷⵢⴰⵜⵏ ⴳ {date}.",
+  "options_models_never": "ⵓⵔ ⵙⵓⵍ ⵜⵜⵓⵖⵔⴰⵏⵜ ⵜⵍⴳⴰⵎⵉⵏ ⵏ ⵉⵎⴷⵢⴰⵜⵏ.",
+  "options_models_auto": "ⴷⴰ ⴷⴷⵓⴽⴽⵓⵍⵏⵜ ⵙⴳ Claude Code, Codex ⴷ Ollama, ⴷ ⴷⴰ ⵜⵜⵓⵖⵔⴰⵏⵜ ⴷⴰⵖ ⵜⵉⴽⴽⵍⵜ ⴳ ⵡⴰⵙⵙ, ⵎⴰⵏⵉⴳ ⵉⵜⵜⵓⵙⵏⴼⵍ Claude Code ⵏⵖ Codex, ⴷ ⵎⴰⵏⵉⴳ ⵉⵜⵜⵓⵙⵏⴼⵍ ⵓⵙⵖⵣⴼ.",
+  "options_models_refresh": "ⵖⵔ ⵜⵏⵜ ⴷⵖⵉ"
 }

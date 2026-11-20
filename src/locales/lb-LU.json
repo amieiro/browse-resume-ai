@@ -30,8 +30,6 @@
   "options_display_mode": "Resuméen uweisen an",
   "options_mode_sidepanel": "Säitepanel",
   "options_mode_popup": "Pop-up",
-  "options_model_list": "Modeller (ee pro Zeil)",
-  "options_models_empty": "D'Lëscht vun de Modeller däerf net eidel sinn.",
   "options_ready": "Prett",
   "options_help": "D'Resuméeë lafen iwwer déi lokal Komponent op dësem Computer: si féiert Claude Code oder Codex mat Ärem Abonnement aus, oder e Modell an Ollama. De Säitentext gëtt nëmmen un den Ubidder geschéckt, deen Dir auswielt.",
   "options_ui_language": "Sprooch vun der Interface",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Stellt eng Fro iwwer dës Säit",
   "ui_ask": "Froen",
   "error_ollama_missing": "Ollama leeft net op dësem Computer. Installéiert et vun ollama.com a maacht et op, probéiert et dann nach eng Kéier.",
-  "error_ollama_model_missing": "Dëse Modell ass net an Ollama erofgelueden. Fuert ollama pull mam Numm vum Modell aus (zum Beispill ollama pull llama3.2), probéiert et dann nach eng Kéier."
+  "error_ollama_model_missing": "Dëse Modell ass net an Ollama erofgelueden. Fuert ollama pull mam Numm vum Modell aus (zum Beispill ollama pull llama3.2), probéiert et dann nach eng Kéier.",
+  "options_more_models": "Méi Modeller (ee pro Zeil)",
+  "options_models_checked": "Modelllëschte gelies den {date}.",
+  "options_models_never": "D'Modelllëschte goufen nach net gelies.",
+  "options_models_auto": "Si kommen aus Claude Code, Codex an Ollama a ginn eemol am Dag nei gelies, wann Claude Code oder Codex aktualiséiert gëtt, a wann d'Erweiderung aktualiséiert gëtt.",
+  "options_models_refresh": "Elo liesen"
 }

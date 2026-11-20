@@ -30,8 +30,6 @@
   "options_display_mode": "Паказваць рэзюмэ ў",
   "options_mode_sidepanel": "Бакавая панэль",
   "options_mode_popup": "Усплывальнае акно",
-  "options_model_list": "Мадэлі (па адной у радку)",
-  "options_models_empty": "Спіс мадэляў не можа быць пустым.",
   "options_ready": "Гатова",
   "options_help": "Рэзюмэ ствараюцца праз лакальны кампанент на гэтым камп'ютары: ён запускае Claude Code або Codex з вашай падпіскай ці мадэль у Ollama. Тэкст старонкі адпраўляецца толькі выбранаму вамі пастаўшчыку.",
   "options_ui_language": "Мова інтэрфейсу",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Задайце пытанне пра гэту старонку",
   "ui_ask": "Спытаць",
   "error_ollama_missing": "Ollama не запушчаны на гэтым камп'ютары. Усталюйце яго з ollama.com і адкрыйце, а потым паспрабуйце зноў.",
-  "error_ollama_model_missing": "Гэта мадэль не спампавана ў Ollama. Выканайце ollama pull з назвай мадэлі (напрыклад, ollama pull llama3.2), а потым паспрабуйце зноў."
+  "error_ollama_model_missing": "Гэта мадэль не спампавана ў Ollama. Выканайце ollama pull з назвай мадэлі (напрыклад, ollama pull llama3.2), а потым паспрабуйце зноў.",
+  "options_more_models": "Яшчэ мадэлі (па адной у радку)",
+  "options_models_checked": "Спісы мадэляў прачытаны {date}.",
+  "options_models_never": "Спісы мадэляў яшчэ не прачытаны.",
+  "options_models_auto": "Яны бяруцца з Claude Code, Codex і Ollama і чытаюцца зноў раз на дзень, калі абнаўляецца Claude Code або Codex і калі абнаўляецца пашырэнне.",
+  "options_models_refresh": "Прачытаць зараз"
 }

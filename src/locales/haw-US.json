@@ -30,8 +30,6 @@
   "options_display_mode": "Hōʻike i nā hōʻuluʻulu ma",
   "options_mode_sidepanel": "Papa ʻaoʻao",
   "options_mode_popup": "Puka hōʻike",
-  "options_model_list": "Nā kumu hoʻohālike (hoʻokahi i ka laina)",
-  "options_models_empty": "ʻAʻole hiki i ka papa inoa kumu hoʻohālike ke nele.",
   "options_ready": "Mākaukau",
   "options_help": "Hele nā hōʻuluʻulu ma o ka ʻāpana kūloko ma kēia kamepiula: holo ia iā Claude Code a i ʻole Codex me kāu kau inoa, a i ʻole i kekahi kumu hoʻohālike ma Ollama. Hoʻouna ʻia ke kikokikona o ka ʻaoʻao i ka mea hoʻolako āu e koho ai wale nō.",
   "options_ui_language": "ʻŌlelo o ke kikowaena",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "E nīnau i kekahi mea no kēia ʻaoʻao",
   "ui_ask": "Nīnau",
   "error_ollama_missing": "ʻAʻole holo ʻo Ollama ma kēia kamepiula. E hoʻokomo iā ia mai ollama.com a wehe iā ia, a laila e hoʻāʻo hou.",
-  "error_ollama_model_missing": "ʻAʻole i hoʻoiho ʻia kēia kumu hoʻohālike ma Ollama. E holo i ka ollama pull me ka inoa o ke kumu hoʻohālike (no ka laʻana, ollama pull llama3.2), a laila e hoʻāʻo hou."
+  "error_ollama_model_missing": "ʻAʻole i hoʻoiho ʻia kēia kumu hoʻohālike ma Ollama. E holo i ka ollama pull me ka inoa o ke kumu hoʻohālike (no ka laʻana, ollama pull llama3.2), a laila e hoʻāʻo hou.",
+  "options_more_models": "Nā kumu hoʻohālike hou aku (hoʻokahi ma ka laina)",
+  "options_models_checked": "Ua heluhelu ʻia nā papa kumu hoʻohālike ma {date}.",
+  "options_models_never": "ʻAʻole i heluhelu ʻia nā papa kumu hoʻohālike.",
+  "options_models_auto": "No Claude Code, Codex a me Ollama mai lākou, a heluhelu hou ʻia lākou hoʻokahi manawa i ka lā, i ka wā e hōʻano hou ʻia ai ʻo Claude Code a i ʻole Codex, a i ka wā e hōʻano hou ʻia ai ka hoʻonui.",
+  "options_models_refresh": "Heluhelu iā lākou i kēia manawa"
 }

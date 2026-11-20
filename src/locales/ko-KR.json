@@ -30,8 +30,6 @@
   "options_display_mode": "요약 표시 위치",
   "options_mode_sidepanel": "측면 패널",
   "options_mode_popup": "팝업",
-  "options_model_list": "모델(한 줄에 하나씩)",
-  "options_models_empty": "모델 목록은 비워 둘 수 없습니다.",
   "options_ready": "준비됨",
   "options_help": "요약은 이 컴퓨터의 로컬 구성요소를 거칩니다. 이 구성요소는 사용자의 구독으로 Claude Code 또는 Codex를 실행하거나 Ollama의 모델을 실행합니다. 페이지 텍스트는 선택한 제공업체에만 전송됩니다.",
   "options_ui_language": "인터페이스 언어",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "이 페이지에 대해 질문하세요",
   "ui_ask": "질문",
   "error_ollama_missing": "이 컴퓨터에서 Ollama가 실행 중이 아닙니다. ollama.com에서 설치하고 실행한 후 다시 시도하세요.",
-  "error_ollama_model_missing": "이 모델은 Ollama에 다운로드되어 있지 않습니다. 모델 이름과 함께 ollama pull을 실행한 후(예: ollama pull llama3.2) 다시 시도하세요."
+  "error_ollama_model_missing": "이 모델은 Ollama에 다운로드되어 있지 않습니다. 모델 이름과 함께 ollama pull을 실행한 후(예: ollama pull llama3.2) 다시 시도하세요.",
+  "options_more_models": "추가 모델(한 줄에 하나씩)",
+  "options_models_checked": "모델 목록을 {date}에 읽었습니다.",
+  "options_models_never": "모델 목록을 아직 읽지 않았습니다.",
+  "options_models_auto": "모델 목록은 Claude Code, Codex, Ollama에서 가져오며, 하루에 한 번, Claude Code 또는 Codex가 업데이트될 때, 그리고 확장 프로그램이 업데이트될 때 다시 읽습니다.",
+  "options_models_refresh": "지금 읽기"
 }

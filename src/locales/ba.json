@@ -30,8 +30,6 @@
   "options_display_mode": "Йомғаҡтарҙы күрһәтеү урыны",
   "options_mode_sidepanel": "Ян панель",
   "options_mode_popup": "Ҡалҡып сығыусы тәҙрә",
-  "options_model_list": "Моделдәр (бер юлға береһе)",
-  "options_models_empty": "Моделдәр исемлеге буш була алмай.",
   "options_ready": "Әҙер",
   "options_help": "Йомғаҡтар был компьютерҙағы урындағы компонент аша үтә: ул Һеҙҙең яҙылыу менән Claude Code йәки Codex, йә Ollama-лағы моделде ебәрә. Бит тексы тик Һеҙ һайлаған провайдерға ғына ебәрелә.",
   "options_ui_language": "Интерфейс теле",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Был бит тураһында һорау бирегеҙ",
   "ui_ask": "Һорау",
   "error_ollama_missing": "Был компьютерҙа Ollama эшләмәй. Уны ollama.com сайтынан ҡуйығыҙ һәм асығыҙ, һуңынан ҡабат тырышып ҡарағыҙ.",
-  "error_ollama_model_missing": "Был модель Ollama-ға йөкләнмәгән. ollama pull командаһын модель исеме менән ебәрегеҙ (мәҫәлән, ollama pull llama3.2), һуңынан ҡабат тырышып ҡарағыҙ."
+  "error_ollama_model_missing": "Был модель Ollama-ға йөкләнмәгән. ollama pull командаһын модель исеме менән ебәрегеҙ (мәҫәлән, ollama pull llama3.2), һуңынан ҡабат тырышып ҡарағыҙ.",
+  "options_more_models": "Тағы моделдәр (һәр юлға береһе)",
+  "options_models_checked": "Моделдәр исемлеге {date} уҡылды.",
+  "options_models_never": "Моделдәр исемлеге әлегә уҡылманы.",
+  "options_models_auto": "Улар Claude Code, Codex һәм Ollama-нан килә, һәм көнөнә бер тапҡыр, Claude Code йәки Codex яңыртылғанда, һәм киңәйтеү яңыртылғанда ҡабат уҡыла.",
+  "options_models_refresh": "Хәҙер уҡырға"
 }

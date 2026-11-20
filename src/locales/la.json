@@ -30,8 +30,6 @@
   "options_display_mode": "Summaria ostende in",
   "options_mode_sidepanel": "Tabula lateralis",
   "options_mode_popup": "Fenestella emergens",
-  "options_model_list": "Exemplaria (unum per lineam)",
-  "options_models_empty": "Index exemplarium vacuus esse non potest.",
   "options_ready": "Paratum",
   "options_help": "Summaria per partem localem in hoc computatro transeunt: ea Claude Code aut Codex cum subscriptione tua exsequitur, aut exemplar in Ollama. Textus paginae soli praebitori quem eligis mittitur.",
   "options_ui_language": "Lingua interfaciei",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Quaestionem de hac pagina pone",
   "ui_ask": "Roga",
   "error_ollama_missing": "Ollama in hoc computatro non currit. Installa id ex ollama.com et aperi, deinde iterum conare.",
-  "error_ollama_model_missing": "Hoc exemplar in Ollama non est demissum. Exsequere ollama pull cum nomine exemplaris (exempli gratia, ollama pull llama3.2), deinde iterum conare."
+  "error_ollama_model_missing": "Hoc exemplar in Ollama non est demissum. Exsequere ollama pull cum nomine exemplaris (exempli gratia, ollama pull llama3.2), deinde iterum conare.",
+  "options_more_models": "Plura exemplaria (unum in quaque linea)",
+  "options_models_checked": "Indices exemplarium lecti die {date}.",
+  "options_models_never": "Indices exemplarium nondum lecti sunt.",
+  "options_models_auto": "Ex Claude Code, Codex et Ollama veniunt, et iterum leguntur semel in die, cum Claude Code aut Codex renovatur, et cum extensio renovatur.",
+  "options_models_refresh": "Nunc lege"
 }

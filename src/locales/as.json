@@ -30,8 +30,6 @@
   "options_display_mode": "সাৰাংশ দেখুৱাব",
   "options_mode_sidepanel": "পাৰ্শ্ব পেনেল",
   "options_mode_popup": "পপ-আপ",
-  "options_model_list": "মডেল (প্ৰতি শাৰীত এটা)",
-  "options_models_empty": "মডেলৰ তালিকা খালী হ'ব নোৱাৰে।",
   "options_ready": "সাজু",
   "options_help": "সাৰাংশসমূহ এই কম্পিউটাৰৰ স্থানীয় উপাদানৰ জৰিয়তে যায়: ই আপোনাৰ ছাবস্ক্ৰিপশ্বনেৰে Claude Code বা Codex, অথবা Ollama-ত থকা এটা মডেল চলায়। পৃষ্ঠাৰ পাঠ কেৱল আপুনি বাছনি কৰা প্ৰদানকাৰীলৈহে পঠিওৱা হয়।",
   "options_ui_language": "ইণ্টাৰফেচৰ ভাষা",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "এই পৃষ্ঠাৰ বিষয়ে এটা প্ৰশ্ন সোধক",
   "ui_ask": "সোধক",
   "error_ollama_missing": "এই কম্পিউটাৰত Ollama চলি থকা নাই। ollama.com-ৰ পৰা ইয়াক ইনষ্টল কৰি খোলক, তাৰ পিছত পুনৰ চেষ্টা কৰক।",
-  "error_ollama_model_missing": "এই মডেলটো Ollama-ত ডাউনল'ড কৰা নাই। মডেলৰ নামৰ সৈতে ollama pull চলাওক (উদাহৰণস্বৰূপে, ollama pull llama3.2), তাৰ পিছত পুনৰ চেষ্টা কৰক।"
+  "error_ollama_model_missing": "এই মডেলটো Ollama-ত ডাউনল'ড কৰা নাই। মডেলৰ নামৰ সৈতে ollama pull চলাওক (উদাহৰণস্বৰূপে, ollama pull llama3.2), তাৰ পিছত পুনৰ চেষ্টা কৰক।",
+  "options_more_models": "অধিক মডেল (প্ৰতি শাৰীত এটা)",
+  "options_models_checked": "মডেলৰ তালিকা {date}ত পঢ়া হৈছিল।",
+  "options_models_never": "মডেলৰ তালিকাসমূহ এতিয়াও পঢ়া হোৱা নাই।",
+  "options_models_auto": "এইবোৰ Claude Code, Codex আৰু Ollama-ৰ পৰা আহে, আৰু দিনত এবাৰ, Claude Code বা Codex আপডেট হ'লে, আৰু এক্সটেনশ্বন আপডেট হ'লে পুনৰ পঢ়া হয়।",
+  "options_models_refresh": "এতিয়াই পঢ়ক"
 }

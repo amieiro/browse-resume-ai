@@ -30,8 +30,6 @@
   "options_display_mode": "सारांश इहाँ देखाईं",
   "options_mode_sidepanel": "साइड पैनल",
   "options_mode_popup": "पॉप-अप",
-  "options_model_list": "मॉडल (हर लाइन में एगो)",
-  "options_models_empty": "मॉडल के सूची खाली ना हो सकेला।",
   "options_ready": "तइयार",
   "options_help": "सारांश एह कंप्यूटर पर लोकल कंपोनेंट से होके जाला: ई राउर सब्सक्रिप्शन से Claude Code या Codex, भा Ollama में कवनो मॉडल चलावेला। पन्ना के टेक्स्ट खाली ओही प्रदाता के भेजल जाला जेकरा के रउआ चुनब।",
   "options_ui_language": "इंटरफ़ेस के भाषा",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "एह पन्ना के बारे में सवाल पूछीं",
   "ui_ask": "पूछीं",
   "error_ollama_missing": "एह कंप्यूटर पर Ollama नइखे चलत। एकरा के ollama.com से इंस्टॉल करीं आ खोलीं, फेर से कोसिस करीं।",
-  "error_ollama_model_missing": "ई मॉडल Ollama में डाउनलोड नइखे भइल। मॉडल के नाम के साथे ollama pull चलाईं (जइसे, ollama pull llama3.2), फेर से कोसिस करीं।"
+  "error_ollama_model_missing": "ई मॉडल Ollama में डाउनलोड नइखे भइल। मॉडल के नाम के साथे ollama pull चलाईं (जइसे, ollama pull llama3.2), फेर से कोसिस करीं।",
+  "options_more_models": "अउरी मॉडल (हर लाइन में एगो)",
+  "options_models_checked": "मॉडल के सूची {date} के पढ़ल गइल।",
+  "options_models_never": "मॉडल के सूची अबहीं ले नइखे पढ़ल गइल।",
+  "options_models_auto": "ई सूची Claude Code, Codex आ Ollama से आवेला, आ दिन में एक बेर, जब Claude Code भा Codex अपडेट होला, आ जब एक्सटेंशन अपडेट होला, तब फेर से पढ़ल जाला।",
+  "options_models_refresh": "अबहीं पढ़ीं"
 }

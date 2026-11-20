@@ -30,8 +30,6 @@
   "options_display_mode": "Показване на резюметата в",
   "options_mode_sidepanel": "Странично меню",
   "options_mode_popup": "Изскачащ прозорец",
-  "options_model_list": "Модели (по един на ред)",
-  "options_models_empty": "Списъкът с модели не може да е празен.",
   "options_ready": "Готово",
   "options_help": "Резюметата минават през локалния компонент на този компютър: той стартира Claude Code или Codex с вашия абонамент или модел в Ollama. Текстът на страницата се изпраща само до избрания от вас доставчик.",
   "options_ui_language": "Език на интерфейса",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Задайте въпрос за тази страница",
   "ui_ask": "Попитайте",
   "error_ollama_missing": "Ollama не работи на този компютър. Инсталирайте го от ollama.com и го отворете, след което опитайте отново.",
-  "error_ollama_model_missing": "Този модел не е изтеглен в Ollama. Изпълнете ollama pull с името на модела (например ollama pull llama3.2), след което опитайте отново."
+  "error_ollama_model_missing": "Този модел не е изтеглен в Ollama. Изпълнете ollama pull с името на модела (например ollama pull llama3.2), след което опитайте отново.",
+  "options_more_models": "Още модели (по един на ред)",
+  "options_models_checked": "Списъците с модели са прочетени на {date}.",
+  "options_models_never": "Списъците с модели още не са прочетени.",
+  "options_models_auto": "Те идват от Claude Code, Codex и Ollama и се прочитат отново веднъж дневно, когато Claude Code или Codex се актуализира и когато разширението се актуализира.",
+  "options_models_refresh": "Прочети ги сега"
 }

@@ -30,8 +30,6 @@
   "options_display_mode": "Mostre i sunts in",
   "options_mode_sidepanel": "Panel laterâl",
   "options_mode_popup": "Popup",
-  "options_model_list": "Modei (un par rie)",
-  "options_models_empty": "La liste dai modei no pues jessi vueide.",
   "options_ready": "Pront",
   "options_help": "I sunts a passin pal component locâl di chest computer: al eseguìs Claude Code o Codex cul to abonament, o un model in Ollama. Il test de pagjine al ven mandât dome al furnidôr che tu sielzis.",
   "options_ui_language": "Lenghe de interfacie",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Fâs une domande su cheste pagjine",
   "ui_ask": "Domande",
   "error_ollama_missing": "Ollama nol è in esecuzion su chest computer. Instalilu di ollama.com, vierzilu e po torne a provâ.",
-  "error_ollama_model_missing": "Chest model nol è discjamât in Ollama. Eseguìs ollama pull cul non dal model (par esempli, ollama pull llama3.2) e po torne a provâ."
+  "error_ollama_model_missing": "Chest model nol è discjamât in Ollama. Eseguìs ollama pull cul non dal model (par esempli, ollama pull llama3.2) e po torne a provâ.",
+  "options_more_models": "Plui modei (un par rie)",
+  "options_models_checked": "Listis dai modei letis ai {date}.",
+  "options_models_never": "Lis listis dai modei no son ancjemò stadis letis.",
+  "options_models_auto": "A vegnin di Claude Code, Codex e Ollama, e a vegnin letis di gnûf une volte al dì, cuant che Claude Code o Codex al ven inzornât e cuant che la estension e ven inzornade.",
+  "options_models_refresh": "Lei cumò"
 }

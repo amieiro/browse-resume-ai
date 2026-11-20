@@ -30,8 +30,6 @@
   "options_display_mode": "Tunjukkan ringkasan dalam",
   "options_mode_sidepanel": "Panel sisi",
   "options_mode_popup": "Tetingkap timbul",
-  "options_model_list": "Model (satu setiap baris)",
-  "options_models_empty": "Senarai model tidak boleh kosong.",
   "options_ready": "Sedia",
   "options_help": "Ringkasan melalui komponen setempat pada komputer ini: ia menjalankan Claude Code atau Codex dengan langganan anda, atau model dalam Ollama. Teks halaman hanya dihantar kepada penyedia yang anda pilih.",
   "options_ui_language": "Bahasa antara muka",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Tanya soalan tentang halaman ini",
   "ui_ask": "Tanya",
   "error_ollama_missing": "Ollama tidak berjalan pada komputer ini. Pasangkannya dari ollama.com dan bukanya, kemudian cuba lagi.",
-  "error_ollama_model_missing": "Model ini belum dimuat turun dalam Ollama. Jalankan ollama pull dengan nama model (contohnya, ollama pull llama3.2), kemudian cuba lagi."
+  "error_ollama_model_missing": "Model ini belum dimuat turun dalam Ollama. Jalankan ollama pull dengan nama model (contohnya, ollama pull llama3.2), kemudian cuba lagi.",
+  "options_more_models": "Lebih banyak model (satu setiap baris)",
+  "options_models_checked": "Senarai model dibaca pada {date}.",
+  "options_models_never": "Senarai model belum dibaca lagi.",
+  "options_models_auto": "Senarai ini datang daripada Claude Code, Codex dan Ollama, dan dibaca semula sekali sehari, apabila Claude Code atau Codex dikemas kini, dan apabila sambungan dikemas kini.",
+  "options_models_refresh": "Baca sekarang"
 }

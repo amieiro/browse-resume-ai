@@ -30,8 +30,6 @@
   "options_display_mode": "Sóti hotha dehá zaga",
   "options_mode_sidepanel": "Kinarar panel",
   "options_mode_popup": "Popup",
-  "options_model_list": "Model ókkol (fottí lain ot ekkán)",
-  "options_models_empty": "Model or lisht yán hali tháki no fare.",
   "options_ready": "Toiyar",
   "options_help": "Sóti hotha ókkol ey kompiutar or lokal komfonent loi zagoi: yán tuáñr sobskripshon loi Claude Code yáñ Codex solá, yáñ Ollama ot ekkan model solá. Fata or lekar hotha óilla tuñi basi lóiyo ze dedeya, yáre fail deoá zagoi.",
   "options_ui_language": "Interfeis or zuban",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Ey fata yán lói ekkán sual gor",
   "ui_ask": "Sual gor",
   "error_ollama_missing": "Ey kompiutar ot Ollama no solér. ollama.com tú instal gor arr kúlo, baade abar sesta gor.",
-  "error_ollama_model_missing": "Ey model Ollama ot daunlod no gorá. Model or nam loi ollama pull solá (missal, ollama pull llama3.2), baade abar sesta gor."
+  "error_ollama_model_missing": "Ey model Ollama ot daunlod no gorá. Model or nam loi ollama pull solá (missal, ollama pull llama3.2), baade abar sesta gor.",
+  "options_more_models": "Aró model (hor lain ot ekkan)",
+  "options_models_checked": "Model or list ókkol {date} ot foróa óiye.",
+  "options_models_never": "Model or list ókkol óilla foróa no óiye.",
+  "options_models_auto": "Yiín ókkol Claude Code, Codex arú Ollama ttu aye, arú din ot ekbar, Claude Code yáñ Codex abdet óile, arú eksténshon abdet óile abar foróa zagoi.",
+  "options_models_refresh": "Ehon foro"
 }

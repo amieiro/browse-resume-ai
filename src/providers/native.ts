@@ -1,4 +1,5 @@
 import { browser } from 'wxt/browser';
+import type { HostModels } from '@/lib/model-catalog';
 import { SummaryError, type SummaryErrorCode } from './types';
 
 export const HOST_NAME = 'com.browse_resume_ai.host';
@@ -61,6 +62,43 @@ export function pingHost(options: { ollama?: boolean } = {}): Promise<Extract<Ho
     });
     port.postMessage(options.ollama ? { type: 'ping', ollama: true } : { type: 'ping' });
   });
+}
+
+/** Sends one message and resolves to the first answer of the given type, or null (missing, silent). */
+function askHost<T>(message: object, answerType: string, timeoutMs: number): Promise<T | null> {
+  return new Promise((resolve) => {
+    let port: NativePort;
+    try {
+      port = connect();
+    } catch {
+      resolve(null);
+      return;
+    }
+    const finish = (value: T | null) => {
+      clearTimeout(timer);
+      port.disconnect();
+      resolve(value);
+    };
+    const timer = setTimeout(() => finish(null), timeoutMs);
+    port.onMessage.addListener((msg: { type: string }) => {
+      if (msg.type === answerType) finish(msg as T);
+    });
+    port.onDisconnect.addListener(() => {
+      clearTimeout(timer);
+      resolve(null);
+    });
+    port.postMessage(message);
+  });
+}
+
+/** The models of every provider, as the host reads them from the CLIs and Ollama. */
+export function listModels(): Promise<HostModels | null> {
+  return askHost<HostModels>({ type: 'models' }, 'models', 30_000);
+}
+
+/** The installed versions of Claude Code and Codex. */
+export function cliVersions(): Promise<{ claude: string | null; codex: string | null } | null> {
+  return askHost({ type: 'versions' }, 'versions', 30_000);
 }
 
 /** Streams a summary from the host. One port per request; ends quietly when aborted. */

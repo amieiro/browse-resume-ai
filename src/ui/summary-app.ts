@@ -1,5 +1,7 @@
 import { browser } from 'wxt/browser';
 import type { SummaryStartedBroadcast } from '@/lib/messages';
+import { catalogDeps } from '@/lib/catalog-deps';
+import { CATALOG_KEY, ensureFreshCatalog } from '@/lib/model-catalog';
 import { loadSettings, saveSettings } from '@/lib/settings';
 import { bootPage } from './boot';
 import { createPortClient } from './port-client';
@@ -31,13 +33,15 @@ export async function startSummaryApp(root: HTMLElement, options: Options): Prom
   });
 
   browser.storage.onChanged.addListener((changes, area) => {
-    if (area === 'local' && 'settings' in changes) void loadSettings().then(view.setSettings);
+    if (area === 'local' && ('settings' in changes || CATALOG_KEY in changes)) void loadSettings().then(view.setSettings);
   });
 
   // An icon click while the service worker slept: our port is dead, reopen it to see the new summary.
   browser.runtime.onMessage.addListener((msg: SummaryStartedBroadcast) => {
     if (msg?.type === 'summary-started' && msg.tabId === client.tabId()) client.ensureConnected();
   });
+
+  void ensureFreshCatalog(catalogDeps());
 
   const tabId = await activeTabId();
   if (tabId === undefined) return;

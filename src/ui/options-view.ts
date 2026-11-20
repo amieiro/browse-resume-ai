@@ -8,6 +8,12 @@ export interface OptionsViewDeps {
   checkAvailability(id: ProviderId): Promise<Availability>;
   /** The extension version, shown at the bottom of the page. */
   version?: string;
+  /** The detected models of a provider (or its fallback list), before the ones added by hand. */
+  baseModels?(id: ProviderId): string[];
+  /** When the model lists were last read from the providers; null if never. */
+  modelsCheckedAt?: number | null;
+  /** Reads the model lists again now. */
+  onRefreshModels?(): Promise<void>;
 }
 
 const PROVIDERS: { id: ProviderId; label: string }[] = [
@@ -71,34 +77,30 @@ export function mountOptionsView(root: HTMLElement, initial: Settings, deps: Opt
   const statusChecks: Promise<void>[] = [];
   const providerSections = PROVIDERS.map(({ id, label }) => {
     const modelSelect = el('select', { name: `model-${id}`, id: `model-${id}` });
+
+    const base = () => deps.baseModels?.(id) ?? settings.modelLists[id];
     const fillModels = () => {
-      modelSelect.replaceChildren(...settings.modelLists[id].map((m) => el('option', { value: m, textContent: m })));
-      modelSelect.value = settings.models[id];
+      const list = [...new Set([...base(), ...settings.extraModels[id]])];
+      modelSelect.replaceChildren(...list.map((m) => el('option', { value: m, textContent: m })));
+      modelSelect.value = list.includes(settings.models[id]) ? settings.models[id] : (list[0] ?? '');
     };
     fillModels();
-
-    const list = el('textarea', { name: `models-${id}`, id: `models-${id}`, rows: 4, spellcheck: false });
-    list.value = settings.modelLists[id].join('\n');
-    const listError = el('p', { className: 'field-error', hidden: true, textContent: t('options_models_empty') });
+    const extra = el('textarea', { name: `extra-${id}`, id: `extra-${id}`, rows: 2, spellcheck: false });
+    extra.value = settings.extraModels[id].join('\n');
 
     modelSelect.addEventListener('change', () => {
       settings = { ...settings, models: { ...settings.models, [id]: modelSelect.value } };
       deps.onSave({ models: settings.models });
     });
-    list.addEventListener('change', () => {
-      const models = parseModelList(list.value);
-      if (models.length === 0) {
-        list.value = settings.modelLists[id].join('\n');
-        listError.hidden = false;
-        return;
-      }
-      listError.hidden = true;
-      list.value = models.join('\n');
-      const modelLists = { ...settings.modelLists, [id]: models };
-      const patch: Partial<Settings> = { modelLists };
-      settings = { ...settings, modelLists };
-      if (!models.includes(settings.models[id])) {
-        settings = { ...settings, models: { ...settings.models, [id]: models[0]! } };
+    extra.addEventListener('change', () => {
+      const added = parseModelList(extra.value);
+      extra.value = added.join('\n');
+      const extraModels = { ...settings.extraModels, [id]: added };
+      const list = [...new Set([...base(), ...added])];
+      settings = { ...settings, extraModels, modelLists: { ...settings.modelLists, [id]: list } };
+      const patch: Partial<Settings> = { extraModels };
+      if (!list.includes(settings.models[id]) && list[0]) {
+        settings = { ...settings, models: { ...settings.models, [id]: list[0] } };
         patch.models = settings.models;
       }
       fillModels();
@@ -120,8 +122,7 @@ export function mountOptionsView(root: HTMLElement, initial: Settings, deps: Opt
       el('legend', { textContent: label }),
       status,
       row(t('ui_model'), modelSelect),
-      row(t('options_model_list'), list),
-      listError,
+      row(t('options_more_models'), extra),
     );
   });
 
@@ -137,9 +138,31 @@ export function mountOptionsView(root: HTMLElement, initial: Settings, deps: Opt
       row(t('ui_length'), length),
       row(t('ui_language'), language),
     ),
+    modelsInfo(),
     ...providerSections,
     el('p', { className: 'help', textContent: t('options_help') }),
   );
+  function modelsInfo() {
+    const checked = el('span', {});
+    checked.dataset.role = 'models-checked';
+    if (deps.modelsCheckedAt) {
+      const date = new Intl.DateTimeFormat(document.documentElement.lang || undefined, { dateStyle: 'medium', timeStyle: 'short' });
+      checked.textContent = t('options_models_checked').replace('{date}', date.format(deps.modelsCheckedAt));
+    } else {
+      checked.textContent = t('options_models_never');
+    }
+    const info = el('p', { className: 'models-info' }, checked, ' ', el('span', { textContent: t('options_models_auto') }));
+    if (deps.onRefreshModels) {
+      const refresh = el('button', { name: 'refresh-models', type: 'button', textContent: t('options_models_refresh') });
+      refresh.addEventListener('click', () => {
+        refresh.disabled = true;
+        void deps.onRefreshModels!().finally(() => (refresh.disabled = false));
+      });
+      info.append(' ', refresh);
+    }
+    return info;
+  }
+
   if (deps.version) root.append(el('p', { className: 'version', textContent: `v${deps.version}` }));
 
   return { ready: Promise.all(statusChecks).then(() => undefined) };

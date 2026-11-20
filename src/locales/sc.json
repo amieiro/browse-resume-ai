@@ -30,8 +30,6 @@
   "options_display_mode": "Ammustra sos resumos in",
   "options_mode_sidepanel": "Pannellu laterale",
   "options_mode_popup": "Popup",
-  "options_model_list": "Modellos (unu pro riga)",
-  "options_models_empty": "Sa lista de sos modellos non podet èssere bòida.",
   "options_ready": "Prontu",
   "options_help": "Sos resumos passant pro su cumponente locale de custu elaboradore: esecutat Claude Code o Codex cun s'abbonamentu tuo, o unu modellu in Ollama. Su testu de sa pàgina est imbiadu isceti a su frunidore chi seberas.",
   "options_ui_language": "Limba de s'interfàtzia",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Faghe una pregunta subra de custa pàgina",
   "ui_ask": "Pregunta",
   "error_ollama_missing": "Ollama no est in esecutzione in custu elaboradore. Installa·lu dae ollama.com e aberi·lu, e a pustis torra a proare.",
-  "error_ollama_model_missing": "Custu modellu no est iscarrigadu in Ollama. Esecuta ollama pull cun su nòmine de su modellu (pro esempru, ollama pull llama3.2), e a pustis torra a proare."
+  "error_ollama_model_missing": "Custu modellu no est iscarrigadu in Ollama. Esecuta ollama pull cun su nòmine de su modellu (pro esempru, ollama pull llama3.2), e a pustis torra a proare.",
+  "options_more_models": "Àteros modellos (unu pro riga)",
+  "options_models_checked": "Listas de modellos lèghidas su {date}.",
+  "options_models_never": "Sas listas de modellos no sunt istadas lèghidas galu.",
+  "options_models_auto": "Benint dae Claude Code, Codex e Ollama, e las torrant a lèghere una borta a sa die, cando Claude Code o Codex benit atualizadu e cando s'estensione benit atualizada.",
+  "options_models_refresh": "Lèghe·las como"
 }

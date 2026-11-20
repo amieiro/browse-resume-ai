@@ -30,8 +30,6 @@
   "options_display_mode": "Montrar rezumi en",
   "options_mode_sidepanel": "Latera panelo",
   "options_mode_popup": "Ekaparanta fenestro",
-  "options_model_list": "Modeli (un per lineo)",
-  "options_models_empty": "La listo di modeli ne povas esar vakua.",
   "options_ready": "Pronta",
   "options_help": "Rezumi pasas tra la lokala komponanto di ica komputero: ol exekutas Claude Code o Codex kun vua abono, o modelo en Ollama. La texto di la pagino sendesas nur a la provizanto quan vu selektas.",
   "options_ui_language": "Linguo di la interfacio",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Questionez pri ica pagino",
   "ui_ask": "Questionar",
   "error_ollama_missing": "Ollama ne funcionas en ica komputero. Instalez ol de ollama.com e apertez ol, pose probez itere.",
-  "error_ollama_model_missing": "Ica modelo ne esas deskargita en Ollama. Exekutez ollama pull kun la nomo di la modelo (exemple, ollama pull llama3.2), pose probez itere."
+  "error_ollama_model_missing": "Ica modelo ne esas deskargita en Ollama. Exekutez ollama pull kun la nomo di la modelo (exemple, ollama pull llama3.2), pose probez itere.",
+  "options_more_models": "Plusa modeli (un per lineo)",
+  "options_models_checked": "Listi di modeli lektesis ye {date}.",
+  "options_models_never": "La listi di modeli ankore ne lektesis.",
+  "options_models_auto": "Li venas de Claude Code, Codex e Ollama, e lektesas itere un foyo per dio, kande Claude Code o Codex aktualigesas, e kande la extensajo aktualigesas.",
+  "options_models_refresh": "Lektar li nun"
 }

@@ -7,6 +7,7 @@ import { createDecoder, encodeMessage } from './lib/framing.mjs';
 import { validateRequest, VERSION } from './lib/protocol.mjs';
 import { runCodex } from './lib/codex-runner.mjs';
 import { checkOllama, ollamaBaseUrl, runOllama } from './lib/ollama-runner.mjs';
+import { claudeModels, cliVersion, codexModels } from './lib/models.mjs';
 import { runClaude } from './lib/runner.mjs';
 
 const CLAUDE_BIN = process.env.CLAUDE_BIN || 'claude';
@@ -39,6 +40,19 @@ function handle(msg) {
     } else {
       send(pong);
     }
+  } else if (msg.type === 'versions') {
+    // Cheap enough to ask now and then: the extension lists the models again when a CLI changed.
+    void Promise.all([cliVersion(CLAUDE_BIN), cliVersion(CODEX_BIN)]).then(([claude, codex]) => send({ type: 'versions', claude, codex }));
+  } else if (msg.type === 'models') {
+    void Promise.all([cliVersion(CLAUDE_BIN), cliVersion(CODEX_BIN), codexModels(CODEX_BIN), checkOllama(OLLAMA_URL)]).then(
+      ([claudeVersion, codexVersion, codex, ollama]) =>
+        send({
+          type: 'models',
+          claude: { version: claudeVersion, models: claudeModels() },
+          codex: { version: codexVersion, models: codex },
+          ollama: { found: ollama.found, models: ollama.models },
+        }),
+    );
   } else if (msg.type === 'cancel') {
     running.get(msg.id)?.cancel();
     running.delete(msg.id);

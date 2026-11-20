@@ -30,8 +30,6 @@
   "options_display_mode": "Dangos crynodebau yn",
   "options_mode_sidepanel": "Panel ochr",
   "options_mode_popup": "Naidlen",
-  "options_model_list": "Modelau (un i bob llinell)",
-  "options_models_empty": "All y rhestr modelau ddim bod yn wag.",
   "options_ready": "Yn barod",
   "options_help": "Mae crynodebau'n mynd drwy'r gydran leol ar y cyfrifiadur hwn: mae'n rhedeg Claude Code neu Codex gyda'ch tanysgrifiad, neu fodel yn Ollama. Dim ond i'r darparwr rydych chi'n ei ddewis y caiff testun y dudalen ei anfon.",
   "options_ui_language": "Iaith y rhyngwyneb",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Gofynnwch gwestiwn am y dudalen hon",
   "ui_ask": "Gofyn",
   "error_ollama_missing": "Dyw Ollama ddim yn rhedeg ar y cyfrifiadur hwn. Gosodwch ef o ollama.com a'i agor, yna rhowch gynnig arall arni.",
-  "error_ollama_model_missing": "Dyw'r model hwn ddim wedi'i lwytho i lawr yn Ollama. Rhedwch ollama pull gydag enw'r model (er enghraifft, ollama pull llama3.2), yna rhowch gynnig arall arni."
+  "error_ollama_model_missing": "Dyw'r model hwn ddim wedi'i lwytho i lawr yn Ollama. Rhedwch ollama pull gydag enw'r model (er enghraifft, ollama pull llama3.2), yna rhowch gynnig arall arni.",
+  "options_more_models": "Rhagor o fodelau (un i bob llinell)",
+  "options_models_checked": "Darllenwyd y rhestrau modelau ar {date}.",
+  "options_models_never": "Nid yw'r rhestrau modelau wedi'u darllen eto.",
+  "options_models_auto": "Maen nhw'n dod o Claude Code, Codex ac Ollama, ac yn cael eu darllen eto unwaith y dydd, pan gaiff Claude Code neu Codex ei ddiweddaru, a phan gaiff yr estyniad ei ddiweddaru.",
+  "options_models_refresh": "Darllen nhw nawr"
 }

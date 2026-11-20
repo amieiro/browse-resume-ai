@@ -30,8 +30,6 @@
   "options_display_mode": "Mostra i riassunti in",
   "options_mode_sidepanel": "Riquadro laterale",
   "options_mode_popup": "Popup",
-  "options_model_list": "Modelli (uno per riga)",
-  "options_models_empty": "L'elenco dei modelli non può essere vuoto.",
   "options_ready": "Pronto",
   "options_help": "I riassunti passano dal componente locale di questo computer: esegue Claude Code o Codex con il tuo abbonamento, oppure un modello in Ollama. Il testo della pagina viene inviato solo al provider che scegli.",
   "options_ui_language": "Lingua dell'interfaccia",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Fai una domanda su questa pagina",
   "ui_ask": "Chiedi",
   "error_ollama_missing": "Ollama non è in esecuzione su questo computer. Installalo da ollama.com e aprilo, poi riprova.",
-  "error_ollama_model_missing": "Questo modello non è scaricato in Ollama. Esegui ollama pull con il nome del modello (ad esempio, ollama pull llama3.2), poi riprova."
+  "error_ollama_model_missing": "Questo modello non è scaricato in Ollama. Esegui ollama pull con il nome del modello (ad esempio, ollama pull llama3.2), poi riprova.",
+  "options_more_models": "Altri modelli (uno per riga)",
+  "options_models_checked": "Elenchi dei modelli letti il {date}.",
+  "options_models_never": "Gli elenchi dei modelli non sono ancora stati letti.",
+  "options_models_auto": "Provengono da Claude Code, Codex e Ollama e vengono riletti una volta al giorno, quando Claude Code o Codex viene aggiornato e quando l'estensione viene aggiornata.",
+  "options_models_refresh": "Leggili ora"
 }

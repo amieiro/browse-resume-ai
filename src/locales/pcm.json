@@ -30,8 +30,6 @@
   "options_display_mode": "Show summary for",
   "options_mode_sidepanel": "Side panel",
   "options_mode_popup": "Popup",
-  "options_model_list": "Models (one for each line)",
-  "options_models_empty": "Di model list no fit dey empty.",
   "options_ready": "E don ready",
   "options_help": "Summary dey pass through di local component for dis computer: e dey run Claude Code or Codex with your subscription, or one model for Ollama. Na only di provider wey you choose we dey send di page text go.",
   "options_ui_language": "Language for di interface",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Ask question about dis page",
   "ui_ask": "Ask am",
   "error_ollama_missing": "Ollama no dey run for dis computer. Install am from ollama.com and open am, then try again.",
-  "error_ollama_model_missing": "Dis model never download for Ollama. Run ollama pull with di model name (for example, ollama pull llama3.2), then try again."
+  "error_ollama_model_missing": "Dis model never download for Ollama. Run ollama pull with di model name (for example, ollama pull llama3.2), then try again.",
+  "options_more_models": "More models (one for each line)",
+  "options_models_checked": "We read di model lists for {date}.",
+  "options_models_never": "We never read di model lists yet.",
+  "options_models_auto": "Dem dey come from Claude Code, Codex and Ollama, and we dey read dem again once every day, when Claude Code or Codex update, and when di extension update.",
+  "options_models_refresh": "Read dem now"
 }

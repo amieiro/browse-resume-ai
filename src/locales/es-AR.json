@@ -30,8 +30,6 @@
   "options_display_mode": "Mostrar los resúmenes en",
   "options_mode_sidepanel": "Panel lateral",
   "options_mode_popup": "Ventana emergente",
-  "options_model_list": "Modelos (uno por línea)",
-  "options_models_empty": "La lista de modelos no puede estar vacía.",
   "options_ready": "Listo",
   "options_help": "Los resúmenes pasan por el componente local de esta computadora: ejecuta Claude Code o Codex con tu suscripción, o un modelo en Ollama. El texto de la página solo se envía al proveedor que elijas.",
   "options_ui_language": "Idioma de la interfaz",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Hacé una pregunta sobre esta página",
   "ui_ask": "Preguntar",
   "error_ollama_missing": "Ollama no se está ejecutando en esta computadora. Instalalo desde ollama.com, abrilo y volvé a intentarlo.",
-  "error_ollama_model_missing": "Este modelo no está descargado en Ollama. Ejecutá ollama pull con el nombre del modelo (por ejemplo, ollama pull llama3.2) y volvé a intentarlo."
+  "error_ollama_model_missing": "Este modelo no está descargado en Ollama. Ejecutá ollama pull con el nombre del modelo (por ejemplo, ollama pull llama3.2) y volvé a intentarlo.",
+  "options_more_models": "Más modelos (uno por línea)",
+  "options_models_checked": "Listas de modelos leídas el {date}.",
+  "options_models_never": "Todavía no se leyeron las listas de modelos.",
+  "options_models_auto": "Vienen de Claude Code, Codex y Ollama, y se vuelven a leer una vez al día, cuando se actualiza Claude Code o Codex y cuando se actualiza la extensión.",
+  "options_models_refresh": "Leerlas ahora"
 }

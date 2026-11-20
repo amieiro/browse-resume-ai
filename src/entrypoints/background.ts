@@ -1,7 +1,9 @@
 import { browser } from 'wxt/browser';
+import { catalogDeps } from '@/lib/catalog-deps';
 import { applyDisplayMode } from '@/lib/display-mode';
 import { extractFromTab, selectionFromTab } from '@/lib/injection';
 import { menuTitles } from '@/lib/menu-strings';
+import { ensureFreshCatalog, refreshCatalog } from '@/lib/model-catalog';
 import { parsePortName, type BackgroundToUi, type SummaryStartedBroadcast, type UiToBackground } from '@/lib/messages';
 import { loadSettings, type DisplayMode } from '@/lib/settings';
 import { Summarizer } from '@/lib/summarizer';
@@ -31,8 +33,16 @@ export default defineBackground(() => {
     }).catch(() => {});
     return syncing;
   };
-  browser.runtime.onInstalled.addListener(() => void syncSettings());
-  browser.runtime.onStartup.addListener(() => void syncSettings());
+  // The model lists are read again when the extension is installed or updated, and checked when
+  // Chrome starts and whenever a view opens (once a day, or when Claude Code or Codex changed).
+  browser.runtime.onInstalled.addListener(() => {
+    void syncSettings();
+    void refreshCatalog(catalogDeps());
+  });
+  browser.runtime.onStartup.addListener(() => {
+    void syncSettings();
+    void ensureFreshCatalog(catalogDeps());
+  });
   browser.storage.onChanged.addListener((changes, area) => {
     if (area === 'local' && 'settings' in changes) void syncSettings();
   });

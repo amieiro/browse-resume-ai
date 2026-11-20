@@ -30,8 +30,6 @@
   "options_display_mode": "Bonisa izifinyezo ku",
   "options_mode_sidepanel": "Iphaneli eseceleni",
   "options_mode_popup": "Iwindi eliphumayo",
-  "options_model_list": "Amamodeli (eyodwa emugqeni ngamunye)",
-  "options_models_empty": "Uhlu lwamamodeli alukwazi ukungabi nalutho.",
   "options_ready": "Kulungile",
   "options_help": "Izifinyezo zidlula engxenyeni yasendaweni kule khompyutha: iqalisa i-Claude Code noma i-Codex ngokubhalisa kwakho, noma imodeli ku-Ollama. Umbhalo wekhasi uthunyelwa kuphela kumhlinzeki omkhethayo.",
   "options_ui_language": "Ulimi lokuxhumana",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Buza umbuzo ngaleli khasi",
   "ui_ask": "Buza",
   "error_ollama_missing": "I-Ollama ayisebenzi kule khompyutha. Yifake usuka ku-ollama.com bese uyivula, bese uzama futhi.",
-  "error_ollama_model_missing": "Le modeli ayikadawunilodwa ku-Ollama. Qalisa ollama pull negama lemodeli (isibonelo, ollama pull llama3.2), bese uzama futhi."
+  "error_ollama_model_missing": "Le modeli ayikadawunilodwa ku-Ollama. Qalisa ollama pull negama lemodeli (isibonelo, ollama pull llama3.2), bese uzama futhi.",
+  "options_more_models": "Amamodeli engeziwe (eyodwa emgqeni ngamunye)",
+  "options_models_checked": "Uhlu lwamamodeli lufundwe ngo-{date}.",
+  "options_models_never": "Uhlu lwamamodeli alukafundwa.",
+  "options_models_auto": "Luvela ku-Claude Code, Codex no-Ollama, futhi lufundwa futhi kanye ngosuku, lapho i-Claude Code noma i-Codex ibuyekezwa, nalapho isandiso sibuyekezwa.",
+  "options_models_refresh": "Lufunde manje"
 }

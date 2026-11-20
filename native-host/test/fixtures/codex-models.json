@@ -1,0 +1,34 @@
+{
+  "models": [
+    {
+      "slug": "gpt-6.2-astra",
+      "display_name": "GPT-6.2-Astra",
+      "visibility": "list",
+      "priority": 2
+    },
+    {
+      "slug": "gpt-reserve",
+      "display_name": "GPT-Reserve",
+      "visibility": "hide",
+      "priority": 4
+    },
+    {
+      "slug": "gpt-6.2-sol",
+      "display_name": "GPT-6.2-Sol",
+      "visibility": "list",
+      "priority": 1
+    },
+    {
+      "slug": "gpt-6-luna",
+      "display_name": "GPT-6-Luna",
+      "visibility": "list",
+      "priority": 8
+    },
+    {
+      "slug": "bad name; rm",
+      "display_name": "x",
+      "visibility": "list",
+      "priority": 9
+    }
+  ]
+}

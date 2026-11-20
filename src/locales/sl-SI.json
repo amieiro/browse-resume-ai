@@ -30,8 +30,6 @@
   "options_display_mode": "Prikaži povzetke v",
   "options_mode_sidepanel": "Stranska plošča",
   "options_mode_popup": "Pojavno okno",
-  "options_model_list": "Modeli (en na vrstico)",
-  "options_models_empty": "Seznam modelov ne sme biti prazen.",
   "options_ready": "Pripravljeno",
   "options_help": "Povzetki gredo prek lokalne komponente v tem računalniku: zažene Claude Code ali Codex z vašo naročnino ali model v Ollama. Besedilo strani se pošlje samo ponudniku, ki ga izberete.",
   "options_ui_language": "Jezik vmesnika",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Zastavi vprašanje o tej strani",
   "ui_ask": "Vprašaj",
   "error_ollama_missing": "Ollama se v tem računalniku ne izvaja. Namestite jo s strani ollama.com in jo odprite, nato poskusite znova.",
-  "error_ollama_model_missing": "Ta model ni prenesen v Ollama. Zaženite ollama pull z imenom modela (na primer ollama pull llama3.2), nato poskusite znova."
+  "error_ollama_model_missing": "Ta model ni prenesen v Ollama. Zaženite ollama pull z imenom modela (na primer ollama pull llama3.2), nato poskusite znova.",
+  "options_more_models": "Dodatni modeli (eden na vrstico)",
+  "options_models_checked": "Seznami modelov so bili prebrani {date}.",
+  "options_models_never": "Seznami modelov še niso bili prebrani.",
+  "options_models_auto": "Pridobljeni so iz Claude Code, Codex in Ollama ter se znova preberejo enkrat na dan, ko se posodobi Claude Code ali Codex, in ko se posodobi razširitev.",
+  "options_models_refresh": "Preberi zdaj"
 }

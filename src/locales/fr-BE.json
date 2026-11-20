@@ -30,8 +30,6 @@
   "options_display_mode": "Afficher les résumés dans",
   "options_mode_sidepanel": "Panneau latéral",
   "options_mode_popup": "Pop-up",
-  "options_model_list": "Modèles (un par ligne)",
-  "options_models_empty": "La liste des modèles ne peut pas être vide.",
   "options_ready": "Prêt",
   "options_help": "Les résumés passent par le composant local de cet ordinateur : il exécute Claude Code ou Codex avec votre abonnement, ou un modèle dans Ollama. Le texte de la page n'est envoyé qu'au fournisseur que vous choisissez.",
   "options_ui_language": "Langue de l'interface",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Posez une question sur cette page",
   "ui_ask": "Demander",
   "error_ollama_missing": "Ollama n'est pas en cours d'exécution sur cet ordinateur. Installez-le depuis ollama.com, ouvrez-le, puis réessayez.",
-  "error_ollama_model_missing": "Ce modèle n'est pas téléchargé dans Ollama. Exécutez ollama pull avec le nom du modèle (par exemple, ollama pull llama3.2), puis réessayez."
+  "error_ollama_model_missing": "Ce modèle n'est pas téléchargé dans Ollama. Exécutez ollama pull avec le nom du modèle (par exemple, ollama pull llama3.2), puis réessayez.",
+  "options_more_models": "Autres modèles (un par ligne)",
+  "options_models_checked": "Listes de modèles lues le {date}.",
+  "options_models_never": "Les listes de modèles n'ont pas encore été lues.",
+  "options_models_auto": "Elles proviennent de Claude Code, Codex et Ollama, et sont relues une fois par jour, lors de la mise à jour de Claude Code ou de Codex, et lors de la mise à jour de l'extension.",
+  "options_models_refresh": "Les lire maintenant"
 }

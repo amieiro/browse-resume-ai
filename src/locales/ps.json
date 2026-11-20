@@ -30,8 +30,6 @@
   "options_display_mode": "لنډیزونه دلته وښایئ",
   "options_mode_sidepanel": "اړخیزه تخته",
   "options_mode_popup": "پاپ‌اپ",
-  "options_model_list": "ماډلونه (په هره کرښه کې یو)",
-  "options_models_empty": "د ماډلونو لېست نه شي تش کېدای.",
   "options_ready": "چمتو",
   "options_help": "لنډیزونه په دې کمپیوټر کې له سیمه‌ییزې برخې تېرېږي: دا ستاسو د ګډون سره Claude Code یا Codex چلوي، یا په Ollama کې یو ماډل. د پاڼې متن یوازې هغه برابرونکي ته لېږل کېږي چې تاسو یې ټاکئ.",
   "options_ui_language": "د انټرفیس ژبه",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "د دې پاڼې په اړه پوښتنه وکړئ",
   "ui_ask": "پوښتنه وکړئ",
   "error_ollama_missing": "Ollama په دې کمپیوټر کې نه چلېږي. له ollama.com څخه یې نصب او پرانیزئ، بیا بیا هڅه وکړئ.",
-  "error_ollama_model_missing": "دا ماډل په Ollama کې نه دی ښکته شوی. د ماډل له نوم سره ollama pull وچلوئ (د بېلګې په توګه، ollama pull llama3.2)، بیا بیا هڅه وکړئ."
+  "error_ollama_model_missing": "دا ماډل په Ollama کې نه دی ښکته شوی. د ماډل له نوم سره ollama pull وچلوئ (د بېلګې په توګه، ollama pull llama3.2)، بیا بیا هڅه وکړئ.",
+  "options_more_models": "نور ماډلونه (په هره کرښه کې یو)",
+  "options_models_checked": "د ماډلونو لېستونه په {date} ولوستل شول.",
+  "options_models_never": "د ماډلونو لېستونه لا نه دي لوستل شوي.",
+  "options_models_auto": "دا له Claude Code، Codex او Ollama څخه راځي، او په ورځ کې یو ځل، کله چې Claude Code یا Codex تازه شي، او کله چې غځونه تازه شي، بیا لوستل کېږي.",
+  "options_models_refresh": "اوس یې ولولئ"
 }

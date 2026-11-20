@@ -30,8 +30,6 @@
   "options_display_mode": "Түйіндемелерді көрсету орны",
   "options_mode_sidepanel": "Бүйірлік панель",
   "options_mode_popup": "Қалқымалы терезе",
-  "options_model_list": "Модельдер (әр жолға біреу)",
-  "options_models_empty": "Модельдер тізімі бос болмауы керек.",
   "options_ready": "Дайын",
   "options_help": "Түйіндемелер осы компьютердегі жергілікті компонент арқылы өтеді: ол сіздің жазылымыңызбен Claude Code немесе Codex іске қосады немесе Ollama-дағы модельді іске қосады. Бет мәтіні тек өзіңіз таңдаған провайдерге жіберіледі.",
   "options_ui_language": "Интерфейс тілі",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Осы бет туралы сұрақ қойыңыз",
   "ui_ask": "Сұрау",
   "error_ollama_missing": "Бұл компьютерде Ollama іске қосылмаған. Оны ollama.com сайтынан орнатып, ашыңыз, содан кейін қайталап көріңіз.",
-  "error_ollama_model_missing": "Бұл модель Ollama-ға жүктеп алынбаған. ollama pull пәрменін модель атауымен іске қосыңыз (мысалы, ollama pull llama3.2), содан кейін қайталап көріңіз."
+  "error_ollama_model_missing": "Бұл модель Ollama-ға жүктеп алынбаған. ollama pull пәрменін модель атауымен іске қосыңыз (мысалы, ollama pull llama3.2), содан кейін қайталап көріңіз.",
+  "options_more_models": "Қосымша модельдер (әр жолға біреуден)",
+  "options_models_checked": "Модель тізімдері {date} оқылды.",
+  "options_models_never": "Модель тізімдері әлі оқылмаған.",
+  "options_models_auto": "Олар Claude Code, Codex және Ollama-дан алынады және күніне бір рет, Claude Code немесе Codex жаңартылғанда және кеңейтім жаңартылғанда қайта оқылады.",
+  "options_models_refresh": "Қазір оқу"
 }

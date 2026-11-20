@@ -30,8 +30,6 @@
   "options_display_mode": "Sken igzulen deg",
   "options_mode_sidepanel": "Agalis adisan",
   "options_mode_popup": "Asfaylu udhim",
-  "options_model_list": "Timudmiwin (yiwet deg yal izirig)",
-  "options_models_empty": "Tabdart n timudmiwin ur tezmir ara ad tili d tilemt.",
   "options_ready": "Ihegga",
   "options_help": "Igzulen ttɛeddin s usuddis adigan n uselkim-a: iselkam Claude Code neɣ Codex s ujerred-ik, neɣ tamudemt deg Ollama. Aḍris n usebter yettwazen kan i usaǧǧaw i tferneḍ.",
   "options_ui_language": "Tutlayt n wegrudem",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Steqsi ɣef usebter-a",
   "ui_ask": "Steqsi",
   "error_ollama_missing": "Ollama ur iteddu ara deg uselkim-a. Sebded-it seg ollama.com syin ldi-t, sakin ɛreḍ tikkelt-nniḍen.",
-  "error_ollama_model_missing": "Tamudemt-a ur d-tettwasader ara deg Ollama. Sekker ollama pull s yisem n tmudemt (amedya, ollama pull llama3.2), sakin ɛreḍ tikkelt-nniḍen."
+  "error_ollama_model_missing": "Tamudemt-a ur d-tettwasader ara deg Ollama. Sekker ollama pull s yisem n tmudemt (amedya, ollama pull llama3.2), sakin ɛreḍ tikkelt-nniḍen.",
+  "options_more_models": "Ugar n tmudmin (yiwet deg yal izirig)",
+  "options_models_checked": "Tibdarin n tmudmin ttwaɣrent ass n {date}.",
+  "options_models_never": "Tibdarin n tmudmin ur ttwaɣrent ara yakan.",
+  "options_models_auto": "Kkant-d seg Claude Code, Codex d Ollama, yerna ttwaɣrent tikkelt nniḍen yiwet n tikkelt deg wass, mi ara yettwaleqqem Claude Code neɣ Codex, akked mi ara yettwaleqqem usiɣzef.",
+  "options_models_refresh": "Ɣer-itent tura"
 }

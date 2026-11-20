@@ -30,8 +30,6 @@
   "options_display_mode": "Taispeáin achoimrí i",
   "options_mode_sidepanel": "Painéal taoibh",
   "options_mode_popup": "Preabfhuinneog",
-  "options_model_list": "Samhlacha (ceann amháin in aghaidh an líne)",
-  "options_models_empty": "Ní féidir liosta na samhlacha a bheith folamh.",
   "options_ready": "Réidh",
   "options_help": "Téann achoimrí tríd an gcomhpháirt áitiúil ar an ríomhaire seo: ritheann sí Claude Code nó Codex le do shíntiús, nó samhail in Ollama. Ní sheoltar téacs an leathanaigh ach chuig an soláthraí a roghnaíonn tú.",
   "options_ui_language": "Teanga an chomhéadain",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Cuir ceist faoin leathanach seo",
   "ui_ask": "Fiafraigh",
   "error_ollama_missing": "Níl Ollama ag rith ar an ríomhaire seo. Suiteáil é ó ollama.com agus oscail é, ansin bain triail eile as.",
-  "error_ollama_model_missing": "Níl an tsamhail seo íoslódáilte in Ollama. Rith ollama pull le hainm na samhla (mar shampla, ollama pull llama3.2), ansin bain triail eile as."
+  "error_ollama_model_missing": "Níl an tsamhail seo íoslódáilte in Ollama. Rith ollama pull le hainm na samhla (mar shampla, ollama pull llama3.2), ansin bain triail eile as.",
+  "options_more_models": "Tuilleadh samhlacha (ceann amháin in aghaidh an líne)",
+  "options_models_checked": "Léadh liostaí na samhlacha ar {date}.",
+  "options_models_never": "Níor léadh liostaí na samhlacha go fóill.",
+  "options_models_auto": "Tagann siad ó Claude Code, Codex agus Ollama, agus léitear arís iad uair sa lá, nuair a nuashonraítear Claude Code nó Codex, agus nuair a nuashonraítear an breiseán.",
+  "options_models_refresh": "Léigh anois iad"
 }

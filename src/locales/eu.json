@@ -30,8 +30,6 @@
   "options_display_mode": "Erakutsi laburpenak hemen:",
   "options_mode_sidepanel": "Alboko panela",
   "options_mode_popup": "Leiho gainerakorra",
-  "options_model_list": "Ereduak (bat lerro bakoitzeko)",
-  "options_models_empty": "Ereduen zerrendak ezin du hutsik egon.",
   "options_ready": "Prest",
   "options_help": "Laburpenak ordenagailu honetako osagai lokalaren bidez egiten dira: Claude Code edo Codex exekutatzen du zure harpidetzarekin, edo Ollama-ko eredu bat. Orriaren testua aukeratzen duzun hornitzaileari bakarrik bidaltzen zaio.",
   "options_ui_language": "Interfazearen hizkuntza",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Egin galdera bat orri honi buruz",
   "ui_ask": "Galdetu",
   "error_ollama_missing": "Ollama ez dago abian ordenagailu honetan. Instalatu ollama.com webgunetik eta ireki, eta saiatu berriro.",
-  "error_ollama_model_missing": "Eredu hau ez dago Ollama-n deskargatuta. Exekutatu ollama pull ereduaren izenarekin (adibidez, ollama pull llama3.2), eta saiatu berriro."
+  "error_ollama_model_missing": "Eredu hau ez dago Ollama-n deskargatuta. Exekutatu ollama pull ereduaren izenarekin (adibidez, ollama pull llama3.2), eta saiatu berriro.",
+  "options_more_models": "Eredu gehiago (bat lerro bakoitzeko)",
+  "options_models_checked": "Eredu-zerrendak noiz irakurriak: {date}.",
+  "options_models_never": "Eredu-zerrendak ez dira oraindik irakurri.",
+  "options_models_auto": "Claude Code, Codex eta Ollama-tik datoz, eta egunean behin irakurtzen dira berriro, Claude Code edo Codex eguneratzen denean eta luzapena eguneratzen denean.",
+  "options_models_refresh": "Irakurri orain"
 }

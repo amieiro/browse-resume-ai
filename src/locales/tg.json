@@ -30,8 +30,6 @@
   "options_display_mode": "Нишон додани хулосаҳо дар",
   "options_mode_sidepanel": "Лавҳаи паҳлӯӣ",
   "options_mode_popup": "Равзанаи пайдошаванда",
-  "options_model_list": "Моделҳо (дар ҳар сатр як)",
-  "options_models_empty": "Рӯйхати моделҳо холӣ буда наметавонад.",
   "options_ready": "Омода",
   "options_help": "Хулосаҳо тавассути ҷузъи маҳаллии ин компютер мегузаранд: он Claude Code ё Codex-ро бо обунаи шумо ё моделеро дар Ollama иҷро мекунад. Матни саҳифа танҳо ба провайдери интихобкардаи шумо фиристода мешавад.",
   "options_ui_language": "Забони интерфейс",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Дар бораи ин саҳифа савол диҳед",
   "ui_ask": "Пурсидан",
   "error_ollama_missing": "Ollama дар ин компютер кор намекунад. Онро аз ollama.com насб кунед ва кушоед, баъд бори дигар кӯшиш кунед.",
-  "error_ollama_model_missing": "Ин модел дар Ollama боргирӣ нашудааст. Фармони ollama pull-ро бо номи модел иҷро кунед (масалан, ollama pull llama3.2), баъд бори дигар кӯшиш кунед."
+  "error_ollama_model_missing": "Ин модел дар Ollama боргирӣ нашудааст. Фармони ollama pull-ро бо номи модел иҷро кунед (масалан, ollama pull llama3.2), баъд бори дигар кӯшиш кунед.",
+  "options_more_models": "Моделҳои бештар (дар ҳар сатр як)",
+  "options_models_checked": "Рӯйхатҳои моделҳо {date} хонда шуданд.",
+  "options_models_never": "Рӯйхатҳои моделҳо ҳанӯз хонда нашудаанд.",
+  "options_models_auto": "Онҳо аз Claude Code, Codex ва Ollama меоянд ва рӯзе як бор, ҳангоми навсозии Claude Code ё Codex ва ҳангоми навсозии васеъшавӣ аз нав хонда мешаванд.",
+  "options_models_refresh": "Ҳозир хонед"
 }

@@ -30,8 +30,6 @@
   "options_display_mode": "Eqikkaanerit takutikkit uani",
   "options_mode_sidepanel": "Sinaani paneli",
   "options_mode_popup": "Matu ammasartoq",
-  "options_model_list": "Assilissat (titarnermut ataaseq)",
-  "options_models_empty": "Assilissat allattorsimaffiat imaqanngitsuusinnaanngilaq.",
   "options_ready": "Piareerpoq",
   "options_help": "Eqikkaanerit qarasaasiami matumani atortukkut ingerlapput: taassuma Claude Code imaluunniit Codex aallartittarpaa ilinnut ilaasortaanerit atorlugu, imaluunniit Ollama-mi model. Quppernerup allagaa pilersuisumut toqqakkannut kisimi nassiunneqartarpoq.",
   "options_ui_language": "Atuisup saqqaata oqaasia",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Quppernermut matumunnga apeqquteqarit",
   "ui_ask": "Apersorit",
   "error_ollama_missing": "Ollama qarasaasiami matumani ingerlanngilaq. ollama.com-imit ikkuguk ammarlugulu, taava misileeqqiguk.",
-  "error_ollama_model_missing": "Model una Ollama-mut aaneqanngilaq. ollama pull model-ip aqqanik aallartiguk (assersuutigalugu, ollama pull llama3.2), taava misileeqqiguk."
+  "error_ollama_model_missing": "Model una Ollama-mut aaneqanngilaq. ollama pull model-ip aqqanik aallartiguk (assersuutigalugu, ollama pull llama3.2), taava misileeqqiguk.",
+  "options_more_models": "Modelit allat (titarnermut ataatsimut ataaseq)",
+  "options_models_checked": "Modelit allattorsimaffii {date} atuarneqarput.",
+  "options_models_never": "Modelit allattorsimaffii suli atuarneqanngillat.",
+  "options_models_auto": "Claude Code-imit, Codex-imit Ollama-millu pissarsiarineqartarput, ullormullu ataasiarlutik atuarneqaqqittarlutik, Claude Code imaluunniit Codex nutarterneqartillugu, ilanngussarlu nutarterneqartillugu.",
+  "options_models_refresh": "Maanna atuakkit"
 }

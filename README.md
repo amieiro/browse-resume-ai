@@ -181,9 +181,13 @@ popup), and the defaults.
 
 <img src="media/install/4-settings.png" alt="The settings page with the interface language and both providers ready" width="800">
 
-For Ollama, put the models you have downloaded in its model list (`ollama list` shows them; names
-like `llama3.2:3b` or `qwen3` work as Ollama writes them). The local component reaches Ollama at
-`127.0.0.1:11434`, or at `OLLAMA_HOST` if that is set where Chrome starts.
+The model lists are read from what is installed on this computer: the models Claude Code offers
+(its aliases `sonnet`, `opus`, `haiku` and `fable`, which follow the latest model, then the full
+names), the models in Codex's catalog, and the models downloaded in Ollama. Reading them costs no
+request to the providers. They are read again once a day, when Claude Code or Codex changes version,
+and when the extension is updated; **Read them now** does it at once. If a model is missing, add it
+under **More models**. The local component reaches Ollama at `127.0.0.1:11434`, or at `OLLAMA_HOST`
+if that is set where Chrome starts.
 
 ### 6. Summarize a page
 

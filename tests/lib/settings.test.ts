@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { fakeBrowser } from 'wxt/testing/fake-browser';
-import { defaultSettings, loadSettings, saveSettings } from '@/lib/settings';
+import { CATALOG_KEY } from '@/lib/model-catalog';
+import { defaultSettings, loadSettings, loadStoredSettings, saveSettings } from '@/lib/settings';
 
 describe('defaultSettings', () => {
   it('uses the browser language when it is in the list', () => {
@@ -62,3 +63,36 @@ describe('loadSettings / saveSettings', () => {
     expect(s.uiLanguage).toBe('auto');
   });
 });
+
+describe('detected models', () => {
+  const catalog = (models: Record<string, string[]>) => ({
+    [CATALOG_KEY]: { checkedAt: 1, versionsCheckedAt: 1, extensionVersion: '1', versions: { claude: null, codex: null }, models },
+  });
+
+  beforeEach(() => {
+    fakeBrowser.reset();
+    vi.spyOn(fakeBrowser.i18n, 'getUILanguage').mockReturnValue('en');
+  });
+
+  it('uses the detected models, followed by the ones added by hand', async () => {
+    await fakeBrowser.storage.local.set(catalog({ codex: ['gpt-6.2-sol', 'gpt-6.1-terra'] }));
+    await saveSettings({ extraModels: { claude: [], codex: ['my-model', 'gpt-6.1-terra'], ollama: [] } });
+    const s = await loadSettings();
+    expect(s.modelLists.codex).toEqual(['gpt-6.2-sol', 'gpt-6.1-terra', 'my-model']);
+    expect(s.modelLists.claude).toEqual(['sonnet', 'opus', 'haiku', 'fable']);
+  });
+
+  it('moves a selected model that is no longer offered to the first one', async () => {
+    await saveSettings({ models: { claude: 'sonnet', codex: 'gpt-6-luna', ollama: 'llama3.2' } });
+    await fakeBrowser.storage.local.set(catalog({ codex: ['gpt-7'], ollama: ['qwen3:4b'] }));
+    const s = await loadSettings();
+    expect(s.models).toEqual({ claude: 'sonnet', codex: 'gpt-7', ollama: 'qwen3:4b' });
+  });
+
+  it('never stores the detected lists in the settings', async () => {
+    await fakeBrowser.storage.local.set(catalog({ codex: ['gpt-7'] }));
+    await saveSettings({ length: 'long' });
+    expect((await loadStoredSettings()).modelLists.codex).toEqual(['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna']);
+  });
+});
+

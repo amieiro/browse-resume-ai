@@ -30,8 +30,6 @@
   "options_display_mode": "Mustra resumennan den",
   "options_mode_sidepanel": "Panel lateral",
   "options_mode_popup": "Popup",
-  "options_model_list": "Modelonan (un pa linea)",
-  "options_models_empty": "E lista di modelonan no por ta bashí.",
   "options_ready": "Cla",
   "options_help": "Resumennan ta pasa via e componente local riba e computer aki: e ta eherce Claude Code of Codex cu bo suscripcion, of un modelo den Ollama. Texto di e pagina ta wordo manda solamente na e proveedor cu bo scoge.",
   "options_ui_language": "Idioma di e interfaz",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Haci un pregunta tocante e pagina aki",
   "ui_ask": "Puntra",
   "error_ollama_missing": "Ollama no ta corriendo riba e computer aki. Instal'é for di ollama.com y habri'é, despues purba atrobe.",
-  "error_ollama_model_missing": "E modelo aki no ta descarga den Ollama. Eherce ollama pull cu e nomber di e modelo (por ehempel, ollama pull llama3.2), despues purba atrobe."
+  "error_ollama_model_missing": "E modelo aki no ta descarga den Ollama. Eherce ollama pull cu e nomber di e modelo (por ehempel, ollama pull llama3.2), despues purba atrobe.",
+  "options_more_models": "Mas modelo (un pa linea)",
+  "options_models_checked": "Lista di modelo leza dia {date}.",
+  "options_models_never": "E listanan di modelo no a wordo leza ainda.",
+  "options_models_auto": "Nan ta bini di Claude Code, Codex y Ollama, y nan ta wordo leza di nobo un biaha pa dia, ora Claude Code of Codex wordo actualisa, y ora e extension wordo actualisa.",
+  "options_models_refresh": "Lesa nan awor"
 }

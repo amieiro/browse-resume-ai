@@ -30,8 +30,6 @@
   "options_display_mode": "Montre rezime yo nan",
   "options_mode_sidepanel": "Panno bò kote",
   "options_mode_popup": "Fenèt pop-up",
-  "options_model_list": "Modèl (youn pa liy)",
-  "options_models_empty": "Lis modèl yo pa ka vid.",
   "options_ready": "Pare",
   "options_help": "Rezime yo pase nan konpozan lokal ki sou òdinatè sa a: li egzekite Claude Code oswa Codex ak abònman ou, oswa yon modèl nan Ollama. Tèks paj la voye sèlman bay founisè ou chwazi a.",
   "options_ui_language": "Lang entèfas la",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Poze yon kesyon sou paj sa a",
   "ui_ask": "Mande",
   "error_ollama_missing": "Ollama pa ap mache sou òdinatè sa a. Enstale l depi ollama.com epi louvri l, apre sa eseye ankò.",
-  "error_ollama_model_missing": "Modèl sa a pa telechaje nan Ollama. Egzekite ollama pull ak non modèl la (pa egzanp, ollama pull llama3.2), apre sa eseye ankò."
+  "error_ollama_model_missing": "Modèl sa a pa telechaje nan Ollama. Egzekite ollama pull ak non modèl la (pa egzanp, ollama pull llama3.2), apre sa eseye ankò.",
+  "options_more_models": "Plis modèl (youn pa liy)",
+  "options_models_checked": "Lis modèl yo te li {date}.",
+  "options_models_never": "Lis modèl yo poko li.",
+  "options_models_auto": "Yo soti nan Claude Code, Codex ak Ollama, epi yo li yo ankò yon fwa pa jou, lè Claude Code oswa Codex mete ajou, ak lè ekstansyon an mete ajou.",
+  "options_models_refresh": "Li yo kounye a"
 }

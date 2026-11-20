@@ -30,8 +30,6 @@
   "options_display_mode": "सारांश यहां दिखाएं",
   "options_mode_sidepanel": "साइड पैनल",
   "options_mode_popup": "पॉप-अप",
-  "options_model_list": "मॉडल (हर लाइन में एक)",
-  "options_models_empty": "मॉडल की सूची खाली नहीं हो सकती।",
   "options_ready": "तैयार",
   "options_help": "सारांश इस कंप्यूटर पर मौजूद लोकल कॉम्पोनेंट से होकर जाते हैं: यह आपकी सदस्यता के साथ Claude Code या Codex चलाता है, या Ollama में कोई मॉडल। पेज का टेक्स्ट सिर्फ़ उसी प्रोवाइडर को भेजा जाता है जिसे आप चुनते हैं।",
   "options_ui_language": "इंटरफ़ेस की भाषा",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "इस पेज के बारे में सवाल पूछें",
   "ui_ask": "पूछें",
   "error_ollama_missing": "इस कंप्यूटर पर Ollama नहीं चल रहा है। इसे ollama.com से इंस्टॉल करें और खोलें, फिर दोबारा कोशिश करें।",
-  "error_ollama_model_missing": "यह मॉडल Ollama में डाउनलोड नहीं है। मॉडल के नाम के साथ ollama pull चलाएं (उदाहरण के लिए, ollama pull llama3.2), फिर दोबारा कोशिश करें।"
+  "error_ollama_model_missing": "यह मॉडल Ollama में डाउनलोड नहीं है। मॉडल के नाम के साथ ollama pull चलाएं (उदाहरण के लिए, ollama pull llama3.2), फिर दोबारा कोशिश करें।",
+  "options_more_models": "और मॉडल (हर लाइन में एक)",
+  "options_models_checked": "मॉडल सूचियाँ {date} को पढ़ी गईं।",
+  "options_models_never": "मॉडल सूचियाँ अभी तक नहीं पढ़ी गई हैं।",
+  "options_models_auto": "ये Claude Code, Codex और Ollama से आती हैं, और दिन में एक बार, Claude Code या Codex के अपडेट होने पर और एक्सटेंशन के अपडेट होने पर फिर से पढ़ी जाती हैं।",
+  "options_models_refresh": "अभी पढ़ें"
 }

@@ -30,8 +30,6 @@
   "options_display_mode": "ಸಾರಾಂಶಗಳನ್ನು ಇಲ್ಲಿ ತೋರಿಸಿ",
   "options_mode_sidepanel": "ಸೈಡ್ ಪ್ಯಾನಲ್",
   "options_mode_popup": "ಪಾಪ್‌ಅಪ್",
-  "options_model_list": "ಮಾದರಿಗಳು (ಪ್ರತಿ ಸಾಲಿಗೆ ಒಂದು)",
-  "options_models_empty": "ಮಾದರಿಗಳ ಪಟ್ಟಿ ಖಾಲಿ ಇರಬಾರದು.",
   "options_ready": "ಸಿದ್ಧ",
   "options_help": "ಸಾರಾಂಶಗಳು ಈ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿರುವ ಸ್ಥಳೀಯ ಘಟಕದ ಮೂಲಕ ಹೋಗುತ್ತವೆ: ಅದು ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆಯೊಂದಿಗೆ Claude Code ಅಥವಾ Codex ಅನ್ನು, ಅಥವಾ Ollama ನಲ್ಲಿನ ಒಂದು ಮಾದರಿಯನ್ನು ರನ್ ಮಾಡುತ್ತದೆ. ಪುಟದ ಪಠ್ಯವನ್ನು ನೀವು ಆಯ್ಕೆಮಾಡಿದ ಪೂರೈಕೆದಾರರಿಗೆ ಮಾತ್ರ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.",
   "options_ui_language": "ಇಂಟರ್‌ಫೇಸ್ ಭಾಷೆ",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "ಈ ಪುಟದ ಬಗ್ಗೆ ಪ್ರಶ್ನೆ ಕೇಳಿ",
   "ui_ask": "ಕೇಳಿ",
   "error_ollama_missing": "ಈ ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ Ollama ರನ್ ಆಗುತ್ತಿಲ್ಲ. ಅದನ್ನು ollama.com ನಿಂದ ಸ್ಥಾಪಿಸಿ ತೆರೆಯಿರಿ, ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
-  "error_ollama_model_missing": "ಈ ಮಾದರಿಯನ್ನು Ollama ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗಿಲ್ಲ. ಮಾದರಿಯ ಹೆಸರಿನೊಂದಿಗೆ ollama pull ಅನ್ನು ರನ್ ಮಾಡಿ (ಉದಾಹರಣೆಗೆ, ollama pull llama3.2), ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  "error_ollama_model_missing": "ಈ ಮಾದರಿಯನ್ನು Ollama ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗಿಲ್ಲ. ಮಾದರಿಯ ಹೆಸರಿನೊಂದಿಗೆ ollama pull ಅನ್ನು ರನ್ ಮಾಡಿ (ಉದಾಹರಣೆಗೆ, ollama pull llama3.2), ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+  "options_more_models": "ಇನ್ನಷ್ಟು ಮಾದರಿಗಳು (ಪ್ರತಿ ಸಾಲಿಗೆ ಒಂದು)",
+  "options_models_checked": "ಮಾದರಿ ಪಟ್ಟಿಗಳನ್ನು {date} ರಂದು ಓದಲಾಗಿದೆ.",
+  "options_models_never": "ಮಾದರಿ ಪಟ್ಟಿಗಳನ್ನು ಇನ್ನೂ ಓದಲಾಗಿಲ್ಲ.",
+  "options_models_auto": "ಅವು Claude Code, Codex ಮತ್ತು Ollama ನಿಂದ ಬರುತ್ತವೆ, ಮತ್ತು ದಿನಕ್ಕೆ ಒಮ್ಮೆ, Claude Code ಅಥವಾ Codex ಅಪ್‌ಡೇಟ್ ಆದಾಗ ಮತ್ತು ವಿಸ್ತರಣೆ ಅಪ್‌ಡೇಟ್ ಆದಾಗ ಮತ್ತೆ ಓದಲಾಗುತ್ತದೆ.",
+  "options_models_refresh": "ಈಗ ಓದಿ"
 }

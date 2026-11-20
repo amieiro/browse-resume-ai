@@ -30,8 +30,6 @@
   "options_display_mode": "Seall na gearr-chunntasan ann an",
   "options_mode_sidepanel": "Panail-taoibh",
   "options_mode_popup": "Priob-uinneag",
-  "options_model_list": "Modailean (aon air gach loidhne)",
-  "options_models_empty": "Chan fhaod liosta nam modailean a bhith falamh.",
   "options_ready": "Deiseil",
   "options_help": "Thèid na gearr-chunntasan tron cho-phàirt ionadail air a’ choimpiutair seo: ruithidh i Claude Code no Codex leis an fho-sgrìobhadh agad, no modail ann an Ollama. Cha tèid teacsa na duilleige a chur ach dhan t-solaraiche a thaghas tu.",
   "options_ui_language": "Cànan na h-eadar-aghaidh",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Faighnich ceist mun duilleag seo",
   "ui_ask": "Faighnich",
   "error_ollama_missing": "Chan eil Ollama a’ ruith air a’ choimpiutair seo. Stàlaich e o ollama.com is fosgail e, an uairsin feuch ris a-rithist.",
-  "error_ollama_model_missing": "Cha deach am modail seo a luchdadh a-nuas ann an Ollama. Ruith ollama pull le ainm a’ mhodail (mar eisimpleir, ollama pull llama3.2), an uairsin feuch ris a-rithist."
+  "error_ollama_model_missing": "Cha deach am modail seo a luchdadh a-nuas ann an Ollama. Ruith ollama pull le ainm a’ mhodail (mar eisimpleir, ollama pull llama3.2), an uairsin feuch ris a-rithist.",
+  "options_more_models": "Barrachd mhodailean (fear air gach loidhne)",
+  "options_models_checked": "Chaidh liostaichean nam modailean a leughadh {date}.",
+  "options_models_never": "Cha deach liostaichean nam modailean a leughadh fhathast.",
+  "options_models_auto": "Thig iad o Claude Code, Codex agus Ollama, agus thèid an leughadh a-rithist uair san latha, nuair a thèid Claude Code no Codex ùrachadh agus nuair a thèid an leudachan ùrachadh.",
+  "options_models_refresh": "Leugh an-dràsta iad"
 }

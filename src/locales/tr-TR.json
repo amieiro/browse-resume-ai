@@ -30,8 +30,6 @@
   "options_display_mode": "Özetlerin gösterileceği yer",
   "options_mode_sidepanel": "Yan panel",
   "options_mode_popup": "Pop-up",
-  "options_model_list": "Modeller (her satıra bir tane)",
-  "options_models_empty": "Model listesi boş olamaz.",
   "options_ready": "Hazır",
   "options_help": "Özetler bu bilgisayardaki yerel bileşen üzerinden oluşturulur: bileşen, aboneliğinizle Claude Code veya Codex'i ya da Ollama'daki bir modeli çalıştırır. Sayfa metni yalnızca seçtiğiniz sağlayıcıya gönderilir.",
   "options_ui_language": "Arayüz dili",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Bu sayfa hakkında soru sor",
   "ui_ask": "Sor",
   "error_ollama_missing": "Ollama bu bilgisayarda çalışmıyor. ollama.com adresinden yükleyip açın, ardından yeniden deneyin.",
-  "error_ollama_model_missing": "Bu model Ollama'ya indirilmemiş. Model adıyla ollama pull komutunu çalıştırın (örneğin ollama pull llama3.2), ardından yeniden deneyin."
+  "error_ollama_model_missing": "Bu model Ollama'ya indirilmemiş. Model adıyla ollama pull komutunu çalıştırın (örneğin ollama pull llama3.2), ardından yeniden deneyin.",
+  "options_more_models": "Diğer modeller (her satıra bir tane)",
+  "options_models_checked": "Model listeleri {date} tarihinde okundu.",
+  "options_models_never": "Model listeleri henüz okunmadı.",
+  "options_models_auto": "Listeler Claude Code, Codex ve Ollama'dan gelir; günde bir kez, Claude Code veya Codex güncellendiğinde ve uzantı güncellendiğinde yeniden okunur.",
+  "options_models_refresh": "Şimdi oku"
 }

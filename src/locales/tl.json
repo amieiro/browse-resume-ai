@@ -30,8 +30,6 @@
   "options_display_mode": "Ipakita ang mga buod sa",
   "options_mode_sidepanel": "Side panel",
   "options_mode_popup": "Popup",
-  "options_model_list": "Mga modelo (isa bawat linya)",
-  "options_models_empty": "Hindi puwedeng walang laman ang listahan ng mga modelo.",
   "options_ready": "Handa na",
   "options_help": "Dumadaan ang mga buod sa lokal na component sa computer na ito: pinapatakbo nito ang Claude Code o Codex gamit ang iyong subscription, o isang model sa Ollama. Ipinapadala lang ang teksto ng page sa provider na pipiliin mo.",
   "options_ui_language": "Wika ng interface",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Magtanong tungkol sa pahinang ito",
   "ui_ask": "Magtanong",
   "error_ollama_missing": "Hindi tumatakbo ang Ollama sa computer na ito. I-install ito mula sa ollama.com at buksan, saka subukan ulit.",
-  "error_ollama_model_missing": "Hindi pa naka-download ang model na ito sa Ollama. Patakbuhin ang ollama pull kasama ang pangalan ng model (halimbawa, ollama pull llama3.2), saka subukan ulit."
+  "error_ollama_model_missing": "Hindi pa naka-download ang model na ito sa Ollama. Patakbuhin ang ollama pull kasama ang pangalan ng model (halimbawa, ollama pull llama3.2), saka subukan ulit.",
+  "options_more_models": "Iba pang modelo (isa bawat linya)",
+  "options_models_checked": "Nabasa ang mga listahan ng modelo noong {date}.",
+  "options_models_never": "Hindi pa nababasa ang mga listahan ng modelo.",
+  "options_models_auto": "Galing ang mga ito sa Claude Code, Codex at Ollama, at binabasa ulit isang beses sa isang araw, kapag na-update ang Claude Code o Codex, at kapag na-update ang extension.",
+  "options_models_refresh": "Basahin ngayon"
 }

@@ -1,0 +1,1 @@
+{"version": 2, "fetchedAt": 1000, "catalog": {"config": {"models": [{"id": "claude-old-1", "name": "Old"}], "provider_alias_targets": {"sonnet": {"default": "claude-old-1"}}}}}

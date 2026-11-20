@@ -30,8 +30,6 @@
   "options_display_mode": "Fa'a'ite i te tātarara'a poto i roto",
   "options_mode_sidepanel": "Paepae pae",
   "options_mode_popup": "Ha'amaramarama 'ōpere",
-  "options_model_list": "Hōho'a (hō'ē i te rēni tāta'itahi)",
-  "options_models_empty": "'Eiaha te tāpura hōho'a ia vāhi aore.",
   "options_ready": "Ineine",
   "options_help": "E haere te tātarara'a poto na roto i te tuha'a fenua i ni'a i teie roro uira: e fa'ahoro te reira ia Claude Code aore ra Codex e tō 'oe tāpa'ora'a, aore ra i te hō'ē tauira i roto ia Ollama. E hāpono-noa-hia te papa'ira'a o te 'api i te horo'a tā 'oe e mā'iti.",
   "options_ui_language": "Reo o te hi'ora'a",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Ani i te hō'ē uira'a no ni'a i teie 'api",
   "ui_ask": "Ani",
   "error_ollama_missing": "'Aita o Ollama e ohipa ra i ni'a i teie roro uira. 'A tu'u i te reira mai ollama.com mai e 'a 'iriti, i muri iho 'a tāmata fa'ahou.",
-  "error_ollama_model_missing": "'Aita teie tauira i pou-mai-hia i roto ia Ollama. 'A fa'ahoro i te ollama pull e te i'oa o te tauira (ei hi'ora'a, ollama pull llama3.2), i muri iho 'a tāmata fa'ahou."
+  "error_ollama_model_missing": "'Aita teie tauira i pou-mai-hia i roto ia Ollama. 'A fa'ahoro i te ollama pull e te i'oa o te tauira (ei hi'ora'a, ollama pull llama3.2), i muri iho 'a tāmata fa'ahou.",
+  "options_more_models": "Te tahi atu mau hōho'a (ho'e i te rēni)",
+  "options_models_checked": "Ua tai'ohia te mau tāpura hōho'a i te {date}.",
+  "options_models_never": "'Aita ā te mau tāpura hōho'a i tai'ohia.",
+  "options_models_auto": "No roto mai rātou i Claude Code, Codex e Ollama, e tai'o-fa'ahou-hia ho'e taime i te mahana, ia fa'a'āpīhia Claude Code 'aore ra Codex, e ia fa'a'āpīhia te fa'arahira'a.",
+  "options_models_refresh": "'A tai'o i teie nei"
 }

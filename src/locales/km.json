@@ -30,8 +30,6 @@
   "options_display_mode": "បង្ហាញសេចក្ដីសង្ខេបនៅក្នុង",
   "options_mode_sidepanel": "ផ្ទាំងចំហៀង",
   "options_mode_popup": "ផ្ទាំងលោតឡើង",
-  "options_model_list": "ម៉ូដែល (មួយក្នុងមួយបន្ទាត់)",
-  "options_models_empty": "បញ្ជីម៉ូដែលមិនអាចទទេបានទេ។",
   "options_ready": "រួចរាល់",
   "options_help": "សេចក្ដីសង្ខេបឆ្លងកាត់សមាសភាគមូលដ្ឋាននៅលើកុំព្យូទ័រនេះ៖ វាដំណើរការ Claude Code ឬ Codex ជាមួយការជាវរបស់អ្នក ឬម៉ូដែលមួយនៅក្នុង Ollama។ អត្ថបទទំព័រត្រូវបានផ្ញើទៅតែអ្នកផ្ដល់សេវាដែលអ្នកជ្រើសប៉ុណ្ណោះ។",
   "options_ui_language": "ភាសាចំណុចប្រទាក់",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "សួរសំណួរអំពីទំព័រនេះ",
   "ui_ask": "សួរ",
   "error_ollama_missing": "Ollama មិនកំពុងដំណើរការនៅលើកុំព្យូទ័រនេះទេ។ សូមដំឡើងវាពី ollama.com ហើយបើកវា រួចព្យាយាមម្ដងទៀត។",
-  "error_ollama_model_missing": "ម៉ូដែលនេះមិនទាន់បានទាញយកក្នុង Ollama ទេ។ សូមដំណើរការ ollama pull ជាមួយឈ្មោះម៉ូដែល (ឧទាហរណ៍ ollama pull llama3.2) រួចព្យាយាមម្ដងទៀត។"
+  "error_ollama_model_missing": "ម៉ូដែលនេះមិនទាន់បានទាញយកក្នុង Ollama ទេ។ សូមដំណើរការ ollama pull ជាមួយឈ្មោះម៉ូដែល (ឧទាហរណ៍ ollama pull llama3.2) រួចព្យាយាមម្ដងទៀត។",
+  "options_more_models": "ម៉ូដែលបន្ថែម (មួយក្នុងមួយបន្ទាត់)",
+  "options_models_checked": "បានអានបញ្ជីម៉ូដែលនៅ {date}។",
+  "options_models_never": "មិនទាន់បានអានបញ្ជីម៉ូដែលនៅឡើយទេ។",
+  "options_models_auto": "បញ្ជីទាំងនេះមកពី Claude Code, Codex និង Ollama ហើយត្រូវបានអានឡើងវិញម្ដងក្នុងមួយថ្ងៃ នៅពេល Claude Code ឬ Codex ត្រូវបានធ្វើបច្ចុប្បន្នភាព និងនៅពេលកម្មវិធីបន្ថែមត្រូវបានធ្វើបច្ចុប្បន្នភាព។",
+  "options_models_refresh": "អានឥឡូវនេះ"
 }

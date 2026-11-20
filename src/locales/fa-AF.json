@@ -30,8 +30,6 @@
   "options_display_mode": "نمایش خلاصه‌ها در",
   "options_mode_sidepanel": "پنل کناری",
   "options_mode_popup": "پنجرهٔ پاپ‌آپ",
-  "options_model_list": "مدل‌ها (هر سطر یک مدل)",
-  "options_models_empty": "فهرست مدل‌ها خالی بوده نمی‌تواند.",
   "options_ready": "آماده",
   "options_help": "خلاصه‌ها از طریق بخش محلی این کمپیوتر تهیه می‌شوند: این بخش Claude Code یا Codex را با اشتراک شما اجرا می‌کند، یا مدلی را در Ollama. متن صفحه تنها به ارائه‌کننده‌ای که انتخاب می‌کنید فرستاده می‌شود.",
   "options_ui_language": "زبان رابط کاربر",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "دربارهٔ این صفحه سؤال بپرسید",
   "ui_ask": "بپرسید",
   "error_ollama_missing": "Ollama در این کمپیوتر در حال اجرا نیست. آن را از ollama.com نصب و باز کنید، سپس دوباره کوشش کنید.",
-  "error_ollama_model_missing": "این مدل در Ollama دانلود نشده است. ollama pull را همراه با نام مدل اجرا کنید (به گونهٔ مثال، ollama pull llama3.2)، سپس دوباره کوشش کنید."
+  "error_ollama_model_missing": "این مدل در Ollama دانلود نشده است. ollama pull را همراه با نام مدل اجرا کنید (به گونهٔ مثال، ollama pull llama3.2)، سپس دوباره کوشش کنید.",
+  "options_more_models": "مدل‌های بیشتر (هر کدام در یک سطر)",
+  "options_models_checked": "فهرست‌های مدل در {date} خوانده شدند.",
+  "options_models_never": "فهرست‌های مدل هنوز خوانده نشده‌اند.",
+  "options_models_auto": "این فهرست‌ها از Claude Code، Codex و Ollama می‌آیند و روزی یک بار، هنگام به‌روزرسانی Claude Code یا Codex و هنگام به‌روزرسانی افزونه دوباره خوانده می‌شوند.",
+  "options_models_refresh": "همین حالا بخوانید"
 }

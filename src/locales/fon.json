@@ -30,8 +30,6 @@
   "options_display_mode": "Xlɛ́ xókpɛ́n lɛ ɖò",
   "options_mode_sidepanel": "Akpá sín panneau",
   "options_mode_popup": "Popup",
-  "options_model_list": "Wuntun lɛ (ɖokpo ɖò flí ɖokpo ɖokpo jí)",
-  "options_models_empty": "Wuntun lɛ sín liste ɔ ka sixu nyí nǔ ɖě ma ɖè mɛ ǎ.",
   "options_ready": "Ðò gbesisɔ mɛ",
   "options_help": "Xókpɛ́n lɛ nɔ gbɔ akpáxwé fí ɔ tɔn ɔ mɛ ɖò ordinatɛ́ɛ elɔ jí: é nɔ bló Claude Code alǒ Codex kpo abonnement towe kpo, alǒ modɛ́li ɖé ɖò Ollama mɛ. Wema bló ɔ sín wekpa nɔ yì mɛ e nɔ na nǔ é bɔ a sɔ́ é ɔ ɖeɖee kɛɖɛ.",
   "options_ui_language": "Interface ɔ sín gbè",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Kanbyɔ́ nǔ ɖé dó wema bló elɔ ɔ wu",
   "ui_ask": "Kanbyɔ́",
   "error_ollama_missing": "Ollama ɖò azɔ̌ wa wɛ ɖò ordinatɛ́ɛ elɔ jí ǎ. Ðó é sín ollama.com, bo hun i, bo lɛ́vɔ́ tẹ́n kpɔ́n.",
-  "error_ollama_model_missing": "È gbɛ́ modɛ́li elɔ ɖó Ollama mɛ ǎ. Bló ollama pull kpo modɛ́li ɔ sín nyikɔ kpo (di ollama pull llama3.2), bo lɛ́vɔ́ tẹ́n kpɔ́n."
+  "error_ollama_model_missing": "È gbɛ́ modɛ́li elɔ ɖó Ollama mɛ ǎ. Bló ollama pull kpo modɛ́li ɔ sín nyikɔ kpo (di ollama pull llama3.2), bo lɛ́vɔ́ tẹ́n kpɔ́n.",
+  "options_more_models": "Modɛ́li ɖěvo lɛ (ɖokpo ɖò wekpa ɖokpo ɖokpo jí)",
+  "options_models_checked": "È xà modɛ́li lɛ sín tínmɛ ɖò {date}.",
+  "options_models_never": "È ko xà modɛ́li lɛ sín tínmɛ ǎ.",
+  "options_models_auto": "Ye gosin Claude Code, Codex kpo Ollama kpo mɛ, bɔ è nɔ lɛ́ xà ye azǎn ɖokpo ɖokpo, hwenu e è hɛn Claude Code alǒ Codex jɛ yɔyɔ́ é, kpo hwenu e è hɛn extension ɔ jɛ yɔyɔ́ é kpo.",
+  "options_models_refresh": "Xà ye dìn"
 }

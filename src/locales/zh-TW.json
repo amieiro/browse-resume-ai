@@ -30,8 +30,6 @@
   "options_display_mode": "摘要顯示位置",
   "options_mode_sidepanel": "側邊面板",
   "options_mode_popup": "彈出式視窗",
-  "options_model_list": "模型（每行一個）",
-  "options_models_empty": "模型清單不能是空的。",
   "options_ready": "就緒",
   "options_help": "摘要會透過這台電腦上的本機元件產生：該元件會使用你的訂閱執行 Claude Code 或 Codex，或執行 Ollama 中的模型。網頁文字只會傳送給你選擇的供應商。",
   "options_ui_language": "介面語言",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "針對此頁面提問",
   "ui_ask": "提問",
   "error_ollama_missing": "這台電腦上沒有執行 Ollama。請從 ollama.com 安裝並開啟，然後再試一次。",
-  "error_ollama_model_missing": "這個模型尚未在 Ollama 中下載。請執行 ollama pull 並加上模型名稱（例如 ollama pull llama3.2），然後再試一次。"
+  "error_ollama_model_missing": "這個模型尚未在 Ollama 中下載。請執行 ollama pull 並加上模型名稱（例如 ollama pull llama3.2），然後再試一次。",
+  "options_more_models": "更多模型（每行一個）",
+  "options_models_checked": "模型清單讀取於 {date}。",
+  "options_models_never": "尚未讀取模型清單。",
+  "options_models_auto": "這些清單來自 Claude Code、Codex 和 Ollama，每天會重新讀取一次，在 Claude Code 或 Codex 更新時以及擴充功能更新時也會重新讀取。",
+  "options_models_refresh": "立即讀取"
 }

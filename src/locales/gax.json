@@ -30,8 +30,6 @@
   "options_display_mode": "Cuunfaawwan itti agarsiisi",
   "options_mode_sidepanel": "Paanela cinaa",
   "options_mode_popup": "Foddaa ol-ba'aa",
-  "options_model_list": "Moodeelota (sarara tokkotti tokko)",
-  "options_models_empty": "Tarreen moodeelaa duwwaa ta'uu hin danda'u.",
   "options_ready": "Qophaa'eera",
   "options_help": "Cuunfaawwan qaama naannoo kompiitara kanaa keessa darbu: innis maallaqa galmee keetiin Claude Code ykn Codex, ykn moodeela Ollama keessa jiru hojjechiisa. Barreeffamni fuulaa dhiyeessaa ati filatte qofaaf ergama.",
   "options_ui_language": "Afaan fuula fayyadamaa",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Waa'ee fuula kanaa gaaffii gaafadhu",
   "ui_ask": "Gaafadhu",
   "error_ollama_missing": "Ollama kompiitara kana irratti hin hojjetu. ollama.com irraa fe'iitii bani, achiis irra deebi'ii yaali.",
-  "error_ollama_model_missing": "Moodeelli kun Ollama keessatti hin buufamne. Maqaa moodeelaa wajjin ollama pull hojjechiisi (fakkeenyaaf, ollama pull llama3.2), achiis irra deebi'ii yaali."
+  "error_ollama_model_missing": "Moodeelli kun Ollama keessatti hin buufamne. Maqaa moodeelaa wajjin ollama pull hojjechiisi (fakkeenyaaf, ollama pull llama3.2), achiis irra deebi'ii yaali.",
+  "options_more_models": "Moodeelota dabalataa (sarara tokkotti tokko)",
+  "options_models_checked": "Tarreeffamni moodeelotaa {date} dubbifame.",
+  "options_models_never": "Tarreeffamni moodeelotaa ammallee hin dubbifamne.",
+  "options_models_auto": "Isaan Claude Code, Codex fi Ollama irraa dhufu, guyyaatti al tokko, yeroo Claude Code ykn Codex haaromfamu fi yeroo dabalataan haaromfamu irra deebiin dubbifamu.",
+  "options_models_refresh": "Amma dubbisi"
 }

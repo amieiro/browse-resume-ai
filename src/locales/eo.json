@@ -30,8 +30,6 @@
   "options_display_mode": "Montri resumojn en",
   "options_mode_sidepanel": "Flanka panelo",
   "options_mode_popup": "Ŝprucfenestro",
-  "options_model_list": "Modeloj (po unu en ĉiu linio)",
-  "options_models_empty": "La listo de modeloj ne povas esti malplena.",
   "options_ready": "Preta",
   "options_help": "La resumoj trairas la lokan komponanton en ĉi tiu komputilo: ĝi rulas Claude Code aŭ Codex per via abono, aŭ modelon en Ollama. La teksto de la paĝo estas sendata nur al la provizanto, kiun vi elektas.",
   "options_ui_language": "Lingvo de la fasado",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Demandu ion pri ĉi tiu paĝo",
   "ui_ask": "Demandi",
   "error_ollama_missing": "Ollama ne funkcias en ĉi tiu komputilo. Instalu ĝin de ollama.com kaj malfermu ĝin, poste reprovu.",
-  "error_ollama_model_missing": "Ĉi tiu modelo ne estas elŝutita en Ollama. Rulu ollama pull kun la nomo de la modelo (ekzemple, ollama pull llama3.2), poste reprovu."
+  "error_ollama_model_missing": "Ĉi tiu modelo ne estas elŝutita en Ollama. Rulu ollama pull kun la nomo de la modelo (ekzemple, ollama pull llama3.2), poste reprovu.",
+  "options_more_models": "Pliaj modeloj (po unu en linio)",
+  "options_models_checked": "Modelaj listoj legitaj je {date}.",
+  "options_models_never": "La modelaj listoj ankoraŭ ne estas legitaj.",
+  "options_models_auto": "Ili venas el Claude Code, Codex kaj Ollama, kaj estas relegataj unufoje tage, kiam Claude Code aŭ Codex estas ĝisdatigita, kaj kiam la etendaĵo estas ĝisdatigita.",
+  "options_models_refresh": "Legi ilin nun"
 }

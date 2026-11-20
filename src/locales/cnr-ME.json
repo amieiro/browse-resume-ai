@@ -30,8 +30,6 @@
   "options_display_mode": "Prikazuj sažetke u",
   "options_mode_sidepanel": "Bočna tabla",
   "options_mode_popup": "Iskačući prozor",
-  "options_model_list": "Modeli (jedan po redu)",
-  "options_models_empty": "Lista modela ne može biti prazna.",
   "options_ready": "Spremno",
   "options_help": "Sažeci prolaze kroz lokalnu komponentu na ovom računaru: ona pokreće Claude Code ili Codex uz vašu pretplatu ili model u alatu Ollama. Tekst stranice šalje se samo provajderu kojeg izaberete.",
   "options_ui_language": "Jezik interfejsa",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Postavite pitanje o ovoj stranici",
   "ui_ask": "Pitaj",
   "error_ollama_missing": "Ollama nije pokrenuta na ovom računaru. Instalirajte je sa ollama.com i otvorite, pa pokušajte ponovo.",
-  "error_ollama_model_missing": "Ovaj model nije preuzet u alatu Ollama. Pokrenite ollama pull s nazivom modela (na primjer, ollama pull llama3.2), pa pokušajte ponovo."
+  "error_ollama_model_missing": "Ovaj model nije preuzet u alatu Ollama. Pokrenite ollama pull s nazivom modela (na primjer, ollama pull llama3.2), pa pokušajte ponovo.",
+  "options_more_models": "Više modela (jedan po redu)",
+  "options_models_checked": "Liste modela pročitane {date}.",
+  "options_models_never": "Liste modela još nijesu pročitane.",
+  "options_models_auto": "Dolaze iz Claude Code, Codex i Ollama i ponovo se čitaju jednom dnevno, kada se ažurira Claude Code ili Codex i kada se ažurira ekstenzija.",
+  "options_models_refresh": "Pročitaj ih sad"
 }

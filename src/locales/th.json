@@ -30,8 +30,6 @@
   "options_display_mode": "แสดงสรุปใน",
   "options_mode_sidepanel": "แผงด้านข้าง",
   "options_mode_popup": "ป๊อปอัป",
-  "options_model_list": "โมเดล (บรรทัดละหนึ่งรายการ)",
-  "options_models_empty": "รายการโมเดลต้องไม่ว่างเปล่า",
   "options_ready": "พร้อม",
   "options_help": "การสรุปจะทำผ่านคอมโพเนนต์ภายในเครื่องบนคอมพิวเตอร์เครื่องนี้ ซึ่งเรียกใช้ Claude Code หรือ Codex ด้วยการสมัครใช้งานของคุณ หรือเรียกใช้โมเดลใน Ollama ข้อความของหน้าจะส่งไปยังผู้ให้บริการที่คุณเลือกเท่านั้น",
   "options_ui_language": "ภาษาของอินเทอร์เฟซ",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "ถามคำถามเกี่ยวกับหน้านี้",
   "ui_ask": "ถาม",
   "error_ollama_missing": "Ollama ไม่ได้ทำงานอยู่บนคอมพิวเตอร์เครื่องนี้ ติดตั้งจาก ollama.com แล้วเปิดโปรแกรม จากนั้นลองอีกครั้ง",
-  "error_ollama_model_missing": "ยังไม่ได้ดาวน์โหลดโมเดลนี้ใน Ollama เรียกใช้ ollama pull ตามด้วยชื่อโมเดล (เช่น ollama pull llama3.2) จากนั้นลองอีกครั้ง"
+  "error_ollama_model_missing": "ยังไม่ได้ดาวน์โหลดโมเดลนี้ใน Ollama เรียกใช้ ollama pull ตามด้วยชื่อโมเดล (เช่น ollama pull llama3.2) จากนั้นลองอีกครั้ง",
+  "options_more_models": "โมเดลเพิ่มเติม (บรรทัดละหนึ่งรายการ)",
+  "options_models_checked": "อ่านรายการโมเดลเมื่อ {date}",
+  "options_models_never": "ยังไม่ได้อ่านรายการโมเดล",
+  "options_models_auto": "รายการเหล่านี้มาจาก Claude Code, Codex และ Ollama และจะอ่านใหม่วันละครั้ง เมื่อ Claude Code หรือ Codex อัปเดต และเมื่อส่วนขยายอัปเดต",
+  "options_models_refresh": "อ่านตอนนี้"
 }

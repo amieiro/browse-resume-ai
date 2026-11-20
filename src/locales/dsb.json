@@ -30,8 +30,6 @@
   "options_display_mode": "Zespominanja pokazaś w",
   "options_mode_sidepanel": "Bocny panel",
   "options_mode_popup": "Wuskokujuce wokno",
-  "options_model_list": "Modele (jaden na smužku)",
-  "options_models_empty": "Lisćina modelow njesmějo prozna byś.",
   "options_ready": "Gótowe",
   "options_help": "Zespominanja źěju pśez lokalnu komponentu na toś tom licadle: wóna wuwjeźo Claude Code abo Codex z wašym abonementom abo model w Ollama. Tekst boka se jano k wubranemu póbitowarjeju pósćelo.",
   "options_ui_language": "Rěc pówjercha",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Stajśo pšašanje wó toś tom boku",
   "ui_ask": "Pšašaś se",
   "error_ollama_missing": "Ollama na toś tom licadle njeběžy. Instalěrujśo jo z ollama.com a wócyńśo jo, pótom wopytajśo hyšći raz.",
-  "error_ollama_model_missing": "Toś ten model njejo w Ollama ześěgnjony. Wuwjeźćo ollama pull z mjenim modela (na pśikład ollama pull llama3.2), pótom wopytajśo hyšći raz."
+  "error_ollama_model_missing": "Toś ten model njejo w Ollama ześěgnjony. Wuwjeźćo ollama pull z mjenim modela (na pśikład ollama pull llama3.2), pótom wopytajśo hyšći raz.",
+  "options_more_models": "Dalšne modele (jaden na smužku)",
+  "options_models_checked": "Lisćiny modelow cytane {date}.",
+  "options_models_never": "Lisćiny modelow hyšći njejsu cytane.",
+  "options_models_auto": "Póchadaju z Claude Code, Codex a Ollama a cytaju se znowego jaden raz na źeń, gaž se Claude Code abo Codex aktualizěrujo a gaž se rozšyrjenje aktualizěrujo.",
+  "options_models_refresh": "Něnto cytaś"
 }

@@ -30,8 +30,6 @@
   "options_display_mode": "Zobrazovať zhrnutia v",
   "options_mode_sidepanel": "Bočný panel",
   "options_mode_popup": "Kontextové okno",
-  "options_model_list": "Modely (jeden na riadok)",
-  "options_models_empty": "Zoznam modelov nemôže byť prázdny.",
   "options_ready": "Pripravené",
   "options_help": "Zhrnutia prechádzajú cez lokálny komponent na tomto počítači: spúšťa Claude Code alebo Codex s vaším predplatným, prípadne model v Ollama. Text stránky sa odosiela len poskytovateľovi, ktorého vyberiete.",
   "options_ui_language": "Jazyk rozhrania",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Položte otázku o tejto stránke",
   "ui_ask": "Opýtať sa",
   "error_ollama_missing": "Ollama na tomto počítači nebeží. Nainštalujte ju z ollama.com, otvorte ju a skúste to znova.",
-  "error_ollama_model_missing": "Tento model nie je stiahnutý v Ollama. Spustite ollama pull s názvom modelu (napríklad ollama pull llama3.2) a skúste to znova."
+  "error_ollama_model_missing": "Tento model nie je stiahnutý v Ollama. Spustite ollama pull s názvom modelu (napríklad ollama pull llama3.2) a skúste to znova.",
+  "options_more_models": "Ďalšie modely (jeden na riadok)",
+  "options_models_checked": "Zoznamy modelov boli načítané {date}.",
+  "options_models_never": "Zoznamy modelov ešte neboli načítané.",
+  "options_models_auto": "Pochádzajú z Claude Code, Codex a Ollama a znova sa načítavajú raz denne, keď sa aktualizuje Claude Code alebo Codex a keď sa aktualizuje rozšírenie.",
+  "options_models_refresh": "Načítať teraz"
 }

@@ -97,6 +97,35 @@ describe('native host', () => {
     await waitFor(() => expect(h.messages[0]).toMatchObject({ type: 'error', code: 'bad_request' }));
   });
 
+  describe('model lists', () => {
+    const CLAUDE_CONFIG = fileURLToPath(new URL('./fixtures/claude-config', import.meta.url));
+
+    it('reports the CLI versions', async () => {
+      const h = startHost();
+      h.send({ type: 'versions' });
+      await waitFor(() => expect(h.messages[0]).toEqual({ type: 'versions', claude: '2.1.329 (Claude Code)', codex: 'codex-cli 0.169.0' }));
+    });
+
+    it('lists the models of every provider, with versions', async () => {
+      const h = startHost({ CLAUDE_CONFIG_DIR: CLAUDE_CONFIG, OLLAMA_HOST: '127.0.0.1:9' });
+      h.send({ type: 'models' });
+      await waitFor(() => expect(h.messages[0]).toMatchObject({ type: 'models' }));
+      expect(h.messages[0]).toEqual({
+        type: 'models',
+        claude: { version: '2.1.329 (Claude Code)', models: expect.arrayContaining(['sonnet', 'claude-opus-5-5']) },
+        codex: { version: 'codex-cli 0.169.0', models: ['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna'] },
+        ollama: { found: false, models: [] },
+      });
+    });
+
+    it('gives null lists for missing CLIs', async () => {
+      const h = startHost({ CLAUDE_BIN: '/nonexistent/claude', CODEX_BIN: '/nonexistent/codex', CLAUDE_CONFIG_DIR: '/nonexistent', OLLAMA_HOST: '127.0.0.1:9' });
+      h.send({ type: 'models' });
+      await waitFor(() => expect(h.messages[0]).toMatchObject({ type: 'models' }));
+      expect(h.messages[0]).toMatchObject({ claude: { version: null, models: null }, codex: { version: null, models: null } });
+    });
+  });
+
   describe('Ollama', () => {
     let fake;
     afterEach(async () => {

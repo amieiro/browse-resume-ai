@@ -30,8 +30,6 @@
   "options_display_mode": "Ցուցադրել ամփոփումները",
   "options_mode_sidepanel": "Կողային վահանակ",
   "options_mode_popup": "Ելնող պատուհան",
-  "options_model_list": "Մոդելներ (մեկական յուրաքանչյուր տողում)",
-  "options_models_empty": "Մոդելների ցանկը չի կարող դատարկ լինել։",
   "options_ready": "Պատրաստ է",
   "options_help": "Ամփոփումներն անցնում են այս համակարգչի տեղային բաղադրիչով․ այն ձեր բաժանորդագրությամբ գործարկում է Claude Code կամ Codex, կամ որևէ մոդել Ollama-ում։ Էջի տեքստն ուղարկվում է միայն ձեր ընտրած մատակարարին։",
   "options_ui_language": "Միջերեսի լեզուն",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Հարց տվեք այս էջի մասին",
   "ui_ask": "Հարցնել",
   "error_ollama_missing": "Ollama-ն այս համակարգչում գործարկված չէ։ Տեղադրեք այն ollama.com-ից և բացեք, ապա նորից փորձեք։",
-  "error_ollama_model_missing": "Այս մոդելը ներբեռնված չէ Ollama-ում։ Գործարկեք ollama pull՝ մոդելի անունով (օրինակ՝ ollama pull llama3.2), ապա նորից փորձեք։"
+  "error_ollama_model_missing": "Այս մոդելը ներբեռնված չէ Ollama-ում։ Գործարկեք ollama pull՝ մոդելի անունով (օրինակ՝ ollama pull llama3.2), ապա նորից փորձեք։",
+  "options_more_models": "Այլ մոդելներ (մեկական յուրաքանչյուր տողում)",
+  "options_models_checked": "Մոդելների ցանկերը կարդացվել են {date}։",
+  "options_models_never": "Մոդելների ցանկերը դեռ չեն կարդացվել։",
+  "options_models_auto": "Դրանք գալիս են Claude Code-ից, Codex-ից և Ollama-ից և նորից կարդացվում են օրը մեկ անգամ, երբ Claude Code-ը կամ Codex-ը թարմացվում է, և երբ ընդլայնումը թարմացվում է։",
+  "options_models_refresh": "Կարդալ հիմա"
 }

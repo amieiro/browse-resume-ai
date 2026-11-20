@@ -30,8 +30,6 @@
   "options_display_mode": "Показувати підсумки в",
   "options_mode_sidepanel": "Бічна панель",
   "options_mode_popup": "Спливаюче вікно",
-  "options_model_list": "Моделі (по одній у рядку)",
-  "options_models_empty": "Список моделей не може бути порожнім.",
   "options_ready": "Готово",
   "options_help": "Підсумки проходять через локальний компонент на цьому комп’ютері: він запускає Claude Code або Codex з вашою підпискою чи модель в Ollama. Текст сторінки надсилається лише вибраному вами постачальнику.",
   "options_ui_language": "Мова інтерфейсу",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Поставте запитання про цю сторінку",
   "ui_ask": "Запитати",
   "error_ollama_missing": "Ollama не запущено на цьому комп’ютері. Установіть його з ollama.com і відкрийте, а потім спробуйте ще раз.",
-  "error_ollama_model_missing": "Цю модель не завантажено в Ollama. Виконайте ollama pull з назвою моделі (наприклад, ollama pull llama3.2), а потім спробуйте ще раз."
+  "error_ollama_model_missing": "Цю модель не завантажено в Ollama. Виконайте ollama pull з назвою моделі (наприклад, ollama pull llama3.2), а потім спробуйте ще раз.",
+  "options_more_models": "Інші моделі (одна в рядку)",
+  "options_models_checked": "Списки моделей прочитано {date}.",
+  "options_models_never": "Списки моделей ще не прочитано.",
+  "options_models_auto": "Вони надходять із Claude Code, Codex та Ollama і перечитуються раз на день, коли оновлюється Claude Code або Codex, а також коли оновлюється розширення.",
+  "options_models_refresh": "Прочитати зараз"
 }

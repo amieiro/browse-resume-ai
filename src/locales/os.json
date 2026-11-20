@@ -30,8 +30,6 @@
   "options_display_mode": "Цыбыр ныхæстæ равдисын",
   "options_mode_sidepanel": "Фæрсаг панел",
   "options_mode_popup": "Разындгæ рудзынг",
-  "options_model_list": "Моделтæ (рæнхъыл иу)",
-  "options_models_empty": "Моделты номхыгъд афтид уæвын нæ хъæуы.",
   "options_ready": "Цæттæ",
   "options_help": "Цыбыр ныхæстæ цæуынц ацы компьютеры бынæттон компонентæй: уый дæ подпискæимæ ралиддзы Claude Code кæнæ Codex, кæнæ Ollama-йы исты модель. Фарсы текст æрвыст цæуы æрмæст дæхæдæг цы провайдер равзарай, уымæ.",
   "options_ui_language": "Интерфейсы æвзаг",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Ацы фарсы тыххæй исты бафæрс",
   "ui_ask": "Бафæрсын",
   "error_ollama_missing": "Ollama ацы компьютерыл нæ кусы. Æй сæвæр ollama.com-æй æмæ йæ байгом кæн, стæй ногæй бафæлвар.",
-  "error_ollama_model_missing": "Ацы модель Ollama-мæ ралгъæд нæу. Ралидз ollama pull моделы номимæ (зæгъæм, ollama pull llama3.2), стæй ногæй бафæлвар."
+  "error_ollama_model_missing": "Ацы модель Ollama-мæ ралгъæд нæу. Ралидз ollama pull моделы номимæ (зæгъæм, ollama pull llama3.2), стæй ногæй бафæлвар.",
+  "options_more_models": "Ноджы моделтæ (рæнхъыл иу)",
+  "options_models_checked": "Моделты номхыгъдтæ бакæсгæ æрцыдысты {date}.",
+  "options_models_never": "Моделты номхыгъдтæ нырма бакæсгæ не ’рцыдысты.",
+  "options_models_auto": "Уыдон цæуынц Claude Code, Codex æмæ Ollama-йæ, æмæ ногæй кæсгæ цæуынц бон иу хатт, Claude Code кæнæ Codex куы ногæй арæзт æрцæуы, уæд, æмæ æххæстгæнæн куы ногæй арæзт æрцæуы, уæд.",
+  "options_models_refresh": "Ныр сæ бакæс"
 }

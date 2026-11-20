@@ -30,8 +30,6 @@
   "options_display_mode": "Montrer les résumés din",
   "options_mode_sidepanel": "Panneau latéral",
   "options_mode_popup": "Fernête surgissante",
-  "options_model_list": "Modéles (un par ligne)",
-  "options_models_empty": "El liste des modéles alle put point ête vide.",
   "options_ready": "Prêt",
   "options_help": "Les résumés i passent par ech composant local d’ch’l’ordinateu-chi : i lanche Claude Code ou Codex aveuc vo abonnemint, ou bin un modèle dins Ollama. Ech tekse d’la page il est invoéyé qu’au fornisseu qu’vous cosissez.",
   "options_ui_language": "Langue d’l’interface",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Posez eune question su chl’ page-chi",
   "ui_ask": "Dmander",
   "error_ollama_missing": "Ollama i n’tourne point su ch’l’ordinateu-chi. Instalez-le dpuis ollama.com pi ouvrez-le, pi asséyez acore.",
-  "error_ollama_model_missing": "Ech modèle-chi il est point téléchergé dins Ollama. Lanchez ollama pull aveuc ech nom d’ech modèle (par egzimpe, ollama pull llama3.2), pi asséyez acore."
+  "error_ollama_model_missing": "Ech modèle-chi il est point téléchergé dins Ollama. Lanchez ollama pull aveuc ech nom d’ech modèle (par egzimpe, ollama pull llama3.2), pi asséyez acore.",
+  "options_more_models": "Pus d’modèles (un par line)",
+  "options_models_checked": "Lisses d’modèles lues ech {date}.",
+  "options_models_never": "Les lisses d’modèles il ont point cor été lues.",
+  "options_models_auto": "Ales vienn’tent éd Claude Code, Codex pi Ollama, pi ales sont relues eune fos par jour, quand Claude Code ou Codex il est mis à jour, pi quand l’extinsion al est mise à jour.",
+  "options_models_refresh": "Les lire asteure"
 }

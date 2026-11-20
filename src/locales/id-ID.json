@@ -30,8 +30,6 @@
   "options_display_mode": "Tampilkan ringkasan di",
   "options_mode_sidepanel": "Panel samping",
   "options_mode_popup": "Pop-up",
-  "options_model_list": "Model (satu per baris)",
-  "options_models_empty": "Daftar model tidak boleh kosong.",
   "options_ready": "Siap",
   "options_help": "Ringkasan diproses melalui komponen lokal di komputer ini: komponen ini menjalankan Claude Code atau Codex dengan langganan Anda, atau model di Ollama. Teks halaman hanya dikirim ke penyedia yang Anda pilih.",
   "options_ui_language": "Bahasa antarmuka",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Ajukan pertanyaan tentang halaman ini",
   "ui_ask": "Tanya",
   "error_ollama_missing": "Ollama tidak berjalan di komputer ini. Instal dari ollama.com lalu buka, kemudian coba lagi.",
-  "error_ollama_model_missing": "Model ini belum diunduh di Ollama. Jalankan ollama pull dengan nama model (misalnya, ollama pull llama3.2), lalu coba lagi."
+  "error_ollama_model_missing": "Model ini belum diunduh di Ollama. Jalankan ollama pull dengan nama model (misalnya, ollama pull llama3.2), lalu coba lagi.",
+  "options_more_models": "Model lainnya (satu per baris)",
+  "options_models_checked": "Daftar model dibaca pada {date}.",
+  "options_models_never": "Daftar model belum dibaca.",
+  "options_models_auto": "Daftar ini berasal dari Claude Code, Codex, dan Ollama, dan dibaca ulang sekali sehari, saat Claude Code atau Codex diperbarui, dan saat ekstensi diperbarui.",
+  "options_models_refresh": "Baca sekarang"
 }

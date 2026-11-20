@@ -30,8 +30,6 @@
   "options_display_mode": "සාරාංශ පෙන්වන්න",
   "options_mode_sidepanel": "පැති පුවරුව",
   "options_mode_popup": "උත්පතන කවුළුව",
-  "options_model_list": "මාදිලි (පේළියකට එකක්)",
-  "options_models_empty": "මාදිලි ලැයිස්තුව හිස් විය නොහැක.",
   "options_ready": "සූදානම්",
   "options_help": "සාරාංශ මෙම පරිගණකයේ ඇති දේශීය සංරචකය හරහා යයි: එය ඔබේ දායකත්වය සමඟ Claude Code හෝ Codex, නැතහොත් Ollama හි ආකෘතියක් ධාවනය කරයි. පිටුවේ පෙළ ඔබ තෝරන සපයන්නාට පමණක් යවනු ලැබේ.",
   "options_ui_language": "අතුරු මුහුණතේ භාෂාව",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "මෙම පිටුව ගැන ප්‍රශ්නයක් අසන්න",
   "ui_ask": "අසන්න",
   "error_ollama_missing": "මෙම පරිගණකයේ Ollama ධාවනය නොවේ. එය ollama.com වෙතින් ස්ථාපනය කර විවෘත කරන්න, ඉන්පසු නැවත උත්සාහ කරන්න.",
-  "error_ollama_model_missing": "මෙම ආකෘතිය Ollama හි බාගත කර නැත. ආකෘතියේ නම සමඟ ollama pull ධාවනය කරන්න (උදාහරණයක් ලෙස, ollama pull llama3.2), ඉන්පසු නැවත උත්සාහ කරන්න."
+  "error_ollama_model_missing": "මෙම ආකෘතිය Ollama හි බාගත කර නැත. ආකෘතියේ නම සමඟ ollama pull ධාවනය කරන්න (උදාහරණයක් ලෙස, ollama pull llama3.2), ඉන්පසු නැවත උත්සාහ කරන්න.",
+  "options_more_models": "තවත් මාදිලි (පේළියකට එකක්)",
+  "options_models_checked": "මාදිලි ලැයිස්තු {date} දින කියවන ලදී.",
+  "options_models_never": "මාදිලි ලැයිස්තු තවම කියවා නැත.",
+  "options_models_auto": "ඒවා Claude Code, Codex සහ Ollama වෙතින් ලැබෙන අතර, දිනකට වරක්, Claude Code හෝ Codex යාවත්කාලීන වූ විට සහ දිගුව යාවත්කාලීන වූ විට නැවත කියවනු ලැබේ.",
+  "options_models_refresh": "දැන් කියවන්න"
 }

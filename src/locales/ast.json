@@ -30,8 +30,6 @@
   "options_display_mode": "Amosar los resumes en",
   "options_mode_sidepanel": "Panel llateral",
   "options_mode_popup": "Ventanu emerxente",
-  "options_model_list": "Modelos (ún per llinia)",
-  "options_models_empty": "La llista de modelos nun pue tar balera.",
   "options_ready": "Llistu",
   "options_help": "Los resumes pasen pel componente local d'esti ordenador: executa Claude Code o Codex cola to soscripción, o un modelu n'Ollama. El testu de la páxina namás s'unvia al fornidor qu'escueyas.",
   "options_ui_language": "Llingua de la interfaz",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Fai una entruga sobre esta páxina",
   "ui_ask": "Entrugar",
   "error_ollama_missing": "Ollama nun ta n'execución nesti ordenador. Instálalu dende ollama.com y ábrelu, y dempués vuelvi tentalo.",
-  "error_ollama_model_missing": "Esti modelu nun ta baxáu n'Ollama. Executa ollama pull col nome del modelu (por exemplu, ollama pull llama3.2) y dempués vuelvi tentalo."
+  "error_ollama_model_missing": "Esti modelu nun ta baxáu n'Ollama. Executa ollama pull col nome del modelu (por exemplu, ollama pull llama3.2) y dempués vuelvi tentalo.",
+  "options_more_models": "Más modelos (ún per llinia)",
+  "options_models_checked": "Llistes de modelos lleíes el {date}.",
+  "options_models_never": "Entá nun se lleeron les llistes de modelos.",
+  "options_models_auto": "Vienen de Claude Code, Codex y Ollama, y vuelven lleese una vegada al día, cuando s'anova Claude Code o Codex, y cuando s'anova la estensión.",
+  "options_models_refresh": "Lleeles agora"
 }

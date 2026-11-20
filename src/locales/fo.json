@@ -30,8 +30,6 @@
   "options_display_mode": "Vís samandráttir í",
   "options_mode_sidepanel": "Síðuteigur",
   "options_mode_popup": "Sprettigluggi",
-  "options_model_list": "Modellir (eitt í hvørji reglu)",
-  "options_models_empty": "Modellistin kann ikki vera tómur.",
   "options_ready": "Klárt",
   "options_help": "Samandráttir fara gjøgnum staðbundna partin á hesi telduni: hann koyrir Claude Code ella Codex við tínum haldi, ella ein myndil í Ollama. Síðutekstur verður bert sendur til veitaran, sum tú velur.",
   "options_ui_language": "Mál á markamóti",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Spyr ein spurning um hesa síðuna",
   "ui_ask": "Spyr",
   "error_ollama_missing": "Ollama koyrir ikki á hesi telduni. Legg tað inn frá ollama.com og lat tað upp, royn so aftur.",
-  "error_ollama_model_missing": "Hesin myndilin er ikki tikin niður í Ollama. Koyr ollama pull við navninum á myndlinum (til dømis ollama pull llama3.2), royn so aftur."
+  "error_ollama_model_missing": "Hesin myndilin er ikki tikin niður í Ollama. Koyr ollama pull við navninum á myndlinum (til dømis ollama pull llama3.2), royn so aftur.",
+  "options_more_models": "Fleiri myndlar (ein á hvørjari linju)",
+  "options_models_checked": "Myndilslistar lisnir {date}.",
+  "options_models_never": "Myndilslistarnir eru ikki lisnir enn.",
+  "options_models_auto": "Teir koma frá Claude Code, Codex og Ollama og verða lisnir aftur einaferð um dagin, tá ið Claude Code ella Codex verður dagført, og tá ið víðkanin verður dagførd.",
+  "options_models_refresh": "Les teir nú"
 }

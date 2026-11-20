@@ -30,8 +30,6 @@
   "options_display_mode": "ጽማቝታት ኣብዚ ኣርኢ",
   "options_mode_sidepanel": "ናይ ጎኒ ፓነል",
   "options_mode_popup": "ብቕጽበት ዝወጽእ መስኮት",
-  "options_model_list": "ሞዴላት (ኣብ ነፍሲ ወከፍ መስመር ሓደ)",
-  "options_models_empty": "ዝርዝር ሞዴላት ባዶ ክኸውን ኣይክእልን።",
   "options_ready": "ድሉው",
   "options_help": "ጽማቝታት ብመንገዲ እቲ ኣብዚ ኮምፒተር ዘሎ ከባቢያዊ ኣካል ይሓልፉ፦ ንሱ ብምዝገባኻ Claude Code ወይ Codex፣ ወይ ኣብ Ollama ዘሎ ሞዴል የኺድ። ጽሑፍ እቲ ገጽ ናብቲ ዝመረጽካዮ ኣቕራቢ ጥራይ ይለኣኽ።",
   "options_ui_language": "ቋንቋ መተሓሳሰቢ",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "ብዛዕባ እዚ ገጽ ሕቶ ሕተት",
   "ui_ask": "ሕተት",
   "error_ollama_missing": "Ollama ኣብዚ ኮምፒተር ይሰርሕ ኣይኮነን። ካብ ollama.com ጸዓኖን ክፈቶን፣ ድሕሪኡ እንደገና ፈትን።",
-  "error_ollama_model_missing": "እዚ ሞዴል ኣብ Ollama ኣይወረደን። ollama pull ምስ ስም እቲ ሞዴል ኣኺድ (ንኣብነት፣ ollama pull llama3.2)፣ ድሕሪኡ እንደገና ፈትን።"
+  "error_ollama_model_missing": "እዚ ሞዴል ኣብ Ollama ኣይወረደን። ollama pull ምስ ስም እቲ ሞዴል ኣኺድ (ንኣብነት፣ ollama pull llama3.2)፣ ድሕሪኡ እንደገና ፈትን።",
+  "options_more_models": "ተወሰኽቲ ሞዴላት (ኣብ ነፍሲ ወከፍ መስመር ሓደ)",
+  "options_models_checked": "ዝርዝራት ሞዴላት ኣብ {date} ተነቢቦም።",
+  "options_models_never": "ዝርዝራት ሞዴላት ገና ኣይተነበቡን።",
+  "options_models_auto": "ካብ Claude Code፣ Codex ከምኡ'ውን Ollama ይመጹ፣ ኣብ መዓልቲ ሓደ ግዜ፣ Claude Code ወይ Codex ክሕደስ ከሎ፣ ከምኡ'ውን እቲ ተወሳኺ ክሕደስ ከሎ ከም ብሓድሽ ይንበቡ።",
+  "options_models_refresh": "ሕጂ ኣንብቦም"
 }

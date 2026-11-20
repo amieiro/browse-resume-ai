@@ -30,8 +30,6 @@
   "options_display_mode": "Rodyti santraukas",
   "options_mode_sidepanel": "Šoniniame skydelyje",
   "options_mode_popup": "Iššokančiajame lange",
-  "options_model_list": "Modeliai (po vieną eilutėje)",
-  "options_models_empty": "Modelių sąrašas negali būti tuščias.",
   "options_ready": "Parengta",
   "options_help": "Santraukos kuriamos per vietinį komponentą šiame kompiuteryje: jis paleidžia Claude Code arba Codex su jūsų prenumerata arba modelį Ollama. Puslapio tekstas siunčiamas tik jūsų pasirinktam teikėjui.",
   "options_ui_language": "Sąsajos kalba",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Užduokite klausimą apie šį puslapį",
   "ui_ask": "Klausti",
   "error_ollama_missing": "Ollama šiame kompiuteryje neveikia. Įdiekite ją iš ollama.com ir atidarykite, tada bandykite dar kartą.",
-  "error_ollama_model_missing": "Šis modelis neatsisiųstas į Ollama. Paleiskite ollama pull su modelio pavadinimu (pavyzdžiui, ollama pull llama3.2), tada bandykite dar kartą."
+  "error_ollama_model_missing": "Šis modelis neatsisiųstas į Ollama. Paleiskite ollama pull su modelio pavadinimu (pavyzdžiui, ollama pull llama3.2), tada bandykite dar kartą.",
+  "options_more_models": "Daugiau modelių (po vieną eilutėje)",
+  "options_models_checked": "Modelių sąrašai nuskaityti {date}.",
+  "options_models_never": "Modelių sąrašai dar nenuskaityti.",
+  "options_models_auto": "Jie gaunami iš Claude Code, Codex ir Ollama ir nuskaitomi iš naujo kartą per dieną, kai atnaujinamas Claude Code ar Codex ir kai atnaujinamas plėtinys.",
+  "options_models_refresh": "Nuskaityti dabar"
 }

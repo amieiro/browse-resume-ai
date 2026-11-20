@@ -30,8 +30,6 @@
   "options_display_mode": "Samenvattingen tonen in",
   "options_mode_sidepanel": "Zieknpaneel",
   "options_mode_popup": "Pop-up",
-  "options_model_list": "Modellen (eene per regel)",
-  "options_models_empty": "De lieste met modellen mag nich leeg wean.",
   "options_ready": "Klaar",
   "options_help": "Samenvattingen goat via t lokale onderdeel op disse computer: dat voert Claude Code of Codex oet met oew abonnement, of n model in Ollama. De tekst van de pagina wodt allenig noar de anbeejder estuurd dee ie kiest.",
   "options_ui_language": "Taal van de interface",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Stel n vroag oawer disse pagina",
   "ui_ask": "Vroagen",
   "error_ollama_missing": "Ollama löp nich op disse computer. Installeer t vanof ollama.com en maak t lös, en probeer t dan opniej.",
-  "error_ollama_model_missing": "Dit model is nog nich in Ollama binnenehaald. Voer ollama pull oet met de naam van t model (bv. ollama pull llama3.2), en probeer t dan opniej."
+  "error_ollama_model_missing": "Dit model is nog nich in Ollama binnenehaald. Voer ollama pull oet met de naam van t model (bv. ollama pull llama3.2), en probeer t dan opniej.",
+  "options_more_models": "Meer modellen (één per regel)",
+  "options_models_checked": "Modellieste elezen op {date}.",
+  "options_models_never": "De modellieste bint nog nich elezen.",
+  "options_models_auto": "Ze koomt oet Claude Code, Codex en Ollama, en wordt ene keer per dag opniej elezen, as Claude Code of Codex bie-ewerkt wordt, en as de extensie bie-ewerkt wordt.",
+  "options_models_refresh": "Lees ze noen"
 }

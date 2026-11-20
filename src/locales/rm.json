@@ -30,8 +30,6 @@
   "options_display_mode": "Mussar las resumaziuns en",
   "options_mode_sidepanel": "Panela laterala",
   "options_mode_popup": "Pop-up",
-  "options_model_list": "Models (in per lingia)",
-  "options_models_empty": "La glista da models na dastga betg esser vida.",
   "options_ready": "Pront",
   "options_help": "Las resumaziuns passan tras la cumponenta locala sin quest computer: ella exequescha Claude Code u Codex cun tes abunament, u in model en Ollama. Il text da la pagina vegn tramess mo al purschider che ti tschernas.",
   "options_ui_language": "Lingua da l'interfatscha",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Fa ina dumonda davart questa pagina",
   "ui_ask": "Dumandar",
   "error_ollama_missing": "Ollama na funcziuna betg sin quest computer. Installescha el da ollama.com ed avra el, lura emprova anc ina giada.",
-  "error_ollama_model_missing": "Quest model n'è betg vegnì telechargià en Ollama. Exequescha ollama pull cun il num dal model (per exempel ollama pull llama3.2), lura emprova anc ina giada."
+  "error_ollama_model_missing": "Quest model n'è betg vegnì telechargià en Ollama. Exequescha ollama pull cun il num dal model (per exempel ollama pull llama3.2), lura emprova anc ina giada.",
+  "options_more_models": "Ulteriurs models (in per lingia)",
+  "options_models_checked": "Glistas da models legidas ils {date}.",
+  "options_models_never": "Las glistas da models n'èn anc betg vegnidas legidas.",
+  "options_models_auto": "Ellas derivan da Claude Code, Codex ed Ollama e vegnan legidas danovamain ina giada al di, cura che Claude Code u Codex vegn actualisà e cura che l'extensiun vegn actualisada.",
+  "options_models_refresh": "Leger ussa"
 }

@@ -30,8 +30,6 @@
   "options_display_mode": "Lakisá makúsé na",
   "options_mode_sidepanel": "Etando ya mopanzi",
   "options_mode_popup": "Lininísa ya kobima",
-  "options_model_list": "Modɛ́lɛ (moko na molɔngɔ mokomoko)",
-  "options_models_empty": "Liste ya modɛ́lɛ ekoki kozala mpamba té.",
   "options_ready": "Ebongí",
   "options_help": "Makúsé elekaka na eteni ya esika na ordinatɛ́rɛ oyo: esalaka Claude Code tó Codex na abɔnimá na yo, tó modɛ́lɛ moko na Ollama. Makomi ya lokásá etíndamaka se epai ya mopesi oyo okopɔsɔ.",
   "options_ui_language": "Lokóta ya interface",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Tuná motúna na ntína ya lokásá oyo",
   "ui_ask": "Tuná",
   "error_ollama_missing": "Ollama ezali kosala té na ordinatɛ́rɛ oyo. Kɔtísá yangó uta na ollama.com mpe fungolá yangó, sima meka lisúsu.",
-  "error_ollama_model_missing": "Modɛ́lɛ oyo ekitisámí té na Ollama. Salá ollama pull na nkómbó ya modɛ́lɛ (ndakisa, ollama pull llama3.2), sima meka lisúsu."
+  "error_ollama_model_missing": "Modɛ́lɛ oyo ekitisámí té na Ollama. Salá ollama pull na nkómbó ya modɛ́lɛ (ndakisa, ollama pull llama3.2), sima meka lisúsu.",
+  "options_more_models": "Bamodɛ́lɛ mosusu (moko na molɔngɔ moko moko)",
+  "options_models_checked": "Bandimbola ya bamodɛ́lɛ etángamaki na {date}.",
+  "options_models_never": "Bandimbola ya bamodɛ́lɛ etángami naino tɛ.",
+  "options_models_auto": "Euti na Claude Code, Codex mpe Ollama, mpe etángamaka lisusu mbala moko na mokolo, ntango Claude Code tó Codex ezwi bobongisi, mpe ntango ekobakisa ezwi bobongisi.",
+  "options_models_refresh": "Tánga yangó sikoyo"
 }

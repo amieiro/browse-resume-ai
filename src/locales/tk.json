@@ -30,8 +30,6 @@
   "options_display_mode": "Gysgaça mazmunlary görkezmeli ýeri",
   "options_mode_sidepanel": "Gapdal panel",
   "options_mode_popup": "Açylýan penjire",
-  "options_model_list": "Modeller (her setirde biri)",
-  "options_models_empty": "Modeller sanawy boş bolup bilmez.",
   "options_ready": "Taýýar",
   "options_help": "Gysgaça mazmunlar bu kompýuterdäki ýerli komponentden geçýär: ol siziň abunalygyňyz bilen Claude Code ýa-da Codex, ýa-da Ollama-daky modeli işledýär. Sahypanyň teksti diňe siz saýlan üpjünçä iberilýär.",
   "options_ui_language": "Interfeýs dili",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Bu sahypa barada sorag ber",
   "ui_ask": "Sora",
   "error_ollama_missing": "Ollama bu kompýuterde işlemeýär. Ony ollama.com saýtyndan guruň we açyň, soňra täzeden synanyşyň.",
-  "error_ollama_model_missing": "Bu model Ollama-da ýüklenip alynmadyk. Modeliň ady bilen ollama pull işlediň (meselem, ollama pull llama3.2), soňra täzeden synanyşyň."
+  "error_ollama_model_missing": "Bu model Ollama-da ýüklenip alynmadyk. Modeliň ady bilen ollama pull işlediň (meselem, ollama pull llama3.2), soňra täzeden synanyşyň.",
+  "options_more_models": "Goşmaça modeller (her setirde biri)",
+  "options_models_checked": "Model sanawlary {date} senesinde okaldy.",
+  "options_models_never": "Model sanawlary entek okalmady.",
+  "options_models_auto": "Olar Claude Code, Codex we Ollama-dan gelýär we günde bir gezek, Claude Code ýa-da Codex täzelenende we giňeltme täzelenende täzeden okalýar.",
+  "options_models_refresh": "Häzir okaň"
 }

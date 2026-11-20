@@ -30,8 +30,6 @@
   "options_display_mode": "خلاصے اتھاں ڈکھاؤ",
   "options_mode_sidepanel": "سائیڈ پینل",
   "options_mode_popup": "پاپ اپ",
-  "options_model_list": "ماڈل (ہر سطر وچ ہک)",
-  "options_models_empty": "ماڈلاں دی لسٹ خالی نئیں تھی سڳدی۔",
   "options_ready": "تیار",
   "options_help": "خلاصے ایں کمپیوٹر تے مقامی حصے راہیں ویندے ہن: ایہ تہاڈی رکنیت نال Claude Code یا Codex، یا Ollama وچ کوئی ماڈل چلیندا ہے۔ صفحے دی لکھت صرف اوں فراہم کرݨ آلے کوں بھیڄی ویندی ہے جیہڑا تساں چُݨو۔",
   "options_ui_language": "انٹرفیس دی زبان",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "ایں صفحے بارے سوال پچھو",
   "ui_ask": "پچھو",
   "error_ollama_missing": "Ollama ایں کمپیوٹر تے نئیں چل رہیا۔ اینکوں ollama.com توں انسٹال کرو تے کھولو، ول ولا کوشش کرو۔",
-  "error_ollama_model_missing": "ایہ ماڈل Ollama وچ ڈاؤن لوڈ کائنی تھیا۔ ماڈل دے ناں نال ollama pull چلاؤ (مثال دے طور تے، ollama pull llama3.2)، ول ولا کوشش کرو۔"
+  "error_ollama_model_missing": "ایہ ماڈل Ollama وچ ڈاؤن لوڈ کائنی تھیا۔ ماڈل دے ناں نال ollama pull چلاؤ (مثال دے طور تے، ollama pull llama3.2)، ول ولا کوشش کرو۔",
+  "options_more_models": "ٻئے ماڈل (ہر سطر وچ ہک)",
+  "options_models_checked": "ماڈلاں دیاں لسٹاں {date} کوں پڑھیاں ڳئیاں۔",
+  "options_models_never": "ماڈلاں دیاں لسٹاں ہݨ تئیں نئیں پڑھیاں ڳئیاں۔",
+  "options_models_auto": "ایہ Claude Code، Codex تے Ollama کنوں آندیاں ہن، تے ڈینہہ وچ ہک واری، جݙاں Claude Code یا Codex اپڈیٹ تھیوے، تے جݙاں ایکسٹینشن اپڈیٹ تھیوے، ولا پڑھیاں ویندیاں ہن۔",
+  "options_models_refresh": "ہݨ پڑھو"
 }

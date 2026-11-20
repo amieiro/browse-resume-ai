@@ -30,8 +30,6 @@
   "options_display_mode": "Gosi nchịkọta na",
   "options_mode_sidepanel": "Ogwe n'akụkụ",
   "options_mode_popup": "Mpio na-apụta",
-  "options_model_list": "Ụdị (otu n'ahịrị ọ bụla)",
-  "options_models_empty": "Ndepụta ụdị enweghị ike ịtọgbọ chakoo.",
   "options_ready": "Njikere",
   "options_help": "Nchịkọta na-agafe n'akụrụngwa mpaghara dị na kọmputa a: ọ na-agba Claude Code ma ọ bụ Codex site na ndenye aha gị, ma ọ bụ otu ụdịdị n'ime Ollama. A na-ezigara ederede ibe naanị onye na-enye ọrụ ị họọrọ.",
   "options_ui_language": "Asụsụ ihu mmekọrịta",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Jụọ ajụjụ gbasara ibe a",
   "ui_ask": "Jụọ",
   "error_ollama_missing": "Ollama anaghị agba na kọmputa a. Wụnye ya site na ollama.com ma mepee ya, wee nwaa ọzọ.",
-  "error_ollama_model_missing": "Ebudatabeghị ụdịdị a n'ime Ollama. Gbaa ollama pull ya na aha ụdịdị ahụ (dịka ọmụmaatụ, ollama pull llama3.2), wee nwaa ọzọ."
+  "error_ollama_model_missing": "Ebudatabeghị ụdịdị a n'ime Ollama. Gbaa ollama pull ya na aha ụdịdị ahụ (dịka ọmụmaatụ, ollama pull llama3.2), wee nwaa ọzọ.",
+  "options_more_models": "Ụdị ndị ọzọ (otu n'ahịrị ọ bụla)",
+  "options_models_checked": "Agụrụ ndepụta ụdị na {date}.",
+  "options_models_never": "Agụbeghị ndepụta ụdị.",
+  "options_models_auto": "Ha si na Claude Code, Codex na Ollama, a na-agụkwa ha ọzọ otu ugboro kwa ụbọchị, mgbe e melitere Claude Code ma ọ bụ Codex, na mgbe e melitere ndọtị ahụ.",
+  "options_models_refresh": "Gụọ ha ugbu a"
 }

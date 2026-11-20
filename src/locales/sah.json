@@ -30,8 +30,6 @@
   "options_display_mode": "Кылгас ис хоһооннору көрдөрүү",
   "options_mode_sidepanel": "Ойоҕос панель",
   "options_mode_popup": "Тахсар түннүк",
-  "options_model_list": "Моделлар (биир устуруокаҕа биирдии)",
-  "options_models_empty": "Моделлар испииһэктэрэ кураанах буолуо суохтаах.",
   "options_ready": "Бэлэм",
   "options_help": "Кылгас ис хоһооннор бу компьютердаахы олохтоох компонент нөҥүө бараллар: ол эн суруттарыыгынан Claude Code эбэтэр Codex, эбэтэр Ollama иһинээҕи модели сүүрдэр. Сирэй тиэкиһэ эн талбыт провайдергар эрэ ыытыллар.",
   "options_ui_language": "Интерфейс тыла",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Бу сирэй туһунан ыйытыы биэр",
   "ui_ask": "Ыйыт",
   "error_ollama_missing": "Ollama бу компьютерга үлэлээбэт. Ону ollama.com сайтан туруор уонна арый, онтон хаттаан холон.",
-  "error_ollama_model_missing": "Бу модель Ollama-ҕа хачайдамматах. Модель аатынан ollama pull сүүрт (холобур, ollama pull llama3.2), онтон хаттаан холон."
+  "error_ollama_model_missing": "Бу модель Ollama-ҕа хачайдамматах. Модель аатынан ollama pull сүүрт (холобур, ollama pull llama3.2), онтон хаттаан холон.",
+  "options_more_models": "Атын модельлар (биир устуруокаҕа биирдии)",
+  "options_models_checked": "Модель испииһэктэрэ {date} ааҕыллыбыттара.",
+  "options_models_never": "Модель испииһэктэрэ өссө ааҕылла иликтэр.",
+  "options_models_auto": "Кинилэр Claude Code, Codex уонна Ollama иһиттэн кэлэллэр, уонна күҥҥэ биирдэ, Claude Code эбэтэр Codex саҥардылларыгар, кэҥэтии саҥардылларыгар хаттаан ааҕыллаллар.",
+  "options_models_refresh": "Билигин аах"
 }

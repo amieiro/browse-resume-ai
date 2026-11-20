@@ -30,8 +30,6 @@
   "options_display_mode": "بيّن الملخصات ف",
   "options_mode_sidepanel": "اللوحة الجانبية",
   "options_mode_popup": "نافذة منبثقة",
-  "options_model_list": "النماذج (واحد فكل سطر)",
-  "options_models_empty": "لائحة النماذج ما يمكنش تكون خاوية.",
   "options_ready": "واجد",
   "options_help": "الملخصات كتدوز من المكوّن المحلي فهاد الحاسوب: كيشغّل Claude Code ولا Codex بالاشتراك ديالك، ولا شي موديل ف Ollama. نص الصفحة كيتصيفط غير للمزوّد اللي ختاريتي.",
   "options_ui_language": "لغة الواجهة",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "سول شي سؤال على هاد الصفحة",
   "ui_ask": "سول",
   "error_ollama_missing": "ما خدّامش Ollama فهاد الحاسوب. ثبّتو من ollama.com وحلّو، ومن بعد عاود جرّب.",
-  "error_ollama_model_missing": "هاد الموديل ما محمّلش ف Ollama. شغّل ollama pull مع سمية الموديل (بحال ollama pull llama3.2)، ومن بعد عاود جرّب."
+  "error_ollama_model_missing": "هاد الموديل ما محمّلش ف Ollama. شغّل ollama pull مع سمية الموديل (بحال ollama pull llama3.2)، ومن بعد عاود جرّب.",
+  "options_more_models": "موديلات خرين (واحد فكل سطر)",
+  "options_models_checked": "لوائح الموديلات تقراو ف {date}.",
+  "options_models_never": "لوائح الموديلات مازال ما تقراوش.",
+  "options_models_auto": "كيجيو من Claude Code وCodex وOllama، وكيتعاودو يتقراو مرة فالنهار، ملي كيتحدّث Claude Code ولا Codex، وملي كتتحدّث الإضافة.",
+  "options_models_refresh": "قراهم دابا"
 }

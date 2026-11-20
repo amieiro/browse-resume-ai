@@ -30,8 +30,6 @@
   "options_display_mode": "Xulosalarni ko‘rsatish joyi",
   "options_mode_sidepanel": "Yon panel",
   "options_mode_popup": "Qalqib chiquvchi oyna",
-  "options_model_list": "Modellar (har qatorda bittadan)",
-  "options_models_empty": "Modellar ro‘yxati bo‘sh bo‘lishi mumkin emas.",
   "options_ready": "Tayyor",
   "options_help": "Xulosalar ushbu kompyuterdagi mahalliy komponent orqali o‘tadi: u obunangiz bilan Claude Code yoki Codex ni yoki Ollama dagi modelni ishga tushiradi. Sahifa matni faqat siz tanlagan provayderga yuboriladi.",
   "options_ui_language": "Interfeys tili",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Bu sahifa haqida savol bering",
   "ui_ask": "So‘rash",
   "error_ollama_missing": "Ollama bu kompyuterda ishlamayapti. Uni ollama.com saytidan o‘rnating va oching, so‘ng qayta urinib ko‘ring.",
-  "error_ollama_model_missing": "Bu model Ollama ga yuklab olinmagan. Model nomi bilan ollama pull ni ishga tushiring (masalan, ollama pull llama3.2), so‘ng qayta urinib ko‘ring."
+  "error_ollama_model_missing": "Bu model Ollama ga yuklab olinmagan. Model nomi bilan ollama pull ni ishga tushiring (masalan, ollama pull llama3.2), so‘ng qayta urinib ko‘ring.",
+  "options_more_models": "Boshqa modellar (har qatorda bittadan)",
+  "options_models_checked": "Modellar ro‘yxatlari {date} da o‘qildi.",
+  "options_models_never": "Modellar ro‘yxatlari hali o‘qilmagan.",
+  "options_models_auto": "Ular Claude Code, Codex va Ollama’dan olinadi hamda kuniga bir marta, Claude Code yoki Codex yangilanganda va kengaytma yangilanganda qayta o‘qiladi.",
+  "options_models_refresh": "Hozir o‘qish"
 }

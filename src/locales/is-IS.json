@@ -30,8 +30,6 @@
   "options_display_mode": "Sýna samantektir í",
   "options_mode_sidepanel": "Hliðarspjald",
   "options_mode_popup": "Sprettigluggi",
-  "options_model_list": "Líkön (eitt í hverja línu)",
-  "options_models_empty": "Listinn yfir líkön má ekki vera tómur.",
   "options_ready": "Tilbúið",
   "options_help": "Samantektir fara í gegnum staðbundna hlutann á þessari tölvu: hann keyrir Claude Code eða Codex með áskriftinni þinni, eða líkan í Ollama. Texti síðunnar er aðeins sendur til þjónustuaðilans sem þú velur.",
   "options_ui_language": "Tungumál viðmóts",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Spurðu spurningar um þessa síðu",
   "ui_ask": "Spyrja",
   "error_ollama_missing": "Ollama er ekki í gangi á þessari tölvu. Settu það upp af ollama.com og opnaðu það, reyndu svo aftur.",
-  "error_ollama_model_missing": "Þetta líkan hefur ekki verið sótt í Ollama. Keyrðu ollama pull með heiti líkansins (til dæmis ollama pull llama3.2), reyndu svo aftur."
+  "error_ollama_model_missing": "Þetta líkan hefur ekki verið sótt í Ollama. Keyrðu ollama pull með heiti líkansins (til dæmis ollama pull llama3.2), reyndu svo aftur.",
+  "options_more_models": "Fleiri líkön (eitt í hverja línu)",
+  "options_models_checked": "Líkanalistar lesnir {date}.",
+  "options_models_never": "Líkanalistarnir hafa ekki verið lesnir enn.",
+  "options_models_auto": "Þeir koma frá Claude Code, Codex og Ollama og eru lesnir aftur einu sinni á dag, þegar Claude Code eða Codex er uppfært og þegar viðbótin er uppfærð.",
+  "options_models_refresh": "Lesa þá núna"
 }

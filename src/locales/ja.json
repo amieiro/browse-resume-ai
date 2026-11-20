@@ -30,8 +30,6 @@
   "options_display_mode": "要約の表示場所",
   "options_mode_sidepanel": "サイドパネル",
   "options_mode_popup": "ポップアップ",
-  "options_model_list": "モデル（1 行に 1 つ）",
-  "options_models_empty": "モデルのリストを空にすることはできません。",
   "options_ready": "準備完了",
   "options_help": "要約はこのコンピュータ上のローカルコンポーネントを経由します。このコンポーネントは、お使いのサブスクリプションで Claude Code または Codex を実行するか、Ollama のモデルを実行します。ページのテキストは、選択したプロバイダにのみ送信されます。",
   "options_ui_language": "インターフェースの言語",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "このページについて質問する",
   "ui_ask": "質問",
   "error_ollama_missing": "このコンピュータで Ollama が起動していません。ollama.com からインストールして起動してから、もう一度お試しください。",
-  "error_ollama_model_missing": "このモデルは Ollama にダウンロードされていません。モデル名を指定して ollama pull を実行してから（例: ollama pull llama3.2）、もう一度お試しください。"
+  "error_ollama_model_missing": "このモデルは Ollama にダウンロードされていません。モデル名を指定して ollama pull を実行してから（例: ollama pull llama3.2）、もう一度お試しください。",
+  "options_more_models": "その他のモデル（1 行に 1 つ）",
+  "options_models_checked": "モデル一覧の読み込み日時: {date}",
+  "options_models_never": "モデル一覧はまだ読み込まれていません。",
+  "options_models_auto": "一覧は Claude Code、Codex、Ollama から取得され、1 日に 1 回、Claude Code または Codex の更新時、および拡張機能の更新時に再度読み込まれます。",
+  "options_models_refresh": "今すぐ読み込む"
 }

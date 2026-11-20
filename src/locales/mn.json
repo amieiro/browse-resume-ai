@@ -30,8 +30,6 @@
   "options_display_mode": "Хураангуйг харуулах газар",
   "options_mode_sidepanel": "Хажуугийн самбар",
   "options_mode_popup": "Гарч ирэх цонх",
-  "options_model_list": "Загварууд (мөр бүрд нэг)",
-  "options_models_empty": "Загварын жагсаалт хоосон байж болохгүй.",
   "options_ready": "Бэлэн",
   "options_help": "Хураангуй нь энэ компьютер дээрх дотоод бүрэлдэхүүн хэсгээр дамждаг: тэр нь таны захиалгаар Claude Code эсвэл Codex-г, эсвэл Ollama дахь загварыг ажиллуулдаг. Хуудасны текстийг зөвхөн таны сонгосон үйлчилгээ үзүүлэгч рүү илгээнэ.",
   "options_ui_language": "Интерфейсийн хэл",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Энэ хуудасны талаар асуулт асуух",
   "ui_ask": "Асуух",
   "error_ollama_missing": "Энэ компьютер дээр Ollama ажиллахгүй байна. Үүнийг ollama.com-оос суулгаад нээж, дараа нь дахин оролдоно уу.",
-  "error_ollama_model_missing": "Энэ загвар Ollama-д татагдаагүй байна. Загварын нэртэйгээр ollama pull-г ажиллуулаад (жишээ нь, ollama pull llama3.2), дараа нь дахин оролдоно уу."
+  "error_ollama_model_missing": "Энэ загвар Ollama-д татагдаагүй байна. Загварын нэртэйгээр ollama pull-г ажиллуулаад (жишээ нь, ollama pull llama3.2), дараа нь дахин оролдоно уу.",
+  "options_more_models": "Бусад загвар (мөр бүрт нэг)",
+  "options_models_checked": "Загварын жагсаалтыг {date}-нд уншсан.",
+  "options_models_never": "Загварын жагсаалтыг хараахан уншаагүй байна.",
+  "options_models_auto": "Эдгээр нь Claude Code, Codex болон Ollama-аас ирдэг бөгөөд өдөрт нэг удаа, Claude Code эсвэл Codex шинэчлэгдэх үед, мөн өргөтгөл шинэчлэгдэх үед дахин уншигддаг.",
+  "options_models_refresh": "Одоо унших"
 }

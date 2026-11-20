@@ -30,8 +30,6 @@
   "options_display_mode": "Mostra i riassunti inte",
   "options_mode_sidepanel": "Panello laterale",
   "options_mode_popup": "Popup",
-  "options_model_list": "Modelli (un pe riga)",
-  "options_models_empty": "A lista di modelli a no peu ëse vêua.",
   "options_ready": "Pronto",
   "options_help": "I riassunti passan pe-o conponente locale de sto computer: o l'esegue Claude Code ò Codex co-o teu abonamento, ò un modello in Ollama. O testo da pagina o l'é mandou solo a-o fornitô che ti çerni.",
   "options_ui_language": "Lengua de l'interfaccia",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Fà 'na domanda in sce sta pagina",
   "ui_ask": "Domanda",
   "error_ollama_missing": "Ollama o no l'é in esecuçion in sto computer. Instalilo da ollama.com e arvilo, pöi preuva torna.",
-  "error_ollama_model_missing": "Sto modello o no l'é descaregou in Ollama. Esegui ollama pull co-o nomme do modello (prezenpio, ollama pull llama3.2), pöi preuva torna."
+  "error_ollama_model_missing": "Sto modello o no l'é descaregou in Ollama. Esegui ollama pull co-o nomme do modello (prezenpio, ollama pull llama3.2), pöi preuva torna.",
+  "options_more_models": "Atri modelli (un pe riga)",
+  "options_models_checked": "Liste di modelli lezue o {date}.",
+  "options_models_never": "E liste di modelli no son ancon stæte lezue.",
+  "options_models_auto": "Vegnan da Claude Code, Codex e Ollama, e son lezue torna unna votta a-o giorno, quande Claude Code ò Codex o l'é agiornou, e quande l'estenscion a l'é agiornâ.",
+  "options_models_refresh": "Lezile oua"
 }

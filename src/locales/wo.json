@@ -30,8 +30,6 @@
   "options_display_mode": "Wone tënk yi ci",
   "options_mode_sidepanel": "Panel bu wet",
   "options_mode_popup": "Popup",
-  "options_model_list": "Modèl yi (benn ci rëdd bu nekk)",
-  "options_models_empty": "Limu modèl yi warul a neen.",
   "options_ready": "Pare na",
   "options_help": "Tënk yi dañuy jaar ci pàcc bu dëkk bi ci ordinatëer bii: day doxal Claude Code walla Codex ak sa abonmaa, walla benn model ci Ollama. Mbindu xët wi dañu koy yónnee rekk ci joxekat bi nga tànn.",
   "options_ui_language": "Làkku interface bi",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Laajal benn laaj ci xët wii",
   "ui_ask": "Laaj",
   "error_ollama_missing": "Ollama doxul ci ordinatëer bii. Samp ko jóge ci ollama.com te ubbi ko, te nga jéemaat.",
-  "error_ollama_model_missing": "Model bii yebbuwuñu ko ci Ollama. Doxal ollama pull ak turu model bi (misaal, ollama pull llama3.2), te nga jéemaat."
+  "error_ollama_model_missing": "Model bii yebbuwuñu ko ci Ollama. Doxal ollama pull ak turu model bi (misaal, ollama pull llama3.2), te nga jéemaat.",
+  "options_more_models": "Yeneen modèl (benn ci benn rëdd)",
+  "options_models_checked": "Limi modèl yi dañu leen jàng ci {date}.",
+  "options_models_never": "Jàngaguñu limi modèl yi.",
+  "options_models_auto": "Dañuy jóge ci Claude Code, Codex ak Ollama, te dañu leen di jàngaat benn yoon ci bés bi, bu Claude Code walla Codex yeesalikoo, ak bu yokkute bi yeesalikoo.",
+  "options_models_refresh": "Jàng leen léegi"
 }

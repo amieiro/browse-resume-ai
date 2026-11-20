@@ -30,8 +30,6 @@
   "options_display_mode": "הצגת סיכומים ב",
   "options_mode_sidepanel": "חלונית צדדית",
   "options_mode_popup": "חלון קופץ",
-  "options_model_list": "מודלים (אחד בכל שורה)",
-  "options_models_empty": "רשימת המודלים לא יכולה להיות ריקה.",
   "options_ready": "מוכן",
   "options_help": "הסיכומים עוברים דרך הרכיב המקומי במחשב הזה: הוא מריץ את Claude Code או את Codex עם המינוי שלך, או מודל ב-Ollama. טקסט הדף נשלח רק לספק שבחרת.",
   "options_ui_language": "שפת הממשק",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "אפשר לשאול שאלה על הדף הזה",
   "ui_ask": "שאלה",
   "error_ollama_missing": "Ollama לא פועל במחשב הזה. יש להתקין אותו מ-ollama.com ולפתוח אותו, ואז לנסות שוב.",
-  "error_ollama_model_missing": "המודל הזה לא הורד ב-Ollama. יש להריץ ollama pull עם שם המודל (לדוגמה, ollama pull llama3.2), ואז לנסות שוב."
+  "error_ollama_model_missing": "המודל הזה לא הורד ב-Ollama. יש להריץ ollama pull עם שם המודל (לדוגמה, ollama pull llama3.2), ואז לנסות שוב.",
+  "options_more_models": "מודלים נוספים (אחד בכל שורה)",
+  "options_models_checked": "רשימות המודלים נקראו ב-{date}.",
+  "options_models_never": "רשימות המודלים עדיין לא נקראו.",
+  "options_models_auto": "הן מגיעות מ-Claude Code, מ-Codex ומ-Ollama, ונקראות מחדש פעם ביום, כש-Claude Code או Codex מתעדכנים וכשההרחבה מתעדכנת.",
+  "options_models_refresh": "לקרוא אותן עכשיו"
 }

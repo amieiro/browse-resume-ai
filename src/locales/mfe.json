@@ -30,8 +30,6 @@
   "options_display_mode": "Montre rezime dan",
   "options_mode_sidepanel": "Panno lateral",
   "options_mode_popup": "Popup",
-  "options_model_list": "Model (enn par lign)",
-  "options_models_empty": "Lalis model pa kapav vid.",
   "options_ready": "Pare",
   "options_help": "Bann rezime pas par konpozan lokal lor sa ordinater-la: li lans Claude Code ouswa Codex avek ou abonnman, ouswa enn model dan Ollama. Text paz-la zis avoy ar fourniser ki ou swazir.",
   "options_ui_language": "Langaz lenterfas",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Poz enn kestion lor sa paz-la",
   "ui_ask": "Demande",
   "error_ollama_missing": "Ollama pa pe marse lor sa ordinater-la. Instal li depi ollama.com ek ouver li, apre esey ankor enn fwa.",
-  "error_ollama_model_missing": "Sa model-la pa finn telesarze dan Ollama. Lans ollama pull avek non model-la (par egzanp, ollama pull llama3.2), apre esey ankor enn fwa."
+  "error_ollama_model_missing": "Sa model-la pa finn telesarze dan Ollama. Lans ollama pull avek non model-la (par egzanp, ollama pull llama3.2), apre esey ankor enn fwa.",
+  "options_more_models": "Plis model (enn par lign)",
+  "options_models_checked": "Lis model inn lir lor {date}.",
+  "options_models_never": "Lis model pa ankor lir.",
+  "options_models_auto": "Zot sorti dan Claude Code, Codex ek Ollama, e zot relir enn fwa par zour, kan Claude Code ouswa Codex mett azour, e kan extansion-la mett azour.",
+  "options_models_refresh": "Lir zot aster"
 }

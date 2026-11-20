@@ -30,8 +30,6 @@
   "options_display_mode": "შეჯამებების ჩვენება",
   "options_mode_sidepanel": "გვერდითი პანელი",
   "options_mode_popup": "ამომხტარი ფანჯარა",
-  "options_model_list": "მოდელები (თითო ხაზზე ერთი)",
-  "options_models_empty": "მოდელების სია არ შეიძლება იყოს ცარიელი.",
   "options_ready": "მზადაა",
   "options_help": "შეჯამებები გადის ამ კომპიუტერის ლოკალურ კომპონენტზე: ის თქვენი გამოწერით უშვებს Claude Code-ს ან Codex-ს, ან მოდელს Ollama-ში. გვერდის ტექსტი იგზავნება მხოლოდ თქვენ მიერ არჩეულ პროვაიდერთან.",
   "options_ui_language": "ინტერფეისის ენა",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "დასვით კითხვა ამ გვერდის შესახებ",
   "ui_ask": "კითხვა",
   "error_ollama_missing": "Ollama ამ კომპიუტერზე გაშვებული არ არის. დააინსტალირეთ ollama.com-იდან და გახსენით, შემდეგ კვლავ სცადეთ.",
-  "error_ollama_model_missing": "ეს მოდელი Ollama-ში ჩამოტვირთული არ არის. გაუშვით ollama pull მოდელის სახელით (მაგალითად, ollama pull llama3.2), შემდეგ კვლავ სცადეთ."
+  "error_ollama_model_missing": "ეს მოდელი Ollama-ში ჩამოტვირთული არ არის. გაუშვით ollama pull მოდელის სახელით (მაგალითად, ollama pull llama3.2), შემდეგ კვლავ სცადეთ.",
+  "options_more_models": "სხვა მოდელები (თითო სტრიქონზე)",
+  "options_models_checked": "მოდელების სიები წაკითხულია: {date}.",
+  "options_models_never": "მოდელების სიები ჯერ არ წაკითხულა.",
+  "options_models_auto": "ისინი მოდის Claude Code-დან, Codex-დან და Ollama-დან და ხელახლა იკითხება დღეში ერთხელ, Claude Code-ის ან Codex-ის განახლებისას და გაფართოების განახლებისას.",
+  "options_models_refresh": "ახლავე წაკითხვა"
 }

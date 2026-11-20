@@ -30,8 +30,6 @@
   "options_display_mode": "Uri s-sommarji f'",
   "options_mode_sidepanel": "Pannell tal-ġenb",
   "options_mode_popup": "Popup",
-  "options_model_list": "Mudelli (wieħed f'kull linja)",
-  "options_models_empty": "Il-lista tal-mudelli ma tistax tkun vojta.",
   "options_ready": "Lest",
   "options_help": "Is-sommarji jgħaddu mill-komponent lokali fuq dan il-kompjuter: iħaddem Claude Code jew Codex bl-abbonament tiegħek, jew mudell f'Ollama. It-test tal-paġna jintbagħat biss lill-fornitur li tagħżel.",
   "options_ui_language": "Lingwa tal-interfaċċa",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Staqsi mistoqsija dwar din il-paġna",
   "ui_ask": "Staqsi",
   "error_ollama_missing": "Ollama mhux qed jaħdem fuq dan il-kompjuter. Installah minn ollama.com u iftħu, imbagħad erġa' pprova.",
-  "error_ollama_model_missing": "Dan il-mudell mhux imniżżel f'Ollama. Ħaddem ollama pull bl-isem tal-mudell (pereżempju, ollama pull llama3.2), imbagħad erġa' pprova."
+  "error_ollama_model_missing": "Dan il-mudell mhux imniżżel f'Ollama. Ħaddem ollama pull bl-isem tal-mudell (pereżempju, ollama pull llama3.2), imbagħad erġa' pprova.",
+  "options_more_models": "Aktar mudelli (wieħed f'kull linja)",
+  "options_models_checked": "Il-listi tal-mudelli nqraw fi {date}.",
+  "options_models_never": "Il-listi tal-mudelli għadhom ma nqrawx.",
+  "options_models_auto": "Jiġu minn Claude Code, Codex u Ollama, u jerġgħu jinqraw darba kuljum, meta Claude Code jew Codex jiġi aġġornat, u meta l-estensjoni tiġi aġġornata.",
+  "options_models_refresh": "Aqrahom issa"
 }

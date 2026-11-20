@@ -30,8 +30,6 @@
   "options_display_mode": "Khombisa tifinyeto ku",
   "options_mode_sidepanel": "Liphaneli lelisemaceleni",
   "options_mode_popup": "Liwindi lelivelako",
-  "options_model_list": "Timodeli (yinye emugceni ngamunye)",
-  "options_models_empty": "Luhlu lwetimodeli alukwati kuba lolungenalutfo.",
   "options_ready": "Kulungile",
   "options_help": "Tifinyeto tendlula encenyeni yasekhaya kulekhompyutha: isebentisa i-Claude Code noma i-Codex ngekubhalisa kwakho, noma imodeli ku-Ollama. Umbhalo welikhasi utfunyelwa kuphela kumhlinzeki lomkhetsako.",
   "options_ui_language": "Lulwimi lwesikhombimsebenti",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Buta umbuto ngalelikhasi",
   "ui_ask": "Buta",
   "error_ollama_missing": "I-Ollama ayisebenti kulekhompyutha. Yifake usuka ku-ollama.com uyivule, bese uyetama futsi.",
-  "error_ollama_model_missing": "Lemodeli ayikadawunilodwa ku-Ollama. Sebentisa ollama pull nelibito lemodeli (sibonelo, ollama pull llama3.2), bese uyetama futsi."
+  "error_ollama_model_missing": "Lemodeli ayikadawunilodwa ku-Ollama. Sebentisa ollama pull nelibito lemodeli (sibonelo, ollama pull llama3.2), bese uyetama futsi.",
+  "options_more_models": "Emamodeli lamanye (linye emugceni ngamunye)",
+  "options_models_checked": "Luhlu lwemamodeli lufundvwe nga-{date}.",
+  "options_models_never": "Luhlu lwemamodeli alukafundvwa.",
+  "options_models_auto": "Luchamuka ku-Claude Code, Codex na-Ollama, futsi lufundvwa futsi kanye ngelilanga, nangabe i-Claude Code noma i-Codex ibuyeketiwe, nangabe sengeto sibuyeketiwe.",
+  "options_models_refresh": "Lufundze nyalo"
 }

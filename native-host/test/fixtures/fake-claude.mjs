@@ -6,6 +6,10 @@ import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const mode = process.env.FAKE_MODE ?? 'ok';
+if (process.argv.includes('--version')) {
+  process.stdout.write(`${process.env.FAKE_VERSION ?? '2.1.329 (Claude Code)'}\n`);
+  process.exit(0);
+}
 let stdin = '';
 process.stdin.on('data', (d) => (stdin += d));
 process.stdin.on('end', () => {

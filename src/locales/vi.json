@@ -30,8 +30,6 @@
   "options_display_mode": "Hiển thị bản tóm tắt trong",
   "options_mode_sidepanel": "Bảng điều khiển bên",
   "options_mode_popup": "Cửa sổ bật lên",
-  "options_model_list": "Mô hình (mỗi dòng một mô hình)",
-  "options_models_empty": "Danh sách mô hình không được để trống.",
   "options_ready": "Sẵn sàng",
   "options_help": "Bản tóm tắt đi qua thành phần cục bộ trên máy tính này: thành phần này chạy Claude Code hoặc Codex bằng gói đăng ký của bạn, hoặc một mô hình trong Ollama. Nội dung trang chỉ được gửi đến nhà cung cấp mà bạn chọn.",
   "options_ui_language": "Ngôn ngữ giao diện",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Đặt câu hỏi về trang này",
   "ui_ask": "Hỏi",
   "error_ollama_missing": "Ollama không chạy trên máy tính này. Hãy cài đặt từ ollama.com và mở ứng dụng, sau đó thử lại.",
-  "error_ollama_model_missing": "Mô hình này chưa được tải xuống trong Ollama. Hãy chạy ollama pull kèm tên mô hình (ví dụ: ollama pull llama3.2), sau đó thử lại."
+  "error_ollama_model_missing": "Mô hình này chưa được tải xuống trong Ollama. Hãy chạy ollama pull kèm tên mô hình (ví dụ: ollama pull llama3.2), sau đó thử lại.",
+  "options_more_models": "Mô hình khác (mỗi dòng một mô hình)",
+  "options_models_checked": "Danh sách mô hình được đọc lúc {date}.",
+  "options_models_never": "Chưa đọc danh sách mô hình.",
+  "options_models_auto": "Danh sách lấy từ Claude Code, Codex và Ollama, và được đọc lại mỗi ngày một lần, khi Claude Code hoặc Codex được cập nhật, và khi tiện ích được cập nhật.",
+  "options_models_refresh": "Đọc ngay"
 }

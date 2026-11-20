@@ -30,8 +30,6 @@
   "options_display_mode": "Összefoglalók megjelenítése itt:",
   "options_mode_sidepanel": "Oldalsó panel",
   "options_mode_popup": "Előugró ablak",
-  "options_model_list": "Modellek (soronként egy)",
-  "options_models_empty": "A modellek listája nem lehet üres.",
   "options_ready": "Kész",
   "options_help": "Az összefoglalók ennek a számítógépnek a helyi összetevőjén keresztül készülnek: ez az előfizetéseddel futtatja a Claude Code-ot vagy a Codexet, vagy egy modellt az Ollama alkalmazásban. Az oldal szövegét csak a kiválasztott szolgáltató kapja meg.",
   "options_ui_language": "A felület nyelve",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Kérdezz valamit erről az oldalról",
   "ui_ask": "Kérdezés",
   "error_ollama_missing": "Az Ollama nem fut ezen a számítógépen. Telepítsd az ollama.com oldalról, nyisd meg, majd próbáld újra.",
-  "error_ollama_model_missing": "Ez a modell nincs letöltve az Ollama alkalmazásban. Futtasd az ollama pull parancsot a modell nevével (például ollama pull llama3.2), majd próbáld újra."
+  "error_ollama_model_missing": "Ez a modell nincs letöltve az Ollama alkalmazásban. Futtasd az ollama pull parancsot a modell nevével (például ollama pull llama3.2), majd próbáld újra.",
+  "options_more_models": "További modellek (soronként egy)",
+  "options_models_checked": "A modellek listáinak beolvasása: {date}.",
+  "options_models_never": "A modellek listái még nincsenek beolvasva.",
+  "options_models_auto": "A Claude Code-ból, a Codexből és az Ollamából származnak, és naponta egyszer, a Claude Code vagy a Codex frissítésekor, valamint a bővítmény frissítésekor újra beolvasásra kerülnek.",
+  "options_models_refresh": "Beolvasás most"
 }

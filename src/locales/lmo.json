@@ -30,8 +30,6 @@
   "options_display_mode": "Fa vedè i riassunt in",
   "options_mode_sidepanel": "Panell lateral",
   "options_mode_popup": "Popup",
-  "options_model_list": "Model (vun per riga)",
-  "options_models_empty": "La lista di model la pò minga vess voeuida.",
   "options_ready": "Pront",
   "options_help": "I riassunt passen per el component local de quell computer chì: el fa andà Claude Code o Codex con el tò abonament, o un model in Ollama. El test de la pagina l'è mandaa domà al fornidor che te scernisset.",
   "options_ui_language": "Lengua de l'interfacia",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Fà una domanda su questa pagina",
   "ui_ask": "Domanda",
   "error_ollama_missing": "Ollama el va minga in su quell computer chì. Installel de ollama.com e derviel, poeu proeuva anmò.",
-  "error_ollama_model_missing": "Quell model chì l'è minga descargaa in Ollama. Fa andà ollama pull cont el nomm del model (per esempi, ollama pull llama3.2), poeu proeuva anmò."
+  "error_ollama_model_missing": "Quell model chì l'è minga descargaa in Ollama. Fa andà ollama pull cont el nomm del model (per esempi, ollama pull llama3.2), poeu proeuva anmò.",
+  "options_more_models": "Alter model (vun per riga)",
+  "options_models_checked": "Lista di model legiuda el {date}.",
+  "options_models_never": "I lista di model hinn minga stada legiude anmò.",
+  "options_models_auto": "Rivan de Claude Code, Codex e Ollama, e vegnen legiude anmò ona voeulta al dì, quand che Claude Code o Codex el vegn aggiornaa, e quand che l'estension la vegn aggiornada.",
+  "options_models_refresh": "Lesele adess"
 }

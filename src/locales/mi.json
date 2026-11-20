@@ -30,8 +30,6 @@
   "options_display_mode": "Whakaaturia ngā whakarāpopototanga ki",
   "options_mode_sidepanel": "Paewhiri taha",
   "options_mode_popup": "Matapihi puta ake",
-  "options_model_list": "Ngā tauira (kotahi ki ia rārangi)",
-  "options_models_empty": "Kāore e taea te rārangi tauira te noho kau.",
   "options_ready": "Kua rite",
   "options_help": "Ka haere ngā whakarāpopototanga mā te wāhanga paetata i tēnei rorohiko: ka whakahaere ia i a Claude Code, i a Codex rānei mā tō ohaurunga, i tētahi tauira rānei i Ollama. Ka tukuna te kuputuhi o te whārangi ki te kaiwhakarato i kōwhiria e koe anake.",
   "options_ui_language": "Reo o te atanga",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Tukuna he pātai mō tēnei whārangi",
   "ui_ask": "Pātai",
   "error_ollama_missing": "Kāore a Ollama i te whakahaere i tēnei rorohiko. Tāutahia mai i ollama.com ka huaki ai, kātahi ka ngana anō.",
-  "error_ollama_model_missing": "Kāore anō tēnei tauira kia tikiake ki Ollama. Whakahaerehia a ollama pull me te ingoa o te tauira (hei tauira, ollama pull llama3.2), kātahi ka ngana anō."
+  "error_ollama_model_missing": "Kāore anō tēnei tauira kia tikiake ki Ollama. Whakahaerehia a ollama pull me te ingoa o te tauira (hei tauira, ollama pull llama3.2), kātahi ka ngana anō.",
+  "options_more_models": "Ētahi atu tauira (kotahi ki ia rārangi)",
+  "options_models_checked": "I pānuihia ngā rārangi tauira i te {date}.",
+  "options_models_never": "Kāore anō ngā rārangi tauira kia pānuihia.",
+  "options_models_auto": "Ka ahu mai i Claude Code, Codex me Ollama, ā, ka pānuihia anōtia kotahi i te rā, ina whakahoutia a Claude Code, a Codex rānei, ā, ina whakahoutia te toronga.",
+  "options_models_refresh": "Pānuitia ināianei"
 }

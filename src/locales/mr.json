@@ -30,8 +30,6 @@
   "options_display_mode": "सारांश येथे दाखवा",
   "options_mode_sidepanel": "साइड पॅनल",
   "options_mode_popup": "पॉपअप",
-  "options_model_list": "मॉडेल्स (प्रत्येक ओळीत एक)",
-  "options_models_empty": "मॉडेल्सची यादी रिकामी असू शकत नाही.",
   "options_ready": "तयार",
   "options_help": "सारांश या संगणकावरील स्थानिक घटकामार्फत जातात: तो तुमच्या सदस्यत्वासह Claude Code किंवा Codex, किंवा Ollama मधील एखादे मॉडेल चालवतो. पृष्ठाचा मजकूर फक्त तुम्ही निवडलेल्या प्रदात्याला पाठवला जातो.",
   "options_ui_language": "इंटरफेसची भाषा",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "या पृष्ठाबद्दल प्रश्न विचारा",
   "ui_ask": "विचारा",
   "error_ollama_missing": "या संगणकावर Ollama चालू नाही. ते ollama.com वरून स्थापित करा आणि उघडा, नंतर पुन्हा प्रयत्न करा.",
-  "error_ollama_model_missing": "हे मॉडेल Ollama मध्ये डाउनलोड केलेले नाही. मॉडेलच्या नावासह ollama pull चालवा (उदाहरणार्थ, ollama pull llama3.2), नंतर पुन्हा प्रयत्न करा."
+  "error_ollama_model_missing": "हे मॉडेल Ollama मध्ये डाउनलोड केलेले नाही. मॉडेलच्या नावासह ollama pull चालवा (उदाहरणार्थ, ollama pull llama3.2), नंतर पुन्हा प्रयत्न करा.",
+  "options_more_models": "आणखी मॉडेल (प्रत्येक ओळीत एक)",
+  "options_models_checked": "मॉडेल याद्या {date} रोजी वाचल्या.",
+  "options_models_never": "मॉडेल याद्या अद्याप वाचलेल्या नाहीत.",
+  "options_models_auto": "त्या Claude Code, Codex आणि Ollama मधून येतात, आणि दिवसातून एकदा, Claude Code किंवा Codex अपडेट झाल्यावर आणि एक्स्टेंशन अपडेट झाल्यावर पुन्हा वाचल्या जातात.",
+  "options_models_refresh": "आता वाचा"
 }

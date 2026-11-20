@@ -30,8 +30,6 @@
   "options_display_mode": "Amostrar os resumens en",
   "options_mode_sidepanel": "Panel lateral",
   "options_mode_popup": "Finestra emerchent",
-  "options_model_list": "Modelos (un per linia)",
-  "options_models_empty": "A lista de modelos no puede estar vueda.",
   "options_ready": "Listo",
   "options_help": "Os resumens pasan per o componente local d'este ordinador: executa Claude Code u Codex con a tuya suscripción, u un modelo en Ollama. O texto d'a pachina nomás se ninvia a lo proveyedor que tríes.",
   "options_ui_language": "Idioma d'a interfaz",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Fe una pregunta sobre esta pachina",
   "ui_ask": "Preguntar",
   "error_ollama_missing": "Ollama no ye en execución en este ordinador. Instala-lo dende ollama.com y ubre-lo, y dimpués torna a intentar-lo.",
-  "error_ollama_model_missing": "Este modelo no ye descargau en Ollama. Executa ollama pull con o nombre d'o modelo (por eixemplo, ollama pull llama3.2) y dimpués torna a intentar-lo."
+  "error_ollama_model_missing": "Este modelo no ye descargau en Ollama. Executa ollama pull con o nombre d'o modelo (por eixemplo, ollama pull llama3.2) y dimpués torna a intentar-lo.",
+  "options_more_models": "Mas modelos (un per linia)",
+  "options_models_checked": "Listas de modelos leyidas o {date}.",
+  "options_models_never": "Encara no s'han leyiu as listas de modelos.",
+  "options_models_auto": "Vienen de Claude Code, Codex y Ollama, y se tornan a leyer una vegada a lo día, quan s'esvielle Claude Code u Codex, y quan s'esvielle a extensión.",
+  "options_models_refresh": "Leyer-las agora"
 }

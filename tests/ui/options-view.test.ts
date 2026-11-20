@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi, type Mock } from 'vitest';
 import { fakeBrowser } from 'wxt/testing/fake-browser';
 import { setMessages } from '@/lib/i18n';
-import { defaultSettings, type Settings } from '@/lib/settings';
+import { defaultSettings, type ProviderId, type Settings } from '@/lib/settings';
 import { mountOptionsView, parseModelList } from '@/ui/options-view';
 import type { Availability } from '@/providers/types';
 
@@ -15,10 +15,16 @@ const change = (el: HTMLSelectElement | HTMLTextAreaElement, value: string, even
   el.dispatchEvent(new Event(event));
 };
 
-async function mount(settings: Settings = defaultSettings('en')) {
+async function mount(
+  settings: Settings = defaultSettings('en'),
+  extra: { base?: Partial<Record<ProviderId, string[]>>; checkedAt?: number | null; onRefreshModels?: () => Promise<void> } = {},
+) {
   const view = mountOptionsView(root, settings, {
     onSave,
     checkAvailability: async (id) => availability[id]!,
+    baseModels: (id) => extra.base?.[id] ?? settings.modelLists[id],
+    modelsCheckedAt: extra.checkedAt ?? null,
+    onRefreshModels: extra.onRefreshModels ?? (async () => {}),
   });
   await view.ready;
   return view;
@@ -66,7 +72,7 @@ describe('options view', () => {
     expect(field<HTMLSelectElement>('length').value).toBe('long');
     expect(field<HTMLSelectElement>('language').value).toBe('gl-ES');
     expect(field<HTMLSelectElement>('uiLanguage').value).toBe('fr-FR');
-    expect(field<HTMLTextAreaElement>('models-claude').value).toBe('sonnet\nopus\nhaiku\nfable');
+    expect(field<HTMLTextAreaElement>('extra-claude').value).toBe('');
     expect(field<HTMLSelectElement>('model-claude').value).toBe('sonnet');
   });
 
@@ -89,30 +95,45 @@ describe('options view', () => {
     expect(onSave).toHaveBeenLastCalledWith({ models: { claude: 'opus', codex: 'gpt-6.2-sol', ollama: 'llama3.2' } });
   });
 
-  it('saves an edited model list', async () => {
-    await mount();
-    change(field<HTMLTextAreaElement>('models-claude'), 'sonnet\n opus \nsonnet\nclaude-x');
+  it('lists the detected models, then the ones added by hand', async () => {
+    const settings = { ...defaultSettings('en'), extraModels: { claude: ['claude-x'], codex: [], ollama: [] } };
+    await mount(settings, { base: { claude: ['sonnet', 'claude-opus-5-5'] } });
+    expect([...field<HTMLSelectElement>('model-claude').options].map((o) => o.value)).toEqual(['sonnet', 'claude-opus-5-5', 'claude-x']);
+    expect(field<HTMLTextAreaElement>('extra-claude').value).toBe('claude-x');
+  });
+
+  it('saves models added by hand and offers them', async () => {
+    await mount(defaultSettings('en'), { base: { claude: ['sonnet', 'opus'] } });
+    change(field<HTMLTextAreaElement>('extra-claude'), ' claude-x \n\nsonnet\nclaude-x');
+    expect(onSave).toHaveBeenLastCalledWith({ extraModels: { claude: ['claude-x', 'sonnet'], codex: [], ollama: [] } });
+    expect([...field<HTMLSelectElement>('model-claude').options].map((o) => o.value)).toEqual(['sonnet', 'opus', 'claude-x']);
+  });
+
+  it('moves the selection to the first model when the selected extra one is removed', async () => {
+    const settings = {
+      ...defaultSettings('en'),
+      models: { claude: 'claude-x', codex: 'gpt-6.2-sol', ollama: 'llama3.2' },
+      extraModels: { claude: ['claude-x'], codex: [], ollama: [] },
+    };
+    await mount(settings, { base: { claude: ['sonnet', 'opus'] } });
+    change(field<HTMLTextAreaElement>('extra-claude'), '');
     expect(onSave).toHaveBeenLastCalledWith({
-      modelLists: { claude: ['sonnet', 'opus', 'claude-x'], codex: ['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna'], ollama: ['llama3.2', 'qwen3', 'gemma3', 'mistral'] },
+      extraModels: { claude: [], codex: [], ollama: [] },
+      models: { claude: 'sonnet', codex: 'gpt-6.2-sol', ollama: 'llama3.2' },
     });
   });
 
-  it('selects the first model when the selected one is removed', async () => {
-    await mount();
-    change(field<HTMLTextAreaElement>('models-claude'), 'opus\nhaiku');
-    expect(onSave).toHaveBeenLastCalledWith({
-      modelLists: { claude: ['opus', 'haiku'], codex: ['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna'], ollama: ['llama3.2', 'qwen3', 'gemma3', 'mistral'] },
-      models: { claude: 'opus', codex: 'gpt-6.2-sol', ollama: 'llama3.2' },
-    });
-    expect(field<HTMLSelectElement>('model-claude').value).toBe('opus');
+  it('says when the lists were read, and reads them again on request', async () => {
+    const onRefreshModels = vi.fn(async () => {});
+    await mount(defaultSettings('en'), { checkedAt: Date.UTC(2026, 10, 20, 9, 30), onRefreshModels });
+    expect(root.querySelector('[data-role="models-checked"]')?.textContent).toContain('[options_models_checked]'.replace('{date}', ''));
+    root.querySelector<HTMLButtonElement>('button[name="refresh-models"]')!.click();
+    expect(onRefreshModels).toHaveBeenCalled();
   });
 
-  it('rejects an empty list and restores the previous one', async () => {
-    await mount();
-    change(field<HTMLTextAreaElement>('models-claude'), ' \n ');
-    expect(onSave).not.toHaveBeenCalled();
-    expect(field<HTMLTextAreaElement>('models-claude').value).toBe('sonnet\nopus\nhaiku\nfable');
-    expect(root.textContent).toContain('[options_models_empty]');
+  it('says when the lists were never read', async () => {
+    await mount(defaultSettings('en'), { checkedAt: null });
+    expect(root.querySelector('[data-role="models-checked"]')?.textContent).toBe('[options_models_never]');
   });
 
   it('shows Ready for an available provider', async () => {

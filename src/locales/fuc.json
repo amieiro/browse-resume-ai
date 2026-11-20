@@ -30,8 +30,6 @@
   "options_display_mode": "Hollir timmooje ɗee e",
   "options_mode_sidepanel": "Palal sera",
   "options_mode_popup": "Henorde wuurnde",
-  "options_model_list": "Misalji (gooto e kala diidol)",
-  "options_models_empty": "Doggol misalji ngol waawaa wonde mehol.",
   "options_ready": "Ina heɓii",
   "options_help": "Timmooje ɗee ina njaha e pecel nokkuyankeewal ordinateer ngal: ina yaltina Claude Code walla Codex e abonemaa maa, walla modeel e nder Ollama. Binndi hello ngoo ina neldee tan e jeyɗo mo cuɓataa.",
   "options_ui_language": "Ɗemngal jokkorde",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Lamdo naamnal baɗte ngoo hello",
   "ui_ask": "Lamdo",
   "error_ollama_missing": "Ollama huutortaaka e ordinateer ngal. Aaf ɗum iwde e ollama.com, uddit ɗum, caggal ɗuum eto kadi.",
-  "error_ollama_model_missing": "Modeel ngal aawtaaka e Ollama. Yaltin ollama pull e innde modeel ngal (ko wayi no, ollama pull llama3.2), caggal ɗuum eto kadi."
+  "error_ollama_model_missing": "Modeel ngal aawtaaka e Ollama. Yaltin ollama pull e innde modeel ngal (ko wayi no, ollama pull llama3.2), caggal ɗuum eto kadi.",
+  "options_more_models": "Misal goɗɗe (gooto e nder kala diidol)",
+  "options_models_checked": "Doggi misal ɗi njanngaa ko {date}.",
+  "options_models_never": "Doggi misal ɗi njanngaaka tawo.",
+  "options_models_auto": "Ɗi iwi ko e Claude Code, Codex e Ollama, ɗi njanngetee kadi laawol gootol ñalnde kala, so Claude Code walla Codex hesɗitinaama, e so ɓeydaari ndii hesɗitinaama.",
+  "options_models_refresh": "Janngu ɗi jooni"
 }

@@ -30,8 +30,6 @@
   "options_display_mode": "کۆتاھیں نبشتانکاں پیش دار",
   "options_mode_sidepanel": "کشی پینل",
   "options_mode_popup": "پاپ اپ",
-  "options_model_list": "مدل (ھر لَڑا یکّے)",
-  "options_models_empty": "مدلانی لڑ ھالیگ بوت نہ کنت.",
   "options_ready": "تیار",
   "options_help": "کۆتاھیں نبشتانک اے کمپیوٹرئے لوکلیں بہرئے راھا گوزنت: اے Claude Code یا Codex ءَ گوں تئی اشتراکا، یا Ollama ءِ تہا یک ماڈلے اجرا کنت. تاکئے متن بس ھما سرجم کنوکا رئوت کہ تو گچین کنئے.",
   "options_ui_language": "رابطئے زبان",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "اے تاکئے بارئوا جُستے کن",
   "ui_ask": "جُست کن",
   "error_ollama_missing": "اے کمپیوٹرا Ollama نہ چلّگا اِنت. آیرا چہ ollama.com ءَ نصب کن و پچ کن، رندا پدا کوشست کن.",
-  "error_ollama_model_missing": "اے ماڈل Ollama ءِ تہا ڈاؤنلوڈ نہ اِنت. ollama pull ءَ گوں ماڈلئے ناما اجرا کن (پہ درور، ollama pull llama3.2)، رندا پدا کوشست کن."
+  "error_ollama_model_missing": "اے ماڈل Ollama ءِ تہا ڈاؤنلوڈ نہ اِنت. ollama pull ءَ گوں ماڈلئے ناما اجرا کن (پہ درور، ollama pull llama3.2)، رندا پدا کوشست کن.",
+  "options_more_models": "گیشتر ماڈل (ھر سطرا یکے)",
+  "options_models_checked": "ماڈلانی لڑ {date} ءَ وانگ بوتگ اَنت.",
+  "options_models_never": "ماڈلانی لڑ انگت وانگ نبوتگ اَنت.",
+  "options_models_auto": "اے Claude Code، Codex و Ollama ءَ کاینت، و روچے یک بر، وھدے Claude Code یا Codex نوک بیت، و وھدے ایکسٹینشن نوک بیت، پدا وانگ بنت.",
+  "options_models_refresh": "اِشانا نوں بوان"
 }

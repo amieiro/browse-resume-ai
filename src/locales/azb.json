@@ -30,8 +30,6 @@
   "options_display_mode": "خولاصه‌لری بوردا گؤستر",
   "options_mode_sidepanel": "یان پانل",
   "options_mode_popup": "آچیلان پنجره",
-  "options_model_list": "مودل‌لر (هر سطیرده بیری)",
-  "options_models_empty": "مودل سیاهیسی بوش اولا بیلمز.",
   "options_ready": "حاضیر",
   "options_help": "خولاصه‌لر بو کامپیوترده‌کی یئرلی بیلشندن کئچیر: او، سیزین آبونه‌لیگینیزله Claude Code یا Codex، یا دا Ollama-دا بیر مودل ایشلدیر. صفحه متنی یالنیز سئچدیگینیز تأمین‌ائدنه گؤندریلیر.",
   "options_ui_language": "آراوز دیلی",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "بو صفحه حاقیندا سوال وئرین",
   "ui_ask": "سوروش",
   "error_ollama_missing": "بو کامپیوترده Ollama ایشله‌میر. اونو ollama.com-دان قوروب آچین، سونرا یئنیدن چالیشین.",
-  "error_ollama_model_missing": "بو مودل Ollama-دا ائندیریلمه‌ییب. ollama pull-و مودل آدی ایله ایشلدین (مثلاً ollama pull llama3.2)، سونرا یئنیدن چالیشین."
+  "error_ollama_model_missing": "بو مودل Ollama-دا ائندیریلمه‌ییب. ollama pull-و مودل آدی ایله ایشلدین (مثلاً ollama pull llama3.2)، سونرا یئنیدن چالیشین.",
+  "options_more_models": "داها چوخ مودل (هر سطیرده بیری)",
+  "options_models_checked": "مودل لیستلری {date} تاریخینده اوخوندو.",
+  "options_models_never": "مودل لیستلری هله اوخونمایبدیر.",
+  "options_models_auto": "اونلار Claude Code، Codex و Ollama-دان گلیر، و گونده بیر دفعه، Claude Code یا Codex یئنیلننده، و افزونه یئنیلننده یئنیدن اوخونور.",
+  "options_models_refresh": "ایندی اوخو"
 }

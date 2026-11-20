@@ -30,8 +30,6 @@
   "options_display_mode": "پیشاندانی پوختەکان لە",
   "options_mode_sidepanel": "پانێڵی لاتەنیشت",
   "options_mode_popup": "پەنجەرەی بچووک",
-  "options_model_list": "مۆدێلەکان (یەک لە هەر دێڕێکدا)",
-  "options_models_empty": "لیستی مۆدێلەکان نابێت بەتاڵ بێت.",
   "options_ready": "ئامادەیە",
   "options_help": "پوختەکان بە پێکهاتە ناوخۆییەکەی ئەم کۆمپیوتەرەدا تێدەپەڕن: Claude Code یان Codex بە بەشداربوونەکەت، یان مۆدێلێک لە Ollama جێبەجێ دەکات. دەقی پەڕەکە تەنها بۆ ئەو دابینکەرە دەنێردرێت کە هەڵیدەبژێریت.",
   "options_ui_language": "زمانی ڕووکار",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "پرسیارێک دەربارەی ئەم پەڕەیە بکە",
   "ui_ask": "بپرسە",
   "error_ollama_missing": "لەم کۆمپیوتەرەدا Ollama کار ناکات. لە ollama.com دایبمەزرێنە و بیکەرەوە، پاشان دووبارە هەوڵ بدەرەوە.",
-  "error_ollama_model_missing": "ئەم مۆدێلە لە Ollama دانەگیراوە. ollama pull لەگەڵ ناوی مۆدێلەکە جێبەجێ بکە (بۆ نموونە، ollama pull llama3.2)، پاشان دووبارە هەوڵ بدەرەوە."
+  "error_ollama_model_missing": "ئەم مۆدێلە لە Ollama دانەگیراوە. ollama pull لەگەڵ ناوی مۆدێلەکە جێبەجێ بکە (بۆ نموونە، ollama pull llama3.2)، پاشان دووبارە هەوڵ بدەرەوە.",
+  "options_more_models": "مۆدێلی زیاتر (هەر دێڕێک یەکێک)",
+  "options_models_checked": "لیستەکانی مۆدێل لە {date} خوێندرانەوە.",
+  "options_models_never": "لیستەکانی مۆدێل هێشتا نەخوێندراونەتەوە.",
+  "options_models_auto": "لە Claude Code و Codex و Ollama وە دێن، و ڕۆژانە جارێک، کاتێک Claude Code یان Codex نوێ دەکرێتەوە، و کاتێک پێوەکراوەکە نوێ دەکرێتەوە، دووبارە دەخوێندرێنەوە.",
+  "options_models_refresh": "ئێستا بیانخوێنەرەوە"
 }

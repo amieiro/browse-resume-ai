@@ -30,8 +30,6 @@
   "options_display_mode": "Mostrar os resumos em",
   "options_mode_sidepanel": "Painel lateral",
   "options_mode_popup": "Pop-up",
-  "options_model_list": "Modelos (um por linha)",
-  "options_models_empty": "A lista de modelos não pode estar vazia.",
   "options_ready": "Pronto",
   "options_help": "Os resumos passam pelo componente local neste computador: executa o Claude Code ou o Codex com a sua subscrição, ou um modelo no Ollama. O texto da página é enviado apenas ao fornecedor que escolher.",
   "options_ui_language": "Idioma da interface",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Faça uma pergunta sobre esta página",
   "ui_ask": "Perguntar",
   "error_ollama_missing": "O Ollama não está em execução neste computador. Instale-o a partir de ollama.com, abra-o e tente novamente.",
-  "error_ollama_model_missing": "Este modelo não foi transferido para o Ollama. Execute ollama pull com o nome do modelo (por exemplo, ollama pull llama3.2) e tente novamente."
+  "error_ollama_model_missing": "Este modelo não foi transferido para o Ollama. Execute ollama pull com o nome do modelo (por exemplo, ollama pull llama3.2) e tente novamente.",
+  "options_more_models": "Mais modelos (um por linha)",
+  "options_models_checked": "Listas de modelos lidas em {date}.",
+  "options_models_never": "As listas de modelos ainda não foram lidas.",
+  "options_models_auto": "Vêm do Claude Code, do Codex e do Ollama, e são lidas novamente uma vez por dia, quando o Claude Code ou o Codex é atualizado e quando a extensão é atualizada.",
+  "options_models_refresh": "Ler agora"
 }

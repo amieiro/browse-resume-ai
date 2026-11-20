@@ -30,8 +30,6 @@
   "options_display_mode": "Asehoy ny famintinana ao amin'ny",
   "options_mode_sidepanel": "Takelaka amin'ny sisiny",
   "options_mode_popup": "Varavarankely mipoitra",
-  "options_model_list": "Modely (iray isaky ny andalana)",
-  "options_models_empty": "Tsy azo atao foana ny lisitry ny modely.",
   "options_ready": "Vonona",
   "options_help": "Mandalo amin'ilay singa eo an-toerana amin'ity solosaina ity ny famintinana: mampandeha ny Claude Code na ny Codex miaraka amin'ny famandrihanao izy, na modely ao amin'ny Ollama. Ny mpamatsy nofidinao ihany no andefasana ny lahatsoratry ny pejy.",
   "options_ui_language": "Fitenin'ny fifandraisana",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Mametraha fanontaniana momba ity pejy ity",
   "ui_ask": "Manontania",
   "error_ollama_missing": "Tsy mandeha amin'ity solosaina ity ny Ollama. Apetraho avy amin'ny ollama.com izy ary sokafy, avy eo andramo indray.",
-  "error_ollama_model_missing": "Tsy voasintona ao amin'ny Ollama ity modely ity. Alefaso ny ollama pull miaraka amin'ny anaran'ny modely (ohatra, ollama pull llama3.2), avy eo andramo indray."
+  "error_ollama_model_missing": "Tsy voasintona ao amin'ny Ollama ity modely ity. Alefaso ny ollama pull miaraka amin'ny anaran'ny modely (ohatra, ollama pull llama3.2), avy eo andramo indray.",
+  "options_more_models": "Modely hafa (iray isaky ny andalana)",
+  "options_models_checked": "Novakiana tamin'ny {date} ny lisitry ny modely.",
+  "options_models_never": "Mbola tsy novakiana ny lisitry ny modely.",
+  "options_models_auto": "Avy amin'ny Claude Code, Codex ary Ollama izy ireo, ary vakiana indray indray mandeha isan'andro, rehefa havaozina ny Claude Code na ny Codex, ary rehefa havaozina ny fanitarana.",
+  "options_models_refresh": "Vakio izao"
 }

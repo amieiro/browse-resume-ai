@@ -30,8 +30,6 @@
   "options_display_mode": "Ipakita ang mga summary sa",
   "options_mode_sidepanel": "Side panel",
   "options_mode_popup": "Popup",
-  "options_model_list": "Mga modelo (usa matag linya)",
-  "options_models_empty": "Dili mahimong walay sulod ang listahan sa mga modelo.",
   "options_ready": "Andam na",
   "options_help": "Ang mga summary moagi sa lokal nga component niini nga computer: nagpadagan kini sa Claude Code o Codex gamit ang imong subscription, o og model sa Ollama. Ang teksto sa panid ipadala lang sa provider nga imong pilion.",
   "options_ui_language": "Pinulongan sa interface",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Pangutana bahin niini nga panid",
   "ui_ask": "Pangutana",
   "error_ollama_missing": "Wala nagdagan ang Ollama niini nga computer. I-install kini gikan sa ollama.com ug ablihi, dayon sulayi pag-usab.",
-  "error_ollama_model_missing": "Kini nga model wala ma-download sa Ollama. Padagana ang ollama pull uban sa ngalan sa model (pananglitan, ollama pull llama3.2), dayon sulayi pag-usab."
+  "error_ollama_model_missing": "Kini nga model wala ma-download sa Ollama. Padagana ang ollama pull uban sa ngalan sa model (pananglitan, ollama pull llama3.2), dayon sulayi pag-usab.",
+  "options_more_models": "Dugang nga mga modelo (usa matag linya)",
+  "options_models_checked": "Ang mga lista sa modelo gibasa niadtong {date}.",
+  "options_models_never": "Wala pa mabasa ang mga lista sa modelo.",
+  "options_models_auto": "Gikan kini sa Claude Code, Codex ug Ollama, ug basahon pag-usab kausa sa usa ka adlaw, kon ma-update ang Claude Code o Codex, ug kon ma-update ang extension.",
+  "options_models_refresh": "Basaha karon"
 }

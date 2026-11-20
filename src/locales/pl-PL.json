@@ -30,8 +30,6 @@
   "options_display_mode": "Pokazuj podsumowania w",
   "options_mode_sidepanel": "Panel boczny",
   "options_mode_popup": "Wyskakujące okienko",
-  "options_model_list": "Modele (jeden w wierszu)",
-  "options_models_empty": "Lista modeli nie może być pusta.",
   "options_ready": "Gotowe",
   "options_help": "Podsumowania przechodzą przez lokalny komponent na tym komputerze: uruchamia on Claude Code lub Codex w ramach Twojej subskrypcji albo model w Ollama. Tekst strony jest wysyłany tylko do wybranego dostawcy.",
   "options_ui_language": "Język interfejsu",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Zadaj pytanie o tę stronę",
   "ui_ask": "Zapytaj",
   "error_ollama_missing": "Ollama nie działa na tym komputerze. Zainstaluj ją ze strony ollama.com i otwórz, a następnie spróbuj ponownie.",
-  "error_ollama_model_missing": "Ten model nie jest pobrany w Ollama. Uruchom ollama pull z nazwą modelu (na przykład ollama pull llama3.2), a następnie spróbuj ponownie."
+  "error_ollama_model_missing": "Ten model nie jest pobrany w Ollama. Uruchom ollama pull z nazwą modelu (na przykład ollama pull llama3.2), a następnie spróbuj ponownie.",
+  "options_more_models": "Więcej modeli (jeden w wierszu)",
+  "options_models_checked": "Listy modeli odczytano {date}.",
+  "options_models_never": "Listy modeli nie zostały jeszcze odczytane.",
+  "options_models_auto": "Pochodzą z Claude Code, Codex i Ollama i są odczytywane ponownie raz dziennie, gdy Claude Code lub Codex zostanie zaktualizowany oraz gdy rozszerzenie zostanie zaktualizowane.",
+  "options_models_refresh": "Odczytaj teraz"
 }

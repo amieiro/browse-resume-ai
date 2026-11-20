@@ -30,8 +30,6 @@
   "options_display_mode": "ማጠቃለያዎችን አሳይ በ",
   "options_mode_sidepanel": "የጎን ፓነል",
   "options_mode_popup": "ብቅ-ባይ",
-  "options_model_list": "ሞዴሎች (በአንድ መስመር አንድ)",
-  "options_models_empty": "የሞዴሎቹ ዝርዝር ባዶ ሊሆን አይችልም።",
   "options_ready": "ዝግጁ",
   "options_help": "ማጠቃለያዎች በዚህ ኮምፒውተር ላይ ባለው የአካባቢው ክፍል በኩል ያልፋሉ፤ እሱም Claude Code ወይም Codex በእርስዎ ምዝገባ፣ ወይም በ Ollama ውስጥ ያለ ሞዴል ያሂዳል። የገጹ ጽሑፍ የሚላከው ለመረጡት አቅራቢ ብቻ ነው።",
   "options_ui_language": "የበይነገጽ ቋንቋ",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "ስለዚህ ገጽ ጥያቄ ይጠይቁ",
   "ui_ask": "ጠይቅ",
   "error_ollama_missing": "Ollama በዚህ ኮምፒውተር ላይ እየሰራ አይደለም። ከ ollama.com ይጫኑትና ይክፈቱት፣ ከዚያ እንደገና ይሞክሩ።",
-  "error_ollama_model_missing": "ይህ ሞዴል በ Ollama ውስጥ አልወረደም። ollama pull ን ከሞዴሉ ስም ጋር ያሂዱ (ለምሳሌ፣ ollama pull llama3.2)፣ ከዚያ እንደገና ይሞክሩ።"
+  "error_ollama_model_missing": "ይህ ሞዴል በ Ollama ውስጥ አልወረደም። ollama pull ን ከሞዴሉ ስም ጋር ያሂዱ (ለምሳሌ፣ ollama pull llama3.2)፣ ከዚያ እንደገና ይሞክሩ።",
+  "options_more_models": "ተጨማሪ ሞዴሎች (በአንድ መስመር አንድ)",
+  "options_models_checked": "የሞዴል ዝርዝሮች የተነበቡት {date} ላይ ነው።",
+  "options_models_never": "የሞዴል ዝርዝሮቹ እስካሁን አልተነበቡም።",
+  "options_models_auto": "ከ Claude Code፣ Codex እና Ollama ይመጣሉ፤ በቀን አንድ ጊዜ፣ Claude Code ወይም Codex ሲዘመን፣ እና ቅጥያው ሲዘመን እንደገና ይነበባሉ።",
+  "options_models_refresh": "አሁን አንብባቸው"
 }

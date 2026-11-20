@@ -30,8 +30,6 @@
   "options_display_mode": "Zjeća pokazać w",
   "options_mode_sidepanel": "Bóčny panel",
   "options_mode_popup": "Wuskakowace wokno",
-  "options_model_list": "Modele (jedyn na linku)",
-  "options_models_empty": "Lisćina modelow njesmě prózdna być.",
   "options_ready": "Hotowy",
   "options_help": "Zjeća du přez lokalnu komponentu na tutym ličaku: wona wuwjedźe Claude Code abo Codex z wašim abonementom abo model w Ollama. Tekst strony so jenož k poskićowarjej sćele, kotrehož wuběraće.",
   "options_ui_language": "Rěč powjercha",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Stajće prašenje wo tutej stronje",
   "ui_ask": "Prašeć so",
   "error_ollama_missing": "Ollama na tutym ličaku njeběži. Instalujće ju z ollama.com a wočińće ju, potom spytajće hišće raz.",
-  "error_ollama_model_missing": "Tutón model njeje w Ollama sćehnjeny. Wuwjedźće ollama pull z mjenom modela (na přikład ollama pull llama3.2), potom spytajće hišće raz."
+  "error_ollama_model_missing": "Tutón model njeje w Ollama sćehnjeny. Wuwjedźće ollama pull z mjenom modela (na přikład ollama pull llama3.2), potom spytajće hišće raz.",
+  "options_more_models": "Dalše modele (jedyn na linku)",
+  "options_models_checked": "Lisćiny modelow su so {date} čitali.",
+  "options_models_never": "Lisćiny modelow hišće čitane njejsu.",
+  "options_models_auto": "Pochadźeja z Claude Code, Codex a Ollama a čitaja so jónkróć na dźeń znowa, hdyž so Claude Code abo Codex aktualizuje a hdyž so rozšěrjenje aktualizuje.",
+  "options_models_refresh": "Nětko čitać"
 }

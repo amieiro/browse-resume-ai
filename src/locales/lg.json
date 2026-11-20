@@ -30,8 +30,6 @@
   "options_display_mode": "Laga ebifunze mu",
   "options_mode_sidepanel": "Ekipande eky'oku mabbali",
   "options_mode_popup": "Akadirisa akabuuka",
-  "options_model_list": "Emize (gumu ku buli lunyiriri)",
-  "options_models_empty": "Olukalala lw'emize terusobola kubaamu kintu kyonna.",
   "options_ready": "Kiwedde",
   "options_help": "Ebifunze biyita mu kitundu eky'omu kompyuta eno: kidduka Claude Code oba Codex nga kikozesa okwewandiisa kwo, oba model mu Ollama. Ebigambo by'olupapula biweerezebwa wa mugabi gw'olonze yekka.",
   "options_ui_language": "Olulimi lw'enkola",
@@ -42,5 +40,10 @@
   "ui_ask_placeholder": "Buuza ekibuuzo ku lupapula luno",
   "ui_ask": "Buuza",
   "error_ollama_missing": "Ollama tekola ku kompyuta eno. Giteekemu okuva ku ollama.com ogiggule, oluvannyuma ogezeeko nate.",
-  "error_ollama_model_missing": "Model eno tennawanulibwa mu Ollama. Dduka ollama pull n'erinnya lya model (okugeza, ollama pull llama3.2), oluvannyuma ogezeeko nate."
+  "error_ollama_model_missing": "Model eno tennawanulibwa mu Ollama. Dduka ollama pull n'erinnya lya model (okugeza, ollama pull llama3.2), oluvannyuma ogezeeko nate.",
+  "options_more_models": "Omuze endala (gumu ku buli lunyiriri)",
+  "options_models_checked": "Enkalala z'omuze zasomebwa ku {date}.",
+  "options_models_never": "Enkalala z'omuze tezinnaba kusomebwa.",
+  "options_models_auto": "Zivva mu Claude Code, Codex ne Ollama, era zisomebwa nate omulundi gumu buli lunaku, nga Claude Code oba Codex bizzibwa obuggya, era nga extension ezzibwa obuggya.",
+  "options_models_refresh": "Zisome kati"
 }
