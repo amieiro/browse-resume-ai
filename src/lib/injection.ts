@@ -6,10 +6,12 @@ import type { NoTranscript } from './youtube';
 
 /**
  * Chrome refuses to inject into its own pages and the Web Store, and into any page once the
- * activeTab grant from the last click is gone (the tab navigated elsewhere).
+ * activeTab grant from the last click is gone (the tab navigated elsewhere). Firefox says "Missing
+ * host permission for the tab" when there was no click on the add-on for the tab, for example when
+ * the summary is asked from the sidebar opened with Firefox's own sidebar button.
  */
 export function classifyInjectionError(message: string): 'needs_click' | 'page_unreadable' {
-  return /Cannot access contents of|must request permission/i.test(message) ? 'needs_click' : 'page_unreadable';
+  return /Cannot access contents of|must request permission|Missing host permission/i.test(message) ? 'needs_click' : 'page_unreadable';
 }
 
 /**

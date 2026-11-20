@@ -12,6 +12,10 @@ describe('classifyInjectionError', () => {
     expect(classifyInjectionError(message)).toBe('page_unreadable');
   });
 
+  it('asks for a click in Firefox when the add-on has no access to the tab yet', () => {
+    expect(classifyInjectionError('Missing host permission for the tab')).toBe('needs_click');
+  });
+
   it('asks for a new click when the activeTab grant is gone', () => {
     expect(
       classifyInjectionError(
@@ -83,11 +87,11 @@ describe('extractFromTab in Firefox', () => {
     expect(readPdf).toHaveBeenCalledWith('https://arxiv.org/pdf/1706.03762', '1706.03762');
   });
 
-  it('reports the page as unreadable when it is not a PDF', async () => {
+  it('asks for a click on the add-on when the page is not a PDF', async () => {
     await injectionFails();
     const { extractFromTab } = await import('@/lib/injection');
     const readPdf = vi.fn();
-    await expect(extractFromTab(1, readPdf, async () => false)).rejects.toMatchObject({ code: 'page_unreadable' });
+    await expect(extractFromTab(1, readPdf, async () => false)).rejects.toMatchObject({ code: 'needs_click' });
     expect(readPdf).not.toHaveBeenCalled();
   });
 

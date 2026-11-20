@@ -182,6 +182,10 @@ names do not change between versions, so these links always get the latest one:
 Keep everything in one folder that you will not move, for example `~/browse-resume-ai`: the local
 component is registered with its full path.
 
+Only `browse-resume-ai-chrome.zip` and `browse-resume-ai-firefox.zip` are loaded in the browser.
+`browse-resume-ai-native-host.zip` is never loaded there: it is installed from the terminal, with
+the commands below. Loading it in Firefox fails with "does not contain a valid manifest".
+
 **The local component** (always first). Unzip it in that folder and run its installer, which
 registers it for Chrome, Chromium and Firefox:
 
@@ -215,7 +219,8 @@ then `Expand-Archive -Force browse-resume-ai-chrome.zip chrome`.
 
 **Firefox.** Download the Firefox file and load the zip itself, without unzipping it: open
 `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on…** and choose
-`browse-resume-ai-firefox.zip`. Read [Firefox](#firefox) for what a temporary add-on means.
+`browse-resume-ai-firefox.zip` (not the native host zip). Read [Firefox](#firefox) for what a
+temporary add-on means.
 
 ```sh
 cd ~/browse-resume-ai
@@ -380,8 +385,12 @@ is, load it as a temporary add-on, which Firefox keeps until it restarts:
 4. Firefox asks to allow the add-on to send website content: that is the page text going to the
    local component and from there to the provider you pick.
 
-Then click the toolbar icon (or press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>): the summary
-opens in Firefox's sidebar. Everything else works as in Chrome, with these differences:
+Firefox puts the icon in the **Extensions** menu (the puzzle piece in the toolbar); open it and pin
+**Browse Resume AI** to the toolbar. Then click the icon (or press
+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>, or right-click the page and choose **Summarize the
+page**): the summary opens in Firefox's sidebar. Start a summary this way: Firefox lets the add-on
+read a page only after one of these clicks, so the sidebar opened from Firefox's own sidebar button
+asks you to click the icon first. Everything else works as in Chrome, with these differences:
 
 - PDFs are read the same way, from the file, even though Firefox's PDF viewer cannot be read by
   extensions.
