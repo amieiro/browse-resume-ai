@@ -10,8 +10,14 @@ export const VERSION = (() => {
     return 'unknown';
   }
 })();
+/** Model names passed to the CLIs as an argument: no spaces, no leading dash. */
 export const MODEL_PATTERN = /^[A-Za-z0-9][A-Za-z0-9._\[\]-]{0,63}$/;
-export const PROVIDERS = ['claude', 'codex'];
+/**
+ * Ollama model names have a tag and may have a namespace ("llama3.2:3b", "hf.co/user/repo:Q4_K_M").
+ * They go in a JSON body, never on a command line; ".." is refused all the same.
+ */
+export const OLLAMA_MODEL_PATTERN = /^(?!.*\.\.)[A-Za-z0-9][A-Za-z0-9._:\/-]{0,199}$/;
+export const PROVIDERS = ['claude', 'codex', 'ollama'];
 
 /** Returns null when the message is a valid request, otherwise a reason. */
 export function validateRequest(msg) {
@@ -21,7 +27,8 @@ export function validateRequest(msg) {
   if (msg.type === 'cancel') return null;
   if (msg.type !== 'summarize') return 'unknown type';
   if (!PROVIDERS.includes(msg.provider)) return 'unknown provider';
-  if (typeof msg.model !== 'string' || !MODEL_PATTERN.test(msg.model)) return 'invalid model';
+  const pattern = msg.provider === 'ollama' ? OLLAMA_MODEL_PATTERN : MODEL_PATTERN;
+  if (typeof msg.model !== 'string' || !pattern.test(msg.model)) return 'invalid model';
   if (typeof msg.prompt !== 'string' || !msg.prompt) return 'missing prompt';
   return null;
 }

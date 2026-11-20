@@ -33,12 +33,14 @@
   "options_model_list": "Timodeli (yinye emugceni ngamunye)",
   "options_models_empty": "Luhlu lwetimodeli alukwati kuba lolungenalutfo.",
   "options_ready": "Kulungile",
-  "options_help": "Tifinyeto tendlula encenyeni yasekhaya, lesebentisa i-Claude Code noma i-Codex kulekhompyutha ngekubhalisa kwakho. Umbhalo welikhasi utfunyelwa kuphela kumhlinzeki lomkhetsako.",
+  "options_help": "Tifinyeto tendlula encenyeni yasekhaya kulekhompyutha: isebentisa i-Claude Code noma i-Codex ngekubhalisa kwakho, noma imodeli ku-Ollama. Umbhalo welikhasi utfunyelwa kuphela kumhlinzeki lomkhetsako.",
   "options_ui_language": "Lulwimi lwesikhombimsebenti",
   "options_ui_language_auto": "Kwentekela (lulwimi lwesiphequluli)",
   "menu_summarize_selection": "Finyeta lokukhetsiwe",
   "menu_summarize_page": "Finyeta likhasi",
   "ui_selection": "Umbhalo lokhetsiwe",
   "ui_ask_placeholder": "Buta umbuto ngalelikhasi",
-  "ui_ask": "Buta"
+  "ui_ask": "Buta",
+  "error_ollama_missing": "I-Ollama ayisebenti kulekhompyutha. Yifake usuka ku-ollama.com uyivule, bese uyetama futsi.",
+  "error_ollama_model_missing": "Lemodeli ayikadawunilodwa ku-Ollama. Sebentisa ollama pull nelibito lemodeli (sibonelo, ollama pull llama3.2), bese uyetama futsi."
 }

@@ -33,12 +33,14 @@
   "options_model_list": "Emize (gumu ku buli lunyiriri)",
   "options_models_empty": "Olukalala lw'emize terusobola kubaamu kintu kyonna.",
   "options_ready": "Kiwedde",
-  "options_help": "Ebifunze biyita mu kitundu eky'omu kompyuta, ekidduka Claude Code oba Codex ku kompyuta eno nga kikozesa okwewandiisa kwo. Ebigambo by'olupapula biweerezebwa wa mugabi gw'olonze yekka.",
+  "options_help": "Ebifunze biyita mu kitundu eky'omu kompyuta eno: kidduka Claude Code oba Codex nga kikozesa okwewandiisa kwo, oba model mu Ollama. Ebigambo by'olupapula biweerezebwa wa mugabi gw'olonze yekka.",
   "options_ui_language": "Olulimi lw'enkola",
   "options_ui_language_auto": "Kyokka (olulimi lwa browser)",
   "menu_summarize_selection": "Funza ebirondeddwa",
   "menu_summarize_page": "Funza olupapula",
   "ui_selection": "Ebigambo ebirondeddwa",
   "ui_ask_placeholder": "Buuza ekibuuzo ku lupapula luno",
-  "ui_ask": "Buuza"
+  "ui_ask": "Buuza",
+  "error_ollama_missing": "Ollama tekola ku kompyuta eno. Giteekemu okuva ku ollama.com ogiggule, oluvannyuma ogezeeko nate.",
+  "error_ollama_model_missing": "Model eno tennawanulibwa mu Ollama. Dduka ollama pull n'erinnya lya model (okugeza, ollama pull llama3.2), oluvannyuma ogezeeko nate."
 }

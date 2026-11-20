@@ -33,12 +33,14 @@
   "options_model_list": "모델(한 줄에 하나씩)",
   "options_models_empty": "모델 목록은 비워 둘 수 없습니다.",
   "options_ready": "준비됨",
-  "options_help": "요약은 로컬 구성요소를 거칩니다. 이 구성요소는 사용자의 구독으로 이 컴퓨터에서 Claude Code 또는 Codex를 실행합니다. 페이지 텍스트는 선택한 제공업체에만 전송됩니다.",
+  "options_help": "요약은 이 컴퓨터의 로컬 구성요소를 거칩니다. 이 구성요소는 사용자의 구독으로 Claude Code 또는 Codex를 실행하거나 Ollama의 모델을 실행합니다. 페이지 텍스트는 선택한 제공업체에만 전송됩니다.",
   "options_ui_language": "인터페이스 언어",
   "options_ui_language_auto": "자동(브라우저 언어)",
   "menu_summarize_selection": "선택 영역 요약",
   "menu_summarize_page": "페이지 요약",
   "ui_selection": "선택한 텍스트",
   "ui_ask_placeholder": "이 페이지에 대해 질문하세요",
-  "ui_ask": "질문"
+  "ui_ask": "질문",
+  "error_ollama_missing": "이 컴퓨터에서 Ollama가 실행 중이 아닙니다. ollama.com에서 설치하고 실행한 후 다시 시도하세요.",
+  "error_ollama_model_missing": "이 모델은 Ollama에 다운로드되어 있지 않습니다. 모델 이름과 함께 ollama pull을 실행한 후(예: ollama pull llama3.2) 다시 시도하세요."
 }

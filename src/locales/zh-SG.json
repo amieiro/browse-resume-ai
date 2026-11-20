@@ -33,12 +33,14 @@
   "options_model_list": "模型（每行一个）",
   "options_models_empty": "模型列表不能为空。",
   "options_ready": "就绪",
-  "options_help": "摘要通过本地组件生成，它会使用您的订阅在这台电脑上运行 Claude Code 或 Codex。页面文本只会发送给您选择的提供方。",
+  "options_help": "摘要通过这台电脑上的本地组件生成：它会使用您的订阅运行 Claude Code 或 Codex，或者运行 Ollama 中的模型。页面文本只会发送给您选择的提供方。",
   "options_ui_language": "界面语言",
   "options_ui_language_auto": "自动（浏览器语言）",
   "menu_summarize_selection": "总结所选内容",
   "menu_summarize_page": "总结此页面",
   "ui_selection": "所选文本",
   "ui_ask_placeholder": "就此页面提问",
-  "ui_ask": "提问"
+  "ui_ask": "提问",
+  "error_ollama_missing": "这台电脑上没有运行 Ollama。请从 ollama.com 安装并打开它，然后重试。",
+  "error_ollama_model_missing": "Ollama 中尚未下载此模型。请运行 ollama pull 并加上模型名称（例如 ollama pull llama3.2），然后重试。"
 }

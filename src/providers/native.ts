@@ -18,6 +18,8 @@ const PASSTHROUGH: SummaryErrorCode[] = [
   'claude_auth',
   'codex_missing',
   'codex_signed_out',
+  'ollama_missing',
+  'ollama_model_missing',
   'usage_limit',
   'provider_failed',
 ];
@@ -31,8 +33,11 @@ function disconnectCode(): SummaryErrorCode {
   return /not found|forbidden/i.test(message) ? 'host_missing' : 'provider_failed';
 }
 
-/** Pings the host. Resolves to the pong, or null when the host is missing or silent. */
-export function pingHost(): Promise<Extract<HostMessage, { type: 'pong' }> | null> {
+/**
+ * Pings the host. Resolves to the pong, or null when the host is missing or silent. With ollama, the
+ * host also checks whether Ollama answers (a network request, so only when asked).
+ */
+export function pingHost(options: { ollama?: boolean } = {}): Promise<Extract<HostMessage, { type: 'pong' }> | null> {
   return new Promise((resolve) => {
     let port: NativePort;
     try {
@@ -54,7 +59,7 @@ export function pingHost(): Promise<Extract<HostMessage, { type: 'pong' }> | nul
       clearTimeout(timer);
       resolve(null);
     });
-    port.postMessage({ type: 'ping' });
+    port.postMessage(options.ollama ? { type: 'ping', ollama: true } : { type: 'ping' });
   });
 }
 

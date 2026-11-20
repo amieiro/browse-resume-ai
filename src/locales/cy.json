@@ -33,12 +33,14 @@
   "options_model_list": "Modelau (un i bob llinell)",
   "options_models_empty": "All y rhestr modelau ddim bod yn wag.",
   "options_ready": "Yn barod",
-  "options_help": "Mae crynodebau'n mynd drwy'r gydran leol, sy'n rhedeg Claude Code neu Codex ar y cyfrifiadur hwn gyda'ch tanysgrifiad. Dim ond i'r darparwr rydych chi'n ei ddewis y caiff testun y dudalen ei anfon.",
+  "options_help": "Mae crynodebau'n mynd drwy'r gydran leol ar y cyfrifiadur hwn: mae'n rhedeg Claude Code neu Codex gyda'ch tanysgrifiad, neu fodel yn Ollama. Dim ond i'r darparwr rydych chi'n ei ddewis y caiff testun y dudalen ei anfon.",
   "options_ui_language": "Iaith y rhyngwyneb",
   "options_ui_language_auto": "Awtomatig (iaith y porwr)",
   "menu_summarize_selection": "Crynhoi'r dewis",
   "menu_summarize_page": "Crynhoi'r dudalen",
   "ui_selection": "Testun wedi'i ddewis",
   "ui_ask_placeholder": "Gofynnwch gwestiwn am y dudalen hon",
-  "ui_ask": "Gofyn"
+  "ui_ask": "Gofyn",
+  "error_ollama_missing": "Dyw Ollama ddim yn rhedeg ar y cyfrifiadur hwn. Gosodwch ef o ollama.com a'i agor, yna rhowch gynnig arall arni.",
+  "error_ollama_model_missing": "Dyw'r model hwn ddim wedi'i lwytho i lawr yn Ollama. Rhedwch ollama pull gydag enw'r model (er enghraifft, ollama pull llama3.2), yna rhowch gynnig arall arni."
 }

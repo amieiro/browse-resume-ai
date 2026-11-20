@@ -33,12 +33,14 @@
   "options_model_list": "النماذج (واحد فكل سطر)",
   "options_models_empty": "لائحة النماذج ما يمكنش تكون خاوية.",
   "options_ready": "واجد",
-  "options_help": "الملخصات كتدوز من المكوّن المحلي، اللي كيشغّل Claude Code ولا Codex فهاد الحاسوب بالاشتراك ديالك. نص الصفحة كيتصيفط غير للمزوّد اللي ختاريتي.",
+  "options_help": "الملخصات كتدوز من المكوّن المحلي فهاد الحاسوب: كيشغّل Claude Code ولا Codex بالاشتراك ديالك، ولا شي موديل ف Ollama. نص الصفحة كيتصيفط غير للمزوّد اللي ختاريتي.",
   "options_ui_language": "لغة الواجهة",
   "options_ui_language_auto": "أوتوماتيكي (لغة المتصفح)",
   "menu_summarize_selection": "لخّص النص المختار",
   "menu_summarize_page": "لخّص الصفحة",
   "ui_selection": "النص المختار",
   "ui_ask_placeholder": "سول شي سؤال على هاد الصفحة",
-  "ui_ask": "سول"
+  "ui_ask": "سول",
+  "error_ollama_missing": "ما خدّامش Ollama فهاد الحاسوب. ثبّتو من ollama.com وحلّو، ومن بعد عاود جرّب.",
+  "error_ollama_model_missing": "هاد الموديل ما محمّلش ف Ollama. شغّل ollama pull مع سمية الموديل (بحال ollama pull llama3.2)، ومن بعد عاود جرّب."
 }

@@ -33,12 +33,14 @@
   "options_model_list": "Modellek (soronként egy)",
   "options_models_empty": "A modellek listája nem lehet üres.",
   "options_ready": "Kész",
-  "options_help": "Az összefoglalók a helyi összetevőn keresztül készülnek, amely az előfizetéseddel futtatja a Claude Code-ot vagy a Codexet ezen a számítógépen. Az oldal szövegét csak a kiválasztott szolgáltató kapja meg.",
+  "options_help": "Az összefoglalók ennek a számítógépnek a helyi összetevőjén keresztül készülnek: ez az előfizetéseddel futtatja a Claude Code-ot vagy a Codexet, vagy egy modellt az Ollama alkalmazásban. Az oldal szövegét csak a kiválasztott szolgáltató kapja meg.",
   "options_ui_language": "A felület nyelve",
   "options_ui_language_auto": "Automatikus (a böngésző nyelve)",
   "menu_summarize_selection": "A kijelölés összefoglalása",
   "menu_summarize_page": "Az oldal összefoglalása",
   "ui_selection": "Kijelölt szöveg",
   "ui_ask_placeholder": "Kérdezz valamit erről az oldalról",
-  "ui_ask": "Kérdezés"
+  "ui_ask": "Kérdezés",
+  "error_ollama_missing": "Az Ollama nem fut ezen a számítógépen. Telepítsd az ollama.com oldalról, nyisd meg, majd próbáld újra.",
+  "error_ollama_model_missing": "Ez a modell nincs letöltve az Ollama alkalmazásban. Futtasd az ollama pull parancsot a modell nevével (például ollama pull llama3.2), majd próbáld újra."
 }

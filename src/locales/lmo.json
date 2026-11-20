@@ -33,12 +33,14 @@
   "options_model_list": "Model (vun per riga)",
   "options_models_empty": "La lista di model la pò minga vess voeuida.",
   "options_ready": "Pront",
-  "options_help": "I riassunt passen per el component local, che 'l fa andà Claude Code o Codex in su quell computer chì con el tò abonament. El test de la pagina l'è mandaa domà al fornidor che te scernisset.",
+  "options_help": "I riassunt passen per el component local de quell computer chì: el fa andà Claude Code o Codex con el tò abonament, o un model in Ollama. El test de la pagina l'è mandaa domà al fornidor che te scernisset.",
   "options_ui_language": "Lengua de l'interfacia",
   "options_ui_language_auto": "Automatica (lengua del navigador)",
   "menu_summarize_selection": "Riassumm la selezion",
   "menu_summarize_page": "Riassumm la pagina",
   "ui_selection": "Test selezionaa",
   "ui_ask_placeholder": "Fà una domanda su questa pagina",
-  "ui_ask": "Domanda"
+  "ui_ask": "Domanda",
+  "error_ollama_missing": "Ollama el va minga in su quell computer chì. Installel de ollama.com e derviel, poeu proeuva anmò.",
+  "error_ollama_model_missing": "Quell model chì l'è minga descargaa in Ollama. Fa andà ollama pull cont el nomm del model (per esempi, ollama pull llama3.2), poeu proeuva anmò."
 }

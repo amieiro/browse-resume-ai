@@ -33,12 +33,14 @@
   "options_model_list": "Misalji (gooto e kala diidol)",
   "options_models_empty": "Doggol misalji ngol waawaa wonde mehol.",
   "options_ready": "Ina heɓii",
-  "options_help": "Timmooje ɗee ina njaha e pecel nokkuyankeewal ngal, mo yaltinta Claude Code walla Codex e ordinateer ngal e abonemaa maa. Binndi hello ngoo ina neldee tan e jeyɗo mo cuɓataa.",
+  "options_help": "Timmooje ɗee ina njaha e pecel nokkuyankeewal ordinateer ngal: ina yaltina Claude Code walla Codex e abonemaa maa, walla modeel e nder Ollama. Binndi hello ngoo ina neldee tan e jeyɗo mo cuɓataa.",
   "options_ui_language": "Ɗemngal jokkorde",
   "options_ui_language_auto": "Hoore mum (ɗemngal wanngorde)",
   "menu_summarize_selection": "Timmin ko suɓaa",
   "menu_summarize_page": "Timmin hello ngoo",
   "ui_selection": "Binndi suɓaaɗi",
   "ui_ask_placeholder": "Lamdo naamnal baɗte ngoo hello",
-  "ui_ask": "Lamdo"
+  "ui_ask": "Lamdo",
+  "error_ollama_missing": "Ollama huutortaaka e ordinateer ngal. Aaf ɗum iwde e ollama.com, uddit ɗum, caggal ɗuum eto kadi.",
+  "error_ollama_model_missing": "Modeel ngal aawtaaka e Ollama. Yaltin ollama pull e innde modeel ngal (ko wayi no, ollama pull llama3.2), caggal ɗuum eto kadi."
 }

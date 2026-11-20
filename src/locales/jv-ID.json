@@ -33,12 +33,14 @@
   "options_model_list": "Model (siji saben baris)",
   "options_models_empty": "Dhaptar model ora kena kosong.",
   "options_ready": "Siap",
-  "options_help": "Ringkesan liwat komponen lokal, sing nglakokake Claude Code utawa Codex ing komputer iki nganggo langganan sampeyan. Teks kaca mung dikirim menyang panyedhiya sing sampeyan pilih.",
+  "options_help": "Ringkesan liwat komponen lokal ing komputer iki: komponen iki nglakokake Claude Code utawa Codex nganggo langganan sampeyan, utawa model ing Ollama. Teks kaca mung dikirim menyang panyedhiya sing sampeyan pilih.",
   "options_ui_language": "Basa antarmuka",
   "options_ui_language_auto": "Otomatis (basa browser)",
   "menu_summarize_selection": "Ringkes pilihan",
   "menu_summarize_page": "Ringkes kaca",
   "ui_selection": "Teks sing dipilih",
   "ui_ask_placeholder": "Takon babagan kaca iki",
-  "ui_ask": "Takon"
+  "ui_ask": "Takon",
+  "error_ollama_missing": "Ollama ora mlaku ing komputer iki. Pasang saka ollama.com lan bukak, banjur jajal maneh.",
+  "error_ollama_model_missing": "Model iki durung diundhuh ing Ollama. Lakokna ollama pull karo jeneng modhèle (contoné, ollama pull llama3.2), banjur jajal maneh."
 }

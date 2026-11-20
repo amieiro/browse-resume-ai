@@ -33,12 +33,14 @@
   "options_model_list": "Moodeelota (sarara tokkotti tokko)",
   "options_models_empty": "Tarreen moodeelaa duwwaa ta'uu hin danda'u.",
   "options_ready": "Qophaa'eera",
-  "options_help": "Cuunfaawwan qaama naannoo keessa darbu; innis kompiitara kana irratti maallaqa galmee keetiin Claude Code ykn Codex hojjechiisa. Barreeffamni fuulaa dhiyeessaa ati filatte qofaaf ergama.",
+  "options_help": "Cuunfaawwan qaama naannoo kompiitara kanaa keessa darbu: innis maallaqa galmee keetiin Claude Code ykn Codex, ykn moodeela Ollama keessa jiru hojjechiisa. Barreeffamni fuulaa dhiyeessaa ati filatte qofaaf ergama.",
   "options_ui_language": "Afaan fuula fayyadamaa",
   "options_ui_language_auto": "Ofumaan (afaan brawuzarii)",
   "menu_summarize_selection": "Filannoo cuunfi",
   "menu_summarize_page": "Fuula cuunfi",
   "ui_selection": "Barreeffama filatame",
   "ui_ask_placeholder": "Waa'ee fuula kanaa gaaffii gaafadhu",
-  "ui_ask": "Gaafadhu"
+  "ui_ask": "Gaafadhu",
+  "error_ollama_missing": "Ollama kompiitara kana irratti hin hojjetu. ollama.com irraa fe'iitii bani, achiis irra deebi'ii yaali.",
+  "error_ollama_model_missing": "Moodeelli kun Ollama keessatti hin buufamne. Maqaa moodeelaa wajjin ollama pull hojjechiisi (fakkeenyaaf, ollama pull llama3.2), achiis irra deebi'ii yaali."
 }

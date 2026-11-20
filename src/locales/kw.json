@@ -33,12 +33,14 @@
   "options_model_list": "Patronow (onan pub linen)",
   "options_models_empty": "Ny yll rol an patronow bos gwag.",
   "options_ready": "Parys",
-  "options_help": "Berrheansow a dremen der an rann leel, hag a res Claude Code po Codex war an jynn-amontya ma gans agas koumanans. Nyns yw tekst an folen danvenys saw dhe'n provier a dhewisowgh.",
+  "options_help": "Berrheansow a dremen der an rann leel war an jynn-amontya ma: hi a res Claude Code po Codex gans agas koumanans, po model yn Ollama. Nyns yw tekst an folen danvenys saw dhe'n provier a dhewisowgh.",
   "options_ui_language": "Yeth an ynterfas",
   "options_ui_language_auto": "Awtomatek (yeth an peurel)",
   "menu_summarize_selection": "Berrhe an dewisyans",
   "menu_summarize_page": "Berrhe an folen",
   "ui_selection": "Tekst dewisys",
   "ui_ask_placeholder": "Govynn qwestyon a-dro dhe'n folen ma",
-  "ui_ask": "Govynn"
+  "ui_ask": "Govynn",
+  "error_ollama_missing": "Nyns yw Ollama ow resek war an jynn-amontya ma. Stallyewgh ev a ollama.com ha'y igeri, ena assayewgh arta.",
+  "error_ollama_model_missing": "Nyns yw an model ma iskargys yn Ollama. Resewgh ollama pull gans hanow an model (rag ensampel, ollama pull llama3.2), ena assayewgh arta."
 }

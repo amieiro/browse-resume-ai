@@ -33,12 +33,14 @@
   "options_model_list": "Modèl (youn pa liy)",
   "options_models_empty": "Lis modèl yo pa ka vid.",
   "options_ready": "Pare",
-  "options_help": "Rezime yo pase nan konpozan lokal la, ki egzekite Claude Code oswa Codex sou òdinatè sa a ak abònman ou. Tèks paj la voye sèlman bay founisè ou chwazi a.",
+  "options_help": "Rezime yo pase nan konpozan lokal ki sou òdinatè sa a: li egzekite Claude Code oswa Codex ak abònman ou, oswa yon modèl nan Ollama. Tèks paj la voye sèlman bay founisè ou chwazi a.",
   "options_ui_language": "Lang entèfas la",
   "options_ui_language_auto": "Otomatik (lang navigatè a)",
   "menu_summarize_selection": "Rezime seleksyon an",
   "menu_summarize_page": "Rezime paj la",
   "ui_selection": "Tèks ki chwazi",
   "ui_ask_placeholder": "Poze yon kesyon sou paj sa a",
-  "ui_ask": "Mande"
+  "ui_ask": "Mande",
+  "error_ollama_missing": "Ollama pa ap mache sou òdinatè sa a. Enstale l depi ollama.com epi louvri l, apre sa eseye ankò.",
+  "error_ollama_model_missing": "Modèl sa a pa telechaje nan Ollama. Egzekite ollama pull ak non modèl la (pa egzanp, ollama pull llama3.2), apre sa eseye ankò."
 }

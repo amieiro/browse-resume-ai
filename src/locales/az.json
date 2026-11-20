@@ -33,12 +33,14 @@
   "options_model_list": "Modellər (hər sətirdə biri)",
   "options_models_empty": "Model siyahısı boş ola bilməz.",
   "options_ready": "Hazırdır",
-  "options_help": "Xülasələr lokal komponentdən keçir; o, abunəliyinizlə bu kompüterdə Claude Code və ya Codex-i işə salır. Səhifə mətni yalnız seçdiyiniz provayderə göndərilir.",
+  "options_help": "Xülasələr bu kompüterdəki lokal komponentdən keçir: o, abunəliyinizlə Claude Code və ya Codex-i, yaxud Ollama-dakı bir modeli işə salır. Səhifə mətni yalnız seçdiyiniz provayderə göndərilir.",
   "options_ui_language": "İnterfeys dili",
   "options_ui_language_auto": "Avtomatik (brauzerin dili)",
   "menu_summarize_selection": "Seçilmiş mətni xülasə et",
   "menu_summarize_page": "Səhifəni xülasə et",
   "ui_selection": "Seçilmiş mətn",
   "ui_ask_placeholder": "Bu səhifə haqqında sual verin",
-  "ui_ask": "Soruş"
+  "ui_ask": "Soruş",
+  "error_ollama_missing": "Ollama bu kompüterdə işləmir. Onu ollama.com saytından quraşdırıb açın, sonra yenidən cəhd edin.",
+  "error_ollama_model_missing": "Bu model Ollama-da endirilməyib. ollama pull əmrini model adı ilə icra edin (məsələn, ollama pull llama3.2), sonra yenidən cəhd edin."
 }

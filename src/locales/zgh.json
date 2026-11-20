@@ -33,12 +33,14 @@
   "options_model_list": "ⵉⵎⴷⵢⴰⵜⵏ (ⵢⴰⵏ ⴳ ⴽⵓ ⵉⵣⵔⵉ)",
   "options_models_empty": "ⵓⵔ ⵜⵣⵎⵉⵔ ⵜⵍⴳⴰⵎⵜ ⵏ ⵉⵎⴷⵢⴰⵜⵏ ⴰⴷ ⵜⵉⵍⵉ ⵜⵅⵡⴰ.",
   "options_ready": "ⵢⵓⵊⴰⴷ",
-  "options_help": "ⵉⵙⴳⵣⵍⵏ ⵣⵔⵔⵉⵏ ⵙⴳ ⵓⵎⵙⵙⵓⴷⵙ ⴰⴷⵖⴰⵔⴰⵏ, ⵍⵍⵉ ⵉⵙⵡⵓⵔⴰⵢⵏ Claude Code ⵏⵖ Codex ⴳ ⵓⵎⵙⵙⵓⴷⵙ ⴰ ⵙ ⵓⵎⵢⴰⴳⵓ ⵏⵏⴽ. ⴰⴹⵔⵉⵙ ⵏ ⵜⵙⵏⴰ ⵉⵜⵜⵓⵣⵏⵏⴰ ⵖⴰⵙ ⵉ ⵓⵙⵎⴰⴹ ⵍⵍⵉ ⵜⴼⵔⵏⴷ.",
+  "options_help": "ⵉⵙⴳⵣⵍⵏ ⵣⵔⵔⵉⵏ ⵙⴳ ⵓⵎⵙⵙⵓⴷⵙ ⴰⴷⵖⴰⵔⴰⵏ ⴳ ⵓⵎⵙⵙⵓⴷⵙ ⴰ: ⵉⵙⵡⵓⵔⴰⵢ Claude Code ⵏⵖ Codex ⵙ ⵓⵎⵢⴰⴳⵓ ⵏⵏⴽ, ⵏⵖ ⵢⴰⵏ ⵓⵎⵓⴷⵉⵍ ⴳ Ollama. ⴰⴹⵔⵉⵙ ⵏ ⵜⵙⵏⴰ ⵉⵜⵜⵓⵣⵏⵏⴰ ⵖⴰⵙ ⵉ ⵓⵙⵎⴰⴹ ⵍⵍⵉ ⵜⴼⵔⵏⴷ.",
   "options_ui_language": "ⵜⵓⵜⵍⴰⵢⵜ ⵏ ⵜⴰⵏⵖⵎⵓⵔⵜ",
   "options_ui_language_auto": "ⵙ ⵉⵎⵏⵏⵉ ⵏⵏⵙ (ⵜⵓⵜⵍⴰⵢⵜ ⵏ ⵓⵎⵙⵓⴷⴷⵓ)",
   "menu_summarize_selection": "ⵙⴳⵣⵍ ⴰⵙⵜⴰⵢ",
   "menu_summarize_page": "ⵙⴳⵣⵍ ⵜⴰⵙⵏⴰ",
   "ui_selection": "ⴰⴹⵔⵉⵙ ⵉⵜⵜⵓⵙⵜⴰⵢⵏ",
   "ui_ask_placeholder": "ⵙⵇⵙⴰ ⵖⴼ ⵜⴰⵙⵏⴰ ⴰ",
-  "ui_ask": "ⵙⵇⵙⴰ"
+  "ui_ask": "ⵙⵇⵙⴰ",
+  "error_ollama_missing": "Ollama ⵓⵔ ⵉⵜⵜⵡⵓⵔⴰⵢ ⴳ ⵓⵎⵙⵙⵓⴷⵙ ⴰ. ⵙⵔⵙ ⵜ ⵙⴳ ollama.com ⵜⵕⵥⵎⴷ ⵜ, ⵙⵖ ⴰⵔⵎ ⴷⴰⵖ.",
+  "error_ollama_model_missing": "ⴰⵎⵓⴷⵉⵍ ⴰ ⵓⵔ ⵉⵜⵜⵓⵙⵙⴰⴳⵎ ⴳ Ollama. ⵙⵡⵓⵔⵉ ollama pull ⴷ ⵢⵉⵙⵎ ⵏ ⵓⵎⵓⴷⵉⵍ (ⵙ ⵓⵎⴷⵢⴰ, ollama pull llama3.2), ⵙⵖ ⴰⵔⵎ ⴷⴰⵖ."
 }

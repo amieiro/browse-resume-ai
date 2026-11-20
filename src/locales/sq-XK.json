@@ -33,12 +33,14 @@
   "options_model_list": "Modelet (një për rresht)",
   "options_models_empty": "Lista e modeleve nuk mund të jetë e zbrazët.",
   "options_ready": "Gati",
-  "options_help": "Përmbledhjet kalojnë përmes komponentit lokal, i cili ekzekuton Claude Code ose Codex në këtë kompjuter me abonimin tënd. Teksti i faqes i dërgohet vetëm ofruesit që zgjedh.",
+  "options_help": "Përmbledhjet kalojnë përmes komponentit lokal në këtë kompjuter: ai ekzekuton Claude Code ose Codex me abonimin tënd, ose një model në Ollama. Teksti i faqes i dërgohet vetëm ofruesit që zgjedh.",
   "options_ui_language": "Gjuha e ndërfaqes",
   "options_ui_language_auto": "Automatike (gjuha e shfletuesit)",
   "menu_summarize_selection": "Përmblidhe përzgjedhjen",
   "menu_summarize_page": "Përmblidhe faqen",
   "ui_selection": "Teksti i zgjedhur",
   "ui_ask_placeholder": "Bëj një pyetje për këtë faqe",
-  "ui_ask": "Pyet"
+  "ui_ask": "Pyet",
+  "error_ollama_missing": "Ollama nuk po ekzekutohet në këtë kompjuter. Instaloje nga ollama.com dhe hape, pastaj provo përsëri.",
+  "error_ollama_model_missing": "Ky model nuk është shkarkuar në Ollama. Ekzekuto ollama pull me emrin e modelit (për shembull, ollama pull llama3.2), pastaj provo përsëri."
 }

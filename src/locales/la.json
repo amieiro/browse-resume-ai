@@ -33,12 +33,14 @@
   "options_model_list": "Exemplaria (unum per lineam)",
   "options_models_empty": "Index exemplarium vacuus esse non potest.",
   "options_ready": "Paratum",
-  "options_help": "Summaria per partem localem transeunt, quae Claude Code aut Codex in hoc computatro cum subscriptione tua exsequitur. Textus paginae soli praebitori quem eligis mittitur.",
+  "options_help": "Summaria per partem localem in hoc computatro transeunt: ea Claude Code aut Codex cum subscriptione tua exsequitur, aut exemplar in Ollama. Textus paginae soli praebitori quem eligis mittitur.",
   "options_ui_language": "Lingua interfaciei",
   "options_ui_language_auto": "Automatica (lingua navigatri)",
   "menu_summarize_selection": "Selecta summatim redde",
   "menu_summarize_page": "Paginam summatim redde",
   "ui_selection": "Textus selectus",
   "ui_ask_placeholder": "Quaestionem de hac pagina pone",
-  "ui_ask": "Roga"
+  "ui_ask": "Roga",
+  "error_ollama_missing": "Ollama in hoc computatro non currit. Installa id ex ollama.com et aperi, deinde iterum conare.",
+  "error_ollama_model_missing": "Hoc exemplar in Ollama non est demissum. Exsequere ollama pull cum nomine exemplaris (exempli gratia, ollama pull llama3.2), deinde iterum conare."
 }

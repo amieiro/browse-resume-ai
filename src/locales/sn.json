@@ -33,12 +33,14 @@
   "options_model_list": "MaModhero (rimwe pamutsara)",
   "options_models_empty": "Rondedzero yemaModhero haigone kuva isina chinhu.",
   "options_ready": "Zvagadzirira",
-  "options_help": "Zvidimbu zvinopfuura nechikamu chemuno, chinomhanyisa Claude Code kana Codex pakombiyuta ino uchishandisa kunyoresa kwako. Mavara epeji anotumirwa chete kumupi waunosarudza.",
+  "options_help": "Zvidimbu zvinopfuura nechikamu chemuno pakombiyuta ino: chinomhanyisa Claude Code kana Codex uchishandisa kunyoresa kwako, kana modhi iri mu Ollama. Mavara epeji anotumirwa chete kumupi waunosarudza.",
   "options_ui_language": "Mutauro wechiratidziro",
   "options_ui_language_auto": "Otomatiki (mutauro webhurauza)",
   "menu_summarize_selection": "Pfupisa zvasarudzwa",
   "menu_summarize_page": "Pfupisa peji",
   "ui_selection": "Mavara asarudzwa",
   "ui_ask_placeholder": "Bvunza mubvunzo nezve peji iri",
-  "ui_ask": "Bvunza"
+  "ui_ask": "Bvunza",
+  "error_ollama_missing": "Ollama haisi kushanda pakombiyuta ino. Iise kubva ku ollama.com woivhura, wozoedza zvakare.",
+  "error_ollama_model_missing": "Modhi iyi haina kudhawunirodhwa mu Ollama. Mhanyisa ollama pull nezita remodhi (semuenzaniso, ollama pull llama3.2), wozoedza zvakare."
 }

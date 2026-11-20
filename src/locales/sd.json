@@ -33,12 +33,14 @@
   "options_model_list": "ماڊل (هر سٽ ۾ هڪ)",
   "options_models_empty": "ماڊلن جي فهرست خالي نٿي ٿي سگهي.",
   "options_ready": "تيار",
-  "options_help": "خلاصا مقامي جزي ذريعي ٺهن ٿا، جيڪو توهان جي سبسڪرپشن سان هن ڪمپيوٽر تي Claude Code يا Codex هلائي ٿو. صفحي جو متن رڳو توهان جي چونڊيل فراهم ڪندڙ ڏانهن موڪليو وڃي ٿو.",
+  "options_help": "خلاصا هن ڪمپيوٽر تي مقامي جزي ذريعي ٺهن ٿا: اهو توهان جي سبسڪرپشن سان Claude Code يا Codex هلائي ٿو، يا Ollama ۾ ڪو ماڊل. صفحي جو متن رڳو توهان جي چونڊيل فراهم ڪندڙ ڏانهن موڪليو وڃي ٿو.",
   "options_ui_language": "انٽرفيس جي ٻولي",
   "options_ui_language_auto": "خودڪار (برائوزر جي ٻولي)",
   "menu_summarize_selection": "چونڊ جو خلاصو ٺاهيو",
   "menu_summarize_page": "صفحي جو خلاصو ٺاهيو",
   "ui_selection": "چونڊيل متن",
   "ui_ask_placeholder": "هن صفحي بابت سوال پڇو",
-  "ui_ask": "پڇو"
+  "ui_ask": "پڇو",
+  "error_ollama_missing": "هن ڪمپيوٽر تي Ollama نه هلي رهيو آهي. ان کي ollama.com تان انسٽال ڪريو ۽ کوليو، پوءِ ٻيهر ڪوشش ڪريو.",
+  "error_ollama_model_missing": "هي ماڊل Ollama ۾ ڊائونلوڊ ٿيل ناهي. ماڊل جي نالي سان ollama pull هلايو (مثال طور، ollama pull llama3.2)، پوءِ ٻيهر ڪوشش ڪريو."
 }

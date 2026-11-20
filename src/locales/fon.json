@@ -33,12 +33,14 @@
   "options_model_list": "Wuntun lɛ (ɖokpo ɖò flí ɖokpo ɖokpo jí)",
   "options_models_empty": "Wuntun lɛ sín liste ɔ ka sixu nyí nǔ ɖě ma ɖè mɛ ǎ.",
   "options_ready": "Ðò gbesisɔ mɛ",
-  "options_help": "Xókpɛ́n lɛ nɔ gbɔ akpáxwé fí ɔ tɔn ɔ mɛ, bɔ é nɔ bló Claude Code alǒ Codex ɖò ordinatɛ́ɛ elɔ jí kpo abonnement towe kpo. Wema bló ɔ sín wekpa nɔ yì mɛ e nɔ na nǔ é bɔ a sɔ́ é ɔ ɖeɖee kɛɖɛ.",
+  "options_help": "Xókpɛ́n lɛ nɔ gbɔ akpáxwé fí ɔ tɔn ɔ mɛ ɖò ordinatɛ́ɛ elɔ jí: é nɔ bló Claude Code alǒ Codex kpo abonnement towe kpo, alǒ modɛ́li ɖé ɖò Ollama mɛ. Wema bló ɔ sín wekpa nɔ yì mɛ e nɔ na nǔ é bɔ a sɔ́ é ɔ ɖeɖee kɛɖɛ.",
   "options_ui_language": "Interface ɔ sín gbè",
   "options_ui_language_auto": "Ðéɖée (navigateur ɔ sín gbè)",
   "menu_summarize_selection": "Kpɛ́n xó e a sɔ́ é",
   "menu_summarize_page": "Kpɛ́n xó wema bló ɔ tɔn",
   "ui_selection": "Xó e a sɔ́ é",
   "ui_ask_placeholder": "Kanbyɔ́ nǔ ɖé dó wema bló elɔ ɔ wu",
-  "ui_ask": "Kanbyɔ́"
+  "ui_ask": "Kanbyɔ́",
+  "error_ollama_missing": "Ollama ɖò azɔ̌ wa wɛ ɖò ordinatɛ́ɛ elɔ jí ǎ. Ðó é sín ollama.com, bo hun i, bo lɛ́vɔ́ tẹ́n kpɔ́n.",
+  "error_ollama_model_missing": "È gbɛ́ modɛ́li elɔ ɖó Ollama mɛ ǎ. Bló ollama pull kpo modɛ́li ɔ sín nyikɔ kpo (di ollama pull llama3.2), bo lɛ́vɔ́ tẹ́n kpɔ́n."
 }

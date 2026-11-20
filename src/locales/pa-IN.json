@@ -33,12 +33,14 @@
   "options_model_list": "ਮਾਡਲ (ਹਰ ਲਾਈਨ ਵਿੱਚ ਇੱਕ)",
   "options_models_empty": "ਮਾਡਲਾਂ ਦੀ ਸੂਚੀ ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦੀ।",
   "options_ready": "ਤਿਆਰ",
-  "options_help": "ਸਾਰ ਸਥਾਨਕ ਕੰਪੋਨੈਂਟ ਰਾਹੀਂ ਬਣਦੇ ਹਨ, ਜੋ ਤੁਹਾਡੀ ਗਾਹਕੀ ਨਾਲ ਇਸ ਕੰਪਿਊਟਰ 'ਤੇ Claude Code ਜਾਂ Codex ਚਲਾਉਂਦਾ ਹੈ। ਪੰਨੇ ਦੀ ਲਿਖਤ ਸਿਰਫ਼ ਤੁਹਾਡੇ ਚੁਣੇ ਪ੍ਰਦਾਤਾ ਨੂੰ ਭੇਜੀ ਜਾਂਦੀ ਹੈ।",
+  "options_help": "ਸਾਰ ਇਸ ਕੰਪਿਊਟਰ 'ਤੇ ਸਥਾਨਕ ਕੰਪੋਨੈਂਟ ਰਾਹੀਂ ਬਣਦੇ ਹਨ: ਇਹ ਤੁਹਾਡੀ ਗਾਹਕੀ ਨਾਲ Claude Code ਜਾਂ Codex, ਜਾਂ Ollama ਵਿੱਚ ਕੋਈ ਮਾਡਲ ਚਲਾਉਂਦਾ ਹੈ। ਪੰਨੇ ਦੀ ਲਿਖਤ ਸਿਰਫ਼ ਤੁਹਾਡੇ ਚੁਣੇ ਪ੍ਰਦਾਤਾ ਨੂੰ ਭੇਜੀ ਜਾਂਦੀ ਹੈ।",
   "options_ui_language": "ਇੰਟਰਫੇਸ ਦੀ ਭਾਸ਼ਾ",
   "options_ui_language_auto": "ਆਟੋਮੈਟਿਕ (ਬ੍ਰਾਊਜ਼ਰ ਦੀ ਭਾਸ਼ਾ)",
   "menu_summarize_selection": "ਚੋਣ ਦਾ ਸਾਰ ਬਣਾਓ",
   "menu_summarize_page": "ਪੰਨੇ ਦਾ ਸਾਰ ਬਣਾਓ",
   "ui_selection": "ਚੁਣਿਆ ਗਿਆ ਟੈਕਸਟ",
   "ui_ask_placeholder": "ਇਸ ਪੰਨੇ ਬਾਰੇ ਸਵਾਲ ਪੁੱਛੋ",
-  "ui_ask": "ਪੁੱਛੋ"
+  "ui_ask": "ਪੁੱਛੋ",
+  "error_ollama_missing": "ਇਸ ਕੰਪਿਊਟਰ 'ਤੇ Ollama ਨਹੀਂ ਚੱਲ ਰਿਹਾ। ਇਸਨੂੰ ollama.com ਤੋਂ ਸਥਾਪਤ ਕਰੋ ਅਤੇ ਖੋਲ੍ਹੋ, ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "error_ollama_model_missing": "ਇਹ ਮਾਡਲ Ollama ਵਿੱਚ ਡਾਊਨਲੋਡ ਨਹੀਂ ਕੀਤਾ ਗਿਆ। ਮਾਡਲ ਦੇ ਨਾਮ ਨਾਲ ollama pull ਚਲਾਓ (ਉਦਾਹਰਨ ਲਈ, ollama pull llama3.2), ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
 }

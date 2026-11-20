@@ -33,12 +33,14 @@
   "options_model_list": "Modelle (een per reël)",
   "options_models_empty": "Die modellys kan nie leeg wees nie.",
   "options_ready": "Gereed",
-  "options_help": "Opsommings gaan deur die plaaslike komponent, wat Claude Code of Codex met jou intekening op hierdie rekenaar laat loop. Bladsyteks word net na die verskaffer gestuur wat jy kies.",
+  "options_help": "Opsommings gaan deur die plaaslike komponent op hierdie rekenaar: dit laat loop Claude Code of Codex met jou intekening, of 'n model in Ollama. Bladsyteks word net na die verskaffer gestuur wat jy kies.",
   "options_ui_language": "Koppelvlaktaal",
   "options_ui_language_auto": "Outomaties (blaaier se taal)",
   "menu_summarize_selection": "Som die seleksie op",
   "menu_summarize_page": "Som die bladsy op",
   "ui_selection": "Geselekteerde teks",
   "ui_ask_placeholder": "Vra 'n vraag oor hierdie bladsy",
-  "ui_ask": "Vra"
+  "ui_ask": "Vra",
+  "error_ollama_missing": "Ollama loop nie op hierdie rekenaar nie. Installeer dit vanaf ollama.com en maak dit oop, en probeer dan weer.",
+  "error_ollama_model_missing": "Hierdie model is nie in Ollama afgelaai nie. Voer ollama pull met die modelnaam uit (byvoorbeeld ollama pull llama3.2) en probeer dan weer."
 }

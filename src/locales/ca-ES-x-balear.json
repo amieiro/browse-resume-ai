@@ -33,12 +33,14 @@
   "options_model_list": "Models (un per línia)",
   "options_models_empty": "La llista de models no pot estar buida.",
   "options_ready": "Fet",
-  "options_help": "Els resums passen pel component local, que executa Claude Code o Codex a aquest ordinador amb la vostra subscripció. El text de la pàgina només s'envia al proveïdor que triau.",
+  "options_help": "Els resums passen pel component local d'aquest ordinador: executa Claude Code o Codex amb la vostra subscripció, o un model a Ollama. El text de la pàgina només s'envia al proveïdor que triau.",
   "options_ui_language": "Idioma de la interfície",
   "options_ui_language_auto": "Automàtic (idioma del navegador)",
   "menu_summarize_selection": "Resumeix la selecció",
   "menu_summarize_page": "Resumeix la pàgina",
   "ui_selection": "Text seleccionat",
   "ui_ask_placeholder": "Feis una pregunta sobre aquesta pàgina",
-  "ui_ask": "Pregunta"
+  "ui_ask": "Pregunta",
+  "error_ollama_missing": "Ollama no s'està executant a aquest ordinador. Instal·lau-lo des d'ollama.com i obriu-lo, i després tornau-ho a provar.",
+  "error_ollama_model_missing": "Aquest model no està baixat a Ollama. Executau ollama pull amb el nom del model (per exemple, ollama pull llama3.2) i després tornau-ho a provar."
 }

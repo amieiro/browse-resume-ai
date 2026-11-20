@@ -33,12 +33,14 @@
   "options_model_list": "ሞዴላት (ኣብ ነፍሲ ወከፍ መስመር ሓደ)",
   "options_models_empty": "ዝርዝር ሞዴላት ባዶ ክኸውን ኣይክእልን።",
   "options_ready": "ድሉው",
-  "options_help": "ጽማቝታት ብመንገዲ እቲ ከባቢያዊ ኣካል ይሓልፉ፣ ንሱ ድማ ብምዝገባኻ ኣብዚ ኮምፒተር Claude Code ወይ Codex የኺድ። ጽሑፍ እቲ ገጽ ናብቲ ዝመረጽካዮ ኣቕራቢ ጥራይ ይለኣኽ።",
+  "options_help": "ጽማቝታት ብመንገዲ እቲ ኣብዚ ኮምፒተር ዘሎ ከባቢያዊ ኣካል ይሓልፉ፦ ንሱ ብምዝገባኻ Claude Code ወይ Codex፣ ወይ ኣብ Ollama ዘሎ ሞዴል የኺድ። ጽሑፍ እቲ ገጽ ናብቲ ዝመረጽካዮ ኣቕራቢ ጥራይ ይለኣኽ።",
   "options_ui_language": "ቋንቋ መተሓሳሰቢ",
   "options_ui_language_auto": "ባዕላዊ (ቋንቋ መርበብ ሓበሬታ)",
   "menu_summarize_selection": "ዝተመርጸ ጽመቕ",
   "menu_summarize_page": "ገጽ ጽመቕ",
   "ui_selection": "ዝተመርጸ ጽሑፍ",
   "ui_ask_placeholder": "ብዛዕባ እዚ ገጽ ሕቶ ሕተት",
-  "ui_ask": "ሕተት"
+  "ui_ask": "ሕተት",
+  "error_ollama_missing": "Ollama ኣብዚ ኮምፒተር ይሰርሕ ኣይኮነን። ካብ ollama.com ጸዓኖን ክፈቶን፣ ድሕሪኡ እንደገና ፈትን።",
+  "error_ollama_model_missing": "እዚ ሞዴል ኣብ Ollama ኣይወረደን። ollama pull ምስ ስም እቲ ሞዴል ኣኺድ (ንኣብነት፣ ollama pull llama3.2)፣ ድሕሪኡ እንደገና ፈትን።"
 }

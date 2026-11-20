@@ -33,12 +33,14 @@
   "options_model_list": "Model ókkol (fottí lain ot ekkán)",
   "options_models_empty": "Model or lisht yán hali tháki no fare.",
   "options_ready": "Toiyar",
-  "options_help": "Sóti hotha ókkol lokal komfonent loi zagoi, ze yán tuáñr sobskripshon loi ey kompiutar ot Claude Code yáñ Codex solá. Fata or lekar hotha óilla tuñi basi lóiyo ze dedeya, yáre fail deoá zagoi.",
+  "options_help": "Sóti hotha ókkol ey kompiutar or lokal komfonent loi zagoi: yán tuáñr sobskripshon loi Claude Code yáñ Codex solá, yáñ Ollama ot ekkan model solá. Fata or lekar hotha óilla tuñi basi lóiyo ze dedeya, yáre fail deoá zagoi.",
   "options_ui_language": "Interfeis or zuban",
   "options_ui_language_auto": "Nizé nizé (browser or zuban)",
   "menu_summarize_selection": "Basi loiye de yán sóti gor",
   "menu_summarize_page": "Fata yán sóti gor",
   "ui_selection": "Basi loiye de lekha",
   "ui_ask_placeholder": "Ey fata yán lói ekkán sual gor",
-  "ui_ask": "Sual gor"
+  "ui_ask": "Sual gor",
+  "error_ollama_missing": "Ey kompiutar ot Ollama no solér. ollama.com tú instal gor arr kúlo, baade abar sesta gor.",
+  "error_ollama_model_missing": "Ey model Ollama ot daunlod no gorá. Model or nam loi ollama pull solá (missal, ollama pull llama3.2), baade abar sesta gor."
 }

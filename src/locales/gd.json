@@ -33,12 +33,14 @@
   "options_model_list": "Modailean (aon air gach loidhne)",
   "options_models_empty": "Chan fhaod liosta nam modailean a bhith falamh.",
   "options_ready": "Deiseil",
-  "options_help": "Thèid na gearr-chunntasan tron cho-phàirt ionadail, a ruitheas Claude Code no Codex air a’ choimpiutair seo leis an fho-sgrìobhadh agad. Cha tèid teacsa na duilleige a chur ach dhan t-solaraiche a thaghas tu.",
+  "options_help": "Thèid na gearr-chunntasan tron cho-phàirt ionadail air a’ choimpiutair seo: ruithidh i Claude Code no Codex leis an fho-sgrìobhadh agad, no modail ann an Ollama. Cha tèid teacsa na duilleige a chur ach dhan t-solaraiche a thaghas tu.",
   "options_ui_language": "Cànan na h-eadar-aghaidh",
   "options_ui_language_auto": "Fèin-obrachail (cànan a’ bhrabhsair)",
   "menu_summarize_selection": "Dèan gearr-chunntas air an taghadh",
   "menu_summarize_page": "Dèan gearr-chunntas air an duilleag",
   "ui_selection": "Teacsa taghte",
   "ui_ask_placeholder": "Faighnich ceist mun duilleag seo",
-  "ui_ask": "Faighnich"
+  "ui_ask": "Faighnich",
+  "error_ollama_missing": "Chan eil Ollama a’ ruith air a’ choimpiutair seo. Stàlaich e o ollama.com is fosgail e, an uairsin feuch ris a-rithist.",
+  "error_ollama_model_missing": "Cha deach am modail seo a luchdadh a-nuas ann an Ollama. Ruith ollama pull le ainm a’ mhodail (mar eisimpleir, ollama pull llama3.2), an uairsin feuch ris a-rithist."
 }

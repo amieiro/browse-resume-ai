@@ -33,12 +33,14 @@
   "options_model_list": "Modellos (unu pro riga)",
   "options_models_empty": "Sa lista de sos modellos non podet èssere bòida.",
   "options_ready": "Prontu",
-  "options_help": "Sos resumos passant pro su cumponente locale, chi esecutat Claude Code o Codex in custu elaboradore cun s'abbonamentu tuo. Su testu de sa pàgina est imbiadu isceti a su frunidore chi seberas.",
+  "options_help": "Sos resumos passant pro su cumponente locale de custu elaboradore: esecutat Claude Code o Codex cun s'abbonamentu tuo, o unu modellu in Ollama. Su testu de sa pàgina est imbiadu isceti a su frunidore chi seberas.",
   "options_ui_language": "Limba de s'interfàtzia",
   "options_ui_language_auto": "Automàticu (limba de su navigadore)",
   "menu_summarize_selection": "Resume sa seletzione",
   "menu_summarize_page": "Resume sa pàgina",
   "ui_selection": "Testu seletzionadu",
   "ui_ask_placeholder": "Faghe una pregunta subra de custa pàgina",
-  "ui_ask": "Pregunta"
+  "ui_ask": "Pregunta",
+  "error_ollama_missing": "Ollama no est in esecutzione in custu elaboradore. Installa·lu dae ollama.com e aberi·lu, e a pustis torra a proare.",
+  "error_ollama_model_missing": "Custu modellu no est iscarrigadu in Ollama. Esecuta ollama pull cun su nòmine de su modellu (pro esempru, ollama pull llama3.2), e a pustis torra a proare."
 }

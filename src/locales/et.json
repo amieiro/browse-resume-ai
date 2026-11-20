@@ -33,12 +33,14 @@
   "options_model_list": "Mudelid (üks rea kohta)",
   "options_models_empty": "Mudelite loend ei saa olla tühi.",
   "options_ready": "Valmis",
-  "options_help": "Kokkuvõtted liiguvad läbi kohaliku komponendi, mis käitab selles arvutis sinu tellimusega Claude Code'i või Codexit. Lehe tekst saadetakse ainult sinu valitud teenusepakkujale.",
+  "options_help": "Kokkuvõtted liiguvad läbi selle arvuti kohaliku komponendi: see käitab sinu tellimusega Claude Code'i või Codexit või mudelit Ollamas. Lehe tekst saadetakse ainult sinu valitud teenusepakkujale.",
   "options_ui_language": "Liidese keel",
   "options_ui_language_auto": "Automaatne (brauseri keel)",
   "menu_summarize_selection": "Tee valikust kokkuvõte",
   "menu_summarize_page": "Tee lehest kokkuvõte",
   "ui_selection": "Valitud tekst",
   "ui_ask_placeholder": "Esita selle lehe kohta küsimus",
-  "ui_ask": "Küsi"
+  "ui_ask": "Küsi",
+  "error_ollama_missing": "Ollama ei tööta selles arvutis. Installi see aadressilt ollama.com, ava see ja proovi siis uuesti.",
+  "error_ollama_model_missing": "Seda mudelit pole Ollamasse alla laaditud. Käivita ollama pull koos mudeli nimega (näiteks ollama pull llama3.2) ja proovi siis uuesti."
 }

@@ -33,12 +33,14 @@
   "options_model_list": "Modeli (jedan po retku)",
   "options_models_empty": "Popis modela ne može biti prazan.",
   "options_ready": "Spremno",
-  "options_help": "Sažeci prolaze kroz lokalnu komponentu koja na ovom računalu pokreće Claude Code ili Codex s vašom pretplatom. Tekst stranice šalje se samo pružatelju kojeg odaberete.",
+  "options_help": "Sažeci prolaze kroz lokalnu komponentu na ovom računalu: ona pokreće Claude Code ili Codex s vašom pretplatom ili model u alatu Ollama. Tekst stranice šalje se samo pružatelju kojeg odaberete.",
   "options_ui_language": "Jezik sučelja",
   "options_ui_language_auto": "Automatski (jezik preglednika)",
   "menu_summarize_selection": "Sažmi odabir",
   "menu_summarize_page": "Sažmi stranicu",
   "ui_selection": "Odabrani tekst",
   "ui_ask_placeholder": "Postavite pitanje o ovoj stranici",
-  "ui_ask": "Pitaj"
+  "ui_ask": "Pitaj",
+  "error_ollama_missing": "Ollama nije pokrenuta na ovom računalu. Instalirajte je s ollama.com i otvorite, a zatim pokušajte ponovno.",
+  "error_ollama_model_missing": "Ovaj model nije preuzet u alatu Ollama. Pokrenite ollama pull s nazivom modela (na primjer, ollama pull llama3.2), a zatim pokušajte ponovno."
 }

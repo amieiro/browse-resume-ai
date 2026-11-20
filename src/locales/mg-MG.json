@@ -33,12 +33,14 @@
   "options_model_list": "Modely (iray isaky ny andalana)",
   "options_models_empty": "Tsy azo atao foana ny lisitry ny modely.",
   "options_ready": "Vonona",
-  "options_help": "Mandalo amin'ilay singa eo an-toerana ny famintinana, izay mampandeha ny Claude Code na ny Codex amin'ity solosaina ity miaraka amin'ny famandrihanao. Ny mpamatsy nofidinao ihany no andefasana ny lahatsoratry ny pejy.",
+  "options_help": "Mandalo amin'ilay singa eo an-toerana amin'ity solosaina ity ny famintinana: mampandeha ny Claude Code na ny Codex miaraka amin'ny famandrihanao izy, na modely ao amin'ny Ollama. Ny mpamatsy nofidinao ihany no andefasana ny lahatsoratry ny pejy.",
   "options_ui_language": "Fitenin'ny fifandraisana",
   "options_ui_language_auto": "Mandeha ho azy (fitenin'ny mpitety tranonkala)",
   "menu_summarize_selection": "Famintino ny voafantina",
   "menu_summarize_page": "Famintino ny pejy",
   "ui_selection": "Lahatsoratra voafantina",
   "ui_ask_placeholder": "Mametraha fanontaniana momba ity pejy ity",
-  "ui_ask": "Manontania"
+  "ui_ask": "Manontania",
+  "error_ollama_missing": "Tsy mandeha amin'ity solosaina ity ny Ollama. Apetraho avy amin'ny ollama.com izy ary sokafy, avy eo andramo indray.",
+  "error_ollama_model_missing": "Tsy voasintona ao amin'ny Ollama ity modely ity. Alefaso ny ollama pull miaraka amin'ny anaran'ny modely (ohatra, ollama pull llama3.2), avy eo andramo indray."
 }

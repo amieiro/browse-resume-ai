@@ -33,12 +33,14 @@
   "options_model_list": "Nā kumu hoʻohālike (hoʻokahi i ka laina)",
   "options_models_empty": "ʻAʻole hiki i ka papa inoa kumu hoʻohālike ke nele.",
   "options_ready": "Mākaukau",
-  "options_help": "Hele nā hōʻuluʻulu ma o ka ʻāpana kūloko, nāna e holo iā Claude Code a i ʻole Codex ma kēia kamepiula me kāu kau inoa. Hoʻouna ʻia ke kikokikona o ka ʻaoʻao i ka mea hoʻolako āu e koho ai wale nō.",
+  "options_help": "Hele nā hōʻuluʻulu ma o ka ʻāpana kūloko ma kēia kamepiula: holo ia iā Claude Code a i ʻole Codex me kāu kau inoa, a i ʻole i kekahi kumu hoʻohālike ma Ollama. Hoʻouna ʻia ke kikokikona o ka ʻaoʻao i ka mea hoʻolako āu e koho ai wale nō.",
   "options_ui_language": "ʻŌlelo o ke kikowaena",
   "options_ui_language_auto": "ʻAkomakika (ka ʻōlelo o ka polokalamu kele pūnaewele)",
   "menu_summarize_selection": "Hōʻuluʻulu i ka mea i koho ʻia",
   "menu_summarize_page": "Hōʻuluʻulu i ka ʻaoʻao",
   "ui_selection": "Kikokikona i koho ʻia",
   "ui_ask_placeholder": "E nīnau i kekahi mea no kēia ʻaoʻao",
-  "ui_ask": "Nīnau"
+  "ui_ask": "Nīnau",
+  "error_ollama_missing": "ʻAʻole holo ʻo Ollama ma kēia kamepiula. E hoʻokomo iā ia mai ollama.com a wehe iā ia, a laila e hoʻāʻo hou.",
+  "error_ollama_model_missing": "ʻAʻole i hoʻoiho ʻia kēia kumu hoʻohālike ma Ollama. E holo i ka ollama pull me ka inoa o ke kumu hoʻohālike (no ka laʻana, ollama pull llama3.2), a laila e hoʻāʻo hou."
 }

@@ -33,12 +33,14 @@
   "options_model_list": "Mallit (yksi per rivi)",
   "options_models_empty": "Malliluettelo ei voi olla tyhjä.",
   "options_ready": "Valmis",
-  "options_help": "Tiivistelmät kulkevat paikallisen komponentin kautta, joka ajaa Claude Codea tai Codexia tällä tietokoneella tilauksesi avulla. Sivun teksti lähetetään vain valitsemallesi palveluntarjoajalle.",
+  "options_help": "Tiivistelmät kulkevat tämän tietokoneen paikallisen komponentin kautta: se ajaa Claude Codea tai Codexia tilauksesi avulla tai mallia Ollamassa. Sivun teksti lähetetään vain valitsemallesi palveluntarjoajalle.",
   "options_ui_language": "Käyttöliittymän kieli",
   "options_ui_language_auto": "Automaattinen (selaimen kieli)",
   "menu_summarize_selection": "Tiivistä valinta",
   "menu_summarize_page": "Tiivistä sivu",
   "ui_selection": "Valittu teksti",
   "ui_ask_placeholder": "Kysy jotain tästä sivusta",
-  "ui_ask": "Kysy"
+  "ui_ask": "Kysy",
+  "error_ollama_missing": "Ollama ei ole käynnissä tällä tietokoneella. Asenna se osoitteesta ollama.com, avaa se ja yritä sitten uudelleen.",
+  "error_ollama_model_missing": "Tätä mallia ei ole ladattu Ollamaan. Suorita ollama pull mallin nimen kanssa (esimerkiksi ollama pull llama3.2) ja yritä sitten uudelleen."
 }

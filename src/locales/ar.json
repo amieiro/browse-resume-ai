@@ -33,12 +33,14 @@
   "options_model_list": "النماذج (نموذج واحد في كل سطر)",
   "options_models_empty": "لا يمكن أن تكون قائمة النماذج فارغة.",
   "options_ready": "جاهز",
-  "options_help": "تمر الملخّصات عبر المكوّن المحلي، الذي يشغّل Claude Code أو Codex على هذا الكمبيوتر باستخدام اشتراكك. لا يُرسَل نص الصفحة إلا إلى المزوّد الذي تختاره.",
+  "options_help": "تمر الملخّصات عبر المكوّن المحلي على هذا الكمبيوتر: فهو يشغّل Claude Code أو Codex باستخدام اشتراكك، أو نموذجًا في Ollama. لا يُرسَل نص الصفحة إلا إلى المزوّد الذي تختاره.",
   "options_ui_language": "لغة الواجهة",
   "options_ui_language_auto": "تلقائي (لغة المتصفح)",
   "menu_summarize_selection": "تلخيص التحديد",
   "menu_summarize_page": "تلخيص الصفحة",
   "ui_selection": "النص المحدد",
   "ui_ask_placeholder": "اطرح سؤالاً عن هذه الصفحة",
-  "ui_ask": "اسأل"
+  "ui_ask": "اسأل",
+  "error_ollama_missing": "لا يعمل Ollama على هذا الكمبيوتر. ثبّته من ollama.com وافتحه، ثم حاول مرة أخرى.",
+  "error_ollama_model_missing": "هذا النموذج غير مُنزَّل في Ollama. شغّل ollama pull مع اسم النموذج (مثلًا ollama pull llama3.2)، ثم حاول مرة أخرى."
 }

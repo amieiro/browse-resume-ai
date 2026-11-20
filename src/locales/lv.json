@@ -33,12 +33,14 @@
   "options_model_list": "Modeļi (viens katrā rindā)",
   "options_models_empty": "Modeļu saraksts nevar būt tukšs.",
   "options_ready": "Gatavs",
-  "options_help": "Kopsavilkumi tiek veidoti caur lokālo komponentu, kas šajā datorā palaiž Claude Code vai Codex ar jūsu abonementu. Lapas teksts tiek nosūtīts tikai jūsu izvēlētajam pakalpojuma sniedzējam.",
+  "options_help": "Kopsavilkumi tiek veidoti caur lokālo komponentu šajā datorā: tas palaiž Claude Code vai Codex ar jūsu abonementu vai modeli Ollama. Lapas teksts tiek nosūtīts tikai jūsu izvēlētajam pakalpojuma sniedzējam.",
   "options_ui_language": "Saskarnes valoda",
   "options_ui_language_auto": "Automātiski (pārlūka valoda)",
   "menu_summarize_selection": "Apkopot atlasi",
   "menu_summarize_page": "Apkopot lapu",
   "ui_selection": "Atlasītais teksts",
   "ui_ask_placeholder": "Uzdodiet jautājumu par šo lapu",
-  "ui_ask": "Jautāt"
+  "ui_ask": "Jautāt",
+  "error_ollama_missing": "Ollama šajā datorā nedarbojas. Instalējiet to no ollama.com un atveriet, pēc tam mēģiniet vēlreiz.",
+  "error_ollama_model_missing": "Šis modelis nav lejupielādēts Ollama. Palaidiet ollama pull ar modeļa nosaukumu (piemēram, ollama pull llama3.2), pēc tam mēģiniet vēlreiz."
 }

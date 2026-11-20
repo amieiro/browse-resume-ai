@@ -33,12 +33,14 @@
   "options_model_list": "مدل (ھر لَڑا یکّے)",
   "options_models_empty": "مدلانی لڑ ھالیگ بوت نہ کنت.",
   "options_ready": "تیار",
-  "options_help": "کۆتاھیں نبشتانک لوکلیں بہرئے راھا گوزنت، کہ Claude Code یا Codex ءَ اے کمپیوٹرا گوں تئی اشتراکا اجرا کنت. تاکئے متن بس ھما سرجم کنوکا رئوت کہ تو گچین کنئے.",
+  "options_help": "کۆتاھیں نبشتانک اے کمپیوٹرئے لوکلیں بہرئے راھا گوزنت: اے Claude Code یا Codex ءَ گوں تئی اشتراکا، یا Ollama ءِ تہا یک ماڈلے اجرا کنت. تاکئے متن بس ھما سرجم کنوکا رئوت کہ تو گچین کنئے.",
   "options_ui_language": "رابطئے زبان",
   "options_ui_language_auto": "اتوماتیک (براؤزرئے زبان)",
   "menu_summarize_selection": "گچین کرتگێن نبشتانکا کۆتاہ کن",
   "menu_summarize_page": "تاکا کۆتاہ کن",
   "ui_selection": "گچین کرتگێن نبشتانک",
   "ui_ask_placeholder": "اے تاکئے بارئوا جُستے کن",
-  "ui_ask": "جُست کن"
+  "ui_ask": "جُست کن",
+  "error_ollama_missing": "اے کمپیوٹرا Ollama نہ چلّگا اِنت. آیرا چہ ollama.com ءَ نصب کن و پچ کن، رندا پدا کوشست کن.",
+  "error_ollama_model_missing": "اے ماڈل Ollama ءِ تہا ڈاؤنلوڈ نہ اِنت. ollama pull ءَ گوں ماڈلئے ناما اجرا کن (پہ درور، ollama pull llama3.2)، رندا پدا کوشست کن."
 }

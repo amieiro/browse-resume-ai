@@ -1,7 +1,7 @@
 import { browser } from 'wxt/browser';
 import { matchLanguage, type LanguageCode } from './languages';
 
-export type ProviderId = 'claude' | 'codex';
+export type ProviderId = 'claude' | 'codex' | 'ollama';
 export type SummaryLength = 'short' | 'medium' | 'long';
 export type DisplayMode = 'sidepanel' | 'popup';
 
@@ -27,10 +27,12 @@ export function defaultSettings(uiLanguage: string): Settings {
     length: 'medium',
     language: matchLanguage(uiLanguage) ?? 'en-US',
     uiLanguage: 'auto',
-    models: { claude: 'sonnet', codex: 'gpt-6.2-sol' },
+    models: { claude: 'sonnet', codex: 'gpt-6.2-sol', ollama: 'llama3.2' },
     modelLists: {
       claude: ['sonnet', 'opus', 'haiku', 'fable'],
       codex: ['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna'],
+      // Common models of the Ollama library; the list in the settings takes any model pulled.
+      ollama: ['llama3.2', 'qwen3', 'gemma3', 'mistral'],
     },
   };
 }

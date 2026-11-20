@@ -11,7 +11,7 @@ export interface SummaryViewHandlers {
   onAsk(question: string): void;
 }
 
-const PROVIDER_LABELS: Record<ProviderId, string> = { claude: 'Claude', codex: 'Codex' };
+const PROVIDER_LABELS: Record<ProviderId, string> = { claude: 'Claude', codex: 'Codex', ollama: 'Ollama' };
 const LENGTHS: SummaryLength[] = ['short', 'medium', 'long'];
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, props: Record<string, unknown> = {}, ...children: Node[]): HTMLElementTagNameMap[K] {

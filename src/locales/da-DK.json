@@ -33,12 +33,14 @@
   "options_model_list": "Modeller (én pr. linje)",
   "options_models_empty": "Listen over modeller må ikke være tom.",
   "options_ready": "Klar",
-  "options_help": "Opsummeringer går gennem den lokale komponent, som kører Claude Code eller Codex på denne computer med dit abonnement. Sidens tekst sendes kun til den udbyder, du vælger.",
+  "options_help": "Opsummeringer går gennem den lokale komponent på denne computer: den kører Claude Code eller Codex med dit abonnement eller en model i Ollama. Sidens tekst sendes kun til den udbyder, du vælger.",
   "options_ui_language": "Sprog i brugerfladen",
   "options_ui_language_auto": "Automatisk (browserens sprog)",
   "menu_summarize_selection": "Opsummer markeringen",
   "menu_summarize_page": "Opsummer siden",
   "ui_selection": "Markeret tekst",
   "ui_ask_placeholder": "Stil et spørgsmål om denne side",
-  "ui_ask": "Spørg"
+  "ui_ask": "Spørg",
+  "error_ollama_missing": "Ollama kører ikke på denne computer. Installer det fra ollama.com, åbn det, og prøv derefter igen.",
+  "error_ollama_model_missing": "Denne model er ikke downloadet i Ollama. Kør ollama pull med modellens navn (for eksempel ollama pull llama3.2), og prøv derefter igen."
 }

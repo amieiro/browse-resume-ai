@@ -33,12 +33,14 @@
   "options_model_list": "Modelonan (un pa linea)",
   "options_models_empty": "E lista di modelonan no por ta bashí.",
   "options_ready": "Cla",
-  "options_help": "Resumennan ta pasa via e componente local, cu ta eherce Claude Code of Codex riba e computer aki cu bo suscripcion. Texto di e pagina ta wordo manda solamente na e proveedor cu bo scoge.",
+  "options_help": "Resumennan ta pasa via e componente local riba e computer aki: e ta eherce Claude Code of Codex cu bo suscripcion, of un modelo den Ollama. Texto di e pagina ta wordo manda solamente na e proveedor cu bo scoge.",
   "options_ui_language": "Idioma di e interfaz",
   "options_ui_language_auto": "Automatico (idioma di e navegador)",
   "menu_summarize_selection": "Resumi e seleccion",
   "menu_summarize_page": "Resumi e pagina",
   "ui_selection": "Texto selecciona",
   "ui_ask_placeholder": "Haci un pregunta tocante e pagina aki",
-  "ui_ask": "Puntra"
+  "ui_ask": "Puntra",
+  "error_ollama_missing": "Ollama no ta corriendo riba e computer aki. Instal'é for di ollama.com y habri'é, despues purba atrobe.",
+  "error_ollama_model_missing": "E modelo aki no ta descarga den Ollama. Eherce ollama pull cu e nomber di e modelo (por ehempel, ollama pull llama3.2), despues purba atrobe."
 }

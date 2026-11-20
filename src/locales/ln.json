@@ -33,12 +33,14 @@
   "options_model_list": "Modɛ́lɛ (moko na molɔngɔ mokomoko)",
   "options_models_empty": "Liste ya modɛ́lɛ ekoki kozala mpamba té.",
   "options_ready": "Ebongí",
-  "options_help": "Makúsé elekaka na eteni ya esika, oyo esalaka Claude Code tó Codex na ordinatɛ́rɛ oyo na abɔnimá na yo. Makomi ya lokásá etíndamaka se epai ya mopesi oyo okopɔsɔ.",
+  "options_help": "Makúsé elekaka na eteni ya esika na ordinatɛ́rɛ oyo: esalaka Claude Code tó Codex na abɔnimá na yo, tó modɛ́lɛ moko na Ollama. Makomi ya lokásá etíndamaka se epai ya mopesi oyo okopɔsɔ.",
   "options_ui_language": "Lokóta ya interface",
   "options_ui_language_auto": "Na yangó moko (lokóta ya navigatɛ́rɛ)",
   "menu_summarize_selection": "Kúsa oyo eponámí",
   "menu_summarize_page": "Kúsa lokásá",
   "ui_selection": "Makomi maponámí",
   "ui_ask_placeholder": "Tuná motúna na ntína ya lokásá oyo",
-  "ui_ask": "Tuná"
+  "ui_ask": "Tuná",
+  "error_ollama_missing": "Ollama ezali kosala té na ordinatɛ́rɛ oyo. Kɔtísá yangó uta na ollama.com mpe fungolá yangó, sima meka lisúsu.",
+  "error_ollama_model_missing": "Modɛ́lɛ oyo ekitisámí té na Ollama. Salá ollama pull na nkómbó ya modɛ́lɛ (ndakisa, ollama pull llama3.2), sima meka lisúsu."
 }

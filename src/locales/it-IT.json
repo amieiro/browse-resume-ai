@@ -33,12 +33,14 @@
   "options_model_list": "Modelli (uno per riga)",
   "options_models_empty": "L'elenco dei modelli non può essere vuoto.",
   "options_ready": "Pronto",
-  "options_help": "I riassunti passano dal componente locale, che esegue Claude Code o Codex su questo computer con il tuo abbonamento. Il testo della pagina viene inviato solo al provider che scegli.",
+  "options_help": "I riassunti passano dal componente locale di questo computer: esegue Claude Code o Codex con il tuo abbonamento, oppure un modello in Ollama. Il testo della pagina viene inviato solo al provider che scegli.",
   "options_ui_language": "Lingua dell'interfaccia",
   "options_ui_language_auto": "Automatica (lingua del browser)",
   "menu_summarize_selection": "Riassumi la selezione",
   "menu_summarize_page": "Riassumi la pagina",
   "ui_selection": "Testo selezionato",
   "ui_ask_placeholder": "Fai una domanda su questa pagina",
-  "ui_ask": "Chiedi"
+  "ui_ask": "Chiedi",
+  "error_ollama_missing": "Ollama non è in esecuzione su questo computer. Installalo da ollama.com e aprilo, poi riprova.",
+  "error_ollama_model_missing": "Questo modello non è scaricato in Ollama. Esegui ollama pull con il nome del modello (ad esempio, ollama pull llama3.2), poi riprova."
 }

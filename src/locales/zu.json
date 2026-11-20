@@ -33,12 +33,14 @@
   "options_model_list": "Amamodeli (eyodwa emugqeni ngamunye)",
   "options_models_empty": "Uhlu lwamamodeli alukwazi ukungabi nalutho.",
   "options_ready": "Kulungile",
-  "options_help": "Izifinyezo zidlula engxenyeni yasendaweni, eqalisa i-Claude Code noma i-Codex kule khompyutha ngokubhalisa kwakho. Umbhalo wekhasi uthunyelwa kuphela kumhlinzeki omkhethayo.",
+  "options_help": "Izifinyezo zidlula engxenyeni yasendaweni kule khompyutha: iqalisa i-Claude Code noma i-Codex ngokubhalisa kwakho, noma imodeli ku-Ollama. Umbhalo wekhasi uthunyelwa kuphela kumhlinzeki omkhethayo.",
   "options_ui_language": "Ulimi lokuxhumana",
   "options_ui_language_auto": "Okuzenzakalelayo (ulimi lwesiphequluli)",
   "menu_summarize_selection": "Finyeza okukhethiwe",
   "menu_summarize_page": "Finyeza ikhasi",
   "ui_selection": "Umbhalo okhethiwe",
   "ui_ask_placeholder": "Buza umbuzo ngaleli khasi",
-  "ui_ask": "Buza"
+  "ui_ask": "Buza",
+  "error_ollama_missing": "I-Ollama ayisebenzi kule khompyutha. Yifake usuka ku-ollama.com bese uyivula, bese uzama futhi.",
+  "error_ollama_model_missing": "Le modeli ayikadawunilodwa ku-Ollama. Qalisa ollama pull negama lemodeli (isibonelo, ollama pull llama3.2), bese uzama futhi."
 }

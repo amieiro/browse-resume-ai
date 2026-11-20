@@ -33,12 +33,14 @@
   "options_model_list": "Modellen (ien per rigel)",
   "options_models_empty": "De modellenlist mei net leech wêze.",
   "options_ready": "Klear",
-  "options_help": "Gearfettingen geane troch it lokale ûnderdiel, dat Claude Code of Codex op dizze kompjûter útfiert mei jo abonnemint. Sidetekst wurdt allinnich nei de oanbieder stjoerd dy't jo kieze.",
+  "options_help": "Gearfettingen geane troch it lokale ûnderdiel op dizze kompjûter: dat fiert Claude Code of Codex út mei jo abonnemint, of in model yn Ollama. Sidetekst wurdt allinnich nei de oanbieder stjoerd dy't jo kieze.",
   "options_ui_language": "Taal fan de ynterface",
   "options_ui_language_auto": "Automatysk (browsertaal)",
   "menu_summarize_selection": "Seleksje gearfetsje",
   "menu_summarize_page": "Side gearfetsje",
   "ui_selection": "Selektearre tekst",
   "ui_ask_placeholder": "Stel in fraach oer dizze side",
-  "ui_ask": "Freegje"
+  "ui_ask": "Freegje",
+  "error_ollama_missing": "Ollama draait net op dizze kompjûter. Ynstallearje it fan ollama.com en iepenje it, en besykje it dan opnij.",
+  "error_ollama_model_missing": "Dit model is net downloade yn Ollama. Fier ollama pull út mei de namme fan it model (bygelyks ollama pull llama3.2), en besykje it dan opnij."
 }

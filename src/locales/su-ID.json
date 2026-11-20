@@ -33,12 +33,14 @@
   "options_model_list": "Modél (hiji per baris)",
   "options_models_empty": "Daptar modél teu kenging kosong.",
   "options_ready": "Siap",
-  "options_help": "Kasimpulan ngaliwatan komponén lokal, anu ngajalankeun Claude Code atanapi Codex dina ieu komputer nganggo langganan anjeun. Téks kaca ngan dikirim ka panyadia anu anjeun pilih.",
+  "options_help": "Kasimpulan ngaliwatan komponén lokal dina ieu komputer: éta ngajalankeun Claude Code atanapi Codex nganggo langganan anjeun, atanapi modél dina Ollama. Téks kaca ngan dikirim ka panyadia anu anjeun pilih.",
   "options_ui_language": "Basa antarbeungeut",
   "options_ui_language_auto": "Otomatis (basa panyungsi)",
   "menu_summarize_selection": "Kasimpulkeun pilihan",
   "menu_summarize_page": "Kasimpulkeun kaca",
   "ui_selection": "Téks nu dipilih",
   "ui_ask_placeholder": "Tanyakeun perkara kaca ieu",
-  "ui_ask": "Tanya"
+  "ui_ask": "Tanya",
+  "error_ollama_missing": "Ollama teu jalan dina ieu komputer. Pasang tina ollama.com teras buka, lajeng cobian deui.",
+  "error_ollama_model_missing": "Modél ieu teu acan diunduh dina Ollama. Jalankeun ollama pull sareng nami modélna (contona, ollama pull llama3.2), lajeng cobian deui."
 }

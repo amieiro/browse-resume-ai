@@ -33,12 +33,14 @@
   "options_model_list": "Modellar (har qatorda bittadan)",
   "options_models_empty": "Modellar ro‘yxati bo‘sh bo‘lishi mumkin emas.",
   "options_ready": "Tayyor",
-  "options_help": "Xulosalar mahalliy komponent orqali o‘tadi, u obunangiz bilan ushbu kompyuterda Claude Code yoki Codex ni ishga tushiradi. Sahifa matni faqat siz tanlagan provayderga yuboriladi.",
+  "options_help": "Xulosalar ushbu kompyuterdagi mahalliy komponent orqali o‘tadi: u obunangiz bilan Claude Code yoki Codex ni yoki Ollama dagi modelni ishga tushiradi. Sahifa matni faqat siz tanlagan provayderga yuboriladi.",
   "options_ui_language": "Interfeys tili",
   "options_ui_language_auto": "Avtomatik (brauzer tili)",
   "menu_summarize_selection": "Tanlanganni xulosa qilish",
   "menu_summarize_page": "Sahifani xulosa qilish",
   "ui_selection": "Tanlangan matn",
   "ui_ask_placeholder": "Bu sahifa haqida savol bering",
-  "ui_ask": "So‘rash"
+  "ui_ask": "So‘rash",
+  "error_ollama_missing": "Ollama bu kompyuterda ishlamayapti. Uni ollama.com saytidan o‘rnating va oching, so‘ng qayta urinib ko‘ring.",
+  "error_ollama_model_missing": "Bu model Ollama ga yuklab olinmagan. Model nomi bilan ollama pull ni ishga tushiring (masalan, ollama pull llama3.2), so‘ng qayta urinib ko‘ring."
 }

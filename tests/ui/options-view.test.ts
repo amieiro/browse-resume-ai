@@ -30,7 +30,7 @@ beforeEach(() => {
   setMessages(new Proxy({}, { get: (_t, key) => `[${String(key)}]` }));
   root = document.createElement('div');
   onSave = vi.fn<(patch: Partial<Settings>) => void>();
-  availability = { claude: { ok: true }, codex: { ok: true } };
+  availability = { claude: { ok: true }, codex: { ok: true }, ollama: { ok: true } };
 });
 
 describe('version', () => {
@@ -86,14 +86,14 @@ describe('options view', () => {
   it('saves the selected model of a provider', async () => {
     await mount();
     change(field<HTMLSelectElement>('model-claude'), 'opus');
-    expect(onSave).toHaveBeenLastCalledWith({ models: { claude: 'opus', codex: 'gpt-6.2-sol' } });
+    expect(onSave).toHaveBeenLastCalledWith({ models: { claude: 'opus', codex: 'gpt-6.2-sol', ollama: 'llama3.2' } });
   });
 
   it('saves an edited model list', async () => {
     await mount();
     change(field<HTMLTextAreaElement>('models-claude'), 'sonnet\n opus \nsonnet\nclaude-x');
     expect(onSave).toHaveBeenLastCalledWith({
-      modelLists: { claude: ['sonnet', 'opus', 'claude-x'], codex: ['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna'] },
+      modelLists: { claude: ['sonnet', 'opus', 'claude-x'], codex: ['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna'], ollama: ['llama3.2', 'qwen3', 'gemma3', 'mistral'] },
     });
   });
 
@@ -101,8 +101,8 @@ describe('options view', () => {
     await mount();
     change(field<HTMLTextAreaElement>('models-claude'), 'opus\nhaiku');
     expect(onSave).toHaveBeenLastCalledWith({
-      modelLists: { claude: ['opus', 'haiku'], codex: ['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna'] },
-      models: { claude: 'opus', codex: 'gpt-6.2-sol' },
+      modelLists: { claude: ['opus', 'haiku'], codex: ['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna'], ollama: ['llama3.2', 'qwen3', 'gemma3', 'mistral'] },
+      models: { claude: 'opus', codex: 'gpt-6.2-sol', ollama: 'llama3.2' },
     });
     expect(field<HTMLSelectElement>('model-claude').value).toBe('opus');
   });

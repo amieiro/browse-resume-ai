@@ -33,12 +33,14 @@
   "options_model_list": "Samfura (ɗaya a kowane layi)",
   "options_models_empty": "Jerin samfura ba zai iya zama fanko ba.",
   "options_ready": "A shirye",
-  "options_help": "Taƙaitawa na wucewa ta ɓangaren gida, wanda ke gudanar da Claude Code ko Codex a wannan kwamfuta da biyan kuɗinka. Ana aika rubutun shafin ga mai bayarwar da ka zaɓa kawai.",
+  "options_help": "Taƙaitawa na wucewa ta ɓangaren gida a wannan kwamfuta: yana gudanar da Claude Code ko Codex da biyan kuɗinka, ko wani samfuri a cikin Ollama. Ana aika rubutun shafin ga mai bayarwar da ka zaɓa kawai.",
   "options_ui_language": "Harshen mu'amala",
   "options_ui_language_auto": "Na atomatik (harshen mai bincike)",
   "menu_summarize_selection": "Taƙaita zaɓi",
   "menu_summarize_page": "Taƙaita shafin",
   "ui_selection": "Rubutun da aka zaɓa",
   "ui_ask_placeholder": "Yi tambaya game da wannan shafi",
-  "ui_ask": "Tambaya"
+  "ui_ask": "Tambaya",
+  "error_ollama_missing": "Ollama ba ya aiki a wannan kwamfuta. Shigar da shi daga ollama.com ka buɗe shi, sannan ka sake gwadawa.",
+  "error_ollama_model_missing": "Ba a sauke wannan samfurin a cikin Ollama ba. Gudanar da ollama pull tare da sunan samfurin (misali, ollama pull llama3.2), sannan ka sake gwadawa."
 }

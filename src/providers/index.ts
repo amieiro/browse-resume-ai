@@ -1,9 +1,10 @@
 import type { ProviderId } from '@/lib/settings';
 import { claudeProvider } from './claude';
 import { codexProvider } from './codex';
+import { ollamaProvider } from './ollama';
 import type { Provider } from './types';
 
-export const PROVIDERS: Provider[] = [claudeProvider, codexProvider];
+export const PROVIDERS: Provider[] = [claudeProvider, codexProvider, ollamaProvider];
 
 export function getProvider(id: ProviderId): Provider {
   const provider = PROVIDERS.find((p) => p.id === id);

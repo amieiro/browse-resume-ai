@@ -33,12 +33,14 @@
   "options_model_list": "Model (satu setiap baris)",
   "options_models_empty": "Senarai model tidak boleh kosong.",
   "options_ready": "Sedia",
-  "options_help": "Ringkasan melalui komponen setempat, yang menjalankan Claude Code atau Codex pada komputer ini dengan langganan anda. Teks halaman hanya dihantar kepada penyedia yang anda pilih.",
+  "options_help": "Ringkasan melalui komponen setempat pada komputer ini: ia menjalankan Claude Code atau Codex dengan langganan anda, atau model dalam Ollama. Teks halaman hanya dihantar kepada penyedia yang anda pilih.",
   "options_ui_language": "Bahasa antara muka",
   "options_ui_language_auto": "Automatik (bahasa penyemak imbas)",
   "menu_summarize_selection": "Ringkaskan pilihan",
   "menu_summarize_page": "Ringkaskan halaman",
   "ui_selection": "Teks dipilih",
   "ui_ask_placeholder": "Tanya soalan tentang halaman ini",
-  "ui_ask": "Tanya"
+  "ui_ask": "Tanya",
+  "error_ollama_missing": "Ollama tidak berjalan pada komputer ini. Pasangkannya dari ollama.com dan bukanya, kemudian cuba lagi.",
+  "error_ollama_model_missing": "Model ini belum dimuat turun dalam Ollama. Jalankan ollama pull dengan nama model (contohnya, ollama pull llama3.2), kemudian cuba lagi."
 }

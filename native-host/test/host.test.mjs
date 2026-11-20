@@ -6,6 +6,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { createDecoder, encodeMessage } from '../lib/framing.mjs';
+import { startFakeOllama } from './fixtures/fake-ollama.mjs';
 
 const HOST = fileURLToPath(new URL('../host.mjs', import.meta.url));
 const FAKE = fileURLToPath(new URL('./fixtures/fake-claude.mjs', import.meta.url));
@@ -94,6 +95,57 @@ describe('native host', () => {
     const h = startHost();
     h.send(msg);
     await waitFor(() => expect(h.messages[0]).toMatchObject({ type: 'error', code: 'bad_request' }));
+  });
+
+  describe('Ollama', () => {
+    let fake;
+    afterEach(async () => {
+      await fake?.close();
+      fake = undefined;
+    });
+
+    it('checks Ollama and lists its models only when the ping asks', async () => {
+      fake = await startFakeOllama({ models: ['llama3.2:latest', 'qwen3:4b'] });
+      const h = startHost({ OLLAMA_HOST: fake.url });
+      h.send({ type: 'ping' });
+      h.send({ type: 'ping', ollama: true });
+      await waitFor(() => expect(h.messages).toHaveLength(2));
+      expect(h.messages[0]).not.toHaveProperty('ollamaFound');
+      expect(h.messages[1]).toMatchObject({ type: 'pong', ollamaFound: true, ollamaModels: ['llama3.2:latest', 'qwen3:4b'] });
+    });
+
+    it('reports ollamaFound false when Ollama is not running', async () => {
+      const h = startHost({ OLLAMA_HOST: '127.0.0.1:9' });
+      h.send({ type: 'ping', ollama: true });
+      await waitFor(() => expect(h.messages[0]).toMatchObject({ type: 'pong', ollamaFound: false, ollamaModels: [] }));
+    });
+
+    it('streams an Ollama summary', async () => {
+      fake = await startFakeOllama();
+      const h = startHost({ OLLAMA_HOST: fake.url });
+      h.send({ type: 'summarize', id: 'o1', provider: 'ollama', model: 'llama3.2', prompt: 'p' });
+      await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'o1' }));
+      expect(h.messages.filter((m) => m.type === 'chunk').map((m) => m.text).join('')).toBe('Ola ñandú 🙂');
+    });
+
+    it.each(['llama3.2:3b', 'hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF:Q4_K_M', 'qwen3'])('accepts the Ollama model name %j', async (model) => {
+      fake = await startFakeOllama({ models: [model] });
+      const h = startHost({ OLLAMA_HOST: fake.url });
+      h.send({ type: 'summarize', id: 'o2', provider: 'ollama', model, prompt: 'p' });
+      await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'o2' }));
+    });
+
+    it.each(['-x', 'a b', '../x', 'a;b', 'x'.repeat(201)])('rejects the Ollama model name %j', async (model) => {
+      const h = startHost();
+      h.send({ type: 'summarize', id: 'o3', provider: 'ollama', model, prompt: 'p' });
+      await waitFor(() => expect(h.messages[0]).toMatchObject({ type: 'error', id: 'o3', code: 'bad_request' }));
+    });
+
+    it('keeps the stricter names for the CLIs', async () => {
+      const h = startHost();
+      h.send({ type: 'summarize', id: 'r9', provider: 'claude', model: 'sonnet:x', prompt: 'p' });
+      await waitFor(() => expect(h.messages[0]).toMatchObject({ type: 'error', id: 'r9', code: 'bad_request' }));
+    });
   });
 
   it('ignores cancel for an unknown id', async () => {

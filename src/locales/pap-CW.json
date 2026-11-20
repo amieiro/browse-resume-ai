@@ -33,12 +33,14 @@
   "options_model_list": "Modelonan (un pa liña)",
   "options_models_empty": "E lista di modelonan no por ta bashí.",
   "options_ready": "Kla",
-  "options_help": "Resúmennan ta pasa dor di e komponente lokal, ku ta ehekutá Claude Code òf Codex riba e kòmpiuter aki ku bo suskripshon. Teksto di e página ta wòrdu manda solamente na e provedor ku bo skohe.",
+  "options_help": "Resúmennan ta pasa dor di e komponente lokal riba e kòmpiuter aki: e ta ehekutá Claude Code òf Codex ku bo suskripshon, òf un modelo den Ollama. Teksto di e página ta wòrdu manda solamente na e provedor ku bo skohe.",
   "options_ui_language": "Idioma di e interfaz",
   "options_ui_language_auto": "Outomátiko (idioma di e nabegadó)",
   "menu_summarize_selection": "Resumí e selekshon",
   "menu_summarize_page": "Resumí e página",
   "ui_selection": "Teksto selekshoná",
   "ui_ask_placeholder": "Hasi un pregunta tokante e página aki",
-  "ui_ask": "Puntra"
+  "ui_ask": "Puntra",
+  "error_ollama_missing": "Ollama no ta kore riba e kòmpiuter aki. Instal'é for di ollama.com i habri'é, despues purba atrobe.",
+  "error_ollama_model_missing": "E modelo aki no ta deskargá den Ollama. Ehekutá ollama pull ku e nòmber di e modelo (por ehempel, ollama pull llama3.2), despues purba atrobe."
 }

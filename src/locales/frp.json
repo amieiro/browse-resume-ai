@@ -33,12 +33,14 @@
   "options_model_list": "Modèlos (yon per legne)",
   "options_models_empty": "La lista des modèlos pôt pas étre voueda.",
   "options_ready": "Prèst",
-  "options_help": "Los rèsumâs passont per lo composent local, que fât corre Claude Code ou ben Codex sur ceti ordenator avouéc voutron abonament. Lo tèxto de la pâge est mandâ ren qu'u fornissor que vos chouèsésséd.",
+  "options_help": "Los rèsumâs passont per lo composent local de ceti ordenator : il fât corre Claude Code ou ben Codex avouéc voutron abonament, ou ben un modèlo dens Ollama. Lo tèxto de la pâge est mandâ ren qu'u fornissor que vos chouèsésséd.",
   "options_ui_language": "Lengoua de l'entèrface",
   "options_ui_language_auto": "Ôtomatico (lengoua du navigator)",
   "menu_summarize_selection": "Rèsumar la sèlèccion",
   "menu_summarize_page": "Rèsumar la pâge",
   "ui_selection": "Tèxto chouèsi",
   "ui_ask_placeholder": "Possâd una quèstion sur ceta pâge",
-  "ui_ask": "Demandar"
+  "ui_ask": "Demandar",
+  "error_ollama_missing": "Ollama tôrne pas sur ceti ordenator. Enstalâd-lo dês ollama.com, uvrâd-lo, pués tornâd èprovar.",
+  "error_ollama_model_missing": "Ceti modèlo est pas tèlèchargiê dens Ollama. Ègzécutâd ollama pull avouéc lo nom du modèlo (per ègzemplo, ollama pull llama3.2), pués tornâd èprovar."
 }

@@ -33,12 +33,14 @@
   "options_model_list": "Moodeellada (mid sadarkiiba)",
   "options_models_empty": "Liiska moodeellada ma noqon karo mid madhan.",
   "options_ready": "Diyaar",
-  "options_help": "Soo koobiddu waxay maraysaa qaybta maxalliga ah, taas oo ku socodsiisa Claude Code ama Codex kombiyuutarkan adigoo isticmaalaya rukummadaada. Qoraalka bogga waxaa loo diraa oo keliya bixiyaha aad doorato.",
+  "options_help": "Soo koobiddu waxay maraysaa qaybta maxalliga ah ee kombiyuutarkan: waxay socodsiisaa Claude Code ama Codex adigoo isticmaalaya rukummadaada, ama model ku jira Ollama. Qoraalka bogga waxaa loo diraa oo keliya bixiyaha aad doorato.",
   "options_ui_language": "Luqadda interfeyska",
   "options_ui_language_auto": "Toos (luqadda biraawsarka)",
   "menu_summarize_selection": "Soo koob qoraalka la doortay",
   "menu_summarize_page": "Soo koob bogga",
   "ui_selection": "Qoraal la doortay",
   "ui_ask_placeholder": "Weydii su'aal ku saabsan boggan",
-  "ui_ask": "Weydii"
+  "ui_ask": "Weydii",
+  "error_ollama_missing": "Ollama kuma shaqaynayo kombiyuutarkan. Ka rakib ollama.com oo fur, kadibna isku day mar kale.",
+  "error_ollama_model_missing": "Model-kan laguma soo dejin Ollama. Socodsii ollama pull iyo magaca model-ka (tusaale ahaan, ollama pull llama3.2), kadibna isku day mar kale."
 }

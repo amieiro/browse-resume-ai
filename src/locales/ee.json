@@ -33,12 +33,14 @@
   "options_model_list": "Kpɔɖeŋuwo (ɖeka le fli ɖesiaɖe dzi)",
   "options_models_empty": "Kpɔɖeŋuwo ƒe xexlẽdzesi mate ŋu anɔ ƒuƒlu o.",
   "options_ready": "Le klalo",
-  "options_help": "Nyakpɔkpɔwo toa teƒea ƒe akpa la me, si wɔa Claude Code alo Codex le kɔmpiuta sia dzi kple wò subscription. Axa la ƒe nuŋlɔɖi yia nunanala si nètia la gbɔ ɖeɖeko.",
+  "options_help": "Nyakpɔkpɔwo toa teƒea ƒe akpa si le kɔmpiuta sia dzi la me: ewɔa Claude Code alo Codex kple wò subscription, alo model aɖe le Ollama me. Axa la ƒe nuŋlɔɖi yia nunanala si nètia la gbɔ ɖeɖeko.",
   "options_ui_language": "Interface ƒe gbe",
   "options_ui_language_auto": "Le eɖokui si (browser ƒe gbe)",
   "menu_summarize_selection": "Ƒo nya siwo nètia la ta",
   "menu_summarize_page": "Ƒo axa la ƒe nya ta",
   "ui_selection": "Nya siwo wotia",
   "ui_ask_placeholder": "Bia biabia aɖe tso axa sia ŋu",
-  "ui_ask": "Bia"
+  "ui_ask": "Bia",
+  "error_ollama_missing": "Ollama mele dɔ wɔm le kɔmpiuta sia dzi o. Tsɔe de eme tso ollama.com eye nàʋui, emegbe nàgadze agbagba ake.",
+  "error_ollama_model_missing": "Womeɖe model sia ɖe Ollama me haɖe o. Wɔ ollama pull kple model la ƒe ŋkɔ (le kpɔɖeŋu me, ollama pull llama3.2), emegbe nàgadze agbagba ake."
 }

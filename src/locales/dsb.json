@@ -33,12 +33,14 @@
   "options_model_list": "Modele (jaden na smužku)",
   "options_models_empty": "Lisćina modelow njesmějo prozna byś.",
   "options_ready": "Gótowe",
-  "options_help": "Zespominanja źěju pśez lokalnu komponentu, kótaraž wuwjeźo Claude Code abo Codex na toś tom licadle z wašym abonementom. Tekst boka se jano k wubranemu póbitowarjeju pósćelo.",
+  "options_help": "Zespominanja źěju pśez lokalnu komponentu na toś tom licadle: wóna wuwjeźo Claude Code abo Codex z wašym abonementom abo model w Ollama. Tekst boka se jano k wubranemu póbitowarjeju pósćelo.",
   "options_ui_language": "Rěc pówjercha",
   "options_ui_language_auto": "Awtomatiski (rěc wobglědowaka)",
   "menu_summarize_selection": "Wuběrk zespominaś",
   "menu_summarize_page": "Bok zespominaś",
   "ui_selection": "Wubrany tekst",
   "ui_ask_placeholder": "Stajśo pšašanje wó toś tom boku",
-  "ui_ask": "Pšašaś se"
+  "ui_ask": "Pšašaś se",
+  "error_ollama_missing": "Ollama na toś tom licadle njeběžy. Instalěrujśo jo z ollama.com a wócyńśo jo, pótom wopytajśo hyšći raz.",
+  "error_ollama_model_missing": "Toś ten model njejo w Ollama ześěgnjony. Wuwjeźćo ollama pull z mjenim modela (na pśikład ollama pull llama3.2), pótom wopytajśo hyšći raz."
 }

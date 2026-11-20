@@ -33,12 +33,14 @@
   "options_model_list": "Modeller (her satıra bir tane)",
   "options_models_empty": "Model listesi boş olamaz.",
   "options_ready": "Hazır",
-  "options_help": "Özetler, aboneliğinizle bu bilgisayarda Claude Code veya Codex'i çalıştıran yerel bileşen üzerinden oluşturulur. Sayfa metni yalnızca seçtiğiniz sağlayıcıya gönderilir.",
+  "options_help": "Özetler bu bilgisayardaki yerel bileşen üzerinden oluşturulur: bileşen, aboneliğinizle Claude Code veya Codex'i ya da Ollama'daki bir modeli çalıştırır. Sayfa metni yalnızca seçtiğiniz sağlayıcıya gönderilir.",
   "options_ui_language": "Arayüz dili",
   "options_ui_language_auto": "Otomatik (tarayıcı dili)",
   "menu_summarize_selection": "Seçimi özetle",
   "menu_summarize_page": "Sayfayı özetle",
   "ui_selection": "Seçili metin",
   "ui_ask_placeholder": "Bu sayfa hakkında soru sor",
-  "ui_ask": "Sor"
+  "ui_ask": "Sor",
+  "error_ollama_missing": "Ollama bu bilgisayarda çalışmıyor. ollama.com adresinden yükleyip açın, ardından yeniden deneyin.",
+  "error_ollama_model_missing": "Bu model Ollama'ya indirilmemiş. Model adıyla ollama pull komutunu çalıştırın (örneğin ollama pull llama3.2), ardından yeniden deneyin."
 }

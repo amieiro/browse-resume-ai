@@ -13,6 +13,7 @@ export interface OptionsViewDeps {
 const PROVIDERS: { id: ProviderId; label: string }[] = [
   { id: 'claude', label: 'Claude (Claude Code)' },
   { id: 'codex', label: 'Codex (ChatGPT)' },
+  { id: 'ollama', label: 'Ollama (local models)' },
 ];
 
 export function parseModelList(text: string): string[] {

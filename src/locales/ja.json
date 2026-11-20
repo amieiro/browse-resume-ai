@@ -33,12 +33,14 @@
   "options_model_list": "モデル（1 行に 1 つ）",
   "options_models_empty": "モデルのリストを空にすることはできません。",
   "options_ready": "準備完了",
-  "options_help": "要約はローカルコンポーネントを経由します。このコンポーネントは、お使いのサブスクリプションでこのコンピュータ上の Claude Code または Codex を実行します。ページのテキストは、選択したプロバイダにのみ送信されます。",
+  "options_help": "要約はこのコンピュータ上のローカルコンポーネントを経由します。このコンポーネントは、お使いのサブスクリプションで Claude Code または Codex を実行するか、Ollama のモデルを実行します。ページのテキストは、選択したプロバイダにのみ送信されます。",
   "options_ui_language": "インターフェースの言語",
   "options_ui_language_auto": "自動（ブラウザの言語）",
   "menu_summarize_selection": "選択範囲を要約",
   "menu_summarize_page": "ページを要約",
   "ui_selection": "選択したテキスト",
   "ui_ask_placeholder": "このページについて質問する",
-  "ui_ask": "質問"
+  "ui_ask": "質問",
+  "error_ollama_missing": "このコンピュータで Ollama が起動していません。ollama.com からインストールして起動してから、もう一度お試しください。",
+  "error_ollama_model_missing": "このモデルは Ollama にダウンロードされていません。モデル名を指定して ollama pull を実行してから（例: ollama pull llama3.2）、もう一度お試しください。"
 }

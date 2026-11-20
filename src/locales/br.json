@@ -33,12 +33,14 @@
   "options_model_list": "Patromoù (unan dre linenn)",
   "options_models_empty": "Ne c'hall ket roll ar patromoù bezañ goullo.",
   "options_ready": "Prest",
-  "options_help": "Tremen a ra an diverradennoù dre an elfenn lec'hel, a lañs Claude Code pe Codex war an urzhiataer-mañ gant ho koumanant. Testenn ar bajenn n'eo kaset nemet d'ar pourchaser a zibabit.",
+  "options_help": "Tremen a ra an diverradennoù dre an elfenn lec'hel war an urzhiataer-mañ: lañsañ a ra Claude Code pe Codex gant ho koumanant, pe ur patrom en Ollama. Testenn ar bajenn n'eo kaset nemet d'ar pourchaser a zibabit.",
   "options_ui_language": "Yezh an etrefas",
   "options_ui_language_auto": "Emgefreek (yezh ar merdeer)",
   "menu_summarize_selection": "Diverrañ an diuzad",
   "menu_summarize_page": "Diverrañ ar bajenn",
   "ui_selection": "Testenn diuzet",
   "ui_ask_placeholder": "Goulennit un dra diwar-benn ar bajenn-mañ",
-  "ui_ask": "Goulenn"
+  "ui_ask": "Goulenn",
+  "error_ollama_missing": "N'emañ ket Ollama o treiñ war an urzhiataer-mañ. Staliit anezhañ diwar ollama.com ha digorit anezhañ, ha klaskit en-dro goude.",
+  "error_ollama_model_missing": "N'eo ket bet pellgarget ar patrom-mañ en Ollama. Lañsit ollama pull gant anv ar patrom (da skouer, ollama pull llama3.2), ha klaskit en-dro goude."
 }

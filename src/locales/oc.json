@@ -33,12 +33,14 @@
   "options_model_list": "Modèls (un per linha)",
   "options_models_empty": "La lista dels modèls pòt pas èsser voida.",
   "options_ready": "Prèst",
-  "options_help": "Los resumits passan pel component local, qu'executa Claude Code o Codex sus aqueste ordenador amb vòstre abonament. Lo tèxte de la pagina es mandat sonque al provesidor que causissètz.",
+  "options_help": "Los resumits passan pel component local d'aqueste ordenador: executa Claude Code o Codex amb vòstre abonament, o un modèl dins Ollama. Lo tèxte de la pagina es mandat sonque al provesidor que causissètz.",
   "options_ui_language": "Lenga de l'interfàcia",
   "options_ui_language_auto": "Automatica (lenga del navegador)",
   "menu_summarize_selection": "Resumir la seleccion",
   "menu_summarize_page": "Resumir la pagina",
   "ui_selection": "Tèxte seleccionat",
   "ui_ask_placeholder": "Pausatz una question sus aquesta pagina",
-  "ui_ask": "Demandar"
+  "ui_ask": "Demandar",
+  "error_ollama_missing": "Ollama s'executa pas sus aqueste ordenador. Installatz-lo dempuèi ollama.com e dobrissètz-lo, puèi ensajatz tornarmai.",
+  "error_ollama_model_missing": "Aqueste modèl es pas telecargat dins Ollama. Executatz ollama pull amb lo nom del modèl (per exemple, ollama pull llama3.2), puèi ensajatz tornarmai."
 }

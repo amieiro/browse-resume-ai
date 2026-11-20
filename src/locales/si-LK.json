@@ -33,12 +33,14 @@
   "options_model_list": "මාදිලි (පේළියකට එකක්)",
   "options_models_empty": "මාදිලි ලැයිස්තුව හිස් විය නොහැක.",
   "options_ready": "සූදානම්",
-  "options_help": "සාරාංශ දේශීය සංරචකය හරහා යයි, එය ඔබේ දායකත්වය සමඟ මෙම පරිගණකයේ Claude Code හෝ Codex ධාවනය කරයි. පිටුවේ පෙළ ඔබ තෝරන සපයන්නාට පමණක් යවනු ලැබේ.",
+  "options_help": "සාරාංශ මෙම පරිගණකයේ ඇති දේශීය සංරචකය හරහා යයි: එය ඔබේ දායකත්වය සමඟ Claude Code හෝ Codex, නැතහොත් Ollama හි ආකෘතියක් ධාවනය කරයි. පිටුවේ පෙළ ඔබ තෝරන සපයන්නාට පමණක් යවනු ලැබේ.",
   "options_ui_language": "අතුරු මුහුණතේ භාෂාව",
   "options_ui_language_auto": "ස්වයංක්‍රීය (බ්‍රවුසරයේ භාෂාව)",
   "menu_summarize_selection": "තේරීම සාරාංශ කරන්න",
   "menu_summarize_page": "පිටුව සාරාංශ කරන්න",
   "ui_selection": "තෝරාගත් පෙළ",
   "ui_ask_placeholder": "මෙම පිටුව ගැන ප්‍රශ්නයක් අසන්න",
-  "ui_ask": "අසන්න"
+  "ui_ask": "අසන්න",
+  "error_ollama_missing": "මෙම පරිගණකයේ Ollama ධාවනය නොවේ. එය ollama.com වෙතින් ස්ථාපනය කර විවෘත කරන්න, ඉන්පසු නැවත උත්සාහ කරන්න.",
+  "error_ollama_model_missing": "මෙම ආකෘතිය Ollama හි බාගත කර නැත. ආකෘතියේ නම සමඟ ollama pull ධාවනය කරන්න (උදාහරණයක් ලෙස, ollama pull llama3.2), ඉන්පසු නැවත උත්සාහ කරන්න."
 }

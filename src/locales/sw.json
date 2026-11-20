@@ -33,12 +33,14 @@
   "options_model_list": "Miundo (mmoja kwa kila mstari)",
   "options_models_empty": "Orodha ya miundo haiwezi kuwa tupu.",
   "options_ready": "Tayari",
-  "options_help": "Muhtasari hupitia kipengele cha ndani, kinachoendesha Claude Code au Codex kwenye kompyuta hii kwa usajili wako. Maandishi ya ukurasa hutumwa tu kwa mtoa huduma utakayemchagua.",
+  "options_help": "Muhtasari hupitia kipengele cha ndani kwenye kompyuta hii: kinaendesha Claude Code au Codex kwa usajili wako, au modeli katika Ollama. Maandishi ya ukurasa hutumwa tu kwa mtoa huduma utakayemchagua.",
   "options_ui_language": "Lugha ya kiolesura",
   "options_ui_language_auto": "Kiotomatiki (lugha ya kivinjari)",
   "menu_summarize_selection": "Fupisha ulichochagua",
   "menu_summarize_page": "Fupisha ukurasa",
   "ui_selection": "Maandishi yaliyochaguliwa",
   "ui_ask_placeholder": "Uliza swali kuhusu ukurasa huu",
-  "ui_ask": "Uliza"
+  "ui_ask": "Uliza",
+  "error_ollama_missing": "Ollama haifanyi kazi kwenye kompyuta hii. Isakinishe kutoka ollama.com na uifungue, kisha ujaribu tena.",
+  "error_ollama_model_missing": "Modeli hii haijapakuliwa katika Ollama. Endesha ollama pull pamoja na jina la modeli (kwa mfano, ollama pull llama3.2), kisha ujaribu tena."
 }

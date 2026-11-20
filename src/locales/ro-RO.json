@@ -33,12 +33,14 @@
   "options_model_list": "Modele (câte unul pe linie)",
   "options_models_empty": "Lista de modele nu poate fi goală.",
   "options_ready": "Gata",
-  "options_help": "Rezumatele trec prin componenta locală, care rulează Claude Code sau Codex pe acest computer cu abonamentul tău. Textul paginii este trimis doar furnizorului pe care îl alegi.",
+  "options_help": "Rezumatele trec prin componenta locală de pe acest computer: aceasta rulează Claude Code sau Codex cu abonamentul tău, ori un model în Ollama. Textul paginii este trimis doar furnizorului pe care îl alegi.",
   "options_ui_language": "Limba interfeței",
   "options_ui_language_auto": "Automat (limba browserului)",
   "menu_summarize_selection": "Rezumă selecția",
   "menu_summarize_page": "Rezumă pagina",
   "ui_selection": "Text selectat",
   "ui_ask_placeholder": "Pune o întrebare despre această pagină",
-  "ui_ask": "Întreabă"
+  "ui_ask": "Întreabă",
+  "error_ollama_missing": "Ollama nu rulează pe acest computer. Instalează-l de pe ollama.com și deschide-l, apoi încearcă din nou.",
+  "error_ollama_model_missing": "Acest model nu este descărcat în Ollama. Rulează ollama pull cu numele modelului (de exemplu, ollama pull llama3.2), apoi încearcă din nou."
 }

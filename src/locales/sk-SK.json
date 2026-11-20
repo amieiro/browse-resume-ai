@@ -33,12 +33,14 @@
   "options_model_list": "Modely (jeden na riadok)",
   "options_models_empty": "Zoznam modelov nemôže byť prázdny.",
   "options_ready": "Pripravené",
-  "options_help": "Zhrnutia prechádzajú cez lokálny komponent, ktorý na tomto počítači spúšťa Claude Code alebo Codex s vaším predplatným. Text stránky sa odosiela len poskytovateľovi, ktorého vyberiete.",
+  "options_help": "Zhrnutia prechádzajú cez lokálny komponent na tomto počítači: spúšťa Claude Code alebo Codex s vaším predplatným, prípadne model v Ollama. Text stránky sa odosiela len poskytovateľovi, ktorého vyberiete.",
   "options_ui_language": "Jazyk rozhrania",
   "options_ui_language_auto": "Automaticky (jazyk prehliadača)",
   "menu_summarize_selection": "Zhrnúť výber",
   "menu_summarize_page": "Zhrnúť stránku",
   "ui_selection": "Vybraný text",
   "ui_ask_placeholder": "Položte otázku o tejto stránke",
-  "ui_ask": "Opýtať sa"
+  "ui_ask": "Opýtať sa",
+  "error_ollama_missing": "Ollama na tomto počítači nebeží. Nainštalujte ju z ollama.com, otvorte ju a skúste to znova.",
+  "error_ollama_model_missing": "Tento model nie je stiahnutý v Ollama. Spustite ollama pull s názvom modelu (napríklad ollama pull llama3.2) a skúste to znova."
 }

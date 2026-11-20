@@ -33,12 +33,14 @@
   "options_model_list": "Modeli (en na vrstico)",
   "options_models_empty": "Seznam modelov ne sme biti prazen.",
   "options_ready": "Pripravljeno",
-  "options_help": "Povzetki gredo prek lokalne komponente, ki v tem računalniku zažene Claude Code ali Codex z vašo naročnino. Besedilo strani se pošlje samo ponudniku, ki ga izberete.",
+  "options_help": "Povzetki gredo prek lokalne komponente v tem računalniku: zažene Claude Code ali Codex z vašo naročnino ali model v Ollama. Besedilo strani se pošlje samo ponudniku, ki ga izberete.",
   "options_ui_language": "Jezik vmesnika",
   "options_ui_language_auto": "Samodejno (jezik brskalnika)",
   "menu_summarize_selection": "Povzemi izbor",
   "menu_summarize_page": "Povzemi stran",
   "ui_selection": "Izbrano besedilo",
   "ui_ask_placeholder": "Zastavi vprašanje o tej strani",
-  "ui_ask": "Vprašaj"
+  "ui_ask": "Vprašaj",
+  "error_ollama_missing": "Ollama se v tem računalniku ne izvaja. Namestite jo s strani ollama.com in jo odprite, nato poskusite znova.",
+  "error_ollama_model_missing": "Ta model ni prenesen v Ollama. Zaženite ollama pull z imenom modela (na primer ollama pull llama3.2), nato poskusite znova."
 }

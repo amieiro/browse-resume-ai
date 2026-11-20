@@ -33,12 +33,14 @@
   "options_model_list": "Modeller (her setirde biri)",
   "options_models_empty": "Modeller sanawy boş bolup bilmez.",
   "options_ready": "Taýýar",
-  "options_help": "Gysgaça mazmunlar ýerli komponentden geçýär, ol siziň abunalygyňyz bilen bu kompýuterde Claude Code ýa-da Codex işledýär. Sahypanyň teksti diňe siz saýlan üpjünçä iberilýär.",
+  "options_help": "Gysgaça mazmunlar bu kompýuterdäki ýerli komponentden geçýär: ol siziň abunalygyňyz bilen Claude Code ýa-da Codex, ýa-da Ollama-daky modeli işledýär. Sahypanyň teksti diňe siz saýlan üpjünçä iberilýär.",
   "options_ui_language": "Interfeýs dili",
   "options_ui_language_auto": "Awtomatik (brauzeriň dili)",
   "menu_summarize_selection": "Saýlanany gysgalt",
   "menu_summarize_page": "Sahypany gysgalt",
   "ui_selection": "Saýlanan tekst",
   "ui_ask_placeholder": "Bu sahypa barada sorag ber",
-  "ui_ask": "Sora"
+  "ui_ask": "Sora",
+  "error_ollama_missing": "Ollama bu kompýuterde işlemeýär. Ony ollama.com saýtyndan guruň we açyň, soňra täzeden synanyşyň.",
+  "error_ollama_model_missing": "Bu model Ollama-da ýüklenip alynmadyk. Modeliň ady bilen ollama pull işlediň (meselem, ollama pull llama3.2), soňra täzeden synanyşyň."
 }

@@ -33,12 +33,14 @@
   "options_model_list": "Modèl yi (benn ci rëdd bu nekk)",
   "options_models_empty": "Limu modèl yi warul a neen.",
   "options_ready": "Pare na",
-  "options_help": "Tënk yi dañuy jaar ci pàcc bu dëkk bi, buy doxal Claude Code walla Codex ci ordinatëer bii ak sa abonmaa. Mbindu xët wi dañu koy yónnee rekk ci joxekat bi nga tànn.",
+  "options_help": "Tënk yi dañuy jaar ci pàcc bu dëkk bi ci ordinatëer bii: day doxal Claude Code walla Codex ak sa abonmaa, walla benn model ci Ollama. Mbindu xët wi dañu koy yónnee rekk ci joxekat bi nga tànn.",
   "options_ui_language": "Làkku interface bi",
   "options_ui_language_auto": "Otomatik (làkku joowukaay bi)",
   "menu_summarize_selection": "Tënk li nga tànn",
   "menu_summarize_page": "Tënk xët wi",
   "ui_selection": "Mbind mi nga tànn",
   "ui_ask_placeholder": "Laajal benn laaj ci xët wii",
-  "ui_ask": "Laaj"
+  "ui_ask": "Laaj",
+  "error_ollama_missing": "Ollama doxul ci ordinatëer bii. Samp ko jóge ci ollama.com te ubbi ko, te nga jéemaat.",
+  "error_ollama_model_missing": "Model bii yebbuwuñu ko ci Ollama. Doxal ollama pull ak turu model bi (misaal, ollama pull llama3.2), te nga jéemaat."
 }

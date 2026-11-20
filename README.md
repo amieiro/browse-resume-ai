@@ -1,8 +1,8 @@
 # Browse Resume AI
 
 A Chrome extension that summarizes the article in the current tab with one click, using the AI
-subscription you already pay for: Claude (through Claude Code) or ChatGPT (through Codex). No API
-keys, no pay-per-use billing.
+subscription you already pay for: Claude (through Claude Code) or ChatGPT (through Codex), or with
+a model running on your own computer through Ollama. No API keys, no pay-per-use billing.
 
 - One click on the toolbar icon, or <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>, summarizes the page
   with your saved settings.
@@ -112,6 +112,9 @@ _A GrapheneOS thread on Mastodon: long summary in Arabic, right to left, in the 
     subscription (run `claude` once).
   - [Codex CLI](https://developers.openai.com/codex), logged in with your ChatGPT plan
     (`codex login`).
+  - [Ollama](https://ollama.com), running, with at least one model downloaded (for example
+    `ollama pull llama3.2`). Free and private: the page never leaves your computer. Small models
+    write weaker summaries, especially in languages other than English.
 
 ## Install
 
@@ -171,12 +174,16 @@ If the icon is not in the toolbar, open the puzzle-piece menu next to the addres
 
 ### 5. Check the settings
 
-Click the gear in the panel, or **Details → Extension options** on the card. Both providers should
-say **Ready**. If one says the local component is not installed, run `./native-host/install.sh`
+Click the gear in the panel, or **Details → Extension options** on the card. The providers you use
+should say **Ready**. If one says the local component is not installed, run `./native-host/install.sh`
 again (`install.ps1` on Windows). Here you also choose the interface language, where summaries are shown (side panel or
 popup), and the defaults.
 
 <img src="media/install/4-settings.png" alt="The settings page with the interface language and both providers ready" width="800">
+
+For Ollama, put the models you have downloaded in its model list (`ollama list` shows them; names
+like `llama3.2:3b` or `qwen3` work as Ollama writes them). The local component reaches Ollama at
+`127.0.0.1:11434`, or at `OLLAMA_HOST` if that is set where Chrome starts.
 
 ### 6. Summarize a page
 
@@ -280,9 +287,10 @@ a user's machine.
 
 A Chrome Manifest V3 extension (WXT + TypeScript) plus a local Chrome native messaging host
 (`native-host/`, plain Node, no dependencies). The extension extracts the article from the active
-tab and sends the prompt to the host; the host runs `claude --print` or `codex exec` and streams the
-text back. The user's Claude or ChatGPT subscription pays for the summaries; there are no API keys
-to configure.
+tab and sends the prompt to the host; the host runs `claude --print` or `codex exec`, or calls the
+Ollama HTTP API on the loopback, and streams the text back. The user's Claude or ChatGPT
+subscription pays for the summaries, or Ollama runs them locally; there are no API keys to
+configure.
 
 ### Install
 

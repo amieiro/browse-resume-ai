@@ -33,12 +33,14 @@
   "options_model_list": "النماذج (واحد في كل سطر)",
   "options_models_empty": "قائمة النماذج ما تقدرش تكون فارغة.",
   "options_ready": "واجد",
-  "options_help": "الملخّصات تفوت على المكوّن المحلي، اللي يشغّل Claude Code ولا Codex في هاد الكمبيوتر بالاشتراك تاعك. نص الصفحة يتبعث غير للمزوّد اللي تختارو.",
+  "options_help": "الملخّصات تفوت على المكوّن المحلي اللي في هاد الكمبيوتر: يشغّل Claude Code ولا Codex بالاشتراك تاعك، ولا موديل في Ollama. نص الصفحة يتبعث غير للمزوّد اللي تختارو.",
   "options_ui_language": "لغة الواجهة",
   "options_ui_language_auto": "أوتوماتيك (لغة المتصفح)",
   "menu_summarize_selection": "لخّص النص المختار",
   "menu_summarize_page": "لخّص الصفحة",
   "ui_selection": "النص المختار",
   "ui_ask_placeholder": "اسقسي على هاد الصفحة",
-  "ui_ask": "اسقسي"
+  "ui_ask": "اسقسي",
+  "error_ollama_missing": "ما راهش Ollama خدّام في هاد الكمبيوتر. ثبّتو من ollama.com وحلّو، ومن بعد عاود جرّب.",
+  "error_ollama_model_missing": "هاد الموديل ماشي محمّل في Ollama. شغّل ollama pull مع اسم الموديل (مثلاً ollama pull llama3.2)، ومن بعد عاود جرّب."
 }

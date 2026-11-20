@@ -10,6 +10,8 @@ export type SummaryErrorCode =
   | 'codex_missing'
   | 'codex_signed_out'
   | 'codex_not_eligible'
+  | 'ollama_missing'
+  | 'ollama_model_missing'
   | 'usage_limit'
   | 'provider_failed';
 

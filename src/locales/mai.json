@@ -33,12 +33,14 @@
   "options_model_list": "मॉडल (प्रति पंक्ति एक)",
   "options_models_empty": "मॉडलक सूची खाली नहि भऽ सकैत अछि।",
   "options_ready": "तैयार",
-  "options_help": "सारांश स्थानीय घटकक माध्यमसँ जाइत अछि, जे अहाँक सदस्यतासँ एहि कंप्यूटरपर Claude Code वा Codex चलबैत अछि। पृष्ठक पाठ मात्र अहाँक चुनल प्रदाताकेँ पठाओल जाइत अछि।",
+  "options_help": "सारांश एहि कंप्यूटरपर स्थानीय घटकक माध्यमसँ जाइत अछि: ई अहाँक सदस्यतासँ Claude Code वा Codex चलबैत अछि, वा Ollama मे कोनो मॉडल। पृष्ठक पाठ मात्र अहाँक चुनल प्रदाताकेँ पठाओल जाइत अछि।",
   "options_ui_language": "इंटरफ़ेसक भाषा",
   "options_ui_language_auto": "स्वचालित (ब्राउज़रक भाषा)",
   "menu_summarize_selection": "चयनक सारांश बनाउ",
   "menu_summarize_page": "पृष्ठक सारांश बनाउ",
   "ui_selection": "चयनित पाठ",
   "ui_ask_placeholder": "एहि पृष्ठक बारेमे प्रश्न पूछू",
-  "ui_ask": "पूछू"
+  "ui_ask": "पूछू",
+  "error_ollama_missing": "Ollama एहि कंप्यूटरपर नहि चलि रहल अछि। एकरा ollama.com सँ इंस्टॉल करू आ खोलू, फेर फेरसँ प्रयास करू।",
+  "error_ollama_model_missing": "ई मॉडल Ollama मे डाउनलोड नहि भेल अछि। मॉडलक नामक संग ollama pull चलाउ (उदाहरणक लेल, ollama pull llama3.2), फेर फेरसँ प्रयास करू।"
 }

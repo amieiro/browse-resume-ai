@@ -33,12 +33,14 @@
   "options_model_list": "מודלים (אחד בכל שורה)",
   "options_models_empty": "רשימת המודלים לא יכולה להיות ריקה.",
   "options_ready": "מוכן",
-  "options_help": "הסיכומים עוברים דרך הרכיב המקומי, שמריץ את Claude Code או את Codex במחשב הזה עם המינוי שלך. טקסט הדף נשלח רק לספק שבחרת.",
+  "options_help": "הסיכומים עוברים דרך הרכיב המקומי במחשב הזה: הוא מריץ את Claude Code או את Codex עם המינוי שלך, או מודל ב-Ollama. טקסט הדף נשלח רק לספק שבחרת.",
   "options_ui_language": "שפת הממשק",
   "options_ui_language_auto": "אוטומטי (שפת הדפדפן)",
   "menu_summarize_selection": "סיכום הבחירה",
   "menu_summarize_page": "סיכום הדף",
   "ui_selection": "טקסט נבחר",
   "ui_ask_placeholder": "אפשר לשאול שאלה על הדף הזה",
-  "ui_ask": "שאלה"
+  "ui_ask": "שאלה",
+  "error_ollama_missing": "Ollama לא פועל במחשב הזה. יש להתקין אותו מ-ollama.com ולפתוח אותו, ואז לנסות שוב.",
+  "error_ollama_model_missing": "המודל הזה לא הורד ב-Ollama. יש להריץ ollama pull עם שם המודל (לדוגמה, ollama pull llama3.2), ואז לנסות שוב."
 }

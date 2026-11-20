@@ -33,12 +33,14 @@
   "options_model_list": "Modelle (ein per raegel)",
   "options_models_empty": "De lies mèt modelle maag neet laeg zien.",
   "options_ready": "Klaor",
-  "options_help": "Saamevattinge loupe via de lokaal component, die Claude Code of Codex op dees computer oetveurt mèt uch abonnement. De tèks vaan de pagina weurt allein nao de aanbeejer gesjik dee geer keest.",
+  "options_help": "Saamevattinge loupe via de lokaal component op dees computer: dee veurt Claude Code of Codex oet mèt uch abonnement, of e model in Ollama. De tèks vaan de pagina weurt allein nao de aanbeejer gesjik dee geer keest.",
   "options_ui_language": "Taol vaan de interface",
   "options_ui_language_auto": "Automatisch (taol vaan de browser)",
   "menu_summarize_selection": "Selectie saamevatte",
   "menu_summarize_page": "Pagina saamevatte",
   "ui_selection": "Geselecteerde teks",
   "ui_ask_placeholder": "Stel 'n vraog euver dees pagina",
-  "ui_ask": "Vraoge"
+  "ui_ask": "Vraoge",
+  "error_ollama_missing": "Ollama loup neet op dees computer. Installeer 't vaan ollama.com en maak 't op, perbeer 't daonao opnuuj.",
+  "error_ollama_model_missing": "Dit model is neet gedownload in Ollama. Veur ollama pull oet mèt de naam vaan 't model (bv. ollama pull llama3.2), perbeer 't daonao opnuuj."
 }

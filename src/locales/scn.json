@@ -33,12 +33,14 @@
   "options_model_list": "Mudelli (unu pi rigu)",
   "options_models_empty": "La lista dî mudelli nun pò èssiri vacanti.",
   "options_ready": "Prontu",
-  "options_help": "Li riassunti passanu pô cumpunenti lucali, ca esequi Claude Code o Codex supra stu computer cu lu tò abbunamentu. Lu testu dâ pàggina veni mannatu sulu ô furnituri ca scegghi tu.",
+  "options_help": "Li riassunti passanu pô cumpunenti lucali di stu computer: esequi Claude Code o Codex cu lu tò abbunamentu, o un mudellu nta Ollama. Lu testu dâ pàggina veni mannatu sulu ô furnituri ca scegghi tu.",
   "options_ui_language": "Lingua di l'interfaccia",
   "options_ui_language_auto": "Autumàticu (lingua dû browser)",
   "menu_summarize_selection": "Riassumi a silizzioni",
   "menu_summarize_page": "Riassumi a pàggina",
   "ui_selection": "Testu silizziunatu",
   "ui_ask_placeholder": "Fai na dumanna supra sta pàggina",
-  "ui_ask": "Addumanna"
+  "ui_ask": "Addumanna",
+  "error_ollama_missing": "Ollama nun è attivu supra stu computer. Nstàllalu di ollama.com e aprilu, poi prova n'àutra vota.",
+  "error_ollama_model_missing": "Stu mudellu nun è scaricatu nta Ollama. Esequi ollama pull cû nomu dû mudellu (pi esempiu, ollama pull llama3.2), poi prova n'àutra vota."
 }

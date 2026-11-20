@@ -33,12 +33,14 @@
   "options_model_list": "Mô hình (mỗi dòng một mô hình)",
   "options_models_empty": "Danh sách mô hình không được để trống.",
   "options_ready": "Sẵn sàng",
-  "options_help": "Bản tóm tắt đi qua thành phần cục bộ, thành phần này chạy Claude Code hoặc Codex trên máy tính này bằng gói đăng ký của bạn. Nội dung trang chỉ được gửi đến nhà cung cấp mà bạn chọn.",
+  "options_help": "Bản tóm tắt đi qua thành phần cục bộ trên máy tính này: thành phần này chạy Claude Code hoặc Codex bằng gói đăng ký của bạn, hoặc một mô hình trong Ollama. Nội dung trang chỉ được gửi đến nhà cung cấp mà bạn chọn.",
   "options_ui_language": "Ngôn ngữ giao diện",
   "options_ui_language_auto": "Tự động (ngôn ngữ của trình duyệt)",
   "menu_summarize_selection": "Tóm tắt phần đã chọn",
   "menu_summarize_page": "Tóm tắt trang",
   "ui_selection": "Văn bản đã chọn",
   "ui_ask_placeholder": "Đặt câu hỏi về trang này",
-  "ui_ask": "Hỏi"
+  "ui_ask": "Hỏi",
+  "error_ollama_missing": "Ollama không chạy trên máy tính này. Hãy cài đặt từ ollama.com và mở ứng dụng, sau đó thử lại.",
+  "error_ollama_model_missing": "Mô hình này chưa được tải xuống trong Ollama. Hãy chạy ollama pull kèm tên mô hình (ví dụ: ollama pull llama3.2), sau đó thử lại."
 }

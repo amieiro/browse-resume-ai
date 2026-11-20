@@ -33,12 +33,14 @@
   "options_model_list": "ماڈلز (ہر سطر میں ایک)",
   "options_models_empty": "ماڈلز کی فہرست خالی نہیں ہو سکتی۔",
   "options_ready": "تیار",
-  "options_help": "خلاصے مقامی جزو کے ذریعے بنتے ہیں، جو آپ کی سبسکرپشن کے ساتھ اس کمپیوٹر پر Claude Code یا Codex چلاتا ہے۔ صفحے کا متن صرف آپ کے منتخب کردہ فراہم کنندہ کو بھیجا جاتا ہے۔",
+  "options_help": "خلاصے اس کمپیوٹر پر مقامی جزو کے ذریعے بنتے ہیں: یہ آپ کی سبسکرپشن کے ساتھ Claude Code یا Codex، یا Ollama میں کوئی ماڈل چلاتا ہے۔ صفحے کا متن صرف آپ کے منتخب کردہ فراہم کنندہ کو بھیجا جاتا ہے۔",
   "options_ui_language": "انٹرفیس کی زبان",
   "options_ui_language_auto": "خودکار (براؤزر کی زبان)",
   "menu_summarize_selection": "انتخاب کا خلاصہ بنائیں",
   "menu_summarize_page": "صفحے کا خلاصہ بنائیں",
   "ui_selection": "منتخب متن",
   "ui_ask_placeholder": "اس صفحے کے بارے میں سوال پوچھیں",
-  "ui_ask": "پوچھیں"
+  "ui_ask": "پوچھیں",
+  "error_ollama_missing": "اس کمپیوٹر پر Ollama نہیں چل رہا۔ اسے ollama.com سے انسٹال کریں اور کھولیں، پھر دوبارہ کوشش کریں۔",
+  "error_ollama_model_missing": "یہ ماڈل Ollama میں ڈاؤن لوڈ نہیں ہوا۔ ماڈل کے نام کے ساتھ ollama pull چلائیں (مثال کے طور پر، ollama pull llama3.2)، پھر دوبارہ کوشش کریں۔"
 }

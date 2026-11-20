@@ -33,12 +33,14 @@
   "options_model_list": "مدل‌ها (یکی د هر سطر)",
   "options_models_empty": "فهرست مدل‌ها نمی‌تنه خالی بشه.",
   "options_ready": "آماده",
-  "options_help": "خلاصه‌ها از راه بخش محلی موره، که Claude Code یا Codex ره د ای کمپیوتر قد اشتراک تو اجرا مونه. متن صفحه فقط بلدِ فراهم‌کننده‌ای که انتخاب مونی روان مونه.",
+  "options_help": "خلاصه‌ها از راه بخش محلی د ای کمپیوتر موره: او Claude Code یا Codex ره قد اشتراک تو اجرا مونه، یا یگ مدل ره د Ollama. متن صفحه فقط بلدِ فراهم‌کننده‌ای که انتخاب مونی روان مونه.",
   "options_ui_language": "زبان رابط",
   "options_ui_language_auto": "خودکار (زبان مرورگر)",
   "menu_summarize_selection": "متن انتخاب‌شده ره خلاصه کو",
   "menu_summarize_page": "صفحه ره خلاصه کو",
   "ui_selection": "متن انتخاب‌شده",
   "ui_ask_placeholder": "د باره ای صفحه سوال کو",
-  "ui_ask": "سوال کو"
+  "ui_ask": "سوال کو",
+  "error_ollama_missing": "Ollama د ای کمپیوتر روان نیه. اونه از ollama.com نصب کو و واز کو، بعد دوباره کوشش کو.",
+  "error_ollama_model_missing": "ای مدل د Ollama دانلود نشده. ollama pull ره قد نام مدل اجرا کو (مثلاً، ollama pull llama3.2)، بعد دوباره کوشش کو."
 }

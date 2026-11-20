@@ -33,12 +33,14 @@
   "options_model_list": "Moderi (imwe kuri buri murongo)",
   "options_models_empty": "Urutonde rwa moderi ntirushobora kuba rurimo ubusa.",
   "options_ready": "Byiteguye",
-  "options_help": "Incamake zinyura mu gice cyo kuri mudasobwa, gitangiza Claude Code cyangwa Codex kuri iyi mudasobwa ukoresheje ifatabuguzi ryawe. Inyandiko ya paji yoherezwa gusa ku utanga serivisi wahisemo.",
+  "options_help": "Incamake zinyura mu gice cyo kuri iyi mudasobwa: gitangiza Claude Code cyangwa Codex ukoresheje ifatabuguzi ryawe, cyangwa moderi muri Ollama. Inyandiko ya paji yoherezwa gusa ku utanga serivisi wahisemo.",
   "options_ui_language": "Ururimi rw'imigaragarire",
   "options_ui_language_auto": "Byikoresha (ururimi rwa mushakisha)",
   "menu_summarize_selection": "Kora incamake y'ibyatoranyijwe",
   "menu_summarize_page": "Kora incamake y'urupapuro",
   "ui_selection": "Inyandiko yatoranyijwe",
   "ui_ask_placeholder": "Baza ikibazo kuri uru rupapuro",
-  "ui_ask": "Baza"
+  "ui_ask": "Baza",
+  "error_ollama_missing": "Ollama ntikora kuri iyi mudasobwa. Yinjize uyikuye kuri ollama.com hanyuma uyifungure, maze wongere ugerageze.",
+  "error_ollama_model_missing": "Iyi moderi ntiyakuwe muri Ollama. Tangiza ollama pull n'izina rya moderi (urugero, ollama pull llama3.2), maze wongere ugerageze."
 }

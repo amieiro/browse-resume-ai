@@ -33,12 +33,14 @@
   "options_model_list": "Model (di her rêzê de yek)",
   "options_models_empty": "Lîsteya modelan nikare vala be.",
   "options_ready": "Amade",
-  "options_help": "Kurtasî di ser pêkhateya herêmî re derbas dibin, ku bi abonetiya te Claude Code an Codex li ser vê komputerê dixebitîne. Nivîsa rûpelê tenê ji peydakarê ku tu hilbijêrî re tê şandin.",
+  "options_help": "Kurtasî di ser pêkhateya herêmî ya li ser vê komputerê re derbas dibin: ew bi abonetiya te Claude Code an Codex, an jî modelekê di Ollama de dixebitîne. Nivîsa rûpelê tenê ji peydakarê ku tu hilbijêrî re tê şandin.",
   "options_ui_language": "Zimanê navrûyê",
   "options_ui_language_auto": "Xweber (zimanê gerokê)",
   "menu_summarize_selection": "Hilbijartinê kurt bike",
   "menu_summarize_page": "Rûpelê kurt bike",
   "ui_selection": "Nivîsa hilbijartî",
   "ui_ask_placeholder": "Li ser vê rûpelê pirsekê bike",
-  "ui_ask": "Bipirse"
+  "ui_ask": "Bipirse",
+  "error_ollama_missing": "Ollama li ser vê komputerê naxebite. Wê ji ollama.com saz bike û veke, paşê dîsa biceribîne.",
+  "error_ollama_model_missing": "Ev model di Ollama de nehatiye daxistin. Bi navê modelê ollama pull bixebitîne (bo nimûne, ollama pull llama3.2), paşê dîsa biceribîne."
 }

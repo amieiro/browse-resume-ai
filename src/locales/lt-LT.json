@@ -33,12 +33,14 @@
   "options_model_list": "Modeliai (po vieną eilutėje)",
   "options_models_empty": "Modelių sąrašas negali būti tuščias.",
   "options_ready": "Parengta",
-  "options_help": "Santraukos kuriamos per vietinį komponentą, kuris šiame kompiuteryje paleidžia Claude Code arba Codex su jūsų prenumerata. Puslapio tekstas siunčiamas tik jūsų pasirinktam teikėjui.",
+  "options_help": "Santraukos kuriamos per vietinį komponentą šiame kompiuteryje: jis paleidžia Claude Code arba Codex su jūsų prenumerata arba modelį Ollama. Puslapio tekstas siunčiamas tik jūsų pasirinktam teikėjui.",
   "options_ui_language": "Sąsajos kalba",
   "options_ui_language_auto": "Automatinė (naršyklės kalba)",
   "menu_summarize_selection": "Apibendrinti pažymėtą tekstą",
   "menu_summarize_page": "Apibendrinti puslapį",
   "ui_selection": "Pažymėtas tekstas",
   "ui_ask_placeholder": "Užduokite klausimą apie šį puslapį",
-  "ui_ask": "Klausti"
+  "ui_ask": "Klausti",
+  "error_ollama_missing": "Ollama šiame kompiuteryje neveikia. Įdiekite ją iš ollama.com ir atidarykite, tada bandykite dar kartą.",
+  "error_ollama_model_missing": "Šis modelis neatsisiųstas į Ollama. Paleiskite ollama pull su modelio pavadinimu (pavyzdžiui, ollama pull llama3.2), tada bandykite dar kartą."
 }
