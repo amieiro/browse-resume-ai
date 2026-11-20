@@ -8,28 +8,17 @@
 //
 // Usage: npm run dist && node scripts/screenshots.mjs [--model sonnet]
 // Requires the native host to be installed (./native-host/install.sh).
-import { spawn } from 'node:child_process';
-import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
-import { homedir, tmpdir } from 'node:os';
-import { dirname, join, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import puppeteer from 'puppeteer-core';
-import { build } from 'vite';
-import { createDecoder, encodeMessage } from '../native-host/lib/framing.mjs';
+import { readFileSync } from 'node:fs';
+import { homedir } from 'node:os';
+import { join } from 'node:path';
 import { addBorder } from './add-border.mjs';
+import { EXTENSION_DIR, ROOT, argValue, launchChrome, loadPromptBuilder, sleep, summarizeWithHost } from './lib/shots.mjs';
 
-const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const EXTENSION_DIR = join(ROOT, 'dist/chrome');
 const OUT = join(ROOT, 'media/install');
-const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
-const HOST_MANIFEST = join(homedir(), 'Library/Application Support/Google/Chrome/NativeMessagingHosts/com.browse_resume_ai.host.json');
-const LAUNCHER = join(homedir(), 'Library/Application Support/browse-resume-ai/launcher.sh');
 const ARTICLE_URL = 'https://en.wikipedia.org/wiki/Galician_language';
-const MODEL = process.argv.includes('--model') ? process.argv[process.argv.indexOf('--model') + 1] : 'sonnet';
+const MODEL = argValue('--model', 'sonnet');
 const VIEWPORT = { width: 1200, height: 760, deviceScaleFactor: 2 };
 const PANEL_VIEWPORT = { width: 420, height: 760, deviceScaleFactor: 2 };
-
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // --- In-page helpers (run inside the page; they search through shadow roots) ---------------------
 
@@ -102,58 +91,9 @@ async function shot(page, name, displayWidth = DISPLAY_WIDTH.page) {
   console.log('wrote', join('media/install', name));
 }
 
-// --- A real summary through the native host -------------------------------------------------------
-
-async function loadPromptBuilder() {
-  const outDir = mkdtempSync(join(tmpdir(), 'bra-prompt-'));
-  await build({
-    configFile: false,
-    logLevel: 'silent',
-    resolve: { alias: { '@': join(ROOT, 'src') } },
-    build: {
-      outDir,
-      lib: { entry: join(ROOT, 'src/lib/prompt.ts'), formats: ['es'], fileName: 'prompt' },
-      emptyOutDir: true,
-    },
-  });
-  const mod = await import(join(outDir, 'prompt.js'));
-  rmSync(outDir, { recursive: true, force: true });
-  return mod.buildPrompt;
-}
-
-function summarizeWithHost(prompt) {
-  return new Promise((resolvePromise, reject) => {
-    const host = spawn(LAUNCHER, [], { stdio: ['pipe', 'pipe', 'inherit'] });
-    let text = '';
-    host.stdout.on(
-      'data',
-      createDecoder((m) => {
-        if (m.type === 'chunk') text += m.text;
-        else if (m.type === 'done') (host.stdin.end(), resolvePromise(text));
-        else if (m.type === 'error') (host.stdin.end(), reject(new Error(`${m.code}: ${m.message}`)));
-      }),
-    );
-    host.stdin.write(encodeMessage({ type: 'summarize', id: 'shot', provider: 'claude', model: MODEL, prompt }));
-  });
-}
-
 // --- Main -----------------------------------------------------------------------------------------
 
-mkdirSync(OUT, { recursive: true });
-const userDataDir = mkdtempSync(join(tmpdir(), 'bra-shots-'));
-// Chrome looks for native messaging hosts in <user-data-dir>/NativeMessagingHosts.
-mkdirSync(join(userDataDir, 'NativeMessagingHosts'), { recursive: true });
-copyFileSync(HOST_MANIFEST, join(userDataDir, 'NativeMessagingHosts', 'com.browse_resume_ai.host.json'));
-
-const browser = await puppeteer.launch({
-  executablePath: CHROME,
-  headless: false,
-  userDataDir,
-  pipe: true,
-  enableExtensions: true,
-  args: ['--lang=en-US', '--no-first-run', '--no-default-browser-check', '--window-size=1280,880'],
-  defaultViewport: VIEWPORT,
-});
+const { browser, close } = await launchChrome({ viewport: VIEWPORT });
 
 try {
   const page = (await browser.pages())[0];
@@ -212,7 +152,7 @@ try {
   if (!extracted) throw new Error('No article text extracted');
   const buildPrompt = await loadPromptBuilder();
   console.log(`summarizing ${extracted.title} with ${MODEL}...`);
-  const text = await summarizeWithHost(buildPrompt(extracted, 'medium', 'en-US'));
+  const text = await summarizeWithHost(buildPrompt(extracted, 'medium', 'en-US'), { model: MODEL });
 
   const panel = await browser.newPage();
   await panel.setViewport(PANEL_VIEWPORT);
@@ -234,6 +174,5 @@ try {
   await panel.evaluate(() => window.__mark(document.querySelector('.toolbar'), 2));
   await shot(panel, '5-summary.png', DISPLAY_WIDTH.panel);
 } finally {
-  await browser.close();
-  rmSync(userDataDir, { recursive: true, force: true });
+  await close();
 }
