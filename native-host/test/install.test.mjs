@@ -37,6 +37,12 @@ describe.skipIf(process.platform === 'win32')('install.sh', () => {
     expect(manifest.path.startsWith(weird)).toBe(true);
     expect(manifest.allowed_origins).toEqual(['chrome-extension://pdokiakaaeffjlabmofdppjakdhaimpi/']);
 
+    // Firefox gets its own manifest, naming the add-on ID, with the same launcher.
+    const firefoxDir =
+      process.platform === 'darwin' ? join(home, 'Library/Application Support/Mozilla/NativeMessagingHosts') : join(home, '.mozilla/native-messaging-hosts');
+    const firefox = JSON.parse(readFileSync(join(firefoxDir, 'com.browse_resume_ai.host.json'), 'utf8'));
+    expect(firefox).toEqual({ name: manifest.name, description: manifest.description, path: manifest.path, type: 'stdio', allowed_extensions: ['browse-resume-ai@amieiro.github.io'] });
+
     // Chrome starts the launcher with a minimal environment.
     const host = spawn(manifest.path, [], { env: { HOME: home } });
     const pong = await new Promise((resolve, reject) => {

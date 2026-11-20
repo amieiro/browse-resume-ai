@@ -28,6 +28,13 @@ async function ensureReader(): Promise<void> {
  * when no other PDF is being read, to free its memory.
  */
 export async function readPdf(url: string, title: string): Promise<Article | null> {
+  // Firefox's background page has a DOM and Web Workers: it reads the file itself.
+  if (import.meta.env.FIREFOX) {
+    const { readPdfFile } = await import('./pdf-read');
+    const result = await readPdfFile(url, title);
+    if (!result.ok) throw new SummaryError(result.code, result.message);
+    return result.article;
+  }
   reading++;
   try {
     await ensureReader();

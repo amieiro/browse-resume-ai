@@ -1,26 +1,30 @@
 #!/bin/sh
-# Installs the Browse Resume AI native messaging host for Google Chrome (and Chromium on Linux)
-# on macOS and Linux. On Windows, use install.ps1.
+# Installs the Browse Resume AI native messaging host for Google Chrome (and Chromium on Linux) and
+# Firefox on macOS and Linux. On Windows, use install.ps1.
 # Safe to run again (for example after moving the repository or upgrading Node or Claude Code).
 set -eu
 
 HOST_NAME="com.browse_resume_ai.host"
 EXTENSION_ID="pdokiakaaeffjlabmofdppjakdhaimpi"
+FIREFOX_ID="browse-resume-ai@amieiro.github.io"
 
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 HOST_SCRIPT="$SCRIPT_DIR/host.mjs"
 
-# Where the launcher goes, and the browsers' NativeMessagingHosts folders (one per line).
+# Where the launcher goes, and the browsers' NativeMessagingHosts folders (one per line): Chrome's
+# manifests name the extension by origin, Firefox's by add-on ID, so they are written apart.
 case "$(uname)" in
   Darwin)
     SUPPORT_DIR="$HOME/Library/Application Support/browse-resume-ai"
     MANIFEST_DIRS="$HOME/Library/Application Support/Google/Chrome/NativeMessagingHosts"
+    FIREFOX_DIRS="$HOME/Library/Application Support/Mozilla/NativeMessagingHosts"
     ;;
   Linux)
     SUPPORT_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/browse-resume-ai"
     CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}"
     MANIFEST_DIRS="$CONFIG_DIR/google-chrome/NativeMessagingHosts
 $CONFIG_DIR/chromium/NativeMessagingHosts"
+    FIREFOX_DIRS="$HOME/.mozilla/native-messaging-hosts"
     ;;
   *)
     echo "This installer supports macOS and Linux. On Windows, run native-host\\install.ps1 in PowerShell." >&2
@@ -73,19 +77,28 @@ quote() {
 chmod 755 "$LAUNCHER"
 
 MANIFESTS=""
+# Node writes the JSON, so the launcher path is escaped whatever it contains.
+# write_manifest <file> chrome|firefox
+write_manifest() {
+  "$NODE_BIN" -e '
+    const [file, browser, name, path, chromeId, firefoxId] = process.argv.slice(1);
+    const allowed = browser === "firefox" ? { allowed_extensions: [firefoxId] } : { allowed_origins: [`chrome-extension://${chromeId}/`] };
+    const manifest = { name, description: "Browse Resume AI local host", path, type: "stdio", ...allowed };
+    require("fs").writeFileSync(file, JSON.stringify(manifest, null, 2) + "\n");
+  ' "$1" "$2" "$HOST_NAME" "$LAUNCHER" "$EXTENSION_ID" "$FIREFOX_ID"
+  MANIFESTS="$MANIFESTS
+  manifest: $1"
+}
 OLD_IFS=$IFS
 IFS='
 '
 for dir in $MANIFEST_DIRS; do
   mkdir -p "$dir"
-  # Node writes the JSON, so the launcher path is escaped whatever it contains.
-  "$NODE_BIN" -e '
-    const [file, name, path, id] = process.argv.slice(1);
-    const manifest = { name, description: "Browse Resume AI local host", path, type: "stdio", allowed_origins: [`chrome-extension://${id}/`] };
-    require("fs").writeFileSync(file, JSON.stringify(manifest, null, 2) + "\n");
-  ' "$dir/$HOST_NAME.json" "$HOST_NAME" "$LAUNCHER" "$EXTENSION_ID"
-  MANIFESTS="$MANIFESTS
-  manifest: $dir/$HOST_NAME.json"
+  write_manifest "$dir/$HOST_NAME.json" chrome
+done
+for dir in $FIREFOX_DIRS; do
+  mkdir -p "$dir"
+  write_manifest "$dir/$HOST_NAME.json" firefox
 done
 IFS=$OLD_IFS
 

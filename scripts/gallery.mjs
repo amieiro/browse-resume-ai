@@ -275,7 +275,7 @@ async function historyShot(browser, id, shot, read, buildPrompt, buildQuestionPr
   const page = await browser.newPage();
   await page.setViewport({ width: 900, height: HEIGHT, deviceScaleFactor: SCALE });
   await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'light' }]);
-  await page.goto(`chrome-extension://${id}/history.html`);
+  await page.goto(`chrome-extension://${id}/summary-history.html`);
   await page.evaluate(async (list, language) => {
     await chrome.storage.local.set({ history: list, settings: { uiLanguage: language, language } });
   }, entries, shot.language);

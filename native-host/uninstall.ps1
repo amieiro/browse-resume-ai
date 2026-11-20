@@ -9,7 +9,8 @@ $HostName = 'com.browse_resume_ai.host'
 if (-not $SkipRegistry) {
   foreach ($key in @(
       "HKCU:\Software\Google\Chrome\NativeMessagingHosts\$HostName",
-      "HKCU:\Software\Chromium\NativeMessagingHosts\$HostName"
+      "HKCU:\Software\Chromium\NativeMessagingHosts\$HostName",
+      "HKCU:\Software\Mozilla\NativeMessagingHosts\$HostName"
     )) {
     if (Test-Path $key) { Remove-Item -Path $key -Force }
   }

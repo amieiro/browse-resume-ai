@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Browse Resume AI PDF reader</title>
-    <script type="module" crossorigin src="/chunks/pdf-reader-DSDRJUGe.js"></script>
+    <!-- Chrome only: Firefox reads PDFs in its background page, which has a DOM. -->
+    <meta name="manifest.exclude" content="['firefox']">
+    <script type="module" crossorigin src="/chunks/pdf-reader-C7dQTsyx.js"></script>
     <link rel="modulepreload" crossorigin href="/chunks/languages-DqDm_jPr.js">
   </head>
   <body>

@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { initI18n, resolveUiLanguage, setMessages, setWindows, t } from '@/lib/i18n';
+import { initI18n, resolveUiLanguage, setFirefox, setMessages, setWindows, t } from '@/lib/i18n';
 import { LANGUAGES } from '@/lib/languages';
 
 const FILES = import.meta.glob<Record<string, string>>('../../src/locales/*.json', { eager: true, import: 'default' });
@@ -28,6 +28,17 @@ describe('install command on Windows', () => {
     setWindows(true);
     expect(t('e')).toBe('Run: powershell -ExecutionPolicy Bypass -File native-host\\install.ps1 now.');
     setWindows(false);
+  });
+});
+
+describe('store name in Firefox', () => {
+  beforeEach(() => setMessages({ e: 'Browser pages and the Chrome Web Store are not supported.' }));
+
+  it('names Firefox Add-ons instead of the Chrome Web Store', () => {
+    setFirefox(true);
+    expect(t('e')).toBe('Browser pages and the Firefox Add-ons are not supported.');
+    setFirefox(false);
+    expect(t('e')).toBe('Browser pages and the Chrome Web Store are not supported.');
   });
 });
 

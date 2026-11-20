@@ -1,23 +1,24 @@
 {
   "name": "browse-resume-ai",
   "description": "Summarize the current web page with one click, using your Claude or ChatGPT subscription.",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "private": true,
   "license": "GPL-2.0-or-later",
   "type": "module",
   "scripts": {
     "dev": "wxt",
-    "build": "wxt build",
-    "zip": "wxt zip",
+    "build": "wxt build && wxt build -b firefox",
+    "zip": "wxt zip && wxt zip -b firefox",
     "compile": "tsc --noEmit",
     "test": "vitest run",
     "postinstall": "wxt prepare",
-    "dist": "wxt build && rm -rf dist/chrome && mkdir -p dist && cp -R .output/chrome-mv3 dist/chrome",
+    "dist": "wxt build && wxt build -b firefox && rm -rf dist/chrome dist/firefox && mkdir -p dist && cp -R .output/chrome-mv3 dist/chrome && cp -R .output/firefox-mv3 dist/firefox",
     "screenshots": "node scripts/screenshots.mjs",
     "gallery": "node scripts/gallery.mjs",
     "readme-toc": "node scripts/readme-toc.mjs",
     "test:linux": "docker build -f test/linux/Dockerfile -t browse-resume-ai-linux . && docker run --rm browse-resume-ai-linux",
-    "test:windows-scripts": "docker build -f test/windows/Dockerfile -t browse-resume-ai-windows-scripts . && docker run --rm browse-resume-ai-windows-scripts"
+    "test:windows-scripts": "docker build -f test/windows/Dockerfile -t browse-resume-ai-windows-scripts . && docker run --rm browse-resume-ai-windows-scripts",
+    "test:firefox": "BRA_E2E=1 wxt build -b firefox && node test/firefox/e2e.mjs"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0",

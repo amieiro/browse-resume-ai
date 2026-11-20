@@ -32,7 +32,7 @@ export async function startSummaryApp(root: HTMLElement, options: Options): Prom
     onSettingsChange: (patch) => void saveSettings(patch),
     onOpenOptions: () => void browser.runtime.openOptionsPage(),
     onAsk: (question) => client.send({ type: 'ask', question }),
-    onOpenHistory: () => void browser.tabs.create({ url: browser.runtime.getURL('/history.html') }),
+    onOpenHistory: () => void browser.tabs.create({ url: browser.runtime.getURL('/summary-history.html') }),
   });
 
   browser.storage.onChanged.addListener((changes, area) => {

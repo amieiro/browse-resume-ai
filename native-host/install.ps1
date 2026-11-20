@@ -1,4 +1,4 @@
-# Installs the Browse Resume AI native messaging host for Google Chrome and Chromium on Windows.
+# Installs the Browse Resume AI native messaging host for Google Chrome, Chromium and Firefox on Windows.
 # Safe to run again (for example after moving the repository or upgrading Node or Claude Code).
 #
 # Run in PowerShell from the repository folder:
@@ -13,10 +13,13 @@ $ErrorActionPreference = 'Stop'
 
 $HostName = 'com.browse_resume_ai.host'
 $ExtensionId = 'pdokiakaaeffjlabmofdppjakdhaimpi'
+$FirefoxId = 'browse-resume-ai@amieiro.github.io'
 $RegistryKeys = @(
   "HKCU:\Software\Google\Chrome\NativeMessagingHosts\$HostName",
   "HKCU:\Software\Chromium\NativeMessagingHosts\$HostName"
 )
+# Firefox names the extension by add-on ID, so it has a manifest of its own.
+$FirefoxRegistryKey = "HKCU:\Software\Mozilla\NativeMessagingHosts\$HostName"
 $Utf8NoBom = New-Object System.Text.UTF8Encoding $false
 
 function Find-Command([string]$Name) {
@@ -53,6 +56,7 @@ if (-not $CodexBin) { Write-Warning 'Codex (codex) was not found; the Codex prov
 New-Item -ItemType Directory -Force -Path $DataDir | Out-Null
 $Launcher = Join-Path $DataDir 'launcher.bat'
 $Manifest = Join-Path $DataDir "$HostName.json"
+$FirefoxManifest = Join-Path $DataDir "$HostName.firefox.json"
 
 # Chrome starts hosts with the user's environment, but PATH may lack nvm or npm folders.
 $PathDirs = @($NodeBin, $ClaudeBin, $CodexBin) | Where-Object { $_ } | ForEach-Object { Split-Path -Parent $_ } | Select-Object -Unique
@@ -79,11 +83,22 @@ $ManifestJson = [ordered]@{
 } | ConvertTo-Json
 [System.IO.File]::WriteAllText($Manifest, $ManifestJson, $Utf8NoBom)
 
+$FirefoxManifestJson = [ordered]@{
+  name               = $HostName
+  description        = 'Browse Resume AI local host'
+  path               = $Launcher
+  type               = 'stdio'
+  allowed_extensions = @($FirefoxId)
+} | ConvertTo-Json
+[System.IO.File]::WriteAllText($FirefoxManifest, $FirefoxManifestJson, $Utf8NoBom)
+
 if (-not $SkipRegistry) {
   foreach ($key in $RegistryKeys) {
     New-Item -Path $key -Force | Out-Null
     Set-Item -Path $key -Value $Manifest
   }
+  New-Item -Path $FirefoxRegistryKey -Force | Out-Null
+  Set-Item -Path $FirefoxRegistryKey -Value $FirefoxManifest
 }
 
 Write-Output "Installed $HostName"
@@ -92,4 +107,5 @@ Write-Output "  claude:   $(if ($ClaudeBin) { $ClaudeBin } else { 'not found' })
 Write-Output "  codex:    $(if ($CodexBin) { $CodexBin } else { 'not found' })"
 Write-Output "  launcher: $Launcher"
 Write-Output "  manifest: $Manifest"
-if (-not $SkipRegistry) { $RegistryKeys | ForEach-Object { Write-Output "  registry: $_" } }
+Write-Output "  manifest: $FirefoxManifest (Firefox)"
+if (-not $SkipRegistry) { @($RegistryKeys) + $FirefoxRegistryKey | ForEach-Object { Write-Output "  registry: $_" } }

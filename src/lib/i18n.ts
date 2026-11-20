@@ -15,6 +15,15 @@ const UNIX_INSTALL = './native-host/install.sh';
 const WINDOWS_INSTALL = 'powershell -ExecutionPolicy Bypass -File native-host\\install.ps1';
 let windows = typeof navigator !== 'undefined' && /Windows/i.test(navigator.userAgent);
 
+// Some messages name the Chrome Web Store; in Firefox the store is Firefox Add-ons (both product
+// names stay untranslated in every language).
+let firefox = Boolean(import.meta.env.FIREFOX);
+
+/** For tests: pretend to run (or not) in Firefox. */
+export function setFirefox(value: boolean): void {
+  firefox = value;
+}
+
 /** For tests: pretend to run (or not) on Windows. */
 export function setWindows(value: boolean): void {
   windows = value;
@@ -54,6 +63,7 @@ export function resolveUiLanguage(setting: 'auto' | LanguageCode, browserLanguag
 
 /** Localized UI string; falls back to English, then to the key so a gap is visible, not blank. */
 export function t(key: string): string {
-  const text = messages[key] || fallback[key] || key;
+  let text = messages[key] || fallback[key] || key;
+  if (firefox) text = text.split('Chrome Web Store').join('Firefox Add-ons');
   return windows ? text.split(UNIX_INSTALL).join(WINDOWS_INSTALL) : text;
 }

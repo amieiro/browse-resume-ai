@@ -1,6 +1,6 @@
 # Browse Resume AI
 
-A Chrome extension that summarizes the article, PDF or YouTube video in the current tab with one click, using the AI
+A Chrome and Firefox extension that summarizes the article, PDF or YouTube video in the current tab with one click, using the AI
 subscription you already pay for: Claude (through Claude Code) or ChatGPT (through Codex), or with
 a model running on your own computer through Ollama. No API keys, no pay-per-use billing.
 
@@ -28,8 +28,10 @@ a model running on your own computer through Ollama. No API keys, no pay-per-use
   language or the one you choose in the settings.
 
 Status: personal project. Works on macOS, Linux and Windows with Google Chrome (and Chromium on
-Linux and Windows). macOS and Linux are tested end to end; Windows is tested only through its
-installer scripts, not on a Windows machine yet. A Firefox build is planned.
+Linux and Windows) and Firefox 140 or later. Chrome on macOS and Linux and Firefox on macOS are
+tested end to end; Windows is tested only through its installer scripts, not on a Windows machine
+yet. The Firefox build is not signed by Mozilla yet, so Firefox loads it until it restarts (see
+[Firefox](#firefox)).
 
 <!-- toc -->
 
@@ -45,6 +47,7 @@ installer scripts, not on a Windows machine yet. A Firefox build is planned.
     - [4. Check the extension ID](#4-check-the-extension-id)
     - [5. Check the settings](#5-check-the-settings)
     - [6. Summarize a page](#6-summarize-a-page)
+    - [Firefox](#firefox)
     - [Update](#update)
     - [Why a local component?](#why-a-local-component)
   - [Extension ID](#extension-id)
@@ -140,7 +143,8 @@ _A GrapheneOS thread on Mastodon: long summary in Arabic, right to left, in the 
 
 ## Requirements
 
-- macOS, Linux or Windows, with Google Chrome (or Chromium on Linux and Windows).
+- macOS, Linux or Windows, with Google Chrome (or Chromium on Linux and Windows), or Firefox 140
+  or later.
 - Node.js 18 or later.
 - At least one of:
   - [Claude Code](https://docs.claude.com/en/docs/claude-code), logged in with your Claude
@@ -153,8 +157,10 @@ _A GrapheneOS thread on Mastodon: long summary in Arabic, right to left, in the 
 
 ## Install
 
-The repository includes the latest build in [`dist/chrome`](dist/chrome), ready to load in Chrome.
-You do not need to build anything; you only need Node.js for the local component.
+The repository includes the latest builds in [`dist/chrome`](dist/chrome), ready to load in Chrome,
+and [`dist/firefox`](dist/firefox), for Firefox. You do not need to build anything; you only need
+Node.js for the local component. The steps below are for Chrome; for Firefox, do step 1 and then
+see [Firefox](#firefox).
 
 ### 1. Get the code and install the local component
 
@@ -175,7 +181,7 @@ powershell -ExecutionPolicy Bypass -File native-host\install.ps1
 ```
 
 The installer prints the `node`, `claude` and `codex` it found. It needs at least one of `claude`
-and `codex`, logged in.
+and `codex`, logged in. It registers the local component for Chrome, Chromium and Firefox.
 
 ### 2. Turn on Developer mode
 
@@ -293,6 +299,29 @@ The questions and answers stay with the summary until the tab closes or a new su
 
 <img src="media/install/5-summary.png" alt="A summary of the Wikipedia article on the Galician language in the side panel" width="420">
 
+### Firefox
+
+Firefox only installs add-ons signed by Mozilla for good, and this one is not signed yet. Until it
+is, load it as a temporary add-on, which Firefox keeps until it restarts:
+
+1. Run the installer of step 1 (it registers the local component for Firefox too).
+2. Open `about:debugging#/runtime/this-firefox` and click **Load Temporary Add-on…**.
+3. Choose the file `dist/firefox/manifest.json` inside the repository.
+4. Firefox asks to allow the add-on to send website content: that is the page text going to the
+   local component and from there to the provider you pick.
+
+Then click the toolbar icon (or press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>): the summary
+opens in Firefox's sidebar. Everything else works as in Chrome, with these differences:
+
+- PDFs are read the same way, from the file, even though Firefox's PDF viewer cannot be read by
+  extensions.
+- Files on your computer (`file://`) cannot be summarized: Firefox has no setting like Chrome's
+  **Allow access to file URLs**.
+- Keyboard shortcuts are changed in `about:addons`, under the gear, **Manage Extension Shortcuts**.
+
+Firefox Developer Edition, Nightly and ESR can keep it installed: set `xpinstall.signatures.required`
+to `false` in `about:config`, then install `dist/firefox` zipped as an `.xpi` from `about:addons`.
+
 ### Update
 
 ```sh
@@ -368,9 +397,9 @@ pdokiakaaeffjlabmofdppjakdhaimpi
 | `activeTab` | Read the page you clicked the icon or the menu on. |
 | `scripting` | Run the article extractor (Mozilla Readability) in that page. |
 | `storage` | Save your settings, the history of summaries and the per-tab summary for the session. |
-| `sidePanel` | Show summaries in the side panel. |
+| `sidePanel` | Show summaries in the side panel (Chrome; Firefox uses its sidebar, which needs no permission). |
 | `nativeMessaging` | Talk to the local component. |
-| `offscreen` | Read PDFs with pdf.js in a hidden extension page (a service worker cannot run pdf.js). |
+| `offscreen` | Read PDFs with pdf.js in a hidden extension page, as a service worker cannot run pdf.js (Chrome; Firefox reads them in its background page). |
 | `contextMenus` | Add **Summarize the selection** and **Summarize the page** to the right-click menu. |
 
 ## For AI agents
@@ -470,8 +499,9 @@ configure.
 ```sh
 npm install
 npm run dev       # Chrome with the extension loaded and live reload
-npm run build     # production build in .output/chrome-mv3
-npm run dist      # build and copy it to dist/chrome, the prebuilt folder kept in the repository
+npm run build     # production builds in .output/chrome-mv3 and .output/firefox-mv3
+npm run dist      # build and copy them to dist/chrome and dist/firefox, kept in the repository
+npm run zip       # zips for Chrome and Firefox (and the sources zip Mozilla asks for) in .output
 npm run screenshots  # regenerate media/install/*.png (needs the native host installed)
 npm run gallery      # regenerate media/gallery/*.png: real summaries of real pages (same need)
 npm run readme-toc   # regenerate the table of contents at the top of this README
@@ -479,6 +509,7 @@ npm test          # unit tests (extension and native host)
 npm run compile   # type check
 npm run test:linux            # Docker: unit tests, installer and Chromium end to end on Debian
 npm run test:windows-scripts  # Docker: the Windows installer scripts, with PowerShell on Linux
+npm run test:firefox          # Firefox end to end on this computer (needs Firefox and the native host)
 ```
 
 Layout:
@@ -493,7 +524,10 @@ Layout:
   corrections are welcome.
 - `native-host/`: the native messaging host (plain Node, no dependencies) and its installers
   (`install.sh` for macOS and Linux, `install.ps1` for Windows).
-- `test/linux/`, `test/windows/`: the Docker checks above.
+- `test/linux/`, `test/windows/`: the Docker checks above; `test/firefox/`: the Firefox check.
+- Chrome and Firefox share the code. Firefox has no side panel API (WXT makes the side panel page a
+  sidebar), no offscreen documents (its background page reads PDFs) and its own add-on ID,
+  `browse-resume-ai@amieiro.github.io`, which the local component's Firefox manifest allows.
 
 ## Licence
 

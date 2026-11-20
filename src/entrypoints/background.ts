@@ -48,6 +48,8 @@ export default defineBackground(() => {
   // Chrome starts and whenever a view opens (once a day, or when Claude Code or Codex changed).
   browser.runtime.onInstalled.addListener(() => {
     void syncSettings();
+  // End-to-end test build only (see wxt.config.ts): open a page the test can drive.
+  if (import.meta.env.BRA_E2E) void browser.tabs.create({ url: browser.runtime.getURL('/options.html') });
     void refreshCatalog(catalogDeps());
     void ensureFreshPrices(priceDeps(), true);
   });
@@ -61,10 +63,18 @@ export default defineBackground(() => {
   });
   void syncSettings();
 
+  /** Opens the side panel (Chrome) or the sidebar (Firefox); only inside a user gesture. */
+  const openSidePanel = (tabId: number) => {
+    if (import.meta.env.FIREFOX) {
+      (browser as unknown as { sidebarAction: { open(): Promise<void> } }).sidebarAction.open().catch(() => {});
+    } else {
+      browser.sidePanel.open({ tabId }).catch(() => {});
+    }
+  };
   /** Opens the summary view for a tab; must run inside the user gesture, before any await. */
   const openView = (tabId: number) => {
     if (displayMode === 'popup') browser.action.openPopup().catch(() => {});
-    else browser.sidePanel.open({ tabId }).catch(() => {});
+    else openSidePanel(tabId);
   };
   const announce = (tabId: number) => {
     const started: SummaryStartedBroadcast = { type: 'summary-started', tabId };
@@ -74,7 +84,7 @@ export default defineBackground(() => {
   // Fires only in side panel mode (no popup set): a click on the icon or the keyboard shortcut.
   browser.action.onClicked.addListener((tab) => {
     if (tab.id === undefined) return;
-    browser.sidePanel.open({ tabId: tab.id }).catch(() => {});
+    openSidePanel(tab.id);
     void summarizer.start(tab.id, { force: false });
     announce(tab.id);
   });

@@ -29,6 +29,10 @@ Assert ($manifest.type -eq 'stdio') 'manifest type'
 Assert ($manifest.path -eq (Join-Path $data 'launcher.bat')) 'manifest path'
 Assert (@($manifest.allowed_origins).Count -eq 1) 'allowed_origins is a one-item array'
 Assert ($manifest.allowed_origins[0] -eq 'chrome-extension://pdokiakaaeffjlabmofdppjakdhaimpi/') 'allowed origin'
+$firefox = Get-Content (Join-Path $data 'com.browse_resume_ai.host.firefox.json') -Raw | ConvertFrom-Json
+Assert ($firefox.path -eq (Join-Path $data 'launcher.bat')) 'Firefox manifest path'
+Assert (@($firefox.allowed_extensions).Count -eq 1) 'allowed_extensions is a one-item array'
+Assert ($firefox.allowed_extensions[0] -eq 'browse-resume-ai@amieiro.github.io') 'allowed Firefox add-on'
 
 $bytes = [System.IO.File]::ReadAllBytes((Join-Path $data 'launcher.bat'))
 Assert (-not ($bytes[0] -eq 0xEF -and $bytes[1] -eq 0xBB)) 'launcher.bat has no BOM'
