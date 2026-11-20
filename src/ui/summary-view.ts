@@ -83,7 +83,8 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   function renderSelectors() {
     fillSelect(provider, (Object.keys(PROVIDER_LABELS) as ProviderId[]).map((id) => ({ value: id, label: PROVIDER_LABELS[id] })), settings.provider);
     const list = settings.modelLists[settings.provider];
-    fillSelect(model, list.map((m) => ({ value: m, label: m })), settings.models[settings.provider]);
+    const labels = settings.modelLabels?.[settings.provider] ?? {};
+    fillSelect(model, list.map((m) => ({ value: m, label: labels[m] ?? m })), settings.models[settings.provider]);
     fillSelect(length, LENGTHS.map((l) => ({ value: l, label: t(`length_${l}`) })), settings.length);
     fillSelect(language, LANGUAGES.map((l) => ({ value: l.code, label: l.nativeName })), settings.language);
   }

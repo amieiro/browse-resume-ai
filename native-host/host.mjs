@@ -45,13 +45,15 @@ function handle(msg) {
     void Promise.all([cliVersion(CLAUDE_BIN), cliVersion(CODEX_BIN)]).then(([claude, codex]) => send({ type: 'versions', claude, codex }));
   } else if (msg.type === 'models') {
     void Promise.all([cliVersion(CLAUDE_BIN), cliVersion(CODEX_BIN), codexModels(CODEX_BIN), checkOllama(OLLAMA_URL)]).then(
-      ([claudeVersion, codexVersion, codex, ollama]) =>
+      ([claudeVersion, codexVersion, codex, ollama]) => {
+        const claude = claudeModels(undefined, claudeVersion);
         send({
           type: 'models',
-          claude: { version: claudeVersion, models: claudeModels(undefined, claudeVersion) },
+          claude: { version: claudeVersion, models: claude?.models ?? null, labels: claude?.labels ?? {} },
           codex: { version: codexVersion, models: codex },
           ollama: { found: ollama.found, models: ollama.models },
-        }),
+        });
+      },
     );
   } else if (msg.type === 'cancel') {
     running.get(msg.id)?.cancel();

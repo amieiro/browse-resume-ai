@@ -56,8 +56,10 @@ function compareVersions(a, b) {
 }
 
 /**
- * Claude Code's aliases and current models from its catalog cache, newest file first; null if
- * none. `version` is the output of `claude --version` ("2.1.329 (Claude Code)"), when known.
+ * Claude Code's models from its catalog cache (newest file first), one entry per model: the alias
+ * (sonnet, opus, haiku, fable), which follows the latest model, labelled with the model it points
+ * to now ("Sonnet 5.5"), then any current model no alias points to, by its full name. Returns
+ * { models, labels } or null. `version` is the output of `claude --version`, when known.
  */
 export function claudeModels(configDir = process.env.CLAUDE_CONFIG_DIR || join(homedir(), '.claude'), version = null) {
   const dir = join(configDir, 'cache', 'model-catalog');
@@ -79,18 +81,34 @@ export function claudeModels(configDir = process.env.CLAUDE_CONFIG_DIR || join(h
     .sort((a, b) => (b.fetchedAt ?? 0) - (a.fetchedAt ?? 0));
   const config = catalogs[0]?.catalog.config;
   if (!config) return null;
-  const aliases = Object.keys(config.provider_alias_targets ?? {}).sort((a, b) => {
+
+  const all = (config.models ?? []).filter((m) => m && typeof m.id === 'string');
+  const nameOf = (id) => all.find((m) => m.id === id)?.name ?? id;
+  const targets = config.provider_alias_targets ?? {};
+  const aliases = Object.keys(targets).sort((a, b) => {
     const ia = ALIAS_ORDER.indexOf(a);
     const ib = ALIAS_ORDER.indexOf(b);
     return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
   });
+  const labels = {};
+  const covered = new Set();
+  for (const alias of aliases) {
+    const target = typeof targets[alias]?.default === 'string' ? targets[alias].default : null;
+    labels[alias] = target ? nameOf(target) : alias;
+    if (target) covered.add(target);
+  }
+
   const installed = /\d+(\.\d+)+/.exec(version ?? '')?.[0];
-  const all = (config.models ?? []).filter((m) => m && typeof m.id === 'string');
   // Older catalogs may have no sections; then every model is offered.
   const current = all.some((m) => m.section) ? all.filter((m) => m.section === 'main') : all;
-  const usable = current.filter((m) => !installed || !m.min_claude_code_version || compareVersions(m.min_claude_code_version, installed) <= 0);
-  const models = valid([...aliases, ...usable.map((m) => m.id)]);
-  return models.length ? models : null;
+  const others = current
+    .filter((m) => !covered.has(m.id))
+    .filter((m) => !installed || !m.min_claude_code_version || compareVersions(m.min_claude_code_version, installed) <= 0);
+  for (const m of others) labels[m.id] = m.name ?? m.id;
+
+  const models = valid([...aliases, ...others.map((m) => m.id)]);
+  if (!models.length) return null;
+  return { models, labels: Object.fromEntries(models.map((id) => [id, labels[id]])) };
 }
 
 /** Codex's listed models, in its priority order; null when the catalog cannot be read. */

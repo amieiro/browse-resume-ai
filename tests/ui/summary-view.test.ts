@@ -214,5 +214,12 @@ describe('summary view states', () => {
       expect(root.querySelector('.qa-item .error')?.textContent).toContain('[error_usage_limit]');
     });
   });
+
+  it('shows a model by its name when the catalog has one, keeping the id as the value', () => {
+    mountSummaryView(root, { ...defaultSettings('en'), modelLabels: { claude: { sonnet: 'Sonnet 5.5' } } }, handlers as unknown as SummaryViewHandlers);
+    const option = [...select('model').options].find((o) => o.value === 'sonnet')!;
+    expect(option.textContent).toBe('Sonnet 5.5');
+    expect([...select('model').options].find((o) => o.value === 'opus')!.textContent).toBe('opus');
+  });
 });
 

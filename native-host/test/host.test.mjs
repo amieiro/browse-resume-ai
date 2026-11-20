@@ -112,7 +112,7 @@ describe('native host', () => {
       await waitFor(() => expect(h.messages[0]).toMatchObject({ type: 'models' }));
       expect(h.messages[0]).toEqual({
         type: 'models',
-        claude: { version: '2.1.329 (Claude Code)', models: expect.arrayContaining(['sonnet', 'claude-opus-5-5']) },
+        claude: { version: '2.1.329 (Claude Code)', models: ['sonnet', 'opus', 'haiku', 'fable'], labels: expect.objectContaining({ sonnet: 'Sonnet 5.5' }) },
         codex: { version: 'codex-cli 0.169.0', models: ['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna'] },
         ollama: { found: false, models: [] },
       });

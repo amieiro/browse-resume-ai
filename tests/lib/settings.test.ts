@@ -30,7 +30,7 @@ describe('loadSettings / saveSettings', () => {
   });
 
   it('returns defaults when nothing is stored', async () => {
-    expect(await loadSettings()).toEqual(defaultSettings('gl'));
+    expect(await loadSettings()).toEqual({ ...defaultSettings('gl'), modelLabels: {} });
   });
 
   it('saves a patch and keeps the other fields', async () => {

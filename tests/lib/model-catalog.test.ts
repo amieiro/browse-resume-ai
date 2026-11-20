@@ -3,7 +3,7 @@ import { fakeBrowser } from 'wxt/testing/fake-browser';
 import { DAY_MS, ensureFreshCatalog, getCatalog, isStale, refreshCatalog, VERSION_CHECK_MS, type CatalogDeps, type HostModels } from '@/lib/model-catalog';
 
 const answer: HostModels = {
-  claude: { version: '2.1.0', models: ['sonnet', 'opus', 'claude-opus-5-5'] },
+  claude: { version: '2.1.0', models: ['sonnet', 'opus', 'claude-opus-5-5'], labels: { sonnet: 'Sonnet 5.5', opus: 'Opus 5.5' } },
   codex: { version: 'codex-cli 0.169.0', models: ['gpt-6.2-sol', 'gpt-6.1-terra'] },
   ollama: { found: true, models: ['qwen3:4b'] },
 };
@@ -31,6 +31,7 @@ describe('refreshCatalog', () => {
       extensionVersion: '0.7.0',
       versions: { claude: '2.1.0', codex: 'codex-cli 0.169.0' },
       models: { claude: ['sonnet', 'opus', 'claude-opus-5-5'], codex: ['gpt-6.2-sol', 'gpt-6.1-terra'], ollama: ['qwen3:4b'] },
+      labels: { claude: { sonnet: 'Sonnet 5.5', opus: 'Opus 5.5' } },
     });
   });
 
@@ -41,6 +42,7 @@ describe('refreshCatalog', () => {
     await refreshCatalog(d);
     const c = await getCatalog();
     expect(c!.models.claude).toEqual(['sonnet', 'opus', 'claude-opus-5-5']);
+    expect(c!.labels!.claude).toEqual({ sonnet: 'Sonnet 5.5', opus: 'Opus 5.5' });
     expect(c!.models.ollama).toEqual(['qwen3:4b']);
   });
 

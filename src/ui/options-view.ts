@@ -81,7 +81,8 @@ export function mountOptionsView(root: HTMLElement, initial: Settings, deps: Opt
     const base = () => deps.baseModels?.(id) ?? settings.modelLists[id];
     const fillModels = () => {
       const list = [...new Set([...base(), ...settings.extraModels[id]])];
-      modelSelect.replaceChildren(...list.map((m) => el('option', { value: m, textContent: m })));
+      const labels = settings.modelLabels?.[id] ?? {};
+      modelSelect.replaceChildren(...list.map((m) => el('option', { value: m, textContent: labels[m] ?? m })));
       modelSelect.value = list.includes(settings.models[id]) ? settings.models[id] : (list[0] ?? '');
     };
     fillModels();

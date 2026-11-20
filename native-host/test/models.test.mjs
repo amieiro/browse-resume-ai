@@ -7,18 +7,18 @@ const fixture = (p) => fileURLToPath(new URL(`./fixtures/${p}`, import.meta.url)
 afterEach(() => vi.unstubAllEnvs());
 
 describe('claudeModels', () => {
-  it('reads the newest catalog: aliases first, in a fixed order, then the current models', () => {
-    expect(claudeModels(fixture('claude-config'), '2.1.329 (Claude Code)')).toEqual([
-      'sonnet', 'opus', 'haiku', 'fable',
-      'claude-opus-5-5', 'claude-fable-5-2', 'claude-sonnet-5-5', 'claude-haiku-5-5',
-    ]);
+  it('lists each model once: the aliases, labelled with the model they point to', () => {
+    expect(claudeModels(fixture('claude-config'), '2.1.329 (Claude Code)')).toEqual({
+      models: ['sonnet', 'opus', 'haiku', 'fable'],
+      labels: { sonnet: 'Sonnet 5.5', opus: 'Opus 5.5', haiku: 'Haiku 5.5', fable: 'Fable 5.2' },
+    });
   });
 
-  it('leaves out earlier versions (overflow) and models that need a newer Claude Code', () => {
-    const models = claudeModels(fixture('claude-config'), '2.1.329 (Claude Code)');
-    expect(models).not.toContain('claude-opus-4-8');
-    expect(models).not.toContain('claude-next-6');
-    expect(claudeModels(fixture('claude-config'), '9.1.0 (Claude Code)')).toContain('claude-next-6');
+  it('adds current models no alias points to, if the installed Claude Code supports them', () => {
+    expect(claudeModels(fixture('claude-config'), '2.1.329 (Claude Code)').models).not.toContain('claude-next-6');
+    const newer = claudeModels(fixture('claude-config'), '9.1.0 (Claude Code)');
+    expect(newer.models).toEqual(['sonnet', 'opus', 'haiku', 'fable', 'claude-next-6']);
+    expect(newer.labels['claude-next-6']).toBe('Next');
   });
 
   it('is null without a catalog', () => {

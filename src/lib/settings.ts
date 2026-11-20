@@ -22,6 +22,8 @@ export interface Settings {
   modelLists: Record<ProviderId, string[]>;
   /** Models the user added by hand, shown after the detected ones. */
   extraModels: Record<ProviderId, string[]>;
+  /** Names to show for detected models (from the catalog; never stored). */
+  modelLabels?: Partial<Record<ProviderId, Record<string, string>>>;
 }
 
 const STORAGE_KEY = 'settings';
@@ -81,7 +83,7 @@ export function applyCatalog(stored: Settings, catalog: ModelCatalog | null): Se
     modelLists[id] = list;
     if (!list.includes(models[id])) models[id] = list[0] ?? '';
   }
-  return { ...stored, modelLists, models };
+  return { ...stored, modelLists, models, modelLabels: catalog?.labels ?? {} };
 }
 
 /** The settings as stored, without the detected models. */

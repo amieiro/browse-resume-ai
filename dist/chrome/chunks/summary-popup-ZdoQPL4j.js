@@ -1,1 +1,0 @@
-import"./boot-BI4wlprC.js";import{s as i}from"./summary-app-BPbyyn62.js";try{}catch(t){console.error("[wxt] Failed to initialize plugins",t)}i(document.getElementById("app"),{startOnOpen:!0,followActiveTab:!1});

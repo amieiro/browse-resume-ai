@@ -11,13 +11,15 @@ export interface ModelCatalog {
   extensionVersion: string;
   versions: { claude: string | null; codex: string | null };
   models: Partial<Record<ProviderId, string[]>>;
+  /** Names to show for some models ("sonnet" → "Sonnet 5.5"); the value stays the model id. */
+  labels?: Partial<Record<ProviderId, Record<string, string>>>;
   /** When the CLI versions were last compared with the ones above. */
   versionsCheckedAt: number;
 }
 
 /** What the host answers to { type: 'models' }. */
 export interface HostModels {
-  claude: { version: string | null; models: string[] | null };
+  claude: { version: string | null; models: string[] | null; labels?: Record<string, string> };
   codex: { version: string | null; models: string[] | null };
   ollama: { found: boolean; models: string[] };
 }
@@ -60,6 +62,9 @@ export async function refreshCatalog(deps: CatalogDeps): Promise<ModelCatalog | 
   if (claude) models.claude = claude;
   if (codex) models.codex = codex;
   if (ollama) models.ollama = ollama;
+  const labels: Partial<Record<ProviderId, Record<string, string>>> = {};
+  const claudeLabels = answer.claude.models?.length ? answer.claude.labels : previous?.labels?.claude;
+  if (claudeLabels) labels.claude = claudeLabels;
   const now = deps.now();
   const catalog: ModelCatalog = {
     checkedAt: now,
@@ -67,6 +72,7 @@ export async function refreshCatalog(deps: CatalogDeps): Promise<ModelCatalog | 
     extensionVersion: deps.extensionVersion,
     versions: { claude: answer.claude.version, codex: answer.codex.version },
     models,
+    labels,
   };
   await browser.storage.local.set({ [CATALOG_KEY]: catalog });
   return catalog;
