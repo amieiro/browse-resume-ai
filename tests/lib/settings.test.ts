@@ -94,5 +94,21 @@ describe('detected models', () => {
     await saveSettings({ length: 'long' });
     expect((await loadStoredSettings()).modelLists.codex).toEqual(['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna']);
   });
+
+  it('offers no Ollama models until some are detected, whatever an older version stored', async () => {
+    await fakeBrowser.storage.local.set({ settings: { modelLists: { ollama: ['llama3.2', 'qwen3'] }, models: { ollama: 'llama3.2' } } });
+    let s = await loadSettings();
+    expect(s.modelLists.ollama).toEqual([]);
+    expect(s.models.ollama).toBe('');
+    await fakeBrowser.storage.local.set(catalog({ ollama: ['qwen3:4b'] }));
+    s = await loadSettings();
+    expect(s.modelLists.ollama).toEqual(['qwen3:4b']);
+    expect(s.models.ollama).toBe('qwen3:4b');
+  });
+
+  it('still offers Ollama models added by hand', async () => {
+    await saveSettings({ extraModels: { claude: [], codex: [], ollama: ['my-model'] } });
+    expect((await loadSettings()).modelLists.ollama).toEqual(['my-model']);
+  });
 });
 

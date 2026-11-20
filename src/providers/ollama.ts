@@ -11,6 +11,7 @@ export const ollamaProvider: Provider = {
     if (!pong) return { ok: false, code: 'host_missing' };
     // A host from before Ollama support does not answer about it; installing again updates it.
     if (pong.ollamaFound !== true) return { ok: false, code: 'ollama_missing' };
+    if (Array.isArray(pong.ollamaModels) && pong.ollamaModels.length === 0) return { ok: false, code: 'ollama_model_missing' };
     return { ok: true };
   },
   summarize(prompt, model, signal) {

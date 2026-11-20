@@ -44,6 +44,14 @@ describe('refreshCatalog', () => {
     expect(c!.models.ollama).toEqual(['qwen3:4b']);
   });
 
+  it('empties the Ollama list when Ollama runs with no models', async () => {
+    const { d } = deps();
+    await refreshCatalog(d);
+    vi.mocked(d.listModels).mockResolvedValueOnce({ ...answer, ollama: { found: true, models: [] } });
+    await refreshCatalog(d);
+    expect((await getCatalog())!.models.ollama).toEqual([]);
+  });
+
   it('stores nothing when the host is missing', async () => {
     const { d } = deps({ listModels: vi.fn(async () => null) });
     expect(await refreshCatalog(d)).toBeNull();

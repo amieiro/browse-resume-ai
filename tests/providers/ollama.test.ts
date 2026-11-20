@@ -28,6 +28,11 @@ describe('ollamaProvider', () => {
     expect(await ollamaProvider.checkAvailability()).toEqual({ ok: false, code: 'ollama_missing' });
   });
 
+  it('reports ollama_model_missing when Ollama has no models', async () => {
+    mockConnectNative((_m, p) => p.emit({ type: 'pong', version: '0.7.2', ollamaFound: true, ollamaModels: [] }));
+    expect(await ollamaProvider.checkAvailability()).toEqual({ ok: false, code: 'ollama_model_missing' });
+  });
+
   it('reports host_missing when the host is not installed', async () => {
     mockConnectNative((_m, p) => p.drop('Specified native messaging host not found.'));
     expect(await ollamaProvider.checkAvailability()).toEqual({ ok: false, code: 'host_missing' });

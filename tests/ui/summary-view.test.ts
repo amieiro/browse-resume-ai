@@ -47,7 +47,7 @@ describe('summary view selectors', () => {
   it('changing the model saves it for the current provider', () => {
     mount();
     change(select('model'), 'opus');
-    expect(handlers.onSettingsChange).toHaveBeenCalledWith({ models: { claude: 'opus', codex: 'gpt-6.2-sol', ollama: 'llama3.2' } });
+    expect(handlers.onSettingsChange).toHaveBeenCalledWith({ models: { claude: 'opus', codex: 'gpt-6.2-sol', ollama: '' } });
   });
 
   it('changing length saves without regenerating', () => {

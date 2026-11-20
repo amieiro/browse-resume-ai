@@ -92,7 +92,7 @@ describe('options view', () => {
   it('saves the selected model of a provider', async () => {
     await mount();
     change(field<HTMLSelectElement>('model-claude'), 'opus');
-    expect(onSave).toHaveBeenLastCalledWith({ models: { claude: 'opus', codex: 'gpt-6.2-sol', ollama: 'llama3.2' } });
+    expect(onSave).toHaveBeenLastCalledWith({ models: { claude: 'opus', codex: 'gpt-6.2-sol', ollama: '' } });
   });
 
   it('lists the detected models, then the ones added by hand', async () => {
@@ -112,14 +112,14 @@ describe('options view', () => {
   it('moves the selection to the first model when the selected extra one is removed', async () => {
     const settings = {
       ...defaultSettings('en'),
-      models: { claude: 'claude-x', codex: 'gpt-6.2-sol', ollama: 'llama3.2' },
+      models: { claude: 'claude-x', codex: 'gpt-6.2-sol', ollama: '' },
       extraModels: { claude: ['claude-x'], codex: [], ollama: [] },
     };
     await mount(settings, { base: { claude: ['sonnet', 'opus'] } });
     change(field<HTMLTextAreaElement>('extra-claude'), '');
     expect(onSave).toHaveBeenLastCalledWith({
       extraModels: { claude: [], codex: [], ollama: [] },
-      models: { claude: 'sonnet', codex: 'gpt-6.2-sol', ollama: 'llama3.2' },
+      models: { claude: 'sonnet', codex: 'gpt-6.2-sol', ollama: '' },
     });
   });
 

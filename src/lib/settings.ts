@@ -33,12 +33,12 @@ export function defaultSettings(uiLanguage: string): Settings {
     length: 'medium',
     language: matchLanguage(uiLanguage) ?? 'en-US',
     uiLanguage: 'auto',
-    models: { claude: 'sonnet', codex: 'gpt-6.2-sol', ollama: 'llama3.2' },
+    models: { claude: 'sonnet', codex: 'gpt-6.2-sol', ollama: '' },
     modelLists: {
       claude: ['sonnet', 'opus', 'haiku', 'fable'],
       codex: ['gpt-6.2-sol', 'gpt-6.2-astra', 'gpt-6-luna'],
-      // Common models of the Ollama library; the list in the settings takes any model pulled.
-      ollama: ['llama3.2', 'qwen3', 'gemma3', 'mistral'],
+      // Ollama has only the models downloaded on this computer: none until they are detected.
+      ollama: [],
     },
     extraModels: { claude: [], codex: [], ollama: [] },
   };
@@ -64,6 +64,8 @@ const PROVIDER_IDS: ProviderId[] = ['claude', 'codex', 'ollama'];
 /** The detected models of a provider, or the stored fallback list when none were detected. */
 export function baseModels(stored: Settings, catalog: ModelCatalog | null, id: ProviderId): string[] {
   const detected = catalog?.models[id];
+  // A fallback list makes no sense for Ollama (and older versions stored one): only what was seen.
+  if (id === 'ollama') return detected ?? [];
   return detected?.length ? detected : stored.modelLists[id];
 }
 
@@ -77,7 +79,7 @@ export function applyCatalog(stored: Settings, catalog: ModelCatalog | null): Se
   for (const id of PROVIDER_IDS) {
     const list = [...new Set([...baseModels(stored, catalog, id), ...stored.extraModels[id]])];
     modelLists[id] = list;
-    if (!list.includes(models[id])) models[id] = list[0] ?? models[id];
+    if (!list.includes(models[id])) models[id] = list[0] ?? '';
   }
   return { ...stored, modelLists, models };
 }

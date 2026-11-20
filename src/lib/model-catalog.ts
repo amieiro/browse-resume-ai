@@ -55,7 +55,8 @@ export async function refreshCatalog(deps: CatalogDeps): Promise<ModelCatalog | 
   const models: Partial<Record<ProviderId, string[]>> = {};
   const claude = pick(answer.claude.models, 'claude');
   const codex = pick(answer.codex.models, 'codex');
-  const ollama = pick(answer.ollama.found ? answer.ollama.models : null, 'ollama');
+  // Ollama running with no models means none; not running keeps the models last seen.
+  const ollama = answer.ollama.found ? answer.ollama.models : previous?.models.ollama;
   if (claude) models.claude = claude;
   if (codex) models.codex = codex;
   if (ollama) models.ollama = ollama;
