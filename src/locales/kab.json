@@ -58,5 +58,16 @@
   "history_clear": "Sfeḍ amazray",
   "history_clear_confirm": "Sit tikkelt-nniḍen akken ad tekkseḍ kullec",
   "options_history": "Ḥrez amazray n igzulen (deg uselkim-a)",
-  "error_no_transcript": "Tavidyut-a ulac ɣur-s aḍris yettwarun i usegzel. YouTube yesɛa-t kan ma yella tavidyut tesɛa iduzwilen neɣ iduzwilen iwurmanen."
+  "error_no_transcript": "Tavidyut-a ulac ɣur-s aḍris yettwarun i usegzel. YouTube yesɛa-t kan ma yella tavidyut tesɛa iduzwilen neɣ iduzwilen iwurmanen.",
+  "ui_style": "Aɣanib",
+  "style_standard": "Amagnu",
+  "style_simple": "Fessus",
+  "style_numbers": "Imḍanen d yisefka",
+  "style_formal": "Unṣib",
+  "style_critical": "Azukkan",
+  "options_styles": "Iɣaniben-ik",
+  "options_styles_help": "Aɣanib yerna tanaḍt i ugzul, amedya: Ssegzel-it am usaru n kraḍ n tsuffaɣ timeẓẓyanin.",
+  "options_style_name": "Isem",
+  "options_style_instruction": "Tanaḍt i ugzul",
+  "options_style_add": "Rnu aɣanib"
 }

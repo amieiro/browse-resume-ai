@@ -59,7 +59,13 @@ export function mountHistoryView(root: HTMLElement, initial: HistoryEntry[], dep
     const meta = el(
       'p',
       { className: 'meta' },
-      [dateFormat.format(entry.createdAt), `${PROVIDER_LABELS[entry.provider] ?? entry.provider} · ${entry.model}`, t(`length_${entry.length}`), languageName(entry.language)].join(' · '),
+      [
+        dateFormat.format(entry.createdAt),
+        `${PROVIDER_LABELS[entry.provider] ?? entry.provider} · ${entry.model}`,
+        t(`length_${entry.length}`),
+        languageName(entry.language),
+        ...(entry.style ? [entry.style.name ?? t(`style_${entry.style.id}`)] : []),
+      ].join(' · '),
       ...badges.flatMap((b) => [' ', b]),
     );
     const summary = el('div', { className: 'summary' });

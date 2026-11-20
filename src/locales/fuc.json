@@ -58,5 +58,16 @@
   "history_clear": "Momtu taariika",
   "history_clear_confirm": "Dobo kadi ngam momtude fof",
   "options_history": "Hisnu taariika timmooje (e ndee ordinateer)",
-  "error_no_transcript": "Ngol widewo alaa binndi timminteeɗi. YouTube heɓata binndi ɗi si wonaa widewo ngo ina jogii subtitles walla caption automatique."
+  "error_no_transcript": "Ngol widewo alaa binndi timminteeɗi. YouTube heɓata binndi ɗi si wonaa widewo ngo ina jogii subtitles walla caption automatique.",
+  "ui_style": "Mbaydi",
+  "style_standard": "Ko woowaa",
+  "style_simple": "Weeɓɗo",
+  "style_numbers": "Limoore e keɓe",
+  "style_formal": "Laawɗo",
+  "style_critical": "Ñiŋoowo",
+  "options_styles": "Mbaydiiji maa",
+  "options_styles_help": "Mbaydi ɓeydata timmoode ndee yamiroore, ko wayi no: Timmin ɗum wano ceŋol ɓataake tati rabbiɗɗe.",
+  "options_style_name": "Innde",
+  "options_style_instruction": "Yamiroore timmoode ndee",
+  "options_style_add": "Ɓeydu mbaydi"
 }

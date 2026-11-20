@@ -58,5 +58,16 @@
   "history_clear": "Vymazat historii",
   "history_clear_confirm": "Kliknutím znovu smažete vše",
   "options_history": "Uchovávat historii shrnutí (v tomto počítači)",
-  "error_no_transcript": "Toto video nemá žádný přepis ke shrnutí. YouTube ho má jen tehdy, když má video titulky nebo automatické titulky."
+  "error_no_transcript": "Toto video nemá žádný přepis ke shrnutí. YouTube ho má jen tehdy, když má video titulky nebo automatické titulky.",
+  "ui_style": "Styl",
+  "style_standard": "Standardní",
+  "style_simple": "Jednoduchý",
+  "style_numbers": "Čísla a data",
+  "style_formal": "Formální",
+  "style_critical": "Kritický",
+  "options_styles": "Vaše styly",
+  "options_styles_help": "Styl přidá do shrnutí pokyn, například: Shrňte to jako vlákno tří krátkých příspěvků.",
+  "options_style_name": "Název",
+  "options_style_instruction": "Pokyn pro shrnutí",
+  "options_style_add": "Přidat styl"
 }

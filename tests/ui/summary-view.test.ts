@@ -227,5 +227,15 @@ describe('summary view states', () => {
     button('history').click();
     expect(handlers.onOpenHistory).toHaveBeenCalled();
   });
+
+  it('offers the styles, built in and custom, and saves the chosen one', () => {
+    const settings = { ...defaultSettings('en'), customStyles: [{ id: 'c1', name: 'Tweet', instruction: 'As a tweet.' }] };
+    mountSummaryView(root, settings, handlers as unknown as SummaryViewHandlers);
+    const options = [...select('style').options].map((o) => o.textContent);
+    expect(options[0]).toBe('[style_standard]');
+    expect(options.at(-1)).toBe('Tweet');
+    change(select('style'), 'c1');
+    expect(handlers.onSettingsChange).toHaveBeenCalledWith({ style: 'c1' });
+  });
 });
 

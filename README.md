@@ -15,7 +15,8 @@ a model running on your own computer through Ollama. No API keys, no pay-per-use
   post, the main points of view, and where people agree and disagree.
 - PDFs open in Chrome are summarized too, from their text (read with
   [pdf.js](https://mozilla.github.io/pdf.js/) inside the extension).
-- Choose the provider and model, the length (short, medium, long) and the summary language.
+- Choose the provider and model, the length (short, medium, long), the summary language and the
+  style: standard, simple words, figures and data, formal, critical, or your own.
 - The summary appears in the side panel or in a popup; you pick which in the settings.
 - 201 languages, for both the summary and the interface: the languages of
   [translate.wordpress.org](https://translate.wordpress.org/), with BCP 47 codes (ISO 639 language,
@@ -71,6 +72,10 @@ _Questions about the page: the answers appear under the summary and come from th
 <img src="media/gallery/feature-pdf.png" alt="The paper Attention Is All You Need open in Chrome's PDF viewer, and its summary in the side panel" width="800">
 
 _PDFs: a paper from arXiv in Chrome's PDF viewer, summarized from its text._
+
+<img src="media/gallery/feature-style.png" alt="The SecurityWeek article summarized in the Simple style, which explains each technical term" width="800">
+
+_Styles: the same article in the Simple style, which explains each technical term._
 
 <img src="media/gallery/feature-thread.png" alt="A Hacker News thread with over 2,000 comments and a summary of the debate in the side panel" width="800">
 
@@ -218,6 +223,12 @@ Open an article and click the extension icon, or press <kbd>Alt</kbd>+<kbd>Shift
 the selectors at the top change the provider, model, length and language for the next summary. To
 use another shortcut, open `chrome://extensions/shortcuts`. If another extension already has
 <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>, Chrome leaves this one without a shortcut; set one there.
+
+The **Style** selector changes how the summary is written: **Standard**, **Simple** (simple words,
+technical terms explained), **Figures and data**, **Formal** or **Critical** (with a note on weak
+points and missing evidence). In the settings, under **Your styles**, you can add your own: a name
+and an instruction, such as "Summarize it as a thread of three short posts". The default style is
+chosen in the settings too.
 
 Every summary goes to the **History** (the 🕘 button under the summary, or in the settings): a page
 with all of them, newest first, a search that ignores case and accents, and buttons to copy or

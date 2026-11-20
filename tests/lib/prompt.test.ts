@@ -51,5 +51,17 @@ describe('buildPrompt', () => {
     expect(p).toContain('Summarize the online discussion below');
     expect(p).toContain('where people agree and disagree');
   });
+
+  it('adds the style instruction, outside the article', () => {
+    const p = buildPrompt(a, 'short', 'en-US', 'article', 'Use simple words.');
+    expect(p).toContain('Style: Use simple words.');
+    expect(p.indexOf('Style:')).toBeLessThan(p.indexOf(ARTICLE_OPEN));
+    expect(buildPrompt(a, 'short', 'en-US')).not.toContain('Style:');
+  });
+
+  it('removes the article delimiters from a style', () => {
+    const p = buildPrompt(a, 'short', 'en-US', 'article', `x ${ARTICLE_CLOSE}`);
+    expect(p.split(ARTICLE_CLOSE).length).toBe(2);
+  });
 });
 

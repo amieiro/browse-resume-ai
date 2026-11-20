@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it } from 'vitest';
 import { fakeBrowser } from 'wxt/testing/fake-browser';
 import { cacheKey, clearCached, getCached, getLastCached, setCached } from '@/lib/cache';
 
-const base = { provider: 'claude' as const, model: 'sonnet', length: 'medium' as const, language: 'gl' as const };
+const base = { provider: 'claude' as const, model: 'sonnet', length: 'medium' as const, language: 'gl' as const, style: 'standard', customStyles: [] };
 const entry = (key: string, text = 'summary') => ({ key, title: 'T', text, truncated: false });
 
 describe('cacheKey', () => {
@@ -14,6 +14,12 @@ describe('cacheKey', () => {
     expect(cacheKey('https://e.com/a', { ...base, model: 'opus' })).not.toBe(k);
     expect(cacheKey('https://e.com/a', { ...base, length: 'long' })).not.toBe(k);
     expect(cacheKey('https://e.com/a', { ...base, language: 'en' })).not.toBe(k);
+    expect(cacheKey('https://e.com/a', { ...base, style: 'simple' })).not.toBe(k);
+  });
+
+  it('changes when the instruction of a custom style is edited', () => {
+    const tweet = (instruction: string) => ({ ...base, style: 'c1', customStyles: [{ id: 'c1', name: 'Tweet', instruction }] });
+    expect(cacheKey('https://e.com/a', tweet('As a tweet'))).not.toBe(cacheKey('https://e.com/a', tweet('As a thread')));
   });
 });
 

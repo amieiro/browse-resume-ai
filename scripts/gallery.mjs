@@ -54,6 +54,8 @@ const SHOTS = [
   },
   { name: 'feature-pdf', page: 'arxiv', language: 'en-US', length: 'medium', mode: 'panel' },
   // YouTube's cookie notice is rejected like any other; the extractor opens the transcript itself.
+  // A summary style: the same article as the first shot, in simple words.
+  { name: 'feature-style', page: 'securityweek', language: 'en-US', length: 'medium', mode: 'panel', style: 'simple' },
   { name: 'feature-thread', page: 'hackernews', language: 'en-US', length: 'medium', mode: 'panel', top: true },
   { name: 'feature-youtube', page: 'youtube', language: 'en-US', length: 'medium', mode: 'panel', top: true },
   // The history page, with short summaries of the pages above.
@@ -205,6 +207,7 @@ async function captureView(browser, id, shot, entry) {
           uiLanguage: s.language,
           language: s.language,
           length: s.length,
+          style: s.style ?? 'standard',
           provider: 'claude',
           models: { claude: s.model, codex: 'gpt-6.2-sol' },
         },
@@ -327,6 +330,7 @@ try {
   const buildPrompt = await loadPromptBuilder();
   const buildQuestionPrompt = await loadPromptBuilder('src/lib/question-prompt.ts', 'buildQuestionPrompt');
   const pdfToArticle = await loadPromptBuilder('src/lib/pdf-text.ts', 'pdfToArticle');
+  const PRESET_STYLES = await loadPromptBuilder('src/lib/styles.ts', 'PRESET_STYLES');
   // A PDF tab only says it is a PDF; read the file with pdf.js and the extension's own reader.
   const readPdf = async ({ url, title }) => {
     const data = new Uint8Array(await (await fetch(url)).arrayBuffer());
@@ -364,7 +368,8 @@ try {
       await sleep(300);
       articlePng = await page.screenshot({ encoding: 'base64' });
     } else {
-      entry.text = await summarizeWithHost(buildPrompt(article, shot.length, shot.language), { model: MODEL });
+      const style = PRESET_STYLES.find((p) => p.id === shot.style)?.instruction ?? '';
+      entry.text = await summarizeWithHost(buildPrompt(article, shot.length, shot.language, 'article', style), { model: MODEL });
       // top: keep the page at the top (the video player) instead of scrolling to the heading.
       articlePng = await captureArticle(page, shot.top ? '' : article.title);
     }

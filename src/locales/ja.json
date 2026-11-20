@@ -58,5 +58,16 @@
   "history_clear": "履歴を消去",
   "history_clear_confirm": "もう一度クリックするとすべて削除します",
   "options_history": "要約の履歴を保存する（このコンピュータ上）",
-  "error_no_transcript": "この動画には要約できる文字起こしがありません。YouTube で文字起こしが利用できるのは、動画に字幕または自動字幕がある場合のみです。"
+  "error_no_transcript": "この動画には要約できる文字起こしがありません。YouTube で文字起こしが利用できるのは、動画に字幕または自動字幕がある場合のみです。",
+  "ui_style": "スタイル",
+  "style_standard": "標準",
+  "style_simple": "やさしく",
+  "style_numbers": "数字とデータ",
+  "style_formal": "フォーマル",
+  "style_critical": "批評付き",
+  "options_styles": "マイスタイル",
+  "options_styles_help": "スタイルは要約に指示を追加します。例: 3 つの短い投稿のスレッドとして要約してください。",
+  "options_style_name": "名前",
+  "options_style_instruction": "要約への指示",
+  "options_style_add": "スタイルを追加"
 }

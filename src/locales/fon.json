@@ -58,5 +58,16 @@
   "history_clear": "Sú xókpɛ́n e ko ɖó lɛ é bǐ",
   "history_clear_confirm": "Zín dó jí ɖevo bo na sú bǐ",
   "options_history": "Hɛn xókpɛ́n e ko ɖó lɛ é ɖó (ɖò òɖíntɔ́ elɔ jí)",
-  "error_no_transcript": "Video elɔ ɖó wekpa ɖě bo è na kpɛ́n xó tɔn ǎ. YouTube nɔ ɖó wekpa enɛ ɖò hwenu e video ɔ ɖó subtitle alo caption e nɔ wá ɖokpo ɔ é ɖé."
+  "error_no_transcript": "Video elɔ ɖó wekpa ɖě bo è na kpɛ́n xó tɔn ǎ. YouTube nɔ ɖó wekpa enɛ ɖò hwenu e video ɔ ɖó subtitle alo caption e nɔ wá ɖokpo ɔ é ɖé.",
+  "ui_style": "Ali",
+  "style_standard": "Ali gbɛ̌mɛ tɔn",
+  "style_simple": "Ali bɔ́ɖé",
+  "style_numbers": "Akɔ́nta kpo nǔ ɖé lɛ kpo",
+  "style_formal": "Ali sɛ́n tɔn",
+  "style_critical": "Ali nǔ ɖíɖó tɔn",
+  "options_styles": "Ali towe lɛ",
+  "options_styles_help": "Ali ɖé nɔ yídó gbè ɖé kpé xókpɛ́n ɔ wu, ɖí kpɔ́ndéwú: Kpɛ́n xó ɔ ɖó wǔ wɛn kpɛví atɔn ɖé.",
+  "options_style_name": "Nyikɔ",
+  "options_style_instruction": "Gbè e è na nyí dó xókpɛ́n ɔ wu é",
+  "options_style_add": "Yídó ali ɖé kpé"
 }

@@ -58,5 +58,16 @@
   "history_clear": "Clear history",
   "history_clear_confirm": "Click again to delete all",
   "options_history": "Keep a history of summaries (on this computer)",
-  "error_no_transcript": "This video has no transcript to summarize. YouTube only has one when the video has subtitles or automatic captions."
+  "error_no_transcript": "This video has no transcript to summarize. YouTube only has one when the video has subtitles or automatic captions.",
+  "ui_style": "Style",
+  "style_standard": "Standard",
+  "style_simple": "Simple",
+  "style_numbers": "Figures and data",
+  "style_formal": "Formal",
+  "style_critical": "Critical",
+  "options_styles": "Your styles",
+  "options_styles_help": "A style adds an instruction to the summary, for example: Summarize it as a thread of three short posts.",
+  "options_style_name": "Name",
+  "options_style_instruction": "Instruction for the summary",
+  "options_style_add": "Add a style"
 }

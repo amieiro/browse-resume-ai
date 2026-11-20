@@ -58,5 +58,16 @@
   "history_clear": "ታሪኽ ኣጽሪ",
   "history_clear_confirm": "ኩሉ ንምድምሳስ ደጊምካ ጠውቕ",
   "options_history": "ታሪኽ ጽማቝታት ዓቅብ (ኣብዚ ኮምፒዩተር)",
-  "error_no_transcript": "እዚ ቪድዮ ዝጽመቕ ቅዳሕ ጽሑፍ የብሉን። YouTube ቅዳሕ ጽሑፍ ዝህልዎ እቲ ቪድዮ ንኡስ ጽሑፍ ወይ ኣውቶማቲክ ንኡስ ጽሑፍ ምስ ዝህልዎ ጥራይ እዩ።"
+  "error_no_transcript": "እዚ ቪድዮ ዝጽመቕ ቅዳሕ ጽሑፍ የብሉን። YouTube ቅዳሕ ጽሑፍ ዝህልዎ እቲ ቪድዮ ንኡስ ጽሑፍ ወይ ኣውቶማቲክ ንኡስ ጽሑፍ ምስ ዝህልዎ ጥራይ እዩ።",
+  "ui_style": "ቅዲ",
+  "style_standard": "ልሙድ",
+  "style_simple": "ቀሊል",
+  "style_numbers": "ቁጽርታትን ሓበሬታን",
+  "style_formal": "ወግዓዊ",
+  "style_critical": "ነቓፊ",
+  "options_styles": "ቅድታትካ",
+  "options_styles_help": "ቅዲ ናብ ጽማቝ መምርሒ ይውስኽ፣ ንኣብነት፦ ከም ተኸታታሊ ሰለስተ ሓጸርቲ መልእኽትታት ጽመቖ።",
+  "options_style_name": "ስም",
+  "options_style_instruction": "መምርሒ ንጽማቝ",
+  "options_style_add": "ቅዲ ወስኽ"
 }

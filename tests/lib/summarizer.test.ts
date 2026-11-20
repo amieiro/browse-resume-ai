@@ -516,5 +516,25 @@ describe('Summarizer', () => {
       expect(t2.history.updateQuestions).toHaveBeenLastCalledWith('h1', expect.arrayContaining([expect.objectContaining({ question: 'Again?' })]));
     });
   });
+
+  describe('styles', () => {
+    it('sends the style instruction and keeps the style in the history', async () => {
+      const p = provider(() => chunks('Summary'));
+      const history = { add: vi.fn(async () => 'h1'), updateQuestions: vi.fn(async () => {}) };
+      const t = setup(p, { history }, { style: 'c1', customStyles: [{ id: 'c1', name: 'Tweet', instruction: 'Write it as a tweet.' }] });
+      await t.s.start(1, { force: false });
+      expect(p.prompts[0]).toContain('Style: Write it as a tweet.');
+      expect(history.add).toHaveBeenCalledWith(expect.objectContaining({ style: { id: 'c1', name: 'Tweet' } }));
+    });
+
+    it('does not serve the summary of another style from the cache', async () => {
+      const p = provider(() => chunks('Summary'));
+      const t = setup(p);
+      await t.s.start(1, { force: false });
+      t.setSettings({ style: 'simple' });
+      await t.s.start(1, { force: false });
+      expect(p.calls).toBe(2);
+    });
+  });
 });
 

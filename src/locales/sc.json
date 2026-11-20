@@ -58,5 +58,16 @@
   "history_clear": "Cantzella sa cronologia",
   "history_clear_confirm": "Incarca torra pro cantzellare totu",
   "options_history": "Mantene una cronologia de sos resumos (in custu computer)",
-  "error_no_transcript": "Custu vìdeu non tenet trascritzione de resumire. YouTube nde tenet una isceti cando su vìdeu tenet sutatìtulos o sutatìtulos automàticos."
+  "error_no_transcript": "Custu vìdeu non tenet trascritzione de resumire. YouTube nde tenet una isceti cando su vìdeu tenet sutatìtulos o sutatìtulos automàticos.",
+  "ui_style": "Istile",
+  "style_standard": "Istandard",
+  "style_simple": "Simple",
+  "style_numbers": "Tzifras e datos",
+  "style_formal": "Formale",
+  "style_critical": "Crìticu",
+  "options_styles": "Sos istiles tuos",
+  "options_styles_help": "Un'istile agiunghet un'istrutzione a su resumu, pro esempru: Resumilu comente unu filu de tres messàgios curtzos.",
+  "options_style_name": "Nòmine",
+  "options_style_instruction": "Istrutzione pro su resumu",
+  "options_style_add": "Agiunghe un'istile"
 }

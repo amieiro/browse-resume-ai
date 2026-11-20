@@ -35,7 +35,7 @@ body.popup { width: 440px; max-height: 580px; }
 #app { display: flex; flex-direction: column; min-height: 100vh; }
 body.popup #app { min-height: 0; }
 .toolbar {
-  display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  display: flex; flex-direction: column; gap: 6px;
   padding: 10px 12px; border-bottom: 1px solid var(--border);
   position: sticky; top: 0; background: var(--bg);
 }
@@ -46,6 +46,7 @@ select {
 }
 /* Language names are the longest values ("Português do Brasil"); give them twice the room. */
 select[name="language"] { flex: 2 1 90px; }
+.toolbar-row { display: flex; gap: 6px; align-items: center; }
 button {
   padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px;
   background: var(--bg); cursor: pointer;

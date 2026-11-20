@@ -1,5 +1,6 @@
 import { browser } from 'wxt/browser';
 import type { Settings } from './settings';
+import { styleKey } from './styles';
 import type { QaItem } from './summarizer';
 
 export interface CachedSummary {
@@ -15,10 +16,10 @@ export interface CachedSummary {
   historyId?: string;
 }
 
-type KeyInput = Pick<Settings, 'provider' | 'length' | 'language'> & { model: string };
+type KeyInput = Pick<Settings, 'provider' | 'length' | 'language' | 'style' | 'customStyles'> & { model: string };
 
 export function cacheKey(url: string, s: KeyInput): string {
-  return JSON.stringify([url, s.provider, s.model, s.length, s.language]);
+  return JSON.stringify([url, s.provider, s.model, s.length, s.language, styleKey(s)]);
 }
 
 const storageKey = (tabId: number) => `summary:${tabId}`;

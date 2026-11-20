@@ -58,5 +58,16 @@
   "history_clear": "Clirio'r hanes",
   "history_clear_confirm": "Cliciwch eto i ddileu'r cyfan",
   "options_history": "Cadw hanes o grynodebau (ar y cyfrifiadur hwn)",
-  "error_no_transcript": "Does dim trawsgrifiad i'w grynhoi gan y fideo hwn. Dim ond pan fydd gan y fideo isdeitlau neu gapsiynau awtomatig y bydd gan YouTube un."
+  "error_no_transcript": "Does dim trawsgrifiad i'w grynhoi gan y fideo hwn. Dim ond pan fydd gan y fideo isdeitlau neu gapsiynau awtomatig y bydd gan YouTube un.",
+  "ui_style": "Arddull",
+  "style_standard": "Safonol",
+  "style_simple": "Syml",
+  "style_numbers": "Ffigurau a data",
+  "style_formal": "Ffurfiol",
+  "style_critical": "Beirniadol",
+  "options_styles": "Eich arddulliau",
+  "options_styles_help": "Mae arddull yn ychwanegu cyfarwyddyd at y crynodeb, er enghraifft: Crynhowch ef fel edefyn o dair neges fer.",
+  "options_style_name": "Enw",
+  "options_style_instruction": "Cyfarwyddyd ar gyfer y crynodeb",
+  "options_style_add": "Ychwanegu arddull"
 }

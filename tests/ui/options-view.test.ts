@@ -102,6 +102,32 @@ describe('options view', () => {
     expect(onOpenHistory).toHaveBeenCalled();
   });
 
+  it('saves the default style', async () => {
+    await mount();
+    change(field<HTMLSelectElement>('style'), 'formal');
+    expect(onSave).toHaveBeenLastCalledWith({ style: 'formal' });
+  });
+
+  it('adds, edits and deletes a custom style, which then appears in the style list', async () => {
+    await mount();
+    root.querySelector<HTMLButtonElement>('button[name="style-add"]')!.click();
+    const name = field<HTMLInputElement>('style-name-0');
+    name.value = ' Tweet ';
+    name.dispatchEvent(new Event('change'));
+    const instruction = field<HTMLTextAreaElement>('style-instruction-0');
+    instruction.value = 'Write it as a tweet.';
+    instruction.dispatchEvent(new Event('change'));
+    const saved = onSave.mock.lastCall![0].customStyles!;
+    expect(saved).toEqual([{ id: expect.stringMatching(/^custom-/), name: 'Tweet', instruction: 'Write it as a tweet.' }]);
+    expect([...field<HTMLSelectElement>('style').options].map((o) => o.textContent)).toContain('Tweet');
+
+    change(field<HTMLSelectElement>('style'), saved[0]!.id);
+    root.querySelector<HTMLButtonElement>('button[name="style-delete-0"]')!.click();
+    expect(onSave).toHaveBeenCalledWith({ style: 'standard' });
+    expect(onSave).toHaveBeenLastCalledWith({ customStyles: [] });
+    expect(field<HTMLSelectElement>('style').value).toBe('standard');
+  });
+
   it('saves the selected model of a provider', async () => {
     await mount();
     change(field<HTMLSelectElement>('model-claude'), 'opus');

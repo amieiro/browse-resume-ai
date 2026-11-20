@@ -16,6 +16,8 @@ export interface HistoryEntry {
   model: string;
   length: SummaryLength;
   language: string;
+  /** The style, when not the standard one: a built-in id, or a custom style's name. */
+  style?: { id: string; name?: string };
   qa?: QaItem[];
 }
 

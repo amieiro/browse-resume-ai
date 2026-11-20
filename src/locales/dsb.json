@@ -58,5 +58,16 @@
   "history_clear": "Historiju wuprozniś",
   "history_clear_confirm": "Klikniśo hyšći raz, aby wšykno wulašował",
   "options_history": "Historiju zespominanjow wobchowaś (na toś tom licadle)",
-  "error_no_transcript": "Toś to wideo njama transkript, kótaryž dajo se zespominaś. YouTube ma transkript jano, gaž wideo ma pódtitele abo awtomatiske pódtitele."
+  "error_no_transcript": "Toś to wideo njama transkript, kótaryž dajo se zespominaś. YouTube ma transkript jano, gaž wideo ma pódtitele abo awtomatiske pódtitele.",
+  "ui_style": "Stil",
+  "style_standard": "Standardny",
+  "style_simple": "Jadnory",
+  "style_numbers": "Licby a daty",
+  "style_formal": "Formalny",
+  "style_critical": "Kritiski",
+  "options_styles": "Wašy stile",
+  "options_styles_help": "Stil pśidawa zespominanjeju instrukciju, na pśikład: Zespominajśo to ako nitku z tśich krotkich pśinoskow.",
+  "options_style_name": "Mě",
+  "options_style_instruction": "Instrukcija za zespominanje",
+  "options_style_add": "Stil pśidaś"
 }

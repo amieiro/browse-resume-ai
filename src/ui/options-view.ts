@@ -1,5 +1,6 @@
 import { t } from '@/lib/i18n';
 import { LANGUAGES } from '@/lib/languages';
+import { MAX_STYLE_INSTRUCTION, STANDARD_STYLE, styleOptions, type CustomStyle } from '@/lib/styles';
 import type { DisplayMode, ProviderId, Settings, SummaryLength } from '@/lib/settings';
 import type { Availability } from '@/providers/types';
 
@@ -75,6 +76,63 @@ export function mountOptionsView(root: HTMLElement, initial: Settings, deps: Opt
   language.addEventListener('change', () => deps.onSave({ language: language.value }));
   uiLanguage.addEventListener('change', () => deps.onSave({ uiLanguage: uiLanguage.value }));
 
+  const style = el('select', { name: 'style', id: 'style' });
+  const fillStyles = () => {
+    style.replaceChildren(...styleOptions(settings.customStyles, t).map((o) => el('option', { value: o.value, textContent: o.label })));
+    style.value = settings.style;
+  };
+  fillStyles();
+  style.addEventListener('change', () => {
+    settings = { ...settings, style: style.value };
+    deps.onSave({ style: settings.style });
+  });
+
+  // Custom styles: a name and an instruction each, saved as they are edited.
+  const styleList = el('div', { className: 'styles' });
+  const saveStyles = (customStyles: CustomStyle[]) => {
+    const patch: Partial<Settings> = { customStyles };
+    settings = { ...settings, customStyles };
+    if (settings.style !== STANDARD_STYLE && !customStyles.some((s) => s.id === settings.style) && !style.querySelector(`option[value="${settings.style}"]`)) {
+      settings = { ...settings, style: STANDARD_STYLE };
+      patch.style = STANDARD_STYLE;
+    }
+    deps.onSave(patch);
+    fillStyles();
+  };
+  const renderStyles = () => {
+    styleList.replaceChildren(
+      ...settings.customStyles.map((custom, index) => {
+        const name = el('input', { type: 'text', name: `style-name-${index}`, value: custom.name, placeholder: t('options_style_name') });
+        name.setAttribute('aria-label', t('options_style_name'));
+        const instruction = el('textarea', { name: `style-instruction-${index}`, rows: 2, maxLength: MAX_STYLE_INSTRUCTION, value: custom.instruction, placeholder: t('options_style_instruction') });
+        instruction.setAttribute('aria-label', t('options_style_instruction'));
+        const update = () =>
+          saveStyles(settings.customStyles.map((s) => (s.id === custom.id ? { ...s, name: name.value.trim(), instruction: instruction.value.trim() } : s)));
+        name.addEventListener('change', update);
+        instruction.addEventListener('change', update);
+        const remove = el('button', { type: 'button', name: `style-delete-${index}`, textContent: t('history_delete') });
+        remove.addEventListener('click', () => {
+          const remaining = settings.customStyles.filter((s) => s.id !== custom.id);
+          if (settings.style === custom.id) {
+            settings = { ...settings, style: STANDARD_STYLE };
+            deps.onSave({ style: STANDARD_STYLE });
+          }
+          saveStyles(remaining);
+          renderStyles();
+        });
+        return el('div', { className: 'custom-style' }, el('div', { className: 'custom-style-head' }, name, remove), instruction);
+      }),
+    );
+  };
+  renderStyles();
+  const addStyle = el('button', { type: 'button', name: 'style-add', textContent: t('options_style_add') });
+  addStyle.addEventListener('click', () => {
+    const id = `custom-${crypto.randomUUID().slice(0, 8)}`;
+    settings = { ...settings, customStyles: [...settings.customStyles, { id, name: '', instruction: '' }] };
+    renderStyles();
+    styleList.querySelector<HTMLInputElement>(`input[name="style-name-${settings.customStyles.length - 1}"]`)?.focus();
+  });
+
   const keepHistory = el('input', { type: 'checkbox', name: 'keepHistory', id: 'keepHistory', checked: settings.keepHistory });
   keepHistory.addEventListener('change', () => deps.onSave({ keepHistory: keepHistory.checked }));
   const historyControls = el('div', { className: 'history-option' }, keepHistory);
@@ -148,7 +206,16 @@ export function mountOptionsView(root: HTMLElement, initial: Settings, deps: Opt
       row(t('ui_provider'), provider),
       row(t('ui_length'), length),
       row(t('ui_language'), language),
+      row(t('ui_style'), style),
       row(t('options_history'), historyControls),
+    ),
+    el(
+      'fieldset',
+      {},
+      el('legend', { textContent: t('options_styles') }),
+      el('p', { className: 'help', textContent: t('options_styles_help') }),
+      styleList,
+      addStyle,
     ),
     modelsInfo(),
     ...providerSections,

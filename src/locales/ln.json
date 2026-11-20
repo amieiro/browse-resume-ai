@@ -58,5 +58,16 @@
   "history_clear": "Pétolá lisoló",
   "history_clear_confirm": "Fína lisúsu mpo na kolongola nyónso",
   "options_history": "Bomba lisoló ya makúsé (na ordinatɛ́ɛ oyo)",
-  "error_no_transcript": "Vidéo oyo ezalí na makomi ya maloba na yango té mpo na kokúmisa na mokuse. YouTube ezalaka na yango kaka soki vidéo ezalí na sous-titres to sous-titres ya automatique."
+  "error_no_transcript": "Vidéo oyo ezalí na makomi ya maloba na yango té mpo na kokúmisa na mokuse. YouTube ezalaka na yango kaka soki vidéo ezalí na sous-titres to sous-titres ya automatique.",
+  "ui_style": "Lolenge",
+  "style_standard": "Ya momesano",
+  "style_simple": "Ya pɛ̂tɛɛ",
+  "style_numbers": "Mitángo mpe nsango",
+  "style_formal": "Ya lokumu",
+  "style_critical": "Ya botáli",
+  "options_styles": "Malɛ́nge na yo",
+  "options_styles_help": "Lolenge ebakisaka malako na bokúsé, na ndakisa: Kúsa yangó lokola molɔ́ngɔ́ ya nsango mísáto ya mikúsé.",
+  "options_style_name": "Nkómbó",
+  "options_style_instruction": "Malako mpo na bokúsé",
+  "options_style_add": "Bakisa lolenge"
 }

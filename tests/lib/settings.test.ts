@@ -116,5 +116,12 @@ describe('detected models', () => {
     await saveSettings({ extraModels: { claude: [], codex: [], ollama: ['my-model'] } });
     expect((await loadSettings()).modelLists.ollama).toEqual(['my-model']);
   });
+
+  it('falls back to the standard style when the selected custom style is gone', async () => {
+    await saveSettings({ customStyles: [{ id: 'c1', name: 'Tweet', instruction: 'As a tweet' }], style: 'c1' });
+    expect((await loadSettings()).style).toBe('c1');
+    await saveSettings({ customStyles: [] });
+    expect((await loadSettings()).style).toBe('standard');
+  });
 });
 

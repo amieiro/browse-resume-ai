@@ -1,6 +1,7 @@
 import { t } from '@/lib/i18n';
 import { LANGUAGES } from '@/lib/languages';
 import { renderMarkdown } from '@/lib/markdown';
+import { styleOptions } from '@/lib/styles';
 import type { ProviderId, Settings, SummaryLength } from '@/lib/settings';
 import { MAX_QUESTION_CHARS, type QaItem, type SummaryState } from '@/lib/summarizer';
 
@@ -46,6 +47,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   const model = labelled(t('ui_model'), el('select', { name: 'model' }));
   const length = labelled(t('ui_length'), el('select', { name: 'length' }));
   const language = labelled(t('ui_language'), el('select', { name: 'language' }));
+  const style = labelled(t('ui_style'), el('select', { name: 'style' }));
   const options = el('button', { name: 'options', type: 'button', className: 'icon', textContent: '⚙', title: t('ui_settings') });
   options.setAttribute('aria-label', t('ui_settings'));
 
@@ -77,7 +79,13 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   const regenerate = el('button', { name: 'regenerate', type: 'button', className: 'primary' });
 
   root.replaceChildren(
-    el('header', { className: 'toolbar' }, provider, model, length, language, options),
+    // Two rows: who summarizes (provider, model), then how (length, language, style).
+    el(
+      'header',
+      { className: 'toolbar' },
+      el('div', { className: 'toolbar-row' }, provider, model, options),
+      el('div', { className: 'toolbar-row' }, length, language, style),
+    ),
     el('main', {}, source, title, progress, hint, error, summary, notice, qaList),
     // The question field stays in the sticky footer, reachable however long the answers get.
     el('footer', { className: 'actions' }, askForm, el('div', { className: 'buttons' }, history, el('span', { className: 'spacer' }), copy, regenerate)),
@@ -90,6 +98,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     fillSelect(model, list.map((m) => ({ value: m, label: labels[m] ?? m })), settings.models[settings.provider]);
     fillSelect(length, LENGTHS.map((l) => ({ value: l, label: t(`length_${l}`) })), settings.length);
     fillSelect(language, LANGUAGES.map((l) => ({ value: l.code, label: l.nativeName })), settings.language);
+    fillSelect(style, styleOptions(settings.customStyles, t), settings.style);
   }
 
   function renderState() {
@@ -147,6 +156,10 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   language.addEventListener('change', () => {
     settings = { ...settings, language: language.value };
     handlers.onSettingsChange({ language: settings.language });
+  });
+  style.addEventListener('change', () => {
+    settings = { ...settings, style: style.value };
+    handlers.onSettingsChange({ style: settings.style });
   });
   options.addEventListener('click', () => handlers.onOpenOptions());
   history.addEventListener('click', () => handlers.onOpenHistory());

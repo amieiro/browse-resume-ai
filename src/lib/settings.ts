@@ -1,6 +1,7 @@
 import { browser } from 'wxt/browser';
 import { matchLanguage, type LanguageCode } from './languages';
 import { getCatalog, type ModelCatalog } from './model-catalog';
+import { isKnownStyle, STANDARD_STYLE, type CustomStyle } from './styles';
 
 export type ProviderId = 'claude' | 'codex' | 'ollama';
 export type SummaryLength = 'short' | 'medium' | 'long';
@@ -24,6 +25,10 @@ export interface Settings {
   extraModels: Record<ProviderId, string[]>;
   /** Keep finished summaries in the history (on this computer only). */
   keepHistory: boolean;
+  /** The summary style: a built-in id or the id of a custom style. */
+  style: string;
+  /** Styles the user created: a name and an instruction for the model. */
+  customStyles: CustomStyle[];
   /** Names to show for detected models (from the catalog; never stored). */
   modelLabels?: Partial<Record<ProviderId, Record<string, string>>>;
 }
@@ -46,6 +51,8 @@ export function defaultSettings(uiLanguage: string): Settings {
     },
     extraModels: { claude: [], codex: [], ollama: [] },
     keepHistory: true,
+    style: STANDARD_STYLE,
+    customStyles: [],
   };
 }
 
@@ -61,6 +68,9 @@ function merge(defaults: Settings, stored: Partial<Settings> | undefined): Setti
   // Codes from older versions ("gl", "en") or no longer in the list are mapped or reset.
   merged.language = matchLanguage(merged.language) ?? defaults.language;
   if (merged.uiLanguage !== 'auto') merged.uiLanguage = matchLanguage(merged.uiLanguage) ?? 'auto';
+  if (!Array.isArray(merged.customStyles)) merged.customStyles = [];
+  // A deleted custom style falls back to the standard one.
+  if (!isKnownStyle(merged.style, merged.customStyles)) merged.style = STANDARD_STYLE;
   return merged;
 }
 

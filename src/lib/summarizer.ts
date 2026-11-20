@@ -2,6 +2,7 @@ import { cacheKey, clearCached, getCached, getLastCached, setCached } from './ca
 import { buildPrompt, MAX_ARTICLE_CHARS, type Article } from './prompt';
 import type { HistoryEntry } from './history';
 import { buildQuestionPrompt } from './question-prompt';
+import { STANDARD_STYLE, styleInstruction } from './styles';
 import type { ProviderId, Settings } from './settings';
 import { SummaryError, type Provider, type SummaryErrorCode } from '@/providers/types';
 
@@ -221,7 +222,7 @@ export class Summarizer {
       if (!availability.ok) return set(errorState(availability.code, { title, text, truncated }, kind));
 
       set({ status: 'running', title, text, truncated, ...tag });
-      const prompt = buildPrompt(article, settings.length, settings.language, kind === 'selection' ? 'selection' : 'article');
+      const prompt = buildPrompt(article, settings.length, settings.language, kind === 'selection' ? 'selection' : 'article', styleInstruction(settings));
       for await (const chunk of provider.summarize(prompt, settings.models[settings.provider], signal)) {
         if (!isCurrent()) return;
         text += chunk;
@@ -338,6 +339,7 @@ export class Summarizer {
         model: settings.models[settings.provider],
         length: settings.length,
         language: settings.language,
+        ...(settings.style !== STANDARD_STYLE ? { style: styleOf(settings) } : {}),
       });
       this.historyIds.set(tabId, id);
       return id;
@@ -378,6 +380,12 @@ function errorState(
     ...(detail ? { detail } : {}),
     ...(kind === 'selection' ? { source: 'selection' as const } : {}),
   };
+}
+
+/** The style for the history: built-in ones by id (named in the interface), custom ones by name. */
+function styleOf(settings: Settings): { id: string; name?: string } {
+  const custom = settings.customStyles.find((s) => s.id === settings.style);
+  return custom ? { id: custom.id, name: custom.name } : { id: settings.style };
 }
 
 function detailOf(error: unknown): string | undefined {
