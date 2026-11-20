@@ -1,7 +1,7 @@
 {
   "name": "browse-resume-ai",
   "description": "Summarize the current web page with one click, using your Claude or ChatGPT subscription.",
-  "version": "0.17.0",
+  "version": "0.17.1",
   "private": true,
   "license": "GPL-2.0-or-later",
   "type": "module",
@@ -18,7 +18,8 @@
     "readme-toc": "node scripts/readme-toc.mjs",
     "test:linux": "docker build -f test/linux/Dockerfile -t browse-resume-ai-linux . && docker run --rm browse-resume-ai-linux",
     "test:windows-scripts": "docker build -f test/windows/Dockerfile -t browse-resume-ai-windows-scripts . && docker run --rm browse-resume-ai-windows-scripts",
-    "test:firefox": "BRA_E2E=1 wxt build -b firefox && node test/firefox/e2e.mjs"
+    "test:firefox": "BRA_E2E=1 wxt build -b firefox && node test/firefox/e2e.mjs",
+    "release-assets": "wxt zip && wxt zip -b firefox && node scripts/release-assets.mjs"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0",

@@ -41,6 +41,8 @@ yet. The Firefox build is not signed by Mozilla yet, so Firefox loads it until i
   - [Screenshots](#screenshots)
   - [Requirements](#requirements)
   - [Install](#install)
+    - [Install from a release](#install-from-a-release)
+    - [Install from the repository](#install-from-the-repository)
     - [1. Get the code and install the local component](#1-get-the-code-and-install-the-local-component)
     - [2. Turn on Developer mode](#2-turn-on-developer-mode)
     - [3. Load the extension](#3-load-the-extension)
@@ -157,10 +159,77 @@ _A GrapheneOS thread on Mastodon: long summary in Arabic, right to left, in the 
 
 ## Install
 
-The repository includes the latest builds in [`dist/chrome`](dist/chrome), ready to load in Chrome,
-and [`dist/firefox`](dist/firefox), for Firefox. You do not need to build anything; you only need
-Node.js for the local component. The steps below are for Chrome; for Firefox, do step 1 and then
-see [Firefox](#firefox).
+There are two ways to get it, and neither needs a build; you only need Node.js for the local
+component:
+
+- **From a release** (no git): three zip files, described in
+  [Install from a release](#install-from-a-release).
+- **From the repository**: it includes the latest builds in [`dist/chrome`](dist/chrome) and
+  [`dist/firefox`](dist/firefox). The numbered steps below are for Chrome this way; for Firefox, do
+  step 1 and then see [Firefox](#firefox).
+
+### Install from a release
+
+Each [release](https://github.com/amieiro/browse-resume-ai/releases/latest) has three files. Their
+names do not change between versions, so these links always get the latest one:
+
+| File | What it is |
+|---|---|
+| [`browse-resume-ai-native-host.zip`](https://github.com/amieiro/browse-resume-ai/releases/latest/download/browse-resume-ai-native-host.zip) | The local component, needed by both browsers. |
+| [`browse-resume-ai-chrome.zip`](https://github.com/amieiro/browse-resume-ai/releases/latest/download/browse-resume-ai-chrome.zip) | The extension for Chrome and Chromium. |
+| [`browse-resume-ai-firefox.zip`](https://github.com/amieiro/browse-resume-ai/releases/latest/download/browse-resume-ai-firefox.zip) | The add-on for Firefox 140 or later. |
+
+Keep everything in one folder that you will not move, for example `~/browse-resume-ai`: the local
+component is registered with its full path.
+
+**The local component** (always first). Unzip it in that folder and run its installer, which
+registers it for Chrome, Chromium and Firefox:
+
+```sh
+mkdir -p ~/browse-resume-ai && cd ~/browse-resume-ai
+curl -fsSLO https://github.com/amieiro/browse-resume-ai/releases/latest/download/browse-resume-ai-native-host.zip
+unzip -oq browse-resume-ai-native-host.zip
+./native-host/install.sh
+```
+
+On Windows, in PowerShell:
+
+```powershell
+$dir = "$HOME\browse-resume-ai"; New-Item -ItemType Directory -Force $dir | Out-Null; Set-Location $dir
+Invoke-WebRequest https://github.com/amieiro/browse-resume-ai/releases/latest/download/browse-resume-ai-native-host.zip -OutFile browse-resume-ai-native-host.zip
+Expand-Archive -Force browse-resume-ai-native-host.zip .
+powershell -ExecutionPolicy Bypass -File native-host\install.ps1
+```
+
+**Chrome.** Unzip the Chrome file into a folder of its own, then load that folder as in steps 2 to
+4 below (Developer mode, **Load unpacked**, check the ID):
+
+```sh
+cd ~/browse-resume-ai
+curl -fsSLO https://github.com/amieiro/browse-resume-ai/releases/latest/download/browse-resume-ai-chrome.zip
+unzip -oq browse-resume-ai-chrome.zip -d chrome   # then load the folder ~/browse-resume-ai/chrome
+```
+
+On Windows: `Invoke-WebRequest https://github.com/amieiro/browse-resume-ai/releases/latest/download/browse-resume-ai-chrome.zip -OutFile browse-resume-ai-chrome.zip`,
+then `Expand-Archive -Force browse-resume-ai-chrome.zip chrome`.
+
+**Firefox.** Download the Firefox file and load the zip itself, without unzipping it: open
+`about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on…** and choose
+`browse-resume-ai-firefox.zip`. Read [Firefox](#firefox) for what a temporary add-on means.
+
+```sh
+cd ~/browse-resume-ai
+curl -fsSLO https://github.com/amieiro/browse-resume-ai/releases/latest/download/browse-resume-ai-firefox.zip   # then load ~/browse-resume-ai/browse-resume-ai-firefox.zip
+```
+
+**To update**, run the same commands again in the same folder (they replace the files), run the
+installer again, and reload the extension: the ↻ button in `chrome://extensions`, or **Reload** in
+`about:debugging` for Firefox.
+
+### Install from the repository
+
+These steps use a clone of the repository, for Chrome. The screenshots in steps 2 to 4 apply to
+the release folder too.
 
 ### 1. Get the code and install the local component
 
@@ -306,7 +375,8 @@ is, load it as a temporary add-on, which Firefox keeps until it restarts:
 
 1. Run the installer of step 1 (it registers the local component for Firefox too).
 2. Open `about:debugging#/runtime/this-firefox` and click **Load Temporary Add-on…**.
-3. Choose the file `dist/firefox/manifest.json` inside the repository.
+3. Choose `browse-resume-ai-firefox.zip` from the release, or the file `dist/firefox/manifest.json`
+   in a clone of the repository.
 4. Firefox asks to allow the add-on to send website content: that is the page text going to the
    local component and from there to the provider you pick.
 
@@ -409,7 +479,7 @@ a user's machine.
 
 ### What this is
 
-A Chrome Manifest V3 extension (WXT + TypeScript) plus a local Chrome native messaging host
+A Manifest V3 extension for Chrome and Firefox (WXT + TypeScript) plus a local native messaging host
 (`native-host/`, plain Node, no dependencies). The extension extracts the article from the active
 tab and sends the prompt to the host; the host runs `claude --print` or `codex exec`, or calls the
 Ollama HTTP API on the loopback, and streams the text back. The user's Claude or ChatGPT
@@ -432,15 +502,35 @@ configure.
    Do not log the user in yourself. If `claude` or `codex` is not logged in, ask the user to run
    `claude` (then `/login`) or `codex login`.
 
-2. Get the code and install the host. The extension is already built in `dist/chrome`:
+2. Download the latest release into a folder that will not move, and install the host. These
+   URLs always point to the latest release; nothing needs building. Ask the user which browsers
+   they use, and download only those zips (the host is always needed):
 
    ```sh
-   git clone https://github.com/amieiro/browse-resume-ai.git
-   cd browse-resume-ai
+   mkdir -p ~/browse-resume-ai && cd ~/browse-resume-ai
+   for f in native-host chrome firefox; do
+     curl -fsSLO https://github.com/amieiro/browse-resume-ai/releases/latest/download/browse-resume-ai-$f.zip
+   done
+   unzip -oq browse-resume-ai-native-host.zip            # native-host/, package.json, LICENSE
+   unzip -oq browse-resume-ai-chrome.zip -d chrome       # the Chrome extension folder
    ./native-host/install.sh   # prints the node, claude and codex paths it found
    ```
 
-   On Windows: `powershell -ExecutionPolicy Bypass -File native-host\install.ps1`.
+   On Windows (PowerShell):
+
+   ```powershell
+   $dir = "$HOME\browse-resume-ai"; New-Item -ItemType Directory -Force $dir | Out-Null; Set-Location $dir
+   foreach ($f in 'native-host', 'chrome', 'firefox') {
+     Invoke-WebRequest "https://github.com/amieiro/browse-resume-ai/releases/latest/download/browse-resume-ai-$f.zip" -OutFile "browse-resume-ai-$f.zip"
+   }
+   Expand-Archive -Force browse-resume-ai-native-host.zip .
+   Expand-Archive -Force browse-resume-ai-chrome.zip chrome
+   powershell -ExecutionPolicy Bypass -File native-host\install.ps1
+   ```
+
+   The Firefox zip stays zipped: Firefox loads it as it is. To work from a clone instead, run
+   `git clone https://github.com/amieiro/browse-resume-ai.git`, then `./native-host/install.sh`
+   in it; the builds are in `dist/chrome` and `dist/firefox`.
 
 3. Check that the host answers. This must print a `pong` with `claudeFound` and/or `codexFound`
    set to `true`. Set `LAUNCHER` to the launcher path the installer printed:
@@ -455,14 +545,21 @@ configure.
    "
    ```
 
-4. Hand over to the user for the last step. Loading an unpacked extension needs Chrome's Developer
-   mode and a native folder picker, which an agent should not and usually cannot operate. Give the
-   user these instructions:
-   - Open `chrome://extensions` and turn on **Developer mode**.
-   - Click **Load unpacked** and choose the `dist/chrome` folder (give the absolute path).
-   - Check that the extension ID is `pdokiakaaeffjlabmofdppjakdhaimpi`, then pin the extension
-     and click its icon on an article.
+4. Hand over to the user for the last step. Loading an extension needs the browser's own pages and
+   a native file picker, which an agent should not and usually cannot operate (and Developer mode
+   is a browser setting the user must turn on). Give the user these instructions, with absolute
+   paths:
+   - Chrome: open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked** and
+     choose the `chrome` folder (for example `~/browse-resume-ai/chrome`, or `dist/chrome` in a
+     clone). Check that the ID is `pdokiakaaeffjlabmofdppjakdhaimpi`, pin the extension and click
+     its icon on an article.
+   - Firefox: open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on…** and
+     choose `~/browse-resume-ai/browse-resume-ai-firefox.zip` (or `dist/firefox/manifest.json` in a
+     clone). It stays until Firefox restarts; the add-on is not signed by Mozilla yet.
    - The **Install** section above has screenshots of each step; point the user to it.
+
+5. To update later, repeat step 2 in the same folder and ask the user to reload the extension (↻
+   in `chrome://extensions`, **Reload** in `about:debugging`).
 
 ### Rules
 
@@ -471,10 +568,10 @@ configure.
 - Do not change the flags in `native-host/lib/runner.mjs` or `native-host/lib/codex-runner.mjs`
   without re-running the prompt-injection check described in their comments: the page text is
   untrusted and the model must have no tool that runs commands or reads files.
-- Run `./native-host/install.sh` again after moving the repository or upgrading Node, Claude Code
+- Run `./native-host/install.sh` again after moving the repository (or the release folder) or upgrading Node, Claude Code
   or Codex, because the launcher stores absolute paths.
-- After changing the source, run `npm run dist` and commit `dist/chrome` with the change, so the
-  prebuilt extension in the repository stays current. If the change is visible in the screenshots,
+- After changing the source, run `npm run dist` and commit `dist/chrome` and `dist/firefox` with the
+  change, so the prebuilt extension in the repository stays current. If the change is visible in the screenshots,
   run `npm run screenshots` and `npm run gallery` (they open a separate Chrome with a temporary
   profile, and the gallery makes nine real summaries) and commit `media/install` and
   `media/gallery` too.
@@ -502,6 +599,7 @@ npm run dev       # Chrome with the extension loaded and live reload
 npm run build     # production builds in .output/chrome-mv3 and .output/firefox-mv3
 npm run dist      # build and copy them to dist/chrome and dist/firefox, kept in the repository
 npm run zip       # zips for Chrome and Firefox (and the sources zip Mozilla asks for) in .output
+npm run release-assets  # the three files of a GitHub release, in .output/release
 npm run screenshots  # regenerate media/install/*.png (needs the native host installed)
 npm run gallery      # regenerate media/gallery/*.png: real summaries of real pages (same need)
 npm run readme-toc   # regenerate the table of contents at the top of this README
