@@ -57,5 +57,6 @@
   "history_delete": "Share",
   "history_clear": "Share tarihi",
   "history_clear_confirm": "Sake dannawa don share duka",
-  "options_history": "Ajiye tarihin taƙaitawa (a wannan kwamfuta)"
+  "options_history": "Ajiye tarihin taƙaitawa (a wannan kwamfuta)",
+  "error_no_transcript": "Wannan bidiyon ba shi da rubutaccen bayani (transcript) da za a taƙaita. YouTube yana da shi ne kawai idan bidiyon yana da fassarar rubutu ko taken rubutu na atomatik."
 }

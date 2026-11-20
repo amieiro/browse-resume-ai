@@ -57,5 +57,6 @@
   "history_delete": "Haqi",
   "history_clear": "Seenaa qulqulleessi",
   "history_clear_confirm": "Hunda haquuf ammas cuqaasi",
-  "options_history": "Seenaa cuunfaawwanii qabadhu (kompiitara kana irratti)"
+  "options_history": "Seenaa cuunfaawwanii qabadhu (kompiitara kana irratti)",
+  "error_no_transcript": "Viidiyoon kun barreeffama dubbii cuunfamu hin qabu. YouTube kan qabu yoo viidiyoon sun barreeffama jalaa ykn barreeffama jalaa ofumaan uumame qabaate qofa."
 }

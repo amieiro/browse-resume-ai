@@ -7,6 +7,7 @@ export type SummaryErrorCode =
   | 'file_access'
   | 'pdf_unreadable'
   | 'pdf_no_text'
+  | 'no_transcript'
   | 'host_missing'
   | 'claude_missing'
   | 'claude_auth'

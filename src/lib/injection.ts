@@ -2,6 +2,7 @@ import { browser } from 'wxt/browser';
 import type { Article } from './prompt';
 import { SummaryError } from '@/providers/types';
 import { readPdf as defaultReadPdf } from './pdf';
+import type { NoTranscript } from './youtube';
 
 /**
  * Chrome refuses to inject into its own pages and the Web Store, and into any page once the
@@ -32,8 +33,9 @@ export async function extractFromTab(
     if (tab?.url?.startsWith('file:')) throw new SummaryError('file_access', message);
     throw new SummaryError(classifyInjectionError(message), message);
   }
-  const result = results?.[0]?.result as Article | PdfMarker | null | undefined;
+  const result = results?.[0]?.result as Article | PdfMarker | NoTranscript | null | undefined;
   if (result === undefined) throw new SummaryError('page_unreadable');
+  if (result && 'noTranscript' in result) throw new SummaryError('no_transcript');
   if (result && 'pdf' in result && result.pdf) {
     const pdf = await readPdf(result.url, result.title);
     if (!pdf) throw new SummaryError('pdf_no_text');

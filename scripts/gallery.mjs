@@ -27,6 +27,7 @@ const PAGES = {
   newscientist: 'https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/',
   grapheneos: 'https://grapheneos.social/@GrapheneOS/117645038299496084',
   arxiv: 'https://arxiv.org/pdf/1706.03762',
+  youtube: 'https://www.youtube.com/watch?v=arj7oStGLkU',
 };
 
 // One shot per page, length and language; the interface is in the same language as the summary.
@@ -51,6 +52,8 @@ const SHOTS = [
     questions: ['What does GrapheneOS ask regulators to do?', 'Which phone makers does it mention?'],
   },
   { name: 'feature-pdf', page: 'arxiv', language: 'en-US', length: 'medium', mode: 'panel' },
+  // YouTube's cookie notice is rejected like any other; the extractor opens the transcript itself.
+  { name: 'feature-youtube', page: 'youtube', language: 'en-US', length: 'medium', mode: 'panel', top: true },
   // The history page, with short summaries of the pages above.
   { name: 'feature-history', mode: 'history', language: 'en-US', length: 'short', pages: ['arxiv', 'newscientist', 'securityweek'] },
 ];
@@ -83,6 +86,12 @@ async function openArticle(browser, url, width) {
   await page.goto(url, { waitUntil: 'networkidle2', timeout: 60_000 }).catch(() => {});
   await sleep(2000);
   await dismissOverlays(page);
+  // Some sites (YouTube) send to a separate consent page first; after rejecting, it goes back.
+  if (new URL(page.url()).hostname !== new URL(url).hostname) {
+    await page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 30_000 }).catch(() => {});
+    if (new URL(page.url()).hostname !== new URL(url).hostname) await page.goto(url, { waitUntil: 'networkidle2', timeout: 60_000 }).catch(() => {});
+    await sleep(2000);
+  }
   await page.addStyleTag({ content: HIDE_BANNERS });
   return page;
 }
@@ -354,7 +363,8 @@ try {
       articlePng = await page.screenshot({ encoding: 'base64' });
     } else {
       entry.text = await summarizeWithHost(buildPrompt(article, shot.length, shot.language), { model: MODEL });
-      articlePng = await captureArticle(page, article.title);
+      // top: keep the page at the top (the video player) instead of scrolling to the heading.
+      articlePng = await captureArticle(page, shot.top ? '' : article.title);
     }
     if (shot.questions) {
       entry.qa = [];

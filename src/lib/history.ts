@@ -11,7 +11,7 @@ export interface HistoryEntry {
   text: string;
   truncated: boolean;
   source?: 'selection';
-  format?: 'pdf';
+  format?: 'pdf' | 'video';
   provider: ProviderId;
   model: string;
   length: SummaryLength;

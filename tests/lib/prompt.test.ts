@@ -40,4 +40,10 @@ describe('buildPrompt', () => {
     expect(p.split(ARTICLE_CLOSE).length).toBe(2);
     expect(p.split(ARTICLE_OPEN).length).toBe(2);
   });
+
+  it('says a video is summarized from its transcript', () => {
+    const p = buildPrompt({ ...a, format: 'video' }, 'short', 'en-US');
+    expect(p).toContain('Summarize the YouTube video below from its transcript.');
+  });
 });
+

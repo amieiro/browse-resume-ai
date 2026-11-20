@@ -25,7 +25,11 @@ export function buildQuestionPrompt(
 ): string {
   const lang = languageName(language);
   const what =
-    source === 'selection' ? 'the excerpt the reader selected on a web page' : article.format === 'pdf' ? 'the PDF document' : 'the web article';
+    source === 'selection' ? 'the excerpt the reader selected on a web page' : article.format === 'pdf'
+        ? 'the PDF document'
+        : article.format === 'video'
+          ? 'the YouTube video, from its transcript,'
+          : 'the web article';
   const earlier = history.slice(-MAX_HISTORY).flatMap((turn) => [`Q: ${stripDelimiters(turn.question)}`, `A: ${stripDelimiters(turn.answer)}`, '']);
   return [
     `Answer the reader's question about ${what} below, using only what it says.`,

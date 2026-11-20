@@ -62,3 +62,12 @@ describe('extractFromTab errors', () => {
     await expect(extractFromTab(1, vi.fn(async () => null))).rejects.toMatchObject({ code: 'pdf_no_text' });
   });
 });
+
+describe('extractFromTab on YouTube', () => {
+  it('says a video has no transcript', async () => {
+    const { fakeBrowser } = await import('wxt/testing/fake-browser');
+    const { extractFromTab } = await import('@/lib/injection');
+    (fakeBrowser.scripting as any).executeScript = vi.fn(async () => [{ result: { noTranscript: true } }]);
+    await expect(extractFromTab(1, vi.fn())).rejects.toMatchObject({ code: 'no_transcript' });
+  });
+});

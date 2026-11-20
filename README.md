@@ -1,6 +1,6 @@
 # Browse Resume AI
 
-A Chrome extension that summarizes the article or PDF in the current tab with one click, using the AI
+A Chrome extension that summarizes the article, PDF or YouTube video in the current tab with one click, using the AI
 subscription you already pay for: Claude (through Claude Code) or ChatGPT (through Codex), or with
 a model running on your own computer through Ollama. No API keys, no pay-per-use billing.
 
@@ -10,6 +10,7 @@ a model running on your own computer through Ollama. No API keys, no pay-per-use
   pages where the article is not found or when you want one section.
 - Ask questions about the page under the summary; the answers come from the page text only.
 - A history of your summaries, with search, kept only on your computer.
+- YouTube videos are summarized from their transcript.
 - PDFs open in Chrome are summarized too, from their text (read with
   [pdf.js](https://mozilla.github.io/pdf.js/) inside the extension).
 - Choose the provider and model, the length (short, medium, long) and the summary language.
@@ -68,6 +69,10 @@ _Questions about the page: the answers appear under the summary and come from th
 <img src="media/gallery/feature-pdf.png" alt="The paper Attention Is All You Need open in Chrome's PDF viewer, and its summary in the side panel" width="800">
 
 _PDFs: a paper from arXiv in Chrome's PDF viewer, summarized from its text._
+
+<img src="media/gallery/feature-youtube.png" alt="A TED talk on YouTube and its summary, made from the transcript, in the side panel" width="800">
+
+_YouTube: a video summarized from its transcript._
 
 <img src="media/gallery/feature-history.png" alt="The history page with three summaries, one of them of a PDF and one with a question and its answer" width="800">
 
@@ -213,6 +218,10 @@ with all of them, newest first, a search that ignores case and accents, and butt
 delete each one or clear them all. It keeps the last 500 summaries in the extension's storage on
 this computer and is never sent anywhere; turn it off in the settings with **Keep a history of
 summaries**.
+
+On a YouTube video, the summary is made from its transcript, as YouTube shows it under **Show
+transcript** (the extension opens that panel if it is closed). Videos without subtitles or
+automatic captions have no transcript to summarize.
 
 A PDF open in Chrome is summarized the same way: the extension downloads the file and reads its
 text. PDFs made of scanned images have no text to read. For PDFs on your computer (`file://`), turn

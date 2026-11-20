@@ -57,5 +57,6 @@
   "history_delete": "Suprimir",
   "history_clear": "Escafar l'istoric",
   "history_clear_confirm": "Clicatz tornamai per tot suprimir",
-  "options_history": "Gardar un istoric dels resumits (sus aqueste ordenador)"
+  "options_history": "Gardar un istoric dels resumits (sus aqueste ordenador)",
+  "error_no_transcript": "Aquesta vidèo a pas cap de transcripcion de resumir. YouTube n'a una sonque quand la vidèo a de sostítols o de sostítols automatics."
 }

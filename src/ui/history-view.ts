@@ -53,6 +53,7 @@ export function mountHistoryView(root: HTMLElement, initial: HistoryEntry[], dep
     const badges = [
       ...(entry.source === 'selection' ? [el('span', { className: 'badge', textContent: t('ui_selection') })] : []),
       ...(entry.format === 'pdf' ? [el('span', { className: 'badge', textContent: 'PDF' })] : []),
+      ...(entry.format === 'video' ? [el('span', { className: 'badge', textContent: 'YouTube' })] : []),
     ];
     const meta = el(
       'p',

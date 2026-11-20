@@ -57,5 +57,6 @@
   "history_delete": "Sguab às",
   "history_clear": "Falamhaich an eachdraidh",
   "history_clear_confirm": "Briog a-rithist airson a h-uile càil a sguabadh às",
-  "options_history": "Cùm eachdraidh nan gearr-chunntasan (air a’ choimpiutair seo)"
+  "options_history": "Cùm eachdraidh nan gearr-chunntasan (air a’ choimpiutair seo)",
+  "error_no_transcript": "Chan eil tar-sgrìobhadh aig a’ video seo airson gearr-chunntas a dhèanamh air. Chan eil fear aig YouTube ach nuair a bhios fo-thiotalan no caipseanan fèin-obrachail aig a’ video."
 }
