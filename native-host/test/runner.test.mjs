@@ -97,3 +97,17 @@ describe('runClaude', () => {
     expect(r.events).toEqual([]);
   });
 });
+
+describe('runClaude with a JavaScript entry point', () => {
+  it('starts it with Node (how npm-installed CLIs run on Windows)', async () => {
+    const { mkdtempSync, writeFileSync, readFileSync: read } = await import('node:fs');
+    const dir = mkdtempSync(join(tmpdir(), 'bra-js-'));
+    const entry = join(dir, 'cli.js');
+    writeFileSync(entry, `require('node:fs').writeFileSync(${JSON.stringify(join(dir, 'ran'))}, process.argv.slice(2).join(' '));
+process.stdout.write(require('node:fs').readFileSync(${JSON.stringify(fileURLToPath(new URL('./fixtures/claude-stream.jsonl', import.meta.url)))}));`);
+    const r = run('ok', { claudePath: entry });
+    await r.done;
+    expect(r.events).toEqual(['done']);
+    expect(read(join(dir, 'ran'), 'utf8')).toContain('--print');
+  });
+});

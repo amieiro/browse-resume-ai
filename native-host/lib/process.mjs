@@ -2,6 +2,7 @@ import { spawn } from 'node:child_process';
 import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import { commandFor } from './resolve-cli.mjs';
 
 /**
  * Runs a CLI once in an empty temporary directory, prompt on stdin, never through a shell.
@@ -22,7 +23,15 @@ export function runProcess({ command, args, prompt, parser, classifyError, missi
     fn?.();
   };
 
-  const child = spawn(command, args(cwd), { cwd, stdio: ['pipe', 'pipe', 'pipe'] });
+  let child;
+  try {
+    const { command: executable, prefix } = commandFor(command);
+    child = spawn(executable, [...prefix, ...args(cwd)], { cwd, stdio: ['pipe', 'pipe', 'pipe'], windowsHide: true });
+  } catch (error) {
+    // spawn throws synchronously for some invalid commands (e.g. a .cmd file on Windows).
+    queueMicrotask(() => finish(() => onError(missingCode, error.message)));
+    return { cancel: () => finish() };
+  }
 
   child.on('error', (error) => {
     finish(() => onError(error.code === 'ENOENT' || error.code === 'EACCES' ? missingCode : 'provider_failed', error.message));

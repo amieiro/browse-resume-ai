@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { initI18n, resolveUiLanguage, setMessages, t } from '@/lib/i18n';
+import { initI18n, resolveUiLanguage, setMessages, setWindows, t } from '@/lib/i18n';
 import { LANGUAGES } from '@/lib/languages';
 
 const FILES = import.meta.glob<Record<string, string>>('../../src/locales/*.json', { eager: true, import: 'default' });
@@ -13,6 +13,21 @@ describe('t', () => {
     expect(t('a')).toBe('A');
     expect(t('b')).toBe('B');
     expect(t('missing')).toBe('missing');
+  });
+});
+
+describe('install command on Windows', () => {
+  beforeEach(() => setMessages({ e: 'Run: ./native-host/install.sh now.' }));
+
+  it('is the shell script elsewhere', () => {
+    setWindows(false);
+    expect(t('e')).toBe('Run: ./native-host/install.sh now.');
+  });
+
+  it('is the PowerShell installer on Windows', () => {
+    setWindows(true);
+    expect(t('e')).toBe('Run: powershell -ExecutionPolicy Bypass -File native-host\\install.ps1 now.');
+    setWindows(false);
   });
 });
 

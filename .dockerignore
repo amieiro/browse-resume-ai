@@ -1,0 +1,7 @@
+node_modules
+.output
+.wxt
+.git
+.superpowers
+docs
+media
