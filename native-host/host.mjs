@@ -48,7 +48,7 @@ function handle(msg) {
       ([claudeVersion, codexVersion, codex, ollama]) =>
         send({
           type: 'models',
-          claude: { version: claudeVersion, models: claudeModels() },
+          claude: { version: claudeVersion, models: claudeModels(undefined, claudeVersion) },
           codex: { version: codexVersion, models: codex },
           ollama: { found: ollama.found, models: ollama.models },
         }),

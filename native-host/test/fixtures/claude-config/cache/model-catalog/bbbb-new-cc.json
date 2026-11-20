@@ -8,23 +8,34 @@
       "models": [
         {
           "id": "claude-opus-5-5",
-          "name": "Opus 5.5"
+          "name": "Opus 5.5",
+          "section": "main"
         },
         {
           "id": "claude-fable-5-2",
-          "name": "Fable 5.2"
+          "name": "Fable 5.2",
+          "section": "main"
         },
         {
           "id": "claude-sonnet-5-5",
-          "name": "Sonnet 5.5"
+          "name": "Sonnet 5.5",
+          "section": "main"
         },
         {
           "id": "claude-haiku-5-5",
-          "name": "Haiku 5.5"
+          "name": "Haiku 5.5",
+          "section": "main"
         },
         {
           "id": "claude-opus-4-8",
-          "name": "Opus 4.8"
+          "name": "Opus 4.8",
+          "section": "overflow"
+        },
+        {
+          "id": "claude-next-6",
+          "name": "Next",
+          "section": "main",
+          "min_claude_code_version": "9.0.0"
         }
       ],
       "provider_alias_targets": {

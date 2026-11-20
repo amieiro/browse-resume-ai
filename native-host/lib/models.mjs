@@ -3,7 +3,9 @@
 //
 // - Claude Code has no command to list models, but keeps the model catalog it shows in /model in
 //   <config dir>/cache/model-catalog/*-cc.json: aliases that follow the latest model (sonnet, opus,
-//   haiku, fable) and the full model names.
+//   haiku, fable) and the full model names. Models in its "main" section are the current ones;
+//   "overflow" holds earlier versions, which are left out, as are models that need a newer Claude
+//   Code than the one installed.
 // - Codex prints its catalog with `codex debug models`; models with visibility "list" are the ones
 //   its picker offers, in priority order.
 // Neither format is documented. Anything unexpected gives null, and the extension keeps the list it
@@ -42,8 +44,22 @@ export async function cliVersion(path) {
   return out?.split('\n')[0].trim() || null;
 }
 
-/** Claude Code's aliases and models from its catalog cache, newest file first; null if none. */
-export function claudeModels(configDir = process.env.CLAUDE_CONFIG_DIR || join(homedir(), '.claude')) {
+/** Compares dotted versions: negative when a < b. Missing parts count as 0. */
+function compareVersions(a, b) {
+  const pa = a.split('.').map((n) => parseInt(n, 10) || 0);
+  const pb = b.split('.').map((n) => parseInt(n, 10) || 0);
+  for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+    const diff = (pa[i] ?? 0) - (pb[i] ?? 0);
+    if (diff) return diff;
+  }
+  return 0;
+}
+
+/**
+ * Claude Code's aliases and current models from its catalog cache, newest file first; null if
+ * none. `version` is the output of `claude --version` ("2.1.329 (Claude Code)"), when known.
+ */
+export function claudeModels(configDir = process.env.CLAUDE_CONFIG_DIR || join(homedir(), '.claude'), version = null) {
   const dir = join(configDir, 'cache', 'model-catalog');
   let files;
   try {
@@ -68,7 +84,12 @@ export function claudeModels(configDir = process.env.CLAUDE_CONFIG_DIR || join(h
     const ib = ALIAS_ORDER.indexOf(b);
     return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
   });
-  const models = valid([...aliases, ...(config.models ?? []).map((m) => m?.id)]);
+  const installed = /\d+(\.\d+)+/.exec(version ?? '')?.[0];
+  const all = (config.models ?? []).filter((m) => m && typeof m.id === 'string');
+  // Older catalogs may have no sections; then every model is offered.
+  const current = all.some((m) => m.section) ? all.filter((m) => m.section === 'main') : all;
+  const usable = current.filter((m) => !installed || !m.min_claude_code_version || compareVersions(m.min_claude_code_version, installed) <= 0);
+  const models = valid([...aliases, ...usable.map((m) => m.id)]);
   return models.length ? models : null;
 }
 

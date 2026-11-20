@@ -7,11 +7,18 @@ const fixture = (p) => fileURLToPath(new URL(`./fixtures/${p}`, import.meta.url)
 afterEach(() => vi.unstubAllEnvs());
 
 describe('claudeModels', () => {
-  it('reads the newest catalog: aliases first, in a fixed order, then the models', () => {
-    expect(claudeModels(fixture('claude-config'))).toEqual([
+  it('reads the newest catalog: aliases first, in a fixed order, then the current models', () => {
+    expect(claudeModels(fixture('claude-config'), '2.1.329 (Claude Code)')).toEqual([
       'sonnet', 'opus', 'haiku', 'fable',
-      'claude-opus-5-5', 'claude-fable-5-2', 'claude-sonnet-5-5', 'claude-haiku-5-5', 'claude-opus-4-8',
+      'claude-opus-5-5', 'claude-fable-5-2', 'claude-sonnet-5-5', 'claude-haiku-5-5',
     ]);
+  });
+
+  it('leaves out earlier versions (overflow) and models that need a newer Claude Code', () => {
+    const models = claudeModels(fixture('claude-config'), '2.1.329 (Claude Code)');
+    expect(models).not.toContain('claude-opus-4-8');
+    expect(models).not.toContain('claude-next-6');
+    expect(claudeModels(fixture('claude-config'), '9.1.0 (Claude Code)')).toContain('claude-next-6');
   });
 
   it('is null without a catalog', () => {
