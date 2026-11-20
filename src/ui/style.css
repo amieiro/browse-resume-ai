@@ -31,7 +31,7 @@ body {
   background: var(--bg);
   color: var(--fg);
 }
-body.popup { width: 380px; max-height: 580px; }
+body.popup { width: 440px; max-height: 580px; }
 #app { display: flex; flex-direction: column; min-height: 100vh; }
 body.popup #app { min-height: 0; }
 .toolbar {
@@ -44,6 +44,8 @@ select {
   flex: 1 1 70px; min-width: 0; padding: 4px 6px;
   border: 1px solid var(--border); border-radius: 6px; background: var(--bg);
 }
+/* Language names are the longest values ("Português do Brasil"); give them twice the room. */
+select[name="language"] { flex: 2 1 90px; }
 button {
   padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px;
   background: var(--bg); cursor: pointer;

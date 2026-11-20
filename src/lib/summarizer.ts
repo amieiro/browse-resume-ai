@@ -59,6 +59,9 @@ export class Summarizer {
     const generation = this.bumpGeneration(tabId);
     const superseded = () => this.generations.get(tabId) !== generation;
     if (opts.force) this.abortRunning(tabId);
+    // Reading the page can take a few seconds: show the progress indicator from the start, unless
+    // a request is already running (a non-forced start may attach to it and keep its text).
+    if (!this.running.has(tabId)) this.setState(tabId, { status: 'running', title: '', text: '', truncated: false });
 
     let title = '';
     let text = '';

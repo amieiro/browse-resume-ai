@@ -30,6 +30,12 @@ function labelled(label: string, select: HTMLSelectElement) {
   return select;
 }
 
+/** The text Copy takes: a finished summary, or what arrived before an error. */
+function copyableText(s: SummaryState): string {
+  if (s.status === 'done' || (s.status === 'error' && s.text)) return s.text;
+  return '';
+}
+
 export function mountSummaryView(root: HTMLElement, initial: Settings, handlers: SummaryViewHandlers) {
   let settings = initial;
   let state: SummaryState = { status: 'idle' };
@@ -87,7 +93,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     if (hasContent) renderMarkdown(s.text, summary);
     else summary.replaceChildren();
     notice.hidden = !(hasContent && s.truncated && s.text);
-    copy.disabled = s.status !== 'done';
+    copy.disabled = !copyableText(s);
     regenerate.textContent = s.status === 'error' ? t('ui_try_again') : t('ui_regenerate');
     regenerate.hidden = s.status === 'idle' || (s.status === 'error' && s.code === 'needs_click');
     regenerate.disabled = s.status === 'running';
@@ -113,8 +119,9 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   options.addEventListener('click', () => handlers.onOpenOptions());
   regenerate.addEventListener('click', () => handlers.onRegenerate());
   copy.addEventListener('click', () => {
-    if (state.status !== 'done') return;
-    void navigator.clipboard.writeText(state.text).then(() => {
+    const text = copyableText(state);
+    if (!text) return;
+    void navigator.clipboard.writeText(text).then(() => {
       copy.textContent = t('ui_copied');
       setTimeout(() => (copy.textContent = t('ui_copy')), 1500);
     });

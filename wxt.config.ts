@@ -16,5 +16,10 @@ export default defineConfig({
     permissions: ['activeTab', 'scripting', 'storage', 'sidePanel', 'nativeMessaging'],
     action: {},
     side_panel: { default_path: 'sidepanel.html' },
+    // The shortcut does what a click on the toolbar icon does (side panel or popup, as set).
+    // Users can change it in chrome://extensions/shortcuts.
+    commands: {
+      _execute_action: { suggested_key: { default: 'Alt+Shift+S' }, description: 'Summarize the page' },
+    },
   },
 });

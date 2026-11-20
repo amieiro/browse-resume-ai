@@ -66,10 +66,23 @@ describe('Summarizer', () => {
     expect(t.states.map((s) => [s.status, 'text' in s ? s.text : null])).toEqual([
       ['idle', null],
       ['running', ''],
+      ['running', ''],
       ['running', 'Hel'],
       ['running', 'Hello'],
       ['done', 'Hello'],
     ]);
+  });
+
+  it('shows running at once, while the page is still being read', async () => {
+    let release!: (a: Article) => void;
+    const extract = vi.fn(() => new Promise<Article>((r) => (release = r)));
+    const t = setup(provider(() => chunks('Hi')), { extract });
+    const started = t.s.start(1, { force: false });
+    expect(t.s.getState(1)).toMatchObject({ status: 'running', title: '', text: '' });
+    await vi.waitFor(() => expect(extract).toHaveBeenCalled());
+    release(article);
+    await started;
+    expect(t.s.getState(1)).toMatchObject({ status: 'done', text: 'Hi' });
   });
 
   it('serves the second start from the cache', async () => {

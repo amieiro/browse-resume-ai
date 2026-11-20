@@ -43,7 +43,7 @@ const SHOTS = [
 const HEIGHT = 820;
 const WINDOW_WIDTH = 1280;
 const PANEL_WIDTH = 400;
-const POPUP_WIDTH = 380;
+const POPUP_WIDTH = 440;
 const POPUP_MAX_HEIGHT = 580;
 const SCALE = 2;
 // Width at which the README shows each screenshot (the border must look 1px wide there).
@@ -81,6 +81,7 @@ async function dismissOverlays(page) {
   for (let round = 0; round < 3; round++) {
     let clicked = 0;
     for (const frame of page.frames()) {
+      if (frame.detached) continue; // ad frames come and go while the page loads
       clicked += await frame
         .evaluate((source) => {
           const re = new RegExp(source, 'i');
@@ -111,7 +112,7 @@ async function dismissOverlays(page) {
 
 /**
  * Scrolls the article's heading near the top, hides what stays floating over the text (newsletter
- * and subscription bars at the bottom), and takes the screenshot.
+ * and notification prompts, subscription bars), and takes the screenshot.
  */
 async function captureArticle(page, title) {
   await dismissOverlays(page); // some prompts (notifications) appear a while after the page loads
@@ -125,7 +126,10 @@ async function captureArticle(page, title) {
     for (const el of document.querySelectorAll('body *')) {
       const style = getComputedStyle(el);
       if (style.position !== 'fixed' && style.position !== 'sticky') continue;
-      if (el.getBoundingClientRect().top > window.innerHeight / 3) el.style.setProperty('display', 'none', 'important');
+      // Keep the site's header bar (full width, at the top); hide prompts and bars elsewhere.
+      const r = el.getBoundingClientRect();
+      const header = r.top <= 1 && r.width >= window.innerWidth * 0.9 && r.height < window.innerHeight / 3;
+      if (!header) el.style.setProperty('display', 'none', 'important');
     }
   });
   await sleep(300);

@@ -75,4 +75,33 @@ describe('extractArticle', () => {
     const html = `<body><main><div hidden>${sentence.repeat(12)}</div><div style="display:none">${sentence.repeat(12)}</div><p>Menu</p></main></body>`;
     expect(extractArticle(doc(html), 'https://e.com/h')).toBeNull();
   });
+
+  describe('floating overlays (consent dialogs, newsletter pop-ups)', () => {
+    const sentences = (n: number, seed: string) =>
+      Array.from({ length: n }, (_, i) => `<p>${words(12, `${seed}${i}w`)} goes on for a while here.</p>`).join('');
+    const live = (html: string) => {
+      document.body.innerHTML = html;
+      return document;
+    };
+
+    it('skips a fixed overlay that has more text than the article', () => {
+      const d = live(`<div style="position: fixed; inset: 0">${sentences(12, 'consent')}</div>
+        <article><h1>Short paid article</h1>${sentences(5, 'story')}</article>`);
+      const a = extractArticle(d, 'https://e.com/paywalled');
+      expect(a!.text).toContain('story0w0');
+      expect(a!.text).not.toContain('consent0w0');
+    });
+
+    it('still reads an article that is itself inside a fixed container', () => {
+      const d = live(`<div style="position: fixed; inset: 0"><article><h1>Reader view</h1>${sentences(8, 'reader')}</article></div>`);
+      expect(extractArticle(d, 'https://e.com/reader')!.text).toContain('reader0w0');
+    });
+
+    it('leaves the live page untouched', () => {
+      const d = live(`<div id="overlay" style="position: fixed">${sentences(12, 'consent')}</div><article>${sentences(5, 'story')}</article>`);
+      extractArticle(d, 'https://e.com/paywalled');
+      expect(d.getElementById('overlay')).not.toBeNull();
+    });
+  });
 });
+

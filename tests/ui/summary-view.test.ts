@@ -138,4 +138,18 @@ describe('summary view states', () => {
     button('copy').click();
     expect(writeText).toHaveBeenCalledWith('- a\n- b');
   });
+
+  it('Copy works on the partial text left by an error', async () => {
+    const writeText = vi.fn(async () => {});
+    Object.defineProperty(navigator, 'clipboard', { value: { writeText }, configurable: true });
+    mount().setState({ status: 'error', code: 'provider_failed', title: 'T', text: 'Partial', truncated: false });
+    expect(button('copy').disabled).toBe(false);
+    button('copy').click();
+    expect(writeText).toHaveBeenCalledWith('Partial');
+  });
+
+  it('Copy stays disabled on an error without text', () => {
+    mount().setState({ status: 'error', code: 'host_missing', title: '', text: '', truncated: false });
+    expect(button('copy').disabled).toBe(true);
+  });
 });

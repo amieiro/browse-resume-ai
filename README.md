@@ -4,7 +4,8 @@ A Chrome extension that summarizes the article in the current tab with one click
 subscription you already pay for: Claude (through Claude Code) or ChatGPT (through Codex). No API
 keys, no pay-per-use billing.
 
-- One click on the toolbar icon summarizes the page with your saved settings.
+- One click on the toolbar icon, or <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>, summarizes the page
+  with your saved settings.
 - Choose the provider and model, the length (short, medium, long) and the summary language.
 - The summary appears in the side panel or in a popup; you pick which in the settings.
 - 201 languages, for both the summary and the interface: the languages of
@@ -168,8 +169,11 @@ popup), and the defaults.
 
 ### 6. Summarize a page
 
-Open an article and click the extension icon. The summary appears in the side panel; the selectors
-at the top change the provider, model, length and language for the next summary.
+Open an article and click the extension icon, or press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>
+(<kbd>Option</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> on a Mac). The summary appears in the side panel;
+the selectors at the top change the provider, model, length and language for the next summary. To
+use another shortcut, open `chrome://extensions/shortcuts`. If another extension already has
+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>, Chrome leaves this one without a shortcut; set one there.
 
 <img src="media/install/5-summary.png" alt="A summary of the Wikipedia article on the Galician language in the side panel" width="420">
 

@@ -51,9 +51,39 @@ function looksLikeProse(text: string): boolean {
   return false;
 }
 
+/**
+ * A copy of the page without the elements that float over it (position fixed): consent dialogs,
+ * newsletter and subscription pop-ups, sticky bars. Readability would otherwise take a consent
+ * dialog for the article when it has more text than a short or paywalled article. Needs the live
+ * page, for the computed styles; returns null without one.
+ */
+function withoutOverlays(doc: Document): Document | null {
+  const view = doc.defaultView;
+  if (!view || !doc.body) return null;
+  const clone = doc.cloneNode(true) as Document;
+  // A deep clone has the same elements in the same order, so the two lists line up.
+  const live = doc.body.querySelectorAll('*');
+  const copies = clone.body.querySelectorAll('*');
+  let removed = 0;
+  live.forEach((el, i) => {
+    if (view.getComputedStyle(el).position === 'fixed') {
+      copies[i]!.remove();
+      removed++;
+    }
+  });
+  return removed ? clone : null;
+}
+
 /** Extracts the readable article from a page. Returns null when the page has no article text. */
 export function extractArticle(doc: Document, url: string): Article | null {
-  let title = doc.title.trim();
+  const clean = withoutOverlays(doc);
+  // Some reader-style pages keep the article itself in a fixed container: then use the whole page.
+  return (clean && extractFrom(clean, doc.title, url)) ?? extractFrom(doc, doc.title, url);
+}
+
+/** Reads the article from a page; it is not changed (Readability works on its own copy). */
+function extractFrom(doc: Document, pageTitle: string, url: string): Article | null {
+  let title = pageTitle.trim();
   let text = '';
   try {
     const parsed = new Readability(doc.cloneNode(true) as Document).parse();
