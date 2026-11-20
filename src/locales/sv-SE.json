@@ -24,6 +24,7 @@
   "history_usage_questions": "Frågor: {count}",
   "ui_regenerate": "Sammanfatta igen",
   "ui_try_again": "Försök igen",
+  "ui_allow_site": "Tillåt läsning av {site}",
   "ui_working": "Sammanfattar…",
   "ui_idle_hint": "Klicka på tilläggets ikon för att sammanfatta den här sidan.",
   "ui_truncated": "Sidan var lång; bara den första delen sammanfattades.",

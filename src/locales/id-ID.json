@@ -24,6 +24,7 @@
   "history_usage_questions": "Pertanyaan: {count}",
   "ui_regenerate": "Ringkas lagi",
   "ui_try_again": "Coba lagi",
+  "ui_allow_site": "Izinkan membaca {site}",
   "ui_working": "Meringkas…",
   "ui_idle_hint": "Klik ikon ekstensi untuk meringkas halaman ini.",
   "ui_truncated": "Halaman ini panjang; hanya bagian pertama yang diringkas.",

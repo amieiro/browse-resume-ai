@@ -24,6 +24,7 @@
   "history_usage_questions": "ܫܘܐܠܐ: {count}",
   "ui_regenerate": "ܦܣܘܩ ܡܢ ܕܪܝܫ",
   "ui_try_again": "ܢܣܝ ܡܢ ܕܪܝܫ",
+  "ui_allow_site": "ܐܦܣ ܩܪܝܢܐ ܕ{site}",
   "ui_working": "ܦܣܩ…",
   "ui_idle_hint": "ܛܪܘܦ ܥܠ ܐܝܩܘܢܐ ܕܬܘܣܦܬܐ ܕܬܦܣܘܩ ܗܢܐ ܦܐܬܐ.",
   "ui_truncated": "ܗܢܐ ܦܐܬܐ ܐܪܝܟܐ ܗܘܐ܆ ܡܢܬܐ ܩܕܡܝܬܐ ܒܠܚܘܕ ܐܬܦܣܩܬ.",

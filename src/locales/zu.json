@@ -24,6 +24,7 @@
   "history_usage_questions": "Imibuzo: {count}",
   "ui_regenerate": "Finyeza futhi",
   "ui_try_again": "Zama futhi",
+  "ui_allow_site": "Vumela ukufunda {site}",
   "ui_working": "Kuyafinyezwa…",
   "ui_idle_hint": "Chofoza isithonjana sesandiso ukuze ufinyeze leli khasi.",
   "ui_truncated": "Leli khasi belide; kufinyezwe ingxenye yokuqala kuphela.",

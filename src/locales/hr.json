@@ -24,6 +24,7 @@
   "history_usage_questions": "Pitanja: {count}",
   "ui_regenerate": "Ponovno sažmi",
   "ui_try_again": "Pokušaj ponovno",
+  "ui_allow_site": "Dopusti čitanje {site}",
   "ui_working": "Sažimanje…",
   "ui_idle_hint": "Kliknite ikonu proširenja da biste saželi ovu stranicu.",
   "ui_truncated": "Stranica je bila duga; sažet je samo prvi dio.",

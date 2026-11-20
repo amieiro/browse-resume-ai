@@ -24,6 +24,7 @@
   "history_usage_questions": "Naamne: {count}",
   "ui_regenerate": "Timmin kadi",
   "ui_try_again": "Eto kadi",
+  "ui_allow_site": "Yamir jangde {site}",
   "ui_working": "Nana timmina…",
   "ui_idle_hint": "Dobo e maandel ɓeyditte ngel ngam timminde ngoo hello.",
   "ui_truncated": "Ngoo hello ko juutngo; ko ɓolol arandewol tan timminaa.",

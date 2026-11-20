@@ -24,6 +24,7 @@
   "history_usage_questions": "提問：{count}",
   "ui_regenerate": "重新摘要",
   "ui_try_again": "再試一次",
+  "ui_allow_site": "允許讀取 {site}",
   "ui_working": "正在摘要…",
   "ui_idle_hint": "按一下擴充功能圖示即可摘要這個網頁。",
   "ui_truncated": "這個網頁很長，只摘要了開頭部分。",

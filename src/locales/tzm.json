@@ -24,6 +24,7 @@
   "history_usage_questions": "ⵉⵙⵇⵙⵉⵜⵏ: {count}",
   "ui_regenerate": "ⴰⵍⵙ ⴰⵙⴳⵣⵓⵍ",
   "ui_try_again": "ⴰⵍⵙ ⴰⵔⵎ",
+  "ui_allow_site": "ⴰⵊⵊ ⴰⴷ ⵉⵜⵜⵓⵖⵔ {site}",
   "ui_working": "ⴰⵙⴳⵣⵓⵍ ⴷⴳ ⵓⵎⵓⵔⵙ…",
   "ui_idle_hint": "ⵙⵙⵉⵔⵎ ⵖⴼ ⵜⵡⵍⴰⴼⵜ ⵏ ⵓⵙⵖⵣⴼ ⴰⴷ ⵜⵙⴳⵣⵍⴷ ⵜⴰⵙⵏⴰ ⴰⴷ.",
   "ui_truncated": "ⵜⴰⵙⵏⴰ ⴰⴷ ⵜⵖⵣⵣⵉⴼ; ⵖⴰⵙ ⴰⵃⵔⵉⵛ ⴰⵎⵣⵡⴰⵔⵓ ⴰⵢⴷ ⵉⵜⵜⵓⵙⴳⵣⵍⵏ.",

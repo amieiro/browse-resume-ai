@@ -24,6 +24,7 @@
   "history_usage_questions": "Ngā pātai: {count}",
   "ui_regenerate": "Whakarāpopoto anō",
   "ui_try_again": "Ngana anō",
+  "ui_allow_site": "Tukua kia pānuitia a {site}",
   "ui_working": "E whakarāpopoto ana…",
   "ui_idle_hint": "Pāwhiritia te tohu o te toronga hei whakarāpopoto i tēnei whārangi.",
   "ui_truncated": "He roa tēnei whārangi; ko te wāhanga tuatahi anake i whakarāpopototia.",

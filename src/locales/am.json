@@ -24,6 +24,7 @@
   "history_usage_questions": "ጥያቄዎች፦ {count}",
   "ui_regenerate": "እንደገና አጠቃልል",
   "ui_try_again": "እንደገና ሞክር",
+  "ui_allow_site": "{site}ን ማንበብ ፍቀድ",
   "ui_working": "በማጠቃለል ላይ…",
   "ui_idle_hint": "ይህን ገጽ ለማጠቃለል የቅጥያውን አዶ ጠቅ ያድርጉ።",
   "ui_truncated": "ይህ ገጽ ረጅም ነበር፤ የተጠቃለለው የመጀመሪያው ክፍል ብቻ ነው።",

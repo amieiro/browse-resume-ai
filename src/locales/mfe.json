@@ -24,6 +24,7 @@
   "history_usage_questions": "Kestion: {count}",
   "ui_regenerate": "Rezime ankor",
   "ui_try_again": "Esey ankor",
+  "ui_allow_site": "Permet lir {site}",
   "ui_working": "Pe rezime…",
   "ui_idle_hint": "Klik lor likonn extansion-la pou rezime sa paz-la.",
   "ui_truncated": "Sa paz-la ti long; zis premie parti inn rezime.",

@@ -24,6 +24,7 @@
   "history_usage_questions": "Jautājumi: {count}",
   "ui_regenerate": "Apkopot vēlreiz",
   "ui_try_again": "Mēģināt vēlreiz",
+  "ui_allow_site": "Atļaut lasīt {site}",
   "ui_working": "Notiek apkopošana…",
   "ui_idle_hint": "Noklikšķiniet uz paplašinājuma ikonas, lai apkopotu šo lapu.",
   "ui_truncated": "Šī lapa bija gara; apkopota tika tikai pirmā daļa.",

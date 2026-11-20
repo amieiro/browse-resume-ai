@@ -24,6 +24,7 @@
   "history_usage_questions": "Küsimusi: {count}",
   "ui_regenerate": "Tee uus kokkuvõte",
   "ui_try_again": "Proovi uuesti",
+  "ui_allow_site": "Luba lugeda saiti {site}",
   "ui_working": "Kokkuvõtte koostamine…",
   "ui_idle_hint": "Selle lehe kokkuvõtte tegemiseks klõpsa laienduse ikoonil.",
   "ui_truncated": "See leht oli pikk; kokku võeti ainult esimene osa.",

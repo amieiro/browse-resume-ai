@@ -24,6 +24,7 @@
   "history_usage_questions": "Quèstions : {count}",
   "ui_regenerate": "Rèsumar dinkor",
   "ui_try_again": "Èprovar dinkor",
+  "ui_allow_site": "Pèrmetre de liére {site}",
   "ui_working": "Rèsumâ en cors…",
   "ui_idle_hint": "Clicâd sur l'icôna de l'èxtension por rèsumar ceta pâge.",
   "ui_truncated": "Ceta pâge ére longe ; solament la premiére partia at étâ rèsumâ.",

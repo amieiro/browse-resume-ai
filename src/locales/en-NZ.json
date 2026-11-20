@@ -24,6 +24,7 @@
   "history_usage_questions": "Questions: {count}",
   "ui_regenerate": "Summarise again",
   "ui_try_again": "Try again",
+  "ui_allow_site": "Allow reading {site}",
   "ui_working": "Summarising…",
   "ui_idle_hint": "Click the extension icon to summarise this page.",
   "ui_truncated": "This page was long; only the first part was summarised.",

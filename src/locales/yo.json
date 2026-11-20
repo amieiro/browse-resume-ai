@@ -24,6 +24,7 @@
   "history_usage_questions": "Àwọn ìbéèrè: {count}",
   "ui_regenerate": "Ṣe àkópọ̀ lẹ́ẹ̀kan sí i",
   "ui_try_again": "Gbìyànjú lẹ́ẹ̀kan sí i",
+  "ui_allow_site": "Gbà láàyè láti ka {site}",
   "ui_working": "Ó ń ṣe àkópọ̀…",
   "ui_idle_hint": "Tẹ àmì àfikún náà láti ṣe àkópọ̀ ojú-ìwé yìí.",
   "ui_truncated": "Ojú-ìwé yìí gùn; apá àkọ́kọ́ nìkan ni a ṣe àkópọ̀ rẹ̀.",

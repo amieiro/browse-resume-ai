@@ -24,6 +24,7 @@
   "history_usage_questions": "Mitúná: {count}",
   "ui_regenerate": "Kúsa lisúsu",
   "ui_try_again": "Meka lisúsu",
+  "ui_allow_site": "Pesá nzela ya kotánga {site}",
   "ui_working": "Ezali kokúsa…",
   "ui_idle_hint": "Fína elílí ya ekstɛnsió mpo na kokúsa lokásá oyo.",
   "ui_truncated": "Lokásá ezalaki molai; se eteni ya libosó nde ekúsámí.",

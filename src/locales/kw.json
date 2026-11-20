@@ -24,6 +24,7 @@
   "history_usage_questions": "Qwestyonow: {count}",
   "ui_regenerate": "Berrhe arta",
   "ui_try_again": "Assay arta",
+  "ui_allow_site": "Gasa redya {site}",
   "ui_working": "Ow perrhe…",
   "ui_idle_hint": "Klyckyewgh arwodh an keheans rag berrhe an folen ma.",
   "ui_truncated": "Hir o an folen ma; nyns yw berrhes saw an kynsa rann.",

@@ -24,6 +24,7 @@
   "history_usage_questions": "Vragen: {count}",
   "ui_regenerate": "Opnieuw samenvatten",
   "ui_try_again": "Opnieuw proberen",
+  "ui_allow_site": "Lezen van {site} toestaan",
   "ui_working": "Samenvatten…",
   "ui_idle_hint": "Klik op het extensiepictogram om deze pagina samen te vatten.",
   "ui_truncated": "Deze pagina was lang; alleen het eerste deel werd samengevat.",

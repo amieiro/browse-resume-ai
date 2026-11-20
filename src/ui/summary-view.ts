@@ -14,6 +14,11 @@ export interface SummaryViewHandlers {
   onOpenOptions(): void;
   onAsk(question: string): void;
   onOpenHistory(): void;
+  /**
+   * The "Allow reading <site>" button was clicked. Called inside the click, so the handler can ask
+   * the browser for the permission (which needs a user gesture).
+   */
+  onAllowSite?(): void;
   /** Copy, download and open; the browser ones unless given (tests). */
   exportActions?: ExportActions;
 }
@@ -67,7 +72,12 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   const errorText = el('p', {});
   const errorDetail = el('p', { className: 'detail' });
   errorDetail.dataset.role = 'detail';
-  error.append(errorText, errorDetail);
+  // Shown with "click the icon" when the extension may ask for access to the site of the last
+  // summary (the tab went to another page of it): a click here asks the browser once for that site.
+  const allowSite = el('button', { name: 'allow-site', type: 'button', className: 'allow-site' });
+  allowSite.hidden = true;
+  allowSite.addEventListener('click', () => handlers.onAllowSite?.());
+  error.append(errorText, errorDetail, allowSite);
   const summary = el('div', { className: 'summary' });
   summary.dataset.role = 'summary';
   summary.setAttribute('aria-live', 'polite');
@@ -206,6 +216,11 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     setState(next: SummaryState) {
       state = next;
       renderState();
+    },
+    /** Shows the "Allow reading <site>" button for this host, or hides it (null). */
+    setAllowSite(host: string | null) {
+      allowSite.hidden = !host;
+      allowSite.textContent = host ? t('ui_allow_site').replace('{site}', host) : '';
     },
     setSettings(next: Settings) {
       settings = next;

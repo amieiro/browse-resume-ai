@@ -24,6 +24,7 @@
   "history_usage_questions": "Isteqsiyen: {count}",
   "ui_regenerate": "Ales agzul",
   "ui_try_again": "Ɛreḍ tikkelt-nniḍen",
+  "ui_allow_site": "Sireg taɣuri n {site}",
   "ui_working": "Asegzel…",
   "ui_idle_hint": "Sit ɣef tignit n usiɣzef i usegzel n usebter-a.",
   "ui_truncated": "Asebter-a yeɣzef; d amur amezwaru kan i yettwasegzlen.",

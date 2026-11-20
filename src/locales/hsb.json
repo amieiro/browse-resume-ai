@@ -24,6 +24,7 @@
   "history_usage_questions": "Prašenja: {count}",
   "ui_regenerate": "Znowa zjeć",
   "ui_try_again": "Hišće raz spytać",
+  "ui_allow_site": "Čitanje {site} dowolić",
   "ui_working": "Zjima so…",
   "ui_idle_hint": "Klikńće na symbol rozšěrjenja, zo byšće tutu stronu zjał.",
   "ui_truncated": "Tuta strona bě dołha; jenož prěni dźěl je so zjał.",

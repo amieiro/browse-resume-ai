@@ -24,6 +24,7 @@
   "history_usage_questions": "Klausimai: {count}",
   "ui_regenerate": "Apibendrinti iš naujo",
   "ui_try_again": "Bandyti dar kartą",
+  "ui_allow_site": "Leisti skaityti {site}",
   "ui_working": "Apibendrinama…",
   "ui_idle_hint": "Spustelėkite plėtinio piktogramą, kad apibendrintumėte šį puslapį.",
   "ui_truncated": "Puslapis buvo ilgas, todėl apibendrinta tik pirmoji jo dalis.",

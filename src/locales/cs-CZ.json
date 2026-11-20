@@ -24,6 +24,7 @@
   "history_usage_questions": "Dotazy: {count}",
   "ui_regenerate": "Shrnout znovu",
   "ui_try_again": "Zkusit znovu",
+  "ui_allow_site": "Povolit čtení {site}",
   "ui_working": "Shrnování…",
   "ui_idle_hint": "Kliknutím na ikonu rozšíření shrnete tuto stránku.",
   "ui_truncated": "Stránka byla dlouhá; shrnuta byla jen její první část.",

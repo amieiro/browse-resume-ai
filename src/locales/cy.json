@@ -24,6 +24,7 @@
   "history_usage_questions": "Cwestiynau: {count}",
   "ui_regenerate": "Crynhoi eto",
   "ui_try_again": "Ceisio eto",
+  "ui_allow_site": "Caniatáu darllen {site}",
   "ui_working": "Wrthi'n crynhoi…",
   "ui_idle_hint": "Cliciwch eicon yr estyniad i grynhoi'r dudalen hon.",
   "ui_truncated": "Roedd y dudalen hon yn hir; dim ond y rhan gyntaf gafodd ei chrynhoi.",

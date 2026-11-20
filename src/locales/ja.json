@@ -24,6 +24,7 @@
   "history_usage_questions": "質問: {count}",
   "ui_regenerate": "もう一度要約",
   "ui_try_again": "再試行",
+  "ui_allow_site": "{site} の読み取りを許可",
   "ui_working": "要約しています…",
   "ui_idle_hint": "拡張機能のアイコンをクリックすると、このページを要約します。",
   "ui_truncated": "このページは長いため、最初の部分だけを要約しました。",

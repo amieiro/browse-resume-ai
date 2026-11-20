@@ -24,6 +24,7 @@
   "history_usage_questions": "Froen: {count}",
   "ui_regenerate": "Nach eng Kéier resuméieren",
   "ui_try_again": "Nach eng Kéier probéieren",
+  "ui_allow_site": "Liese vun {site} erlaben",
   "ui_working": "Gëtt resuméiert…",
   "ui_idle_hint": "Klickt op d'Symbol vun der Extensioun, fir dës Säit ze resuméieren.",
   "ui_truncated": "Dës Säit war laang; nëmmen den éischten Deel gouf resuméiert.",

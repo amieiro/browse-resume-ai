@@ -24,6 +24,7 @@
   "history_usage_questions": "Suallar: {count}",
   "ui_regenerate": "Yenidən özətlə",
   "ui_try_again": "Yenidən dənə",
+  "ui_allow_site": "{site} oxumağa icazə verin",
   "ui_working": "Özətlənir…",
   "ui_idle_hint": "Bu səhifəni özətləmək üçün əlavə ikonuna klikləyin.",
   "ui_truncated": "Səhifə uzun idi, yalnız ilk hissə özətləndi.",

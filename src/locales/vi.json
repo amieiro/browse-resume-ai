@@ -24,6 +24,7 @@
   "history_usage_questions": "Câu hỏi: {count}",
   "ui_regenerate": "Tóm tắt lại",
   "ui_try_again": "Thử lại",
+  "ui_allow_site": "Cho phép đọc {site}",
   "ui_working": "Đang tóm tắt…",
   "ui_idle_hint": "Nhấp vào biểu tượng tiện ích để tóm tắt trang này.",
   "ui_truncated": "Trang này dài; chỉ phần đầu được tóm tắt.",

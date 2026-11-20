@@ -24,6 +24,7 @@
   "history_usage_questions": "Goulennoù: {count}",
   "ui_regenerate": "Diverrañ en-dro",
   "ui_try_again": "Klask en-dro",
+  "ui_allow_site": "Aotren lenn {site}",
   "ui_working": "O tiverrañ…",
   "ui_idle_hint": "Klikit war arlun an askouezh evit diverrañ ar bajenn-mañ.",
   "ui_truncated": "Hir e oa ar bajenn-mañ; al lodenn gentañ hepken a zo bet diverret.",

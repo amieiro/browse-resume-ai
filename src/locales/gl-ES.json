@@ -24,6 +24,7 @@
   "history_usage_questions": "Preguntas: {count}",
   "ui_regenerate": "Volver resumir",
   "ui_try_again": "Tentar de novo",
+  "ui_allow_site": "Permitir ler {site}",
   "ui_working": "Resumindo…",
   "ui_idle_hint": "Preme a icona da extensión para resumir esta páxina.",
   "ui_truncated": "A páxina era longa; só se resumiu a primeira parte.",

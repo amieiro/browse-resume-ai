@@ -24,6 +24,7 @@
   "history_usage_questions": "Ajụjụ: {count}",
   "ui_regenerate": "Chịkọta ọzọ",
   "ui_try_again": "Nwaa ọzọ",
+  "ui_allow_site": "Kwe ka a gụọ {site}",
   "ui_working": "Na-achịkọta…",
   "ui_idle_hint": "Pịa akara ngosi ndọtị ahụ iji chịkọta ibe a.",
   "ui_truncated": "Ibe a dị ogologo; ọ bụ naanị akụkụ mbụ ka a chịkọtara.",

@@ -24,6 +24,7 @@
   "history_usage_questions": "Vprašanja: {count}",
   "ui_regenerate": "Znova povzemi",
   "ui_try_again": "Poskusi znova",
+  "ui_allow_site": "Dovoli branje {site}",
   "ui_working": "Povzemanje …",
   "ui_idle_hint": "Kliknite ikono razširitve, da povzamete to stran.",
   "ui_truncated": "Ta stran je bila dolga; povzet je bil le prvi del.",

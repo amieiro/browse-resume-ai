@@ -24,6 +24,7 @@
   "history_usage_questions": "Pytania: {count}",
   "ui_regenerate": "Podsumuj zaś",
   "ui_try_again": "Sprōbuj zaś",
+  "ui_allow_site": "Zezwōl na czytanie {site}",
   "ui_working": "Podsumowowanie…",
   "ui_idle_hint": "Kliknij ikōnã rozszyrzynio, coby podsumować ta strōna.",
   "ui_truncated": "Strōna była dugo; podsumowane było ino jeji piyrszo czynść.",

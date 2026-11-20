@@ -24,6 +24,7 @@
   "history_usage_questions": "سوال‌ها: {count}",
   "ui_regenerate": "دوباره خلاصه کو",
   "ui_try_again": "دوباره کوشش کو",
+  "ui_allow_site": "اجازه خاندون {site} ره بیدی",
   "ui_working": "د حال خلاصه کدو…",
   "ui_idle_hint": "بلدِ آیکون افزونه کلیک کو تا ای صفحه خلاصه شونه.",
   "ui_truncated": "ای صفحه دراز بود؛ فقط بخش اول شی خلاصه شد.",

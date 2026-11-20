@@ -24,6 +24,7 @@
   "history_usage_questions": "Kesyon: {count}",
   "ui_regenerate": "Rezime ankò",
   "ui_try_again": "Eseye ankò",
+  "ui_allow_site": "Pèmèt li {site}",
   "ui_working": "N ap rezime…",
   "ui_idle_hint": "Klike sou ikòn ekstansyon an pou rezime paj sa a.",
   "ui_truncated": "Paj sa a te long; se sèlman premye pati a ki rezime.",

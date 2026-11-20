@@ -24,6 +24,7 @@
   "history_usage_questions": "ຄຳຖາມ: {count}",
   "ui_regenerate": "ສະຫຼຸບອີກຄັ້ງ",
   "ui_try_again": "ລອງໃໝ່",
+  "ui_allow_site": "ອະນຸຍາດໃຫ້ອ່ານ {site}",
   "ui_working": "ກຳລັງສະຫຼຸບ…",
   "ui_idle_hint": "ຄລິກໄອຄອນສ່ວນຂະຫຍາຍເພື່ອສະຫຼຸບໜ້ານີ້.",
   "ui_truncated": "ໜ້ານີ້ຍາວ; ສະຫຼຸບໄດ້ສະເພາະສ່ວນທຳອິດເທົ່ານັ້ນ.",

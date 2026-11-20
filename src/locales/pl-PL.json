@@ -24,6 +24,7 @@
   "history_usage_questions": "Pytania: {count}",
   "ui_regenerate": "Podsumuj ponownie",
   "ui_try_again": "Spróbuj ponownie",
+  "ui_allow_site": "Zezwól na odczyt {site}",
   "ui_working": "Podsumowywanie…",
   "ui_idle_hint": "Kliknij ikonę rozszerzenia, aby podsumować tę stronę.",
   "ui_truncated": "Strona była długa; podsumowano tylko jej pierwszą część.",

@@ -24,6 +24,7 @@
   "history_usage_questions": "Fragen: {count}",
   "ui_regenerate": "Erneut zusammenfassen",
   "ui_try_again": "Erneut versuchen",
+  "ui_allow_site": "Lesen von {site} erlauben",
   "ui_working": "Wird zusammengefasst…",
   "ui_idle_hint": "Klicke auf das Erweiterungssymbol, um diese Seite zusammenzufassen.",
   "ui_truncated": "Diese Seite war lang; nur der erste Teil wurde zusammengefasst.",

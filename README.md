@@ -392,6 +392,11 @@ page**): the summary opens in Firefox's sidebar. Start a summary this way: Firef
 read a page only after one of these clicks, so the sidebar opened from Firefox's own sidebar button
 asks you to click the icon first. Everything else works as in Chrome, with these differences:
 
+- Firefox forgets that click as soon as the tab goes to another page, even on the same site
+  (Chrome keeps it while you stay on the site). After following a link, **Summarize again** shows
+  an **Allow reading &lt;site&gt;** button: one click, and Firefox asks you once whether the add-on
+  may read that site; from then on its pages can be summarized again without a click on the icon.
+
 - PDFs are read the same way, from the file, even though Firefox's PDF viewer cannot be read by
   extensions.
 - Files on your computer (`file://`) cannot be summarized: Firefox has no setting like Chrome's
@@ -456,8 +461,9 @@ pdokiakaaeffjlabmofdppjakdhaimpi
 
 ## Privacy
 
-- The extension reads a page only when you click its icon (`activeTab`). It never reads pages in
-  the background.
+- The extension reads a page only when you click its icon (`activeTab`), or when you ask for a
+  summary of a site you allowed with **Allow reading &lt;site&gt;**. It never reads pages in the
+  background.
 - The article text (at most 100,000 characters), its title and URL go to the local component and
   from there to the provider you selected (Anthropic or OpenAI, or Ollama on your computer), under your own account. Nothing is
   sent anywhere else.
@@ -480,6 +486,7 @@ pdokiakaaeffjlabmofdppjakdhaimpi
 | `nativeMessaging` | Talk to the local component. |
 | `offscreen` | Read PDFs with pdf.js in a hidden extension page, as a service worker cannot run pdf.js (Chrome; Firefox reads them in its background page). |
 | `contextMenus` | Add **Summarize the selection** and **Summarize the page** to the right-click menu. |
+| Optional: `https://*/*`, `http://*/*` | Not asked at install. Only when you click **Allow reading &lt;site&gt;** under a summary (after the tab went to another page of the site), the browser asks you to let the extension read that one site, so **Summarize again** works on its other pages. Remove it in the extension's details in `chrome://extensions` or in `about:addons` (Permissions) in Firefox. |
 
 ## For AI agents
 

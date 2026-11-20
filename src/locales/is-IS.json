@@ -24,6 +24,7 @@
   "history_usage_questions": "Spurningar: {count}",
   "ui_regenerate": "Draga saman aftur",
   "ui_try_again": "Reyna aftur",
+  "ui_allow_site": "Leyfa lestur á {site}",
   "ui_working": "Dreg saman…",
   "ui_idle_hint": "Smelltu á tákn viðbótarinnar til að draga þessa síðu saman.",
   "ui_truncated": "Þessi síða var löng; aðeins fyrsti hlutinn var dreginn saman.",

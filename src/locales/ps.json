@@ -24,6 +24,7 @@
   "history_usage_questions": "پوښتنې: {count}",
   "ui_regenerate": "بیا لنډیز جوړ کړئ",
   "ui_try_again": "بیا هڅه وکړئ",
+  "ui_allow_site": "د {site} لوستلو ته اجازه ورکړئ",
   "ui_working": "لنډیز جوړېږي…",
   "ui_idle_hint": "د دې پاڼې د لنډیز لپاره د غزونې په نښان کلیک وکړئ.",
   "ui_truncated": "دا پاڼه اوږده وه؛ یوازې لومړۍ برخه لنډه شوه.",

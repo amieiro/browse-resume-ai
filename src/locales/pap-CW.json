@@ -24,6 +24,7 @@
   "history_usage_questions": "Preguntanan: {count}",
   "ui_regenerate": "Resumí atrobe",
   "ui_try_again": "Purba atrobe",
+  "ui_allow_site": "Permití lesa {site}",
   "ui_working": "Ta resumiendo…",
   "ui_idle_hint": "Klek riba e ikono di e ekstenshon pa resumí e página aki.",
   "ui_truncated": "E página tabata largu; ta solamente e promé parti a wòrdu resumí.",

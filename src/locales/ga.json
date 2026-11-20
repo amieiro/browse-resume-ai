@@ -24,6 +24,7 @@
   "history_usage_questions": "Ceisteanna: {count}",
   "ui_regenerate": "Déan achoimre arís",
   "ui_try_again": "Bain triail eile as",
+  "ui_allow_site": "Ceadaigh {site} a léamh",
   "ui_working": "Achoimre á déanamh…",
   "ui_idle_hint": "Cliceáil ar dheilbhín an tsínidh chun achoimre a dhéanamh ar an leathanach seo.",
   "ui_truncated": "Bhí an leathanach seo fada; ní dhearnadh achoimre ach ar an gcéad chuid.",

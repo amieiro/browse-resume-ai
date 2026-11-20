@@ -24,6 +24,7 @@
   "history_usage_questions": "Questioni: {count}",
   "ui_regenerate": "Rezumar itere",
   "ui_try_again": "Probar itere",
+  "ui_allow_site": "Permisar lektar {site}",
   "ui_working": "Rezumanta…",
   "ui_idle_hint": "Kliktez la ikono di la extensajo por rezumar ica pagino.",
   "ui_truncated": "Ica pagino esis longa; nur la unesma parto rezumesis.",

@@ -24,6 +24,7 @@
   "history_usage_questions": "Mibvunzo: {count}",
   "ui_regenerate": "Pfupisa zvakare",
   "ui_try_again": "Edza zvakare",
+  "ui_allow_site": "Bvumira kuverenga {site}",
   "ui_working": "Kupfupisa…",
   "ui_idle_hint": "Dzvanya aikoni yeekisitenshoni kuti upfupise peji rino.",
   "ui_truncated": "Peji iri raive refu; chikamu chekutanga chete ndicho chakapfupiswa.",

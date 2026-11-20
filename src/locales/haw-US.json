@@ -24,6 +24,7 @@
   "history_usage_questions": "Nā nīnau: {count}",
   "ui_regenerate": "Hōʻuluʻulu hou",
   "ui_try_again": "Hoʻāʻo hou",
+  "ui_allow_site": "Ae i ka heluhelu ʻana iā {site}",
   "ui_working": "Ke hōʻuluʻulu nei…",
   "ui_idle_hint": "Kaomi i ka ikona o ka hoʻolōʻihi no ka hōʻuluʻulu ʻana i kēia ʻaoʻao.",
   "ui_truncated": "Ua lōʻihi kēia ʻaoʻao; ʻo ka hapa mua wale nō i hōʻuluʻulu ʻia.",

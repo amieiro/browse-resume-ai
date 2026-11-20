@@ -24,6 +24,7 @@
   "history_usage_questions": "الأسئلة: {count}",
   "ui_regenerate": "لخّص مرة أخرى",
   "ui_try_again": "عاود جرّب",
+  "ui_allow_site": "خلّي يقرا {site}",
   "ui_working": "راهو يلخّص…",
   "ui_idle_hint": "اضغط على أيقونة الإضافة باش تلخّص هاد الصفحة.",
   "ui_truncated": "هاد الصفحة كانت طويلة؛ تلخّص غير الجزء الأول.",

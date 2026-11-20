@@ -24,6 +24,7 @@
   "history_usage_questions": "Laaj yi: {count}",
   "ui_regenerate": "Tënkaat",
   "ui_try_again": "Jéemaatal",
+  "ui_allow_site": "May ñu jàng {site}",
   "ui_working": "Mu ngi tënk…",
   "ui_idle_hint": "Bësal ci ikonu yokkute bi ngir tënk xët wii.",
   "ui_truncated": "Xët wii dafa gudd; xaaj bu jëkk bi rekk lañu tënk.",

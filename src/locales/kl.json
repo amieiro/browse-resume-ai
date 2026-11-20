@@ -24,6 +24,7 @@
   "history_usage_questions": "Apeqqutit: {count}",
   "ui_regenerate": "Eqikkaaqqiguk",
   "ui_try_again": "Misiliqqiguk",
+  "ui_allow_site": "{site} atuarneqarsinnaatinneqarli",
   "ui_working": "Eqikkaavoq…",
   "ui_idle_hint": "Quppernermik matuminnga eqikkaanissamut ilassutip ilisarnaataa tooruk.",
   "ui_truncated": "Quppernera takivoq; siulliit kisiat eqikkarneqarput.",

@@ -24,6 +24,7 @@
   "history_usage_questions": "Spurningar: {count}",
   "ui_regenerate": "Ger samandrátt aftur",
   "ui_try_again": "Royn aftur",
+  "ui_allow_site": "Loyv at lesa {site}",
   "ui_working": "Ger samandrátt…",
   "ui_idle_hint": "Trýst á ikonina hjá víðkanini fyri at gera samandrátt av hesi síðuni.",
   "ui_truncated": "Síðan var long; bert fyrsti partur er tikin við í samandráttin.",

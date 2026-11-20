@@ -24,6 +24,7 @@
   "history_usage_questions": "Mga tanong: {count}",
   "ui_regenerate": "Ibuod ulit",
   "ui_try_again": "Subukan ulit",
+  "ui_allow_site": "Payagan ang pagbasa sa {site}",
   "ui_working": "Ibinubuod…",
   "ui_idle_hint": "I-click ang icon ng extension para ibuod ang page na ito.",
   "ui_truncated": "Mahaba ang page na ito; ang unang bahagi lang ang naibuod.",

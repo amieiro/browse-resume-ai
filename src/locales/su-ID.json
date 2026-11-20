@@ -24,6 +24,7 @@
   "history_usage_questions": "Patarosan: {count}",
   "ui_regenerate": "Kasimpulkeun deui",
   "ui_try_again": "Cobaan deui",
+  "ui_allow_site": "Idinan maca {site}",
   "ui_working": "Keur nyimpulkeun…",
   "ui_idle_hint": "Klik ikon éksténsi pikeun nyimpulkeun ieu kaca.",
   "ui_truncated": "Ieu kaca panjang; ngan bagian kahijina anu disimpulkeun.",

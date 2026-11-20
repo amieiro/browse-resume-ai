@@ -24,6 +24,7 @@
   "history_usage_questions": "سوال: {count}",
   "ui_regenerate": "ولا خلاصہ بݨاؤ",
   "ui_try_again": "ولا کوشش کرو",
+  "ui_allow_site": "{site} پڑھݨ دی اجازت ݙیو",
   "ui_working": "خلاصہ بݨدا پئے…",
   "ui_idle_hint": "ایں صفحے دا خلاصہ بݨاوݨ کیتے ایکسٹینشن دے آئیکن تے کلک کرو۔",
   "ui_truncated": "ایہ صفحہ لمبا ہا؛ صرف پہلے حصے دا خلاصہ بݨیا۔",

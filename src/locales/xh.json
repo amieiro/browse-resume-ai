@@ -24,6 +24,7 @@
   "history_usage_questions": "Imibuzo: {count}",
   "ui_regenerate": "Shwankathela kwakhona",
   "ui_try_again": "Zama kwakhona",
+  "ui_allow_site": "Vumela ukufunda {site}",
   "ui_working": "Kuyashwankathelwa…",
   "ui_idle_hint": "Cofa i-icon yesandiso ukuze ushwankathele eli phepha.",
   "ui_truncated": "Eli phepha belilide; kushwankathelwe kuphela inxalenye yokuqala.",

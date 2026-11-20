@@ -24,6 +24,7 @@
   "history_usage_questions": "Maswali: {count}",
   "ui_regenerate": "Fupisha tena",
   "ui_try_again": "Jaribu tena",
+  "ui_allow_site": "Ruhusu kusoma {site}",
   "ui_working": "Inafupisha…",
   "ui_idle_hint": "Bofya aikoni ya kiendelezi ili kufupisha ukurasa huu.",
   "ui_truncated": "Ukurasa huu ulikuwa mrefu; sehemu ya kwanza pekee ndiyo imefupishwa.",

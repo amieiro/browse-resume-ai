@@ -24,6 +24,7 @@
   "history_usage_questions": "Ceistean: {count}",
   "ui_regenerate": "Dèan gearr-chunntas a-rithist",
   "ui_try_again": "Feuch ris a-rithist",
+  "ui_allow_site": "Ceadaich leughadh {site}",
   "ui_working": "A’ dèanamh gearr-chunntas…",
   "ui_idle_hint": "Briog air ìomhaigheag an leudachain airson gearr-chunntas a dhèanamh air an duilleag seo.",
   "ui_truncated": "Bha an duilleag seo fada; cha deach gearr-chunntas a dhèanamh ach air a’ chiad phàirt.",

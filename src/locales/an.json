@@ -24,6 +24,7 @@
   "history_usage_questions": "Preguntas: {count}",
   "ui_regenerate": "Tornar a resumir",
   "ui_try_again": "Tornar a intentar-lo",
+  "ui_allow_site": "Permitir leyer {site}",
   "ui_working": "Resumindo…",
   "ui_idle_hint": "Fe clic en l'icono d'a extensión pa resumir esta pachina.",
   "ui_truncated": "Esta pachina yera larga; nomás s'ha resumiu la primera parte.",

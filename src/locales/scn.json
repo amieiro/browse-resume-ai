@@ -24,6 +24,7 @@
   "history_usage_questions": "Dumanni: {count}",
   "ui_regenerate": "Riassumi n'àutra vota",
   "ui_try_again": "Prova n'àutra vota",
+  "ui_allow_site": "Pirmetti di lèggiri {site}",
   "ui_working": "Riassumennu…",
   "ui_idle_hint": "Clicca supra l'icona di l'estinsioni pi riassumiri sta pàggina.",
   "ui_truncated": "Sta pàggina era longa; fu riassunta sulu la prima parti.",

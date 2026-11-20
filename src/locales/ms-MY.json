@@ -24,6 +24,7 @@
   "history_usage_questions": "Soalan: {count}",
   "ui_regenerate": "Ringkaskan semula",
   "ui_try_again": "Cuba lagi",
+  "ui_allow_site": "Benarkan membaca {site}",
   "ui_working": "Meringkaskan…",
   "ui_idle_hint": "Klik ikon sambungan untuk meringkaskan halaman ini.",
   "ui_truncated": "Halaman ini panjang; hanya bahagian pertama yang diringkaskan.",

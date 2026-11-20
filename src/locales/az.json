@@ -24,6 +24,7 @@
   "history_usage_questions": "Suallar: {count}",
   "ui_regenerate": "Yenidən xülasə et",
   "ui_try_again": "Yenidən cəhd edin",
+  "ui_allow_site": "{site} oxumağa icazə verin",
   "ui_working": "Xülasə hazırlanır…",
   "ui_idle_hint": "Bu səhifənin xülasəsi üçün artırma ikonuna klikləyin.",
   "ui_truncated": "Səhifə uzun idi, yalnız birinci hissənin xülasəsi hazırlandı.",

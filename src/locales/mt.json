@@ -24,6 +24,7 @@
   "history_usage_questions": "Mistoqsijiet: {count}",
   "ui_regenerate": "Erġa' agħmel sommarju",
   "ui_try_again": "Erġa' pprova",
+  "ui_allow_site": "Ippermetti l-qari ta' {site}",
   "ui_working": "Qed isir is-sommarju…",
   "ui_idle_hint": "Ikklikkja fuq l-ikona tal-estensjoni biex tagħmel sommarju ta' din il-paġna.",
   "ui_truncated": "Din il-paġna kienet twila; sar sommarju tal-ewwel parti biss.",

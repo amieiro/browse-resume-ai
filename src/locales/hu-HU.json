@@ -24,6 +24,7 @@
   "history_usage_questions": "Kérdések: {count}",
   "ui_regenerate": "Újbóli összefoglalás",
   "ui_try_again": "Újrapróbálás",
+  "ui_allow_site": "{site} olvasásának engedélyezése",
   "ui_working": "Összefoglalás…",
   "ui_idle_hint": "Az oldal összefoglalásához kattints a bővítmény ikonjára.",
   "ui_truncated": "Az oldal hosszú volt; csak az első része lett összefoglalva.",

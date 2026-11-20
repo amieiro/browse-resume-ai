@@ -24,6 +24,7 @@
   "history_usage_questions": "Ebibuuzo: {count}",
   "ui_regenerate": "Funza nate",
   "ui_try_again": "Gezaako nate",
+  "ui_allow_site": "Kkiriza okusoma {site}",
   "ui_working": "Kifunzibwa…",
   "ui_idle_hint": "Nyiga akabonero k'ekyongerezo okufunza olupapula luno.",
   "ui_truncated": "Olupapula luno lubadde luwanvu; ekitundu ekisooka kyokka kye kifunziddwa.",

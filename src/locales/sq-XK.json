@@ -24,6 +24,7 @@
   "history_usage_questions": "Pyetje: {count}",
   "ui_regenerate": "Përmblidhe përsëri",
   "ui_try_again": "Provo përsëri",
+  "ui_allow_site": "Lejo leximin e {site}",
   "ui_working": "Duke përmbledhur…",
   "ui_idle_hint": "Kliko ikonën e shtesës për ta përmbledhur këtë faqe.",
   "ui_truncated": "Kjo faqe ishte e gjatë; u përmblodh vetëm pjesa e parë.",

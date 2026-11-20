@@ -24,6 +24,7 @@
   "history_usage_questions": "Domande: {count}",
   "ui_regenerate": "Riasumi danovo",
   "ui_try_again": "Prova danovo",
+  "ui_allow_site": "Parmeti de lèzar {site}",
   "ui_working": "Drio riasumar…",
   "ui_idle_hint": "Struca l'icona de l'estension par riasumar sta pagina.",
   "ui_truncated": "Sta pagina la jera longa; xe stà riasumìa solo la prima parte.",

@@ -24,6 +24,7 @@
   "history_usage_questions": "Dumondas: {count}",
   "ui_regenerate": "Resumar danovamain",
   "ui_try_again": "Empruvar anc ina giada",
+  "ui_allow_site": "Permetter da leger {site}",
   "ui_working": "Resumar…",
   "ui_idle_hint": "Clicca sin il simbol da l'extensiun per resumar questa pagina.",
   "ui_truncated": "Questa pagina era lunga; mo l'emprima part è vegnida resumada.",

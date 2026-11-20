@@ -24,6 +24,7 @@
   "history_usage_questions": "Vrae: {count}",
   "ui_regenerate": "Som weer op",
   "ui_try_again": "Probeer weer",
+  "ui_allow_site": "Laat lees van {site} toe",
   "ui_working": "Som tans op…",
   "ui_idle_hint": "Klik op die uitbreiding se ikoon om hierdie bladsy op te som.",
   "ui_truncated": "Hierdie bladsy was lank; net die eerste deel is opgesom.",

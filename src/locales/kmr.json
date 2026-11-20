@@ -24,6 +24,7 @@
   "history_usage_questions": "Pirs: {count}",
   "ui_regenerate": "Dîsa kurt bike",
   "ui_try_again": "Dîsa biceribîne",
+  "ui_allow_site": "Destûrê bide xwendina {site}",
   "ui_working": "Tê kurtkirin…",
   "ui_idle_hint": "Ji bo kurtkirina vê rûpelê li îkona pêvekê bitikîne.",
   "ui_truncated": "Ev rûpel dirêj bû; tenê beşa yekem hate kurtkirin.",

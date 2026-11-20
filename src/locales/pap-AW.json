@@ -24,6 +24,7 @@
   "history_usage_questions": "Preguntanan: {count}",
   "ui_regenerate": "Resumi atrobe",
   "ui_try_again": "Purba atrobe",
+  "ui_allow_site": "Permiti lesa {site}",
   "ui_working": "Ta resumiendo…",
   "ui_idle_hint": "Klik riba e icono di e extension pa resumi e pagina aki.",
   "ui_truncated": "E pagina tabata largo; solamente e prome parti a wordo resumi.",

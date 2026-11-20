@@ -24,6 +24,7 @@
   "history_usage_questions": "Fanontaniana: {count}",
   "ui_regenerate": "Famintino indray",
   "ui_try_again": "Andramo indray",
+  "ui_allow_site": "Avelao hovakiana {site}",
   "ui_working": "Mamintina…",
   "ui_idle_hint": "Tsindrio ny kisarin'ny fanitarana mba hamintinana ity pejy ity.",
   "ui_truncated": "Lava ity pejy ity; ny ampahany voalohany ihany no namintinana.",

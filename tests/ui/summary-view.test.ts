@@ -124,6 +124,20 @@ describe('summary view states', () => {
     expect(button('regenerate').hidden).toBe(true);
   });
 
+  it('offers to allow the site, and calls onAllowSite inside the click', () => {
+    handlers.onAllowSite = vi.fn();
+    const view = mount();
+    view.setState({ status: 'error', code: 'needs_click', title: '', text: '', truncated: false });
+    expect(button('allow-site').hidden).toBe(true);
+    view.setAllowSite('gl.wikipedia.org');
+    expect(button('allow-site').hidden).toBe(false);
+    expect(button('allow-site').textContent).toBe('[ui_allow_site]');
+    button('allow-site').click();
+    expect(handlers.onAllowSite).toHaveBeenCalledTimes(1);
+    view.setAllowSite(null);
+    expect(button('allow-site').hidden).toBe(true);
+  });
+
   it('Summarize again calls onRegenerate', () => {
     mount().setState({ status: 'done', title: 'T', text: 'Text', truncated: false });
     expect(button('regenerate').textContent).toBe('[ui_regenerate]');

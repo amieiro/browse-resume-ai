@@ -24,6 +24,7 @@
   "history_usage_questions": "Uira'a: {count}",
   "ui_regenerate": "Fa'apoto fa'ahou",
   "ui_try_again": "Tāmata fa'ahou",
+  "ui_allow_site": "Fa'ati'a i te tai'o i {site}",
   "ui_working": "Te fa'apoto nei…",
   "ui_idle_hint": "Pata i ni'a i te tāpa'o o te fa'arahira'a no te fa'apoto i teie 'api.",
   "ui_truncated": "E 'api roa teie; ua fa'apoto-noa-hia te tuha'a mātāmua.",

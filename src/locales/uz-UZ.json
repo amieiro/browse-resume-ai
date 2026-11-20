@@ -24,6 +24,7 @@
   "history_usage_questions": "Savollar: {count}",
   "ui_regenerate": "Qayta xulosa qilish",
   "ui_try_again": "Qayta urinish",
+  "ui_allow_site": "{site} ni o‘qishga ruxsat berish",
   "ui_working": "Xulosa qilinmoqda…",
   "ui_idle_hint": "Bu sahifaning xulosasini olish uchun kengaytma belgisini bosing.",
   "ui_truncated": "Bu sahifa uzun edi; faqat birinchi qismi xulosa qilindi.",

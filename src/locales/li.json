@@ -24,6 +24,7 @@
   "history_usage_questions": "Vraoge: {count}",
   "ui_regenerate": "Opnuuj saamevatte",
   "ui_try_again": "Opnuuj perbere",
+  "ui_allow_site": "Laeze vaan {site} touwstaon",
   "ui_working": "Aan 't saamevatte…",
   "ui_idle_hint": "Klik op 't icoon vaan de extensie om dees pagina saam te vatte.",
   "ui_truncated": "Dees pagina waor lank; allein 't ierste deil is saamegevat.",

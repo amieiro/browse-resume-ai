@@ -24,6 +24,7 @@
   "history_usage_questions": "Dumande: {count}",
   "ui_regenerate": "Riassume torna",
   "ui_try_again": "Pruvà torna",
+  "ui_allow_site": "Permette di leghje {site}",
   "ui_working": "Riassuntu in corsu…",
   "ui_idle_hint": "Cliccate nant'à l'icona di l'estensione per riassume sta pagina.",
   "ui_truncated": "Sta pagina era longa; solu a prima parte hè stata riassunta.",

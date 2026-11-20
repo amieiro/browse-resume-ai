@@ -24,6 +24,7 @@
   "history_usage_questions": "Kysymyksiä: {count}",
   "ui_regenerate": "Tiivistä uudelleen",
   "ui_try_again": "Yritä uudelleen",
+  "ui_allow_site": "Salli sivuston {site} lukeminen",
   "ui_working": "Tiivistetään…",
   "ui_idle_hint": "Tiivistä tämä sivu klikkaamalla laajennuksen kuvaketta.",
   "ui_truncated": "Sivu oli pitkä, joten vain sen alkuosa tiivistettiin.",

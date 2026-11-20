@@ -24,6 +24,7 @@
   "history_usage_questions": "שאלות: {count}",
   "ui_regenerate": "סיכום מחדש",
   "ui_try_again": "ניסיון חוזר",
+  "ui_allow_site": "לאפשר קריאה של {site}",
   "ui_working": "מסכם…",
   "ui_idle_hint": "יש ללחוץ על סמל התוסף כדי לסכם את הדף הזה.",
   "ui_truncated": "הדף היה ארוך; רק החלק הראשון סוכם.",

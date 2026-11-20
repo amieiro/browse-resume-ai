@@ -24,6 +24,7 @@
   "history_usage_questions": "Pitakonan: {count}",
   "ui_regenerate": "Ringkes maneh",
   "ui_try_again": "Coba maneh",
+  "ui_allow_site": "Idini maca {site}",
   "ui_working": "Lagi ngringkes…",
   "ui_idle_hint": "Klik lambang ekstensi kanggo ngringkes kaca iki.",
   "ui_truncated": "Kaca iki dawa; mung bagean wiwitan sing diringkes.",

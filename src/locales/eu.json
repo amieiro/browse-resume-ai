@@ -24,6 +24,7 @@
   "history_usage_questions": "Galderak: {count}",
   "ui_regenerate": "Laburtu berriro",
   "ui_try_again": "Saiatu berriro",
+  "ui_allow_site": "Baimendu {site} irakurtzea",
   "ui_working": "Laburtzen…",
   "ui_idle_hint": "Egin klik luzapenaren ikonoan orri hau laburtzeko.",
   "ui_truncated": "Orria luzea zen; lehen zatia bakarrik laburtu da.",

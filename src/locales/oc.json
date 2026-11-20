@@ -24,6 +24,7 @@
   "history_usage_questions": "Questions: {count}",
   "ui_regenerate": "Tornar resumir",
   "ui_try_again": "Tornar ensajar",
+  "ui_allow_site": "Permetre de legir {site}",
   "ui_working": "Resumit en cors…",
   "ui_idle_hint": "Clicatz sus l'icòna de l'extension per resumir aquesta pagina.",
   "ui_truncated": "La pagina èra longa; sonque la primièra part es estada resumida.",

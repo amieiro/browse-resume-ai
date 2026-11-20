@@ -1,1 +1,0 @@
-import"./languages-DqDm_jPr.js";import"./boot-CfZb37hx.js";import{s as i}from"./summary-app-CpKCPlCD.js";import"./catalog-deps-C6hhGR9j.js";import"./export-menu-BN0SOf4V.js";try{}catch(t){console.error("[wxt] Failed to initialize plugins",t)}i(document.getElementById("app"),{startOnOpen:!1,followActiveTab:!0});

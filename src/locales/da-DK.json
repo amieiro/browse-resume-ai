@@ -24,6 +24,7 @@
   "history_usage_questions": "Spørgsmål: {count}",
   "ui_regenerate": "Opsummer igen",
   "ui_try_again": "Prøv igen",
+  "ui_allow_site": "Tillad læsning af {site}",
   "ui_working": "Opsummerer…",
   "ui_idle_hint": "Klik på udvidelsens ikon for at opsummere denne side.",
   "ui_truncated": "Siden var lang; kun den første del blev opsummeret.",

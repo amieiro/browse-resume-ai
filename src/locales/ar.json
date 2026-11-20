@@ -24,6 +24,7 @@
   "history_usage_questions": "الأسئلة: {count}",
   "ui_regenerate": "التلخيص مرة أخرى",
   "ui_try_again": "إعادة المحاولة",
+  "ui_allow_site": "السماح بقراءة {site}",
   "ui_working": "جارٍ التلخيص…",
   "ui_idle_hint": "انقر على رمز الإضافة لتلخيص هذه الصفحة.",
   "ui_truncated": "كانت هذه الصفحة طويلة، لذا تم تلخيص الجزء الأول منها فقط.",

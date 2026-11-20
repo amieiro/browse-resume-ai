@@ -24,6 +24,7 @@
   "history_usage_questions": "Sorawlar: {count}",
   "ui_regenerate": "Qaytadan juwmaqlaw",
   "ui_try_again": "Qaytadan urınıp kóriń",
+  "ui_allow_site": "{site} oqıwǵa ruqsat beriń",
   "ui_working": "Juwmaqlanbaqta…",
   "ui_idle_hint": "Bul betti juwmaqlaw ushın keńeytpe belgisin basıń.",
   "ui_truncated": "Bet uzın edi; tek birinshi bólimi juwmaqlandı.",

@@ -24,6 +24,7 @@
   "history_usage_questions": "질문: {count}",
   "ui_regenerate": "다시 요약",
   "ui_try_again": "다시 시도",
+  "ui_allow_site": "{site} 읽기 허용",
   "ui_working": "요약하는 중…",
   "ui_idle_hint": "확장 프로그램 아이콘을 클릭하면 이 페이지를 요약합니다.",
   "ui_truncated": "페이지가 길어서 앞부분만 요약했습니다.",

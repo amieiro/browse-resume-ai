@@ -24,6 +24,7 @@
   "history_usage_questions": "Tambayoyi: {count}",
   "ui_regenerate": "Sake taƙaitawa",
   "ui_try_again": "Sake gwadawa",
+  "ui_allow_site": "Ba da izinin karanta {site}",
   "ui_working": "Ana taƙaitawa…",
   "ui_idle_hint": "Danna alamar tsawaitawa don taƙaita wannan shafi.",
   "ui_truncated": "Wannan shafi yana da tsawo; sashen farko kawai aka taƙaita.",

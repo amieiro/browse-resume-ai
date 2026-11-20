@@ -24,6 +24,7 @@
   "history_usage_questions": "Mga pangutana: {count}",
   "ui_regenerate": "I-summarize pag-usab",
   "ui_try_again": "Sulayi pag-usab",
+  "ui_allow_site": "Tugoti ang pagbasa sa {site}",
   "ui_working": "Gi-summarize…",
   "ui_idle_hint": "I-klik ang icon sa extension aron ma-summarize kini nga panid.",
   "ui_truncated": "Taas kini nga panid; ang unang bahin lang ang na-summarize.",

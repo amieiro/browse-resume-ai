@@ -24,6 +24,7 @@
   "history_usage_questions": "Domande: {count}",
   "ui_regenerate": "Riassumi di nuovo",
   "ui_try_again": "Riprova",
+  "ui_allow_site": "Consenti la lettura di {site}",
   "ui_working": "Riassunto in corso…",
   "ui_idle_hint": "Fai clic sull'icona dell'estensione per riassumere questa pagina.",
   "ui_truncated": "La pagina era lunga; è stata riassunta solo la prima parte.",

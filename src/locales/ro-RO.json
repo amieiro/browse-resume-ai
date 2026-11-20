@@ -24,6 +24,7 @@
   "history_usage_questions": "Întrebări: {count}",
   "ui_regenerate": "Rezumă din nou",
   "ui_try_again": "Încearcă din nou",
+  "ui_allow_site": "Permite citirea {site}",
   "ui_working": "Se rezumă…",
   "ui_idle_hint": "Dă clic pe pictograma extensiei pentru a rezuma această pagină.",
   "ui_truncated": "Pagina era lungă; a fost rezumată doar prima parte.",

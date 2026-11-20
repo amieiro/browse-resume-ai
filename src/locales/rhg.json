@@ -24,6 +24,7 @@
   "history_usage_questions": "Sual: {count}",
   "ui_regenerate": "Abar sóti gor",
   "ui_try_again": "Abar hoóshish gor",
+  "ui_allow_site": "{site} foríbar ijazot de",
   "ui_working": "Sóti gorér…",
   "ui_idle_hint": "Ey fata yán sóti goríbar lla extension or aikon ot klik gor.",
   "ui_truncated": "Ey fata yán lamba asil; óilla foila fail yán sóti gorá oiye.",

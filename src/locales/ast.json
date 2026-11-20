@@ -24,6 +24,7 @@
   "history_usage_questions": "Entrugues: {count}",
   "ui_regenerate": "Resumir de nueves",
   "ui_try_again": "Tentar de nueves",
+  "ui_allow_site": "Permitir lleer {site}",
   "ui_working": "Resumiendo…",
   "ui_idle_hint": "Primi l'iconu de la estensión pa resumir esta páxina.",
   "ui_truncated": "La páxina yera llarga; namás se resumió la primer parte.",

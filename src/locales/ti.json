@@ -24,6 +24,7 @@
   "history_usage_questions": "ሕቶታት: {count}",
   "ui_regenerate": "እንደገና ጽመቕ",
   "ui_try_again": "እንደገና ፈትን",
+  "ui_allow_site": "{site} ንምንባብ ፍቐድ",
   "ui_working": "ይጽመቕ ኣሎ…",
   "ui_idle_hint": "ነዚ ገጽ ንምጽማቕ ናይቲ ተወሳኺ ምልክት ጠውቕ።",
   "ui_truncated": "እዚ ገጽ ነዊሕ ነይሩ፤ እቲ ቀዳማይ ክፋል ጥራይ ተጸሚቑ።",

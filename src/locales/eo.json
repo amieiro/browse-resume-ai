@@ -24,6 +24,7 @@
   "history_usage_questions": "Demandoj: {count}",
   "ui_regenerate": "Resumi denove",
   "ui_try_again": "Reprovi",
+  "ui_allow_site": "Permesi legi {site}",
   "ui_working": "Resumante…",
   "ui_idle_hint": "Alklaku la piktogramon de la etendaĵo por resumi ĉi tiun paĝon.",
   "ui_truncated": "Ĉi tiu paĝo estis longa; nur la unua parto estis resumita.",

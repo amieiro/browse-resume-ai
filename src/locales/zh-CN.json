@@ -24,6 +24,7 @@
   "history_usage_questions": "提问：{count}",
   "ui_regenerate": "重新总结",
   "ui_try_again": "重试",
+  "ui_allow_site": "允许读取 {site}",
   "ui_working": "正在总结…",
   "ui_idle_hint": "点击扩展程序图标即可总结此页面。",
   "ui_truncated": "此页面较长，仅总结了开头部分。",

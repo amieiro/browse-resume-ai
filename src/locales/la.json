@@ -24,6 +24,7 @@
   "history_usage_questions": "Quaestiones: {count}",
   "ui_regenerate": "Iterum summatim redde",
   "ui_try_again": "Iterum conare",
+  "ui_allow_site": "Permitte legere {site}",
   "ui_working": "Summarium conficitur…",
   "ui_idle_hint": "Preme iconem extensionis ut hanc paginam summatim reddas.",
   "ui_truncated": "Haec pagina longa erat; prima tantum pars in summarium redacta est.",

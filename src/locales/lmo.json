@@ -24,6 +24,7 @@
   "history_usage_questions": "Domand: {count}",
   "ui_regenerate": "Riassumm anmò",
   "ui_try_again": "Preuva anmò",
+  "ui_allow_site": "Permett de lensg {site}",
   "ui_working": "Dree a riassumm…",
   "ui_idle_hint": "Schiscia l'icona de l'estension per riassumm questa pagina.",
   "ui_truncated": "Questa pagina l'era longa; l'è stada riassunta domà la primma part.",

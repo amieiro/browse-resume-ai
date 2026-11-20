@@ -24,6 +24,7 @@
   "history_usage_questions": "Otázky: {count}",
   "ui_regenerate": "Zhrnúť znova",
   "ui_try_again": "Skúsiť znova",
+  "ui_allow_site": "Povoliť čítanie {site}",
   "ui_working": "Zhŕňa sa…",
   "ui_idle_hint": "Kliknite na ikonu rozšírenia a táto stránka sa zhrnie.",
   "ui_truncated": "Táto stránka bola dlhá; zhrnula sa len jej prvá časť.",

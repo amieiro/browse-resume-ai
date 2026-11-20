@@ -24,6 +24,7 @@
   "history_usage_questions": "Su'aalaha: {count}",
   "ui_regenerate": "Mar kale soo koob",
   "ui_try_again": "Isku day mar kale",
+  "ui_allow_site": "Oggolow akhrinta {site}",
   "ui_working": "Waa la soo koobayaa…",
   "ui_idle_hint": "Guji astaanta kordhinta si aad u soo koobto boggan.",
   "ui_truncated": "Boggani wuu dheeraa; qaybta koowaad oo keliya ayaa la soo koobay.",

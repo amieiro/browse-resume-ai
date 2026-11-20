@@ -24,6 +24,7 @@
   "history_usage_questions": "Spørsmål: {count}",
   "ui_regenerate": "Samanfatt på nytt",
   "ui_try_again": "Prøv igjen",
+  "ui_allow_site": "Tillat lesing av {site}",
   "ui_working": "Samanfattar…",
   "ui_idle_hint": "Klikk på utvidingsikonet for å samanfatte denne sida.",
   "ui_truncated": "Sida var lang; berre den første delen vart samanfatta.",

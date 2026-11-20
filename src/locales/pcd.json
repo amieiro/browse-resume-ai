@@ -24,6 +24,7 @@
   "history_usage_questions": "Questions : {count}",
   "ui_regenerate": "Résumer acore",
   "ui_try_again": "Assayer acore",
+  "ui_allow_site": "Permette d’lire {site}",
   "ui_working": "Résumé in cours…",
   "ui_idle_hint": "Cliquez su l’icône d’l’extinsion pour résumer chl’ page-chi.",
   "ui_truncated": "Chl’ page-chi alle étoait longue ; o n’a résumé qu’el preumière partie.",

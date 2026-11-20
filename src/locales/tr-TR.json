@@ -24,6 +24,7 @@
   "history_usage_questions": "Sorular: {count}",
   "ui_regenerate": "Yeniden özetle",
   "ui_try_again": "Tekrar dene",
+  "ui_allow_site": "{site} okumaya izin ver",
   "ui_working": "Özetleniyor…",
   "ui_idle_hint": "Bu sayfayı özetlemek için uzantı simgesini tıklayın.",
   "ui_truncated": "Bu sayfa uzundu; yalnızca ilk kısmı özetlendi.",

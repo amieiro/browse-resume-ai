@@ -24,6 +24,7 @@
   "history_usage_questions": "Gaaffiiwwan: {count}",
   "ui_regenerate": "Ammas cuunfi",
   "ui_try_again": "Irra deebi'ii yaali",
+  "ui_allow_site": "{site} dubbisuu hayyami",
   "ui_working": "Cuunfaa jira…",
   "ui_idle_hint": "Fuula kana cuunfuuf mallattoo dabalataa (extension) cuqaasi.",
   "ui_truncated": "Fuulli kun dheeraa ture; kutaan jalqabaa qofti cuunfameera.",

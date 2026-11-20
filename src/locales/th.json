@@ -24,6 +24,7 @@
   "history_usage_questions": "คำถาม: {count}",
   "ui_regenerate": "สรุปอีกครั้ง",
   "ui_try_again": "ลองอีกครั้ง",
+  "ui_allow_site": "อนุญาตให้อ่าน {site}",
   "ui_working": "กำลังสรุป…",
   "ui_idle_hint": "คลิกไอคอนส่วนขยายเพื่อสรุปหน้านี้",
   "ui_truncated": "หน้านี้ยาว จึงสรุปเฉพาะส่วนแรกเท่านั้น",

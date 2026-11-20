@@ -24,6 +24,7 @@
   "history_usage_questions": "Questions: {count}",
   "ui_regenerate": "Summarize am again",
   "ui_try_again": "Try again",
+  "ui_allow_site": "Allow make e read {site}",
   "ui_working": "E dey summarize…",
   "ui_idle_hint": "Click di extension icon make e summarize dis page.",
   "ui_truncated": "Dis page long well well; na only di first part we summarize.",

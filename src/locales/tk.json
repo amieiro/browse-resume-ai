@@ -24,6 +24,7 @@
   "history_usage_questions": "Soraglar: {count}",
   "ui_regenerate": "Täzeden gysgalt",
   "ui_try_again": "Gaýtadan synanyş",
+  "ui_allow_site": "{site} okamaga rugsat beriň",
   "ui_working": "Gysgaldylýar…",
   "ui_idle_hint": "Bu sahypany gysgaltmak üçin giňeltmäniň nyşanyna basyň.",
   "ui_truncated": "Bu sahypa uzyn eken; diňe birinji bölegi gysgaldyldy.",

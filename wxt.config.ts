@@ -42,6 +42,8 @@ export default defineConfig({
       // offscreen documents (its background page reads PDFs itself).
       permissions: ['activeTab', 'scripting', 'storage', 'nativeMessaging', 'contextMenus', ...(firefox ? [] : ['sidePanel', 'offscreen'])],
       action: {},
+      // Asked for one site at a time, only from the "Allow reading <site>" button (never at install).
+      optional_host_permissions: ['https://*/*', 'http://*/*'],
       ...(E2E ? { host_permissions: ['<all_urls>'] } : {}),
       // The shortcut does what a click on the toolbar icon does (side panel or popup, as set).
       // Users can change it in chrome://extensions/shortcuts or about:addons.

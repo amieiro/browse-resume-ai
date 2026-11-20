@@ -24,6 +24,7 @@
   "history_usage_questions": "Preguntas: {count}",
   "ui_regenerate": "Torra a resumire",
   "ui_try_again": "Torra a proare",
+  "ui_allow_site": "Permite de lèghere {site}",
   "ui_working": "Resumende…",
   "ui_idle_hint": "Incarca s'icona de s'estensione pro resumire custa pàgina.",
   "ui_truncated": "Custa pàgina fiat longa; est istada resumida isceti sa prima parte.",

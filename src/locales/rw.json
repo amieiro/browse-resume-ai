@@ -24,6 +24,7 @@
   "history_usage_questions": "Ibibazo: {count}",
   "ui_regenerate": "Ongera ukore incamake",
   "ui_try_again": "Ongera ugerageze",
+  "ui_allow_site": "Emera gusoma {site}",
   "ui_working": "Birimo gukora incamake…",
   "ui_idle_hint": "Kanda ku gishushanyo cy'umugereka kugira ngo ukore incamake y'iyi paji.",
   "ui_truncated": "Iyi paji yari ndende; igice cya mbere ni cyo cyonyine cyakorewe incamake.",

@@ -24,6 +24,7 @@
   "history_usage_questions": "سؤال‌ها: {count}",
   "ui_regenerate": "خلاصه‌سازی دوباره",
   "ui_try_again": "تلاش دوباره",
+  "ui_allow_site": "اجازهٔ خواندن {site}",
   "ui_working": "در حال خلاصه‌سازی…",
   "ui_idle_hint": "برای خلاصه‌سازی این صفحه، روی نماد افزونه کلیک کنید.",
   "ui_truncated": "این صفحه طولانی بود؛ فقط بخش اول آن خلاصه شد.",
