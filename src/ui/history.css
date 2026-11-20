@@ -14,6 +14,7 @@ body.history input[type="search"] {
 .usage-totals { margin: 0 0 12px; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; }
 .usage-totals h2 { font-size: 13px; margin: 0 0 4px; color: var(--muted); font-weight: 600; }
 .usage-totals p { margin: 2px 0; }
+.usage-totals .usage-note { margin-top: 6px; font-size: 12px; color: var(--muted); }
 .entry .meta { margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .entry .badge {
   display: inline-block; padding: 0 6px; border-radius: 999px; font-size: 11px;

@@ -27,7 +27,7 @@ export function createClaudeStreamParser(onText) {
         onText(delta.text);
       }
     } else if (event.type === 'result') {
-      usage = claudeUsage(event.usage);
+      usage = claudeUsage(event.usage, event.total_cost_usd);
       if (event.is_error) {
         isError = true;
         errorText = typeof event.result === 'string' ? event.result : '';

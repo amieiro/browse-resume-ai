@@ -8,6 +8,7 @@ import { validateRequest, VERSION } from './lib/protocol.mjs';
 import { runCodex } from './lib/codex-runner.mjs';
 import { checkOllama, ollamaBaseUrl, runOllama } from './lib/ollama-runner.mjs';
 import { claudeModels, cliVersion, codexModels } from './lib/models.mjs';
+import { fetchOpenAiPrices } from './lib/prices.mjs';
 import { runClaude } from './lib/runner.mjs';
 
 const CLAUDE_BIN = process.env.CLAUDE_BIN || 'claude';
@@ -55,6 +56,8 @@ function handle(msg) {
         });
       },
     );
+  } else if (msg.type === 'prices') {
+    void fetchOpenAiPrices().then((openai) => send({ type: 'prices', openai }));
   } else if (msg.type === 'cancel') {
     running.get(msg.id)?.cancel();
     running.delete(msg.id);

@@ -5,6 +5,8 @@ import { addToHistory, updateHistoryQuestions } from '@/lib/history';
 import { extractFromTab, selectionFromTab } from '@/lib/injection';
 import { menuTitles } from '@/lib/menu-strings';
 import { ensureFreshCatalog, refreshCatalog } from '@/lib/model-catalog';
+import { priceDeps } from '@/lib/price-deps';
+import { ensureFreshPrices, getPrices } from '@/lib/prices';
 import { parsePortName, type BackgroundToUi, type SummaryStartedBroadcast, type UiToBackground } from '@/lib/messages';
 import { loadSettings, type DisplayMode } from '@/lib/settings';
 import { Summarizer } from '@/lib/summarizer';
@@ -19,6 +21,8 @@ export default defineBackground(() => {
     extractSelection: selectionFromTab,
     loadSettings,
     getProvider,
+    // The cached prices only: a summary never waits for the download, which runs on its own below.
+    prices: getPrices,
     history: { add: (entry) => addToHistory(entry), updateQuestions: updateHistoryQuestions },
   });
 
@@ -45,10 +49,12 @@ export default defineBackground(() => {
   browser.runtime.onInstalled.addListener(() => {
     void syncSettings();
     void refreshCatalog(catalogDeps());
+    void ensureFreshPrices(priceDeps(), true);
   });
   browser.runtime.onStartup.addListener(() => {
     void syncSettings();
     void ensureFreshCatalog(catalogDeps());
+    void ensureFreshPrices(priceDeps());
   });
   browser.storage.onChanged.addListener((changes, area) => {
     if (area === 'local' && 'settings' in changes) void syncSettings();

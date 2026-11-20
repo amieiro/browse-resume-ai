@@ -1,5 +1,6 @@
 // @vitest-environment node
 import { spawn } from 'node:child_process';
+import { createServer } from 'node:http';
 import { mkdtempSync, existsSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -56,7 +57,7 @@ describe('native host', () => {
   it('streams a Codex summary', async () => {
     const h = startHost();
     h.send({ type: 'summarize', id: 'c1', provider: 'codex', model: 'gpt-6-luna', prompt: 'p' });
-    await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'c1', usage: { inputTokens: 10, outputTokens: 5 } }));
+    await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'c1', usage: { inputTokens: 10, outputTokens: 5, cachedInputTokens: 4 } }));
     const text = h.messages.filter((m) => m.type === 'chunk').map((m) => m.text).join('');
     expect(text).toBe('Ola ñandú 🙂\n\n- punto clave');
   });
@@ -70,7 +71,7 @@ describe('native host', () => {
   it('streams a summary', async () => {
     const h = startHost();
     h.send({ type: 'summarize', id: 'r1', provider: 'claude', model: 'sonnet', prompt: 'p' });
-    await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'r1', usage: { inputTokens: 1003, outputTokens: 12 } }));
+    await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'r1', usage: { inputTokens: 1003, outputTokens: 12, costUsd: 0.0123 } }));
     const text = h.messages.filter((m) => m.type === 'chunk').map((m) => m.text).join('');
     expect(text).toBe('Ola ñandú 🙂\n\n- punto clave');
   });
@@ -198,5 +199,28 @@ describe('native host', () => {
     const exited = new Promise((r) => h.child.on('exit', r));
     h.child.stdin.end();
     await exited;
+  });
+
+  describe('prices', () => {
+    let server;
+    afterEach(() => new Promise((r) => (server ? server.close(r) : r())));
+
+    it('downloads the OpenAI API prices and answers with them', async () => {
+      const list = {
+        'gpt-6.2-sol': { litellm_provider: 'openai', input_cost_per_token: 2e-6, output_cost_per_token: 1e-5, cache_read_input_token_cost: 1e-7 },
+        'claude-x': { litellm_provider: 'anthropic', input_cost_per_token: 1e-6, output_cost_per_token: 1e-6 },
+      };
+      server = createServer((_req, res) => res.end(JSON.stringify(list)));
+      await new Promise((r) => server.listen(0, '127.0.0.1', r));
+      const h = startHost({ BROWSE_RESUME_AI_PRICES_URL: `http://127.0.0.1:${server.address().port}/prices.json` });
+      h.send({ type: 'prices' });
+      await waitFor(() => expect(h.messages[0]).toEqual({ type: 'prices', openai: { 'gpt-6.2-sol': { input: 2, output: 10, cachedInput: 0.1 } } }));
+    });
+
+    it('answers null when the list cannot be read', async () => {
+      const h = startHost({ BROWSE_RESUME_AI_PRICES_URL: 'http://127.0.0.1:9/none.json' });
+      h.send({ type: 'prices' });
+      await waitFor(() => expect(h.messages[0]).toEqual({ type: 'prices', openai: null }));
+    });
   });
 });

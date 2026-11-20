@@ -127,6 +127,42 @@ describe('Summarizer', () => {
     expect(t.s.getState(1)).toMatchObject({ status: 'done', cached: true, usage: { ms: 2500, inputTokens: 1200, outputTokens: 80 } });
   });
 
+  it('works out the approximate cost of a Codex summary from the downloaded prices', async () => {
+    const p: Provider = {
+      id: 'codex',
+      label: 'Codex',
+      checkAvailability: async () => ({ ok: true }),
+      async *summarize(_prompt, _model, _signal, onUsage) {
+        yield 'Hi';
+        onUsage?.({ inputTokens: 14_000, cachedInputTokens: 4_000, outputTokens: 500 });
+      },
+    };
+    const prices = async () => ({ checkedAt: 0, openai: { 'gpt-6.2-sol': { input: 2, output: 10, cachedInput: 0.1 } } });
+    const t = setup(p, { prices }, { provider: 'codex' });
+    await t.s.start(1, { force: false });
+    const state = t.s.getState(1);
+    expect(state.status === 'done' && state.usage?.costUsd).toBeCloseTo(0.0254, 10);
+  });
+
+  it('keeps the cost Claude Code reports, and marks Ollama as local', async () => {
+    const reporting = (id: Provider['id'], usage: Record<string, number>): Provider => ({
+      id,
+      label: id,
+      checkAvailability: async () => ({ ok: true }),
+      async *summarize(_prompt, _model, _signal, onUsage) {
+        yield 'Hi';
+        onUsage?.(usage as never);
+      },
+    });
+    const claude = setup(reporting('claude', { inputTokens: 1, outputTokens: 1, costUsd: 0.02 }));
+    await claude.s.start(1, { force: false });
+    expect(claude.s.getState(1)).toMatchObject({ usage: { costUsd: 0.02 } });
+    const ollama = setup(reporting('ollama', { inputTokens: 1, outputTokens: 1 }), {}, { provider: 'ollama', models: { claude: 'sonnet', codex: 'gpt-6.2-sol', ollama: 'llama3.2' } });
+    await ollama.s.start(2, { force: false });
+    expect(ollama.s.getState(2)).toMatchObject({ usage: { local: true } });
+    expect(ollama.s.getState(2)).not.toHaveProperty('usage.costUsd');
+  });
+
   it('records only the time when the provider reports no tokens', async () => {
     const t = setup(provider(() => chunks('Hello')));
     await t.s.start(1, { force: false });

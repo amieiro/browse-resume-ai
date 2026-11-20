@@ -2,6 +2,7 @@ import { cacheKey, clearCached, getCached, getLastCached, setCached } from './ca
 import { buildPrompt, MAX_ARTICLE_CHARS, type Article } from './prompt';
 import type { HistoryEntry } from './history';
 import { buildQuestionPrompt } from './question-prompt';
+import { openAiCost, type PriceTable } from './prices';
 import { STANDARD_STYLE, styleInstruction } from './styles';
 import type { ProviderId, Settings } from './settings';
 import { SummaryError, type Provider, type SummaryErrorCode, type TokenUsage } from '@/providers/types';
@@ -20,9 +21,13 @@ export interface QaItem {
 /** Longest question accepted; longer ones are cut. */
 export const MAX_QUESTION_CHARS = 1000;
 
-/** What a summary took: how long the model wrote, and the tokens, when the provider reports them. */
+/**
+ * What a summary took: how long the model wrote, the tokens when the provider reports them, and the
+ * approximate cost at API prices (costUsd) when it is known. local: run on this computer (Ollama).
+ */
 export interface SummaryUsage extends Partial<TokenUsage> {
   ms: number;
+  local?: true;
 }
 
 export type SummaryState =
@@ -57,6 +62,8 @@ export interface SummarizerDeps {
   loadSettings(): Promise<Settings>;
   /** The clock, for tests. */
   now?(): number;
+  /** The OpenAI API prices last downloaded, for the approximate cost of a Codex summary. */
+  prices?(): Promise<PriceTable | null>;
   getProvider(id: ProviderId): Provider;
   /** Where finished summaries are kept, when the history is on. */
   history?: {
@@ -250,7 +257,8 @@ export class Summarizer {
         set({ status: 'running', title, text, truncated, ...tag });
       }
       if (!isCurrent()) return;
-      const usage: SummaryUsage = { ms: Math.max(0, now() - startedAt), ...(tokens ?? {}) };
+      const usage = await this.usageOf(settings, Math.max(0, now() - startedAt), tokens as TokenUsage | null);
+      if (!isCurrent()) return;
       const historyId = await this.keep(tabId, article, settings, text, kind, usage);
       if (!isCurrent()) return;
       await setCached(tabId, { key, title, text, truncated, ...tag, usage, ...(historyId ? { historyId } : {}) });
@@ -344,6 +352,18 @@ export class Summarizer {
     await setCached(tabId, { ...entry, qa });
     const historyId = this.historyIds.get(tabId) ?? entry.historyId;
     if (historyId) await this.deps.history?.updateQuestions(historyId, qa).catch(() => {});
+  }
+
+  /** The time and tokens of a summary, with its approximate cost at API prices when it can be known. */
+  private async usageOf(settings: Settings, ms: number, tokens: TokenUsage | null): Promise<SummaryUsage> {
+    const usage: SummaryUsage = { ms, ...(tokens ?? {}) };
+    if (settings.provider === 'ollama') usage.local = true;
+    else if (settings.provider === 'codex' && tokens && usage.costUsd === undefined) {
+      const prices = await this.deps.prices?.().catch(() => null);
+      const cost = openAiCost(tokens, settings.models.codex, prices ?? null);
+      if (cost !== null) usage.costUsd = cost;
+    }
+    return usage;
   }
 
   /** Adds a finished summary to the history, when it is on; resolves to its id. */

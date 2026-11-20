@@ -1,5 +1,6 @@
 import { browser } from 'wxt/browser';
 import type { HostModels } from '@/lib/model-catalog';
+import type { ModelPrice } from '@/lib/prices';
 import { SummaryError, type SummaryErrorCode, type TokenUsage } from './types';
 
 export const HOST_NAME = 'com.browse_resume_ai.host';
@@ -106,8 +107,25 @@ const isCount = (value: unknown): value is number => typeof value === 'number' &
 /** The usage the host sent, if it is one. */
 export function parseUsage(value: unknown): TokenUsage | null {
   if (!value || typeof value !== 'object') return null;
-  const { inputTokens, outputTokens } = value as Record<string, unknown>;
-  return isCount(inputTokens) && isCount(outputTokens) ? { inputTokens: Math.round(inputTokens), outputTokens: Math.round(outputTokens) } : null;
+  const { inputTokens, outputTokens, cachedInputTokens, costUsd } = value as Record<string, unknown>;
+  if (!isCount(inputTokens) || !isCount(outputTokens)) return null;
+  const usage: TokenUsage = { inputTokens: Math.round(inputTokens), outputTokens: Math.round(outputTokens) };
+  if (isCount(cachedInputTokens)) usage.cachedInputTokens = Math.min(Math.round(cachedInputTokens), usage.inputTokens);
+  if (isCount(costUsd)) usage.costUsd = costUsd;
+  return usage;
+}
+
+/** OpenAI API prices per model (dollars per million tokens), downloaded by the host; null if it could not. */
+export async function fetchPrices(): Promise<Record<string, ModelPrice> | null> {
+  const answer = await askHost<{ openai: unknown }>({ type: 'prices' }, 'prices', 60_000);
+  const openai = answer?.openai;
+  if (!openai || typeof openai !== 'object') return null;
+  const prices: Record<string, ModelPrice> = {};
+  for (const [model, value] of Object.entries(openai as Record<string, Record<string, unknown>>)) {
+    if (!value || !isCount(value.input) || !isCount(value.output)) continue;
+    prices[model] = isCount(value.cachedInput) ? { input: value.input, output: value.output, cachedInput: value.cachedInput } : { input: value.input, output: value.output };
+  }
+  return Object.keys(prices).length ? prices : null;
 }
 
 /** Streams a summary from the host. One port per request; ends quietly when aborted. */

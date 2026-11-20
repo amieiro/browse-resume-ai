@@ -72,6 +72,8 @@ describe('claudeProvider.summarize', () => {
     expect(parseUsage({ inputTokens: '9', outputTokens: 1 })).toBeNull();
     expect(parseUsage({ inputTokens: -1, outputTokens: 1 })).toBeNull();
     expect(parseUsage({ inputTokens: 1.6, outputTokens: 2 })).toEqual({ inputTokens: 2, outputTokens: 2 });
+    expect(parseUsage({ inputTokens: 10, outputTokens: 2, cachedInputTokens: 40, costUsd: 0.5 })).toEqual({ inputTokens: 10, outputTokens: 2, cachedInputTokens: 10, costUsd: 0.5 });
+    expect(parseUsage({ inputTokens: 10, outputTokens: 2, costUsd: -1 })).toEqual({ inputTokens: 10, outputTokens: 2 });
   });
 
   it('throws the host error code', async () => {

@@ -2,6 +2,8 @@ import { browser } from 'wxt/browser';
 import type { SummaryStartedBroadcast } from '@/lib/messages';
 import { catalogDeps } from '@/lib/catalog-deps';
 import { CATALOG_KEY, ensureFreshCatalog } from '@/lib/model-catalog';
+import { priceDeps } from '@/lib/price-deps';
+import { ensureFreshPrices } from '@/lib/prices';
 import { loadSettings, saveSettings } from '@/lib/settings';
 import { bootPage } from './boot';
 import { createPortClient } from './port-client';
@@ -43,6 +45,7 @@ export async function startSummaryApp(root: HTMLElement, options: Options): Prom
   });
 
   void ensureFreshCatalog(catalogDeps());
+  void ensureFreshPrices(priceDeps());
 
   const tabId = await activeTabId();
   if (tabId === undefined) return;

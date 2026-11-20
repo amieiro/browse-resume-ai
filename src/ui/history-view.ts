@@ -123,10 +123,12 @@ export function mountHistoryView(root: HTMLElement, initial: HistoryEntry[], dep
           {},
           el('strong', { textContent: PROVIDER_LABELS[row.provider] ?? row.provider }),
           ` · ${t('history_usage_count').replace('{count}', number.format(row.count))} · `,
-          formatUsage({ ms: 0, inputTokens: row.inputTokens, outputTokens: row.outputTokens }, t, lang),
+          formatUsage({ ms: 0, inputTokens: row.inputTokens, outputTokens: row.outputTokens, costUsd: row.costUsd, ...(row.local ? { local: true as const } : {}) }, t, lang),
         ),
       ),
     );
+    // The cost is an estimate at API prices: say so where it is shown.
+    if (rows.some((row) => row.costUsd !== undefined)) totals.append(el('p', { className: 'usage-note', textContent: t('ui_usage_cost_note') }));
     totals.hidden = rows.length === 0;
   }
 

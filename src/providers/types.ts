@@ -33,6 +33,10 @@ export class SummaryError extends Error {
 export interface TokenUsage {
   inputTokens: number;
   outputTokens: number;
+  /** Input tokens read from the prompt cache (Codex), part of inputTokens. */
+  cachedInputTokens?: number;
+  /** What the request would cost at API prices, when the provider works it out (Claude Code). */
+  costUsd?: number;
 }
 
 export type Availability = { ok: true } | { ok: false; code: SummaryErrorCode };

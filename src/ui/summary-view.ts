@@ -132,6 +132,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     const used = s.status === 'done' ? formatUsage(s.usage, t, document.documentElement.lang) : '';
     usage.textContent = s.status === 'done' && s.cached ? [used, t('ui_usage_cached')].filter(Boolean).join(' · ') : used;
     usage.hidden = !usage.textContent;
+    usage.title = s.status === 'done' && s.usage?.costUsd !== undefined && !s.usage.local ? t('ui_usage_cost_note') : '';
     copy.disabled = !copyableText(s);
     exporter.setDisabled(s.status !== 'done');
     regenerate.textContent = s.status === 'error' ? t('ui_try_again') : t('ui_regenerate');

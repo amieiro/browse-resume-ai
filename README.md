@@ -10,8 +10,8 @@ a model running on your own computer through Ollama. No API keys, no pay-per-use
   pages where the article is not found or when you want one section.
 - Ask questions about the page under the summary; the answers come from the page text only.
 - A history of your summaries, with search, kept only on your computer.
-- See what each summary used: the tokens read and written and the time, under the summary and in
-  the history, with totals per provider.
+- See what each summary used: the tokens read and written, the time, and an estimate of what it
+  would cost through the API, under the summary and in the history, with totals per provider.
 - Export a summary as Markdown: copy it, save it as a `.md` file, or open it as a note in
   [Obsidian](https://obsidian.md/).
 - YouTube videos are summarized from their transcript.
@@ -251,6 +251,14 @@ again on the same page with the same settings does not spend your quota. The his
 line on each summary and, at the top, the tokens used per provider. With a subscription the tokens
 are not billed one by one, but they count towards its usage limits.
 
+The line also shows an **approximate cost**, "≈ $0.011 estimated at API prices": what the same
+tokens would cost through the provider's paid API at list prices. It is an estimate, not what you
+pay; a subscription is not charged per request. For Claude, Claude Code works it out itself. For
+Codex, which reports no cost, it is calculated from OpenAI's API prices, which the local component
+downloads once a day from [LiteLLM's public price list](https://github.com/BerriAI/litellm) (cached
+input tokens at their lower price). Models without a known price show only the tokens. Ollama runs
+on your computer and shows **local, no API cost**.
+
 The **Export** button under a finished summary (and on each entry of the history) has three
 options. **Copy as Markdown** copies the page title, a link to the page, the summary and the
 answered questions. **Download .md file** saves the same text as a file named after the page, with
@@ -346,6 +354,9 @@ pdokiakaaeffjlabmofdppjakdhaimpi
   sent anywhere else.
 - The last summary of each tab is kept for the browser session, so clicking the icon again on the
   same page does not spend your quota. It is cleared when the tab closes.
+- Once a day, the local component downloads LiteLLM's public list of API prices from GitHub, for
+  the estimated cost of Codex summaries. It is a plain download of a public file: nothing about you
+  or your pages is sent.
 - The history keeps your summaries (with their page titles, URLs and questions) in the extension's
   storage on this computer only. Turn it off or clear it at any time.
 
