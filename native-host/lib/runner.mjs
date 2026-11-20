@@ -30,8 +30,9 @@ export function claudeArgs(model) {
   ];
 }
 
-const AUTH_PATTERN = /\/login|not logged in|log in|authenticat|oauth|credential/i;
-const LIMIT_PATTERN = /usage limit|hit your limit|limit reached|rate limit/i;
+// Whole words only (\b), so "catalog in" or "blog in" are not taken for "log in".
+const AUTH_PATTERN = /\/login\b|\bnot logged in\b|\blog in\b|\bauthenticat|\boauth\b|\bcredential/i;
+const LIMIT_PATTERN = /\busage limit\b|\bhit your limit\b|\blimit reached\b|\brate limit/i;
 
 export function classifyClaudeError(detail) {
   if (LIMIT_PATTERN.test(detail)) return 'usage_limit';

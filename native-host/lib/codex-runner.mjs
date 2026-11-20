@@ -50,8 +50,9 @@ export function codexArgs(model, cwd) {
   ];
 }
 
-const AUTH_PATTERN = /401|unauthori[sz]ed|codex login|not logged in|sign in|log in/i;
-const LIMIT_PATTERN = /usage limit|rate limit|429|quota/i;
+// Whole words and numbers only (\b), so "4012 tokens" or "design in" are not taken for 401 or "sign in".
+const AUTH_PATTERN = /\b401\b|\bunauthori[sz]ed\b|\bcodex login\b|\bnot logged in\b|\bsign in\b|\blog in\b/i;
+const LIMIT_PATTERN = /\busage limit\b|\brate limit|\b429\b|\bquota\b/i;
 
 export function classifyCodexError(detail) {
   if (LIMIT_PATTERN.test(detail)) return 'usage_limit';

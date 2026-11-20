@@ -33,6 +33,12 @@ describe('loadSettings / saveSettings', () => {
     expect(await loadSettings()).toEqual({ ...defaultSettings('gl'), modelLabels: {} });
   });
 
+  it('keeps every change when several are saved at once', async () => {
+    await Promise.all([saveSettings({ length: 'short' }), saveSettings({ language: 'es-ES' }), saveSettings({ provider: 'codex' })]);
+    const s = await loadSettings();
+    expect(s).toMatchObject({ length: 'short', language: 'es-ES', provider: 'codex' });
+  });
+
   it('saves a patch and keeps the other fields', async () => {
     await saveSettings({ length: 'long' });
     const s = await loadSettings();

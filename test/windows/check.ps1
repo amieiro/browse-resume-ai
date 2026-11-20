@@ -10,7 +10,8 @@ foreach ($script in 'native-host/install.ps1', 'native-host/uninstall.ps1') {
 }
 
 Write-Output '== Stand-in CLIs: claude as an executable, codex as an npm .cmd shim'
-$bin = Join-Path $HOME 'bin'
+# A % in the folder name must reach launcher.bat as %%, or cmd.exe would read a variable.
+$bin = Join-Path $HOME 'bin 100%'
 New-Item -ItemType Directory -Force -Path $bin | Out-Null
 Set-Content -Path (Join-Path $bin 'claude') -Value "#!/bin/sh`necho claude"
 chmod +x (Join-Path $bin 'claude')
@@ -35,9 +36,11 @@ $launcher = [System.Text.Encoding]::UTF8.GetString($bytes)
 Write-Output $launcher
 Assert ($launcher.StartsWith('@echo off')) 'launcher starts with @echo off'
 Assert ($launcher.Contains("`r`n")) 'launcher uses CRLF'
-Assert ($launcher -match 'set "CLAUDE_BIN=.*/bin/claude"') 'CLAUDE_BIN is the executable'
+Assert ($launcher -match 'set "CLAUDE_BIN=.*/bin 100%%/claude"') 'CLAUDE_BIN is the executable'
 Assert ($launcher -match 'set "CODEX_BIN=.*node_modules.*codex\.js"') 'CODEX_BIN is the JavaScript entry of the shim'
 Assert ($launcher -match 'host\.mjs" %\*') 'launcher runs host.mjs with the arguments'
+Assert ($launcher.Contains('bin 100%%')) 'a % in a path is written %% in launcher.bat'
+Assert (-not ($launcher -match 'bin 100%[^%]')) 'no single % left from a path'
 
 Write-Output '== Uninstall'
 & ./native-host/uninstall.ps1 -DataDir $data -SkipRegistry

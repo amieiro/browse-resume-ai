@@ -8,6 +8,8 @@ import { runClaude } from '../lib/runner.mjs';
 
 const FAKE = fileURLToPath(new URL('./fixtures/fake-claude.mjs', import.meta.url));
 
+let errorMessage = '';
+
 function run(mode, extra = {}) {
   const record = join(mkdtempSync(join(tmpdir(), 'bra-test-')), 'record.json');
   vi.stubEnv('FAKE_MODE', mode);
@@ -22,7 +24,7 @@ function run(mode, extra = {}) {
       prompt: 'THE PROMPT',
       onText: (t) => (text += t),
       onDone: () => (events.push('done'), resolve()),
-      onError: (code) => (events.push(`error:${code}`), resolve()),
+      onError: (code, message) => (events.push(`error:${code}`), (errorMessage = message), resolve()),
       ...extra,
     });
   });
@@ -69,6 +71,12 @@ describe('runClaude', () => {
     const r = run('limit');
     await r.done;
     expect(r.events).toEqual(['error:usage_limit']);
+  });
+
+  it('keeps characters split between two chunks of the error output', async () => {
+    const r = run('fail-split');
+    await r.done;
+    expect(errorMessage).toContain('Erro: ñandú 🙂 fallou');
   });
 
   it('maps another failure to provider_failed', async () => {

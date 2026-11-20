@@ -21,6 +21,15 @@ process.stdin.on('end', () => {
   } else if (mode === 'auth') {
     process.stdout.write('{"type":"result","subtype":"success","is_error":true,"result":"Not logged in · Please run /login"}\n');
     process.exit(1);
+  } else if (mode === 'fail-split') {
+    // An error message split in the middle of a multi-byte character, in two writes.
+    const bytes = Buffer.from('Erro: ñandú 🙂 fallou\n');
+    const cut = bytes.indexOf(Buffer.from('🙂')) + 2;
+    process.stderr.write(bytes.subarray(0, cut));
+    setTimeout(() => {
+      process.stderr.write(bytes.subarray(cut));
+      process.exit(2);
+    }, 50);
   } else if (mode === 'fail') {
     process.stderr.write('something broke\n');
     process.exit(2);

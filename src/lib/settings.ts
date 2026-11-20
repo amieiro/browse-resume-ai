@@ -101,7 +101,17 @@ export async function loadSettings(): Promise<Settings> {
   return applyCatalog(stored, catalog);
 }
 
-export async function saveSettings(patch: Partial<Settings>): Promise<Settings> {
+// Saving is a read-modify-write of one object, so saves from this page run one at a time; two
+// quick changes (the length, then the language) would otherwise each overwrite the other.
+let saving: Promise<unknown> = Promise.resolve();
+
+export function saveSettings(patch: Partial<Settings>): Promise<Settings> {
+  const run = saving.then(() => writeSettings(patch));
+  saving = run.catch(() => {});
+  return run;
+}
+
+async function writeSettings(patch: Partial<Settings>): Promise<Settings> {
   const next = merge(await loadStoredSettings(), patch);
   await browser.storage.local.set({ [STORAGE_KEY]: next });
   return next;

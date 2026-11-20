@@ -39,8 +39,10 @@ export function runProcess({ command, args, prompt, parser, classifyError, missi
   child.stdout.on('data', (chunk) => {
     if (!finished) parser.write(chunk);
   });
-  child.stderr.on('data', (chunk) => {
-    if (stderr.length < 4000) stderr += chunk.toString('utf8');
+  // Decoded as a stream, so a character split between two chunks comes out whole.
+  child.stderr.setEncoding('utf8');
+  child.stderr.on('data', (text) => {
+    if (stderr.length < 4000) stderr += text;
   });
   child.on('close', (code) => {
     if (finished) return;
