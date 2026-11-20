@@ -27,7 +27,9 @@ export function buildQuestionPrompt(
   const what =
     source === 'selection' ? 'the excerpt the reader selected on a web page' : article.format === 'pdf'
         ? 'the PDF document'
-        : article.format === 'video'
+        : article.format === 'thread'
+          ? 'the online discussion (the post and its comments)'
+          : article.format === 'video'
           ? 'the YouTube video, from its transcript,'
           : 'the web article';
   const earlier = history.slice(-MAX_HISTORY).flatMap((turn) => [`Q: ${stripDelimiters(turn.question)}`, `A: ${stripDelimiters(turn.answer)}`, '']);

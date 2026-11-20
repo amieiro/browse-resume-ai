@@ -54,6 +54,7 @@ export function mountHistoryView(root: HTMLElement, initial: HistoryEntry[], dep
       ...(entry.source === 'selection' ? [el('span', { className: 'badge', textContent: t('ui_selection') })] : []),
       ...(entry.format === 'pdf' ? [el('span', { className: 'badge', textContent: 'PDF' })] : []),
       ...(entry.format === 'video' ? [el('span', { className: 'badge', textContent: 'YouTube' })] : []),
+      ...(entry.format === 'thread' ? [el('span', { className: 'badge', textContent: '💬' })] : []),
     ];
     const meta = el(
       'p',

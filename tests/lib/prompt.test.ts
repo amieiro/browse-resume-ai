@@ -45,5 +45,11 @@ describe('buildPrompt', () => {
     const p = buildPrompt({ ...a, format: 'video' }, 'short', 'en-US');
     expect(p).toContain('Summarize the YouTube video below from its transcript.');
   });
+
+  it('asks for a summary of the debate for a discussion thread', () => {
+    const p = buildPrompt({ ...a, format: 'thread' }, 'short', 'en-US');
+    expect(p).toContain('Summarize the online discussion below');
+    expect(p).toContain('where people agree and disagree');
+  });
 });
 

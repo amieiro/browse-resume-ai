@@ -11,6 +11,8 @@ a model running on your own computer through Ollama. No API keys, no pay-per-use
 - Ask questions about the page under the summary; the answers come from the page text only.
 - A history of your summaries, with search, kept only on your computer.
 - YouTube videos are summarized from their transcript.
+- Discussions on Hacker News, Reddit, Lobsters and Discourse forums are summarized as a debate: the
+  post, the main points of view, and where people agree and disagree.
 - PDFs open in Chrome are summarized too, from their text (read with
   [pdf.js](https://mozilla.github.io/pdf.js/) inside the extension).
 - Choose the provider and model, the length (short, medium, long) and the summary language.
@@ -69,6 +71,10 @@ _Questions about the page: the answers appear under the summary and come from th
 <img src="media/gallery/feature-pdf.png" alt="The paper Attention Is All You Need open in Chrome's PDF viewer, and its summary in the side panel" width="800">
 
 _PDFs: a paper from arXiv in Chrome's PDF viewer, summarized from its text._
+
+<img src="media/gallery/feature-thread.png" alt="A Hacker News thread with over 2,000 comments and a summary of the debate in the side panel" width="800">
+
+_Discussions: a Hacker News thread with over 2,000 comments, summarized as a debate._
 
 <img src="media/gallery/feature-youtube.png" alt="A TED talk on YouTube and its summary, made from the transcript, in the side panel" width="800">
 
@@ -218,6 +224,12 @@ with all of them, newest first, a search that ignores case and accents, and butt
 delete each one or clear them all. It keeps the last 500 summaries in the extension's storage on
 this computer and is never sent anywhere; turn it off in the settings with **Keep a history of
 summaries**.
+
+On Hacker News, Reddit, Lobsters and Discourse forums, a discussion is read as the post and its
+comments, with their authors, points and reply depth, so the summary describes the debate (the
+main points of view, agreements and disagreements) rather than the comments one by one. Only the
+comments the page has loaded are read; the longest threads are cut at the summary limit, keeping
+the comments the site shows first.
 
 On a YouTube video, the summary is made from its transcript, as YouTube shows it under **Show
 transcript** (the extension opens that panel if it is closed). Videos without subtitles or

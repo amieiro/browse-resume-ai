@@ -8,7 +8,7 @@ export interface Article {
   /** True when the text was cut at the character cap. */
   truncated: boolean;
   /** A PDF document or a video transcript, so the prompt says what the text is. */
-  format?: 'pdf' | 'video';
+  format?: 'pdf' | 'video' | 'thread';
 }
 
 /** Longest text sent to the model; longer pages and selections are cut here. */
@@ -43,7 +43,9 @@ export function buildPrompt(article: Article, length: SummaryLength, language: L
       ? 'Summarize the excerpt below, which the reader selected on a web page. Summarize only the excerpt, not the rest of the page.'
       : article.format === 'pdf'
         ? 'Summarize the PDF document below.'
-        : article.format === 'video'
+        : article.format === 'thread'
+          ? 'Summarize the online discussion below: what the original post says or asks, the main points of view in the comments, where people agree and disagree, and notable answers or facts. Comments are indented by reply depth; points show how much readers agreed. Do not list commenters one by one.'
+          : article.format === 'video'
           ? 'Summarize the YouTube video below from its transcript. The transcript may lack punctuation and have speech recognition errors; summarize what is said, not the transcript.'
           : 'Summarize the web article below.',
     `Write the summary in ${lang} regardless of the article's language.`,

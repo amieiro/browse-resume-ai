@@ -28,6 +28,7 @@ const PAGES = {
   grapheneos: 'https://grapheneos.social/@GrapheneOS/117645038299496084',
   arxiv: 'https://arxiv.org/pdf/1706.03762',
   youtube: 'https://www.youtube.com/watch?v=arj7oStGLkU',
+  hackernews: 'https://news.ycombinator.com/item?id=50562754',
 };
 
 // One shot per page, length and language; the interface is in the same language as the summary.
@@ -53,6 +54,7 @@ const SHOTS = [
   },
   { name: 'feature-pdf', page: 'arxiv', language: 'en-US', length: 'medium', mode: 'panel' },
   // YouTube's cookie notice is rejected like any other; the extractor opens the transcript itself.
+  { name: 'feature-thread', page: 'hackernews', language: 'en-US', length: 'medium', mode: 'panel', top: true },
   { name: 'feature-youtube', page: 'youtube', language: 'en-US', length: 'medium', mode: 'panel', top: true },
   // The history page, with short summaries of the pages above.
   { name: 'feature-history', mode: 'history', language: 'en-US', length: 'short', pages: ['arxiv', 'newscientist', 'securityweek'] },
