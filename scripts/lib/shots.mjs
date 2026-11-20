@@ -48,8 +48,11 @@ export async function launchChrome({ viewport, windowSize = '1280,880' }) {
   return { browser, close };
 }
 
-/** buildPrompt from src/lib/prompt.ts, bundled with Vite so the script uses the extension's prompt. */
-export async function loadPromptBuilder() {
+/**
+ * A function from the extension's source (buildPrompt from src/lib/prompt.ts by default), bundled
+ * with Vite so the scripts use the same prompts as the extension.
+ */
+export async function loadPromptBuilder(source = 'src/lib/prompt.ts', name = 'buildPrompt') {
   const outDir = mkdtempSync(join(tmpdir(), 'bra-prompt-'));
   await build({
     configFile: false,
@@ -57,13 +60,13 @@ export async function loadPromptBuilder() {
     resolve: { alias: { '@': join(ROOT, 'src') } },
     build: {
       outDir,
-      lib: { entry: join(ROOT, 'src/lib/prompt.ts'), formats: ['es'], fileName: 'prompt' },
+      lib: { entry: join(ROOT, source), formats: ['es'], fileName: 'module' },
       emptyOutDir: true,
     },
   });
-  const mod = await import(join(outDir, 'prompt.js'));
+  const mod = await import(join(outDir, 'module.js'));
   rmSync(outDir, { recursive: true, force: true });
-  return mod.buildPrompt;
+  return mod[name];
 }
 
 /** A real summary, through the installed native host, as the extension would get it. */

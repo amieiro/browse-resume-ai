@@ -1,14 +1,26 @@
 import { cacheKey, clearCached, getCached, getLastCached, setCached } from './cache';
 import { buildPrompt, MAX_ARTICLE_CHARS, type Article } from './prompt';
+import { buildQuestionPrompt } from './question-prompt';
 import type { ProviderId, Settings } from './settings';
 import { SummaryError, type Provider, type SummaryErrorCode } from '@/providers/types';
 
 /** What a summary is of: the page's article, or text the reader selected (marked with source). */
 type Source = { source?: 'selection' };
 
+/** A question about the summarized page and its answer, shown under the summary. */
+export interface QaItem {
+  question: string;
+  answer: string;
+  status: 'running' | 'done' | 'error';
+  code?: SummaryErrorCode;
+}
+
+/** Longest question accepted; longer ones are cut. */
+export const MAX_QUESTION_CHARS = 1000;
+
 export type SummaryState =
   | { status: 'idle' }
-  | ({ status: 'running' | 'done'; title: string; text: string; truncated: boolean } & Source)
+  | ({ status: 'running' | 'done'; title: string; text: string; truncated: boolean; qa?: QaItem[] } & Source)
   | ({ status: 'error'; code: SummaryErrorCode; title: string; text: string; truncated: boolean; detail?: string } & Source);
 
 /** A "Summarize the selection" menu click. */
@@ -50,6 +62,10 @@ export class Summarizer {
   private listeners = new Map<number, Set<Listener>>();
   /** The last selection summarized in each tab, so Summarize again repeats it. */
   private selections = new Map<number, SelectionRequest>();
+  /** The text each tab's summary was made from, for questions about it. */
+  private articles = new Map<number, { article: Article; kind: Kind }>();
+  /** The question being answered in each tab. */
+  private asking = new Map<number, AbortController>();
 
   constructor(private readonly deps: SummarizerDeps) {}
 
@@ -74,6 +90,7 @@ export class Summarizer {
     this.states.delete(tabId);
     this.listeners.delete(tabId);
     this.selections.delete(tabId);
+    this.articles.delete(tabId);
     void clearCached(tabId);
   }
 
@@ -169,6 +186,7 @@ export class Summarizer {
     const tag: Source = kind === 'selection' ? { source: 'selection' } : {};
     let text = '';
 
+    this.articles.set(tabId, { article, kind });
     this.abortRunning(tabId);
     const controller = new AbortController();
     this.running.set(tabId, { controller, key, kind });
@@ -182,7 +200,8 @@ export class Summarizer {
       if (!force) {
         const cached = await getCached(tabId, key);
         if (cached) {
-          set({ status: 'done', title: cached.title, text: cached.text, truncated: cached.truncated, ...tag });
+          const qa = cached.qa?.length ? { qa: cached.qa } : {};
+          set({ status: 'done', title: cached.title, text: cached.text, truncated: cached.truncated, ...tag, ...qa });
           return;
         }
       }
@@ -213,11 +232,85 @@ export class Summarizer {
     const entry = await getLastCached(tabId);
     if (entry && !this.states.has(tabId)) {
       const tag: Source = entry.source === 'selection' ? { source: 'selection' } : {};
-      this.setState(tabId, { status: 'done', title: entry.title, text: entry.text, truncated: entry.truncated, ...tag });
+      const qa = entry.qa?.length ? { qa: entry.qa } : {};
+      this.setState(tabId, { status: 'done', title: entry.title, text: entry.text, truncated: entry.truncated, ...tag, ...qa });
     }
   }
 
+  /**
+   * Answers a question about the tab's finished summary, under it. One question at a time; a new
+   * summary drops the questions and stops an answer in progress.
+   */
+  async ask(tabId: number, rawQuestion: string): Promise<void> {
+    const question = rawQuestion.trim().slice(0, MAX_QUESTION_CHARS);
+    const state = this.states.get(tabId);
+    if (!question || state?.status !== 'done' || this.asking.has(tabId)) return;
+
+    const generation = this.generations.get(tabId);
+    const controller = new AbortController();
+    this.asking.set(tabId, controller);
+    const isCurrent = () => !controller.signal.aborted && this.generations.get(tabId) === generation;
+    const earlier = state.qa ?? [];
+    const index = earlier.length;
+    const update = (item: QaItem) => {
+      const current = this.states.get(tabId);
+      if (!isCurrent() || current?.status !== 'done') return;
+      const qa = [...(current.qa ?? [])];
+      qa[index] = item;
+      this.setState(tabId, { ...current, qa });
+    };
+    update({ question, answer: '', status: 'running' });
+
+    let answer = '';
+    try {
+      const settings = await this.deps.loadSettings();
+      const { article, kind } = await this.contextFor(tabId, state);
+      if (!isCurrent()) return;
+      const provider = this.deps.getProvider(settings.provider);
+      const availability = await provider.checkAvailability();
+      if (!availability.ok) return update({ question, answer, status: 'error', code: availability.code });
+      const history = earlier.filter((item) => item.status === 'done');
+      const prompt = buildQuestionPrompt(article, state.text, history, question, settings.language, kind === 'selection' ? 'selection' : 'article');
+      for await (const chunk of provider.summarize(prompt, settings.models[settings.provider], controller.signal)) {
+        if (!isCurrent()) return;
+        answer += chunk;
+        update({ question, answer, status: 'running' });
+      }
+      update({ question, answer, status: 'done' });
+    } catch (error) {
+      update({ question, answer, status: 'error', code: codeOf(error) });
+    } finally {
+      if (this.asking.get(tabId) === controller) this.asking.delete(tabId);
+      if (isCurrent()) await this.saveQuestions(tabId);
+    }
+  }
+
+  /** The text to answer from: the one summarized, or after a service worker restart the page again. */
+  private async contextFor(tabId: number, state: { title: string; text: string } & Source): Promise<{ article: Article; kind: Kind }> {
+    const known = this.articles.get(tabId);
+    if (known) return known;
+    if (state.source === 'selection') {
+      // The selection is gone with the restart; the summary of it is what is left.
+      return { article: { title: state.title, url: '', text: state.text, truncated: false }, kind: 'selection' };
+    }
+    const article = await this.deps.extract(tabId);
+    if (!article) throw new SummaryError('no_content');
+    this.articles.set(tabId, { article, kind: 'page' });
+    return { article, kind: 'page' };
+  }
+
+  /** Keeps the answered questions with the cached summary, so a reopened view shows them. */
+  private async saveQuestions(tabId: number): Promise<void> {
+    const state = this.states.get(tabId);
+    const entry = await getLastCached(tabId);
+    if (!entry || state?.status !== 'done') return;
+    const qa = (state.qa ?? []).filter((item) => item.status !== 'running');
+    await setCached(tabId, { ...entry, qa });
+  }
+
   private bumpGeneration(tabId: number): number {
+    this.asking.get(tabId)?.abort();
+    this.asking.delete(tabId);
     const next = (this.generations.get(tabId) ?? 0) + 1;
     this.generations.set(tabId, next);
     return next;

@@ -80,6 +80,7 @@ export default defineBackground(() => {
     });
     port.onMessage.addListener((msg: UiToBackground) => {
       if (msg?.type === 'start') void summarizer.start(tabId, { force: msg.force === true });
+      else if (msg?.type === 'ask' && typeof msg.question === 'string') void summarizer.ask(tabId, msg.question);
     });
     // The request keeps running when the UI closes; only the subscription ends.
     port.onDisconnect.addListener(unsubscribe);

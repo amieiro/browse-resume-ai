@@ -23,7 +23,7 @@ beforeEach(() => {
   // Show the message key so tests can see which message is shown.
   setMessages(new Proxy({}, { get: (_t, key) => `[${String(key)}]` }));
   root = document.createElement('div');
-  handlers = { onRegenerate: vi.fn(), onSettingsChange: vi.fn(), onOpenOptions: vi.fn() };
+  handlers = { onRegenerate: vi.fn(), onSettingsChange: vi.fn(), onOpenOptions: vi.fn(), onAsk: vi.fn() };
 });
 
 describe('summary view selectors', () => {
@@ -160,6 +160,59 @@ describe('summary view states', () => {
     expect(root.querySelector('[data-role="source"]')?.textContent).toBe('[ui_selection]');
     view.setState({ status: 'done', title: 'T', text: 'Text', truncated: false });
     expect(root.querySelector('[data-role="source"]')?.hasAttribute('hidden')).toBe(true);
+  });
+
+  describe('questions', () => {
+    const form = () => root.querySelector<HTMLFormElement>('form.ask')!;
+    const input = () => root.querySelector<HTMLInputElement>('input[name="question"]')!;
+    const done = { status: 'done' as const, title: 'T', text: 'Summary', truncated: false };
+
+    it('offers a question field under a finished summary only', () => {
+      const view = mount();
+      view.setState({ status: 'running', title: 'T', text: 'Sum', truncated: false });
+      expect(form().hidden).toBe(true);
+      view.setState(done);
+      expect(form().hidden).toBe(false);
+      expect(input().placeholder).toBe('[ui_ask_placeholder]');
+      expect(button('ask').textContent).toBe('[ui_ask]');
+    });
+
+    it('sends the question and clears the field', () => {
+      mount().setState(done);
+      input().value = 'Who?';
+      form().dispatchEvent(new Event('submit', { cancelable: true }));
+      expect(handlers.onAsk).toHaveBeenCalledWith('Who?');
+      expect(input().value).toBe('');
+    });
+
+    it('does not send an empty question', () => {
+      mount().setState(done);
+      input().value = '   ';
+      form().dispatchEvent(new Event('submit', { cancelable: true }));
+      expect(handlers.onAsk).not.toHaveBeenCalled();
+    });
+
+    it('shows each question with its answer as Markdown, and waits while one is answered', () => {
+      mount().setState({
+        ...done,
+        qa: [
+          { question: 'First?', answer: '**Yes**', status: 'done' },
+          { question: 'Second?', answer: '', status: 'running' },
+        ],
+      });
+      const items = root.querySelectorAll('.qa-item');
+      expect(items).toHaveLength(2);
+      expect(items[0]!.querySelector('.question')?.textContent).toBe('First?');
+      expect(items[0]!.querySelector('.answer strong')?.textContent).toBe('Yes');
+      expect(items[1]!.querySelector('.progress')).not.toBeNull();
+      expect(input().disabled).toBe(true);
+      expect(button('ask').disabled).toBe(true);
+    });
+
+    it('shows the error of a failed answer', () => {
+      mount().setState({ ...done, qa: [{ question: 'Q?', answer: '', status: 'error', code: 'usage_limit' }] });
+      expect(root.querySelector('.qa-item .error')?.textContent).toContain('[error_usage_limit]');
+    });
   });
 });
 

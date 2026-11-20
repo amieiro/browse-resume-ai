@@ -1,5 +1,6 @@
 import { browser } from 'wxt/browser';
 import type { Settings } from './settings';
+import type { QaItem } from './summarizer';
 
 export interface CachedSummary {
   key: string;
@@ -8,6 +9,8 @@ export interface CachedSummary {
   truncated: boolean;
   /** Set when the summary is of text the reader selected. */
   source?: 'selection';
+  /** Questions asked about the summary, with their answers. */
+  qa?: QaItem[];
 }
 
 type KeyInput = Pick<Settings, 'provider' | 'length' | 'language'> & { model: string };

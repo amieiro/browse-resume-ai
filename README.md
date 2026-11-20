@@ -8,6 +8,7 @@ keys, no pay-per-use billing.
   with your saved settings.
 - Select some text and right-click **Summarize the selection** to summarize only that part, for
   pages where the article is not found or when you want one section.
+- Ask questions about the page under the summary; the answers come from the page text only.
 - Choose the provider and model, the length (short, medium, long) and the summary language.
 - The summary appears in the side panel or in a popup; you pick which in the settings.
 - 201 languages, for both the summary and the interface: the languages of
@@ -52,6 +53,14 @@ installer scripts, not on a Windows machine yet. A Firefox build is planned.
 
 Real summaries of real pages, made with Claude Sonnet, in several languages and the three lengths.
 The interface follows the summary language here; both can be set apart in the settings.
+
+<img src="media/gallery/feature-selection.png" alt="Three selected paragraphs of a SecurityWeek article and their summary, marked Selected text, in the side panel" width="800">
+
+_Summarize the selection: select text, right-click, and only that part is summarized._
+
+<img src="media/gallery/feature-questions.png" alt="Two questions about a GrapheneOS thread and their answers under the summary in the side panel" width="800">
+
+_Questions about the page: the answers appear under the summary and come from the page text only._
 
 <img src="media/gallery/securityweek-en-US-short.png" alt="A short summary of SecurityWeek in English (United States), in the side panel" width="800">
 
@@ -181,6 +190,10 @@ To summarize only part of a page, select the text, right-click it and choose **S
 selection**. The summary is marked **Selected text**, and **Summarize again** repeats it for the same
 selection (with the length or language you pick). The right-click menu also has **Summarize the
 page**.
+
+Under a summary, the field **Ask a question about this page** answers questions about it, in the
+summary language and from the page text only; follow-up questions keep the earlier ones in mind.
+The questions and answers stay with the summary until the tab closes or a new summary starts.
 
 <img src="media/install/5-summary.png" alt="A summary of the Wikipedia article on the Galician language in the side panel" width="420">
 

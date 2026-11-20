@@ -1,7 +1,7 @@
 {
   "name": "browse-resume-ai",
   "description": "Summarize the current web page with one click, using your Claude or ChatGPT subscription.",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "license": "GPL-2.0-or-later",
   "type": "module",

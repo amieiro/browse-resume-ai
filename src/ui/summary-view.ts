@@ -2,12 +2,13 @@ import { t } from '@/lib/i18n';
 import { LANGUAGES } from '@/lib/languages';
 import { renderMarkdown } from '@/lib/markdown';
 import type { ProviderId, Settings, SummaryLength } from '@/lib/settings';
-import type { SummaryState } from '@/lib/summarizer';
+import { MAX_QUESTION_CHARS, type QaItem, type SummaryState } from '@/lib/summarizer';
 
 export interface SummaryViewHandlers {
   onRegenerate(): void;
   onSettingsChange(patch: Partial<Settings>): void;
   onOpenOptions(): void;
+  onAsk(question: string): void;
 }
 
 const PROVIDER_LABELS: Record<ProviderId, string> = { claude: 'Claude', codex: 'Codex' };
@@ -63,13 +64,20 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   summary.dataset.role = 'summary';
   summary.setAttribute('aria-live', 'polite');
   const notice = el('p', { className: 'notice', textContent: t('ui_truncated') });
+  const qaList = el('div', { className: 'qa' });
+  qaList.setAttribute('aria-live', 'polite');
+  const question = el('input', { name: 'question', type: 'text', placeholder: t('ui_ask_placeholder'), maxLength: MAX_QUESTION_CHARS });
+  question.setAttribute('aria-label', t('ui_ask_placeholder'));
+  const ask = el('button', { name: 'ask', type: 'submit', textContent: t('ui_ask') });
+  const askForm = el('form', { className: 'ask' }, question, ask);
   const copy = el('button', { name: 'copy', type: 'button', textContent: t('ui_copy') });
   const regenerate = el('button', { name: 'regenerate', type: 'button', className: 'primary' });
 
   root.replaceChildren(
     el('header', { className: 'toolbar' }, provider, model, length, language, options),
-    el('main', {}, source, title, progress, hint, error, summary, notice),
-    el('footer', { className: 'actions' }, copy, regenerate),
+    el('main', {}, source, title, progress, hint, error, summary, notice, qaList),
+    // The question field stays in the sticky footer, reachable however long the answers get.
+    el('footer', { className: 'actions' }, askForm, el('div', { className: 'buttons' }, copy, regenerate)),
   );
 
   function renderSelectors() {
@@ -100,6 +108,23 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     regenerate.textContent = s.status === 'error' ? t('ui_try_again') : t('ui_regenerate');
     regenerate.hidden = s.status === 'idle' || (s.status === 'error' && s.code === 'needs_click');
     regenerate.disabled = s.status === 'running';
+    renderQuestions(s.status === 'done' ? (s.qa ?? []) : []);
+    askForm.hidden = s.status !== 'done';
+  }
+
+  function renderQuestions(items: QaItem[]) {
+    qaList.replaceChildren(
+      ...items.map((item) => {
+        const answer = el('div', { className: 'answer' });
+        if (item.answer) renderMarkdown(item.answer, answer);
+        else if (item.status === 'running') answer.append(el('div', { className: 'progress', textContent: t('ui_working') }));
+        if (item.status === 'error') answer.append(el('div', { className: 'error', textContent: t(`error_${item.code ?? 'provider_failed'}`) }));
+        return el('div', { className: 'qa-item' }, el('p', { className: 'question', textContent: item.question }), answer);
+      }),
+    );
+    const busy = items.some((item) => item.status === 'running');
+    question.disabled = busy;
+    ask.disabled = busy;
   }
 
   provider.addEventListener('change', () => {
@@ -120,6 +145,13 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     handlers.onSettingsChange({ language: settings.language });
   });
   options.addEventListener('click', () => handlers.onOpenOptions());
+  askForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const text = question.value.trim();
+    if (!text || question.disabled) return;
+    handlers.onAsk(text);
+    question.value = '';
+  });
   regenerate.addEventListener('click', () => handlers.onRegenerate());
   copy.addEventListener('click', () => {
     const text = copyableText(state);

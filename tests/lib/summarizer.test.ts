@@ -348,5 +348,113 @@ describe('Summarizer', () => {
       expect(p.calls).toBe(2);
     });
   });
+
+  describe('questions', () => {
+    const answers = (...parts: string[]) => {
+      let n = 0;
+      return provider(() => (n++ === 0 ? chunks('Summary') : chunks(...parts)));
+    };
+
+    it('answers a question about the summarized page, after the summary', async () => {
+      const p = answers('The ', 'answer');
+      const t = setup(p);
+      await t.s.start(1, { force: false });
+      await t.s.ask(1, '  Who wrote it?  ');
+      expect(p.prompts[1]).toContain('Question: Who wrote it?');
+      expect(p.prompts[1]).toContain('text');
+      expect(p.prompts[1]).toContain('Summary');
+      expect(t.s.getState(1)).toMatchObject({
+        status: 'done',
+        text: 'Summary',
+        qa: [{ question: 'Who wrote it?', answer: 'The answer', status: 'done' }],
+      });
+    });
+
+    it('streams the answer', async () => {
+      const t = setup(answers('A', 'B'));
+      await t.s.start(1, { force: false });
+      t.listen();
+      await t.s.ask(1, 'Q?');
+      const answersSeen = t.states.filter((st) => 'qa' in st && st.qa).map((st) => ('qa' in st ? st.qa![0]!.answer : ''));
+      expect(answersSeen).toEqual(['', 'A', 'AB', 'AB']);
+    });
+
+    it('sends the earlier questions and answers with a follow-up', async () => {
+      const p = answers('First answer');
+      const t = setup(p);
+      await t.s.start(1, { force: false });
+      await t.s.ask(1, 'First?');
+      await t.s.ask(1, 'And then?');
+      expect(p.prompts[2]).toContain('Q: First?');
+      expect(p.prompts[2]).toContain('A: First answer');
+      expect((t.s.getState(1) as { qa: unknown[] }).qa).toHaveLength(2);
+    });
+
+    it('ignores a question when there is no finished summary, or an empty one', async () => {
+      const p = answers('x');
+      const t = setup(p);
+      await t.s.ask(1, 'Q?');
+      await t.s.start(1, { force: false });
+      await t.s.ask(1, '   ');
+      expect(p.calls).toBe(1);
+      expect(t.s.getState(1)).not.toHaveProperty('qa');
+    });
+
+    it('keeps an error on the question and the summary as it was', async () => {
+      let n = 0;
+      const p = provider(() =>
+        n++ === 0
+          ? chunks('Summary')
+          : (async function* () {
+              throw new SummaryError('usage_limit', 'later');
+            })(),
+      );
+      const t = setup(p);
+      await t.s.start(1, { force: false });
+      await t.s.ask(1, 'Q?');
+      expect(t.s.getState(1)).toMatchObject({ status: 'done', text: 'Summary', qa: [{ status: 'error', code: 'usage_limit' }] });
+    });
+
+    it('a new summary drops the questions and stops a running answer', async () => {
+      let n = 0;
+      let answerSignal: AbortSignal | undefined;
+      const p = provider((signal) => (n++ === 1 ? ((answerSignal = signal), waitForAbort(signal)) : chunks('Summary')));
+      const t = setup(p);
+      await t.s.start(1, { force: false });
+      const asking = t.s.ask(1, 'Q?');
+      await vi.waitFor(() => expect(answerSignal).toBeDefined());
+      await t.s.start(1, { force: true });
+      await asking;
+      expect(answerSignal!.aborted).toBe(true);
+      expect(t.s.getState(1)).toMatchObject({ status: 'done', text: 'Summary' });
+      expect(t.s.getState(1)).not.toHaveProperty('qa');
+    });
+
+    it('keeps the questions for a restarted service worker, and reads the page again for a new one', async () => {
+      const p = answers('Answer');
+      await (async () => {
+        const t = setup(p);
+        await t.s.start(1, { force: false });
+        await t.s.ask(1, 'First?');
+      })();
+      const t2 = setup(answers('Second answer'));
+      const seen: SummaryState[] = [];
+      t2.s.subscribe(1, (st) => seen.push(st));
+      await vi.waitFor(() => expect(seen.at(-1)).toMatchObject({ qa: [{ question: 'First?', answer: 'Answer' }] }));
+      await t2.s.ask(1, 'Second?');
+      expect(t2.deps.extract).toHaveBeenCalled();
+      expect((t2.s.getState(1) as { qa: unknown[] }).qa).toHaveLength(2);
+    });
+
+    it('answers about a selection from the selected text', async () => {
+      const p = answers('Answer');
+      const t = setup(p);
+      await t.s.startSelection(1, { url: 'https://e.com/a', title: 'Page', selectionText: '' });
+      await t.s.ask(1, 'Q?');
+      expect(p.prompts[1]).toContain('The selected words.');
+      expect(p.prompts[1]).toContain('excerpt the reader selected');
+      expect(t.deps.extract).not.toHaveBeenCalled();
+    });
+  });
 });
 

@@ -38,6 +38,16 @@ const SHOTS = [
   { name: 'grapheneos-it-IT-short', page: 'grapheneos', language: 'it-IT', length: 'short', mode: 'panel' },
   { name: 'grapheneos-ja-medium', page: 'grapheneos', language: 'ja', length: 'medium', mode: 'popup' },
   { name: 'grapheneos-ar-long', page: 'grapheneos', language: 'ar', length: 'long', mode: 'panel' },
+  // The two features shown in the README next to the summaries above.
+  {
+    name: 'feature-selection', page: 'securityweek', language: 'en-US', length: 'medium', mode: 'panel',
+    // Selects these paragraphs of the article, as a reader would before Summarize the selection.
+    select: { from: 'One of the security defects', to: 'PHP said last month' },
+  },
+  {
+    name: 'feature-questions', page: 'grapheneos', language: 'en-US', length: 'short', mode: 'panel',
+    questions: ['What does GrapheneOS ask regulators to do?', 'Which phone makers does it mention?'],
+  },
 ];
 
 const HEIGHT = 820;
@@ -122,6 +132,13 @@ async function captureArticle(page, title) {
     window.scrollTo(0, heading ? Math.max(0, heading.getBoundingClientRect().top + window.scrollY - 200) : 0);
   }, title);
   await sleep(800);
+  await hideFloating(page);
+  await sleep(300);
+  return page.screenshot({ encoding: 'base64' });
+}
+
+/** Hides what floats over the text (prompts, bars), keeping the site's header bar. */
+async function hideFloating(page) {
   await page.evaluate(() => {
     for (const el of document.querySelectorAll('body *')) {
       const style = getComputedStyle(el);
@@ -132,8 +149,28 @@ async function captureArticle(page, title) {
       if (!header) el.style.setProperty('display', 'none', 'important');
     }
   });
-  await sleep(300);
-  return page.screenshot({ encoding: 'base64' });
+}
+
+/**
+ * Selects the paragraphs from the one that contains `from` to the one that contains `to`, scrolls
+ * them into view and returns the selected text (what Summarize the selection reads).
+ */
+async function selectParagraphs(page, { from, to }) {
+  const text = await page.evaluate((a, b) => {
+    const paragraphs = [...document.querySelectorAll('p')];
+    const first = paragraphs.find((p) => p.textContent.includes(a));
+    const last = paragraphs.find((p) => p.textContent.includes(b));
+    if (!first || !last) return null;
+    window.scrollTo(0, first.getBoundingClientRect().top + window.scrollY - 260);
+    const range = document.createRange();
+    range.setStartBefore(first);
+    range.setEndAfter(last);
+    getSelection().removeAllRanges();
+    getSelection().addRange(range);
+    return getSelection().toString();
+  }, from, to);
+  if (!text) throw new Error(`Paragraphs not found: ${from} … ${to}`);
+  return text;
 }
 
 /** The extension's summary view for this shot, with the given summary restored from session storage. */
@@ -166,6 +203,15 @@ async function captureView(browser, id, shot, entry) {
   );
   await view.reload();
   await sleep(1500);
+  // Questions are under the summary: scroll to show the end of the summary and the answers.
+  if (entry.qa) {
+    await view.evaluate(() => {
+      const first = document.querySelector('.qa-item');
+      const toolbar = document.querySelector('.toolbar').getBoundingClientRect().height;
+      if (first) window.scrollTo(0, first.getBoundingClientRect().top + window.scrollY - toolbar - 140);
+    });
+  }
+  await sleep(300);
   let clip;
   if (shot.mode === 'popup') {
     // The popup page is the side panel page with the popup's size, which is what the popup shows.
@@ -225,6 +271,7 @@ try {
 
   const id = await browser.installExtension(EXTENSION_DIR);
   const buildPrompt = await loadPromptBuilder();
+  const buildQuestionPrompt = await loadPromptBuilder('src/lib/question-prompt.ts', 'buildQuestionPrompt');
   const extracted = {};
   for (const shot of SHOTS.filter((s) => !ONLY || s.name === ONLY)) {
     const width = shot.mode === 'panel' ? WINDOW_WIDTH - PANEL_WIDTH - 1 : WINDOW_WIDTH;
@@ -232,11 +279,33 @@ try {
     extracted[shot.page] ??= await page.evaluate(extractScript);
     const article = extracted[shot.page];
     if (!article) throw new Error(`No article text extracted from ${PAGES[shot.page]}`);
-    console.log(`summarizing ${shot.page} (${shot.length}, ${shot.language}) with ${MODEL}...`);
-    const text = await summarizeWithHost(buildPrompt(article, shot.length, shot.language), { model: MODEL });
-    const articlePng = await captureArticle(page, article.title);
+    console.log(`summarizing ${shot.name} (${shot.length}, ${shot.language}) with ${MODEL}...`);
+    let articlePng;
+    const entry = { key: 'gallery', title: article.title, truncated: article.truncated };
+    if (shot.select) {
+      await dismissOverlays(page);
+      const selected = await selectParagraphs(page, shot.select);
+      const excerpt = { ...article, text: selected, truncated: false };
+      entry.text = await summarizeWithHost(buildPrompt(excerpt, shot.length, shot.language, 'selection'), { model: MODEL });
+      Object.assign(entry, { source: 'selection', truncated: false });
+      await sleep(500);
+      await hideFloating(page);
+      await sleep(300);
+      articlePng = await page.screenshot({ encoding: 'base64' });
+    } else {
+      entry.text = await summarizeWithHost(buildPrompt(article, shot.length, shot.language), { model: MODEL });
+      articlePng = await captureArticle(page, article.title);
+    }
+    if (shot.questions) {
+      entry.qa = [];
+      for (const question of shot.questions) {
+        console.log(`  asking: ${question}`);
+        const prompt = buildQuestionPrompt(article, entry.text, entry.qa, question, shot.language);
+        entry.qa.push({ question, answer: await summarizeWithHost(prompt, { model: MODEL }), status: 'done' });
+      }
+    }
     await page.close();
-    const view = await captureView(browser, id, shot, { key: 'gallery', title: article.title, text, truncated: article.truncated });
+    const view = await captureView(browser, id, shot, entry);
     await compose(browser, shot, articlePng, view);
   }
 } finally {

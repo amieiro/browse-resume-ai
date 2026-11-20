@@ -27,6 +27,7 @@ export async function startSummaryApp(root: HTMLElement, options: Options): Prom
     onRegenerate: () => client.send({ type: 'start', force: true }),
     onSettingsChange: (patch) => void saveSettings(patch),
     onOpenOptions: () => void browser.runtime.openOptionsPage(),
+    onAsk: (question) => client.send({ type: 'ask', question }),
   });
 
   browser.storage.onChanged.addListener((changes, area) => {
