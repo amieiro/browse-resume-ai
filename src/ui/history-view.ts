@@ -1,13 +1,17 @@
 import type { HistoryEntry } from '@/lib/history';
 import { t } from '@/lib/i18n';
 import { LANGUAGES } from '@/lib/languages';
+import { browserExport, type ExportActions } from '@/lib/export';
 import { renderMarkdown } from '@/lib/markdown';
 import { searchHistory } from '@/lib/history';
+import { exportMenu } from './export-menu';
 
 export interface HistoryViewDeps {
   onDelete(id: string): void;
   onClear(): void;
   onCopy(text: string): Promise<void>;
+  /** Copy, download and open; the browser ones unless given (tests). */
+  exportActions?: ExportActions;
 }
 
 /** How long the Clear history button waits for the second click that confirms it. */
@@ -84,13 +88,18 @@ export function mountHistoryView(root: HTMLElement, initial: HistoryEntry[], dep
         setTimeout(() => (copy.textContent = t('ui_copy')), 1500);
       });
     });
+    const model = `${PROVIDER_LABELS[entry.provider] ?? entry.provider} · ${entry.model}`;
+    const exporter = exportMenu(
+      () => ({ title: entry.title || entry.url, url: entry.url, text: entry.text, qa: entry.qa, createdAt: entry.createdAt, model }),
+      deps.exportActions ?? browserExport,
+    );
     const remove = el('button', { type: 'button', name: 'delete', textContent: t('history_delete') });
     remove.addEventListener('click', () => {
       entries = entries.filter((e) => e.id !== entry.id);
       deps.onDelete(entry.id);
       render();
     });
-    const item = el('article', { className: 'entry' }, el('h2', {}, title), meta, summary, ...qa, el('div', { className: 'entry-actions' }, copy, remove));
+    const item = el('article', { className: 'entry' }, el('h2', {}, title), meta, summary, ...qa, el('div', { className: 'entry-actions' }, copy, exporter.element, remove));
     item.dataset.id = entry.id;
     return item;
   }

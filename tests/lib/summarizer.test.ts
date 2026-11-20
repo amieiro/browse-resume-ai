@@ -97,6 +97,16 @@ describe('Summarizer', () => {
     expect(t.s.getState(1)).toMatchObject({ status: 'done', text: 'Hello' });
   });
 
+  it('keeps the page address in the state, also from the cache', async () => {
+    const p = provider(() => chunks('Hello'));
+    const t = setup(p);
+    await t.s.start(1, { force: false });
+    expect(t.s.getState(1)).toMatchObject({ status: 'done', url: article.url });
+    const t2 = setup(p);
+    await t2.s.start(1, { force: false });
+    expect(t2.s.getState(1)).toMatchObject({ status: 'done', url: article.url });
+  });
+
   it('serves the cache to a new Summarizer (service worker restart)', async () => {
     const p = provider(() => chunks('Hello'));
     await setup(p).s.start(1, { force: false });

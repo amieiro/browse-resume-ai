@@ -1,9 +1,11 @@
 import { t } from '@/lib/i18n';
 import { LANGUAGES } from '@/lib/languages';
+import { browserExport, type ExportActions } from '@/lib/export';
 import { renderMarkdown } from '@/lib/markdown';
 import { styleOptions } from '@/lib/styles';
 import type { ProviderId, Settings, SummaryLength } from '@/lib/settings';
 import { MAX_QUESTION_CHARS, type QaItem, type SummaryState } from '@/lib/summarizer';
+import { exportMenu } from './export-menu';
 
 export interface SummaryViewHandlers {
   onRegenerate(): void;
@@ -11,6 +13,8 @@ export interface SummaryViewHandlers {
   onOpenOptions(): void;
   onAsk(question: string): void;
   onOpenHistory(): void;
+  /** Copy, download and open; the browser ones unless given (tests). */
+  exportActions?: ExportActions;
 }
 
 const PROVIDER_LABELS: Record<ProviderId, string> = { claude: 'Claude', codex: 'Codex', ollama: 'Ollama' };
@@ -77,6 +81,10 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   history.setAttribute('aria-label', t('ui_history'));
   const copy = el('button', { name: 'copy', type: 'button', textContent: t('ui_copy') });
   const regenerate = el('button', { name: 'regenerate', type: 'button', className: 'primary' });
+  const exporter = exportMenu(() => {
+    if (state.status !== 'done') return null;
+    return { title: state.title, url: state.url, text: state.text, qa: state.qa, createdAt: Date.now() };
+  }, handlers.exportActions ?? browserExport);
 
   root.replaceChildren(
     // Two rows: who summarizes (provider, model), then how (length, language, style).
@@ -88,7 +96,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     ),
     el('main', {}, source, title, progress, hint, error, summary, notice, qaList),
     // The question field stays in the sticky footer, reachable however long the answers get.
-    el('footer', { className: 'actions' }, askForm, el('div', { className: 'buttons' }, history, el('span', { className: 'spacer' }), copy, regenerate)),
+    el('footer', { className: 'actions' }, askForm, el('div', { className: 'buttons' }, history, el('span', { className: 'spacer' }), exporter.element, copy, regenerate)),
   );
 
   function renderSelectors() {
@@ -118,6 +126,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     else summary.replaceChildren();
     notice.hidden = !(hasContent && s.truncated && s.text);
     copy.disabled = !copyableText(s);
+    exporter.setDisabled(s.status !== 'done');
     regenerate.textContent = s.status === 'error' ? t('ui_try_again') : t('ui_regenerate');
     regenerate.hidden = s.status === 'idle' || (s.status === 'error' && s.code === 'needs_click');
     regenerate.disabled = s.status === 'running';

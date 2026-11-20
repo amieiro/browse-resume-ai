@@ -7,7 +7,7 @@ import type { ProviderId, Settings } from './settings';
 import { SummaryError, type Provider, type SummaryErrorCode } from '@/providers/types';
 
 /** What a summary is of: the page's article, or text the reader selected (marked with source). */
-type Source = { source?: 'selection' };
+type Source = { source?: 'selection'; /** The page the summary is of. */ url?: string };
 
 /** A question about the summarized page and its answer, shown under the summary. */
 export interface QaItem {
@@ -193,7 +193,7 @@ export class Summarizer {
 
   private async run(tabId: number, article: Article, settings: Settings, key: string, kind: Kind, force: boolean): Promise<void> {
     const { title, truncated } = article;
-    const tag: Source = kind === 'selection' ? { source: 'selection' } : {};
+    const tag: Source = { ...(kind === 'selection' ? { source: 'selection' as const } : {}), ...(article.url ? { url: article.url } : {}) };
     let text = '';
 
     this.articles.set(tabId, { article, kind });
@@ -219,7 +219,7 @@ export class Summarizer {
 
       const provider = this.deps.getProvider(settings.provider);
       const availability = await provider.checkAvailability();
-      if (!availability.ok) return set(errorState(availability.code, { title, text, truncated }, kind));
+      if (!availability.ok) return set(errorState(availability.code, { title, text, truncated, url: tag.url }, kind));
 
       set({ status: 'running', title, text, truncated, ...tag });
       const prompt = buildPrompt(article, settings.length, settings.language, kind === 'selection' ? 'selection' : 'article', styleInstruction(settings));
@@ -234,7 +234,7 @@ export class Summarizer {
       await setCached(tabId, { key, title, text, truncated, ...tag, ...(historyId ? { historyId } : {}) });
       set({ status: 'done', title, text, truncated, ...tag });
     } catch (error) {
-      set(errorState(codeOf(error), { title, text, truncated }, kind, detailOf(error)));
+      set(errorState(codeOf(error), { title, text, truncated, url: tag.url }, kind, detailOf(error)));
     } finally {
       if (this.running.get(tabId)?.controller === controller) this.running.delete(tabId);
     }
@@ -244,7 +244,7 @@ export class Summarizer {
   private async restore(tabId: number): Promise<void> {
     const entry = await getLastCached(tabId);
     if (entry && !this.states.has(tabId)) {
-      const tag: Source = entry.source === 'selection' ? { source: 'selection' } : {};
+      const tag: Source = { ...(entry.source === 'selection' ? { source: 'selection' as const } : {}), ...(entry.url ? { url: entry.url } : {}) };
       const qa = entry.qa?.length ? { qa: entry.qa } : {};
       this.setState(tabId, { status: 'done', title: entry.title, text: entry.text, truncated: entry.truncated, ...tag, ...qa });
     }
@@ -369,7 +369,7 @@ export class Summarizer {
 
 function errorState(
   code: SummaryErrorCode,
-  content: { title: string; text: string; truncated: boolean },
+  { url, ...content }: { title: string; text: string; truncated: boolean; url?: string },
   kind: Kind,
   detail?: string,
 ): SummaryState {
@@ -377,6 +377,7 @@ function errorState(
     status: 'error',
     code,
     ...content,
+    ...(url ? { url } : {}),
     ...(detail ? { detail } : {}),
     ...(kind === 'selection' ? { source: 'selection' as const } : {}),
   };

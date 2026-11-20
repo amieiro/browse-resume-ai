@@ -56,6 +56,8 @@ const SHOTS = [
   // YouTube's cookie notice is rejected like any other; the extractor opens the transcript itself.
   // A summary style: the same article as the first shot, in simple words.
   { name: 'feature-style', page: 'securityweek', language: 'en-US', length: 'medium', mode: 'panel', style: 'simple' },
+  // The export menu open over a finished summary.
+  { name: 'feature-export', page: 'grapheneos', language: 'en-US', length: 'short', mode: 'panel', exportMenu: true },
   { name: 'feature-thread', page: 'hackernews', language: 'en-US', length: 'medium', mode: 'panel', top: true },
   { name: 'feature-youtube', page: 'youtube', language: 'en-US', length: 'medium', mode: 'panel', top: true },
   // The history page, with short summaries of the pages above.
@@ -230,6 +232,7 @@ async function captureView(browser, id, shot, entry) {
       if (first) window.scrollTo(0, first.getBoundingClientRect().top + window.scrollY - toolbar - 140);
     });
   }
+  if (shot.exportMenu) await view.click('button[name="export"]');
   await sleep(300);
   let clip;
   if (shot.mode === 'popup') {
@@ -356,7 +359,7 @@ try {
     if (!article) throw new Error(`No article text extracted from ${PAGES[shot.page]}`);
     console.log(`summarizing ${shot.name} (${shot.length}, ${shot.language}) with ${MODEL}...`);
     let articlePng;
-    const entry = { key: 'gallery', title: article.title, truncated: article.truncated };
+    const entry = { key: 'gallery', title: article.title, url: article.url, truncated: article.truncated };
     if (shot.select) {
       await dismissOverlays(page);
       const selected = await selectParagraphs(page, shot.select);

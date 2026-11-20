@@ -82,6 +82,24 @@ describe('history view', () => {
     expect(titles()).toEqual(['PHP security']);
   });
 
+  it('exports one summary as a note with its details', async () => {
+    const exportActions = { copy: vi.fn(async () => {}), download: vi.fn(), open: vi.fn() };
+    mountHistoryView(root, entries, { ...deps, exportActions });
+    const second = root.querySelectorAll('.entry')[1]!;
+    expect(button('export', second).getAttribute('aria-expanded')).toBe('false');
+    button('export', second).click();
+    expect(button('export', second).getAttribute('aria-expanded')).toBe('true');
+    button('export-download', second).click();
+    await vi.waitFor(() => expect(exportActions.download).toHaveBeenCalled());
+    const [name, note] = exportActions.download.mock.calls[0]!;
+    expect(name).toBe('PHP security.md');
+    expect(note).toContain('source: "https://e.com/a"');
+    expect(note).toContain('created: "2026-11-20T10:00:00.000Z"');
+    expect(note).toContain('model: "Claude · sonnet"');
+    expect(note).toContain('### Who?\n\nPHP team');
+    expect(button('export', second).getAttribute('aria-expanded')).toBe('false');
+  });
+
   it('clears everything only on a second click', () => {
     vi.useFakeTimers();
     mountHistoryView(root, entries, deps);

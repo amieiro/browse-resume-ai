@@ -10,6 +10,8 @@ a model running on your own computer through Ollama. No API keys, no pay-per-use
   pages where the article is not found or when you want one section.
 - Ask questions about the page under the summary; the answers come from the page text only.
 - A history of your summaries, with search, kept only on your computer.
+- Export a summary as Markdown: copy it, save it as a `.md` file, or open it as a note in
+  [Obsidian](https://obsidian.md/).
 - YouTube videos are summarized from their transcript.
 - Discussions on Hacker News, Reddit, Lobsters and Discourse forums are summarized as a debate: the
   post, the main points of view, and where people agree and disagree.
@@ -76,6 +78,10 @@ _PDFs: a paper from arXiv in Chrome's PDF viewer, summarized from its text._
 <img src="media/gallery/feature-style.png" alt="The SecurityWeek article summarized in the Simple style, which explains each technical term" width="800">
 
 _Styles: the same article in the Simple style, which explains each technical term._
+
+<img src="media/gallery/feature-export.png" alt="The Export menu open under a summary in the side panel, with Copy as Markdown, Download .md file and Open in Obsidian" width="800">
+
+_Export: copy the summary as Markdown, save it as a .md file or open it in Obsidian._
 
 <img src="media/gallery/feature-thread.png" alt="A Hacker News thread with over 2,000 comments and a summary of the debate in the side panel" width="800">
 
@@ -235,6 +241,14 @@ with all of them, newest first, a search that ignores case and accents, and butt
 delete each one or clear them all. It keeps the last 500 summaries in the extension's storage on
 this computer and is never sent anywhere; turn it off in the settings with **Keep a history of
 summaries**.
+
+The **Export** button under a finished summary (and on each entry of the history) has three
+options. **Copy as Markdown** copies the page title, a link to the page, the summary and the
+answered questions. **Download .md file** saves the same text as a file named after the page, with
+front matter (`title`, `source`, `created`) that note apps such as Obsidian read. **Open in
+Obsidian** copies that note and opens Obsidian with an `obsidian://new` link, which creates it in
+the vault you opened last; Chrome asks the first time whether to open Obsidian. The link takes the
+note from the clipboard, so a long summary fits.
 
 On Hacker News, Reddit, Lobsters and Discourse forums, a discussion is read as the post and its
 comments, with their authors, points and reply depth, so the summary describes the debate (the

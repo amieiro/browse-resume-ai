@@ -239,3 +239,52 @@ describe('summary view states', () => {
   });
 });
 
+describe('summary view export', () => {
+  const exportActions = () => ({ copy: vi.fn(async (_text: string) => {}), download: vi.fn(), open: vi.fn() });
+
+  it('is enabled only for a finished summary', () => {
+    const view = mount();
+    expect(button('export').disabled).toBe(true);
+    view.setState({ status: 'running', title: 'T', text: 'Part', truncated: false });
+    expect(button('export').disabled).toBe(true);
+    view.setState({ status: 'error', code: 'provider_failed', title: 'T', text: 'Part', truncated: false });
+    expect(button('export').disabled).toBe(true);
+    view.setState({ status: 'done', title: 'T', text: 'Text', truncated: false });
+    expect(button('export').disabled).toBe(false);
+  });
+
+  it('opens a menu and copies the summary as Markdown with its title, link and answers', async () => {
+    const actions = exportActions();
+    handlers.exportActions = actions as never;
+    const view = mount();
+    view.setState({
+      status: 'done', title: 'Page', url: 'https://e.com/p', text: '- a', truncated: false,
+      qa: [{ question: 'Q?', answer: 'A.', status: 'done' }],
+    });
+    const menu = root.querySelector<HTMLElement>('.export-menu')!;
+    expect(menu.hidden).toBe(true);
+    button('export').click();
+    expect(menu.hidden).toBe(false);
+    button('export-markdown').click();
+    expect(menu.hidden).toBe(true);
+    await vi.waitFor(() => expect(actions.copy).toHaveBeenCalledWith('# Page\n\n<https://e.com/p>\n\n- a\n\n### Q?\n\nA.\n'));
+    await vi.waitFor(() => expect(button('export').textContent).toBe('[ui_copied]'));
+  });
+
+  it('sends the note to Obsidian through the clipboard', async () => {
+    const actions = exportActions();
+    handlers.exportActions = actions as never;
+    mount().setState({ status: 'done', title: 'Page', url: 'https://e.com/p', text: 'x', truncated: false });
+    button('export').click();
+    button('export-obsidian').click();
+    await vi.waitFor(() => expect(actions.open).toHaveBeenCalledWith('obsidian://new?name=Page&clipboard'));
+    expect(actions.copy.mock.calls[0]![0]).toMatch(/^---\ntitle: "Page"\nsource: "https:\/\/e.com\/p"\n/);
+  });
+
+  it('closes the menu with Escape', () => {
+    mount().setState({ status: 'done', title: 'Page', text: 'x', truncated: false });
+    button('export').click();
+    root.querySelector('.export')!.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+    expect(root.querySelector<HTMLElement>('.export-menu')!.hidden).toBe(true);
+  });
+});

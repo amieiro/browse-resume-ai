@@ -10,6 +10,8 @@ export interface CachedSummary {
   truncated: boolean;
   /** Set when the summary is of text the reader selected. */
   source?: 'selection';
+  /** The page the summary is of. */
+  url?: string;
   /** Questions asked about the summary, with their answers. */
   qa?: QaItem[];
   /** The summary's entry in the history, to add the questions to it. */
