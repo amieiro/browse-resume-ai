@@ -40,11 +40,13 @@ keys, no pay-per-use billing.
   ISO 3166 region, e.g. `gl-ES`, `pt-BR`) and ISO 639 names. The interface follows the browser
   language or the one you choose in the settings.
 
-Status: personal project, Chrome on macOS. A Firefox build is planned.
+Status: personal project. Works on macOS, Linux and Windows with Google Chrome (and Chromium on
+Linux and Windows). macOS and Linux are tested end to end; Windows is tested only through its
+installer scripts, not on a Windows machine yet. A Firefox build is planned.
 
 ## Requirements
 
-- macOS and Google Chrome.
+- macOS, Linux or Windows, with Google Chrome (or Chromium on Linux and Windows).
 - Node.js 18 or later.
 - At least one of:
   - [Claude Code](https://docs.claude.com/en/docs/claude-code), logged in with your Claude
@@ -59,10 +61,20 @@ You do not need to build anything; you only need Node.js for the local component
 
 ### 1. Get the code and install the local component
 
+macOS and Linux:
+
 ```sh
 git clone https://github.com/amieiro/browse-resume-ai.git
 cd browse-resume-ai
 ./native-host/install.sh
+```
+
+Windows (PowerShell):
+
+```powershell
+git clone https://github.com/amieiro/browse-resume-ai.git
+cd browse-resume-ai
+powershell -ExecutionPolicy Bypass -File native-host\install.ps1
 ```
 
 The installer prints the `node`, `claude` and `codex` it found. It needs at least one of `claude`
@@ -82,7 +94,8 @@ Click **Load unpacked**.
 
 In the folder picker, choose the `dist/chrome` folder inside the repository and click **Select**.
 On macOS you can press <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> and paste the full path, for
-example `~/browse-resume-ai/dist/chrome`.
+example `~/browse-resume-ai/dist/chrome`; on Windows and Linux, paste the path in the picker's
+address or location bar (<kbd>Ctrl</kbd>+<kbd>L</kbd> on Linux).
 
 ### 4. Check the extension ID
 
@@ -101,7 +114,7 @@ If the icon is not in the toolbar, open the puzzle-piece menu next to the addres
 
 Click the gear in the panel, or **Details → Extension options** on the card. Both providers should
 say **Ready**. If one says the local component is not installed, run `./native-host/install.sh`
-again. Here you also choose the interface language, where summaries are shown (side panel or
+again (`install.ps1` on Windows). Here you also choose the interface language, where summaries are shown (side panel or
 popup), and the defaults.
 
 <img src="media/install/4-settings.png" alt="The settings page with the interface language and both providers ready" width="800">
@@ -118,8 +131,10 @@ at the top change the provider, model, length and language for the next summary.
 ```sh
 cd browse-resume-ai
 git pull
-./native-host/install.sh   # only needed if native-host/ changed, harmless otherwise
+./native-host/install.sh   # Windows: powershell -ExecutionPolicy Bypass -File native-host\install.ps1
 ```
+
+Running the installer again is only needed if `native-host/` changed, and it is harmless otherwise.
 
 Then, in `chrome://extensions`, click the reload arrow on the extension card (marked in the
 screenshot of step 4), or **Update** at the top of the page. Chrome does not pick up the new files
@@ -141,9 +156,19 @@ runs in an empty temporary directory that is deleted afterwards, and no session 
 ./native-host/uninstall.sh
 ```
 
-The installer writes a launcher to `~/Library/Application Support/browse-resume-ai/` and the host
-manifest to `~/Library/Application Support/Google/Chrome/NativeMessagingHosts/`. The host only
-accepts connections from this extension's ID.
+On Windows, `native-host\install.ps1` and `native-host\uninstall.ps1` do the same.
+
+Where the installer writes the launcher and the host manifest:
+
+| System | Launcher | Host manifest |
+|---|---|---|
+| macOS | `~/Library/Application Support/browse-resume-ai/launcher.sh` | `~/Library/Application Support/Google/Chrome/NativeMessagingHosts/` |
+| Linux | `~/.local/share/browse-resume-ai/launcher.sh` | `~/.config/google-chrome/NativeMessagingHosts/` and `~/.config/chromium/NativeMessagingHosts/` |
+| Windows | `%LOCALAPPDATA%\browse-resume-ai\launcher.bat` | Next to the launcher, registered under `HKCU\Software\Google\Chrome\NativeMessagingHosts` and `HKCU\Software\Chromium\NativeMessagingHosts` |
+
+The host only accepts connections from this extension's ID. On Windows, npm installs `claude` and
+`codex` as `.cmd` files, which Node can only start through a shell; the installer stores the
+JavaScript file they run instead, so the host never goes through `cmd.exe`.
 
 ## Extension ID
 
@@ -192,11 +217,13 @@ to configure.
 1. Check the prerequisites. Stop and tell the user what is missing if any check fails.
 
    ```sh
-   uname                  # must print Darwin (the installer supports macOS only)
+   uname                  # Darwin or Linux; on Windows use the PowerShell installer
    node --version         # 18 or later
    command -v claude      # Claude Code, for the Claude provider
    command -v codex       # Codex CLI, for the Codex provider (at least one of the two)
    ```
+
+   On Windows, check with `Get-Command node, claude, codex` in PowerShell.
 
    Do not log the user in yourself. If `claude` or `codex` is not logged in, ask the user to run
    `claude` (then `/login`) or `codex login`.
@@ -209,14 +236,16 @@ to configure.
    ./native-host/install.sh   # prints the node, claude and codex paths it found
    ```
 
+   On Windows: `powershell -ExecutionPolicy Bypass -File native-host\install.ps1`.
+
 3. Check that the host answers. This must print a `pong` with `claudeFound` and/or `codexFound`
-   set to `true`:
+   set to `true`. Set `LAUNCHER` to the launcher path the installer printed:
 
    ```sh
-   node --input-type=module -e "
+   LAUNCHER="$HOME/Library/Application Support/browse-resume-ai/launcher.sh" node --input-type=module -e "
    import { spawn } from 'node:child_process';
    import { encodeMessage, createDecoder } from './native-host/lib/framing.mjs';
-   const host = spawn(process.env.HOME + '/Library/Application Support/browse-resume-ai/launcher.sh');
+   const host = spawn(process.env.LAUNCHER, { shell: process.platform === 'win32' });
    host.stdout.on('data', createDecoder((m) => { console.log(JSON.stringify(m)); host.stdin.end(); }));
    host.stdin.write(encodeMessage({ type: 'ping' }));
    "
@@ -268,6 +297,8 @@ npm run screenshots  # regenerate media/install/*.png (needs the native host ins
 npm run readme-toc   # regenerate the table of contents at the top of this README
 npm test          # unit tests (extension and native host)
 npm run compile   # type check
+npm run test:linux            # Docker: unit tests, installer and Chromium end to end on Debian
+npm run test:windows-scripts  # Docker: the Windows installer scripts, with PowerShell on Linux
 ```
 
 Layout:
@@ -280,7 +311,9 @@ Layout:
   file per language, with `en-US.json` as the source. The interface translations other than
   `en-US` and `gl-ES` were machine-translated and have not been reviewed by native speakers;
   corrections are welcome.
-- `native-host/`: the native messaging host (plain Node, no dependencies) and its installer.
+- `native-host/`: the native messaging host (plain Node, no dependencies) and its installers
+  (`install.sh` for macOS and Linux, `install.ps1` for Windows).
+- `test/linux/`, `test/windows/`: the Docker checks above.
 
 ## Licence
 

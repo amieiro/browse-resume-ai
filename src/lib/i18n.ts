@@ -10,6 +10,16 @@ const FALLBACK = 'en-US';
 let messages: Messages = {};
 let fallback: Messages = {};
 
+// The messages name the macOS/Linux installer; Windows has its own.
+const UNIX_INSTALL = './native-host/install.sh';
+const WINDOWS_INSTALL = 'powershell -ExecutionPolicy Bypass -File native-host\\install.ps1';
+let windows = typeof navigator !== 'undefined' && /Windows/i.test(navigator.userAgent);
+
+/** For tests: pretend to run (or not) on Windows. */
+export function setWindows(value: boolean): void {
+  windows = value;
+}
+
 async function load(code: LanguageCode): Promise<Messages | null> {
   const loader = loaders[`../locales/${code}.json`];
   if (!loader) return null;
@@ -44,5 +54,6 @@ export function resolveUiLanguage(setting: 'auto' | LanguageCode, browserLanguag
 
 /** Localized UI string; falls back to English, then to the key so a gap is visible, not blank. */
 export function t(key: string): string {
-  return messages[key] || fallback[key] || key;
+  const text = messages[key] || fallback[key] || key;
+  return windows ? text.split(UNIX_INSTALL).join(WINDOWS_INSTALL) : text;
 }

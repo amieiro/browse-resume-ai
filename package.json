@@ -15,7 +15,8 @@
     "dist": "wxt build && rm -rf dist/chrome && mkdir -p dist && cp -R .output/chrome-mv3 dist/chrome",
     "screenshots": "node scripts/screenshots.mjs",
     "readme-toc": "node scripts/readme-toc.mjs",
-    "test:linux": "docker build -f test/linux/Dockerfile -t browse-resume-ai-linux . && docker run --rm browse-resume-ai-linux"
+    "test:linux": "docker build -f test/linux/Dockerfile -t browse-resume-ai-linux . && docker run --rm browse-resume-ai-linux",
+    "test:windows-scripts": "docker build -f test/windows/Dockerfile -t browse-resume-ai-windows-scripts . && docker run --rm browse-resume-ai-windows-scripts"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0"

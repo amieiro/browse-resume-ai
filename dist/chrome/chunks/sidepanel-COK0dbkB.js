@@ -1,0 +1,1 @@
+import"./boot-tf2sj43p.js";import{s as i}from"./summary-app-DLo6ysoM.js";try{}catch(t){console.error("[wxt] Failed to initialize plugins",t)}i(document.getElementById("app"),{startOnOpen:!1,followActiveTab:!0});
