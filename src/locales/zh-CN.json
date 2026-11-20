@@ -35,5 +35,10 @@
   "options_ready": "就绪",
   "options_help": "摘要通过本地组件生成，它会使用你的订阅在这台电脑上运行 Claude Code 或 Codex。页面文本只会发送给你选择的提供方。",
   "options_ui_language": "界面语言",
-  "options_ui_language_auto": "自动（浏览器语言）"
+  "options_ui_language_auto": "自动（浏览器语言）",
+  "menu_summarize_selection": "总结所选内容",
+  "menu_summarize_page": "总结此页面",
+  "ui_selection": "所选文本",
+  "ui_ask_placeholder": "就此页面提问",
+  "ui_ask": "提问"
 }

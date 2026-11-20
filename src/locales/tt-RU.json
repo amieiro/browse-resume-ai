@@ -35,5 +35,10 @@
   "options_ready": "Әзер",
   "options_help": "Йомгаклар җирле компонент аша үтә, ул бу компьютерда сезнең язылуыгыз белән Claude Code яки Codex җибәрә. Бит тексты сез сайлаган провайдерга гына җибәрелә.",
   "options_ui_language": "Интерфейс теле",
-  "options_ui_language_auto": "Автоматик (браузер теле)"
+  "options_ui_language_auto": "Автоматик (браузер теле)",
+  "menu_summarize_selection": "Сайланганны йомгаклау",
+  "menu_summarize_page": "Битне йомгаклау",
+  "ui_selection": "Сайланган текст",
+  "ui_ask_placeholder": "Бу бит турында сорау бирегез",
+  "ui_ask": "Сорау бирү"
 }

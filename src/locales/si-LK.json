@@ -35,5 +35,10 @@
   "options_ready": "සූදානම්",
   "options_help": "සාරාංශ දේශීය සංරචකය හරහා යයි, එය ඔබේ දායකත්වය සමඟ මෙම පරිගණකයේ Claude Code හෝ Codex ධාවනය කරයි. පිටුවේ පෙළ ඔබ තෝරන සපයන්නාට පමණක් යවනු ලැබේ.",
   "options_ui_language": "අතුරු මුහුණතේ භාෂාව",
-  "options_ui_language_auto": "ස්වයංක්‍රීය (බ්‍රවුසරයේ භාෂාව)"
+  "options_ui_language_auto": "ස්වයංක්‍රීය (බ්‍රවුසරයේ භාෂාව)",
+  "menu_summarize_selection": "තේරීම සාරාංශ කරන්න",
+  "menu_summarize_page": "පිටුව සාරාංශ කරන්න",
+  "ui_selection": "තෝරාගත් පෙළ",
+  "ui_ask_placeholder": "මෙම පිටුව ගැන ප්‍රශ්නයක් අසන්න",
+  "ui_ask": "අසන්න"
 }

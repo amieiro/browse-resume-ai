@@ -35,5 +35,10 @@
   "options_ready": "Taýýar",
   "options_help": "Gysgaça mazmunlar ýerli komponentden geçýär, ol siziň abunalygyňyz bilen bu kompýuterde Claude Code ýa-da Codex işledýär. Sahypanyň teksti diňe siz saýlan üpjünçä iberilýär.",
   "options_ui_language": "Interfeýs dili",
-  "options_ui_language_auto": "Awtomatik (brauzeriň dili)"
+  "options_ui_language_auto": "Awtomatik (brauzeriň dili)",
+  "menu_summarize_selection": "Saýlanany gysgalt",
+  "menu_summarize_page": "Sahypany gysgalt",
+  "ui_selection": "Saýlanan tekst",
+  "ui_ask_placeholder": "Bu sahypa barada sorag ber",
+  "ui_ask": "Sora"
 }

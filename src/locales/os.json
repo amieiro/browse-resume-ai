@@ -35,5 +35,10 @@
   "options_ready": "Цæттæ",
   "options_help": "Цыбыр ныхæстæ цæуынц бынæттон компонентæй, æмæ уый ацы компьютерыл дæ подпискæимæ ралиддзы Claude Code кæнæ Codex. Фарсы текст æрвыст цæуы æрмæст дæхæдæг цы провайдер равзарай, уымæ.",
   "options_ui_language": "Интерфейсы æвзаг",
-  "options_ui_language_auto": "Автоматон (браузеры æвзаг)"
+  "options_ui_language_auto": "Автоматон (браузеры æвзаг)",
+  "menu_summarize_selection": "Æвзæрст цыбыр скæнын",
+  "menu_summarize_page": "Фарс цыбыр скæнын",
+  "ui_selection": "Æвзæрст текст",
+  "ui_ask_placeholder": "Ацы фарсы тыххæй исты бафæрс",
+  "ui_ask": "Бафæрсын"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Pare",
   "options_help": "Rezime yo pase nan konpozan lokal la, ki egzekite Claude Code oswa Codex sou òdinatè sa a ak abònman ou. Tèks paj la voye sèlman bay founisè ou chwazi a.",
   "options_ui_language": "Lang entèfas la",
-  "options_ui_language_auto": "Otomatik (lang navigatè a)"
+  "options_ui_language_auto": "Otomatik (lang navigatè a)",
+  "menu_summarize_selection": "Rezime seleksyon an",
+  "menu_summarize_page": "Rezime paj la",
+  "ui_selection": "Tèks ki chwazi",
+  "ui_ask_placeholder": "Poze yon kesyon sou paj sa a",
+  "ui_ask": "Mande"
 }

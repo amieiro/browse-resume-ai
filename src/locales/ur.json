@@ -35,5 +35,10 @@
   "options_ready": "تیار",
   "options_help": "خلاصے مقامی جزو کے ذریعے بنتے ہیں، جو آپ کی سبسکرپشن کے ساتھ اس کمپیوٹر پر Claude Code یا Codex چلاتا ہے۔ صفحے کا متن صرف آپ کے منتخب کردہ فراہم کنندہ کو بھیجا جاتا ہے۔",
   "options_ui_language": "انٹرفیس کی زبان",
-  "options_ui_language_auto": "خودکار (براؤزر کی زبان)"
+  "options_ui_language_auto": "خودکار (براؤزر کی زبان)",
+  "menu_summarize_selection": "انتخاب کا خلاصہ بنائیں",
+  "menu_summarize_page": "صفحے کا خلاصہ بنائیں",
+  "ui_selection": "منتخب متن",
+  "ui_ask_placeholder": "اس صفحے کے بارے میں سوال پوچھیں",
+  "ui_ask": "پوچھیں"
 }

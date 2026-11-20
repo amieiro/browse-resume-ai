@@ -35,5 +35,10 @@
   "options_ready": "Pronto",
   "options_help": "I riassunti passano dal componente locale, che esegue Claude Code o Codex su questo computer con il tuo abbonamento. Il testo della pagina viene inviato solo al provider che scegli.",
   "options_ui_language": "Lingua dell'interfaccia",
-  "options_ui_language_auto": "Automatica (lingua del browser)"
+  "options_ui_language_auto": "Automatica (lingua del browser)",
+  "menu_summarize_selection": "Riassumi la selezione",
+  "menu_summarize_page": "Riassumi la pagina",
+  "ui_selection": "Testo selezionato",
+  "ui_ask_placeholder": "Fai una domanda su questa pagina",
+  "ui_ask": "Chiedi"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Klaor",
   "options_help": "Saamevattinge loupe via de lokaal component, die Claude Code of Codex op dees computer oetveurt mèt uch abonnement. De tèks vaan de pagina weurt allein nao de aanbeejer gesjik dee geer keest.",
   "options_ui_language": "Taol vaan de interface",
-  "options_ui_language_auto": "Automatisch (taol vaan de browser)"
+  "options_ui_language_auto": "Automatisch (taol vaan de browser)",
+  "menu_summarize_selection": "Selectie saamevatte",
+  "menu_summarize_page": "Pagina saamevatte",
+  "ui_selection": "Geselecteerde teks",
+  "ui_ask_placeholder": "Stel 'n vraog euver dees pagina",
+  "ui_ask": "Vraoge"
 }

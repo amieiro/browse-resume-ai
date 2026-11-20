@@ -35,5 +35,10 @@
   "options_ready": "Yn barod",
   "options_help": "Mae crynodebau'n mynd drwy'r gydran leol, sy'n rhedeg Claude Code neu Codex ar y cyfrifiadur hwn gyda'ch tanysgrifiad. Dim ond i'r darparwr rydych chi'n ei ddewis y caiff testun y dudalen ei anfon.",
   "options_ui_language": "Iaith y rhyngwyneb",
-  "options_ui_language_auto": "Awtomatig (iaith y porwr)"
+  "options_ui_language_auto": "Awtomatig (iaith y porwr)",
+  "menu_summarize_selection": "Crynhoi'r dewis",
+  "menu_summarize_page": "Crynhoi'r dudalen",
+  "ui_selection": "Testun wedi'i ddewis",
+  "ui_ask_placeholder": "Gofynnwch gwestiwn am y dudalen hon",
+  "ui_ask": "Gofyn"
 }

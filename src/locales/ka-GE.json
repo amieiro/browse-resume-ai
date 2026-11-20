@@ -35,5 +35,10 @@
   "options_ready": "მზადაა",
   "options_help": "შეჯამებები გადის ლოკალურ კომპონენტზე, რომელიც ამ კომპიუტერზე თქვენი გამოწერით უშვებს Claude Code-ს ან Codex-ს. გვერდის ტექსტი იგზავნება მხოლოდ თქვენ მიერ არჩეულ პროვაიდერთან.",
   "options_ui_language": "ინტერფეისის ენა",
-  "options_ui_language_auto": "ავტომატური (ბრაუზერის ენა)"
+  "options_ui_language_auto": "ავტომატური (ბრაუზერის ენა)",
+  "menu_summarize_selection": "მონიშნულის შეჯამება",
+  "menu_summarize_page": "გვერდის შეჯამება",
+  "ui_selection": "მონიშნული ტექსტი",
+  "ui_ask_placeholder": "დასვით კითხვა ამ გვერდის შესახებ",
+  "ui_ask": "კითხვა"
 }

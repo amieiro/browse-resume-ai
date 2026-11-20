@@ -35,5 +35,10 @@
   "options_ready": "Klar",
   "options_help": "Opsummeringer går gennem den lokale komponent, som kører Claude Code eller Codex på denne computer med dit abonnement. Sidens tekst sendes kun til den udbyder, du vælger.",
   "options_ui_language": "Sprog i brugerfladen",
-  "options_ui_language_auto": "Automatisk (browserens sprog)"
+  "options_ui_language_auto": "Automatisk (browserens sprog)",
+  "menu_summarize_selection": "Opsummer markeringen",
+  "menu_summarize_page": "Opsummer siden",
+  "ui_selection": "Markeret tekst",
+  "ui_ask_placeholder": "Stil et spørgsmål om denne side",
+  "ui_ask": "Spørg"
 }

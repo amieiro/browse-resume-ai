@@ -35,5 +35,10 @@
   "options_ready": "तइयार",
   "options_help": "सारांश लोकल कंपोनेंट से होके जाला, जवन राउर सब्सक्रिप्शन से एह कंप्यूटर पर Claude Code या Codex चलावेला। पन्ना के टेक्स्ट खाली ओही प्रदाता के भेजल जाला जेकरा के रउआ चुनब।",
   "options_ui_language": "इंटरफ़ेस के भाषा",
-  "options_ui_language_auto": "अपने आप (ब्राउजर के भाषा)"
+  "options_ui_language_auto": "अपने आप (ब्राउजर के भाषा)",
+  "menu_summarize_selection": "चुनल हिस्सा के सारांश बनाईं",
+  "menu_summarize_page": "पन्ना के सारांश बनाईं",
+  "ui_selection": "चुनल पाठ",
+  "ui_ask_placeholder": "एह पन्ना के बारे में सवाल पूछीं",
+  "ui_ask": "पूछीं"
 }

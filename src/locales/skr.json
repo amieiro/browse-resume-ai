@@ -35,5 +35,10 @@
   "options_ready": "تیار",
   "options_help": "خلاصے مقامی حصے راہیں ویندے ہن، جیہڑا تہاڈی رکنیت نال ایں کمپیوٹر تے Claude Code یا Codex چلیندا ہے۔ صفحے دی لکھت صرف اوں فراہم کرݨ آلے کوں بھیڄی ویندی ہے جیہڑا تساں چُݨو۔",
   "options_ui_language": "انٹرفیس دی زبان",
-  "options_ui_language_auto": "خودکار (براؤزر دی زبان)"
+  "options_ui_language_auto": "خودکار (براؤزر دی زبان)",
+  "menu_summarize_selection": "چݨے ہوئے متن دا خلاصہ بݨاؤ",
+  "menu_summarize_page": "صفحے دا خلاصہ بݨاؤ",
+  "ui_selection": "چݨیا ہویا متن",
+  "ui_ask_placeholder": "ایں صفحے بارے سوال پچھو",
+  "ui_ask": "پچھو"
 }

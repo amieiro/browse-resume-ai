@@ -35,5 +35,10 @@
   "options_ready": "Prest",
   "options_help": "Tremen a ra an diverradennoù dre an elfenn lec'hel, a lañs Claude Code pe Codex war an urzhiataer-mañ gant ho koumanant. Testenn ar bajenn n'eo kaset nemet d'ar pourchaser a zibabit.",
   "options_ui_language": "Yezh an etrefas",
-  "options_ui_language_auto": "Emgefreek (yezh ar merdeer)"
+  "options_ui_language_auto": "Emgefreek (yezh ar merdeer)",
+  "menu_summarize_selection": "Diverrañ an diuzad",
+  "menu_summarize_page": "Diverrañ ar bajenn",
+  "ui_selection": "Testenn diuzet",
+  "ui_ask_placeholder": "Goulennit un dra diwar-benn ar bajenn-mañ",
+  "ui_ask": "Goulenn"
 }

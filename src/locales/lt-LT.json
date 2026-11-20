@@ -35,5 +35,10 @@
   "options_ready": "Parengta",
   "options_help": "Santraukos kuriamos per vietinį komponentą, kuris šiame kompiuteryje paleidžia Claude Code arba Codex su jūsų prenumerata. Puslapio tekstas siunčiamas tik jūsų pasirinktam teikėjui.",
   "options_ui_language": "Sąsajos kalba",
-  "options_ui_language_auto": "Automatinė (naršyklės kalba)"
+  "options_ui_language_auto": "Automatinė (naršyklės kalba)",
+  "menu_summarize_selection": "Apibendrinti pažymėtą tekstą",
+  "menu_summarize_page": "Apibendrinti puslapį",
+  "ui_selection": "Pažymėtas tekstas",
+  "ui_ask_placeholder": "Užduokite klausimą apie šį puslapį",
+  "ui_ask": "Klausti"
 }

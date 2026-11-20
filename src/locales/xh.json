@@ -35,5 +35,10 @@
   "options_ready": "Kulungile",
   "options_help": "Izishwankathelo zidlula kwicandelo lasekhaya, eliqhuba i-Claude Code okanye i-Codex kule khompyutha ngobhaliso lwakho. Umbhalo wephepha uthunyelwa kuphela kumboneleli omkhethayo.",
   "options_ui_language": "Ulwimi lojongano",
-  "options_ui_language_auto": "Ngokuzenzekelayo (ulwimi lwesikhangeli)"
+  "options_ui_language_auto": "Ngokuzenzekelayo (ulwimi lwesikhangeli)",
+  "menu_summarize_selection": "Shwankathela okukhethiweyo",
+  "menu_summarize_page": "Shwankathela iphepha",
+  "ui_selection": "Umbhalo okhethiweyo",
+  "ui_ask_placeholder": "Buza umbuzo ngeli phepha",
+  "ui_ask": "Buza"
 }

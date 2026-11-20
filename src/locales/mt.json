@@ -35,5 +35,10 @@
   "options_ready": "Lest",
   "options_help": "Is-sommarji jgħaddu mill-komponent lokali, li jħaddem Claude Code jew Codex fuq dan il-kompjuter bl-abbonament tiegħek. It-test tal-paġna jintbagħat biss lill-fornitur li tagħżel.",
   "options_ui_language": "Lingwa tal-interfaċċa",
-  "options_ui_language_auto": "Awtomatika (lingwa tal-browser)"
+  "options_ui_language_auto": "Awtomatika (lingwa tal-browser)",
+  "menu_summarize_selection": "Agħmel sommarju tal-għażla",
+  "menu_summarize_page": "Agħmel sommarju tal-paġna",
+  "ui_selection": "Test magħżul",
+  "ui_ask_placeholder": "Staqsi mistoqsija dwar din il-paġna",
+  "ui_ask": "Staqsi"
 }

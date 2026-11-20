@@ -35,5 +35,10 @@
   "options_ready": "Klar",
   "options_help": "Sammanfattningarna går via den lokala komponenten, som kör Claude Code eller Codex på den här datorn med ditt abonnemang. Sidans text skickas bara till den leverantör du väljer.",
   "options_ui_language": "Gränssnittsspråk",
-  "options_ui_language_auto": "Automatiskt (webbläsarens språk)"
+  "options_ui_language_auto": "Automatiskt (webbläsarens språk)",
+  "menu_summarize_selection": "Sammanfatta markeringen",
+  "menu_summarize_page": "Sammanfatta sidan",
+  "ui_selection": "Markerad text",
+  "ui_ask_placeholder": "Ställ en fråga om den här sidan",
+  "ui_ask": "Fråga"
 }

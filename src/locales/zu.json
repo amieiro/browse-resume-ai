@@ -35,5 +35,10 @@
   "options_ready": "Kulungile",
   "options_help": "Izifinyezo zidlula engxenyeni yasendaweni, eqalisa i-Claude Code noma i-Codex kule khompyutha ngokubhalisa kwakho. Umbhalo wekhasi uthunyelwa kuphela kumhlinzeki omkhethayo.",
   "options_ui_language": "Ulimi lokuxhumana",
-  "options_ui_language_auto": "Okuzenzakalelayo (ulimi lwesiphequluli)"
+  "options_ui_language_auto": "Okuzenzakalelayo (ulimi lwesiphequluli)",
+  "menu_summarize_selection": "Finyeza okukhethiwe",
+  "menu_summarize_page": "Finyeza ikhasi",
+  "ui_selection": "Umbhalo okhethiwe",
+  "ui_ask_placeholder": "Buza umbuzo ngaleli khasi",
+  "ui_ask": "Buza"
 }

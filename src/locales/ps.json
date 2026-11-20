@@ -35,5 +35,10 @@
   "options_ready": "چمتو",
   "options_help": "لنډیزونه له سیمه‌ییزې برخې تېرېږي، چې ستاسو د ګډون سره په دې کمپیوټر کې Claude Code یا Codex چلوي. د پاڼې متن یوازې هغه برابرونکي ته لېږل کېږي چې تاسو یې ټاکئ.",
   "options_ui_language": "د انټرفیس ژبه",
-  "options_ui_language_auto": "خپلکاره (د براوزر ژبه)"
+  "options_ui_language_auto": "خپلکاره (د براوزر ژبه)",
+  "menu_summarize_selection": "د ټاکنې لنډیز جوړ کړئ",
+  "menu_summarize_page": "د پاڼې لنډیز جوړ کړئ",
+  "ui_selection": "ټاکل شوی متن",
+  "ui_ask_placeholder": "د دې پاڼې په اړه پوښتنه وکړئ",
+  "ui_ask": "پوښتنه وکړئ"
 }

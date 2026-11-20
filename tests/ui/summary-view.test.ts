@@ -152,4 +152,14 @@ describe('summary view states', () => {
     mount().setState({ status: 'error', code: 'host_missing', title: '', text: '', truncated: false });
     expect(button('copy').disabled).toBe(true);
   });
+
+  it('marks a summary of selected text', () => {
+    const view = mount();
+    view.setState({ status: 'done', title: 'T', text: 'Text', truncated: false, source: 'selection' });
+    expect(root.querySelector('[data-role="source"]')?.hasAttribute('hidden')).toBe(false);
+    expect(root.querySelector('[data-role="source"]')?.textContent).toBe('[ui_selection]');
+    view.setState({ status: 'done', title: 'T', text: 'Text', truncated: false });
+    expect(root.querySelector('[data-role="source"]')?.hasAttribute('hidden')).toBe(true);
+  });
 });
+

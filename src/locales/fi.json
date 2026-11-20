@@ -35,5 +35,10 @@
   "options_ready": "Valmis",
   "options_help": "Tiivistelmät kulkevat paikallisen komponentin kautta, joka ajaa Claude Codea tai Codexia tällä tietokoneella tilauksesi avulla. Sivun teksti lähetetään vain valitsemallesi palveluntarjoajalle.",
   "options_ui_language": "Käyttöliittymän kieli",
-  "options_ui_language_auto": "Automaattinen (selaimen kieli)"
+  "options_ui_language_auto": "Automaattinen (selaimen kieli)",
+  "menu_summarize_selection": "Tiivistä valinta",
+  "menu_summarize_page": "Tiivistä sivu",
+  "ui_selection": "Valittu teksti",
+  "ui_ask_placeholder": "Kysy jotain tästä sivusta",
+  "ui_ask": "Kysy"
 }

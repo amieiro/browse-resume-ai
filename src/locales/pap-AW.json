@@ -35,5 +35,10 @@
   "options_ready": "Cla",
   "options_help": "Resumennan ta pasa via e componente local, cu ta eherce Claude Code of Codex riba e computer aki cu bo suscripcion. Texto di e pagina ta wordo manda solamente na e proveedor cu bo scoge.",
   "options_ui_language": "Idioma di e interfaz",
-  "options_ui_language_auto": "Automatico (idioma di e navegador)"
+  "options_ui_language_auto": "Automatico (idioma di e navegador)",
+  "menu_summarize_selection": "Resumi e seleccion",
+  "menu_summarize_page": "Resumi e pagina",
+  "ui_selection": "Texto selecciona",
+  "ui_ask_placeholder": "Haci un pregunta tocante e pagina aki",
+  "ui_ask": "Puntra"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Pronto",
   "options_help": "I riassunti passan pe-o conponente locale, ch'o l'esegue Claude Code ò Codex in sto computer co-o teu abonamento. O testo da pagina o l'é mandou solo a-o fornitô che ti çerni.",
   "options_ui_language": "Lengua de l'interfaccia",
-  "options_ui_language_auto": "Aotomatico (lengua do navegatô)"
+  "options_ui_language_auto": "Aotomatico (lengua do navegatô)",
+  "menu_summarize_selection": "Riassumi a seleçion",
+  "menu_summarize_page": "Riassumi a pagina",
+  "ui_selection": "Testo seleçionou",
+  "ui_ask_placeholder": "Fà 'na domanda in sce sta pagina",
+  "ui_ask": "Domanda"
 }

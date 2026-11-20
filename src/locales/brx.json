@@ -35,5 +35,10 @@
   "options_ready": "थियार",
   "options_help": "बाथ्रा फोदोबफोरा लक'ल बाहागोजों थाङो, जेवा नोंथांनि सबस्क्रिप्सनजों बे कम्पिउटाराव Claude Code एबा Codex खालामो। बिखंनि सोदोबखौ नोंथाङा सायखनाय होग्राग्रानोसो दैथायो।",
   "options_ui_language": "इन्टारफेसनि रावखौ",
-  "options_ui_language_auto": "गावआरि (ब्राउजारनि रावखौ)"
+  "options_ui_language_auto": "गावआरि (ब्राउजारनि रावखौ)",
+  "menu_summarize_selection": "सायखनाय बिथाखौ फोदोब",
+  "menu_summarize_page": "बिखंखौ फोदोब",
+  "ui_selection": "सायखनाय लिरथाय",
+  "ui_ask_placeholder": "बे बिखंनि सोमोन्दै सोंनाय सों",
+  "ui_ask": "सों"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Klear",
   "options_help": "Gearfettingen geane troch it lokale ûnderdiel, dat Claude Code of Codex op dizze kompjûter útfiert mei jo abonnemint. Sidetekst wurdt allinnich nei de oanbieder stjoerd dy't jo kieze.",
   "options_ui_language": "Taal fan de ynterface",
-  "options_ui_language_auto": "Automatysk (browsertaal)"
+  "options_ui_language_auto": "Automatysk (browsertaal)",
+  "menu_summarize_selection": "Seleksje gearfetsje",
+  "menu_summarize_page": "Side gearfetsje",
+  "ui_selection": "Selektearre tekst",
+  "ui_ask_placeholder": "Stel in fraach oer dizze side",
+  "ui_ask": "Freegje"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Fertich",
   "options_help": "Podsumowania idōm bez lokalny kōmpōnynt, kery puszczo Claude Code abo Codex na tym kōmputrze z twojōm subskrypcyjōm. Tekst strōny je posyłany ino do dostawcy, kerego wybieresz.",
   "options_ui_language": "Jynzyk interfejsu",
-  "options_ui_language_auto": "Autōmatycznie (jynzyk przeglōndarki)"
+  "options_ui_language_auto": "Autōmatycznie (jynzyk przeglōndarki)",
+  "menu_summarize_selection": "Podsumuj zaznaczynie",
+  "menu_summarize_page": "Podsumuj strōnã",
+  "ui_selection": "Zaznaczōny tekst",
+  "ui_ask_placeholder": "Zadej pytanie ô tyj strōnie",
+  "ui_ask": "Spytej"
 }

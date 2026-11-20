@@ -35,5 +35,10 @@
   "options_ready": "מוכן",
   "options_help": "הסיכומים עוברים דרך הרכיב המקומי, שמריץ את Claude Code או את Codex במחשב הזה עם המינוי שלך. טקסט הדף נשלח רק לספק שבחרת.",
   "options_ui_language": "שפת הממשק",
-  "options_ui_language_auto": "אוטומטי (שפת הדפדפן)"
+  "options_ui_language_auto": "אוטומטי (שפת הדפדפן)",
+  "menu_summarize_selection": "סיכום הבחירה",
+  "menu_summarize_page": "סיכום הדף",
+  "ui_selection": "טקסט נבחר",
+  "ui_ask_placeholder": "אפשר לשאול שאלה על הדף הזה",
+  "ui_ask": "שאלה"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Ó ti ṣetán",
   "options_help": "Àwọn àkópọ̀ ń gba inú ẹ̀yà agbègbè náà kọjá, èyí tí ó ń ṣiṣẹ́ Claude Code tàbí Codex lórí kọ̀ǹpútà yìí pẹ̀lú ìforúkọsílẹ̀ rẹ. Olùpèsè tí o bá yàn nìkan ni a ń fi ọ̀rọ̀ ojú-ìwé náà ránṣẹ́ sí.",
   "options_ui_language": "Èdè ìṣàfihàn",
-  "options_ui_language_auto": "Aládàáṣe (èdè aṣàwákiri)"
+  "options_ui_language_auto": "Aládàáṣe (èdè aṣàwákiri)",
+  "menu_summarize_selection": "Ṣe àkópọ̀ ohun tí a yàn",
+  "menu_summarize_page": "Ṣe àkópọ̀ ojú-ìwé",
+  "ui_selection": "Ọ̀rọ̀ tí a yàn",
+  "ui_ask_placeholder": "Béèrè ìbéèrè nípa ojú-ìwé yìí",
+  "ui_ask": "Béèrè"
 }

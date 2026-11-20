@@ -35,5 +35,10 @@
   "options_ready": "Amade",
   "options_help": "Kurtasî di ser pêkhateya herêmî re derbas dibin, ku bi abonetiya te Claude Code an Codex li ser vê komputerê dixebitîne. Nivîsa rûpelê tenê ji peydakarê ku tu hilbijêrî re tê şandin.",
   "options_ui_language": "Zimanê navrûyê",
-  "options_ui_language_auto": "Xweber (zimanê gerokê)"
+  "options_ui_language_auto": "Xweber (zimanê gerokê)",
+  "menu_summarize_selection": "Hilbijartinê kurt bike",
+  "menu_summarize_page": "Rûpelê kurt bike",
+  "ui_selection": "Nivîsa hilbijartî",
+  "ui_ask_placeholder": "Li ser vê rûpelê pirsekê bike",
+  "ui_ask": "Bipirse"
 }

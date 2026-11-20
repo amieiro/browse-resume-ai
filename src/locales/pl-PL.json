@@ -35,5 +35,10 @@
   "options_ready": "Gotowe",
   "options_help": "Podsumowania przechodzą przez lokalny komponent, który uruchamia Claude Code lub Codex na tym komputerze w ramach Twojej subskrypcji. Tekst strony jest wysyłany tylko do wybranego dostawcy.",
   "options_ui_language": "Język interfejsu",
-  "options_ui_language_auto": "Automatycznie (język przeglądarki)"
+  "options_ui_language_auto": "Automatycznie (język przeglądarki)",
+  "menu_summarize_selection": "Podsumuj zaznaczenie",
+  "menu_summarize_page": "Podsumuj stronę",
+  "ui_selection": "Zaznaczony tekst",
+  "ui_ask_placeholder": "Zadaj pytanie o tę stronę",
+  "ui_ask": "Zapytaj"
 }

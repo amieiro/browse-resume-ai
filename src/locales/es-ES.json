@@ -35,5 +35,10 @@
   "options_ready": "Listo",
   "options_help": "Los resúmenes pasan por el componente local, que ejecuta Claude Code o Codex en este ordenador con tu suscripción. El texto de la página solo se envía al proveedor que elijas.",
   "options_ui_language": "Idioma de la interfaz",
-  "options_ui_language_auto": "Automático (idioma del navegador)"
+  "options_ui_language_auto": "Automático (idioma del navegador)",
+  "menu_summarize_selection": "Resumir la selección",
+  "menu_summarize_page": "Resumir la página",
+  "ui_selection": "Texto seleccionado",
+  "ui_ask_placeholder": "Haz una pregunta sobre esta página",
+  "ui_ask": "Preguntar"
 }

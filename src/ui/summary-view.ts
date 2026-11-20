@@ -47,6 +47,8 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   const options = el('button', { name: 'options', type: 'button', className: 'icon', textContent: '⚙', title: t('ui_settings') });
   options.setAttribute('aria-label', t('ui_settings'));
 
+  const source = el('p', { className: 'source', textContent: t('ui_selection') });
+  source.dataset.role = 'source';
   const title = el('h1', { className: 'title' });
   const progress = el('div', { className: 'progress', textContent: t('ui_working') });
   progress.dataset.role = 'progress';
@@ -66,7 +68,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
 
   root.replaceChildren(
     el('header', { className: 'toolbar' }, provider, model, length, language, options),
-    el('main', {}, title, progress, hint, error, summary, notice),
+    el('main', {}, source, title, progress, hint, error, summary, notice),
     el('footer', { className: 'actions' }, copy, regenerate),
   );
 
@@ -83,6 +85,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     const hasContent = s.status !== 'idle';
     title.textContent = hasContent ? s.title : '';
     title.hidden = !title.textContent;
+    source.hidden = !(hasContent && s.source === 'selection');
     hint.hidden = s.status !== 'idle';
     hint.textContent = t('ui_idle_hint');
     progress.hidden = !(s.status === 'running' && !s.text);

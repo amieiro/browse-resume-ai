@@ -35,5 +35,10 @@
   "options_ready": "Piareerpoq",
   "options_help": "Eqikkaanerit atortukkut qarasaasiami ingerlapput, taannalu qarasaasiami matumani Claude Code imaluunniit Codex aallartittarpaa ilinnut ilaasortaanerit atorlugu. Quppernerup allagaa pilersuisumut toqqakkannut kisimi nassiunneqartarpoq.",
   "options_ui_language": "Atuisup saqqaata oqaasia",
-  "options_ui_language_auto": "Nammineerluni (browserip oqaasia)"
+  "options_ui_language_auto": "Nammineerluni (browserip oqaasia)",
+  "menu_summarize_selection": "Toqqakkat eqikkakkit",
+  "menu_summarize_page": "Quppernera eqikkaruk",
+  "ui_selection": "Allagaq toqqakkaq",
+  "ui_ask_placeholder": "Quppernermut matumunnga apeqquteqarit",
+  "ui_ask": "Apersorit"
 }

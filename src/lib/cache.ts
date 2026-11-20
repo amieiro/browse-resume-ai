@@ -6,6 +6,8 @@ export interface CachedSummary {
   title: string;
   text: string;
   truncated: boolean;
+  /** Set when the summary is of text the reader selected. */
+  source?: 'selection';
 }
 
 type KeyInput = Pick<Settings, 'provider' | 'length' | 'language'> & { model: string };

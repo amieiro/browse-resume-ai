@@ -35,5 +35,10 @@
   "options_ready": "Klaar",
   "options_help": "Samenvattingen goat via t lokale onderdeel, dat Claude Code of Codex op disse computer oetvoert met oew abonnement. De tekst van de pagina wodt allenig noar de anbeejder estuurd dee ie kiest.",
   "options_ui_language": "Taal van de interface",
-  "options_ui_language_auto": "Automatisch (taal van de browser)"
+  "options_ui_language_auto": "Automatisch (taal van de browser)",
+  "menu_summarize_selection": "Selectie samenvatten",
+  "menu_summarize_page": "Pagina samenvatten",
+  "ui_selection": "Utekeuzen tekst",
+  "ui_ask_placeholder": "Stel n vroag oawer disse pagina",
+  "ui_ask": "Vroagen"
 }

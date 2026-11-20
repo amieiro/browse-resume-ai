@@ -35,5 +35,10 @@
   "options_ready": "Gereed",
   "options_help": "Opsommings gaan deur die plaaslike komponent, wat Claude Code of Codex met jou intekening op hierdie rekenaar laat loop. Bladsyteks word net na die verskaffer gestuur wat jy kies.",
   "options_ui_language": "Koppelvlaktaal",
-  "options_ui_language_auto": "Outomaties (blaaier se taal)"
+  "options_ui_language_auto": "Outomaties (blaaier se taal)",
+  "menu_summarize_selection": "Som die seleksie op",
+  "menu_summarize_page": "Som die bladsy op",
+  "ui_selection": "Geselekteerde teks",
+  "ui_ask_placeholder": "Vra 'n vraag oor hierdie bladsy",
+  "ui_ask": "Vra"
 }

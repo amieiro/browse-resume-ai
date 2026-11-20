@@ -23,3 +23,20 @@ export async function extractFromTab(tabId: number): Promise<Article | null> {
   if (result === undefined) throw new SummaryError('page_unreadable');
   return result;
 }
+
+/**
+ * The text selected in a frame of the tab, with its line breaks (the text Chrome passes with a menu
+ * click has none). Null when the frame cannot be read (Chrome pages, the PDF viewer).
+ */
+export async function selectionFromTab(tabId: number, frameId?: number): Promise<string | null> {
+  try {
+    const results = await browser.scripting.executeScript({
+      target: frameId === undefined ? { tabId } : { tabId, frameIds: [frameId] },
+      func: () => globalThis.getSelection?.()?.toString() ?? '',
+    });
+    const text = results?.[0]?.result;
+    return typeof text === 'string' ? text : null;
+  } catch {
+    return null;
+  }
+}

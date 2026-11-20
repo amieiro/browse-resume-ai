@@ -35,5 +35,10 @@
   "options_ready": "Hazır",
   "options_help": "Özətlər yerli komponentdən keçir; o, abunəliyinizlə bu kompüterdə Claude Code və ya Codex-i çalışdırır. Səhifə mətni yalnız seçdiyiniz sağlayıcıya göndərilir.",
   "options_ui_language": "Arayüz dili",
-  "options_ui_language_auto": "Avtomatik (brauzerin dili)"
+  "options_ui_language_auto": "Avtomatik (brauzerin dili)",
+  "menu_summarize_selection": "Seçilmiş mətni özətlə",
+  "menu_summarize_page": "Səhifəni özətlə",
+  "ui_selection": "Seçilmiş mətn",
+  "ui_ask_placeholder": "Bu səhifə haqqında sual verin",
+  "ui_ask": "Soruş"
 }

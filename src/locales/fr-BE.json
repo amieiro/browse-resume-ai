@@ -35,5 +35,10 @@
   "options_ready": "Prêt",
   "options_help": "Les résumés passent par le composant local, qui exécute Claude Code ou Codex sur cet ordinateur avec votre abonnement. Le texte de la page n'est envoyé qu'au fournisseur que vous choisissez.",
   "options_ui_language": "Langue de l'interface",
-  "options_ui_language_auto": "Automatique (langue du navigateur)"
+  "options_ui_language_auto": "Automatique (langue du navigateur)",
+  "menu_summarize_selection": "Résumer la sélection",
+  "menu_summarize_page": "Résumer la page",
+  "ui_selection": "Texte sélectionné",
+  "ui_ask_placeholder": "Posez une question sur cette page",
+  "ui_ask": "Demander"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Sedia",
   "options_help": "Ringkasan melalui komponen setempat, yang menjalankan Claude Code atau Codex pada komputer ini dengan langganan anda. Teks halaman hanya dihantar kepada penyedia yang anda pilih.",
   "options_ui_language": "Bahasa antara muka",
-  "options_ui_language_auto": "Automatik (bahasa penyemak imbas)"
+  "options_ui_language_auto": "Automatik (bahasa penyemak imbas)",
+  "menu_summarize_selection": "Ringkaskan pilihan",
+  "menu_summarize_page": "Ringkaskan halaman",
+  "ui_selection": "Teks dipilih",
+  "ui_ask_placeholder": "Tanya soalan tentang halaman ini",
+  "ui_ask": "Tanya"
 }

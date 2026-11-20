@@ -35,5 +35,10 @@
   "options_ready": "Спремно",
   "options_help": "Резимеи пролазе кроз локалну компоненту, која на овом рачунару покреће Claude Code или Codex уз вашу претплату. Текст странице се шаље само добављачу ког изаберете.",
   "options_ui_language": "Језик интерфејса",
-  "options_ui_language_auto": "Аутоматски (језик прегледача)"
+  "options_ui_language_auto": "Аутоматски (језик прегледача)",
+  "menu_summarize_selection": "Резимирај избор",
+  "menu_summarize_page": "Резимирај страницу",
+  "ui_selection": "Изабрани текст",
+  "ui_ask_placeholder": "Постави питање о овој страници",
+  "ui_ask": "Питај"
 }

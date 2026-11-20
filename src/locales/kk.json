@@ -35,5 +35,10 @@
   "options_ready": "Дайын",
   "options_help": "Түйіндемелер жергілікті компонент арқылы өтеді, ол осы компьютерде сіздің жазылымыңызбен Claude Code немесе Codex іске қосады. Бет мәтіні тек өзіңіз таңдаған провайдерге жіберіледі.",
   "options_ui_language": "Интерфейс тілі",
-  "options_ui_language_auto": "Автоматты (браузер тілі)"
+  "options_ui_language_auto": "Автоматты (браузер тілі)",
+  "menu_summarize_selection": "Таңдалғанды түйіндеу",
+  "menu_summarize_page": "Бетті түйіндеу",
+  "ui_selection": "Таңдалған мәтін",
+  "ui_ask_placeholder": "Осы бет туралы сұрақ қойыңыз",
+  "ui_ask": "Сұрау"
 }

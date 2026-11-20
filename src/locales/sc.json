@@ -35,5 +35,10 @@
   "options_ready": "Prontu",
   "options_help": "Sos resumos passant pro su cumponente locale, chi esecutat Claude Code o Codex in custu elaboradore cun s'abbonamentu tuo. Su testu de sa pàgina est imbiadu isceti a su frunidore chi seberas.",
   "options_ui_language": "Limba de s'interfàtzia",
-  "options_ui_language_auto": "Automàticu (limba de su navigadore)"
+  "options_ui_language_auto": "Automàticu (limba de su navigadore)",
+  "menu_summarize_selection": "Resume sa seletzione",
+  "menu_summarize_page": "Resume sa pàgina",
+  "ui_selection": "Testu seletzionadu",
+  "ui_ask_placeholder": "Faghe una pregunta subra de custa pàgina",
+  "ui_ask": "Pregunta"
 }

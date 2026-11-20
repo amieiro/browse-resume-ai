@@ -9,6 +9,9 @@ export interface Article {
   truncated: boolean;
 }
 
+/** Longest text sent to the model; longer pages and selections are cut here. */
+export const MAX_ARTICLE_CHARS = 100_000;
+
 export const ARTICLE_OPEN = '<<<ARTICLE';
 export const ARTICLE_CLOSE = 'ARTICLE>>>';
 
@@ -19,7 +22,7 @@ const LENGTH_RULES: Record<SummaryLength, string> = {
 };
 
 /** Removes the markers until none is left, so fragments cannot rebuild one ("ARTICARTICLE>>>LE>>>"). */
-function stripDelimiters(value: string): string {
+export function stripDelimiters(value: string): string {
   let previous: string;
   do {
     previous = value;
@@ -28,10 +31,15 @@ function stripDelimiters(value: string): string {
   return value;
 }
 
-export function buildPrompt(article: Article, length: SummaryLength, language: LanguageCode): string {
+/** What the text is: a page's article, or an excerpt the reader selected on the page. */
+export type PromptSource = 'article' | 'selection';
+
+export function buildPrompt(article: Article, length: SummaryLength, language: LanguageCode, source: PromptSource = 'article'): string {
   const lang = languageName(language);
   return [
-    'Summarize the web article below.',
+    source === 'selection'
+      ? 'Summarize the excerpt below, which the reader selected on a web page. Summarize only the excerpt, not the rest of the page.'
+      : 'Summarize the web article below.',
     `Write the summary in ${lang} regardless of the article's language.`,
     LENGTH_RULES[length],
     'Format: simple Markdown only (paragraphs, "-" bullets, **bold**). No preamble, no title, no closing remarks.',

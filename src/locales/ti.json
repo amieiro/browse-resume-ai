@@ -35,5 +35,10 @@
   "options_ready": "ድሉው",
   "options_help": "ጽማቝታት ብመንገዲ እቲ ከባቢያዊ ኣካል ይሓልፉ፣ ንሱ ድማ ብምዝገባኻ ኣብዚ ኮምፒተር Claude Code ወይ Codex የኺድ። ጽሑፍ እቲ ገጽ ናብቲ ዝመረጽካዮ ኣቕራቢ ጥራይ ይለኣኽ።",
   "options_ui_language": "ቋንቋ መተሓሳሰቢ",
-  "options_ui_language_auto": "ባዕላዊ (ቋንቋ መርበብ ሓበሬታ)"
+  "options_ui_language_auto": "ባዕላዊ (ቋንቋ መርበብ ሓበሬታ)",
+  "menu_summarize_selection": "ዝተመርጸ ጽመቕ",
+  "menu_summarize_page": "ገጽ ጽመቕ",
+  "ui_selection": "ዝተመርጸ ጽሑፍ",
+  "ui_ask_placeholder": "ብዛዕባ እዚ ገጽ ሕቶ ሕተት",
+  "ui_ask": "ሕተት"
 }

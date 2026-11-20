@@ -35,5 +35,10 @@
   "options_ready": "Parys",
   "options_help": "Berrheansow a dremen der an rann leel, hag a res Claude Code po Codex war an jynn-amontya ma gans agas koumanans. Nyns yw tekst an folen danvenys saw dhe'n provier a dhewisowgh.",
   "options_ui_language": "Yeth an ynterfas",
-  "options_ui_language_auto": "Awtomatek (yeth an peurel)"
+  "options_ui_language_auto": "Awtomatek (yeth an peurel)",
+  "menu_summarize_selection": "Berrhe an dewisyans",
+  "menu_summarize_page": "Berrhe an folen",
+  "ui_selection": "Tekst dewisys",
+  "ui_ask_placeholder": "Govynn qwestyon a-dro dhe'n folen ma",
+  "ui_ask": "Govynn"
 }

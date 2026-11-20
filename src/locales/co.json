@@ -35,5 +35,10 @@
   "options_ready": "Prontu",
   "options_help": "I riassunti passanu per u cumpunente lucale, chì eseguisce Claude Code o Codex nant'à st'urdinatore cù u vostru abbunamentu. U testu di a pagina hè mandatu solu à u furnitore chì sceglite.",
   "options_ui_language": "Lingua di l'interfaccia",
-  "options_ui_language_auto": "Autumaticu (lingua di u navigatore)"
+  "options_ui_language_auto": "Autumaticu (lingua di u navigatore)",
+  "menu_summarize_selection": "Riassume a selezzione",
+  "menu_summarize_page": "Riassume a pagina",
+  "ui_selection": "Testu selezziunatu",
+  "ui_ask_placeholder": "Fate una dumanda nant'à sta pagina",
+  "ui_ask": "Dumandà"
 }

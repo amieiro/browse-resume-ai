@@ -35,5 +35,10 @@
   "options_ready": "तयार",
   "options_help": "सारांशहरू स्थानीय कम्पोनेन्टमार्फत जान्छन्, जसले तपाईंको सदस्यतासँग यस कम्प्युटरमा Claude Code वा Codex चलाउँछ। पृष्ठको पाठ तपाईंले छानेको प्रदायकलाई मात्र पठाइन्छ।",
   "options_ui_language": "इन्टरफेसको भाषा",
-  "options_ui_language_auto": "स्वचालित (ब्राउजरको भाषा)"
+  "options_ui_language_auto": "स्वचालित (ब्राउजरको भाषा)",
+  "menu_summarize_selection": "चयनको सारांश बनाउनुहोस्",
+  "menu_summarize_page": "पृष्ठको सारांश बनाउनुहोस्",
+  "ui_selection": "चयन गरिएको पाठ",
+  "ui_ask_placeholder": "यो पृष्ठबारे प्रश्न सोध्नुहोस्",
+  "ui_ask": "सोध्नुहोस्"
 }

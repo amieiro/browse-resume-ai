@@ -35,5 +35,10 @@
   "options_ready": "Siap",
   "options_help": "Ringkasan diproses melalui komponen lokal, yang menjalankan Claude Code atau Codex di komputer ini dengan langganan Anda. Teks halaman hanya dikirim ke penyedia yang Anda pilih.",
   "options_ui_language": "Bahasa antarmuka",
-  "options_ui_language_auto": "Otomatis (bahasa browser)"
+  "options_ui_language_auto": "Otomatis (bahasa browser)",
+  "menu_summarize_selection": "Ringkas pilihan",
+  "menu_summarize_page": "Ringkas halaman",
+  "ui_selection": "Teks yang dipilih",
+  "ui_ask_placeholder": "Ajukan pertanyaan tentang halaman ini",
+  "ui_ask": "Tanya"
 }

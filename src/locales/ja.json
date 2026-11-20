@@ -35,5 +35,10 @@
   "options_ready": "準備完了",
   "options_help": "要約はローカルコンポーネントを経由します。このコンポーネントは、お使いのサブスクリプションでこのコンピュータ上の Claude Code または Codex を実行します。ページのテキストは、選択したプロバイダにのみ送信されます。",
   "options_ui_language": "インターフェースの言語",
-  "options_ui_language_auto": "自動（ブラウザの言語）"
+  "options_ui_language_auto": "自動（ブラウザの言語）",
+  "menu_summarize_selection": "選択範囲を要約",
+  "menu_summarize_page": "ページを要約",
+  "ui_selection": "選択したテキスト",
+  "ui_ask_placeholder": "このページについて質問する",
+  "ui_ask": "質問"
 }

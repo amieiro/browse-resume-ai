@@ -35,5 +35,10 @@
   "options_ready": "सज्जम्",
   "options_help": "सारांशाः स्थानीयघटकेन गच्छन्ति, यः तव सदस्यतया अस्मिन् सङ्गणके Claude Code अथवा Codex चालयति। पृष्ठस्य पाठः केवलं त्वया चितं प्रदातारं प्रति प्रेष्यते।",
   "options_ui_language": "अन्तरापृष्ठस्य भाषा",
-  "options_ui_language_auto": "स्वचालितम् (विचरकस्य भाषा)"
+  "options_ui_language_auto": "स्वचालितम् (विचरकस्य भाषा)",
+  "menu_summarize_selection": "चयनितस्य सारांशं कुरु",
+  "menu_summarize_page": "पृष्ठस्य सारांशं कुरु",
+  "ui_selection": "चयनितः पाठः",
+  "ui_ask_placeholder": "अस्य पृष्ठस्य विषये प्रश्नं पृच्छ",
+  "ui_ask": "पृच्छ"
 }

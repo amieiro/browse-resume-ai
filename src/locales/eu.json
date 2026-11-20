@@ -35,5 +35,10 @@
   "options_ready": "Prest",
   "options_help": "Laburpenak osagai lokalaren bidez egiten dira; osagai horrek Claude Code edo Codex exekutatzen du ordenagailu honetan zure harpidetzarekin. Orriaren testua aukeratzen duzun hornitzaileari bakarrik bidaltzen zaio.",
   "options_ui_language": "Interfazearen hizkuntza",
-  "options_ui_language_auto": "Automatikoa (arakatzailearen hizkuntza)"
+  "options_ui_language_auto": "Automatikoa (arakatzailearen hizkuntza)",
+  "menu_summarize_selection": "Laburtu hautapena",
+  "menu_summarize_page": "Laburtu orria",
+  "ui_selection": "Hautatutako testua",
+  "ui_ask_placeholder": "Egin galdera bat orri honi buruz",
+  "ui_ask": "Galdetu"
 }

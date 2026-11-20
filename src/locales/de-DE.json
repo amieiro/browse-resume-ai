@@ -35,5 +35,10 @@
   "options_ready": "Bereit",
   "options_help": "Zusammenfassungen laufen über die lokale Komponente, die Claude Code oder Codex mit deinem Abo auf diesem Computer ausführt. Der Seitentext wird nur an den gewählten Anbieter gesendet.",
   "options_ui_language": "Sprache der Oberfläche",
-  "options_ui_language_auto": "Automatisch (Browsersprache)"
+  "options_ui_language_auto": "Automatisch (Browsersprache)",
+  "menu_summarize_selection": "Auswahl zusammenfassen",
+  "menu_summarize_page": "Seite zusammenfassen",
+  "ui_selection": "Ausgewählter Text",
+  "ui_ask_placeholder": "Stelle eine Frage zu dieser Seite",
+  "ui_ask": "Fragen"
 }

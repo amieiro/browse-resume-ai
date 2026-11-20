@@ -35,5 +35,10 @@
   "options_ready": "Ready",
   "options_help": "Summaries go through the local component, which runs Claude Code or Codex on this computer with your subscription. Page text is sent only to the provider you choose.",
   "options_ui_language": "Interface language",
-  "options_ui_language_auto": "Automatic (browser language)"
+  "options_ui_language_auto": "Automatic (browser language)",
+  "menu_summarize_selection": "Summarise the selection",
+  "menu_summarize_page": "Summarise the page",
+  "ui_selection": "Selected text",
+  "ui_ask_placeholder": "Ask a question about this page",
+  "ui_ask": "Ask"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Mākaukau",
   "options_help": "Hele nā hōʻuluʻulu ma o ka ʻāpana kūloko, nāna e holo iā Claude Code a i ʻole Codex ma kēia kamepiula me kāu kau inoa. Hoʻouna ʻia ke kikokikona o ka ʻaoʻao i ka mea hoʻolako āu e koho ai wale nō.",
   "options_ui_language": "ʻŌlelo o ke kikowaena",
-  "options_ui_language_auto": "ʻAkomakika (ka ʻōlelo o ka polokalamu kele pūnaewele)"
+  "options_ui_language_auto": "ʻAkomakika (ka ʻōlelo o ka polokalamu kele pūnaewele)",
+  "menu_summarize_selection": "Hōʻuluʻulu i ka mea i koho ʻia",
+  "menu_summarize_page": "Hōʻuluʻulu i ka ʻaoʻao",
+  "ui_selection": "Kikokikona i koho ʻia",
+  "ui_ask_placeholder": "E nīnau i kekahi mea no kēia ʻaoʻao",
+  "ui_ask": "Nīnau"
 }

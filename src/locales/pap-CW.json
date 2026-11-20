@@ -35,5 +35,10 @@
   "options_ready": "Kla",
   "options_help": "Resúmennan ta pasa dor di e komponente lokal, ku ta ehekutá Claude Code òf Codex riba e kòmpiuter aki ku bo suskripshon. Teksto di e página ta wòrdu manda solamente na e provedor ku bo skohe.",
   "options_ui_language": "Idioma di e interfaz",
-  "options_ui_language_auto": "Outomátiko (idioma di e nabegadó)"
+  "options_ui_language_auto": "Outomátiko (idioma di e nabegadó)",
+  "menu_summarize_selection": "Resumí e selekshon",
+  "menu_summarize_page": "Resumí e página",
+  "ui_selection": "Teksto selekshoná",
+  "ui_ask_placeholder": "Hasi un pregunta tokante e página aki",
+  "ui_ask": "Puntra"
 }

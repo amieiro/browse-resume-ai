@@ -35,5 +35,10 @@
   "options_ready": "সাজু",
   "options_help": "সাৰাংশসমূহ স্থানীয় উপাদানৰ জৰিয়তে যায়, যিয়ে আপোনাৰ ছাবস্ক্ৰিপশ্বনেৰে এই কম্পিউটাৰত Claude Code বা Codex চলায়। পৃষ্ঠাৰ পাঠ কেৱল আপুনি বাছনি কৰা প্ৰদানকাৰীলৈহে পঠিওৱা হয়।",
   "options_ui_language": "ইণ্টাৰফেচৰ ভাষা",
-  "options_ui_language_auto": "স্বয়ংক্ৰিয় (ব্ৰাউজাৰৰ ভাষা)"
+  "options_ui_language_auto": "স্বয়ংক্ৰিয় (ব্ৰাউজাৰৰ ভাষা)",
+  "menu_summarize_selection": "নিৰ্বাচিত অংশৰ সাৰাংশ কৰক",
+  "menu_summarize_page": "পৃষ্ঠাৰ সাৰাংশ কৰক",
+  "ui_selection": "নিৰ্বাচিত পাঠ",
+  "ui_ask_placeholder": "এই পৃষ্ঠাৰ বিষয়ে এটা প্ৰশ্ন সোধক",
+  "ui_ask": "সোধক"
 }

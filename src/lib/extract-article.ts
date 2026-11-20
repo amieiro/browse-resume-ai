@@ -1,7 +1,7 @@
 import { Readability } from '@mozilla/readability';
-import type { Article } from './prompt';
+import { MAX_ARTICLE_CHARS, type Article } from './prompt';
 
-export const MAX_ARTICLE_CHARS = 100_000;
+export { MAX_ARTICLE_CHARS };
 export const MIN_ARTICLE_CHARS = 500;
 /** A page counts as an article only with at least this many prose sentences. */
 const MIN_SENTENCES = 3;

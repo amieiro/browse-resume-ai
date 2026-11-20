@@ -35,5 +35,10 @@
   "options_ready": "ዝግጁ",
   "options_help": "ማጠቃለያዎች በአካባቢው ክፍል በኩል ያልፋሉ፤ እሱም በዚህ ኮምፒውተር ላይ Claude Code ወይም Codex በእርስዎ ምዝገባ ያሂዳል። የገጹ ጽሑፍ የሚላከው ለመረጡት አቅራቢ ብቻ ነው።",
   "options_ui_language": "የበይነገጽ ቋንቋ",
-  "options_ui_language_auto": "ራስ-ሰር (የአሳሽ ቋንቋ)"
+  "options_ui_language_auto": "ራስ-ሰር (የአሳሽ ቋንቋ)",
+  "menu_summarize_selection": "ምርጫውን አጠቃልል",
+  "menu_summarize_page": "ገጹን አጠቃልል",
+  "ui_selection": "የተመረጠ ጽሑፍ",
+  "ui_ask_placeholder": "ስለዚህ ገጽ ጥያቄ ይጠይቁ",
+  "ui_ask": "ጠይቅ"
 }

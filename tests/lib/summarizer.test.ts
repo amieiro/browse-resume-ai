@@ -10,14 +10,16 @@ const article: Article = { title: 'Title', text: 'text', url: 'https://e.com/a',
 function provider(
   impl: (signal: AbortSignal) => AsyncIterable<string>,
   availability: Availability = { ok: true },
-): Provider & { calls: number } {
+): Provider & { calls: number; prompts: string[] } {
   const p = {
     id: 'claude' as const,
     label: 'Claude',
     calls: 0,
+    prompts: [] as string[],
     checkAvailability: async () => availability,
-    summarize(_prompt: string, _model: string, signal: AbortSignal) {
+    summarize(prompt: string, _model: string, signal: AbortSignal) {
       p.calls++;
+      p.prompts.push(prompt);
       return impl(signal);
     },
   };
@@ -41,6 +43,7 @@ function setup(p: Provider, overrides: Partial<SummarizerDeps> = {}, settings: P
   let current: Settings = { ...defaultSettings('en'), ...settings };
   const deps: SummarizerDeps = {
     extract: vi.fn(async () => article),
+    extractSelection: vi.fn(async () => 'The selected words.'),
     loadSettings: async () => current,
     getProvider: () => p,
     ...overrides,
@@ -273,4 +276,77 @@ describe('Summarizer', () => {
     expect(signal!.aborted).toBe(true);
     expect(t.s.getState(1)).toEqual({ status: 'idle' });
   });
+
+  describe('selection', () => {
+    const selection = { url: 'https://e.com/a', title: 'Page', selectionText: 'Menu text.' };
+
+    it('summarizes the selected text, marked as a selection', async () => {
+      const p = provider(() => chunks('Sum'));
+      const t = setup(p);
+      await t.s.startSelection(1, { ...selection, frameId: 3 });
+      expect(t.deps.extractSelection).toHaveBeenCalledWith(1, 3);
+      expect(p.prompts[0]).toContain('The selected words.');
+      expect(p.prompts[0]).toMatch(/excerpt/i);
+      expect(t.s.getState(1)).toMatchObject({ status: 'done', source: 'selection', title: 'Page', text: 'Sum' });
+    });
+
+    it('uses the text Chrome gave with the menu click when the page cannot be read', async () => {
+      const p = provider(() => chunks('Sum'));
+      const t = setup(p, { extractSelection: async () => null });
+      await t.s.startSelection(1, selection);
+      expect(p.prompts[0]).toContain('Menu text.');
+    });
+
+    it('reports no_content for an empty selection', async () => {
+      const t = setup(provider(() => chunks('x')), { extractSelection: async () => '  ' });
+      await t.s.startSelection(1, { ...selection, selectionText: '' });
+      expect(t.s.getState(1)).toMatchObject({ status: 'error', code: 'no_content', source: 'selection' });
+    });
+
+    it('a non-forced start (the popup opening) attaches to it instead of reading the page', async () => {
+      let signal: AbortSignal | undefined;
+      const p = provider((s) => ((signal = s), waitForAbort(s)));
+      const t = setup(p);
+      const running = t.s.startSelection(1, selection);
+      await t.s.start(1, { force: false });
+      await vi.waitFor(() => expect(t.s.getState(1)).toMatchObject({ text: 'partial', source: 'selection' }));
+      expect(t.deps.extract).not.toHaveBeenCalled();
+      expect(signal!.aborted).toBe(false);
+      t.s.forget(1);
+      await running;
+    });
+
+    it('Summarize again repeats the selection, with the current settings', async () => {
+      const p = provider(() => chunks('Sum'));
+      const t = setup(p);
+      await t.s.startSelection(1, selection);
+      t.setSettings({ language: 'gl-ES' });
+      await t.s.start(1, { force: true });
+      expect(p.calls).toBe(2);
+      expect(p.prompts[1]).toContain('The selected words.');
+      expect(p.prompts[1]).toContain('Galician');
+      expect(t.deps.extract).not.toHaveBeenCalled();
+      expect(t.s.getState(1)).toMatchObject({ status: 'done', source: 'selection' });
+    });
+
+    it('a later icon click summarizes the whole page, not the cached selection', async () => {
+      const p = provider(() => chunks('Text'));
+      const t = setup(p);
+      await t.s.startSelection(1, selection);
+      await t.s.start(1, { force: false });
+      expect(t.deps.extract).toHaveBeenCalled();
+      expect(p.calls).toBe(2);
+      expect(t.s.getState(1)).toMatchObject({ status: 'done' });
+      expect(t.s.getState(1)).not.toHaveProperty('source');
+    });
+
+    it('a new selection after a page summary is not served from the page cache', async () => {
+      const p = provider(() => chunks('Text'));
+      const t = setup(p);
+      await t.s.start(1, { force: false });
+      await t.s.startSelection(1, selection);
+      expect(p.calls).toBe(2);
+    });
+  });
 });
+

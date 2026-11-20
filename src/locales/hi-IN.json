@@ -35,5 +35,10 @@
   "options_ready": "तैयार",
   "options_help": "सारांश लोकल कॉम्पोनेंट से होकर जाते हैं, जो आपकी सदस्यता के साथ इस कंप्यूटर पर Claude Code या Codex चलाता है। पेज का टेक्स्ट सिर्फ़ उसी प्रोवाइडर को भेजा जाता है जिसे आप चुनते हैं।",
   "options_ui_language": "इंटरफ़ेस की भाषा",
-  "options_ui_language_auto": "अपने-आप (ब्राउज़र की भाषा)"
+  "options_ui_language_auto": "अपने-आप (ब्राउज़र की भाषा)",
+  "menu_summarize_selection": "चुने गए टेक्स्ट का सारांश बनाएं",
+  "menu_summarize_page": "पेज का सारांश बनाएं",
+  "ui_selection": "चुना गया टेक्स्ट",
+  "ui_ask_placeholder": "इस पेज के बारे में सवाल पूछें",
+  "ui_ask": "पूछें"
 }

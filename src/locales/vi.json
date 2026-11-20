@@ -35,5 +35,10 @@
   "options_ready": "Sẵn sàng",
   "options_help": "Bản tóm tắt đi qua thành phần cục bộ, thành phần này chạy Claude Code hoặc Codex trên máy tính này bằng gói đăng ký của bạn. Nội dung trang chỉ được gửi đến nhà cung cấp mà bạn chọn.",
   "options_ui_language": "Ngôn ngữ giao diện",
-  "options_ui_language_auto": "Tự động (ngôn ngữ của trình duyệt)"
+  "options_ui_language_auto": "Tự động (ngôn ngữ của trình duyệt)",
+  "menu_summarize_selection": "Tóm tắt phần đã chọn",
+  "menu_summarize_page": "Tóm tắt trang",
+  "ui_selection": "Văn bản đã chọn",
+  "ui_ask_placeholder": "Đặt câu hỏi về trang này",
+  "ui_ask": "Hỏi"
 }

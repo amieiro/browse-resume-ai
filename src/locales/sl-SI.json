@@ -35,5 +35,10 @@
   "options_ready": "Pripravljeno",
   "options_help": "Povzetki gredo prek lokalne komponente, ki v tem računalniku zažene Claude Code ali Codex z vašo naročnino. Besedilo strani se pošlje samo ponudniku, ki ga izberete.",
   "options_ui_language": "Jezik vmesnika",
-  "options_ui_language_auto": "Samodejno (jezik brskalnika)"
+  "options_ui_language_auto": "Samodejno (jezik brskalnika)",
+  "menu_summarize_selection": "Povzemi izbor",
+  "menu_summarize_page": "Povzemi stran",
+  "ui_selection": "Izbrano besedilo",
+  "ui_ask_placeholder": "Zastavi vprašanje o tej strani",
+  "ui_ask": "Vprašaj"
 }

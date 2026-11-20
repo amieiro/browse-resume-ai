@@ -35,5 +35,10 @@
   "options_ready": "Připraveno",
   "options_help": "Shrnutí prochází místní komponentou, která na tomto počítači spouští Claude Code nebo Codex s vaším předplatným. Text stránky se odesílá pouze vybranému poskytovateli.",
   "options_ui_language": "Jazyk rozhraní",
-  "options_ui_language_auto": "Automaticky (jazyk prohlížeče)"
+  "options_ui_language_auto": "Automaticky (jazyk prohlížeče)",
+  "menu_summarize_selection": "Shrnout výběr",
+  "menu_summarize_page": "Shrnout stránku",
+  "ui_selection": "Vybraný text",
+  "ui_ask_placeholder": "Zeptejte se na tuto stránku",
+  "ui_ask": "Zeptat se"
 }

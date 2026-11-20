@@ -35,5 +35,10 @@
   "options_ready": "Preta",
   "options_help": "La resumoj trairas la lokan komponanton, kiu rulas Claude Code aŭ Codex en ĉi tiu komputilo per via abono. La teksto de la paĝo estas sendata nur al la provizanto, kiun vi elektas.",
   "options_ui_language": "Lingvo de la fasado",
-  "options_ui_language_auto": "Aŭtomata (lingvo de la retumilo)"
+  "options_ui_language_auto": "Aŭtomata (lingvo de la retumilo)",
+  "menu_summarize_selection": "Resumi la elekton",
+  "menu_summarize_page": "Resumi la paĝon",
+  "ui_selection": "Elektita teksto",
+  "ui_ask_placeholder": "Demandu ion pri ĉi tiu paĝo",
+  "ui_ask": "Demandi"
 }

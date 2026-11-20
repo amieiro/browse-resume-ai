@@ -35,5 +35,10 @@
   "options_ready": "Zvagadzirira",
   "options_help": "Zvidimbu zvinopfuura nechikamu chemuno, chinomhanyisa Claude Code kana Codex pakombiyuta ino uchishandisa kunyoresa kwako. Mavara epeji anotumirwa chete kumupi waunosarudza.",
   "options_ui_language": "Mutauro wechiratidziro",
-  "options_ui_language_auto": "Otomatiki (mutauro webhurauza)"
+  "options_ui_language_auto": "Otomatiki (mutauro webhurauza)",
+  "menu_summarize_selection": "Pfupisa zvasarudzwa",
+  "menu_summarize_page": "Pfupisa peji",
+  "ui_selection": "Mavara asarudzwa",
+  "ui_ask_placeholder": "Bvunza mubvunzo nezve peji iri",
+  "ui_ask": "Bvunza"
 }

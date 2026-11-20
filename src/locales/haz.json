@@ -35,5 +35,10 @@
   "options_ready": "آماده",
   "options_help": "خلاصه‌ها از راه بخش محلی موره، که Claude Code یا Codex ره د ای کمپیوتر قد اشتراک تو اجرا مونه. متن صفحه فقط بلدِ فراهم‌کننده‌ای که انتخاب مونی روان مونه.",
   "options_ui_language": "زبان رابط",
-  "options_ui_language_auto": "خودکار (زبان مرورگر)"
+  "options_ui_language_auto": "خودکار (زبان مرورگر)",
+  "menu_summarize_selection": "متن انتخاب‌شده ره خلاصه کو",
+  "menu_summarize_page": "صفحه ره خلاصه کو",
+  "ui_selection": "متن انتخاب‌شده",
+  "ui_ask_placeholder": "د باره ای صفحه سوال کو",
+  "ui_ask": "سوال کو"
 }

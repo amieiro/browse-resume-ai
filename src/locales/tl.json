@@ -35,5 +35,10 @@
   "options_ready": "Handa na",
   "options_help": "Dumadaan ang mga buod sa lokal na component, na nagpapatakbo ng Claude Code o Codex sa computer na ito gamit ang iyong subscription. Ipinapadala lang ang teksto ng page sa provider na pipiliin mo.",
   "options_ui_language": "Wika ng interface",
-  "options_ui_language_auto": "Awtomatiko (wika ng browser)"
+  "options_ui_language_auto": "Awtomatiko (wika ng browser)",
+  "menu_summarize_selection": "Ibuod ang napili",
+  "menu_summarize_page": "Ibuod ang pahina",
+  "ui_selection": "Napiling teksto",
+  "ui_ask_placeholder": "Magtanong tungkol sa pahinang ito",
+  "ui_ask": "Magtanong"
 }

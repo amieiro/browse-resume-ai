@@ -35,5 +35,10 @@
   "options_ready": "Ðò gbesisɔ mɛ",
   "options_help": "Xókpɛ́n lɛ nɔ gbɔ akpáxwé fí ɔ tɔn ɔ mɛ, bɔ é nɔ bló Claude Code alǒ Codex ɖò ordinatɛ́ɛ elɔ jí kpo abonnement towe kpo. Wema bló ɔ sín wekpa nɔ yì mɛ e nɔ na nǔ é bɔ a sɔ́ é ɔ ɖeɖee kɛɖɛ.",
   "options_ui_language": "Interface ɔ sín gbè",
-  "options_ui_language_auto": "Ðéɖée (navigateur ɔ sín gbè)"
+  "options_ui_language_auto": "Ðéɖée (navigateur ɔ sín gbè)",
+  "menu_summarize_selection": "Kpɛ́n xó e a sɔ́ é",
+  "menu_summarize_page": "Kpɛ́n xó wema bló ɔ tɔn",
+  "ui_selection": "Xó e a sɔ́ é",
+  "ui_ask_placeholder": "Kanbyɔ́ nǔ ɖé dó wema bló elɔ ɔ wu",
+  "ui_ask": "Kanbyɔ́"
 }

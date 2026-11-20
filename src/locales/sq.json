@@ -35,5 +35,10 @@
   "options_ready": "Gati",
   "options_help": "Përmbledhjet kalojnë përmes përbërësit vendor, i cili ekzekuton Claude Code ose Codex në këtë kompjuter me pajtimin tuaj. Teksti i faqes i dërgohet vetëm ofruesit që zgjidhni.",
   "options_ui_language": "Gjuha e ndërfaqes",
-  "options_ui_language_auto": "Automatike (gjuha e shfletuesit)"
+  "options_ui_language_auto": "Automatike (gjuha e shfletuesit)",
+  "menu_summarize_selection": "Përmblidhe përzgjedhjen",
+  "menu_summarize_page": "Përmblidhe faqen",
+  "ui_selection": "Teksti i përzgjedhur",
+  "ui_ask_placeholder": "Bëj një pyetje për këtë faqe",
+  "ui_ask": "Pyet"
 }

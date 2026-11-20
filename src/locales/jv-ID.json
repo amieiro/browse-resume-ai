@@ -35,5 +35,10 @@
   "options_ready": "Siap",
   "options_help": "Ringkesan liwat komponen lokal, sing nglakokake Claude Code utawa Codex ing komputer iki nganggo langganan sampeyan. Teks kaca mung dikirim menyang panyedhiya sing sampeyan pilih.",
   "options_ui_language": "Basa antarmuka",
-  "options_ui_language_auto": "Otomatis (basa browser)"
+  "options_ui_language_auto": "Otomatis (basa browser)",
+  "menu_summarize_selection": "Ringkes pilihan",
+  "menu_summarize_page": "Ringkes kaca",
+  "ui_selection": "Teks sing dipilih",
+  "ui_ask_placeholder": "Takon babagan kaca iki",
+  "ui_ask": "Takon"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Ihegga",
   "options_help": "Igzulen ttɛeddin s usuddis adigan, i iselkamen Claude Code neɣ Codex deg uselkim-a s ujerred-ik. Aḍris n usebter yettwazen kan i usaǧǧaw i tferneḍ.",
   "options_ui_language": "Tutlayt n wegrudem",
-  "options_ui_language_auto": "Awurman (tutlayt n yiminig)"
+  "options_ui_language_auto": "Awurman (tutlayt n yiminig)",
+  "menu_summarize_selection": "Agzul n tefrayt",
+  "menu_summarize_page": "Agzul n usebter",
+  "ui_selection": "Aḍris yettwafernen",
+  "ui_ask_placeholder": "Steqsi ɣef usebter-a",
+  "ui_ask": "Steqsi"
 }

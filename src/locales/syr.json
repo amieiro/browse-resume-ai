@@ -35,5 +35,10 @@
   "options_ready": "ܡܛܝܒ",
   "options_help": "ܦܣܝܩܬܐ ܥܒܪܢ ܒܝܕ ܡܢܝܢܐ ܕܘܟܝܐ، ܕܡܦܥܠ Claude Code ܐܘ Codex ܥܠ ܗܢܐ ܚܫܘܒܐ ܥܡ ܡܫܬܘܬܦܘܬܐ ܕܝܠܟ. ܟܬܒܐ ܕܦܐܬܐ ܡܫܬܕܪ ܒܠܚܘܕ ܠܡܛܝܒܢܐ ܕܓܒܝܬ.",
   "options_ui_language": "ܠܫܢܐ ܕܦܪܨܘܦܐ",
-  "options_ui_language_auto": "ܝܬܝܪܐܝܬ (ܠܫܢܐ ܕܡܦܪܢܣܢܐ)"
+  "options_ui_language_auto": "ܝܬܝܪܐܝܬ (ܠܫܢܐ ܕܡܦܪܢܣܢܐ)",
+  "menu_summarize_selection": "ܦܣܘܩ ܓܒܝܬܐ",
+  "menu_summarize_page": "ܦܣܘܩ ܦܐܬܐ",
+  "ui_selection": "ܟܬܒܐ ܓܒܝܐ",
+  "ui_ask_placeholder": "ܫܐܠ ܫܘܐܠܐ ܥܠ ܗܢܐ ܦܐܬܐ",
+  "ui_ask": "ܫܐܠ"
 }

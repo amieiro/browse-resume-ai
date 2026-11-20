@@ -35,5 +35,10 @@
   "options_ready": "Hazır",
   "options_help": "Özetler, aboneliğinizle bu bilgisayarda Claude Code veya Codex'i çalıştıran yerel bileşen üzerinden oluşturulur. Sayfa metni yalnızca seçtiğiniz sağlayıcıya gönderilir.",
   "options_ui_language": "Arayüz dili",
-  "options_ui_language_auto": "Otomatik (tarayıcı dili)"
+  "options_ui_language_auto": "Otomatik (tarayıcı dili)",
+  "menu_summarize_selection": "Seçimi özetle",
+  "menu_summarize_page": "Sayfayı özetle",
+  "ui_selection": "Seçili metin",
+  "ui_ask_placeholder": "Bu sayfa hakkında soru sor",
+  "ui_ask": "Sor"
 }

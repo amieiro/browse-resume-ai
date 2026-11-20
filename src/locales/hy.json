@@ -35,5 +35,10 @@
   "options_ready": "Պատրաստ է",
   "options_help": "Ամփոփումներն անցնում են տեղային բաղադրիչով, որը ձեր բաժանորդագրությամբ այս համակարգչում գործարկում է Claude Code կամ Codex։ Էջի տեքստն ուղարկվում է միայն ձեր ընտրած մատակարարին։",
   "options_ui_language": "Միջերեսի լեզուն",
-  "options_ui_language_auto": "Ավտոմատ (դիտարկիչի լեզուն)"
+  "options_ui_language_auto": "Ավտոմատ (դիտարկիչի լեզուն)",
+  "menu_summarize_selection": "Ամփոփել ընտրվածը",
+  "menu_summarize_page": "Ամփոփել էջը",
+  "ui_selection": "Ընտրված տեքստ",
+  "ui_ask_placeholder": "Հարց տվեք այս էջի մասին",
+  "ui_ask": "Հարցնել"
 }

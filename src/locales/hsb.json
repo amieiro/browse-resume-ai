@@ -35,5 +35,10 @@
   "options_ready": "Hotowy",
   "options_help": "Zjeća du přez lokalnu komponentu, kotraž Claude Code abo Codex na tutym ličaku z wašim abonementom wuwjedźe. Tekst strony so jenož k poskićowarjej sćele, kotrehož wuběraće.",
   "options_ui_language": "Rěč powjercha",
-  "options_ui_language_auto": "Awtomatisce (rěč wobhladowaka)"
+  "options_ui_language_auto": "Awtomatisce (rěč wobhladowaka)",
+  "menu_summarize_selection": "Wuběr zjeć",
+  "menu_summarize_page": "Stronu zjeć",
+  "ui_selection": "Wubrany tekst",
+  "ui_ask_placeholder": "Stajće prašenje wo tutej stronje",
+  "ui_ask": "Prašeć so"
 }

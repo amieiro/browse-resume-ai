@@ -35,5 +35,10 @@
   "options_ready": "Pront",
   "options_help": "I riassunt passen per el component local, che 'l fa andà Claude Code o Codex in su quell computer chì con el tò abonament. El test de la pagina l'è mandaa domà al fornidor che te scernisset.",
   "options_ui_language": "Lengua de l'interfacia",
-  "options_ui_language_auto": "Automatica (lengua del navigador)"
+  "options_ui_language_auto": "Automatica (lengua del navigador)",
+  "menu_summarize_selection": "Riassumm la selezion",
+  "menu_summarize_page": "Riassumm la pagina",
+  "ui_selection": "Test selezionaa",
+  "ui_ask_placeholder": "Fà una domanda su questa pagina",
+  "ui_ask": "Domanda"
 }

@@ -35,5 +35,10 @@
   "options_ready": "E don ready",
   "options_help": "Summary dey pass through di local component, wey dey run Claude Code or Codex for dis computer with your subscription. Na only di provider wey you choose we dey send di page text go.",
   "options_ui_language": "Language for di interface",
-  "options_ui_language_auto": "Automatic (browser language)"
+  "options_ui_language_auto": "Automatic (browser language)",
+  "menu_summarize_selection": "Summarize wetin you select",
+  "menu_summarize_page": "Summarize di page",
+  "ui_selection": "Text wey you select",
+  "ui_ask_placeholder": "Ask question about dis page",
+  "ui_ask": "Ask am"
 }

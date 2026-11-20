@@ -35,5 +35,10 @@
   "options_ready": "Hazırdır",
   "options_help": "Xülasələr lokal komponentdən keçir; o, abunəliyinizlə bu kompüterdə Claude Code və ya Codex-i işə salır. Səhifə mətni yalnız seçdiyiniz provayderə göndərilir.",
   "options_ui_language": "İnterfeys dili",
-  "options_ui_language_auto": "Avtomatik (brauzerin dili)"
+  "options_ui_language_auto": "Avtomatik (brauzerin dili)",
+  "menu_summarize_selection": "Seçilmiş mətni xülasə et",
+  "menu_summarize_page": "Səhifəni xülasə et",
+  "ui_selection": "Seçilmiş mətn",
+  "ui_ask_placeholder": "Bu səhifə haqqında sual verin",
+  "ui_ask": "Soruş"
 }

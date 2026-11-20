@@ -35,5 +35,10 @@
   "options_ready": "Klárt",
   "options_help": "Samandráttir fara gjøgnum staðbundna partin, sum koyrir Claude Code ella Codex á hesi telduni við tínum haldi. Síðutekstur verður bert sendur til veitaran, sum tú velur.",
   "options_ui_language": "Mál á markamóti",
-  "options_ui_language_auto": "Sjálvvirkið (mál í kagaranum)"
+  "options_ui_language_auto": "Sjálvvirkið (mál í kagaranum)",
+  "menu_summarize_selection": "Ger samandrátt av valinum",
+  "menu_summarize_page": "Ger samandrátt av síðuni",
+  "ui_selection": "Valdur tekstur",
+  "ui_ask_placeholder": "Spyr ein spurning um hesa síðuna",
+  "ui_ask": "Spyr"
 }

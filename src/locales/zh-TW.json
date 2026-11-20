@@ -35,5 +35,10 @@
   "options_ready": "就緒",
   "options_help": "摘要會透過本機元件產生，該元件會使用你的訂閱在這台電腦上執行 Claude Code 或 Codex。網頁文字只會傳送給你選擇的供應商。",
   "options_ui_language": "介面語言",
-  "options_ui_language_auto": "自動（瀏覽器語言）"
+  "options_ui_language_auto": "自動（瀏覽器語言）",
+  "menu_summarize_selection": "摘要選取內容",
+  "menu_summarize_page": "摘要此頁面",
+  "ui_selection": "選取的文字",
+  "ui_ask_placeholder": "針對此頁面提問",
+  "ui_ask": "提問"
 }

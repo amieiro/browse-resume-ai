@@ -35,5 +35,10 @@
   "options_ready": "ئامادەیە",
   "options_help": "پوختەکان بە پێکهاتە ناوخۆییەکەدا تێدەپەڕن، کە Claude Code یان Codex لەسەر ئەم کۆمپیوتەرە بە بەشداربوونەکەت جێبەجێ دەکات. دەقی پەڕەکە تەنها بۆ ئەو دابینکەرە دەنێردرێت کە هەڵیدەبژێریت.",
   "options_ui_language": "زمانی ڕووکار",
-  "options_ui_language_auto": "خۆکار (زمانی وێبگەڕ)"
+  "options_ui_language_auto": "خۆکار (زمانی وێبگەڕ)",
+  "menu_summarize_selection": "دیاریکراوەکە پوختە بکە",
+  "menu_summarize_page": "پەڕەکە پوختە بکە",
+  "ui_selection": "دەقی دیاریکراو",
+  "ui_ask_placeholder": "پرسیارێک دەربارەی ئەم پەڕەیە بکە",
+  "ui_ask": "بپرسە"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Ebongí",
   "options_help": "Makúsé elekaka na eteni ya esika, oyo esalaka Claude Code tó Codex na ordinatɛ́rɛ oyo na abɔnimá na yo. Makomi ya lokásá etíndamaka se epai ya mopesi oyo okopɔsɔ.",
   "options_ui_language": "Lokóta ya interface",
-  "options_ui_language_auto": "Na yangó moko (lokóta ya navigatɛ́rɛ)"
+  "options_ui_language_auto": "Na yangó moko (lokóta ya navigatɛ́rɛ)",
+  "menu_summarize_selection": "Kúsa oyo eponámí",
+  "menu_summarize_page": "Kúsa lokásá",
+  "ui_selection": "Makomi maponámí",
+  "ui_ask_placeholder": "Tuná motúna na ntína ya lokásá oyo",
+  "ui_ask": "Tuná"
 }

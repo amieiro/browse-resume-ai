@@ -35,5 +35,10 @@
   "options_ready": "ພ້ອມແລ້ວ",
   "options_help": "ບົດສະຫຼຸບຜ່ານອົງປະກອບພາຍໃນເຄື່ອງ, ເຊິ່ງແລ່ນ Claude Code ຫຼື Codex ໃນຄອມພິວເຕີນີ້ດ້ວຍການສະໝັກໃຊ້ຂອງທ່ານ. ຂໍ້ຄວາມຂອງໜ້າຈະຖືກສົ່ງໄປຫາຜູ້ໃຫ້ບໍລິການທີ່ທ່ານເລືອກເທົ່ານັ້ນ.",
   "options_ui_language": "ພາສາຂອງສ່ວນຕິດຕໍ່",
-  "options_ui_language_auto": "ອັດຕະໂນມັດ (ພາສາຂອງບຣາວເຊີ)"
+  "options_ui_language_auto": "ອັດຕະໂນມັດ (ພາສາຂອງບຣາວເຊີ)",
+  "menu_summarize_selection": "ສະຫຼຸບສ່ວນທີ່ເລືອກ",
+  "menu_summarize_page": "ສະຫຼຸບໜ້າ",
+  "ui_selection": "ຂໍ້ຄວາມທີ່ເລືອກ",
+  "ui_ask_placeholder": "ຖາມຄຳຖາມກ່ຽວກັບໜ້ານີ້",
+  "ui_ask": "ຖາມ"
 }

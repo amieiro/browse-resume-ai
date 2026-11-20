@@ -35,5 +35,10 @@
   "options_ready": "Tayari",
   "options_help": "Muhtasari hupitia kipengele cha ndani, kinachoendesha Claude Code au Codex kwenye kompyuta hii kwa usajili wako. Maandishi ya ukurasa hutumwa tu kwa mtoa huduma utakayemchagua.",
   "options_ui_language": "Lugha ya kiolesura",
-  "options_ui_language_auto": "Kiotomatiki (lugha ya kivinjari)"
+  "options_ui_language_auto": "Kiotomatiki (lugha ya kivinjari)",
+  "menu_summarize_selection": "Fupisha ulichochagua",
+  "menu_summarize_page": "Fupisha ukurasa",
+  "ui_selection": "Maandishi yaliyochaguliwa",
+  "ui_ask_placeholder": "Uliza swali kuhusu ukurasa huu",
+  "ui_ask": "Uliza"
 }

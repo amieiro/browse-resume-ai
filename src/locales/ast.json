@@ -35,5 +35,10 @@
   "options_ready": "Llistu",
   "options_help": "Los resumes pasen pel componente local, qu'executa Claude Code o Codex nesti ordenador cola to soscripción. El testu de la páxina namás s'unvia al fornidor qu'escueyas.",
   "options_ui_language": "Llingua de la interfaz",
-  "options_ui_language_auto": "Automática (llingua del restolador)"
+  "options_ui_language_auto": "Automática (llingua del restolador)",
+  "menu_summarize_selection": "Resumir la seleición",
+  "menu_summarize_page": "Resumir la páxina",
+  "ui_selection": "Testu seleicionáu",
+  "ui_ask_placeholder": "Fai una entruga sobre esta páxina",
+  "ui_ask": "Entrugar"
 }

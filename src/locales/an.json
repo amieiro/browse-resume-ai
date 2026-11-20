@@ -35,5 +35,10 @@
   "options_ready": "Listo",
   "options_help": "Os resumens pasan per o componente local, que executa Claude Code u Codex en este ordinador con a tuya suscripción. O texto d'a pachina nomás se ninvia a lo proveyedor que tríes.",
   "options_ui_language": "Idioma d'a interfaz",
-  "options_ui_language_auto": "Automatico (idioma d'o navegador)"
+  "options_ui_language_auto": "Automatico (idioma d'o navegador)",
+  "menu_summarize_selection": "Resumir a selección",
+  "menu_summarize_page": "Resumir a pachina",
+  "ui_selection": "Texto seleccionau",
+  "ui_ask_placeholder": "Fe una pregunta sobre esta pachina",
+  "ui_ask": "Preguntar"
 }

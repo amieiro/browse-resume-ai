@@ -35,5 +35,10 @@
   "options_ready": "واجد",
   "options_help": "الملخصات كتدوز من المكوّن المحلي، اللي كيشغّل Claude Code ولا Codex فهاد الحاسوب بالاشتراك ديالك. نص الصفحة كيتصيفط غير للمزوّد اللي ختاريتي.",
   "options_ui_language": "لغة الواجهة",
-  "options_ui_language_auto": "أوتوماتيكي (لغة المتصفح)"
+  "options_ui_language_auto": "أوتوماتيكي (لغة المتصفح)",
+  "menu_summarize_selection": "لخّص النص المختار",
+  "menu_summarize_page": "لخّص الصفحة",
+  "ui_selection": "النص المختار",
+  "ui_ask_placeholder": "سول شي سؤال على هاد الصفحة",
+  "ui_ask": "سول"
 }

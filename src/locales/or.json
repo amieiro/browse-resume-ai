@@ -35,5 +35,10 @@
   "options_ready": "ପ୍ରସ୍ତୁତ",
   "options_help": "ସାରାଂଶଗୁଡ଼ିକ ସ୍ଥାନୀୟ ଉପାଦାନ ଦେଇ ଯାଏ, ଯାହା ଆପଣଙ୍କ ସଦସ୍ୟତା ସହିତ ଏହି କମ୍ପ୍ୟୁଟରରେ Claude Code କିମ୍ବା Codex ଚଲାଏ। ପୃଷ୍ଠାର ପାଠ୍ୟ କେବଳ ଆପଣ ବାଛିଥିବା ପ୍ରଦାନକାରୀଙ୍କୁ ପଠାଯାଏ।",
   "options_ui_language": "ଇଣ୍ଟରଫେସ ଭାଷା",
-  "options_ui_language_auto": "ସ୍ୱୟଂଚାଳିତ (ବ୍ରାଉଜର ଭାଷା)"
+  "options_ui_language_auto": "ସ୍ୱୟଂଚାଳିତ (ବ୍ରାଉଜର ଭାଷା)",
+  "menu_summarize_selection": "ଚୟନର ସାରାଂଶ କରନ୍ତୁ",
+  "menu_summarize_page": "ପୃଷ୍ଠାର ସାରାଂଶ କରନ୍ତୁ",
+  "ui_selection": "ଚୟନିତ ପାଠ୍ୟ",
+  "ui_ask_placeholder": "ଏହି ପୃଷ୍ଠା ବିଷୟରେ ପ୍ରଶ୍ନ ପଚାରନ୍ତୁ",
+  "ui_ask": "ପଚାରନ୍ତୁ"
 }

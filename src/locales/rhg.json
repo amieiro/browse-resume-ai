@@ -35,5 +35,10 @@
   "options_ready": "Toiyar",
   "options_help": "Sóti hotha ókkol lokal komfonent loi zagoi, ze yán tuáñr sobskripshon loi ey kompiutar ot Claude Code yáñ Codex solá. Fata or lekar hotha óilla tuñi basi lóiyo ze dedeya, yáre fail deoá zagoi.",
   "options_ui_language": "Interfeis or zuban",
-  "options_ui_language_auto": "Nizé nizé (browser or zuban)"
+  "options_ui_language_auto": "Nizé nizé (browser or zuban)",
+  "menu_summarize_selection": "Basi loiye de yán sóti gor",
+  "menu_summarize_page": "Fata yán sóti gor",
+  "ui_selection": "Basi loiye de lekha",
+  "ui_ask_placeholder": "Ey fata yán lói ekkán sual gor",
+  "ui_ask": "Sual gor"
 }

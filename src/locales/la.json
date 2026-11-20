@@ -35,5 +35,10 @@
   "options_ready": "Paratum",
   "options_help": "Summaria per partem localem transeunt, quae Claude Code aut Codex in hoc computatro cum subscriptione tua exsequitur. Textus paginae soli praebitori quem eligis mittitur.",
   "options_ui_language": "Lingua interfaciei",
-  "options_ui_language_auto": "Automatica (lingua navigatri)"
+  "options_ui_language_auto": "Automatica (lingua navigatri)",
+  "menu_summarize_selection": "Selecta summatim redde",
+  "menu_summarize_page": "Paginam summatim redde",
+  "ui_selection": "Textus selectus",
+  "ui_ask_placeholder": "Quaestionem de hac pagina pone",
+  "ui_ask": "Roga"
 }

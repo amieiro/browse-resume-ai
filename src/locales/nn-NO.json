@@ -35,5 +35,10 @@
   "options_ready": "Klar",
   "options_help": "Samandraga går gjennom den lokale komponenten, som køyrer Claude Code eller Codex på denne datamaskina med abonnementet ditt. Teksten på sida blir berre send til leverandøren du vel.",
   "options_ui_language": "Grensesnittspråk",
-  "options_ui_language_auto": "Automatisk (språket i nettlesaren)"
+  "options_ui_language_auto": "Automatisk (språket i nettlesaren)",
+  "menu_summarize_selection": "Samanfatt markeringa",
+  "menu_summarize_page": "Samanfatt sida",
+  "ui_selection": "Markert tekst",
+  "ui_ask_placeholder": "Still eit spørsmål om denne sida",
+  "ui_ask": "Spør"
 }

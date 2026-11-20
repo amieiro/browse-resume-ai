@@ -35,5 +35,10 @@
   "options_ready": "Prett",
   "options_help": "D'Resuméeë lafen iwwer déi lokal Komponent, déi Claude Code oder Codex op dësem Computer mat Ärem Abonnement ausféiert. De Säitentext gëtt nëmmen un den Ubidder geschéckt, deen Dir auswielt.",
   "options_ui_language": "Sprooch vun der Interface",
-  "options_ui_language_auto": "Automatesch (Browsersprooch)"
+  "options_ui_language_auto": "Automatesch (Browsersprooch)",
+  "menu_summarize_selection": "Auswiel resuméieren",
+  "menu_summarize_page": "Säit resuméieren",
+  "ui_selection": "Ausgewielten Text",
+  "ui_ask_placeholder": "Stellt eng Fro iwwer dës Säit",
+  "ui_ask": "Froen"
 }

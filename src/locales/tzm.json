@@ -35,5 +35,10 @@
   "options_ready": "ⵉⵡⵊⴷ",
   "options_help": "ⵉⵙⴳⵣⵓⵍⵏ ⴰⵔ ⵣⵔⵔⵉⵏ ⵙⴳ ⵓⵙⵖⵏ ⴰⴷⵖⴰⵔⴰⵏ, ⵍⵍⵉ ⵉⵙⵙⴽⴰⵔⵏ Claude Code ⵏⵖ Codex ⴳ ⵓⵙⵎⵙⵙⵓ ⴰⴷ ⵙ ⵓⵎⵜⵜⴰⵡⵉ ⵏⵏⴽ. ⴰⴹⵔⵉⵙ ⵏ ⵜⴰⵙⵏⴰ ⵖⴰⵙ ⵉ ⵓⵙⵎⴰⴳ ⵍⵍⵉ ⵜⵙⵜⵉⴷ ⴰⵢⴷ ⵉⵜⵜⵓⵣⵏⴰⵏ.",
   "options_ui_language": "ⵜⵓⵜⵍⴰⵢⵜ ⵏ ⵜⴳⴰⵔⵙⵜ",
-  "options_ui_language_auto": "ⵜⴰⵡⵓⵔⵎⴰⵏⵜ (ⵜⵓⵜⵍⴰⵢⵜ ⵏ ⵓⵎⵙⵜⴰⵔⴰⵢ)"
+  "options_ui_language_auto": "ⵜⴰⵡⵓⵔⵎⴰⵏⵜ (ⵜⵓⵜⵍⴰⵢⵜ ⵏ ⵓⵎⵙⵜⴰⵔⴰⵢ)",
+  "menu_summarize_selection": "ⵙⴳⵣⵍ ⴰⵙⵜⴰⵢ",
+  "menu_summarize_page": "ⵙⴳⵣⵍ ⵜⴰⵙⵏⴰ",
+  "ui_selection": "ⴰⴹⵔⵉⵙ ⵉⵜⵜⵓⵙⵜⴰⵏ",
+  "ui_ask_placeholder": "ⵙⵇⵙⴰ ⵖⴼ ⵜⴰⵙⵏⴰ ⴰⴷ",
+  "ui_ask": "ⵙⵇⵙⴰ"
 }

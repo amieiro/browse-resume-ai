@@ -35,5 +35,10 @@
   "options_ready": "Fet",
   "options_help": "Els resums passen pel component local, que executa Claude Code o Codex en aquest ordinador amb la vostra subscripció. El text de la pàgina només s'envia al proveïdor que trieu.",
   "options_ui_language": "Idioma de la interfície",
-  "options_ui_language_auto": "Automàtic (idioma del navegador)"
+  "options_ui_language_auto": "Automàtic (idioma del navegador)",
+  "menu_summarize_selection": "Resumeix la selecció",
+  "menu_summarize_page": "Resumeix la pàgina",
+  "ui_selection": "Text seleccionat",
+  "ui_ask_placeholder": "Feu una pregunta sobre aquesta pàgina",
+  "ui_ask": "Pregunta"
 }

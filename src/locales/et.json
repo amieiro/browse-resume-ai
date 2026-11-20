@@ -35,5 +35,10 @@
   "options_ready": "Valmis",
   "options_help": "Kokkuvõtted liiguvad läbi kohaliku komponendi, mis käitab selles arvutis sinu tellimusega Claude Code'i või Codexit. Lehe tekst saadetakse ainult sinu valitud teenusepakkujale.",
   "options_ui_language": "Liidese keel",
-  "options_ui_language_auto": "Automaatne (brauseri keel)"
+  "options_ui_language_auto": "Automaatne (brauseri keel)",
+  "menu_summarize_selection": "Tee valikust kokkuvõte",
+  "menu_summarize_page": "Tee lehest kokkuvõte",
+  "ui_selection": "Valitud tekst",
+  "ui_ask_placeholder": "Esita selle lehe kohta küsimus",
+  "ui_ask": "Küsi"
 }

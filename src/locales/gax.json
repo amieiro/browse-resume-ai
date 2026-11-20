@@ -35,5 +35,10 @@
   "options_ready": "Qophaa'eera",
   "options_help": "Cuunfaawwan qaama naannoo keessa darbu; innis kompiitara kana irratti maallaqa galmee keetiin Claude Code ykn Codex hojjechiisa. Barreeffamni fuulaa dhiyeessaa ati filatte qofaaf ergama.",
   "options_ui_language": "Afaan fuula fayyadamaa",
-  "options_ui_language_auto": "Ofumaan (afaan brawuzarii)"
+  "options_ui_language_auto": "Ofumaan (afaan brawuzarii)",
+  "menu_summarize_selection": "Filannoo cuunfi",
+  "menu_summarize_page": "Fuula cuunfi",
+  "ui_selection": "Barreeffama filatame",
+  "ui_ask_placeholder": "Waa'ee fuula kanaa gaaffii gaafadhu",
+  "ui_ask": "Gaafadhu"
 }

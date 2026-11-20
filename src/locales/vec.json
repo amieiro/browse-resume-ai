@@ -35,5 +35,10 @@
   "options_ready": "Pronto",
   "options_help": "I riasunti i passa par el conponente locale, che 'l fa partir Claude Code o Codex su sto computer co la to sotoscrision. El testo de la pagina el vien mandà solo al fornidor che te sernissi.",
   "options_ui_language": "Lengua de l'interfacia",
-  "options_ui_language_auto": "Automatico (lengua del navegador)"
+  "options_ui_language_auto": "Automatico (lengua del navegador)",
+  "menu_summarize_selection": "Riasumi la selesion",
+  "menu_summarize_page": "Riasumi la pajina",
+  "ui_selection": "Testo selesionà",
+  "ui_ask_placeholder": "Fa na domanda so sta pajina",
+  "ui_ask": "Domanda"
 }

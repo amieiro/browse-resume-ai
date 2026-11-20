@@ -35,5 +35,10 @@
   "options_ready": "Vonona",
   "options_help": "Mandalo amin'ilay singa eo an-toerana ny famintinana, izay mampandeha ny Claude Code na ny Codex amin'ity solosaina ity miaraka amin'ny famandrihanao. Ny mpamatsy nofidinao ihany no andefasana ny lahatsoratry ny pejy.",
   "options_ui_language": "Fitenin'ny fifandraisana",
-  "options_ui_language_auto": "Mandeha ho azy (fitenin'ny mpitety tranonkala)"
+  "options_ui_language_auto": "Mandeha ho azy (fitenin'ny mpitety tranonkala)",
+  "menu_summarize_selection": "Famintino ny voafantina",
+  "menu_summarize_page": "Famintino ny pejy",
+  "ui_selection": "Lahatsoratra voafantina",
+  "ui_ask_placeholder": "Mametraha fanontaniana momba ity pejy ity",
+  "ui_ask": "Manontania"
 }

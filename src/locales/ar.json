@@ -35,5 +35,10 @@
   "options_ready": "جاهز",
   "options_help": "تمر الملخّصات عبر المكوّن المحلي، الذي يشغّل Claude Code أو Codex على هذا الكمبيوتر باستخدام اشتراكك. لا يُرسَل نص الصفحة إلا إلى المزوّد الذي تختاره.",
   "options_ui_language": "لغة الواجهة",
-  "options_ui_language_auto": "تلقائي (لغة المتصفح)"
+  "options_ui_language_auto": "تلقائي (لغة المتصفح)",
+  "menu_summarize_selection": "تلخيص التحديد",
+  "menu_summarize_page": "تلخيص الصفحة",
+  "ui_selection": "النص المحدد",
+  "ui_ask_placeholder": "اطرح سؤالاً عن هذه الصفحة",
+  "ui_ask": "اسأل"
 }

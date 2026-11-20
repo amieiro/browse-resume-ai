@@ -6,6 +6,8 @@ keys, no pay-per-use billing.
 
 - One click on the toolbar icon, or <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>, summarizes the page
   with your saved settings.
+- Select some text and right-click **Summarize the selection** to summarize only that part, for
+  pages where the article is not found or when you want one section.
 - Choose the provider and model, the length (short, medium, long) and the summary language.
 - The summary appears in the side panel or in a popup; you pick which in the settings.
 - 201 languages, for both the summary and the interface: the languages of
@@ -175,6 +177,11 @@ the selectors at the top change the provider, model, length and language for the
 use another shortcut, open `chrome://extensions/shortcuts`. If another extension already has
 <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>, Chrome leaves this one without a shortcut; set one there.
 
+To summarize only part of a page, select the text, right-click it and choose **Summarize the
+selection**. The summary is marked **Selected text**, and **Summarize again** repeats it for the same
+selection (with the length or language you pick). The right-click menu also has **Summarize the
+page**.
+
 <img src="media/install/5-summary.png" alt="A summary of the Wikipedia article on the Galician language in the side panel" width="420">
 
 ### Update
@@ -244,11 +251,12 @@ pdokiakaaeffjlabmofdppjakdhaimpi
 
 | Permission | Why |
 |---|---|
-| `activeTab` | Read the page you clicked the icon on. |
+| `activeTab` | Read the page you clicked the icon or the menu on. |
 | `scripting` | Run the article extractor (Mozilla Readability) in that page. |
 | `storage` | Save your settings and the per-tab summary for the session. |
 | `sidePanel` | Show summaries in the side panel. |
 | `nativeMessaging` | Talk to the local component. |
+| `contextMenus` | Add **Summarize the selection** and **Summarize the page** to the right-click menu. |
 
 ## For AI agents
 

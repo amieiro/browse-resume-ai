@@ -35,5 +35,10 @@
   "options_ready": "Njikere",
   "options_help": "Nchịkọta na-agafe n'akụrụngwa mpaghara, nke na-agba Claude Code ma ọ bụ Codex na kọmputa a site na ndenye aha gị. A na-ezigara ederede ibe naanị onye na-enye ọrụ ị họọrọ.",
   "options_ui_language": "Asụsụ ihu mmekọrịta",
-  "options_ui_language_auto": "Na-akpaghị aka (asụsụ ihe nchọgharị)"
+  "options_ui_language_auto": "Na-akpaghị aka (asụsụ ihe nchọgharị)",
+  "menu_summarize_selection": "Chịkọta ihe a họọrọ",
+  "menu_summarize_page": "Chịkọta ibe a",
+  "ui_selection": "Ederede a họọrọ",
+  "ui_ask_placeholder": "Jụọ ajụjụ gbasara ibe a",
+  "ui_ask": "Jụọ"
 }

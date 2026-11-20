@@ -35,5 +35,10 @@
   "options_ready": "واجد",
   "options_help": "الملخّصات تفوت على المكوّن المحلي، اللي يشغّل Claude Code ولا Codex في هاد الكمبيوتر بالاشتراك تاعك. نص الصفحة يتبعث غير للمزوّد اللي تختارو.",
   "options_ui_language": "لغة الواجهة",
-  "options_ui_language_auto": "أوتوماتيك (لغة المتصفح)"
+  "options_ui_language_auto": "أوتوماتيك (لغة المتصفح)",
+  "menu_summarize_selection": "لخّص النص المختار",
+  "menu_summarize_page": "لخّص الصفحة",
+  "ui_selection": "النص المختار",
+  "ui_ask_placeholder": "اسقسي على هاد الصفحة",
+  "ui_ask": "اسقسي"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Prêt",
   "options_help": "Les résumés i passent par ech composant local, qui lanche Claude Code ou Codex su ch’l’ordinateu-chi aveuc vo abonnemint. Ech tekse d’la page il est invoéyé qu’au fornisseu qu’vous cosissez.",
   "options_ui_language": "Langue d’l’interface",
-  "options_ui_language_auto": "Automatique (langue du navigateu)"
+  "options_ui_language_auto": "Automatique (langue du navigateu)",
+  "menu_summarize_selection": "Résumer l’sélection",
+  "menu_summarize_page": "Résumer l’page",
+  "ui_selection": "Tekse sélectionné",
+  "ui_ask_placeholder": "Posez eune question su chl’ page-chi",
+  "ui_ask": "Dmander"
 }

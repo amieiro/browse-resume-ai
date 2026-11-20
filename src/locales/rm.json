@@ -35,5 +35,10 @@
   "options_ready": "Pront",
   "options_help": "Las resumaziuns passan tras la cumponenta locala che exequescha Claude Code u Codex sin quest computer cun tes abunament. Il text da la pagina vegn tramess mo al purschider che ti tschernas.",
   "options_ui_language": "Lingua da l'interfatscha",
-  "options_ui_language_auto": "Automatic (lingua dal navigatur)"
+  "options_ui_language_auto": "Automatic (lingua dal navigatur)",
+  "menu_summarize_selection": "Resumar la selecziun",
+  "menu_summarize_page": "Resumar la pagina",
+  "ui_selection": "Text tschernì",
+  "ui_ask_placeholder": "Fa ina dumonda davart questa pagina",
+  "ui_ask": "Dumandar"
 }

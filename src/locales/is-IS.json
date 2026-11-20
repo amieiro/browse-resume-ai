@@ -35,5 +35,10 @@
   "options_ready": "Tilbúið",
   "options_help": "Samantektir fara í gegnum staðbundna hlutann, sem keyrir Claude Code eða Codex á þessari tölvu með áskriftinni þinni. Texti síðunnar er aðeins sendur til þjónustuaðilans sem þú velur.",
   "options_ui_language": "Tungumál viðmóts",
-  "options_ui_language_auto": "Sjálfvirkt (tungumál vafrans)"
+  "options_ui_language_auto": "Sjálfvirkt (tungumál vafrans)",
+  "menu_summarize_selection": "Draga valið saman",
+  "menu_summarize_page": "Draga síðuna saman",
+  "ui_selection": "Valinn texti",
+  "ui_ask_placeholder": "Spurðu spurningar um þessa síðu",
+  "ui_ask": "Spyrja"
 }

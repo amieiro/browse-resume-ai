@@ -35,5 +35,10 @@
   "options_ready": "Kiwedde",
   "options_help": "Ebifunze biyita mu kitundu eky'omu kompyuta, ekidduka Claude Code oba Codex ku kompyuta eno nga kikozesa okwewandiisa kwo. Ebigambo by'olupapula biweerezebwa wa mugabi gw'olonze yekka.",
   "options_ui_language": "Olulimi lw'enkola",
-  "options_ui_language_auto": "Kyokka (olulimi lwa browser)"
+  "options_ui_language_auto": "Kyokka (olulimi lwa browser)",
+  "menu_summarize_selection": "Funza ebirondeddwa",
+  "menu_summarize_page": "Funza olupapula",
+  "ui_selection": "Ebigambo ebirondeddwa",
+  "ui_ask_placeholder": "Buuza ekibuuzo ku lupapula luno",
+  "ui_ask": "Buuza"
 }

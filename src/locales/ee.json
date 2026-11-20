@@ -35,5 +35,10 @@
   "options_ready": "Le klalo",
   "options_help": "Nyakpɔkpɔwo toa teƒea ƒe akpa la me, si wɔa Claude Code alo Codex le kɔmpiuta sia dzi kple wò subscription. Axa la ƒe nuŋlɔɖi yia nunanala si nètia la gbɔ ɖeɖeko.",
   "options_ui_language": "Interface ƒe gbe",
-  "options_ui_language_auto": "Le eɖokui si (browser ƒe gbe)"
+  "options_ui_language_auto": "Le eɖokui si (browser ƒe gbe)",
+  "menu_summarize_selection": "Ƒo nya siwo nètia la ta",
+  "menu_summarize_page": "Ƒo axa la ƒe nya ta",
+  "ui_selection": "Nya siwo wotia",
+  "ui_ask_placeholder": "Bia biabia aɖe tso axa sia ŋu",
+  "ui_ask": "Bia"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Tayın",
   "options_help": "Juwmaqlawlar jergilikli komponent arqalı ótedi, ol jazılıwıńız benen usı kompyuterde Claude Code yamasa Codex-tı iske túsiredi. Bet teksti tek siz saylaǵan provayderge jiberiledi.",
   "options_ui_language": "Interfeys tili",
-  "options_ui_language_auto": "Avtomatik (brauzer tili)"
+  "options_ui_language_auto": "Avtomatik (brauzer tili)",
+  "menu_summarize_selection": "Tańlanǵandı juwmaqlaw",
+  "menu_summarize_page": "Betti juwmaqlaw",
+  "ui_selection": "Tańlanǵan tekst",
+  "ui_ask_placeholder": "Bul bet haqqında soraw beriń",
+  "ui_ask": "Soraw"
 }

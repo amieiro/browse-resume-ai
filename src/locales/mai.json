@@ -35,5 +35,10 @@
   "options_ready": "तैयार",
   "options_help": "सारांश स्थानीय घटकक माध्यमसँ जाइत अछि, जे अहाँक सदस्यतासँ एहि कंप्यूटरपर Claude Code वा Codex चलबैत अछि। पृष्ठक पाठ मात्र अहाँक चुनल प्रदाताकेँ पठाओल जाइत अछि।",
   "options_ui_language": "इंटरफ़ेसक भाषा",
-  "options_ui_language_auto": "स्वचालित (ब्राउज़रक भाषा)"
+  "options_ui_language_auto": "स्वचालित (ब्राउज़रक भाषा)",
+  "menu_summarize_selection": "चयनक सारांश बनाउ",
+  "menu_summarize_page": "पृष्ठक सारांश बनाउ",
+  "ui_selection": "चयनित पाठ",
+  "ui_ask_placeholder": "एहि पृष्ठक बारेमे प्रश्न पूछू",
+  "ui_ask": "पूछू"
 }

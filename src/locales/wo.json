@@ -35,5 +35,10 @@
   "options_ready": "Pare na",
   "options_help": "Tënk yi dañuy jaar ci pàcc bu dëkk bi, buy doxal Claude Code walla Codex ci ordinatëer bii ak sa abonmaa. Mbindu xët wi dañu koy yónnee rekk ci joxekat bi nga tànn.",
   "options_ui_language": "Làkku interface bi",
-  "options_ui_language_auto": "Otomatik (làkku joowukaay bi)"
+  "options_ui_language_auto": "Otomatik (làkku joowukaay bi)",
+  "menu_summarize_selection": "Tënk li nga tànn",
+  "menu_summarize_page": "Tënk xët wi",
+  "ui_selection": "Mbind mi nga tànn",
+  "ui_ask_placeholder": "Laajal benn laaj ci xët wii",
+  "ui_ask": "Laaj"
 }

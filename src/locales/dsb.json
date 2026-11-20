@@ -35,5 +35,10 @@
   "options_ready": "Gótowe",
   "options_help": "Zespominanja źěju pśez lokalnu komponentu, kótaraž wuwjeźo Claude Code abo Codex na toś tom licadle z wašym abonementom. Tekst boka se jano k wubranemu póbitowarjeju pósćelo.",
   "options_ui_language": "Rěc pówjercha",
-  "options_ui_language_auto": "Awtomatiski (rěc wobglědowaka)"
+  "options_ui_language_auto": "Awtomatiski (rěc wobglědowaka)",
+  "menu_summarize_selection": "Wuběrk zespominaś",
+  "menu_summarize_page": "Bok zespominaś",
+  "ui_selection": "Wubrany tekst",
+  "ui_ask_placeholder": "Stajśo pšašanje wó toś tom boku",
+  "ui_ask": "Pšašaś se"
 }

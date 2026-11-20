@@ -35,5 +35,10 @@
   "options_ready": "Siap",
   "options_help": "Kasimpulan ngaliwatan komponén lokal, anu ngajalankeun Claude Code atanapi Codex dina ieu komputer nganggo langganan anjeun. Téks kaca ngan dikirim ka panyadia anu anjeun pilih.",
   "options_ui_language": "Basa antarbeungeut",
-  "options_ui_language_auto": "Otomatis (basa panyungsi)"
+  "options_ui_language_auto": "Otomatis (basa panyungsi)",
+  "menu_summarize_selection": "Kasimpulkeun pilihan",
+  "menu_summarize_page": "Kasimpulkeun kaca",
+  "ui_selection": "Téks nu dipilih",
+  "ui_ask_placeholder": "Tanyakeun perkara kaca ieu",
+  "ui_ask": "Tanya"
 }

@@ -35,5 +35,10 @@
   "options_ready": "Pare",
   "options_help": "Bann rezime pas par konpozan lokal-la, ki lans Claude Code ouswa Codex lor sa ordinater-la avek ou abonnman. Text paz-la zis avoy ar fourniser ki ou swazir.",
   "options_ui_language": "Langaz lenterfas",
-  "options_ui_language_auto": "Otomatik (langaz navigater)"
+  "options_ui_language_auto": "Otomatik (langaz navigater)",
+  "menu_summarize_selection": "Rezime seleksion-la",
+  "menu_summarize_page": "Rezime paz-la",
+  "ui_selection": "Text selektione",
+  "ui_ask_placeholder": "Poz enn kestion lor sa paz-la",
+  "ui_ask": "Demande"
 }

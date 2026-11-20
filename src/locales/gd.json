@@ -35,5 +35,10 @@
   "options_ready": "Deiseil",
   "options_help": "Thèid na gearr-chunntasan tron cho-phàirt ionadail, a ruitheas Claude Code no Codex air a’ choimpiutair seo leis an fho-sgrìobhadh agad. Cha tèid teacsa na duilleige a chur ach dhan t-solaraiche a thaghas tu.",
   "options_ui_language": "Cànan na h-eadar-aghaidh",
-  "options_ui_language_auto": "Fèin-obrachail (cànan a’ bhrabhsair)"
+  "options_ui_language_auto": "Fèin-obrachail (cànan a’ bhrabhsair)",
+  "menu_summarize_selection": "Dèan gearr-chunntas air an taghadh",
+  "menu_summarize_page": "Dèan gearr-chunntas air an duilleag",
+  "ui_selection": "Teacsa taghte",
+  "ui_ask_placeholder": "Faighnich ceist mun duilleag seo",
+  "ui_ask": "Faighnich"
 }

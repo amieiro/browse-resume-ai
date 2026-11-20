@@ -35,5 +35,10 @@
   "options_ready": "Gata",
   "options_help": "Rezumatele trec prin componenta locală, care rulează Claude Code sau Codex pe acest computer cu abonamentul tău. Textul paginii este trimis doar furnizorului pe care îl alegi.",
   "options_ui_language": "Limba interfeței",
-  "options_ui_language_auto": "Automat (limba browserului)"
+  "options_ui_language_auto": "Automat (limba browserului)",
+  "menu_summarize_selection": "Rezumă selecția",
+  "menu_summarize_page": "Rezumă pagina",
+  "ui_selection": "Text selectat",
+  "ui_ask_placeholder": "Pune o întrebare despre această pagină",
+  "ui_ask": "Întreabă"
 }

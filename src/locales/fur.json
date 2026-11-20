@@ -35,5 +35,10 @@
   "options_ready": "Pront",
   "options_help": "I sunts a passin pal component locâl, che al eseguìs Claude Code o Codex su chest computer cul to abonament. Il test de pagjine al ven mandât dome al furnidôr che tu sielzis.",
   "options_ui_language": "Lenghe de interfacie",
-  "options_ui_language_auto": "Automatiche (lenghe dal navigadôr)"
+  "options_ui_language_auto": "Automatiche (lenghe dal navigadôr)",
+  "menu_summarize_selection": "Fâs il sunt de selezion",
+  "menu_summarize_page": "Fâs il sunt de pagjine",
+  "ui_selection": "Test selezionât",
+  "ui_ask_placeholder": "Fâs une domande su cheste pagjine",
+  "ui_ask": "Domande"
 }

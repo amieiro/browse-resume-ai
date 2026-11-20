@@ -35,5 +35,10 @@
   "options_ready": "Әҙер",
   "options_help": "Йомғаҡтар урындағы компонент аша үтә, ул был компьютерҙа Һеҙҙең яҙылыу менән Claude Code йәки Codex ебәрә. Бит тексы тик Һеҙ һайлаған провайдерға ғына ебәрелә.",
   "options_ui_language": "Интерфейс теле",
-  "options_ui_language_auto": "Автоматик (браузер теле)"
+  "options_ui_language_auto": "Автоматик (браузер теле)",
+  "menu_summarize_selection": "Һайланғанды йомғаҡлау",
+  "menu_summarize_page": "Битте йомғаҡлау",
+  "ui_selection": "Һайланған текст",
+  "ui_ask_placeholder": "Был бит тураһында һорау бирегеҙ",
+  "ui_ask": "Һорау"
 }

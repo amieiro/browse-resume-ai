@@ -35,5 +35,10 @@
   "options_ready": "Pronta",
   "options_help": "Rezumi pasas tra la lokala komponanto, qua exekutas Claude Code o Codex en ica komputero kun vua abono. La texto di la pagino sendesas nur a la provizanto quan vu selektas.",
   "options_ui_language": "Linguo di la interfacio",
-  "options_ui_language_auto": "Automata (linguo di la navigilo)"
+  "options_ui_language_auto": "Automata (linguo di la navigilo)",
+  "menu_summarize_selection": "Rezumar la selekturo",
+  "menu_summarize_page": "Rezumar la pagino",
+  "ui_selection": "Selektita texto",
+  "ui_ask_placeholder": "Questionez pri ica pagino",
+  "ui_ask": "Questionar"
 }

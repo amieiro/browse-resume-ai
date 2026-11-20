@@ -35,5 +35,10 @@
   "options_ready": "تیار",
   "options_help": "کۆتاھیں نبشتانک لوکلیں بہرئے راھا گوزنت، کہ Claude Code یا Codex ءَ اے کمپیوٹرا گوں تئی اشتراکا اجرا کنت. تاکئے متن بس ھما سرجم کنوکا رئوت کہ تو گچین کنئے.",
   "options_ui_language": "رابطئے زبان",
-  "options_ui_language_auto": "اتوماتیک (براؤزرئے زبان)"
+  "options_ui_language_auto": "اتوماتیک (براؤزرئے زبان)",
+  "menu_summarize_selection": "گچین کرتگێن نبشتانکا کۆتاہ کن",
+  "menu_summarize_page": "تاکا کۆتاہ کن",
+  "ui_selection": "گچین کرتگێن نبشتانک",
+  "ui_ask_placeholder": "اے تاکئے بارئوا جُستے کن",
+  "ui_ask": "جُست کن"
 }

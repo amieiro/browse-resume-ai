@@ -35,5 +35,10 @@
   "options_ready": "تيار",
   "options_help": "خلاصا مقامي جزي ذريعي ٺهن ٿا، جيڪو توهان جي سبسڪرپشن سان هن ڪمپيوٽر تي Claude Code يا Codex هلائي ٿو. صفحي جو متن رڳو توهان جي چونڊيل فراهم ڪندڙ ڏانهن موڪليو وڃي ٿو.",
   "options_ui_language": "انٽرفيس جي ٻولي",
-  "options_ui_language_auto": "خودڪار (برائوزر جي ٻولي)"
+  "options_ui_language_auto": "خودڪار (برائوزر جي ٻولي)",
+  "menu_summarize_selection": "چونڊ جو خلاصو ٺاهيو",
+  "menu_summarize_page": "صفحي جو خلاصو ٺاهيو",
+  "ui_selection": "چونڊيل متن",
+  "ui_ask_placeholder": "هن صفحي بابت سوال پڇو",
+  "ui_ask": "پڇو"
 }

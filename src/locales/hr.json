@@ -35,5 +35,10 @@
   "options_ready": "Spremno",
   "options_help": "Sažeci prolaze kroz lokalnu komponentu koja na ovom računalu pokreće Claude Code ili Codex s vašom pretplatom. Tekst stranice šalje se samo pružatelju kojeg odaberete.",
   "options_ui_language": "Jezik sučelja",
-  "options_ui_language_auto": "Automatski (jezik preglednika)"
+  "options_ui_language_auto": "Automatski (jezik preglednika)",
+  "menu_summarize_selection": "Sažmi odabir",
+  "menu_summarize_page": "Sažmi stranicu",
+  "ui_selection": "Odabrani tekst",
+  "ui_ask_placeholder": "Postavite pitanje o ovoj stranici",
+  "ui_ask": "Pitaj"
 }

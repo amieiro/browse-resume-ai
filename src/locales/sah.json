@@ -35,5 +35,10 @@
   "options_ready": "Бэлэм",
   "options_help": "Кылгас ис хоһооннор олохтоох компонент нөҥүө бараллар, ол бу компьютерга эн суруттарыыгынан Claude Code эбэтэр Codex сүүрдэр. Сирэй тиэкиһэ эн талбыт провайдергар эрэ ыытыллар.",
   "options_ui_language": "Интерфейс тыла",
-  "options_ui_language_auto": "Аптамаатынан (браузер тыла)"
+  "options_ui_language_auto": "Аптамаатынан (браузер тыла)",
+  "menu_summarize_selection": "Талыллыбыты кылгат",
+  "menu_summarize_page": "Сирэйи кылгат",
+  "ui_selection": "Талыллыбыт тиэкис",
+  "ui_ask_placeholder": "Бу сирэй туһунан ыйытыы биэр",
+  "ui_ask": "Ыйыт"
 }
