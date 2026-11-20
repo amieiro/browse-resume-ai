@@ -24,14 +24,24 @@ try {
   console.log(`extension loaded: ${id}`);
 
   const page = await browser.newPage();
+  // The extension reads the model lists from the host when it is installed; the settings page
+  // reloads once when it sees new lists. Wait for them, then open the page for good.
   await page.goto(`chrome-extension://${id}/options.html`);
+  await page.waitForFunction(async () => !!(await chrome.storage.local.get('modelCatalog')).modelCatalog, { timeout: 20_000 }).catch(() => {});
+  await page.goto(`chrome-extension://${id}/options.html`, { waitUntil: 'networkidle0' });
+  const catalog = await page.evaluate(async () => (await chrome.storage.local.get('modelCatalog')).modelCatalog);
+  if (!catalog) fail('the model lists were not read from the host');
+  console.log(`model lists: ${JSON.stringify(catalog.models)}`);
+  if (!catalog.models.codex?.includes('gpt-6.2-sol')) fail('the Codex model list did not reach the extension');
   await page.waitForFunction(
     () => [...document.querySelectorAll('[data-status]')].every((s) => s.textContent !== '…'),
     { timeout: 10_000 },
   );
-  const statuses = await page.$$eval('[data-status]', (els) => els.map((e) => `${e.dataset.status}: ${e.textContent}`));
-  console.log(statuses.join('\n'));
-  if (!statuses.every((s) => s.endsWith('Ready'))) fail('a provider is not ready');
+  const statuses = Object.fromEntries(await page.$$eval('[data-status]', (els) => els.map((e) => [e.dataset.status, e.textContent])));
+  console.log(statuses);
+  if (statuses.claude !== 'Ready' || statuses.codex !== 'Ready') fail('Claude or Codex is not ready');
+  // No Ollama in the container: its row must say so.
+  if (!/Ollama/.test(statuses.ollama ?? '')) fail('the Ollama row does not say Ollama is missing');
 
   for (const provider of ['claude', 'codex']) {
     const text = await page.evaluate(

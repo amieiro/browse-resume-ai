@@ -13,7 +13,7 @@ RUN npm ci --ignore-scripts && npx wxt prepare >/dev/null
 RUN mkdir -p /home/tester/bin \
   && cp native-host/test/fixtures/fake-claude.mjs /home/tester/bin/claude \
   && cp native-host/test/fixtures/fake-codex.mjs /home/tester/bin/codex \
-  && cp native-host/test/fixtures/claude-stream.jsonl native-host/test/fixtures/codex-stream.jsonl /home/tester/bin/ \
+  && cp native-host/test/fixtures/claude-stream.jsonl native-host/test/fixtures/codex-stream.jsonl native-host/test/fixtures/codex-models.json /home/tester/bin/ \
   && chmod +x /home/tester/bin/claude /home/tester/bin/codex
 ENV PATH=/home/tester/bin:$PATH
 CMD ["sh", "test/linux/run.sh"]
