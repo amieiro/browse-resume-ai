@@ -2,6 +2,7 @@
 // short preamble message before the answer, so only the last agent message of a completed turn is
 // passed on.
 import { StringDecoder } from 'node:string_decoder';
+import { codexUsage } from './usage.mjs';
 
 export function createCodexStreamParser(onText) {
   const decoder = new StringDecoder('utf8');
@@ -10,6 +11,7 @@ export function createCodexStreamParser(onText) {
   let completed = false;
   let isError = false;
   let errorText = '';
+  let usage = null;
 
   const handleLine = (line) => {
     if (!line.trim()) return;
@@ -23,6 +25,7 @@ export function createCodexStreamParser(onText) {
       lastMessage = event.item.text;
     } else if (event.type === 'turn.completed') {
       completed = true;
+      usage = codexUsage(event.usage);
       if (lastMessage) onText(lastMessage);
     } else if (event.type === 'turn.failed') {
       isError = true;
@@ -45,7 +48,7 @@ export function createCodexStreamParser(onText) {
       handleLine(pending);
       pending = '';
       if (!isError && !completed) return { isError: true, errorText: 'Codex ended before the turn completed' };
-      return { isError, errorText };
+      return { isError, errorText, usage };
     },
   };
 }

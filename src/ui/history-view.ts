@@ -4,6 +4,7 @@ import { LANGUAGES } from '@/lib/languages';
 import { browserExport, type ExportActions } from '@/lib/export';
 import { renderMarkdown } from '@/lib/markdown';
 import { searchHistory } from '@/lib/history';
+import { formatUsage, usageByProvider } from '@/lib/usage';
 import { exportMenu } from './export-menu';
 
 export interface HistoryViewDeps {
@@ -39,11 +40,15 @@ export function mountHistoryView(root: HTMLElement, initial: HistoryEntry[], dep
   search.setAttribute('aria-label', t('history_search'));
   const clear = el('button', { type: 'button', name: 'clear', textContent: t('history_clear') });
   const list = el('div', { className: 'history-list' });
+  const totals = el('section', { className: 'usage-totals' });
+  const lang = document.documentElement.lang || undefined;
+  const number = new Intl.NumberFormat(lang);
   const empty = el('p', { className: 'history-empty' });
   let confirmTimer: ReturnType<typeof setTimeout> | undefined;
 
   root.replaceChildren(
     el('header', { className: 'history-header' }, el('h1', { textContent: t('history_title') }), clear),
+    totals,
     search,
     empty,
     list,
@@ -69,7 +74,10 @@ export function mountHistoryView(root: HTMLElement, initial: HistoryEntry[], dep
         t(`length_${entry.length}`),
         languageName(entry.language),
         ...(entry.style ? [entry.style.name ?? t(`style_${entry.style.id}`)] : []),
-      ].join(' · '),
+        ...(entry.usage ? [formatUsage(entry.usage, t, lang)] : []),
+      ]
+        .filter(Boolean)
+        .join(' · '),
       ...badges.flatMap((b) => [' ', b]),
     );
     const summary = el('div', { className: 'summary' });
@@ -104,7 +112,26 @@ export function mountHistoryView(root: HTMLElement, initial: HistoryEntry[], dep
     return item;
   }
 
+  /** The tokens of every summary in the history, per provider. */
+  function renderTotals() {
+    const rows = usageByProvider(entries);
+    totals.replaceChildren(
+      ...(rows.length ? [el('h2', { textContent: t('history_usage') })] : []),
+      ...rows.map((row) =>
+        el(
+          'p',
+          {},
+          el('strong', { textContent: PROVIDER_LABELS[row.provider] ?? row.provider }),
+          ` · ${t('history_usage_count').replace('{count}', number.format(row.count))} · `,
+          formatUsage({ ms: 0, inputTokens: row.inputTokens, outputTokens: row.outputTokens }, t, lang),
+        ),
+      ),
+    );
+    totals.hidden = rows.length === 0;
+  }
+
   function render() {
+    renderTotals();
     const shown = searchHistory(entries, search.value);
     list.replaceChildren(...shown.map(renderEntry));
     empty.textContent = entries.length === 0 ? t('history_empty') : shown.length === 0 ? t('history_no_results') : '';

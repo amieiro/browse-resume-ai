@@ -3,6 +3,7 @@ import { LANGUAGES } from '@/lib/languages';
 import { browserExport, type ExportActions } from '@/lib/export';
 import { renderMarkdown } from '@/lib/markdown';
 import { styleOptions } from '@/lib/styles';
+import { formatUsage } from '@/lib/usage';
 import type { ProviderId, Settings, SummaryLength } from '@/lib/settings';
 import { MAX_QUESTION_CHARS, type QaItem, type SummaryState } from '@/lib/summarizer';
 import { exportMenu } from './export-menu';
@@ -71,6 +72,8 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
   summary.dataset.role = 'summary';
   summary.setAttribute('aria-live', 'polite');
   const notice = el('p', { className: 'notice', textContent: t('ui_truncated') });
+  const usage = el('p', { className: 'usage' });
+  usage.dataset.role = 'usage';
   const qaList = el('div', { className: 'qa' });
   qaList.setAttribute('aria-live', 'polite');
   const question = el('input', { name: 'question', type: 'text', placeholder: t('ui_ask_placeholder'), maxLength: MAX_QUESTION_CHARS });
@@ -94,7 +97,7 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
       el('div', { className: 'toolbar-row' }, provider, model, options),
       el('div', { className: 'toolbar-row' }, length, language, style),
     ),
-    el('main', {}, source, title, progress, hint, error, summary, notice, qaList),
+    el('main', {}, source, title, progress, hint, error, summary, notice, usage, qaList),
     // The question field stays in the sticky footer, reachable however long the answers get.
     el('footer', { className: 'actions' }, askForm, el('div', { className: 'buttons' }, history, el('span', { className: 'spacer' }), exporter.element, copy, regenerate)),
   );
@@ -125,6 +128,10 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
     if (hasContent) renderMarkdown(s.text, summary);
     else summary.replaceChildren();
     notice.hidden = !(hasContent && s.truncated && s.text);
+    // Under a finished summary: what it took, and whether it came from the cache (no new use).
+    const used = s.status === 'done' ? formatUsage(s.usage, t, document.documentElement.lang) : '';
+    usage.textContent = s.status === 'done' && s.cached ? [used, t('ui_usage_cached')].filter(Boolean).join(' · ') : used;
+    usage.hidden = !usage.textContent;
     copy.disabled = !copyableText(s);
     exporter.setDisabled(s.status !== 'done');
     regenerate.textContent = s.status === 'error' ? t('ui_try_again') : t('ui_regenerate');

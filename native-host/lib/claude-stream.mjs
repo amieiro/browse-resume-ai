@@ -2,6 +2,7 @@
 // Text comes from text_delta stream events only; the full assistant message and the result
 // repeat that text and are ignored, except as a fallback when no deltas arrived.
 import { StringDecoder } from 'node:string_decoder';
+import { claudeUsage } from './usage.mjs';
 
 export function createClaudeStreamParser(onText) {
   const decoder = new StringDecoder('utf8');
@@ -9,6 +10,7 @@ export function createClaudeStreamParser(onText) {
   let sawDelta = false;
   let isError = false;
   let errorText = '';
+  let usage = null;
 
   const handleLine = (line) => {
     if (!line.trim()) return;
@@ -25,6 +27,7 @@ export function createClaudeStreamParser(onText) {
         onText(delta.text);
       }
     } else if (event.type === 'result') {
+      usage = claudeUsage(event.usage);
       if (event.is_error) {
         isError = true;
         errorText = typeof event.result === 'string' ? event.result : '';
@@ -41,12 +44,12 @@ export function createClaudeStreamParser(onText) {
       pending = lines.pop() ?? '';
       lines.forEach(handleLine);
     },
-    /** Flushes the last line and reports whether the run ended with an error result. */
+    /** Flushes the last line and reports whether the run ended with an error result, and the tokens used. */
     end() {
       pending += decoder.end();
       handleLine(pending);
       pending = '';
-      return { isError, errorText };
+      return { isError, errorText, usage };
     },
   };
 }

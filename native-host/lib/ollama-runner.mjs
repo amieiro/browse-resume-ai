@@ -3,6 +3,8 @@
 // setting. Only /api/chat is used, with the prompt as a single user message and no tools: the page
 // text is untrusted and the model must not be able to do anything but write text.
 
+import { ollamaUsage } from './usage.mjs';
+
 const DEFAULT_PORT = 11434;
 const CHECK_TIMEOUT_MS = 1500;
 
@@ -87,7 +89,7 @@ export function runOllama({ baseUrl = ollamaBaseUrl(), model, prompt, onText, on
       const text = event.message?.content;
       if (text && !settled && !controller.signal.aborted) onText(text);
       if (event.done) {
-        finish(onDone);
+        finish(() => onDone(ollamaUsage(event)));
         return true;
       }
       return false;

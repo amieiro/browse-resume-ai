@@ -30,12 +30,12 @@ describe('codex stream parser', () => {
   it('reports a failed turn', () => {
     const { text, summary } = parse([Buffer.from('{"type":"turn.failed","error":{"message":"401 Unauthorized"}}\n')]);
     expect(text).toBe('');
-    expect(summary).toEqual({ isError: true, errorText: '401 Unauthorized' });
+    expect(summary).toEqual({ isError: true, errorText: '401 Unauthorized', usage: null });
   });
 
   it('reports a top-level error event', () => {
     const { summary } = parse([Buffer.from('{"type":"error","message":"usage limit"}\n')]);
-    expect(summary).toEqual({ isError: true, errorText: 'usage limit' });
+    expect(summary).toEqual({ isError: true, errorText: 'usage limit', usage: null });
   });
 
   it('reports an error when the turn never completed', () => {

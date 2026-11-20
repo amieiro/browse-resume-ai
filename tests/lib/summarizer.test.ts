@@ -107,6 +107,34 @@ describe('Summarizer', () => {
     expect(t2.s.getState(1)).toMatchObject({ status: 'done', url: article.url });
   });
 
+  it('records the time and the tokens a summary took, and shows them again from the cache', async () => {
+    let clock = 1000;
+    const p: Provider = {
+      id: 'claude',
+      label: 'Claude',
+      checkAvailability: async () => ({ ok: true }),
+      async *summarize(_prompt, _model, _signal, onUsage) {
+        clock += 2500;
+        yield 'Hello';
+        onUsage?.({ inputTokens: 1200, outputTokens: 80 });
+      },
+    };
+    const t = setup(p, { now: () => clock });
+    await t.s.start(1, { force: false });
+    expect(t.s.getState(1)).toMatchObject({ status: 'done', usage: { ms: 2500, inputTokens: 1200, outputTokens: 80 } });
+    expect(t.s.getState(1)).not.toHaveProperty('cached');
+    await t.s.start(1, { force: false });
+    expect(t.s.getState(1)).toMatchObject({ status: 'done', cached: true, usage: { ms: 2500, inputTokens: 1200, outputTokens: 80 } });
+  });
+
+  it('records only the time when the provider reports no tokens', async () => {
+    const t = setup(provider(() => chunks('Hello')));
+    await t.s.start(1, { force: false });
+    const state = t.s.getState(1);
+    expect(state).toMatchObject({ status: 'done', usage: { ms: expect.any(Number) } });
+    expect(state.status === 'done' && state.usage).not.toHaveProperty('inputTokens');
+  });
+
   it('serves the cache to a new Summarizer (service worker restart)', async () => {
     const p = provider(() => chunks('Hello'));
     await setup(p).s.start(1, { force: false });
@@ -485,6 +513,7 @@ describe('Summarizer', () => {
         model: 'sonnet',
         length: 'short',
         language: 'gl-ES',
+        usage: { ms: expect.any(Number) },
       });
     });
 

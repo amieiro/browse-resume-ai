@@ -70,7 +70,9 @@ export async function loadPromptBuilder(source = 'src/lib/prompt.ts', name = 'bu
 }
 
 /** A real summary, through the installed native host, as the extension would get it. */
-export function summarizeWithHost(prompt, { provider = 'claude', model }) {
+/** Resolves to the summary text; onUsage gets { ms, inputTokens, outputTokens } as the extension keeps it. */
+export function summarizeWithHost(prompt, { provider = 'claude', model, onUsage }) {
+  const startedAt = Date.now();
   return new Promise((resolvePromise, reject) => {
     const host = spawn(LAUNCHER, [], { stdio: ['pipe', 'pipe', 'inherit'] });
     let text = '';
@@ -78,7 +80,7 @@ export function summarizeWithHost(prompt, { provider = 'claude', model }) {
       'data',
       createDecoder((m) => {
         if (m.type === 'chunk') text += m.text;
-        else if (m.type === 'done') (host.stdin.end(), resolvePromise(text));
+        else if (m.type === 'done') (onUsage?.({ ms: Date.now() - startedAt, ...(m.usage ?? {}) }), host.stdin.end(), resolvePromise(text));
         else if (m.type === 'error') (host.stdin.end(), reject(new Error(`${m.code}: ${m.message}`)));
       }),
     );

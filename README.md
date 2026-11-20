@@ -10,6 +10,8 @@ a model running on your own computer through Ollama. No API keys, no pay-per-use
   pages where the article is not found or when you want one section.
 - Ask questions about the page under the summary; the answers come from the page text only.
 - A history of your summaries, with search, kept only on your computer.
+- See what each summary used: the tokens read and written and the time, under the summary and in
+  the history, with totals per provider.
 - Export a summary as Markdown: copy it, save it as a `.md` file, or open it as a note in
   [Obsidian](https://obsidian.md/).
 - YouTube videos are summarized from their transcript.
@@ -93,7 +95,7 @@ _YouTube: a video summarized from its transcript._
 
 <img src="media/gallery/feature-history.png" alt="The history page with three summaries, one of them of a PDF and one with a question and its answer" width="800">
 
-_The history: every summary, with its questions, searchable and kept only on this computer._
+_The history: every summary, with its questions and the tokens it used, searchable and kept only on this computer._
 
 <img src="media/gallery/securityweek-en-US-short.png" alt="A short summary of SecurityWeek in English (United States), in the side panel" width="800">
 
@@ -241,6 +243,13 @@ with all of them, newest first, a search that ignores case and accents, and butt
 delete each one or clear them all. It keeps the last 500 summaries in the extension's storage on
 this computer and is never sent anywhere; turn it off in the settings with **Keep a history of
 summaries**.
+
+Under a finished summary, a grey line shows what it used: the tokens the model read (the prompt
+with the page text) and wrote, and the seconds it took, as Claude Code, Codex or Ollama report
+them. A summary shown again from the cache says **saved summary, no new use**: clicking the icon
+again on the same page with the same settings does not spend your quota. The history shows the same
+line on each summary and, at the top, the tokens used per provider. With a subscription the tokens
+are not billed one by one, but they count towards its usage limits.
 
 The **Export** button under a finished summary (and on each entry of the history) has three
 options. **Copy as Markdown** copies the page title, a link to the page, the summary and the

@@ -12,7 +12,7 @@ export const codexProvider: Provider = {
     if (pong.codexFound !== true) return { ok: false, code: 'codex_missing' };
     return { ok: true };
   },
-  summarize(prompt, model, signal) {
-    return summarizeWithHost('codex', prompt, model, signal);
+  summarize(prompt, model, signal, onUsage) {
+    return summarizeWithHost('codex', prompt, model, signal, onUsage);
   },
 };

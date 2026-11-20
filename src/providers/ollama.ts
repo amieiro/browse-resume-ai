@@ -14,7 +14,7 @@ export const ollamaProvider: Provider = {
     if (Array.isArray(pong.ollamaModels) && pong.ollamaModels.length === 0) return { ok: false, code: 'ollama_model_missing' };
     return { ok: true };
   },
-  summarize(prompt, model, signal) {
-    return summarizeWithHost('ollama', prompt, model, signal);
+  summarize(prompt, model, signal, onUsage) {
+    return summarizeWithHost('ollama', prompt, model, signal, onUsage);
   },
 };

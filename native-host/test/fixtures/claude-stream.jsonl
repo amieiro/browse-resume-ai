@@ -11,4 +11,4 @@
 {"type":"stream_event","event":{"type":"content_block_stop","index":1}}
 {"type":"stream_event","event":{"type":"message_delta","delta":{"stop_reason":"end_turn"}}}
 {"type":"stream_event","event":{"type":"message_stop"}}
-{"type":"result","subtype":"success","is_error":false,"result":"Ola ñandú 🙂\n\n- punto clave"}
+{"type":"result","subtype":"success","is_error":false,"result":"Ola ñandú 🙂\n\n- punto clave","usage":{"input_tokens":3,"cache_creation_input_tokens":600,"cache_read_input_tokens":400,"output_tokens":12}}

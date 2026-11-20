@@ -1,6 +1,6 @@
 import { browser } from 'wxt/browser';
 import type { ProviderId, SummaryLength } from './settings';
-import type { QaItem } from './summarizer';
+import type { QaItem, SummaryUsage } from './summarizer';
 
 /** A summary kept in the history, with what it was made with. */
 export interface HistoryEntry {
@@ -19,6 +19,8 @@ export interface HistoryEntry {
   /** The style, when not the standard one: a built-in id, or a custom style's name. */
   style?: { id: string; name?: string };
   qa?: QaItem[];
+  /** What the summary took (from 0.14.0 on). */
+  usage?: SummaryUsage;
 }
 
 export const HISTORY_KEY = 'history';

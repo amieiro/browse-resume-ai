@@ -288,3 +288,27 @@ describe('summary view export', () => {
     expect(root.querySelector<HTMLElement>('.export-menu')!.hidden).toBe(true);
   });
 });
+
+describe('summary view usage', () => {
+  const usageLine = () => root.querySelector<HTMLElement>('[data-role="usage"]')!;
+
+  it('shows what a finished summary took', () => {
+    const view = mount();
+    view.setState({ status: 'running', title: 'T', text: 'x', truncated: false });
+    expect(usageLine().hidden).toBe(true);
+    view.setState({ status: 'done', title: 'T', text: 'x', truncated: false, usage: { ms: 1500, inputTokens: 10, outputTokens: 2 } });
+    expect(usageLine().hidden).toBe(false);
+    expect(usageLine().textContent).toBe('[ui_usage_tokens] · [ui_usage_time]');
+  });
+
+  it('says when the summary came from the cache', () => {
+    mount().setState({ status: 'done', title: 'T', text: 'x', truncated: false, cached: true });
+    expect(usageLine().textContent).toBe('[ui_usage_cached]');
+  });
+
+  it('shows nothing for a summary without usage', () => {
+    mount().setState({ status: 'done', title: 'T', text: 'x', truncated: false });
+    expect(usageLine().hidden).toBe(true);
+  });
+});
+

@@ -4,7 +4,7 @@ import type { HistoryEntry } from './history';
 import { buildQuestionPrompt } from './question-prompt';
 import { STANDARD_STYLE, styleInstruction } from './styles';
 import type { ProviderId, Settings } from './settings';
-import { SummaryError, type Provider, type SummaryErrorCode } from '@/providers/types';
+import { SummaryError, type Provider, type SummaryErrorCode, type TokenUsage } from '@/providers/types';
 
 /** What a summary is of: the page's article, or text the reader selected (marked with source). */
 type Source = { source?: 'selection'; /** The page the summary is of. */ url?: string };
@@ -20,9 +20,23 @@ export interface QaItem {
 /** Longest question accepted; longer ones are cut. */
 export const MAX_QUESTION_CHARS = 1000;
 
+/** What a summary took: how long the model wrote, and the tokens, when the provider reports them. */
+export interface SummaryUsage extends Partial<TokenUsage> {
+  ms: number;
+}
+
 export type SummaryState =
   | { status: 'idle' }
-  | ({ status: 'running' | 'done'; title: string; text: string; truncated: boolean; qa?: QaItem[] } & Source)
+  | ({
+      status: 'running' | 'done';
+      title: string;
+      text: string;
+      truncated: boolean;
+      qa?: QaItem[];
+      usage?: SummaryUsage;
+      /** Shown again from the cache: no new request was made. */
+      cached?: true;
+    } & Source)
   | ({ status: 'error'; code: SummaryErrorCode; title: string; text: string; truncated: boolean; detail?: string } & Source);
 
 /** A "Summarize the selection" menu click. */
@@ -41,6 +55,8 @@ export interface SummarizerDeps {
   /** The selected text, read from the page with its line breaks; null when the page cannot be read. */
   extractSelection(tabId: number, frameId?: number): Promise<string | null>;
   loadSettings(): Promise<Settings>;
+  /** The clock, for tests. */
+  now?(): number;
   getProvider(id: ProviderId): Provider;
   /** Where finished summaries are kept, when the history is on. */
   history?: {
@@ -212,7 +228,8 @@ export class Summarizer {
         if (cached) {
           const qa = cached.qa?.length ? { qa: cached.qa } : {};
           if (cached.historyId) this.historyIds.set(tabId, cached.historyId);
-          set({ status: 'done', title: cached.title, text: cached.text, truncated: cached.truncated, ...tag, ...qa });
+          const usage = cached.usage ? { usage: cached.usage } : {};
+          set({ status: 'done', title: cached.title, text: cached.text, truncated: cached.truncated, ...tag, ...qa, ...usage, cached: true });
           return;
         }
       }
@@ -223,16 +240,21 @@ export class Summarizer {
 
       set({ status: 'running', title, text, truncated, ...tag });
       const prompt = buildPrompt(article, settings.length, settings.language, kind === 'selection' ? 'selection' : 'article', styleInstruction(settings));
-      for await (const chunk of provider.summarize(prompt, settings.models[settings.provider], signal)) {
+      const now = this.deps.now ?? Date.now;
+      const startedAt = now();
+      let tokens: TokenUsage | null = null;
+      const onUsage = (reported: TokenUsage) => (tokens = reported);
+      for await (const chunk of provider.summarize(prompt, settings.models[settings.provider], signal, onUsage)) {
         if (!isCurrent()) return;
         text += chunk;
         set({ status: 'running', title, text, truncated, ...tag });
       }
       if (!isCurrent()) return;
-      const historyId = await this.keep(tabId, article, settings, text, kind);
+      const usage: SummaryUsage = { ms: Math.max(0, now() - startedAt), ...(tokens ?? {}) };
+      const historyId = await this.keep(tabId, article, settings, text, kind, usage);
       if (!isCurrent()) return;
-      await setCached(tabId, { key, title, text, truncated, ...tag, ...(historyId ? { historyId } : {}) });
-      set({ status: 'done', title, text, truncated, ...tag });
+      await setCached(tabId, { key, title, text, truncated, ...tag, usage, ...(historyId ? { historyId } : {}) });
+      set({ status: 'done', title, text, truncated, ...tag, usage });
     } catch (error) {
       set(errorState(codeOf(error), { title, text, truncated, url: tag.url }, kind, detailOf(error)));
     } finally {
@@ -246,7 +268,8 @@ export class Summarizer {
     if (entry && !this.states.has(tabId)) {
       const tag: Source = { ...(entry.source === 'selection' ? { source: 'selection' as const } : {}), ...(entry.url ? { url: entry.url } : {}) };
       const qa = entry.qa?.length ? { qa: entry.qa } : {};
-      this.setState(tabId, { status: 'done', title: entry.title, text: entry.text, truncated: entry.truncated, ...tag, ...qa });
+      const usage = entry.usage ? { usage: entry.usage } : {};
+      this.setState(tabId, { status: 'done', title: entry.title, text: entry.text, truncated: entry.truncated, ...tag, ...qa, ...usage });
     }
   }
 
@@ -324,7 +347,7 @@ export class Summarizer {
   }
 
   /** Adds a finished summary to the history, when it is on; resolves to its id. */
-  private async keep(tabId: number, article: Article, settings: Settings, text: string, kind: Kind): Promise<string | undefined> {
+  private async keep(tabId: number, article: Article, settings: Settings, text: string, kind: Kind, usage: SummaryUsage): Promise<string | undefined> {
     this.historyIds.delete(tabId);
     if (!this.deps.history || settings.keepHistory === false) return undefined;
     try {
@@ -340,6 +363,7 @@ export class Summarizer {
         length: settings.length,
         language: settings.language,
         ...(settings.style !== STANDARD_STYLE ? { style: styleOf(settings) } : {}),
+        usage,
       });
       this.historyIds.set(tabId, id);
       return id;

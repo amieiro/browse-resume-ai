@@ -152,7 +152,8 @@ try {
   if (!extracted) throw new Error('No article text extracted');
   const buildPrompt = await loadPromptBuilder();
   console.log(`summarizing ${extracted.title} with ${MODEL}...`);
-  const text = await summarizeWithHost(buildPrompt(extracted, 'medium', 'en-US'), { model: MODEL });
+  let usage;
+  const text = await summarizeWithHost(buildPrompt(extracted, 'medium', 'en-US'), { model: MODEL, onUsage: (u) => (usage = u) });
 
   const panel = await browser.newPage();
   await panel.setViewport(PANEL_VIEWPORT);
@@ -166,7 +167,7 @@ try {
       const tab = await chrome.tabs.getCurrent();
       await chrome.storage.session.set({ [`summary:${tab.id}`]: entry });
     },
-    { key: 'screenshot', title: extracted.title, text, truncated: extracted.truncated },
+    { key: 'screenshot', title: extracted.title, text, truncated: extracted.truncated, usage },
   );
   await panel.reload();
   await sleep(1500);

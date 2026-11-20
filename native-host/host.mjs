@@ -65,9 +65,9 @@ function handle(msg) {
       model: msg.model,
       prompt: msg.prompt,
       onText: (text) => send({ type: 'chunk', id, text }),
-      onDone: () => {
+      onDone: (usage) => {
         running.delete(id);
-        send({ type: 'done', id });
+        send(usage ? { type: 'done', id, usage } : { type: 'done', id });
       },
       onError: (code, message) => {
         running.delete(id);

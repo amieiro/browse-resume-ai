@@ -1,7 +1,7 @@
 import { browser } from 'wxt/browser';
 import type { Settings } from './settings';
 import { styleKey } from './styles';
-import type { QaItem } from './summarizer';
+import type { QaItem, SummaryUsage } from './summarizer';
 
 export interface CachedSummary {
   key: string;
@@ -14,6 +14,8 @@ export interface CachedSummary {
   url?: string;
   /** Questions asked about the summary, with their answers. */
   qa?: QaItem[];
+  /** What the summary took when it was made. */
+  usage?: SummaryUsage;
   /** The summary's entry in the history, to add the questions to it. */
   historyId?: string;
 }

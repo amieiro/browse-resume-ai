@@ -8,7 +8,8 @@ import { commandFor } from './resolve-cli.mjs';
  * Runs a CLI once in an empty temporary directory, prompt on stdin, never through a shell.
  * Exactly one of onDone / onError is called, unless cancel() was called first.
  *
- * parser: { write(chunk: Buffer), end(): { isError, errorText } }
+ * parser: { write(chunk: Buffer), end(): { isError, errorText, usage? } }
+ * onDone(usage): usage is { inputTokens, outputTokens } or null
  * classifyError(detail: string): error code for a failed run
  */
 export function runProcess({ command, args, prompt, parser, classifyError, missingCode, onDone, onError }) {
@@ -47,7 +48,7 @@ export function runProcess({ command, args, prompt, parser, classifyError, missi
   child.on('close', (code) => {
     if (finished) return;
     const result = parser.end();
-    if (code === 0 && !result.isError) return finish(onDone);
+    if (code === 0 && !result.isError) return finish(() => onDone(result.usage ?? null));
     const detail = `${result.errorText}\n${stderr}`.trim();
     finish(() => onError(classifyError(detail), detail.slice(0, 500)));
   });

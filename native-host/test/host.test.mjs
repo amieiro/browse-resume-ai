@@ -56,7 +56,7 @@ describe('native host', () => {
   it('streams a Codex summary', async () => {
     const h = startHost();
     h.send({ type: 'summarize', id: 'c1', provider: 'codex', model: 'gpt-6-luna', prompt: 'p' });
-    await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'c1' }));
+    await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'c1', usage: { inputTokens: 10, outputTokens: 5 } }));
     const text = h.messages.filter((m) => m.type === 'chunk').map((m) => m.text).join('');
     expect(text).toBe('Ola ñandú 🙂\n\n- punto clave');
   });
@@ -70,7 +70,7 @@ describe('native host', () => {
   it('streams a summary', async () => {
     const h = startHost();
     h.send({ type: 'summarize', id: 'r1', provider: 'claude', model: 'sonnet', prompt: 'p' });
-    await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'r1' }));
+    await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'r1', usage: { inputTokens: 1003, outputTokens: 12 } }));
     const text = h.messages.filter((m) => m.type === 'chunk').map((m) => m.text).join('');
     expect(text).toBe('Ola ñandú 🙂\n\n- punto clave');
   });
@@ -153,7 +153,7 @@ describe('native host', () => {
       fake = await startFakeOllama();
       const h = startHost({ OLLAMA_HOST: fake.url });
       h.send({ type: 'summarize', id: 'o1', provider: 'ollama', model: 'llama3.2', prompt: 'p' });
-      await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'o1' }));
+      await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'o1', usage: { inputTokens: 42, outputTokens: 7 } }));
       expect(h.messages.filter((m) => m.type === 'chunk').map((m) => m.text).join('')).toBe('Ola ñandú 🙂');
     });
 
@@ -161,7 +161,7 @@ describe('native host', () => {
       fake = await startFakeOllama({ models: [model] });
       const h = startHost({ OLLAMA_HOST: fake.url });
       h.send({ type: 'summarize', id: 'o2', provider: 'ollama', model, prompt: 'p' });
-      await waitFor(() => expect(h.messages.at(-1)).toEqual({ type: 'done', id: 'o2' }));
+      await waitFor(() => expect(h.messages.at(-1)).toMatchObject({ type: 'done', id: 'o2' }));
     });
 
     it.each(['-x', 'a b', '../x', 'a;b', 'x'.repeat(201)])('rejects the Ollama model name %j', async (model) => {

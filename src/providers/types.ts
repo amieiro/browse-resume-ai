@@ -29,12 +29,21 @@ export class SummaryError extends Error {
   }
 }
 
+/** The tokens a request used, as the provider reports them (the input includes cached tokens). */
+export interface TokenUsage {
+  inputTokens: number;
+  outputTokens: number;
+}
+
 export type Availability = { ok: true } | { ok: false; code: SummaryErrorCode };
 
 export interface Provider {
   id: ProviderId;
   label: string;
   checkAvailability(): Promise<Availability>;
-  /** Yields text chunks. Ends without throwing when the signal is aborted. */
-  summarize(prompt: string, model: string, signal: AbortSignal): AsyncIterable<string>;
+  /**
+   * Yields text chunks. Ends without throwing when the signal is aborted. onUsage gets the tokens
+   * used, before the end, when the provider reports them.
+   */
+  summarize(prompt: string, model: string, signal: AbortSignal, onUsage?: (usage: TokenUsage) => void): AsyncIterable<string>;
 }

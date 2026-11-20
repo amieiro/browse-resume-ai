@@ -100,6 +100,24 @@ describe('history view', () => {
     expect(button('export', second).getAttribute('aria-expanded')).toBe('false');
   });
 
+  it('shows the tokens of each summary and the totals per provider', () => {
+    const withUsage = [
+      entry({ id: 'a', usage: { ms: 1000, inputTokens: 100, outputTokens: 10 } }),
+      entry({ id: 'b', usage: { ms: 2000, inputTokens: 50, outputTokens: 5 } }),
+      entry({ id: 'c', provider: 'ollama', model: 'llama3.2' }),
+    ];
+    mountHistoryView(root, withUsage, deps);
+    expect(root.querySelector('.entry .meta')?.textContent).toContain('[ui_usage_tokens] · [ui_usage_time]');
+    const totals = root.querySelector<HTMLElement>('.usage-totals')!;
+    expect(totals.hidden).toBe(false);
+    expect([...totals.querySelectorAll('p')].map((p) => p.textContent)).toEqual(['Claude · [history_usage_count] · [ui_usage_tokens]']);
+  });
+
+  it('has no totals when no summary has tokens', () => {
+    mountHistoryView(root, entries, deps);
+    expect(root.querySelector<HTMLElement>('.usage-totals')!.hidden).toBe(true);
+  });
+
   it('clears everything only on a second click', () => {
     vi.useFakeTimers();
     mountHistoryView(root, entries, deps);

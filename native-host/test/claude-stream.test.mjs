@@ -39,6 +39,6 @@ describe('claude stream parser', () => {
     const err = Buffer.from('{"type":"result","is_error":true,"result":"Not logged in · Please run /login"}\n');
     const { text, summary } = parse([err]);
     expect(text).toBe('');
-    expect(summary).toEqual({ isError: true, errorText: 'Not logged in · Please run /login' });
+    expect(summary).toEqual({ isError: true, errorText: 'Not logged in · Please run /login', usage: null });
   });
 });

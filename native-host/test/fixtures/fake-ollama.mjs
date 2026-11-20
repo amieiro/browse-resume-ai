@@ -26,7 +26,7 @@ export async function startFakeOllama({ models = ['llama3.2:latest'], chunks = [
       if (hang) return res.write(JSON.stringify({ message: { role: 'assistant', content: 'partial' }, done: false }) + '\n');
       // Lines are split mid-way on purpose, as a network may deliver them.
       const lines = chunks.map((c) => JSON.stringify({ message: { role: 'assistant', content: c }, done: false }) + '\n');
-      lines.push(failAfter ? JSON.stringify({ error: 'model runner crashed' }) + '\n' : JSON.stringify({ message: { role: 'assistant', content: '' }, done: true }) + '\n');
+      lines.push(failAfter ? JSON.stringify({ error: 'model runner crashed' }) + '\n' : JSON.stringify({ message: { role: 'assistant', content: '' }, done: true, prompt_eval_count: 42, eval_count: 7 }) + '\n');
       const all = Buffer.from(lines.join(''));
       const mid = Math.floor(all.length / 2);
       res.write(all.subarray(0, mid));

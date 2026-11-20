@@ -1,6 +1,6 @@
 import { browser } from 'wxt/browser';
 import type { HostModels } from '@/lib/model-catalog';
-import { SummaryError, type SummaryErrorCode } from './types';
+import { SummaryError, type SummaryErrorCode, type TokenUsage } from './types';
 
 export const HOST_NAME = 'com.browse_resume_ai.host';
 const PING_TIMEOUT_MS = 3000;
@@ -8,7 +8,7 @@ const PING_TIMEOUT_MS = 3000;
 type HostMessage =
   | { type: 'pong'; version: string; [key: string]: unknown }
   | { type: 'chunk'; id: string; text: string }
-  | { type: 'done'; id: string }
+  | { type: 'done'; id: string; usage?: unknown }
   | { type: 'error'; id: string | null; code: string; message?: string };
 
 type NativePort = ReturnType<typeof browser.runtime.connectNative>;
@@ -101,12 +101,22 @@ export function cliVersions(): Promise<{ claude: string | null; codex: string | 
   return askHost({ type: 'versions' }, 'versions', 30_000);
 }
 
+const isCount = (value: unknown): value is number => typeof value === 'number' && Number.isFinite(value) && value >= 0;
+
+/** The usage the host sent, if it is one. */
+export function parseUsage(value: unknown): TokenUsage | null {
+  if (!value || typeof value !== 'object') return null;
+  const { inputTokens, outputTokens } = value as Record<string, unknown>;
+  return isCount(inputTokens) && isCount(outputTokens) ? { inputTokens: Math.round(inputTokens), outputTokens: Math.round(outputTokens) } : null;
+}
+
 /** Streams a summary from the host. One port per request; ends quietly when aborted. */
 export async function* summarizeWithHost(
   provider: string,
   prompt: string,
   model: string,
   signal: AbortSignal,
+  onUsage?: (usage: TokenUsage) => void,
 ): AsyncGenerator<string> {
   if (signal.aborted) return;
   const id = crypto.randomUUID();
@@ -123,7 +133,11 @@ export async function* summarizeWithHost(
   port.onMessage.addListener((msg: HostMessage) => {
     if (finished || !('id' in msg) || msg.id !== id) return;
     if (msg.type === 'chunk') queue.push(msg.text);
-    else if (msg.type === 'done') finished = true;
+    else if (msg.type === 'done') {
+      finished = true;
+      const usage = parseUsage(msg.usage);
+      if (usage) onUsage?.(usage);
+    }
     else if (msg.type === 'error') {
       finished = true;
       const code = PASSTHROUGH.includes(msg.code as SummaryErrorCode) ? (msg.code as SummaryErrorCode) : 'provider_failed';

@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { fakeBrowser } from 'wxt/testing/fake-browser';
 import { claudeProvider } from '@/providers/claude';
+import { parseUsage } from '@/providers/native';
 import { SummaryError } from '@/providers/types';
 import { mockConnectNative } from './fake-native';
 
@@ -53,6 +54,24 @@ describe('claudeProvider.summarize', () => {
     expect(await collect(claudeProvider.summarize('prompt', 'sonnet', new AbortController().signal))).toEqual(['a', 'b']);
     expect(ports[0]!.posted[0]).toMatchObject({ type: 'summarize', provider: 'claude', model: 'sonnet', prompt: 'prompt' });
     expect(ports[0]!.disconnected).toBe(true);
+  });
+
+  it('passes on the tokens the host reports with done', async () => {
+    mockConnectNative((m, p) => {
+      if (m.type !== 'summarize') return;
+      p.emit({ type: 'chunk', id: m.id, text: 'a' });
+      p.emit({ type: 'done', id: m.id, usage: { inputTokens: 900, outputTokens: 40 } });
+    });
+    const onUsage = vi.fn();
+    expect(await collect(claudeProvider.summarize('prompt', 'sonnet', new AbortController().signal, onUsage))).toEqual(['a']);
+    expect(onUsage).toHaveBeenCalledWith({ inputTokens: 900, outputTokens: 40 });
+  });
+
+  it('ignores a usage that is not one (an older or broken host)', () => {
+    expect(parseUsage(undefined)).toBeNull();
+    expect(parseUsage({ inputTokens: '9', outputTokens: 1 })).toBeNull();
+    expect(parseUsage({ inputTokens: -1, outputTokens: 1 })).toBeNull();
+    expect(parseUsage({ inputTokens: 1.6, outputTokens: 2 })).toEqual({ inputTokens: 2, outputTokens: 2 });
   });
 
   it('throws the host error code', async () => {

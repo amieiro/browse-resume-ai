@@ -10,7 +10,7 @@ export const claudeProvider: Provider = {
     if (pong.claudeFound !== true) return { ok: false, code: 'claude_missing' };
     return { ok: true };
   },
-  summarize(prompt, model, signal) {
-    return summarizeWithHost('claude', prompt, model, signal);
+  summarize(prompt, model, signal, onUsage) {
+    return summarizeWithHost('claude', prompt, model, signal, onUsage);
   },
 };

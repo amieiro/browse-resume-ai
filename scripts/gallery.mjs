@@ -255,8 +255,10 @@ async function historyShot(browser, id, shot, read, buildPrompt, buildQuestionPr
   for (const name of shot.pages) {
     const article = await read(name);
     console.log(`summarizing ${name} for the history...`);
-    const text = await summarizeWithHost(buildPrompt(article, shot.length, shot.language), { model: MODEL });
+    let usage;
+    const text = await summarizeWithHost(buildPrompt(article, shot.length, shot.language), { model: MODEL, onUsage: (u) => (usage = u) });
     const entry = {
+      usage,
       id: name, createdAt: when, url: article.url, title: article.title, text, truncated: article.truncated,
       provider: 'claude', model: MODEL, length: shot.length, language: shot.language,
       ...(article.format ? { format: article.format } : {}),
@@ -364,7 +366,7 @@ try {
       await dismissOverlays(page);
       const selected = await selectParagraphs(page, shot.select);
       const excerpt = { ...article, text: selected, truncated: false };
-      entry.text = await summarizeWithHost(buildPrompt(excerpt, shot.length, shot.language, 'selection'), { model: MODEL });
+      entry.text = await summarizeWithHost(buildPrompt(excerpt, shot.length, shot.language, 'selection'), { model: MODEL, onUsage: (u) => (entry.usage = u) });
       Object.assign(entry, { source: 'selection', truncated: false });
       await sleep(500);
       await hideFloating(page);
@@ -372,7 +374,7 @@ try {
       articlePng = await page.screenshot({ encoding: 'base64' });
     } else {
       const style = PRESET_STYLES.find((p) => p.id === shot.style)?.instruction ?? '';
-      entry.text = await summarizeWithHost(buildPrompt(article, shot.length, shot.language, 'article', style), { model: MODEL });
+      entry.text = await summarizeWithHost(buildPrompt(article, shot.length, shot.language, 'article', style), { model: MODEL, onUsage: (u) => (entry.usage = u) });
       // top: keep the page at the top (the video player) instead of scrolling to the heading.
       articlePng = await captureArticle(page, shot.top ? '' : article.title);
     }
