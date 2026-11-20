@@ -1,6 +1,6 @@
 // @vitest-environment node
 import { spawn } from 'node:child_process';
-import { mkdtempSync, existsSync } from 'node:fs';
+import { mkdtempSync, existsSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -31,6 +31,13 @@ afterEach(() => {
 });
 
 describe('native host', () => {
+  it('reports the version in package.json', async () => {
+    const { version } = JSON.parse(readFileSync(fileURLToPath(new URL('../../package.json', import.meta.url)), 'utf8'));
+    const h = startHost();
+    h.send({ type: 'ping' });
+    await waitFor(() => expect(h.messages[0]).toMatchObject({ type: 'pong', version }));
+  });
+
   it('answers ping', async () => {
     const h = startHost();
     h.send({ type: 'ping' });

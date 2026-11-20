@@ -1,6 +1,15 @@
+import { readFileSync } from 'node:fs';
+
 export const HOST_NAME = 'com.browse_resume_ai.host';
 export const EXTENSION_ID = 'pdokiakaaeffjlabmofdppjakdhaimpi';
-export const VERSION = '0.1.0';
+/** The project version, from the repository's package.json (the host always runs from the repository). */
+export const VERSION = (() => {
+  try {
+    return JSON.parse(readFileSync(new URL('../../package.json', import.meta.url), 'utf8')).version;
+  } catch {
+    return 'unknown';
+  }
+})();
 export const MODEL_PATTERN = /^[A-Za-z0-9][A-Za-z0-9._\[\]-]{0,63}$/;
 export const PROVIDERS = ['claude', 'codex'];
 

@@ -6,6 +6,8 @@ import type { Availability } from '@/providers/types';
 export interface OptionsViewDeps {
   onSave(patch: Partial<Settings>): void;
   checkAvailability(id: ProviderId): Promise<Availability>;
+  /** The extension version, shown at the bottom of the page. */
+  version?: string;
 }
 
 const PROVIDERS: { id: ProviderId; label: string }[] = [
@@ -137,6 +139,7 @@ export function mountOptionsView(root: HTMLElement, initial: Settings, deps: Opt
     ...providerSections,
     el('p', { className: 'help', textContent: t('options_help') }),
   );
+  if (deps.version) root.append(el('p', { className: 'version', textContent: `v${deps.version}` }));
 
   return { ready: Promise.all(statusChecks).then(() => undefined) };
 }

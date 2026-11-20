@@ -321,6 +321,9 @@ to configure.
   run `npm run screenshots` and `npm run gallery` (they open a separate Chrome with a temporary
   profile, and the gallery makes nine real summaries) and commit `media/install` and
   `media/gallery` too.
+- Increase the version with every change, in `package.json` (`npm version patch|minor
+  --no-git-tag-version`; patch for fixes, minor for features). The extension manifest and the
+  native host take it from there, and the settings page shows it at the bottom.
 - After adding, renaming or removing a heading in this README, run `npm run readme-toc` to update
   the table of contents at the top.
 

@@ -1,3 +1,4 @@
+import { browser } from 'wxt/browser';
 import { t } from '@/lib/i18n';
 import { saveSettings } from '@/lib/settings';
 import { getProvider } from '@/providers';
@@ -10,6 +11,7 @@ async function main() {
   mountOptionsView(document.getElementById('app')!, settings, {
     onSave: (patch) => void saveSettings(patch),
     checkAvailability: (id) => getProvider(id).checkAvailability(),
+    version: browser.runtime.getManifest().version,
   });
 }
 

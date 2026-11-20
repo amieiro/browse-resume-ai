@@ -33,6 +33,18 @@ beforeEach(() => {
   availability = { claude: { ok: true }, codex: { ok: true } };
 });
 
+describe('version', () => {
+  it('shows the extension version when given', async () => {
+    const view = mountOptionsView(root, defaultSettings('en'), {
+      onSave,
+      checkAvailability: async (id) => availability[id]!,
+      version: '1.2.3',
+    });
+    await view.ready;
+    expect(root.querySelector('.version')?.textContent).toBe('v1.2.3');
+  });
+});
+
 describe('parseModelList', () => {
   it('trims, drops blanks and duplicates', () => {
     expect(parseModelList(' sonnet \n\nopus\nsonnet\n  \n')).toEqual(['sonnet', 'opus']);

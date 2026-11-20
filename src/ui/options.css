@@ -13,3 +13,4 @@ textarea {
 .field-error { color: var(--error-fg); margin: 0; font-size: 13px; }
 .help { color: var(--muted); font-size: 13px; }
 @media (max-width: 480px) { .row { grid-template-columns: 1fr; } }
+body.options .version { margin-top: 24px; font-size: 12px; color: var(--muted); }
