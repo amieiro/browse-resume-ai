@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Lêçûn texmînek e: ev token dê bi API ya peydakar bi bihayên fermî çiqas biha bûna. Ne ew e ku tu didî; abonetî ji bo her daxwazê nayê hesibandin.",
   "history_usage": "Tokenên bikaranî",
   "history_usage_count": "Kurtasî: {count}",
+  "history_usage_questions": "Pirs: {count}",
   "ui_regenerate": "Dîsa kurt bike",
   "ui_try_again": "Dîsa biceribîne",
   "ui_working": "Tê kurtkirin…",

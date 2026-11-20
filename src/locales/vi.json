@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Chi phí chỉ là ước tính: số tiền các token này sẽ tốn qua API của nhà cung cấp theo giá niêm yết. Đây không phải số tiền bạn trả; gói đăng ký không tính phí theo từng yêu cầu.",
   "history_usage": "Token đã dùng",
   "history_usage_count": "Bản tóm tắt: {count}",
+  "history_usage_questions": "Câu hỏi: {count}",
   "ui_regenerate": "Tóm tắt lại",
   "ui_try_again": "Thử lại",
   "ui_working": "Đang tóm tắt…",

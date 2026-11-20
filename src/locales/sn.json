@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Mutengo ufungidziro: izvo matokeni aya angadai akabhadharwa kuburikidza neAPI yemupi pamitengo yakanyorwa. Hazvisi izvo zvaunobhadhara; kunyoresa hakubhadhariswe pachikumbiro chimwe nechimwe.",
   "history_usage": "Tokens dzashandiswa",
   "history_usage_count": "Zvidimbu: {count}",
+  "history_usage_questions": "Mibvunzo: {count}",
   "ui_regenerate": "Pfupisa zvakare",
   "ui_try_again": "Edza zvakare",
   "ui_working": "Kupfupisa…",

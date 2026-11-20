@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Akuɛ ɔ nyí kpɔ́n ɖé: akuɛ e token enɛ lɛ na bɔ́ ɖo API mɛ nǔ nina ɔ tɔn mɛ ɖo akuɛ e è ɖè ɖo gbadanu é mɛ. É nyí akuɛ e a nɔ sú é ǎ; è nɔ bɛ́ akuɛ ɖo kanbyɔ ɖokpo ɖokpo jí ɖo abɔnmanɛ mɛ ǎ.",
   "history_usage": "Token e è zán lɛ é",
   "history_usage_count": "Xókpɛ́n lɛ: {count}",
+  "history_usage_questions": "Kanbyɔ́ lɛ: {count}",
   "ui_regenerate": "Kpɛ́n xó ɔ ɖó ǎ",
   "ui_try_again": "Tɛ́n kpɔ́n ɖó ǎ",
   "ui_working": "È ɖò xó kpɛ́n wɛ…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "ወጪው ግምት ነው፦ እነዚህ ቶከኖች በአቅራቢው API በይፋዊ ዋጋ ቢከፈሉ የሚያስወጡት መጠን። እርስዎ የሚከፍሉት አይደለም፤ ምዝገባ በእያንዳንዱ ጥያቄ አይከፈልበትም።",
   "history_usage": "ጥቅም ላይ የዋሉ ቶከኖች",
   "history_usage_count": "ማጠቃለያዎች፦ {count}",
+  "history_usage_questions": "ጥያቄዎች፦ {count}",
   "ui_regenerate": "እንደገና አጠቃልል",
   "ui_try_again": "እንደገና ሞክር",
   "ui_working": "በማጠቃለል ላይ…",

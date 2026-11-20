@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "እቲ ዋጋ ግምት እዩ፦ እዞም ቶከናት ብ API ናይ ኣቕራቢ ብዋጋ ዝርዝር ክንደይ ምኸፈሉ። እዚ ንስኻ እትኸፍሎ ኣይኮነን፤ ምዝገባ ንነፍሲ ወከፍ ሕቶ ኣይኽፈሎን።",
   "history_usage": "ዝተጠቐምናሎም ቶከናት",
   "history_usage_count": "ጽማቝታት: {count}",
+  "history_usage_questions": "ሕቶታት: {count}",
   "ui_regenerate": "እንደገና ጽመቕ",
   "ui_try_again": "እንደገና ፈትን",
   "ui_working": "ይጽመቕ ኣሎ…",

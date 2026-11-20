@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Die Kosten sind eine Schätzung: was diese Tokens über die API des Anbieters zu Listenpreisen kosten würden. Das ist nicht, was du zahlst; ein Abo wird nicht pro Anfrage abgerechnet.",
   "history_usage": "Verbrauchte Tokens",
   "history_usage_count": "Zusammenfassungen: {count}",
+  "history_usage_questions": "Fragen: {count}",
   "ui_regenerate": "Erneut zusammenfassen",
   "ui_try_again": "Erneut versuchen",
   "ui_working": "Wird zusammengefasst…",

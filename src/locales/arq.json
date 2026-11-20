@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "التكلفة غير تقدير: واش يكلفو هاد الرموز عبر API تاع المزوّد بالأسعار الرسمية. ماشي هادي واش تخلّص؛ الاشتراك ما يتخلّصش على كل طلب.",
   "history_usage": "الرموز المستعملة",
   "history_usage_count": "الملخّصات: {count}",
+  "history_usage_questions": "الأسئلة: {count}",
   "ui_regenerate": "لخّص مرة أخرى",
   "ui_try_again": "عاود جرّب",
   "ui_working": "راهو يلخّص…",

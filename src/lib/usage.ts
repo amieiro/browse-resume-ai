@@ -35,6 +35,8 @@ export interface ProviderTotal {
   provider: ProviderId;
   /** Summaries with a known usage. */
   count: number;
+  /** Answers to questions with a known usage; their tokens and cost are in the totals too. */
+  questions: number;
   inputTokens: number;
   outputTokens: number;
   /** The summed estimate, when at least one summary had one. */
@@ -44,19 +46,25 @@ export interface ProviderTotal {
 
 const ORDER: ProviderId[] = ['claude', 'codex', 'ollama'];
 
-/** The tokens of the history's summaries, per provider; summaries without tokens are left out. */
+/**
+ * The tokens of the history's summaries and of the answers to questions about them, per provider;
+ * those without tokens are left out.
+ */
 export function usageByProvider(entries: HistoryEntry[]): ProviderTotal[] {
   const totals = new Map<ProviderId, ProviderTotal>();
-  for (const entry of entries) {
-    const usage = entry.usage;
-    if (usage?.inputTokens === undefined || usage.outputTokens === undefined) continue;
-    const total = totals.get(entry.provider) ?? { provider: entry.provider, count: 0, inputTokens: 0, outputTokens: 0 };
-    total.count++;
+  const add = (provider: ProviderId, usage: SummaryUsage | undefined, kind: 'count' | 'questions') => {
+    if (usage?.inputTokens === undefined || usage.outputTokens === undefined) return;
+    const total = totals.get(provider) ?? { provider, count: 0, questions: 0, inputTokens: 0, outputTokens: 0 };
+    total[kind]++;
     total.inputTokens += usage.inputTokens;
     total.outputTokens += usage.outputTokens;
     if (usage.costUsd !== undefined && Number.isFinite(usage.costUsd)) total.costUsd = (total.costUsd ?? 0) + usage.costUsd;
     if (usage.local) total.local = true;
-    totals.set(entry.provider, total);
+    totals.set(provider, total);
+  };
+  for (const entry of entries) {
+    add(entry.provider, entry.usage, 'count');
+    for (const item of entry.qa ?? []) if (item.status === 'done') add(entry.provider, item.usage, 'questions');
   }
   return [...totals.values()].sort((a, b) => ORDER.indexOf(a.provider) - ORDER.indexOf(b.provider));
 }

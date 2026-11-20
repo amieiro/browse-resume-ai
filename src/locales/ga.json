@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Meastachán is ea an costas: an méid a chosnódh na comharthaí seo trí API an tsoláthraí ag praghsanna liosta. Ní hé seo an méid a íocann tú; ní ghearrtar táille in aghaidh an iarratais ar shíntiúas.",
   "history_usage": "Comharthaí a úsáideadh",
   "history_usage_count": "Achoimrí: {count}",
+  "history_usage_questions": "Ceisteanna: {count}",
   "ui_regenerate": "Déan achoimre arís",
   "ui_try_again": "Bain triail eile as",
   "ui_working": "Achoimre á déanamh…",

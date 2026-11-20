@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Ils custs èn ina stima: quai che quests tokens custassan via l'API dal purschider tenor ils pretschs da glista. I n'è betg quai che ti pajas; in abunament na vegn betg quintà per dumonda.",
   "history_usage": "Tokens duvrads",
   "history_usage_count": "Resumaziuns: {count}",
+  "history_usage_questions": "Dumondas: {count}",
   "ui_regenerate": "Resumar danovamain",
   "ui_try_again": "Empruvar anc ina giada",
   "ui_working": "Resumar…",

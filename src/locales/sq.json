@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Kostoja është një vlerësim: sa do të kushtonin këto tokenë përmes API-së së ofruesit me çmimet e listës. Nuk është ajo që paguani; abonimi nuk tarifohet për çdo kërkesë.",
   "history_usage": "Tokenë të përdorur",
   "history_usage_count": "Përmbledhje: {count}",
+  "history_usage_questions": "Pyetje: {count}",
   "ui_regenerate": "Përmblidhe sërish",
   "ui_try_again": "Riprovo",
   "ui_working": "Po përmblidhet…",

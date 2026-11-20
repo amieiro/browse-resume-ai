@@ -16,6 +16,8 @@ export interface QaItem {
   answer: string;
   status: 'running' | 'done' | 'error';
   code?: SummaryErrorCode;
+  /** What the answer took, as for a summary (from 0.16.0 on). */
+  usage?: SummaryUsage;
 }
 
 /** Longest question accepted; longer ones are cut. */
@@ -315,12 +317,17 @@ export class Summarizer {
       if (!availability.ok) return update({ question, answer, status: 'error', code: availability.code });
       const history = earlier.filter((item) => item.status === 'done');
       const prompt = buildQuestionPrompt(article, state.text, history, question, settings.language, kind === 'selection' ? 'selection' : 'article');
-      for await (const chunk of provider.summarize(prompt, settings.models[settings.provider], controller.signal)) {
+      const now = this.deps.now ?? Date.now;
+      const startedAt = now();
+      let tokens: TokenUsage | null = null;
+      const onUsage = (reported: TokenUsage) => (tokens = reported);
+      for await (const chunk of provider.summarize(prompt, settings.models[settings.provider], controller.signal, onUsage)) {
         if (!isCurrent()) return;
         answer += chunk;
         update({ question, answer, status: 'running' });
       }
-      update({ question, answer, status: 'done' });
+      const usage = await this.usageOf(settings, Math.max(0, now() - startedAt), tokens as TokenUsage | null);
+      update({ question, answer, status: 'done', usage });
     } catch (error) {
       update({ question, answer, status: 'error', code: codeOf(error) });
     } finally {

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Cena je odhad: kolik by tyto tokeny stály přes API poskytovatele podle ceníku. Není to částka, kterou platíte; předplatné se neúčtuje za jednotlivé požadavky.",
   "history_usage": "Použité tokeny",
   "history_usage_count": "Shrnutí: {count}",
+  "history_usage_questions": "Dotazy: {count}",
   "ui_regenerate": "Shrnout znovu",
   "ui_try_again": "Zkusit znovu",
   "ui_working": "Shrnování…",

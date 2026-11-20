@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "ܢܦܩܬܐ ܡܫܘܚܬܐ ܗܝ: ܟܡܐ ܗܘܘ ܢܦܩܝܢ ܗܠܝܢ ܛܘܩܢܐ ܒ API ܕܡܛܝܒܢܐ ܒܛܝܡܐ ܕܦܢܩܝܬܐ. ܠܐ ܗܘ ܡܐ ܕܦܪܥ ܐܢܬ؛ ܡܫܬܘܬܦܘܬܐ ܠܐ ܡܬܦܪܥܐ ܥܠ ܟܠ ܒܥܘܬܐ.",
   "history_usage": "ܛܘܩܢܐ ܕܐܬܚܫܚܘ",
   "history_usage_count": "ܦܣܝܩܬܐ: {count}",
+  "history_usage_questions": "ܫܘܐܠܐ: {count}",
   "ui_regenerate": "ܦܣܘܩ ܡܢ ܕܪܝܫ",
   "ui_try_again": "ܢܣܝ ܡܢ ܕܪܝܫ",
   "ui_working": "ܦܣܩ…",

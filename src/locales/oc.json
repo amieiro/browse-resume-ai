@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Lo cost es una estimacion: çò que costarián aqueles tokens per l'API del provesidor als prètzes publics. Es pas çò que pagatz; un abonament se factura pas per requèsta.",
   "history_usage": "Tokens utilizats",
   "history_usage_count": "Resumits: {count}",
+  "history_usage_questions": "Questions: {count}",
   "ui_regenerate": "Tornar resumir",
   "ui_try_again": "Tornar ensajar",
   "ui_working": "Resumit en cors…",

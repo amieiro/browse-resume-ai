@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "E gasto ta un calculo: loke e tokennan aki lo costa via e API di e proveedor na prijs di lista. No ta loke bo ta paga; un suscripcion no ta cobra pa cada peticion.",
   "history_usage": "Token usa",
   "history_usage_count": "Resumennan: {count}",
+  "history_usage_questions": "Preguntanan: {count}",
   "ui_regenerate": "Resumi atrobe",
   "ui_try_again": "Purba atrobe",
   "ui_working": "Ta resumiendo…",

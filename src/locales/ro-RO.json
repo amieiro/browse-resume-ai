@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Costul este o estimare: cât ar costa aceste tokenuri prin API-ul furnizorului, la prețurile de listă. Nu este ce plătești; un abonament nu se taxează per cerere.",
   "history_usage": "Tokenuri folosite",
   "history_usage_count": "Rezumate: {count}",
+  "history_usage_questions": "Întrebări: {count}",
   "ui_regenerate": "Rezumă din nou",
   "ui_try_again": "Încearcă din nou",
   "ui_working": "Se rezumă…",

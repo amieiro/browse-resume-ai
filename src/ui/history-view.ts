@@ -87,6 +87,8 @@ export function mountHistoryView(root: HTMLElement, initial: HistoryEntry[], dep
       .map((item) => {
         const answer = el('div', { className: 'answer' });
         renderMarkdown(item.answer, answer);
+        const used = formatUsage(item.usage, t, lang);
+        if (used) answer.append(el('p', { className: 'usage', textContent: used }));
         return el('div', { className: 'qa-item' }, el('p', { className: 'question', textContent: item.question }), answer);
       });
     const copy = el('button', { type: 'button', name: 'copy', textContent: t('ui_copy') });
@@ -122,7 +124,10 @@ export function mountHistoryView(root: HTMLElement, initial: HistoryEntry[], dep
           'p',
           {},
           el('strong', { textContent: PROVIDER_LABELS[row.provider] ?? row.provider }),
-          ` · ${t('history_usage_count').replace('{count}', number.format(row.count))} · `,
+          ` · ${[
+            t('history_usage_count').replace('{count}', number.format(row.count)),
+            ...(row.questions ? [t('history_usage_questions').replace('{count}', number.format(row.questions))] : []),
+          ].join(' · ')} · `,
           formatUsage({ ms: 0, inputTokens: row.inputTokens, outputTokens: row.outputTokens, costUsd: row.costUsd, ...(row.local ? { local: true as const } : {}) }, t, lang),
         ),
       ),

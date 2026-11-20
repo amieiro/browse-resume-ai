@@ -147,6 +147,8 @@ export function mountSummaryView(root: HTMLElement, initial: Settings, handlers:
       ...items.map((item) => {
         const answer = el('div', { className: 'answer' });
         if (item.answer) renderMarkdown(item.answer, answer);
+        const used = item.status === 'done' ? formatUsage(item.usage, t, document.documentElement.lang) : '';
+        if (used) answer.append(el('p', { className: 'usage', textContent: used, title: item.usage?.costUsd !== undefined && !item.usage.local ? t('ui_usage_cost_note') : '' }));
         else if (item.status === 'running') answer.append(el('div', { className: 'progress', textContent: t('ui_working') }));
         if (item.status === 'error') answer.append(el('div', { className: 'error', textContent: t(`error_${item.code ?? 'provider_failed'}`) }));
         return el('div', { className: 'qa-item' }, el('p', { className: 'question', textContent: item.question }), answer);

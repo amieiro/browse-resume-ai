@@ -113,6 +113,12 @@ describe('history view', () => {
     expect([...totals.querySelectorAll('p')].map((p) => p.textContent)).toEqual(['Claude · [history_usage_count] · [ui_usage_tokens]']);
   });
 
+  it('counts the answered questions in the totals and shows what each answer took', () => {
+    mountHistoryView(root, [entry({ usage: { ms: 1, inputTokens: 1, outputTokens: 1 }, qa: [{ question: 'Q?', answer: 'A', status: 'done', usage: { ms: 1, inputTokens: 1, outputTokens: 1 } }] })], deps);
+    expect(root.querySelector('.usage-totals p')?.textContent).toBe('Claude · [history_usage_count] · [history_usage_questions] · [ui_usage_tokens]');
+    expect(root.querySelector('.qa-item .usage')?.textContent).toBe('[ui_usage_tokens] · [ui_usage_time]');
+  });
+
   it('has no totals when no summary has tokens', () => {
     mountHistoryView(root, entries, deps);
     expect(root.querySelector<HTMLElement>('.usage-totals')!.hidden).toBe(true);

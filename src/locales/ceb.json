@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Ang gasto usa ka banabana: kung pila ang magasto niining mga token pinaagi sa API sa provider sa opisyal nga presyo. Dili kini ang imong ginabayran; ang subscription dili ginasingil matag hangyo.",
   "history_usage": "Mga token nga nagamit",
   "history_usage_count": "Mga summary: {count}",
+  "history_usage_questions": "Mga pangutana: {count}",
   "ui_regenerate": "I-summarize pag-usab",
   "ui_try_again": "Sulayi pag-usab",
   "ui_working": "Gi-summarize…",

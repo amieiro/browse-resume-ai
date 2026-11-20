@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Izmaksas ir aptuvenas: cik šie tokeni maksātu, izmantojot pakalpojuma sniedzēja API par cenrāža cenām. Tā nav summa, ko jūs maksājat; abonements netiek iekasēts par katru pieprasījumu.",
   "history_usage": "Izmantotie tokeni",
   "history_usage_count": "Kopsavilkumi: {count}",
+  "history_usage_questions": "Jautājumi: {count}",
   "ui_regenerate": "Apkopot vēlreiz",
   "ui_try_again": "Mēģināt vēlreiz",
   "ui_working": "Notiek apkopošana…",

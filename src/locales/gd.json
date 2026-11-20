@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "’S e tuairmse a th’ anns a’ chosgais: na chosgadh na tòcan seo tro API an t-solaraiche aig prìsean na liosta. Chan e seo na phàigheas tu; cha chuirear cosgais air fo-sgrìobhadh airson gach iarrtas.",
   "history_usage": "Tòcain a chaidh a chleachdadh",
   "history_usage_count": "Gearr-chunntasan: {count}",
+  "history_usage_questions": "Ceistean: {count}",
   "ui_regenerate": "Dèan gearr-chunntas a-rithist",
   "ui_try_again": "Feuch ris a-rithist",
   "ui_working": "A’ dèanamh gearr-chunntas…",

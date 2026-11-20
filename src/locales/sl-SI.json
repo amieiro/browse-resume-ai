@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Strošek je ocena: koliko bi ti žetoni stali prek API-ja ponudnika po ceniku. To ni znesek, ki ga plačate; naročnina se ne zaračunava po zahtevi.",
   "history_usage": "Porabljeni žetoni",
   "history_usage_count": "Povzetki: {count}",
+  "history_usage_questions": "Vprašanja: {count}",
   "ui_regenerate": "Znova povzemi",
   "ui_try_again": "Poskusi znova",
   "ui_working": "Povzemanje …",

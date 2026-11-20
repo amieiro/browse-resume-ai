@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Kostnaðurin er eitt mat: tað, sum hesi tokens høvdu kostað gjøgnum API hjá veitaranum eftir almennum prísum. Tað er ikki tað, tú gjaldar; ein hald verður ikki kravt fyri hvørja fyrispurning.",
   "history_usage": "Brúkt tokens",
   "history_usage_count": "Samandráttir: {count}",
+  "history_usage_questions": "Spurningar: {count}",
   "ui_regenerate": "Ger samandrátt aftur",
   "ui_try_again": "Royn aftur",
   "ui_working": "Ger samandrátt…",

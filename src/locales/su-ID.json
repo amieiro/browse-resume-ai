@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Biaya téh ngan perkiraan: sabaraha biaya token ieu ngaliwatan API panyadia dumasar harga daptar. Ieu lain anu anjeun bayar; langganan henteu ditagih per paménta.",
   "history_usage": "Token nu dipaké",
   "history_usage_count": "Kasimpulan: {count}",
+  "history_usage_questions": "Patarosan: {count}",
   "ui_regenerate": "Kasimpulkeun deui",
   "ui_try_again": "Cobaan deui",
   "ui_working": "Keur nyimpulkeun…",

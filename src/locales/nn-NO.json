@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Kostnaden er eit overslag: kva desse tokens ville ha kosta gjennom API-et til leverandøren etter listepris. Det er ikkje det du betaler; eit abonnement blir ikkje belasta per førespurnad.",
   "history_usage": "Brukte tokens",
   "history_usage_count": "Samandrag: {count}",
+  "history_usage_questions": "Spørsmål: {count}",
   "ui_regenerate": "Samanfatt på nytt",
   "ui_try_again": "Prøv igjen",
   "ui_working": "Samanfattar…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "A költség csak becslés: ennyibe kerülnének ezek a tokenek a szolgáltató API-ján keresztül listaáron. Nem ezt fizeti; az előfizetést nem kérésenként számlázzák.",
   "history_usage": "Felhasznált tokenek",
   "history_usage_count": "Összefoglalók: {count}",
+  "history_usage_questions": "Kérdések: {count}",
   "ui_regenerate": "Újbóli összefoglalás",
   "ui_try_again": "Újrapróbálás",
   "ui_working": "Összefoglalás…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "De kosten bunt 'n schatting: wat disse tokens kosten zollen via de API van de anbeejer tegen de leste priezen. Dit is nich wat iej betaalt; 'n abonnement wörd nich per verzeuk in rekening ebröch.",
   "history_usage": "Gebroekte tokens",
   "history_usage_count": "Samenvattingen: {count}",
+  "history_usage_questions": "Vroagen: {count}",
   "ui_regenerate": "Opniej samenvatten",
   "ui_try_again": "Opniej perbeern",
   "ui_working": "Bezig met samenvatten…",

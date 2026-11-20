@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Ur jedadenn eo ar c'houst: ar pezh a gousto an tokennoù-se dre API ar pourchaser hervez ar prizioù ofisiel. N'eo ket ar pezh a baeit; ur c'houmanant n'eo ket fakturennet dre c'houlenn.",
   "history_usage": "Tokennoù implijet",
   "history_usage_count": "Diverradennoù: {count}",
+  "history_usage_questions": "Goulennoù: {count}",
   "ui_regenerate": "Diverrañ en-dro",
   "ui_try_again": "Klask en-dro",
   "ui_working": "O tiverrañ…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "費用は推定値です。これらのトークンをプロバイダーの API で定価で利用した場合の金額であり、実際の支払額ではありません。サブスクリプションはリクエストごとに課金されません。",
   "history_usage": "使用トークン数",
   "history_usage_count": "要約: {count}",
+  "history_usage_questions": "質問: {count}",
   "ui_regenerate": "もう一度要約",
   "ui_try_again": "再試行",
   "ui_working": "要約しています…",

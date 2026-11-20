@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Izindleko ziyisilinganiso: lokho la mathokheni abezobiza ngakho nge-API yomhlinzeki ngamanani ohlu. Akukhona lokho okukhokhayo; okubhaliselwe akukhokhiswa ngesicelo ngasinye.",
   "history_usage": "Amathokheni asetshenzisiwe",
   "history_usage_count": "Izifinyezo: {count}",
+  "history_usage_questions": "Imibuzo: {count}",
   "ui_regenerate": "Finyeza futhi",
   "ui_try_again": "Zama futhi",
   "ui_working": "Kuyafinyezwa…",

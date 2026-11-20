@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Amcangyfrif yw'r gost: faint fyddai'r tocynnau hyn yn ei gostio drwy API y darparwr ar brisiau rhestr. Nid dyma'r hyn rydych chi'n ei dalu; nid yw tanysgrifiad yn codi tâl fesul cais.",
   "history_usage": "Tocynnau a ddefnyddiwyd",
   "history_usage_count": "Crynodebau: {count}",
+  "history_usage_questions": "Cwestiynau: {count}",
   "ui_regenerate": "Crynhoi eto",
   "ui_try_again": "Ceisio eto",
   "ui_working": "Wrthi'n crynhoi…",

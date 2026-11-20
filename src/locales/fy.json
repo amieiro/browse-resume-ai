@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "De kosten binne in skatting: wat dizze tokens kostje soene fia de API fan de oanbieder tsjin listprizen. It is net wat jo betelje; in abonnemint wurdt net per fersyk yn rekken brocht.",
   "history_usage": "Brûkte tokens",
   "history_usage_count": "Gearfettingen: {count}",
+  "history_usage_questions": "Fragen: {count}",
   "ui_regenerate": "Opnij gearfetsje",
   "ui_try_again": "Opnij probearje",
   "ui_working": "Gearfetsje…",

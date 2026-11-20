@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Il cost al è une stime: ce che a costaressin chescj token midiant la API dal furnidôr a la tarife publiche. Nol è ce che tu paiis; un abonament nol ven fat paiâ par ogni richieste.",
   "history_usage": "Token doprâts",
   "history_usage_count": "Sunts: {count}",
+  "history_usage_questions": "Domandis: {count}",
   "ui_regenerate": "Torne a fâ il sunt",
   "ui_try_again": "Torne a provâ",
   "ui_working": "Daûr a fâ il sunt…",

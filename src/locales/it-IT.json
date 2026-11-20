@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Il costo è una stima: quanto costerebbero questi token tramite l’API del fornitore a prezzi di listino. Non è quanto paghi; un abbonamento non viene addebitato per richiesta.",
   "history_usage": "Token utilizzati",
   "history_usage_count": "Riassunti: {count}",
+  "history_usage_questions": "Domande: {count}",
   "ui_regenerate": "Riassumi di nuovo",
   "ui_try_again": "Riprova",
   "ui_working": "Riassunto in corso…",

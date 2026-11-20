@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Ch'prix ch'est eune estimation : chu qu'chés tokens i couteroaitte pa l'API du fornisseu au prix d'catalogue. Ch'est point chu qu'vous payez ; un abonnemint i n'est point facturé pa d'mande.",
   "history_usage": "Tokens utilisés",
   "history_usage_count": "Résumés : {count}",
+  "history_usage_questions": "Questions : {count}",
   "ui_regenerate": "Résumer acore",
   "ui_try_again": "Assayer acore",
   "ui_working": "Résumé in cours…",

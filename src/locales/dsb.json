@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Kósty su wótgódnjenje: kak wjele by toś te tokeny pśez API póbitowarja pó lisćinowych płaśiznach kósćili. To njejo, což wy płaśiśo; abonement se pó napšašowanju njewótlicujo.",
   "history_usage": "Wužyte tokeny",
   "history_usage_count": "Zespominanja: {count}",
+  "history_usage_questions": "Pšašanja: {count}",
   "ui_regenerate": "Hyšći raz zespominaś",
   "ui_try_again": "Hyšći raz wopytaś",
   "ui_working": "Zespominujo se…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "التكلفة غير تقدير: شحال غادي يكلفو هاد الرموز عبر API ديال المزوّد بالأثمنة الرسمية. ماشي هادشي اللي كتخلّص؛ الاشتراك ما كيتخلّصش على كل طلب.",
   "history_usage": "الرموز المستعملة",
   "history_usage_count": "الملخصات: {count}",
+  "history_usage_questions": "الأسئلة: {count}",
   "ui_regenerate": "لخّص عاوتاني",
   "ui_try_again": "عاود جرّب",
   "ui_working": "كنلخّص…",

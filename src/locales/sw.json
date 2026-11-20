@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Gharama ni makadirio: kiasi ambacho tokeni hizi zingegharimu kupitia API ya mtoa huduma kwa bei za orodha. Si kiasi unacholipa; usajili hautozwi kwa kila ombi.",
   "history_usage": "Tokeni zilizotumika",
   "history_usage_count": "Muhtasari: {count}",
+  "history_usage_questions": "Maswali: {count}",
   "ui_regenerate": "Fupisha tena",
   "ui_try_again": "Jaribu tena",
   "ui_working": "Inafupisha…",

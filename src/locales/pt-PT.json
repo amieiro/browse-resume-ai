@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "O custo é uma estimativa: o que estes tokens custariam através da API do fornecedor ao preço de tabela. Não é o que paga; a subscrição não é cobrada por pedido.",
   "history_usage": "Tokens utilizados",
   "history_usage_count": "Resumos: {count}",
+  "history_usage_questions": "Perguntas: {count}",
   "ui_regenerate": "Resumir novamente",
   "ui_try_again": "Tentar novamente",
   "ui_working": "A resumir…",

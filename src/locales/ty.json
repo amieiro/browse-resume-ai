@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "E tāpaʻo noa te moni: te moni o teie mau token na roto i te API a te horo'a ra'a i te moni tumu. E ere teie ta oe e aufau; aita te tapa'o ra'a e aufauhia no te mau ani ra'a tata'itahi.",
   "history_usage": "Token i fa'a'ohipahia",
   "history_usage_count": "Tātarara'a poto: {count}",
+  "history_usage_questions": "Uira'a: {count}",
   "ui_regenerate": "Fa'apoto fa'ahou",
   "ui_try_again": "Tāmata fa'ahou",
   "ui_working": "Te fa'apoto nei…",

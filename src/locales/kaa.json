@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Bahası tek shamalaw: bul tokenler provayderdiń API arqalı dizim bahası menen qansha turatuǵını. Bul siz tóleytuǵın summa emes; jazılıw hár bir soraw ushın tólenbeydi.",
   "history_usage": "Paydalanılǵan tokenler",
   "history_usage_count": "Juwmaqlawlar: {count}",
+  "history_usage_questions": "Sorawlar: {count}",
   "ui_regenerate": "Qaytadan juwmaqlaw",
   "ui_try_again": "Qaytadan urınıp kóriń",
   "ui_working": "Juwmaqlanbaqta…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Iindleko luqikelelo: oko ezi thokheni bezingaxabisa ngako nge-API yomboneleli ngamaxabiso oluhlu. Asiyiyo le uyihlawulayo; ubhaliso aluhlawuliswa ngesicelo ngasinye.",
   "history_usage": "Iithokheni ezisetyenzisiweyo",
   "history_usage_count": "Izishwankathelo: {count}",
+  "history_usage_questions": "Imibuzo: {count}",
   "ui_regenerate": "Shwankathela kwakhona",
   "ui_try_again": "Zama kwakhona",
   "ui_working": "Kuyashwankathelwa…",

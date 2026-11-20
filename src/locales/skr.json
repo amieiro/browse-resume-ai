@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "خرچ ہک اندازہ ہے: ایہ ٹوکن فراہم کنندہ دی API راہیں لسٹ قیمتاں تے کتنے دے پوندے۔ ایہ او نئیں جیہڑا تساں ڈیندے او؛ سبسکرپشن وچ ہر درخواست دا خرچہ نئیں لگدا۔",
   "history_usage": "ورتے ہوئے ٹوکن",
   "history_usage_count": "خلاصے: {count}",
+  "history_usage_questions": "سوال: {count}",
   "ui_regenerate": "ولا خلاصہ بݨاؤ",
   "ui_try_again": "ولا کوشش کرو",
   "ui_working": "خلاصہ بݨدا پئے…",

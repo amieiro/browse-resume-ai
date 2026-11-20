@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "ⴰⵙⵇⵇⵉⵎ ⴷ ⴰⵙⵙⵉⴹⵏ: ⵎⴰⵏⵉⵎⴽ ⵔⴰⴷ ⵙⵇⵇⵉⵎⵏ ⵜⵓⴽⵏ ⴰⴷ ⵙ API ⵏ ⵓⵎⵙⵜⴰⴳ ⵙ ⵜⵙⵓⵜⵔⵉⵡⵉⵏ ⵏ ⵜⵍⴳⴰⵎⵜ. ⵓⵔ ⴷ ⴰⵢⵏⵏⴰ ⵜⵅⵍⵍⵚⴷ; ⴰⵎⵜⵜⵓⵖ ⵓⵔ ⵉⵜⵜⵓⵅⵍⵍⵚ ⵅⴼ ⴽⵓ ⵜⵓⵜⵔⴰ.",
   "history_usage": "ⵜⵓⴽⵏ ⵉⵜⵜⵓⵙⵎⵔⵙⵏ",
   "history_usage_count": "ⵉⵙⴳⵣⵓⵍⵏ: {count}",
+  "history_usage_questions": "ⵉⵙⵇⵙⵉⵜⵏ: {count}",
   "ui_regenerate": "ⴰⵍⵙ ⴰⵙⴳⵣⵓⵍ",
   "ui_try_again": "ⴰⵍⵙ ⴰⵔⵎ",
   "ui_working": "ⴰⵙⴳⵣⵓⵍ ⴷⴳ ⵓⵎⵓⵔⵙ…",

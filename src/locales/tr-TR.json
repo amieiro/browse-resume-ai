@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Maliyet bir tahmindir: bu token'ların sağlayıcının API'si üzerinden liste fiyatlarıyla tutacağı tutar. Ödediğiniz tutar değildir; abonelik istek başına ücretlendirilmez.",
   "history_usage": "Kullanılan token",
   "history_usage_count": "Özetler: {count}",
+  "history_usage_questions": "Sorular: {count}",
   "ui_regenerate": "Yeniden özetle",
   "ui_try_again": "Tekrar dene",
   "ui_working": "Özetleniyor…",

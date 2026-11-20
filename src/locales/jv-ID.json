@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Biaya iki mung kira-kira: pira regane token iki liwat API panyedhiya miturut rega daftar. Iki dudu sing sampeyan bayar; langganan ora ditagih saben panjalukan.",
   "history_usage": "Token sing digunakake",
   "history_usage_count": "Ringkesan: {count}",
+  "history_usage_questions": "Pitakonan: {count}",
   "ui_regenerate": "Ringkes maneh",
   "ui_try_again": "Coba maneh",
   "ui_working": "Lagi ngringkes…",

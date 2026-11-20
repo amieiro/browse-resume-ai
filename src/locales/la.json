@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Sumptus aestimatio est: quanti haec signa per API praebitoris pretiis publicis constarent. Non est quod solvis; subscriptio non per singulas petitiones exigitur.",
   "history_usage": "Signa adhibita",
   "history_usage_count": "Summaria: {count}",
+  "history_usage_questions": "Quaestiones: {count}",
   "ui_regenerate": "Iterum summatim redde",
   "ui_try_again": "Iterum conare",
   "ui_working": "Summarium conficitur…",

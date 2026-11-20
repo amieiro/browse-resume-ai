@@ -265,8 +265,9 @@ async function historyShot(browser, id, shot, read, buildPrompt, buildQuestionPr
     };
     if (name === 'newscientist') {
       const question = 'How many patients were treated?';
-      const answer = await summarizeWithHost(buildQuestionPrompt(article, text, [], question, shot.language), { model: MODEL });
-      entry.qa = [{ question, answer, status: 'done' }];
+      let answerUsage;
+      const answer = await summarizeWithHost(buildQuestionPrompt(article, text, [], question, shot.language), { model: MODEL, onUsage: (u) => (answerUsage = u) });
+      entry.qa = [{ question, answer, status: 'done', usage: answerUsage }];
     }
     entries.unshift(entry);
     when += 47 * 60 * 1000;
@@ -383,7 +384,9 @@ try {
       for (const question of shot.questions) {
         console.log(`  asking: ${question}`);
         const prompt = buildQuestionPrompt(article, entry.text, entry.qa, question, shot.language);
-        entry.qa.push({ question, answer: await summarizeWithHost(prompt, { model: MODEL }), status: 'done' });
+        let usage;
+        const answer = await summarizeWithHost(prompt, { model: MODEL, onUsage: (u) => (usage = u) });
+        entry.qa.push({ question, answer, status: 'done', usage });
       }
     }
     await page.close();

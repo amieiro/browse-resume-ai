@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Motuya oyo ezali kaka ya kokanisa: oyo tokens oyo elingaki kosɛnga na nzela ya API ya mopesi na ntalo ya liste. Ezali te oyo ofutaka; abonnement efutisaka te mpo na mosɛngi moko na moko.",
   "history_usage": "Tokens oyo esalelami",
   "history_usage_count": "Makúsé: {count}",
+  "history_usage_questions": "Mitúná: {count}",
   "ui_regenerate": "Kúsa lisúsu",
   "ui_try_again": "Meka lisúsu",
   "ui_working": "Ezali kokúsa…",

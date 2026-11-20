@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Kharashku waa qiyaas: inta ay tokenadan ku kacayaan iyadoo loo marayo API-ga bixiyaha qiimaha liiska. Ma aha waxa aad bixiso; isdiiwaangelintu kuma dallacdo codsi kasta.",
   "history_usage": "Token-nada la isticmaalay",
   "history_usage_count": "Soo koobidda: {count}",
+  "history_usage_questions": "Su'aalaha: {count}",
   "ui_regenerate": "Mar kale soo koob",
   "ui_try_again": "Isku day mar kale",
   "ui_working": "Waa la soo koobayaa…",

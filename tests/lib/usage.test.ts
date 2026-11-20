@@ -58,8 +58,23 @@ describe('usageByProvider', () => {
         entry('codex'),
       ]),
     ).toEqual([
-      { provider: 'claude', count: 2, inputTokens: 150, outputTokens: 25, costUsd: 0.75 },
-      { provider: 'ollama', count: 1, inputTokens: 10, outputTokens: 2, local: true },
+      { provider: 'claude', count: 2, questions: 0, inputTokens: 150, outputTokens: 25, costUsd: 0.75 },
+      { provider: 'ollama', count: 1, questions: 0, inputTokens: 10, outputTokens: 2, local: true },
     ]);
+  });
+
+  it('adds the answered questions to the totals, counted apart', () => {
+    const withQuestions = {
+      provider: 'codex',
+      usage: { ms: 1, inputTokens: 100, outputTokens: 10, costUsd: 0.1 },
+      qa: [
+        { question: 'A?', answer: 'a', status: 'done', usage: { ms: 1, inputTokens: 50, outputTokens: 5, costUsd: 0.05 } },
+        { question: 'B?', answer: '', status: 'error', usage: { ms: 1, inputTokens: 9, outputTokens: 9 } },
+        { question: 'C?', answer: 'c', status: 'done' },
+      ],
+    } as HistoryEntry;
+    const [total] = usageByProvider([withQuestions]);
+    expect(total).toMatchObject({ provider: 'codex', count: 1, questions: 1, inputTokens: 150, outputTokens: 15 });
+    expect(total!.costUsd).toBeCloseTo(0.15, 10);
   });
 });

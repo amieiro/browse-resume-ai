@@ -248,7 +248,8 @@ Under a finished summary, a grey line shows what it used: the tokens the model r
 with the page text) and wrote, and the seconds it took, as Claude Code, Codex or Ollama report
 them. A summary shown again from the cache says **saved summary, no new use**: clicking the icon
 again on the same page with the same settings does not spend your quota. The history shows the same
-line on each summary and, at the top, the tokens used per provider. With a subscription the tokens
+line on each summary and, at the top, the tokens used per provider. Answers to questions show the
+same line under each answer and count in the totals too. With a subscription the tokens
 are not billed one by one, but they count towards its usage limits.
 
 The line also shows an **approximate cost**, "≈ $0.011 estimated at API prices": what the same

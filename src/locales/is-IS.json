@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Kostnaðurinn er áætlun: það sem þessir tókar myndu kosta í gegnum API þjónustuveitandans á listaverði. Þetta er ekki það sem þú greiðir; áskrift er ekki rukkuð fyrir hverja beiðni.",
   "history_usage": "Notaðir tókar",
   "history_usage_count": "Samantektir: {count}",
+  "history_usage_questions": "Spurningar: {count}",
   "ui_regenerate": "Draga saman aftur",
   "ui_try_again": "Reyna aftur",
   "ui_working": "Dreg saman…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Hórós iiba andaz: ei token ókkol dedeya'r API dí list'r dam ót hoddúr lagiyó. Iiba tuñí dí deyon ná; subscription ókkol request'r lla tiá ná lo.",
   "history_usage": "Bebohar gorá token",
   "history_usage_count": "Sóti hotha: {count}",
+  "history_usage_questions": "Sual: {count}",
   "ui_regenerate": "Abar sóti gor",
   "ui_try_again": "Abar hoóshish gor",
   "ui_working": "Sóti gorér…",

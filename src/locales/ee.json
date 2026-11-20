@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Gazazã la nye tɔtrɔ ko: ale si token siawo axɔ to nunanala ƒe API dzi le asi siwo woɖe ɖe go nu. Menye esia nèxena o; womexɔa ga ɖe subscription ƒe biabia ɖesiaɖe ta o.",
   "history_usage": "Token siwo wozã",
   "history_usage_count": "Nyakpɔkpɔwo: {count}",
+  "history_usage_questions": "Biabiawo: {count}",
   "ui_regenerate": "Ƒo nya ta ake",
   "ui_try_again": "Gagbugbɔ dze agbagba",
   "ui_working": "Le nya ƒom ta…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "העלות היא הערכה: כמה היו עולים הטוקנים האלה דרך ה-API של הספק לפי המחירון. זה לא מה שמשלמים בפועל; מנוי לא מחויב לפי בקשה.",
   "history_usage": "טוקנים בשימוש",
   "history_usage_count": "סיכומים: {count}",
+  "history_usage_questions": "שאלות: {count}",
   "ui_regenerate": "סיכום מחדש",
   "ui_try_again": "ניסיון חוזר",
   "ui_working": "מסכם…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Njëg gi xayma la: li token yii di jar ci API bu joxekat bi ci njëg yi ñu bind. Du li ngay fey; abonnement du fey ci bépp laaj.",
   "history_usage": "Token yi ñu jëfandikoo",
   "history_usage_count": "Tënk yi: {count}",
+  "history_usage_questions": "Laaj yi: {count}",
   "ui_regenerate": "Tënkaat",
   "ui_try_again": "Jéemaatal",
   "ui_working": "Mu ngi tënk…",

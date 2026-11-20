@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Omuwendo guno kibalirirwa: ze tokens zino zandisasuddwa nga ziyita mu API y'omugabi ku miwendo egyalangirirwa. Si by'osasula; okwewandiisa tekusasulwa ku buli kusaba.",
   "history_usage": "Tokens ezikozeseddwa",
   "history_usage_count": "Ebifunze: {count}",
+  "history_usage_questions": "Ebibuuzo: {count}",
   "ui_regenerate": "Funza nate",
   "ui_try_again": "Gezaako nate",
   "ui_working": "Kifunzibwa…",

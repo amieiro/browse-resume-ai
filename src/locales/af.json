@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Die koste is 'n skatting: wat hierdie tokens deur die verskaffer se API teen lyspryse sou kos. Dit is nie wat jy betaal nie; 'n intekening word nie per versoek gehef nie.",
   "history_usage": "Tokens gebruik",
   "history_usage_count": "Opsommings: {count}",
+  "history_usage_questions": "Vrae: {count}",
   "ui_regenerate": "Som weer op",
   "ui_try_again": "Probeer weer",
   "ui_working": "Som tans op…",

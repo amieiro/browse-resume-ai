@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Akia missingersuinerinnaavoq: tokenit taakku pilersuisup API-ia aqqutigalugu akit tamanut saqqummiunneqartut naapertorlugit qanoq akeqassanersut. Tamanna akiligassatit pinngilaq; abonnementi apeqqutit tamaasa akilerneqarneq ajorpoq.",
   "history_usage": "Token-it atorneqartut",
   "history_usage_count": "Eqikkaanerit: {count}",
+  "history_usage_questions": "Apeqqutit: {count}",
   "ui_regenerate": "Eqikkaaqqiguk",
   "ui_try_again": "Misiliqqiguk",
   "ui_working": "Eqikkaavoq…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Xərc təxminidir: bu tokenlərin provayderin API-si ilə rəsmi qiymətlərlə nə qədər tutacağı. Bu, ödədiyiniz məbləğ deyil; abunəlik hər sorğuya görə ödənilmir.",
   "history_usage": "İstifadə olunan tokenlər",
   "history_usage_count": "Xülasələr: {count}",
+  "history_usage_questions": "Suallar: {count}",
   "ui_regenerate": "Yenidən xülasə et",
   "ui_try_again": "Yenidən cəhd edin",
   "ui_working": "Xülasə hazırlanır…",

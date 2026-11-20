@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "De kosten zijn een schatting: wat deze tokens via de API van de provider tegen de catalogusprijzen zouden kosten. Het is niet wat je betaalt; een abonnement wordt niet per verzoek aangerekend.",
   "history_usage": "Gebruikte tokens",
   "history_usage_count": "Samenvattingen: {count}",
+  "history_usage_questions": "Vragen: {count}",
   "ui_regenerate": "Opnieuw samenvatten",
   "ui_try_again": "Opnieuw proberen",
   "ui_working": "Samenvatten…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "費用僅為估算：即這些 token 依供應商 API 的定價計算所需的費用。這不是你實際支付的金額；訂閱不會按請求計費。",
   "history_usage": "已用 token",
   "history_usage_count": "摘要：{count}",
+  "history_usage_questions": "提問：{count}",
   "ui_regenerate": "重新摘要",
   "ui_try_again": "再試一次",
   "ui_working": "正在摘要…",

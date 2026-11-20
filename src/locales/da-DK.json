@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Prisen er et skøn: hvad disse tokens ville koste via udbyderens API til listepris. Det er ikke det, du betaler; et abonnement afregnes ikke pr. forespørgsel.",
   "history_usage": "Brugte tokens",
   "history_usage_count": "Opsummeringer: {count}",
+  "history_usage_questions": "Spørgsmål: {count}",
   "ui_regenerate": "Opsummer igen",
   "ui_try_again": "Prøv igen",
   "ui_working": "Opsummerer…",

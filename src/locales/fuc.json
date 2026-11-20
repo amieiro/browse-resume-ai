@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Coggu ngu ko jamirɗinaa: ko ɗum token ɗee coggotoo e API joom golle ɗee e coggu laaɓtungu. Wonaa ko njoɓataa; abonmaa yoɓetaake e ɗaɓɓaande kala.",
   "history_usage": "Token huutoraaɗe",
   "history_usage_count": "Timmooje: {count}",
+  "history_usage_questions": "Naamne: {count}",
   "ui_regenerate": "Timmin kadi",
   "ui_try_again": "Eto kadi",
   "ui_working": "Nana timmina…",

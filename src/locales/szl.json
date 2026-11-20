@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Koszt to ino szacōnek: kelo by te tokyny kosztowały bez API dostawcy wedle cynnika. To niy je to, co płacisz; abōnamynt niy je płacōny za kożde zapytanie.",
   "history_usage": "Użyte tokyny",
   "history_usage_count": "Podsumowania: {count}",
+  "history_usage_questions": "Pytania: {count}",
   "ui_regenerate": "Podsumuj zaś",
   "ui_try_again": "Sprōbuj zaś",
   "ui_working": "Podsumowowanie…",

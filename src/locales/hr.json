@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Trošak je procjena: koliko bi ovi tokeni stajali preko API-ja pružatelja po cjeniku. To nije ono što plaćate; pretplata se ne naplaćuje po zahtjevu.",
   "history_usage": "Potrošeni tokeni",
   "history_usage_count": "Sažeci: {count}",
+  "history_usage_questions": "Pitanja: {count}",
   "ui_regenerate": "Ponovno sažmi",
   "ui_try_again": "Pokušaj ponovno",
   "ui_working": "Sažimanje…",

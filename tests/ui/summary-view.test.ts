@@ -310,5 +310,17 @@ describe('summary view usage', () => {
     mount().setState({ status: 'done', title: 'T', text: 'x', truncated: false });
     expect(usageLine().hidden).toBe(true);
   });
-});
 
+  it('shows what each finished answer took', () => {
+    mount().setState({
+      status: 'done', title: 'T', text: 'x', truncated: false,
+      qa: [
+        { question: 'A?', answer: 'a', status: 'done', usage: { ms: 900, inputTokens: 5, outputTokens: 1, costUsd: 0.001 } },
+        { question: 'B?', answer: 'b', status: 'running' },
+      ],
+    });
+    const lines = [...root.querySelectorAll<HTMLElement>('.qa-item .usage')];
+    expect(lines.map((l) => l.textContent)).toEqual(['[ui_usage_tokens] · [ui_usage_cost] · [ui_usage_time]']);
+    expect(lines[0]!.title).toBe('[ui_usage_cost_note]');
+  });
+});

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Baasiin tilmaama: wanta toonii kun API dhiyeessaa irraan gatii ifaa irratti baasisu. Wanta ati kaffaltu miti; maallaqni miseensummaa gaaffii tokkoon hin herregamu.",
   "history_usage": "Tooniiwwan itti fayyadaman",
   "history_usage_count": "Cuunfaawwan: {count}",
+  "history_usage_questions": "Gaaffiiwwan: {count}",
   "ui_regenerate": "Ammas cuunfi",
   "ui_try_again": "Irra deebi'ii yaali",
   "ui_working": "Cuunfaa jira…",

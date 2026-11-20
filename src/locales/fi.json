@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Hinta on arvio: mitä nämä tokenit maksaisivat palveluntarjoajan API:n kautta listahinnoin. Se ei ole sitä, mitä maksat; tilauksesta ei veloiteta pyyntökohtaisesti.",
   "history_usage": "Käytetyt tokenit",
   "history_usage_count": "Tiivistelmiä: {count}",
+  "history_usage_questions": "Kysymyksiä: {count}",
   "ui_regenerate": "Tiivistä uudelleen",
   "ui_try_again": "Yritä uudelleen",
   "ui_working": "Tiivistetään…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "التكلفة تقديرية: ما ستكلّفه هذه الرموز عبر API المزوّد بالأسعار المعلنة. ليست ما تدفعه؛ فالاشتراك لا يُحاسَب على كل طلب.",
   "history_usage": "الرموز المستخدمة",
   "history_usage_count": "الملخّصات: {count}",
+  "history_usage_questions": "الأسئلة: {count}",
   "ui_regenerate": "التلخيص مرة أخرى",
   "ui_try_again": "إعادة المحاولة",
   "ui_working": "جارٍ التلخيص…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Ìnáwó náà jẹ́ àfojúdíwọ̀n: iye tí àwọn token wọ̀nyí ìbá ná nípasẹ̀ API olùpèsè ní iye owó àkọsílẹ̀. Kì í ṣe ohun tí o ń san; a kì í gba owó ìforúkọsílẹ̀ fún ìbéèrè kọ̀ọ̀kan.",
   "history_usage": "Àwọn token tí a lò",
   "history_usage_count": "Àwọn àkópọ̀: {count}",
+  "history_usage_questions": "Àwọn ìbéèrè: {count}",
   "ui_regenerate": "Ṣe àkópọ̀ lẹ́ẹ̀kan sí i",
   "ui_try_again": "Gbìyànjú lẹ́ẹ̀kan sí i",
   "ui_working": "Ó ń ṣe àkópọ̀…",

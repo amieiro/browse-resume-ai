@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "خرچ یک تخمینے: اے توکن سرجم کنوکئے API ءِ راھا گوں رسمی نرخان چنکس خرچ کننت. اے ھما نہ انت کہ تو دئیئے؛ اشتراک پہ ھر درخواستا حساب نبیت.",
   "history_usage": "کارمرز بوتگیں توکن",
   "history_usage_count": "کۆتاھیں نبشتانک: {count}",
+  "history_usage_questions": "جُستان: {count}",
   "ui_regenerate": "پدا کۆتاہ کن",
   "ui_try_again": "پدا کوشست کن",
   "ui_working": "کۆتاہ کنگ اِنت…",

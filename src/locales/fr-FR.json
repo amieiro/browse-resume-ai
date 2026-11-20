@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Le coût est une estimation : ce que coûteraient ces jetons via l’API du fournisseur au tarif public. Ce n’est pas ce que vous payez ; un abonnement n’est pas facturé à la requête.",
   "history_usage": "Jetons utilisés",
   "history_usage_count": "Résumés : {count}",
+  "history_usage_questions": "Questions : {count}",
   "ui_regenerate": "Résumer à nouveau",
   "ui_try_again": "Réessayer",
   "ui_working": "Résumé en cours…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "O costo o l'é 'na stimma: quante costieivan sti token con l'API do fornitô a-i prexi de listin. O no l'é quello che ti paghi; l'abonamento o no se paga pe domanda.",
   "history_usage": "Token adeuviæ",
   "history_usage_count": "Riassunti: {count}",
+  "history_usage_questions": "Domande: {count}",
   "ui_regenerate": "Riassumi torna",
   "ui_try_again": "Preuva torna",
   "ui_working": "Riassumme…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "La kosto esas evalueso: quon ca tokeni kustus per la API di la provizanto segun la publika preci. Ol ne esas quon vu pagas; abono ne esas fakturizata po singla demando.",
   "history_usage": "Uzita tokeni",
   "history_usage_count": "Rezumi: {count}",
+  "history_usage_questions": "Questioni: {count}",
   "ui_regenerate": "Rezumar itere",
   "ui_try_again": "Probar itere",
   "ui_working": "Rezumanta…",

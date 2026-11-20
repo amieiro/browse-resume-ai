@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "El costo el xe na stima: quel che costaria sti token co l'API del fornidor ai prexi de listin. No xe quel che te paghi; un abonamento no'l vien pagà par ogni richiesta.",
   "history_usage": "Token doparà",
   "history_usage_count": "Riasunti: {count}",
+  "history_usage_questions": "Domande: {count}",
   "ui_regenerate": "Riasumi danovo",
   "ui_try_again": "Prova danovo",
   "ui_working": "Drio riasumar…",

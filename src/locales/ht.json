@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Pri a se yon estimasyon: sa token sa yo ta koute atravè API founisè a dapre pri piblik yo. Se pa sa ou peye; yo pa fè ou peye yon abònman pou chak demann.",
   "history_usage": "Token yo itilize",
   "history_usage_count": "Rezime: {count}",
+  "history_usage_questions": "Kesyon: {count}",
   "ui_regenerate": "Rezime ankò",
   "ui_try_again": "Eseye ankò",
   "ui_working": "N ap rezime…",

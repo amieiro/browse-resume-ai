@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "He whakatau tata te utu: te utu o ēnei tohu mā te API a te kaiwhakarato i ngā utu rārangi. Ehara tēnei i tāu e utu ai; kāore te ohaurunga e utu ana mō ia tono.",
   "history_usage": "Ngā tohu kua whakamahia",
   "history_usage_count": "Ngā whakarāpopototanga: {count}",
+  "history_usage_questions": "Ngā pātai: {count}",
   "ui_regenerate": "Whakarāpopoto anō",
   "ui_try_again": "Ngana anō",
   "ui_working": "E whakarāpopoto ana…",

@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Lo côt est una èstimacion : cen que côterant cetos jetons per l’API du fornissor u tarif publico. O est pas cen que vos payéd ; un abonament est pas facturâ a la requéta.",
   "history_usage": "Jetons utilisâs",
   "history_usage_count": "Rèsumâs : {count}",
+  "history_usage_questions": "Quèstions : {count}",
   "ui_regenerate": "Rèsumar dinkor",
   "ui_try_again": "Èprovar dinkor",
   "ui_working": "Rèsumâ en cors…",

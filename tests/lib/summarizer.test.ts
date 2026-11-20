@@ -576,13 +576,34 @@ describe('Summarizer', () => {
       expect(failing.history.add).not.toHaveBeenCalled();
     });
 
+    it('records what each answer took, with its approximate cost', async () => {
+      let n = 0;
+      let clock = 0;
+      const p: Provider = {
+        id: 'codex',
+        label: 'Codex',
+        checkAvailability: async () => ({ ok: true }),
+        async *summarize(_prompt, _model, _signal, onUsage) {
+          clock += n === 0 ? 3000 : 1200;
+          yield n++ === 0 ? 'Summary' : 'Answer';
+          onUsage?.({ inputTokens: 2_000_000, outputTokens: 0 });
+        },
+      };
+      const prices = async () => ({ checkedAt: 0, openai: { 'gpt-6.2-sol': { input: 2, output: 10 } } });
+      const t = setup(p, { prices, now: () => clock }, { provider: 'codex' });
+      await t.s.start(1, { force: false });
+      await t.s.ask(1, 'Q?');
+      const state = t.s.getState(1);
+      expect(state.status === 'done' && state.qa?.[0]).toMatchObject({ status: 'done', usage: { ms: 1200, inputTokens: 2_000_000, outputTokens: 0, costUsd: 4 } });
+    });
+
     it('adds the questions and answers to the entry, also after a service worker restart', async () => {
       let n = 0;
       const p = provider(() => (n++ === 0 ? chunks('Summary') : chunks('Answer')));
       const t = withHistory(p);
       await t.s.start(1, { force: false });
       await t.s.ask(1, 'Q?');
-      expect(t.history.updateQuestions).toHaveBeenLastCalledWith('h1', [{ question: 'Q?', answer: 'Answer', status: 'done' }]);
+      expect(t.history.updateQuestions).toHaveBeenLastCalledWith('h1', [{ question: 'Q?', answer: 'Answer', status: 'done', usage: { ms: expect.any(Number) } }]);
 
       const t2 = withHistory(provider(() => chunks('Second')));
       t2.s.subscribe(1, () => {});

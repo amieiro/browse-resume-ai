@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Askar d tektazt kan: ayen ara skecmen yitukniyen-a s API n usaǧaw s ssuma tazayezt. Mačči d ayen ara tḥelleḍ; ajerred ur yettwaxlaṣ ara i yal asuter.",
   "history_usage": "Itukniyen yettwasqedcen",
   "history_usage_count": "Igzulen: {count}",
+  "history_usage_questions": "Isteqsiyen: {count}",
   "ui_regenerate": "Ales agzul",
   "ui_try_again": "Ɛreḍ tikkelt-nniḍen",
   "ui_working": "Asegzel…",

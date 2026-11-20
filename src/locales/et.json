@@ -21,6 +21,7 @@
   "ui_usage_cost_note": "Hind on hinnang: nii palju maksaksid need tokenid teenusepakkuja API kaudu hinnakirja järgi. See ei ole see, mida sina maksad; tellimuse puhul ei võeta tasu päringu kohta.",
   "history_usage": "Kasutatud tokenid",
   "history_usage_count": "Kokkuvõtteid: {count}",
+  "history_usage_questions": "Küsimusi: {count}",
   "ui_regenerate": "Tee uus kokkuvõte",
   "ui_try_again": "Proovi uuesti",
   "ui_working": "Kokkuvõtte koostamine…",
