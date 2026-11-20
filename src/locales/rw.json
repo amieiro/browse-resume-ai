@@ -14,7 +14,7 @@
   "ui_working": "Birimo gukora incamake…",
   "ui_idle_hint": "Kanda ku gishushanyo cy'umugereka kugira ngo ukore incamake y'iyi paji.",
   "ui_truncated": "Iyi paji yari ndende; igice cya mbere ni cyo cyonyine cyakorewe incamake.",
-  "error_page_unreadable": "Iyi paji ntishobora gusomwa. Paji za mushakisha, Chrome Web Store na PDF ntibishyigikiwe.",
+  "error_page_unreadable": "Iyi paji ntishobora gusomwa. Paji za mushakisha na Chrome Web Store ntibishyigikiwe.",
   "error_no_content": "Nta nyandiko y'inkuru yabonetse kuri iyi paji.",
   "error_needs_click": "Kanda ku gishushanyo cy'umugereka kugira ngo ukore incamake y'iyi paji. Iyo tabu imaze kujya ku yindi paji, umugereka ukenera ko wongera gukanda kugira ngo uyisome.",
   "error_host_missing": "Igice cyo kuri mudasobwa ntikiyinjijwemo cyangwa ntigisubiza. Mu bubiko bw'umugereka, tangiza: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Urutonde rwa moderi rwasomwe ku wa {date}.",
   "options_models_never": "Urutonde rwa moderi ntirurasomwa.",
   "options_models_auto": "Ruturuka muri Claude Code, Codex na Ollama, kandi rwongera gusomwa rimwe ku munsi, iyo Claude Code cyangwa Codex bivuguruwe, n'iyo umugereka uvuguruwe.",
-  "options_models_refresh": "Bisome ubu"
+  "options_models_refresh": "Bisome ubu",
+  "error_file_access": "Kugira ngo ukore incamake y'amadosiye ari kuri iyi mudasobwa, fungura Ibisobanuro by'umugereka muri chrome://extensions maze ufungure Emerera kugera kuri URL z'amadosiye.",
+  "error_pdf_unreadable": "Iyi PDF ntishobora gufungurwa. Ishobora kuba irinzwe n'ijambobanga cyangwa yangiritse.",
+  "error_pdf_no_text": "Iyi PDF nta nyandiko ifite yo gukorerwa incamake. Ishobora kuba igizwe n'amashusho yasikanywe."
 }

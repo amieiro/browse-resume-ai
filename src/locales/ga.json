@@ -14,7 +14,7 @@
   "ui_working": "Achoimre á déanamh…",
   "ui_idle_hint": "Cliceáil ar dheilbhín an tsínidh chun achoimre a dhéanamh ar an leathanach seo.",
   "ui_truncated": "Bhí an leathanach seo fada; ní dhearnadh achoimre ach ar an gcéad chuid.",
-  "error_page_unreadable": "Ní féidir an leathanach seo a léamh. Ní thacaítear le leathanaigh an bhrabhsálaí, le Chrome Web Store ná le comhaid PDF.",
+  "error_page_unreadable": "Ní féidir an leathanach seo a léamh. Ní thacaítear le leathanaigh an bhrabhsálaí ná le Chrome Web Store.",
   "error_no_content": "Níor aimsíodh téacs ailt ar an leathanach seo.",
   "error_needs_click": "Cliceáil ar dheilbhín an tsínidh chun achoimre a dhéanamh ar an leathanach seo. Tar éis don chluaisín leathanach nua a oscailt, teastaíonn cliceáil nua ón síneadh chun é a léamh.",
   "error_host_missing": "Níl an chomhpháirt áitiúil suiteáilte nó níl sí ag freagairt. I bhfillteán an tsínidh, rith: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Léadh liostaí na samhlacha ar {date}.",
   "options_models_never": "Níor léadh liostaí na samhlacha go fóill.",
   "options_models_auto": "Tagann siad ó Claude Code, Codex agus Ollama, agus léitear arís iad uair sa lá, nuair a nuashonraítear Claude Code nó Codex, agus nuair a nuashonraítear an breiseán.",
-  "options_models_refresh": "Léigh anois iad"
+  "options_models_refresh": "Léigh anois iad",
+  "error_file_access": "Chun achoimre a dhéanamh ar chomhaid ar an ríomhaire seo, oscail Sonraí an tsínidh in chrome://extensions agus cas air Ceadaigh rochtain ar URLanna comhaid.",
+  "error_pdf_unreadable": "Ní féidir an PDF seo a oscailt. B'fhéidir go bhfuil sé cosanta le pasfhocal nó go bhfuil sé damáistithe.",
+  "error_pdf_no_text": "Níl aon téacs sa PDF seo le hachoimre a dhéanamh air. B'fhéidir gur íomhánna scanta atá ann."
 }

@@ -13,7 +13,7 @@ export default defineConfig({
     description: '__MSG_extDescription__',
     default_locale: 'en',
     key: EXTENSION_KEY,
-    permissions: ['activeTab', 'scripting', 'storage', 'sidePanel', 'nativeMessaging', 'contextMenus'],
+    permissions: ['activeTab', 'scripting', 'storage', 'sidePanel', 'nativeMessaging', 'contextMenus', 'offscreen'],
     action: {},
     side_panel: { default_path: 'sidepanel.html' },
     // The shortcut does what a click on the toolbar icon does (side panel or popup, as set).

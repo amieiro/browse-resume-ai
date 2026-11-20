@@ -14,7 +14,7 @@
   "ui_working": "Resumante…",
   "ui_idle_hint": "Alklaku la piktogramon de la etendaĵo por resumi ĉi tiun paĝon.",
   "ui_truncated": "Ĉi tiu paĝo estis longa; nur la unua parto estis resumita.",
-  "error_page_unreadable": "Ne eblas legi ĉi tiun paĝon. Paĝoj de la retumilo, la Chrome Web Store kaj PDF-dosieroj ne estas subtenataj.",
+  "error_page_unreadable": "Ne eblas legi ĉi tiun paĝon. Paĝoj de la retumilo kaj la Chrome Web Store ne estas subtenataj.",
   "error_no_content": "Neniu artikola teksto troviĝis en ĉi tiu paĝo.",
   "error_needs_click": "Alklaku la piktogramon de la etendaĵo por resumi ĉi tiun paĝon. Post kiam la langeto iras al alia paĝo, la etendaĵo bezonas novan alklakon por legi ĝin.",
   "error_host_missing": "La loka komponanto ne estas instalita aŭ ne respondas. En la dosierujo de la etendaĵo, rulu: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modelaj listoj legitaj je {date}.",
   "options_models_never": "La modelaj listoj ankoraŭ ne estas legitaj.",
   "options_models_auto": "Ili venas el Claude Code, Codex kaj Ollama, kaj estas relegataj unufoje tage, kiam Claude Code aŭ Codex estas ĝisdatigita, kaj kiam la etendaĵo estas ĝisdatigita.",
-  "options_models_refresh": "Legi ilin nun"
+  "options_models_refresh": "Legi ilin nun",
+  "error_file_access": "Por resumi dosierojn en ĉi tiu komputilo, malfermu la Detalojn de la etendaĵo en chrome://extensions kaj ŝaltu Permesi aliron al dosieraj URL-oj.",
+  "error_pdf_unreadable": "Ne eblas malfermi ĉi tiun PDF-dosieron. Eble ĝi estas protektita per pasvorto aŭ difektita.",
+  "error_pdf_no_text": "Ĉi tiu PDF-dosiero ne havas tekston por resumi. Eble ĝi konsistas el skanitaj bildoj."
 }

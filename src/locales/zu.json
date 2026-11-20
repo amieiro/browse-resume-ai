@@ -14,7 +14,7 @@
   "ui_working": "Kuyafinyezwa…",
   "ui_idle_hint": "Chofoza isithonjana sesandiso ukuze ufinyeze leli khasi.",
   "ui_truncated": "Leli khasi belide; kufinyezwe ingxenye yokuqala kuphela.",
-  "error_page_unreadable": "Leli khasi alikwazi ukufundwa. Amakhasi esiphequluli, i-Chrome Web Store kanye nama-PDF awasekelwa.",
+  "error_page_unreadable": "Leli khasi alikwazi ukufundwa. Amakhasi esiphequluli kanye ne-Chrome Web Store awasekelwa.",
   "error_no_content": "Awukho umbhalo we-athikili otholakele kuleli khasi.",
   "error_needs_click": "Chofoza isithonjana sesandiso ukuze ufinyeze leli khasi. Ngemva kokuba ithebhu iye kwelinye ikhasi, isandiso sidinga ukuchofoza okusha ukuze silifunde.",
   "error_host_missing": "Ingxenye yasendaweni ayifakiwe noma ayiphenduli. Kufolda yesandiso, qalisa: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Uhlu lwamamodeli lufundwe ngo-{date}.",
   "options_models_never": "Uhlu lwamamodeli alukafundwa.",
   "options_models_auto": "Luvela ku-Claude Code, Codex no-Ollama, futhi lufundwa futhi kanye ngosuku, lapho i-Claude Code noma i-Codex ibuyekezwa, nalapho isandiso sibuyekezwa.",
-  "options_models_refresh": "Lufunde manje"
+  "options_models_refresh": "Lufunde manje",
+  "error_file_access": "Ukuze ufinyeze amafayela akule khompyutha, vula Imininingwane yesandiso ku-chrome://extensions bese uvula Vumela ukufinyelela kuma-URL wefayela.",
+  "error_pdf_unreadable": "Le PDF ayikwazi ukuvulwa. Kungenzeka ivikelwe ngephasiwedi noma yonakele.",
+  "error_pdf_no_text": "Le PDF ayinawo umbhalo ongafinyezwa. Kungenzeka yakhiwe ngezithombe ezisekeniwe."
 }

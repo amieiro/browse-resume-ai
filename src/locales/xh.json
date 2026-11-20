@@ -14,7 +14,7 @@
   "ui_working": "Kuyashwankathelwa…",
   "ui_idle_hint": "Cofa i-icon yesandiso ukuze ushwankathele eli phepha.",
   "ui_truncated": "Eli phepha belilide; kushwankathelwe kuphela inxalenye yokuqala.",
-  "error_page_unreadable": "Eli phepha alinakufundwa. Amaphepha esikhangeli, i-Chrome Web Store kunye nee-PDF azixhaswa.",
+  "error_page_unreadable": "Eli phepha alinakufundwa. Amaphepha esikhangeli kunye ne-Chrome Web Store azixhaswa.",
   "error_no_content": "Akukho mbhalo wenqaku ufunyenweyo kweli phepha.",
   "error_needs_click": "Cofa i-icon yesandiso ukuze ushwankathele eli phepha. Emva kokuba ithebhu iye kwelinye iphepha, isandiso sifuna ukucofwa kwakhona ukuze silifunde.",
   "error_host_missing": "Icandelo lasekhaya alifakwanga okanye aliphenduli. Kwifolda yesandiso, qhuba: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Uluhlu lweemodeli lufundwe ngo-{date}.",
   "options_models_never": "Uluhlu lweemodeli alukafundwa.",
   "options_models_auto": "Luvela kwi-Claude Code, Codex ne-Ollama, kwaye lufundwa kwakhona kanye ngosuku, xa i-Claude Code okanye i-Codex ihlaziywa, naxa isandiso sihlaziywa.",
-  "options_models_refresh": "Lufunde ngoku"
+  "options_models_refresh": "Lufunde ngoku",
+  "error_file_access": "Ukuze ushwankathele iifayile kule khompyutha, vula Iinkcukacha zesandiso kwi-chrome://extensions uze uvule Vumela ukufikelela kwii-URL zefayile.",
+  "error_pdf_unreadable": "Le PDF ayinakuvulwa. Isenokuba ikhuselwe ngephaswedi okanye yonakele.",
+  "error_pdf_no_text": "Le PDF ayinambhalo onokushwankathelwa. Isenokuba yenziwe ngemifanekiso eskeniweyo."
 }

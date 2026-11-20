@@ -14,7 +14,7 @@
   "ui_working": "ⴰⵙⴳⵣⵓⵍ ⴷⴳ ⵓⵎⵓⵔⵙ…",
   "ui_idle_hint": "ⵙⵙⵉⵔⵎ ⵖⴼ ⵜⵡⵍⴰⴼⵜ ⵏ ⵓⵙⵖⵣⴼ ⴰⴷ ⵜⵙⴳⵣⵍⴷ ⵜⴰⵙⵏⴰ ⴰⴷ.",
   "ui_truncated": "ⵜⴰⵙⵏⴰ ⴰⴷ ⵜⵖⵣⵣⵉⴼ; ⵖⴰⵙ ⴰⵃⵔⵉⵛ ⴰⵎⵣⵡⴰⵔⵓ ⴰⵢⴷ ⵉⵜⵜⵓⵙⴳⵣⵍⵏ.",
-  "error_page_unreadable": "ⵓⵔ ⵜⵜⵓⵖⵔⴰ ⵜⴰⵙⵏⴰ ⴰⴷ. ⵜⵉⵙⵏⴰⵜⵉⵏ ⵏ ⵓⵎⵙⵜⴰⵔⴰⵢ, Chrome Web Store ⴷ PDF ⵓⵔ ⵜⵜⵓⵙⵎⴰⴷⵏⵜ.",
+  "error_page_unreadable": "ⵓⵔ ⵜⵜⵓⵖⵔⴰ ⵜⴰⵙⵏⴰ ⴰⴷ. ⵜⵉⵙⵏⴰⵜⵉⵏ ⵏ ⵓⵎⵙⵜⴰⵔⴰⵢ ⴷ Chrome Web Store ⵓⵔ ⵜⵜⵓⵙⵎⴰⴷⵏⵜ.",
   "error_no_content": "ⵓⵔ ⵉⵜⵜⵓⴼⴰ ⴽⵔⴰ ⵏ ⵓⴹⵔⵉⵙ ⵏ ⵓⵎⴰⴳⵔⴰⴷ ⴳ ⵜⴰⵙⵏⴰ ⴰⴷ.",
   "error_needs_click": "ⵙⵙⵉⵔⵎ ⵖⴼ ⵜⵡⵍⴰⴼⵜ ⵏ ⵓⵙⵖⵣⴼ ⴰⴷ ⵜⵙⴳⵣⵍⴷ ⵜⴰⵙⵏⴰ ⴰⴷ. ⴷⴼⴼⵉⵔ ⵎⴰ ⵉⵎⵓⵜⵜⵉ ⵓⵙⴰⴳⵎ ⵖⵔ ⵜⴰⵙⵏⴰ ⵢⴰⴹⵏ, ⵉⵅⵚⵚⴰ ⵓⵙⵖⵣⴼ ⴰⵙⵙⵉⵔⵎ ⴰⵎⴰⵢⵏⵓ ⴰⴷ ⵜⵜ ⵉⵖⵔ.",
   "error_host_missing": "ⴰⵙⵖⵏ ⴰⴷⵖⴰⵔⴰⵏ ⵓⵔ ⵉⵜⵜⵓⵙⵔⵙ ⵏⵖ ⵓⵔ ⵉⵜⵜⴰⵔⵓⵔ. ⴳ ⵓⴽⴰⵔⴰⴹ ⵏ ⵓⵙⵖⵣⴼ, ⵙⵙⴽⵔ: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "ⵜⵜⵓⵖⵔⴰⵏⵜ ⵜⵍⴳⴰⵎⵉⵏ ⵏ ⵉⵎⴷⵢⴰⵜⵏ ⴳ {date}.",
   "options_models_never": "ⵓⵔ ⵙⵓⵍ ⵜⵜⵓⵖⵔⴰⵏⵜ ⵜⵍⴳⴰⵎⵉⵏ ⵏ ⵉⵎⴷⵢⴰⵜⵏ.",
   "options_models_auto": "ⴷⴰ ⴷⴷⵓⴽⴽⵓⵍⵏⵜ ⵙⴳ Claude Code, Codex ⴷ Ollama, ⴷ ⴷⴰ ⵜⵜⵓⵖⵔⴰⵏⵜ ⴷⴰⵖ ⵜⵉⴽⴽⵍⵜ ⴳ ⵡⴰⵙⵙ, ⵎⴰⵏⵉⴳ ⵉⵜⵜⵓⵙⵏⴼⵍ Claude Code ⵏⵖ Codex, ⴷ ⵎⴰⵏⵉⴳ ⵉⵜⵜⵓⵙⵏⴼⵍ ⵓⵙⵖⵣⴼ.",
-  "options_models_refresh": "ⵖⵔ ⵜⵏⵜ ⴷⵖⵉ"
+  "options_models_refresh": "ⵖⵔ ⵜⵏⵜ ⴷⵖⵉ",
+  "error_file_access": "ⴰⴷ ⵜⵙⴳⵣⵍⴷ ⵉⴼⴰⵢⵍⵓⵜⵏ ⵏ ⵓⵙⵎⴰⴳ ⴰⴷ, ⵕⵥⵎ ⵉⴼⵔⴷⵉⵙⵏ ⵏ ⵓⵙⵖⵣⴼ ⴳ chrome://extensions ⵜⵙⵙⴽⵔⴷ ⴰⵊⵊ ⴰⴽⵛⵛⵓⵎ ⵖⵔ URL ⵏ ⵉⴼⴰⵢⵍⵓⵜⵏ.",
+  "error_pdf_unreadable": "ⵓⵔ ⵉⵜⵜⵓⵕⵥⴰⵎ PDF ⴰⴷ. ⵉⵣⵎⵔ ⴰⴷ ⵉⵜⵜⵓⵃⴹⵓ ⵙ ⵜⴳⵓⵔⵉ ⵏ ⵓⵣⵔⴰⵢ ⵏⵖ ⵉⵅⵚⵕ.",
+  "error_pdf_no_text": "PDF ⴰⴷ ⵓⵔ ⴷⴰⵔⵙ ⴰⴹⵔⵉⵙ ⴰⴷ ⵉⵜⵜⵓⵙⴳⵣⵍ. ⵉⵣⵎⵔ ⴰⴷ ⵢⴰⴳ ⵜⵉⵡⵍⴰⴼⵉⵏ ⵉⵜⵜⵓⵙⴽⴰⵏⵏⵉⵏ."
 }

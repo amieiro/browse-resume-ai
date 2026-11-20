@@ -14,7 +14,7 @@
   "ui_working": "Samanfattar…",
   "ui_idle_hint": "Klikk på utvidingsikonet for å samanfatte denne sida.",
   "ui_truncated": "Sida var lang; berre den første delen vart samanfatta.",
-  "error_page_unreadable": "Denne sida kan ikkje lesast. Nettlesarsider, Chrome Web Store og PDF-ar er ikkje støtta.",
+  "error_page_unreadable": "Denne sida kan ikkje lesast. Nettlesarsider og Chrome Web Store er ikkje støtta.",
   "error_no_content": "Fann ingen artikkeltekst på denne sida.",
   "error_needs_click": "Klikk på utvidingsikonet for å samanfatte denne sida. Etter at fana har gått til ei anna side, treng utvidinga eit nytt klikk for å lese ho.",
   "error_host_missing": "Den lokale komponenten er ikkje installert eller svarar ikkje. Køyr dette i mappa til utvidinga: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modellistene vart lesne {date}.",
   "options_models_never": "Modellistene er ikkje lesne enno.",
   "options_models_auto": "Dei kjem frå Claude Code, Codex og Ollama, og blir lesne på nytt éin gong om dagen, når Claude Code eller Codex blir oppdatert, og når utvidinga blir oppdatert.",
-  "options_models_refresh": "Les dei no"
+  "options_models_refresh": "Les dei no",
+  "error_file_access": "For å samanfatte filer på denne datamaskina, opna Detaljar for utvidinga i chrome://extensions og slå på Tillat tilgang til fil-nettadresser.",
+  "error_pdf_unreadable": "Denne PDF-en kan ikkje opnast. Han kan vere passordverna eller skadd.",
+  "error_pdf_no_text": "Denne PDF-en har ingen tekst å samanfatte. Han kan vere laga av skanna bilete."
 }

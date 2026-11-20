@@ -14,7 +14,7 @@
   "ui_working": "Bezig met samenvatten…",
   "ui_idle_hint": "Klik op t pictogram van de extensie um disse pagina samen te vatten.",
   "ui_truncated": "Disse pagina was lang; allenig t eerste deel is samenvat.",
-  "error_page_unreadable": "Disse pagina kan nich lezen wodn. Browserpagina's, de Chrome Web Store en PDF's wodt nich ondersteund.",
+  "error_page_unreadable": "Disse pagina kan nich lezen wodn. Browserpagina's en de Chrome Web Store wodt nich ondersteund.",
   "error_no_content": "Der is gin artikeltekst op disse pagina evonden.",
   "error_needs_click": "Klik op t pictogram van de extensie um disse pagina samen te vatten. As t tabblad noar n aandere pagina geet, hef de extensie n nieje klik neudig um hum te lezen.",
   "error_host_missing": "t Lokale onderdeel is nich installeerd of gef gin antwoord. Voer in de map van de extensie oet: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modellieste elezen op {date}.",
   "options_models_never": "De modellieste bint nog nich elezen.",
   "options_models_auto": "Ze koomt oet Claude Code, Codex en Ollama, en wordt ene keer per dag opniej elezen, as Claude Code of Codex bie-ewerkt wordt, en as de extensie bie-ewerkt wordt.",
-  "options_models_refresh": "Lees ze noen"
+  "options_models_refresh": "Lees ze noen",
+  "error_file_access": "Um bestanden op disse computer samen te vatten, maak de Details van de extensie lös in chrome://extensions en zet Toegang tot bestands-URL's toestaan an.",
+  "error_pdf_unreadable": "Disse PDF kan nich lösmaakt wodn. Hee is meschien met n wachtwoord beveiligd of beschadigd.",
+  "error_pdf_no_text": "Disse PDF hef gin tekst um samen te vatten. Hee besteet meschien oet escande ofbeeldingen."
 }

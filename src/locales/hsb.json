@@ -14,7 +14,7 @@
   "ui_working": "Zjima so…",
   "ui_idle_hint": "Klikńće na symbol rozšěrjenja, zo byšće tutu stronu zjał.",
   "ui_truncated": "Tuta strona bě dołha; jenož prěni dźěl je so zjał.",
-  "error_page_unreadable": "Tuta strona njeda so čitać. Strony wobhladowaka, Chrome Web Store a PDF so njepodpěruja.",
+  "error_page_unreadable": "Tuta strona njeda so čitać. Strony wobhladowaka a Chrome Web Store so njepodpěruja.",
   "error_no_content": "Na tutej stronje žadyn tekst nastawka namakany njeje.",
   "error_needs_click": "Klikńće na symbol rozšěrjenja, zo byšće tutu stronu zjał. Po tym zo je rajtark k druhej stronje přešoł, trjeba rozšěrjenje nowe kliknjenje, zo by ju čitało.",
   "error_host_missing": "Lokalna komponenta njeje instalowana abo njewotmołwja. Wuwjedźće w rjadowaku rozšěrjenja: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Lisćiny modelow su so {date} čitali.",
   "options_models_never": "Lisćiny modelow hišće čitane njejsu.",
   "options_models_auto": "Pochadźeja z Claude Code, Codex a Ollama a čitaja so jónkróć na dźeń znowa, hdyž so Claude Code abo Codex aktualizuje a hdyž so rozšěrjenje aktualizuje.",
-  "options_models_refresh": "Nětko čitać"
+  "options_models_refresh": "Nětko čitać",
+  "error_file_access": "Zo byšće dataje na tutym ličaku zjał, wočińće Podrobnosće rozšěrjenja w chrome://extensions a zmóžńće Přistup k datajowym URL dowolić.",
+  "error_pdf_unreadable": "Tutón PDF njeda so wočinić. Snano je z hesłom škitany abo wobškodźeny.",
+  "error_pdf_no_text": "Tutón PDF žadyn tekst za zjeće nima. Snano so ze skanowanych wobrazow składuje."
 }

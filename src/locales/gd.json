@@ -14,7 +14,7 @@
   "ui_working": "A’ dèanamh gearr-chunntas…",
   "ui_idle_hint": "Briog air ìomhaigheag an leudachain airson gearr-chunntas a dhèanamh air an duilleag seo.",
   "ui_truncated": "Bha an duilleag seo fada; cha deach gearr-chunntas a dhèanamh ach air a’ chiad phàirt.",
-  "error_page_unreadable": "Cha ghabh an duilleag seo leughadh. Chan eil taic ri duilleagan a’ bhrabhsair, an Chrome Web Store no faidhlichean PDF.",
+  "error_page_unreadable": "Cha ghabh an duilleag seo leughadh. Chan eil taic ri duilleagan a’ bhrabhsair no an Chrome Web Store.",
   "error_no_content": "Cha deach teacsa artaigil a lorg air an duilleag seo.",
   "error_needs_click": "Briog air ìomhaigheag an leudachain airson gearr-chunntas a dhèanamh air an duilleag seo. Às dèidh dhan taba gluasad gu duilleag eile, feumaidh an leudachan briogadh ùr airson a leughadh.",
   "error_host_missing": "Chan eil an co-phàirt ionadail air a stàladh no chan eil e a’ freagairt. Ann am pasgan an leudachain, ruith: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Chaidh liostaichean nam modailean a leughadh {date}.",
   "options_models_never": "Cha deach liostaichean nam modailean a leughadh fhathast.",
   "options_models_auto": "Thig iad o Claude Code, Codex agus Ollama, agus thèid an leughadh a-rithist uair san latha, nuair a thèid Claude Code no Codex ùrachadh agus nuair a thèid an leudachan ùrachadh.",
-  "options_models_refresh": "Leugh an-dràsta iad"
+  "options_models_refresh": "Leugh an-dràsta iad",
+  "error_file_access": "Airson gearr-chunntas a dhèanamh air faidhlichean air a’ choimpiutair seo, fosgail Mion-fhiosrachadh an leudachain ann an chrome://extensions agus cuir an comas Ceadaich inntrigeadh gu URLaichean fhaidhlichean.",
+  "error_pdf_unreadable": "Cha ghabh am PDF seo fosgladh. Dh’fhaoidte gu bheil e dìonta le facal-faire no gu bheil e air a mhilleadh.",
+  "error_pdf_no_text": "Chan eil teacsa sam bith sa PDF seo airson gearr-chunntas a dhèanamh air. Dh’fhaoidte gu bheil e air a dhèanamh de dhealbhan sganaichte."
 }

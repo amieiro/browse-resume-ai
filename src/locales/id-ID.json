@@ -14,7 +14,7 @@
   "ui_working": "Meringkas…",
   "ui_idle_hint": "Klik ikon ekstensi untuk meringkas halaman ini.",
   "ui_truncated": "Halaman ini panjang; hanya bagian pertama yang diringkas.",
-  "error_page_unreadable": "Halaman ini tidak dapat dibaca. Halaman browser, Chrome Web Store, dan PDF tidak didukung.",
+  "error_page_unreadable": "Halaman ini tidak dapat dibaca. Halaman browser dan Chrome Web Store tidak didukung.",
   "error_no_content": "Tidak ditemukan teks artikel di halaman ini.",
   "error_needs_click": "Klik ikon ekstensi untuk meringkas halaman ini. Setelah tab berpindah halaman, ekstensi memerlukan klik baru untuk membacanya.",
   "error_host_missing": "Komponen lokal belum diinstal atau tidak merespons. Di folder ekstensi, jalankan: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Daftar model dibaca pada {date}.",
   "options_models_never": "Daftar model belum dibaca.",
   "options_models_auto": "Daftar ini berasal dari Claude Code, Codex, dan Ollama, dan dibaca ulang sekali sehari, saat Claude Code atau Codex diperbarui, dan saat ekstensi diperbarui.",
-  "options_models_refresh": "Baca sekarang"
+  "options_models_refresh": "Baca sekarang",
+  "error_file_access": "Untuk meringkas file di komputer ini, buka Detail ekstensi di chrome://extensions lalu aktifkan Izinkan akses ke URL file.",
+  "error_pdf_unreadable": "PDF ini tidak dapat dibuka. Mungkin dilindungi sandi atau rusak.",
+  "error_pdf_no_text": "PDF ini tidak memiliki teks untuk diringkas. Mungkin berisi gambar hasil pindaian."
 }

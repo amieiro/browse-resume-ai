@@ -14,7 +14,7 @@
   "ui_working": "Ana taƙaitawa…",
   "ui_idle_hint": "Danna alamar tsawaitawa don taƙaita wannan shafi.",
   "ui_truncated": "Wannan shafi yana da tsawo; sashen farko kawai aka taƙaita.",
-  "error_page_unreadable": "Ba za a iya karanta wannan shafi ba. Ba a tallafa wa shafukan mai bincike, Chrome Web Store da fayilolin PDF ba.",
+  "error_page_unreadable": "Ba za a iya karanta wannan shafi ba. Ba a tallafa wa shafukan mai bincike da Chrome Web Store ba.",
   "error_no_content": "Ba a sami rubutun maƙala a wannan shafi ba.",
   "error_needs_click": "Danna alamar tsawaitawa don taƙaita wannan shafi. Bayan shafin ya koma wani shafi, tsawaitawar tana buƙatar sabon dannawa don karanta shi.",
   "error_host_missing": "Ba a shigar da ɓangaren gida ba ko kuma ba ya amsawa. A cikin jakar tsawaitawar, gudanar da: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "An karanta jerin samfura a {date}.",
   "options_models_never": "Ba a karanta jerin samfura ba tukuna.",
   "options_models_auto": "Suna fitowa daga Claude Code, Codex da Ollama, kuma ana sake karanta su sau ɗaya a rana, lokacin da aka sabunta Claude Code ko Codex, da kuma lokacin da aka sabunta tsawaitawar.",
-  "options_models_refresh": "Karanta su yanzu"
+  "options_models_refresh": "Karanta su yanzu",
+  "error_file_access": "Don taƙaita fayiloli a wannan kwamfuta, buɗe Bayanai na tsawaitawar a chrome://extensions kuma kunna Ba da damar shiga URL na fayil.",
+  "error_pdf_unreadable": "Ba za a iya buɗe wannan PDF ba. Wataƙila an kare shi da kalmar sirri ko ya lalace.",
+  "error_pdf_no_text": "Wannan PDF ba shi da rubutun da za a taƙaita. Wataƙila an yi shi ne da hotunan da aka duba (scan)."
 }

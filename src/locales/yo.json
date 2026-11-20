@@ -14,7 +14,7 @@
   "ui_working": "Ó ń ṣe àkópọ̀…",
   "ui_idle_hint": "Tẹ àmì àfikún náà láti ṣe àkópọ̀ ojú-ìwé yìí.",
   "ui_truncated": "Ojú-ìwé yìí gùn; apá àkọ́kọ́ nìkan ni a ṣe àkópọ̀ rẹ̀.",
-  "error_page_unreadable": "A kò lè ka ojú-ìwé yìí. A kò ṣe àtìlẹ́yìn fún àwọn ojú-ìwé aṣàwákiri, Chrome Web Store àti àwọn fáìlì PDF.",
+  "error_page_unreadable": "A kò lè ka ojú-ìwé yìí. A kò ṣe àtìlẹ́yìn fún àwọn ojú-ìwé aṣàwákiri àti Chrome Web Store.",
   "error_no_content": "A kò rí ọ̀rọ̀ àpilẹ̀kọ kankan lórí ojú-ìwé yìí.",
   "error_needs_click": "Tẹ àmì àfikún náà láti ṣe àkópọ̀ ojú-ìwé yìí. Lẹ́yìn tí táàbù bá lọ sí ojú-ìwé mìíràn, àfikún náà nílò títẹ̀ tuntun láti kà á.",
   "error_host_missing": "Ẹ̀yà agbègbè náà kò sí lórí kọ̀ǹpútà tàbí kò dáhùn. Nínú fódà àfikún náà, ṣiṣẹ́: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "A ka àwọn àkójọ àwòṣe ní {date}.",
   "options_models_never": "A kò tíì ka àwọn àkójọ àwòṣe.",
   "options_models_auto": "Wọ́n wá láti Claude Code, Codex àti Ollama, a sì ń kà wọ́n lẹ́ẹ̀kan sí i lẹ́ẹ̀kan lójúmọ́, nígbà tí a bá ṣe àtúnṣe Claude Code tàbí Codex, àti nígbà tí a bá ṣe àtúnṣe àfikún náà.",
-  "options_models_refresh": "Kà wọ́n báyìí"
+  "options_models_refresh": "Kà wọ́n báyìí",
+  "error_file_access": "Láti ṣe àkópọ̀ àwọn fáìlì tó wà lórí kọ̀ǹpútà yìí, ṣí Àwọn Àlàyé àfikún náà ní chrome://extensions kí o sì tan Gba àyè láti wọlé sí àwọn URL fáìlì.",
+  "error_pdf_unreadable": "A kò lè ṣí PDF yìí. Ó lè jẹ́ pé ọ̀rọ̀ aṣínà ni a fi dáàbò bò ó tàbí ó ti bàjẹ́.",
+  "error_pdf_no_text": "PDF yìí kò ní ọ̀rọ̀ kankan láti ṣe àkópọ̀ rẹ̀. Ó lè jẹ́ pé àwọn àwòrán tí a skáànì ni a fi ṣe é."
 }

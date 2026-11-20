@@ -14,7 +14,7 @@
   "ui_working": "Te fa'apoto nei…",
   "ui_idle_hint": "Pata i ni'a i te tāpa'o o te fa'arahira'a no te fa'apoto i teie 'api.",
   "ui_truncated": "E 'api roa teie; ua fa'apoto-noa-hia te tuha'a mātāmua.",
-  "error_page_unreadable": "'Aita teie 'api e nehenehe e tai'ohia. 'Aita te mau 'api o te fa'ahaere, te Chrome Web Store e te mau PDF e turu-hia ra.",
+  "error_page_unreadable": "'Aita teie 'api e nehenehe e tai'ohia. 'Aita te mau 'api o te fa'ahaere e te Chrome Web Store e turu-hia ra.",
   "error_no_content": "'Aita te papa'ira'a o te parau i 'itehia i ni'a i teie 'api.",
   "error_needs_click": "Pata i ni'a i te tāpa'o o te fa'arahira'a no te fa'apoto i teie 'api. I muri a'e i te taui-ra'a o te 'ōpīra'a i te tahi atu 'api, e hina'aro te fa'arahira'a i te tahi pata 'āpī no te tai'o i te reira.",
   "error_host_missing": "'Aita te tuha'a fenua i tu'u-ana'e-hia aore ra 'aita e pāhono ra. I roto i te 'ōpīra'a o te fa'arahira'a, fa'ahoro: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Ua tai'ohia te mau tāpura hōho'a i te {date}.",
   "options_models_never": "'Aita ā te mau tāpura hōho'a i tai'ohia.",
   "options_models_auto": "No roto mai rātou i Claude Code, Codex e Ollama, e tai'o-fa'ahou-hia ho'e taime i te mahana, ia fa'a'āpīhia Claude Code 'aore ra Codex, e ia fa'a'āpīhia te fa'arahira'a.",
-  "options_models_refresh": "'A tai'o i teie nei"
+  "options_models_refresh": "'A tai'o i teie nei",
+  "error_file_access": "No te fa'apoto i te mau fichier i ni'a i teie roro uira, 'a pāheru i te mau Ha'amāramaramara'a o te fa'arahira'a i roto i chrome://extensions e 'a fa'a'ohipa i te Fa'ati'a i te tomora'a i te mau URL fichier.",
+  "error_pdf_unreadable": "'Aita teie PDF e nehenehe e iriti. Peneia'e ua pārurū-hia 'oia e te hō'ē parau huna, 'aore ra ua ino.",
+  "error_pdf_no_text": "'Aita e papa'ira'a i roto i teie PDF no te fa'apoto. Peneia'e ua hāmanihia 'oia i te mau hoho'a i 'apo-hia na roto i te scanner."
 }

@@ -14,7 +14,7 @@
   "ui_working": "ܦܣܩ…",
   "ui_idle_hint": "ܛܪܘܦ ܥܠ ܐܝܩܘܢܐ ܕܬܘܣܦܬܐ ܕܬܦܣܘܩ ܗܢܐ ܦܐܬܐ.",
   "ui_truncated": "ܗܢܐ ܦܐܬܐ ܐܪܝܟܐ ܗܘܐ܆ ܡܢܬܐ ܩܕܡܝܬܐ ܒܠܚܘܕ ܐܬܦܣܩܬ.",
-  "error_page_unreadable": "ܗܢܐ ܦܐܬܐ ܠܐ ܡܫܟܚ ܠܡܬܩܪܝܘ. ܦܐܬܐ ܕܡܦܪܢܣܢܐ، Chrome Web Store ܘܦܘܪܣܐ PDF ܠܐ ܡܬܬܡܟܝܢ.",
+  "error_page_unreadable": "ܗܢܐ ܦܐܬܐ ܠܐ ܡܫܟܚ ܠܡܬܩܪܝܘ. ܦܐܬܐ ܕܡܦܪܢܣܢܐ ܘChrome Web Store ܠܐ ܡܬܬܡܟܝܢ.",
   "error_no_content": "ܠܐ ܐܫܬܟܚ ܟܬܒܐ ܕܡܐܡܪܐ ܒܗܢܐ ܦܐܬܐ.",
   "error_needs_click": "ܛܪܘܦ ܥܠ ܐܝܩܘܢܐ ܕܬܘܣܦܬܐ ܕܬܦܣܘܩ ܗܢܐ ܦܐܬܐ. ܒܬܪ ܕܐܙܠܐ ܛܒܠܝܬܐ ܠܦܐܬܐ ܐܚܪܢܐ، ܬܘܣܦܬܐ ܣܢܝܩܐ ܠܛܪܦܐ ܚܕܬܐ ܕܬܩܪܝܘܗܝ.",
   "error_host_missing": "ܡܢܝܢܐ ܕܘܟܝܐ ܠܐ ܐܬܬܩܢ ܐܘ ܠܐ ܥܢܐ. ܒܬܝܩܐ ܕܬܘܣܦܬܐ، ܦܥܠ: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "ܪ̈ܫܝܡܬܐ ܕܕܡܘܝܬܐ ܐܬܩܪܝ ܒ {date}.",
   "options_models_never": "ܪ̈ܫܝܡܬܐ ܕܕܡܘܝܬܐ ܠܐ ܐܬܩܪܝ ܥܕܡܐ ܠܗܫܐ.",
   "options_models_auto": "ܐܬܝܢ ܡܢ Claude Code، Codex ܘ Ollama، ܘܡܬܩܪܝܢ ܡܢ ܕܪܝܫ ܚܕܐ ܙܒܢܬܐ ܒܝܘܡܐ، ܟܕ ܡܬܚܕܬ Claude Code ܐܘ Codex، ܘܟܕ ܡܬܚܕܬܐ ܬܘܣܦܬܐ.",
-  "options_models_refresh": "ܩܪܝ ܐܢܝܢ ܗܫܐ"
+  "options_models_refresh": "ܩܪܝ ܐܢܝܢ ܗܫܐ",
+  "error_file_access": "ܕܬܦܣܘܩ ܦܘܪ̈ܣܐ ܕܒܗܢܐ ܚܫܘܒܐ، ܦܬܚ ܦܘܪ̈ܫܢܐ ܕܬܘܣܦܬܐ ܒ chrome://extensions ܘܫܪܐ ܫܒܘܩ ܡܛܝܬܐ ܠ URL ܕܦܘܪ̈ܣܐ.",
+  "error_pdf_unreadable": "ܗܢܐ PDF ܠܐ ܡܫܟܚ ܠܡܬܦܬܚܘ. ܡܫܟܚ ܕܢܗܘܐ ܢܛܝܪܐ ܒܡܠܬܐ ܕܥܒܘܪܐ ܐܘ ܡܚܒܠܐ.",
+  "error_pdf_no_text": "ܒܗܢܐ PDF ܠܝܬ ܟܬܒܐ ܠܬܦܣܘܩܐ. ܡܫܟܚ ܕܢܗܘܐ ܥܒܝܕܐ ܡܢ ܨܘܪ̈ܬܐ ܡܣܩܢ̈ܐ."
 }

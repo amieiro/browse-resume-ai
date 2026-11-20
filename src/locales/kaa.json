@@ -14,7 +14,7 @@
   "ui_working": "Juwmaqlanbaqta…",
   "ui_idle_hint": "Bul betti juwmaqlaw ushın keńeytpe belgisin basıń.",
   "ui_truncated": "Bet uzın edi; tek birinshi bólimi juwmaqlandı.",
-  "error_page_unreadable": "Bul betti oqıw múmkin emes. Brauzer betleri, Chrome Web Store hám PDF qollap-quwatlanbaydı.",
+  "error_page_unreadable": "Bul betti oqıw múmkin emes. Brauzer betleri hám Chrome Web Store qollap-quwatlanbaydı.",
   "error_no_content": "Bul bette maqala teksti tabılmadı.",
   "error_needs_click": "Bul betti juwmaqlaw ushın keńeytpe belgisin basıń. Bette basqa betke ótkennen keyin keńeytpe onı oqıwı ushın jańadan basıw kerek.",
   "error_host_missing": "Jergilikli komponent ornatılmaǵan yamasa juwap bermeydi. Keńeytpe papkasında iske túsiriń: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Model dizimleri {date} oqıldı.",
   "options_models_never": "Model dizimleri ele oqılmaǵan.",
   "options_models_auto": "Olar Claude Code, Codex hám Ollama-dan alınadı hám kúnine bir ret, Claude Code yamasa Codex jańalanǵanda hám keńeytpe jańalanǵanda qaytadan oqıladı.",
-  "options_models_refresh": "Házir oqıw"
+  "options_models_refresh": "Házir oqıw",
+  "error_file_access": "Bul kompyuterdegi fayllardı juwmaqlaw ushın chrome://extensions betinde keńeytpeniń Tolıǵıraq bólimin ashıń hám Fayl URL mánzillerine kiriwge ruqsat beriw sazlawın qosıń.",
+  "error_pdf_unreadable": "Bul PDF faylın ashıw múmkin emes. Ol parol menen qorǵalǵan yamasa zaqımlanǵan bolıwı múmkin.",
+  "error_pdf_no_text": "Bul PDF faylında juwmaqlaw ushın tekst joq. Ol skanerlengen súwretlerden turıwı múmkin."
 }

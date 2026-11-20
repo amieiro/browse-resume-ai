@@ -14,7 +14,7 @@
   "ui_working": "Podsumowywanie…",
   "ui_idle_hint": "Kliknij ikonę rozszerzenia, aby podsumować tę stronę.",
   "ui_truncated": "Strona była długa; podsumowano tylko jej pierwszą część.",
-  "error_page_unreadable": "Nie można odczytać tej strony. Strony przeglądarki, Chrome Web Store i pliki PDF nie są obsługiwane.",
+  "error_page_unreadable": "Nie można odczytać tej strony. Strony przeglądarki i Chrome Web Store nie są obsługiwane.",
   "error_no_content": "Nie znaleziono tekstu artykułu na tej stronie.",
   "error_needs_click": "Kliknij ikonę rozszerzenia, aby podsumować tę stronę. Po przejściu karty na inną stronę rozszerzenie potrzebuje ponownego kliknięcia, aby ją odczytać.",
   "error_host_missing": "Lokalny komponent nie jest zainstalowany lub nie odpowiada. W folderze rozszerzenia uruchom: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Listy modeli odczytano {date}.",
   "options_models_never": "Listy modeli nie zostały jeszcze odczytane.",
   "options_models_auto": "Pochodzą z Claude Code, Codex i Ollama i są odczytywane ponownie raz dziennie, gdy Claude Code lub Codex zostanie zaktualizowany oraz gdy rozszerzenie zostanie zaktualizowane.",
-  "options_models_refresh": "Odczytaj teraz"
+  "options_models_refresh": "Odczytaj teraz",
+  "error_file_access": "Aby streszczać pliki na tym komputerze, otwórz Szczegóły rozszerzenia w chrome://extensions i włącz opcję Zezwalaj na dostęp do adresów URL plików.",
+  "error_pdf_unreadable": "Nie można otworzyć tego pliku PDF. Może być chroniony hasłem lub uszkodzony.",
+  "error_pdf_no_text": "Ten plik PDF nie zawiera tekstu do streszczenia. Może składać się z zeskanowanych obrazów."
 }

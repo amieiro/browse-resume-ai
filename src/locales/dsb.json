@@ -14,7 +14,7 @@
   "ui_working": "Zespominujo se…",
   "ui_idle_hint": "Klikniśo na symbol rozšyrjenja, aby toś ten bok zespominał.",
   "ui_truncated": "Toś ten bok jo był dłujki; jano prědny źěl jo se zespominał.",
-  "error_page_unreadable": "Toś ten bok njedajo se cytaś. Boki wobglědowaka, Chrome Web Store a PDF se njepódpěraju.",
+  "error_page_unreadable": "Toś ten bok njedajo se cytaś. Boki wobglědowaka a Chrome Web Store se njepódpěraju.",
   "error_no_content": "Na toś tom boku njejo se tekst nastawka namakał.",
   "error_needs_click": "Klikniśo na symbol rozšyrjenja, aby toś ten bok zespominał. Za tym až rejtarik jo k drugemu bokoju šeł, trjeba rozšyrjenje nowe kliknjenje, aby jen cytało.",
   "error_host_missing": "Lokalna komponenta njejo instalěrowana abo njewótegranja. Wuwjeźćo w zarědniku rozšyrjenja: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Lisćiny modelow cytane {date}.",
   "options_models_never": "Lisćiny modelow hyšći njejsu cytane.",
   "options_models_auto": "Póchadaju z Claude Code, Codex a Ollama a cytaju se znowego jaden raz na źeń, gaž se Claude Code abo Codex aktualizěrujo a gaž se rozšyrjenje aktualizěrujo.",
-  "options_models_refresh": "Něnto cytaś"
+  "options_models_refresh": "Něnto cytaś",
+  "error_file_access": "Aby dataje na toś tom licadle zespominał, wócyńśo Drobnostki rozšyrjenja w chrome://extensions a zašaltujśo Pśistup k datajowym URL dowóliś.",
+  "error_pdf_unreadable": "Toś ten PDF njedajo se wócyniś. Snaź jo z gronidłom šćitany abo wobškóźony.",
+  "error_pdf_no_text": "Toś ten PDF njama tekst, kótaryž dajo se zespominaś. Snaź wobstoj ze skanowanych wobrazow."
 }

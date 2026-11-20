@@ -14,7 +14,7 @@
   "ui_working": "Xulosa qilinmoqda…",
   "ui_idle_hint": "Bu sahifaning xulosasini olish uchun kengaytma belgisini bosing.",
   "ui_truncated": "Bu sahifa uzun edi; faqat birinchi qismi xulosa qilindi.",
-  "error_page_unreadable": "Bu sahifani o‘qib bo‘lmaydi. Brauzer sahifalari, Chrome Web Store va PDF fayllar qo‘llab-quvvatlanmaydi.",
+  "error_page_unreadable": "Bu sahifani o‘qib bo‘lmaydi. Brauzer sahifalari va Chrome Web Store qo‘llab-quvvatlanmaydi.",
   "error_no_content": "Bu sahifada maqola matni topilmadi.",
   "error_needs_click": "Bu sahifaning xulosasini olish uchun kengaytma belgisini bosing. Varaq boshqa sahifaga o‘tgandan keyin kengaytma uni o‘qishi uchun yana bir marta bosish kerak.",
   "error_host_missing": "Mahalliy komponent o‘rnatilmagan yoki javob bermayapti. Kengaytma jildida quyidagini ishga tushiring: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modellar ro‘yxatlari {date} da o‘qildi.",
   "options_models_never": "Modellar ro‘yxatlari hali o‘qilmagan.",
   "options_models_auto": "Ular Claude Code, Codex va Ollama’dan olinadi hamda kuniga bir marta, Claude Code yoki Codex yangilanganda va kengaytma yangilanganda qayta o‘qiladi.",
-  "options_models_refresh": "Hozir o‘qish"
+  "options_models_refresh": "Hozir o‘qish",
+  "error_file_access": "Bu kompyuterdagi fayllarning xulosasini olish uchun chrome://extensions sahifasida kengaytmaning Tafsilotlar bo‘limini oching va Fayl URL manzillariga ruxsat berish parametrini yoqing.",
+  "error_pdf_unreadable": "Bu PDF faylni ochib bo‘lmaydi. U parol bilan himoyalangan yoki shikastlangan bo‘lishi mumkin.",
+  "error_pdf_no_text": "Bu PDF faylda xulosa uchun matn yo‘q. U skanerlangan rasmlardan iborat bo‘lishi mumkin."
 }

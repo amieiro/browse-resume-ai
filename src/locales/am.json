@@ -14,7 +14,7 @@
   "ui_working": "በማጠቃለል ላይ…",
   "ui_idle_hint": "ይህን ገጽ ለማጠቃለል የቅጥያውን አዶ ጠቅ ያድርጉ።",
   "ui_truncated": "ይህ ገጽ ረጅም ነበር፤ የተጠቃለለው የመጀመሪያው ክፍል ብቻ ነው።",
-  "error_page_unreadable": "ይህ ገጽ ሊነበብ አይችልም። የአሳሽ ገጾች፣ Chrome Web Store እና PDF ፋይሎች አይደገፉም።",
+  "error_page_unreadable": "ይህ ገጽ ሊነበብ አይችልም። የአሳሽ ገጾች እና Chrome Web Store አይደገፉም።",
   "error_no_content": "በዚህ ገጽ ላይ የጽሑፍ ይዘት አልተገኘም።",
   "error_needs_click": "ይህን ገጽ ለማጠቃለል የቅጥያውን አዶ ጠቅ ያድርጉ። ትሩ ወደ ሌላ ገጽ ከሄደ በኋላ ቅጥያው ለማንበብ አዲስ ጠቅታ ያስፈልገዋል።",
   "error_host_missing": "የአካባቢው ክፍል አልተጫነም ወይም ምላሽ እየሰጠ አይደለም። በቅጥያው አቃፊ ውስጥ ይህን ያሂዱ፦ ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "የሞዴል ዝርዝሮች የተነበቡት {date} ላይ ነው።",
   "options_models_never": "የሞዴል ዝርዝሮቹ እስካሁን አልተነበቡም።",
   "options_models_auto": "ከ Claude Code፣ Codex እና Ollama ይመጣሉ፤ በቀን አንድ ጊዜ፣ Claude Code ወይም Codex ሲዘመን፣ እና ቅጥያው ሲዘመን እንደገና ይነበባሉ።",
-  "options_models_refresh": "አሁን አንብባቸው"
+  "options_models_refresh": "አሁን አንብባቸው",
+  "error_file_access": "በዚህ ኮምፒውተር ላይ ያሉ ፋይሎችን ለማጠቃለል፣ በchrome://extensions ውስጥ የቅጥያውን ዝርዝሮች ይክፈቱ እና የፋይል ዩአርኤሎችን መዳረሻ ፍቀድን ያብሩ።",
+  "error_pdf_unreadable": "ይህ PDF ሊከፈት አይችልም። በይለፍ ቃል የተጠበቀ ወይም የተበላሸ ሊሆን ይችላል።",
+  "error_pdf_no_text": "ይህ PDF የሚጠቃለል ጽሑፍ የለውም። ከተቃኙ ምስሎች የተሠራ ሊሆን ይችላል።"
 }

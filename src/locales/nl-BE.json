@@ -14,7 +14,7 @@
   "ui_working": "Samenvatten…",
   "ui_idle_hint": "Klik op het extensiepictogram om deze pagina samen te vatten.",
   "ui_truncated": "Deze pagina was lang; alleen het eerste deel werd samengevat.",
-  "error_page_unreadable": "Deze pagina kan niet gelezen worden. Browserpagina's, de Chrome Web Store en PDF's worden niet ondersteund.",
+  "error_page_unreadable": "Deze pagina kan niet gelezen worden. Browserpagina's en de Chrome Web Store worden niet ondersteund.",
   "error_no_content": "Er werd geen artikeltekst gevonden op deze pagina.",
   "error_needs_click": "Klik op het extensiepictogram om deze pagina samen te vatten. Nadat het tabblad naar een andere pagina gegaan is, heeft de extensie een nieuwe klik nodig om die te lezen.",
   "error_host_missing": "Het lokale onderdeel is niet geïnstalleerd of reageert niet. Voer in de map van de extensie uit: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modellijsten gelezen op {date}.",
   "options_models_never": "De modellijsten zijn nog niet gelezen.",
   "options_models_auto": "Ze komen van Claude Code, Codex en Ollama en worden opnieuw gelezen eenmaal per dag, wanneer Claude Code of Codex wordt bijgewerkt en wanneer de extensie wordt bijgewerkt.",
-  "options_models_refresh": "Nu lezen"
+  "options_models_refresh": "Nu lezen",
+  "error_file_access": "Om bestanden op deze computer samen te vatten, open je de Details van de extensie in chrome://extensions en zet je Toegang tot bestands-URL's toestaan aan.",
+  "error_pdf_unreadable": "Deze PDF kan niet geopend worden. Hij is mogelijk beveiligd met een wachtwoord of beschadigd.",
+  "error_pdf_no_text": "Deze PDF bevat geen tekst om samen te vatten. Hij bestaat mogelijk uit gescande afbeeldingen."
 }

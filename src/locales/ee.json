@@ -14,7 +14,7 @@
   "ui_working": "Le nya ƒom ta…",
   "ui_idle_hint": "Zi extension ƒe dzesi dzi be nàƒo axa sia ƒe nya ta.",
   "ui_truncated": "Axa sia didi akpa; ɖe eƒe akpa gbãtɔ koe woƒo ta.",
-  "error_page_unreadable": "Womate ŋu axlẽ axa sia o. Browser ƒe axawo, Chrome Web Store kple PDF dzi womedoa alɔ o.",
+  "error_page_unreadable": "Womate ŋu axlẽ axa sia o. Browser ƒe axawo kple Chrome Web Store dzi womedoa alɔ o.",
   "error_no_content": "Womekpɔ nuŋlɔɖi aɖeke le axa sia dzi o.",
   "error_needs_click": "Zi extension ƒe dzesi dzi be nàƒo axa sia ƒe nya ta. Ne tab la yi axa bubu dzi vɔ la, ele be nàgazi edzi ake hafi extension la naxlẽe.",
   "error_host_missing": "Wometsɔ teƒea ƒe akpa la de eme o alo menɔ ŋu ɖom o. Le extension la ƒe agbalẽdzraɖoƒe me la, wɔ: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Woxlẽ model ƒe xexlẽdzesiwo le {date}.",
   "options_models_never": "Womexlẽ model ƒe xexlẽdzesiwo haɖe o.",
   "options_models_auto": "Wotso Claude Code, Codex kple Ollama me, eye wogaxlẽa wo zi ɖeka gbe sia gbe, ne wowɔ Claude Code alo Codex yeyee, kple ne wowɔ extension la yeyee.",
-  "options_models_refresh": "Xlẽ wo fifia"
+  "options_models_refresh": "Xlẽ wo fifia",
+  "error_file_access": "Be nàƒo kɔmpiuta sia dzi faɛlwo ƒe nya ta la, ʋu extension la ƒe Details le chrome://extensions eye nàtrɔ Allow access to file URLs ɖe edzi.",
+  "error_pdf_unreadable": "Womate ŋu aʋu PDF sia o. Ðewohĩ wotsɔ password ʋlie alo egblẽ.",
+  "error_pdf_no_text": "Nuŋɔŋlɔ aɖeke mele PDF sia me si woaƒo eƒe nya ta o. Ðewohĩ wotsɔ nɔnɔmetata siwo wo scan la wɔe."
 }

@@ -14,7 +14,7 @@
   "ui_working": "Qed isir is-sommarju…",
   "ui_idle_hint": "Ikklikkja fuq l-ikona tal-estensjoni biex tagħmel sommarju ta' din il-paġna.",
   "ui_truncated": "Din il-paġna kienet twila; sar sommarju tal-ewwel parti biss.",
-  "error_page_unreadable": "Din il-paġna ma tistax tinqara. Il-paġni tal-browser, il-Chrome Web Store u l-PDF mhumiex appoġġjati.",
+  "error_page_unreadable": "Din il-paġna ma tistax tinqara. Il-paġni tal-browser u l-Chrome Web Store mhumiex appoġġjati.",
   "error_no_content": "Ma nstab l-ebda test ta' artiklu f'din il-paġna.",
   "error_needs_click": "Ikklikkja fuq l-ikona tal-estensjoni biex tagħmel sommarju ta' din il-paġna. Wara li t-tab tmur f'paġna oħra, l-estensjoni teħtieġ klikk ġdid biex taqraha.",
   "error_host_missing": "Il-komponent lokali mhux installat jew mhux qed iwieġeb. Fil-folder tal-estensjoni, ħaddem: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Il-listi tal-mudelli nqraw fi {date}.",
   "options_models_never": "Il-listi tal-mudelli għadhom ma nqrawx.",
   "options_models_auto": "Jiġu minn Claude Code, Codex u Ollama, u jerġgħu jinqraw darba kuljum, meta Claude Code jew Codex jiġi aġġornat, u meta l-estensjoni tiġi aġġornata.",
-  "options_models_refresh": "Aqrahom issa"
+  "options_models_refresh": "Aqrahom issa",
+  "error_file_access": "Biex tagħmel sommarju tal-fajls fuq dan il-kompjuter, iftaħ id-Dettalji tal-estensjoni f'chrome://extensions u ixgħel Ippermetti l-aċċess għall-URLs tal-fajls.",
+  "error_pdf_unreadable": "Dan il-PDF ma jistax jinfetaħ. Jista' jkun protett b'password jew bil-ħsara.",
+  "error_pdf_no_text": "Dan il-PDF m'għandux test x'tagħmel sommarju tiegħu. Jista' jkun magħmul minn stampi skenjati."
 }

@@ -14,7 +14,7 @@
   "ui_working": "Résumé in cours…",
   "ui_idle_hint": "Cliquez su l’icône d’l’extinsion pour résumer chl’ page-chi.",
   "ui_truncated": "Chl’ page-chi alle étoait longue ; o n’a résumé qu’el preumière partie.",
-  "error_page_unreadable": "O n’put point lire chl’ page-chi. Les pages du navigateu, el Chrome Web Store pi les PDF, ch’est point pris in carge.",
+  "error_page_unreadable": "O n’put point lire chl’ page-chi. Les pages du navigateu pi el Chrome Web Store, ch’est point pris in carge.",
   "error_no_content": "O n’a trouvé point d’tekse d’artike su chl’ page-chi.",
   "error_needs_click": "Cliquez su l’icône d’l’extinsion pour résumer chl’ page-chi. Après qu’el onglet il a candjé d’page, l’extinsion alle a bsoin d’un nouvieu clic pour el lire.",
   "error_host_missing": "Ech composant local il est point instalé ou i n’répond point. Din ch’répertoère d’l’extinsion, lanchez : ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Lisses d’modèles lues ech {date}.",
   "options_models_never": "Les lisses d’modèles il ont point cor été lues.",
   "options_models_auto": "Ales vienn’tent éd Claude Code, Codex pi Ollama, pi ales sont relues eune fos par jour, quand Claude Code ou Codex il est mis à jour, pi quand l’extinsion al est mise à jour.",
-  "options_models_refresh": "Les lire asteure"
+  "options_models_refresh": "Les lire asteure",
+  "error_file_access": "Pour résumer des fichiers d’chl’ordinateu-chi, ouvrez les Détails d’l’extinsion dins chrome://extensions pi mettez in route Autoriser l’accès aux URL de fichier.",
+  "error_pdf_unreadable": "O n’put point ouvrir chl’ PDF-chi. I put ête protégé par un mot d’passe ou abimé.",
+  "error_pdf_no_text": "Chl’ PDF-chi n’a point d’tekse à résumer. I put ête fait d’images scannées."
 }

@@ -14,7 +14,7 @@
   "ui_working": "Eqikkaavoq…",
   "ui_idle_hint": "Quppernermik matuminnga eqikkaanissamut ilassutip ilisarnaataa tooruk.",
   "ui_truncated": "Quppernera takivoq; siulliit kisiat eqikkarneqarput.",
-  "error_page_unreadable": "Quppernera una atuarneqarsinnaanngilaq. Browserip quppernerai, Chrome Web Store aamma PDF-it tapersersorneqanngillat.",
+  "error_page_unreadable": "Quppernera una atuarneqarsinnaanngilaq. Browserip quppernerai aamma Chrome Web Store tapersersorneqanngillat.",
   "error_no_content": "Quppernermi matumani allaaserisap allagaa nassaarineqanngilaq.",
   "error_needs_click": "Quppernermik matuminnga eqikkaanissamut ilassutip ilisarnaataa tooruk. Fanemi quppernermut allamut ingerlaannerup kingorna ilassut atuarsinnaajumallugu tooqqittariaqarpoq.",
   "error_host_missing": "Atortoq qarasaasiami ikkunneqanngilaq imaluunniit akisinnaanngilaq. Ilassutip ataatsimoortitsiviani aallartiguk: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modelit allattorsimaffii {date} atuarneqarput.",
   "options_models_never": "Modelit allattorsimaffii suli atuarneqanngillat.",
   "options_models_auto": "Claude Code-imit, Codex-imit Ollama-millu pissarsiarineqartarput, ullormullu ataasiarlutik atuarneqaqqittarlutik, Claude Code imaluunniit Codex nutarterneqartillugu, ilanngussarlu nutarterneqartillugu.",
-  "options_models_refresh": "Maanna atuakkit"
+  "options_models_refresh": "Maanna atuakkit",
+  "error_file_access": "Qarasaasiami matumani filit eqikkarniarukkit, chrome://extensions-imi ilassutip Paasissutissartai ammakkit, Allow access to file URLs aallartillugu.",
+  "error_pdf_unreadable": "PDF-i una ammarneqarsinnaanngilaq. Isissutissamik illersorneqarsimassaaq imaluunniit aserorsimassaaq.",
+  "error_pdf_no_text": "PDF-imi uani allagaqanngilaq eqikkarneqarsinnaasumik. Assinik scannerikkanik sanaajusinnaavoq."
 }

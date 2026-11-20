@@ -14,7 +14,7 @@
   "ui_working": "Gi-summarize…",
   "ui_idle_hint": "I-klik ang icon sa extension aron ma-summarize kini nga panid.",
   "ui_truncated": "Taas kini nga panid; ang unang bahin lang ang na-summarize.",
-  "error_page_unreadable": "Dili mabasa kini nga panid. Ang mga panid sa browser, ang Chrome Web Store ug mga PDF dili suportado.",
+  "error_page_unreadable": "Dili mabasa kini nga panid. Ang mga panid sa browser ug ang Chrome Web Store dili suportado.",
   "error_no_content": "Walay nakit-ang teksto sa artikulo niini nga panid.",
   "error_needs_click": "I-klik ang icon sa extension aron ma-summarize kini nga panid. Human mobalhin ang tab, kinahanglan og bag-ong klik ang extension aron mabasa kini.",
   "error_host_missing": "Ang lokal nga component wala ma-install o wala motubag. Sa folder sa extension, padagana: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Ang mga lista sa modelo gibasa niadtong {date}.",
   "options_models_never": "Wala pa mabasa ang mga lista sa modelo.",
   "options_models_auto": "Gikan kini sa Claude Code, Codex ug Ollama, ug basahon pag-usab kausa sa usa ka adlaw, kon ma-update ang Claude Code o Codex, ug kon ma-update ang extension.",
-  "options_models_refresh": "Basaha karon"
+  "options_models_refresh": "Basaha karon",
+  "error_file_access": "Aron ma-summarize ang mga file niini nga kompyuter, ablihi ang Details sa extension sa chrome://extensions ug i-on ang Allow access to file URLs.",
+  "error_pdf_unreadable": "Dili maablihan kini nga PDF. Basin giprotektahan kini og password o nadaot.",
+  "error_pdf_no_text": "Walay teksto nga ma-summarize niini nga PDF. Basin hinimo kini sa mga na-scan nga hulagway."
 }

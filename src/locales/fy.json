@@ -14,7 +14,7 @@
   "ui_working": "Gearfetsje…",
   "ui_idle_hint": "Klik op it útwreidingspictogram om dizze side gear te fetsjen.",
   "ui_truncated": "Dizze side wie lang; allinnich it earste diel is gearfette.",
-  "error_page_unreadable": "Dizze side kin net lêzen wurde. Browsersiden, de Chrome Web Store en PDF's wurde net stipe.",
+  "error_page_unreadable": "Dizze side kin net lêzen wurde. Browsersiden en de Chrome Web Store wurde net stipe.",
   "error_no_content": "Der is gjin artikeltekst op dizze side fûn.",
   "error_needs_click": "Klik op it útwreidingspictogram om dizze side gear te fetsjen. Nei't it ljepblêd nei in oare side gien is, hat de útwreiding in nije klik nedich om him te lêzen.",
   "error_host_missing": "It lokale ûnderdiel is net ynstallearre of reagearret net. Fier yn de map fan de útwreiding út: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modellisten lêzen op {date}.",
   "options_models_never": "De modellisten binne noch net lêzen.",
   "options_models_auto": "Se komme fan Claude Code, Codex en Ollama, en wurde ien kear deis opnij lêzen, as Claude Code of Codex bywurke wurdt en as de útwreiding bywurke wurdt.",
-  "options_models_refresh": "No lêze"
+  "options_models_refresh": "No lêze",
+  "error_file_access": "Om bestannen op dizze kompjûter gear te fetsjen, iepenje de Details fan de útwreiding yn chrome://extensions en set Tagong ta bestâns-URL's tastean oan.",
+  "error_pdf_unreadable": "Dizze PDF kin net iepene wurde. Miskien is er beskerme mei in wachtwurd of is er skansearre.",
+  "error_pdf_no_text": "Dizze PDF hat gjin tekst om gear te fetsjen. Miskien bestiet er út scande ôfbyldingen."
 }

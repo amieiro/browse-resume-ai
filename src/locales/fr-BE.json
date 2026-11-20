@@ -14,7 +14,7 @@
   "ui_working": "Résumé en cours…",
   "ui_idle_hint": "Cliquez sur l'icône de l'extension pour résumer cette page.",
   "ui_truncated": "Cette page était longue ; seule la première partie a été résumée.",
-  "error_page_unreadable": "Impossible de lire cette page. Les pages du navigateur, le Chrome Web Store et les PDF ne sont pas pris en charge.",
+  "error_page_unreadable": "Impossible de lire cette page. Les pages du navigateur et le Chrome Web Store ne sont pas pris en charge.",
   "error_no_content": "Aucun texte d'article n'a été trouvé sur cette page.",
   "error_needs_click": "Cliquez sur l'icône de l'extension pour résumer cette page. Après une navigation dans l'onglet, l'extension a besoin d'un nouveau clic pour la lire.",
   "error_host_missing": "Le composant local n'est pas installé ou ne répond pas. Dans le dossier de l'extension, exécutez : ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Listes de modèles lues le {date}.",
   "options_models_never": "Les listes de modèles n'ont pas encore été lues.",
   "options_models_auto": "Elles proviennent de Claude Code, Codex et Ollama, et sont relues une fois par jour, lors de la mise à jour de Claude Code ou de Codex, et lors de la mise à jour de l'extension.",
-  "options_models_refresh": "Les lire maintenant"
+  "options_models_refresh": "Les lire maintenant",
+  "error_file_access": "Pour résumer des fichiers de cet ordinateur, ouvrez les Détails de l'extension dans chrome://extensions et activez Autoriser l'accès aux URL de fichier.",
+  "error_pdf_unreadable": "Impossible d'ouvrir ce PDF. Il est peut-être protégé par un mot de passe ou endommagé.",
+  "error_pdf_no_text": "Ce PDF ne contient aucun texte à résumer. Il est peut-être composé d'images numérisées."
 }

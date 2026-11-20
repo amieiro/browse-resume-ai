@@ -14,7 +14,7 @@
   "ui_working": "Laburtzen…",
   "ui_idle_hint": "Egin klik luzapenaren ikonoan orri hau laburtzeko.",
   "ui_truncated": "Orria luzea zen; lehen zatia bakarrik laburtu da.",
-  "error_page_unreadable": "Ezin da orri hau irakurri. Arakatzailearen orriak, Chrome Web Store eta PDFak ez dira onartzen.",
+  "error_page_unreadable": "Ezin da orri hau irakurri. Arakatzailearen orriak eta Chrome Web Store ez dira onartzen.",
   "error_no_content": "Ez da artikulu-testurik aurkitu orri honetan.",
   "error_needs_click": "Egin klik luzapenaren ikonoan orri hau laburtzeko. Fitxan beste orri batera joan ondoren, luzapenak klik berri bat behar du orria irakurtzeko.",
   "error_host_missing": "Osagai lokala ez dago instalatuta edo ez du erantzuten. Luzapenaren karpetan, exekutatu: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Eredu-zerrendak noiz irakurriak: {date}.",
   "options_models_never": "Eredu-zerrendak ez dira oraindik irakurri.",
   "options_models_auto": "Claude Code, Codex eta Ollama-tik datoz, eta egunean behin irakurtzen dira berriro, Claude Code edo Codex eguneratzen denean eta luzapena eguneratzen denean.",
-  "options_models_refresh": "Irakurri orain"
+  "options_models_refresh": "Irakurri orain",
+  "error_file_access": "Ordenagailu honetako fitxategiak laburtzeko, ireki luzapenaren Xehetasunak chrome://extensions orrian eta aktibatu Eman fitxategien URLetarako sarbidea.",
+  "error_pdf_unreadable": "Ezin da PDF hau ireki. Baliteke pasahitz bidez babestuta edo hondatuta egotea.",
+  "error_pdf_no_text": "PDF honek ez du laburtzeko testurik. Baliteke eskaneatutako irudiz osatuta egotea."
 }

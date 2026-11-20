@@ -14,7 +14,7 @@
   "ui_working": "Povzemanje …",
   "ui_idle_hint": "Kliknite ikono razširitve, da povzamete to stran.",
   "ui_truncated": "Ta stran je bila dolga; povzet je bil le prvi del.",
-  "error_page_unreadable": "Te strani ni mogoče prebrati. Strani brskalnika, Chrome Web Store in datoteke PDF niso podprte.",
+  "error_page_unreadable": "Te strani ni mogoče prebrati. Strani brskalnika in Chrome Web Store niso podprte.",
   "error_no_content": "Na tej strani ni bilo najdenega besedila članka.",
   "error_needs_click": "Kliknite ikono razširitve, da povzamete to stran. Ko zavihek preide na drugo stran, potrebuje razširitev nov klik, da jo prebere.",
   "error_host_missing": "Lokalna komponenta ni nameščena ali se ne odziva. V mapi razširitve zaženite: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Seznami modelov so bili prebrani {date}.",
   "options_models_never": "Seznami modelov še niso bili prebrani.",
   "options_models_auto": "Pridobljeni so iz Claude Code, Codex in Ollama ter se znova preberejo enkrat na dan, ko se posodobi Claude Code ali Codex, in ko se posodobi razširitev.",
-  "options_models_refresh": "Preberi zdaj"
+  "options_models_refresh": "Preberi zdaj",
+  "error_file_access": "Če želite povzeti datoteke v tem računalniku, odprite Podrobnosti razširitve na strani chrome://extensions in vklopite Dovoli dostop do URL-jev datotek.",
+  "error_pdf_unreadable": "Te datoteke PDF ni mogoče odpreti. Morda je zaščitena z geslom ali poškodovana.",
+  "error_pdf_no_text": "Ta datoteka PDF nima besedila za povzemanje. Morda je sestavljena iz optično prebranih slik."
 }

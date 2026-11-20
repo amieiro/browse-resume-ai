@@ -14,7 +14,7 @@
   "ui_working": "A resumir…",
   "ui_idle_hint": "Clique no ícone da extensão para resumir esta página.",
   "ui_truncated": "Esta página era longa; só foi resumida a primeira parte.",
-  "error_page_unreadable": "Não é possível ler esta página. As páginas do navegador, a Chrome Web Store e os PDF não são suportados.",
+  "error_page_unreadable": "Não é possível ler esta página. As páginas do navegador e a Chrome Web Store não são suportadas.",
   "error_no_content": "Não foi encontrado texto de artigo nesta página.",
   "error_needs_click": "Clique no ícone da extensão para resumir esta página. Depois de o separador navegar, a extensão precisa de um novo clique para a ler.",
   "error_host_missing": "O componente local não está instalado ou não responde. Na pasta da extensão, execute: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Listas de modelos lidas em {date}.",
   "options_models_never": "As listas de modelos ainda não foram lidas.",
   "options_models_auto": "Vêm do Claude Code, do Codex e do Ollama, e são lidas novamente uma vez por dia, quando o Claude Code ou o Codex é atualizado e quando a extensão é atualizada.",
-  "options_models_refresh": "Ler agora"
+  "options_models_refresh": "Ler agora",
+  "error_file_access": "Para resumir ficheiros neste computador, abra os Detalhes da extensão em chrome://extensions e ative Permitir acesso a URLs de ficheiros.",
+  "error_pdf_unreadable": "Não é possível abrir este PDF. Pode estar protegido por palavra-passe ou danificado.",
+  "error_pdf_no_text": "Este PDF não tem texto para resumir. Pode ser composto por imagens digitalizadas."
 }

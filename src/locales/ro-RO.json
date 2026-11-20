@@ -14,7 +14,7 @@
   "ui_working": "Se rezumă…",
   "ui_idle_hint": "Dă clic pe pictograma extensiei pentru a rezuma această pagină.",
   "ui_truncated": "Pagina era lungă; a fost rezumată doar prima parte.",
-  "error_page_unreadable": "Această pagină nu poate fi citită. Paginile browserului, Chrome Web Store și fișierele PDF nu sunt acceptate.",
+  "error_page_unreadable": "Această pagină nu poate fi citită. Paginile browserului și Chrome Web Store nu sunt acceptate.",
   "error_no_content": "Nu s-a găsit text de articol pe această pagină.",
   "error_needs_click": "Dă clic pe pictograma extensiei pentru a rezuma această pagină. După ce fila navighează, extensia are nevoie de un clic nou pentru a o citi.",
   "error_host_missing": "Componenta locală nu este instalată sau nu răspunde. În dosarul extensiei, rulează: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Listele de modele citite pe {date}.",
   "options_models_never": "Listele de modele nu au fost citite încă.",
   "options_models_auto": "Provin din Claude Code, Codex și Ollama și sunt citite din nou o dată pe zi, când Claude Code sau Codex este actualizat și când extensia este actualizată.",
-  "options_models_refresh": "Citește-le acum"
+  "options_models_refresh": "Citește-le acum",
+  "error_file_access": "Pentru a rezuma fișiere de pe acest computer, deschide Detalii pentru extensie în chrome://extensions și activează Permite accesul la adresele URL ale fișierelor.",
+  "error_pdf_unreadable": "Acest PDF nu poate fi deschis. Poate fi protejat cu parolă sau deteriorat.",
+  "error_pdf_no_text": "Acest PDF nu conține text de rezumat. Poate fi alcătuit din imagini scanate."
 }

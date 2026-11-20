@@ -14,7 +14,7 @@
   "ui_working": "Inafupisha…",
   "ui_idle_hint": "Bofya aikoni ya kiendelezi ili kufupisha ukurasa huu.",
   "ui_truncated": "Ukurasa huu ulikuwa mrefu; sehemu ya kwanza pekee ndiyo imefupishwa.",
-  "error_page_unreadable": "Ukurasa huu hauwezi kusomwa. Kurasa za kivinjari, Chrome Web Store na PDF hazitumiki.",
+  "error_page_unreadable": "Ukurasa huu hauwezi kusomwa. Kurasa za kivinjari na Chrome Web Store hazitumiki.",
   "error_no_content": "Hakuna maandishi ya makala yaliyopatikana kwenye ukurasa huu.",
   "error_needs_click": "Bofya aikoni ya kiendelezi ili kufupisha ukurasa huu. Baada ya kichupo kwenda kwenye ukurasa mwingine, kiendelezi kinahitaji kubofya upya ili kuusoma.",
   "error_host_missing": "Kipengele cha ndani hakijasakinishwa au hakijibu. Katika folda ya kiendelezi, endesha: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Orodha za miundo zilisomwa {date}.",
   "options_models_never": "Orodha za miundo bado hazijasomwa.",
   "options_models_auto": "Zinatoka kwa Claude Code, Codex na Ollama, na husomwa tena mara moja kwa siku, Claude Code au Codex inaposasishwa, na kiendelezi kinaposasishwa.",
-  "options_models_refresh": "Zisome sasa"
+  "options_models_refresh": "Zisome sasa",
+  "error_file_access": "Ili kufupisha faili zilizo kwenye kompyuta hii, fungua Maelezo ya kiendelezi katika chrome://extensions kisha uwashe Ruhusu ufikiaji wa URL za faili.",
+  "error_pdf_unreadable": "PDF hii haiwezi kufunguliwa. Huenda imelindwa kwa nenosiri au imeharibika.",
+  "error_pdf_no_text": "PDF hii haina maandishi ya kufupisha. Huenda imeundwa kwa picha zilizochanganuliwa."
 }

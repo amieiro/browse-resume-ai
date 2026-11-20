@@ -14,7 +14,7 @@
   "ui_working": "S'està resumint…",
   "ui_idle_hint": "Feis clic a la icona de l'extensió per resumir aquesta pàgina.",
   "ui_truncated": "Aquesta pàgina era llarga; només se n'ha resumit la primera part.",
-  "error_page_unreadable": "No es pot llegir aquesta pàgina. Les pàgines del navegador, la Chrome Web Store i els PDF no són compatibles.",
+  "error_page_unreadable": "No es pot llegir aquesta pàgina. Les pàgines del navegador i la Chrome Web Store no són compatibles.",
   "error_no_content": "No s'ha trobat text d'article a aquesta pàgina.",
   "error_needs_click": "Feis clic a la icona de l'extensió per resumir aquesta pàgina. Quan la pestanya canvia de pàgina, l'extensió necessita un clic nou per llegir-la.",
   "error_host_missing": "El component local no està instal·lat o no respon. A la carpeta de l'extensió, executau: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Llistes de models llegides el {date}.",
   "options_models_never": "Encara no s'han llegit les llistes de models.",
   "options_models_auto": "Provenen de Claude Code, Codex i Ollama, i es tornen a llegir un pic al dia, quan s'actualitza Claude Code o Codex i quan s'actualitza l'extensió.",
-  "options_models_refresh": "Llegeix-les ara"
+  "options_models_refresh": "Llegeix-les ara",
+  "error_file_access": "Per resumir fitxers d'aquest ordinador, obriu els Detalls de l'extensió a chrome://extensions i activau Permet l'accés als URL de fitxers.",
+  "error_pdf_unreadable": "No es pot obrir aquest PDF. Pot ser que estigui protegit amb contrasenya o malmès.",
+  "error_pdf_no_text": "Aquest PDF no té text per resumir. Pot ser que estigui format per imatges escanejades."
 }

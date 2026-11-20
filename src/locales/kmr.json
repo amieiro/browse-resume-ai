@@ -14,7 +14,7 @@
   "ui_working": "Tê kurtkirin…",
   "ui_idle_hint": "Ji bo kurtkirina vê rûpelê li îkona pêvekê bitikîne.",
   "ui_truncated": "Ev rûpel dirêj bû; tenê beşa yekem hate kurtkirin.",
-  "error_page_unreadable": "Ev rûpel nayê xwendin. Rûpelên gerokê, Chrome Web Store û PDF nayên piştgirîkirin.",
+  "error_page_unreadable": "Ev rûpel nayê xwendin. Rûpelên gerokê û Chrome Web Store nayên piştgirîkirin.",
   "error_no_content": "Di vê rûpelê de nivîsa gotarê nehate dîtin.",
   "error_needs_click": "Ji bo kurtkirina vê rûpelê li îkona pêvekê bitikîne. Piştî ku hilpekîn diçe rûpeleke din, pêvek ji bo xwendinê tikandineke nû hewce dike.",
   "error_host_missing": "Pêkhateya herêmî nehatiye sazkirin an bersiv nade. Di peldanka pêvekê de, vê bixebitîne: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Lîsteyên modelan di {date} de hatin xwendin.",
   "options_models_never": "Lîsteyên modelan hîn nehatine xwendin.",
   "options_models_auto": "Ew ji Claude Code, Codex û Ollama tên, û rojê carekê, dema ku Claude Code an Codex tê nûkirin û dema ku pêvek tê nûkirin, dîsa tên xwendin.",
-  "options_models_refresh": "Niha bixwîne"
+  "options_models_refresh": "Niha bixwîne",
+  "error_file_access": "Ji bo kurtekirina pelên li ser vê komputerê, di chrome://extensions de Hûrguliyên pêvekê veke û Destûrê bide gihîştina URLyên pelan veke.",
+  "error_pdf_unreadable": "Ev PDF nayê vekirin. Dibe ku bi şîfreyê hatibe parastin an jî xera bûbe.",
+  "error_pdf_no_text": "Di vê PDFê de nivîsek ji bo kurtekirinê tune ye. Dibe ku ji wêneyên skankirî hatibe çêkirin."
 }

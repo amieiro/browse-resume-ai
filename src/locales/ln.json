@@ -14,7 +14,7 @@
   "ui_working": "Ezali kokúsa…",
   "ui_idle_hint": "Fína elílí ya ekstɛnsió mpo na kokúsa lokásá oyo.",
   "ui_truncated": "Lokásá ezalaki molai; se eteni ya libosó nde ekúsámí.",
-  "error_page_unreadable": "Lokásá oyo ekoki kotángama té. Nkásá ya navigatɛ́rɛ, Chrome Web Store mpé PDF esalaka awa té.",
+  "error_page_unreadable": "Lokásá oyo ekoki kotángama té. Nkásá ya navigatɛ́rɛ mpé Chrome Web Store esalaka awa té.",
   "error_no_content": "Makomi ya lisolo ezwámí té na lokásá oyo.",
   "error_needs_click": "Fína elílí ya ekstɛnsió mpo na kokúsa lokásá oyo. Sima ya ongulú kokende na lokásá mosúsu, ekstɛnsió esengeli kofínama lisúsu mpo na kotánga yangó.",
   "error_host_missing": "Eteni ya esika oyo ekɔtísámí té tó ezóyanola té. Na dosié ya ekstɛnsió, salá: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Bandimbola ya bamodɛ́lɛ etángamaki na {date}.",
   "options_models_never": "Bandimbola ya bamodɛ́lɛ etángami naino tɛ.",
   "options_models_auto": "Euti na Claude Code, Codex mpe Ollama, mpe etángamaka lisusu mbala moko na mokolo, ntango Claude Code tó Codex ezwi bobongisi, mpe ntango ekobakisa ezwi bobongisi.",
-  "options_models_refresh": "Tánga yangó sikoyo"
+  "options_models_refresh": "Tánga yangó sikoyo",
+  "error_file_access": "Mpo na kokúmisa mikanda ya ordinatɛ́rɛ oyo na mokuse, fungolá Détails ya extension na chrome://extensions mpé pelisá Autoriser l'accès aux URL de fichier.",
+  "error_pdf_unreadable": "PDF oyo ekoki kofungwama té. Ekoki kozala ebatelami na mot de passe to ebebi.",
+  "error_pdf_no_text": "PDF oyo ezalí na makomi ya kokúmisa na mokuse té. Ekoki kozala esalemi na bilili oyo ba-scanner."
 }

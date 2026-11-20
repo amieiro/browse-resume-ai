@@ -14,7 +14,7 @@
   "ui_working": "Ibinubuod…",
   "ui_idle_hint": "I-click ang icon ng extension para ibuod ang page na ito.",
   "ui_truncated": "Mahaba ang page na ito; ang unang bahagi lang ang naibuod.",
-  "error_page_unreadable": "Hindi mabasa ang page na ito. Hindi sinusuportahan ang mga page ng browser, ang Chrome Web Store at mga PDF.",
+  "error_page_unreadable": "Hindi mabasa ang page na ito. Hindi sinusuportahan ang mga page ng browser at ang Chrome Web Store.",
   "error_no_content": "Walang nakitang teksto ng artikulo sa page na ito.",
   "error_needs_click": "I-click ang icon ng extension para ibuod ang page na ito. Pagkatapos lumipat ng page ang tab, kailangan ng extension ng bagong click para mabasa ito.",
   "error_host_missing": "Hindi naka-install o hindi tumutugon ang lokal na component. Sa folder ng extension, patakbuhin ang: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Nabasa ang mga listahan ng modelo noong {date}.",
   "options_models_never": "Hindi pa nababasa ang mga listahan ng modelo.",
   "options_models_auto": "Galing ang mga ito sa Claude Code, Codex at Ollama, at binabasa ulit isang beses sa isang araw, kapag na-update ang Claude Code o Codex, at kapag na-update ang extension.",
-  "options_models_refresh": "Basahin ngayon"
+  "options_models_refresh": "Basahin ngayon",
+  "error_file_access": "Para ibuod ang mga file sa computer na ito, buksan ang Mga Detalye ng extension sa chrome://extensions at i-on ang Payagan ang access sa mga URL ng file.",
+  "error_pdf_unreadable": "Hindi mabuksan ang PDF na ito. Maaaring protektado ito ng password o sira.",
+  "error_pdf_no_text": "Walang tekstong maibubuod sa PDF na ito. Maaaring binubuo ito ng mga na-scan na larawan."
 }

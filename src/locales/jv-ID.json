@@ -14,7 +14,7 @@
   "ui_working": "Lagi ngringkes…",
   "ui_idle_hint": "Klik lambang ekstensi kanggo ngringkes kaca iki.",
   "ui_truncated": "Kaca iki dawa; mung bagean wiwitan sing diringkes.",
-  "error_page_unreadable": "Kaca iki ora bisa diwaca. Kaca browser, Chrome Web Store lan PDF ora didhukung.",
+  "error_page_unreadable": "Kaca iki ora bisa diwaca. Kaca browser lan Chrome Web Store ora didhukung.",
   "error_no_content": "Ora ana teks artikel sing ketemu ing kaca iki.",
   "error_needs_click": "Klik lambang ekstensi kanggo ngringkes kaca iki. Sawise tab pindhah kaca, ekstensi butuh klik anyar kanggo maca.",
   "error_host_missing": "Komponen lokal durung dipasang utawa ora mangsuli. Ing folder ekstensi, lakokna: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Dhaptar model diwaca tanggal {date}.",
   "options_models_never": "Dhaptar model durung diwaca.",
   "options_models_auto": "Dhaptar iki asalé saka Claude Code, Codex lan Ollama, lan diwaca manèh sepisan saben dina, nalika Claude Code utawa Codex dianyari, lan nalika ekstensi dianyari.",
-  "options_models_refresh": "Waca saiki"
+  "options_models_refresh": "Waca saiki",
+  "error_file_access": "Kanggo ngringkes file ing komputer iki, bukak Rincian ekstensi ing chrome://extensions banjur aktifake Idinake akses menyang URL file.",
+  "error_pdf_unreadable": "PDF iki ora bisa dibukak. Bisa uga direksa nganggo sandhi utawa rusak.",
+  "error_pdf_no_text": "PDF iki ora ana teks sing bisa diringkes. Bisa uga isine gambar asil pindaian."
 }

@@ -14,7 +14,7 @@
   "ui_working": "Riassuntu in corsu…",
   "ui_idle_hint": "Cliccate nant'à l'icona di l'estensione per riassume sta pagina.",
   "ui_truncated": "Sta pagina era longa; solu a prima parte hè stata riassunta.",
-  "error_page_unreadable": "Ùn si pò leghje sta pagina. E pagine di u navigatore, u Chrome Web Store è i PDF ùn sò micca accettati.",
+  "error_page_unreadable": "Ùn si pò leghje sta pagina. E pagine di u navigatore è u Chrome Web Store ùn sò micca accettati.",
   "error_no_content": "Ùn hè statu trovu nisun testu d'articulu in sta pagina.",
   "error_needs_click": "Cliccate nant'à l'icona di l'estensione per riassume sta pagina. Dopu chì l'unghjetta hà cambiatu pagina, l'estensione hà bisognu d'un novu clic per leghjela.",
   "error_host_missing": "U cumpunente lucale ùn hè micca installatu o ùn risponde micca. In u cartulare di l'estensione, eseguite: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Liste di mudelli lette u {date}.",
   "options_models_never": "E liste di mudelli ùn sò ancu state lette.",
   "options_models_auto": "Venenu da Claude Code, Codex è Ollama, è sò rilette una volta à ghjornu, quandu Claude Code o Codex hè messu à ghjornu, è quandu l'estensione hè messa à ghjornu.",
-  "options_models_refresh": "Leghjele avà"
+  "options_models_refresh": "Leghjele avà",
+  "error_file_access": "Per riassume i schedarii di st'urdinatore, aprite i Detaglii di l'estensione in chrome://extensions è attivate Permette l'accessu à l'URL di i schedarii.",
+  "error_pdf_unreadable": "Ùn si pò apre stu PDF. Pò esse prutettu da una parolla d'intesa o guastu.",
+  "error_pdf_no_text": "Stu PDF ùn hà nisun testu à riassume. Pò esse fattu d'imagine scannerizate."
 }

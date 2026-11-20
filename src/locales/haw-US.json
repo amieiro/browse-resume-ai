@@ -14,7 +14,7 @@
   "ui_working": "Ke hōʻuluʻulu nei…",
   "ui_idle_hint": "Kaomi i ka ikona o ka hoʻolōʻihi no ka hōʻuluʻulu ʻana i kēia ʻaoʻao.",
   "ui_truncated": "Ua lōʻihi kēia ʻaoʻao; ʻo ka hapa mua wale nō i hōʻuluʻulu ʻia.",
-  "error_page_unreadable": "ʻAʻole hiki ke heluhelu i kēia ʻaoʻao. ʻAʻole kākoʻo ʻia nā ʻaoʻao o ka polokalamu kele pūnaewele, ka Chrome Web Store, a me nā PDF.",
+  "error_page_unreadable": "ʻAʻole hiki ke heluhelu i kēia ʻaoʻao. ʻAʻole kākoʻo ʻia nā ʻaoʻao o ka polokalamu kele pūnaewele a me ka Chrome Web Store.",
   "error_no_content": "ʻAʻohe kikokikona ʻatikala i loaʻa ma kēia ʻaoʻao.",
   "error_needs_click": "Kaomi i ka ikona o ka hoʻolōʻihi no ka hōʻuluʻulu ʻana i kēia ʻaoʻao. Ma hope o ka neʻe ʻana o ka pā, pono ka hoʻolōʻihi i kaomi hou e heluhelu ai.",
   "error_host_missing": "ʻAʻole i hoʻokomo ʻia ka ʻāpana kūloko a i ʻole ʻaʻole ia e pane mai nei. Ma ka waihona o ka hoʻolōʻihi, holo i: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Ua heluhelu ʻia nā papa kumu hoʻohālike ma {date}.",
   "options_models_never": "ʻAʻole i heluhelu ʻia nā papa kumu hoʻohālike.",
   "options_models_auto": "No Claude Code, Codex a me Ollama mai lākou, a heluhelu hou ʻia lākou hoʻokahi manawa i ka lā, i ka wā e hōʻano hou ʻia ai ʻo Claude Code a i ʻole Codex, a i ka wā e hōʻano hou ʻia ai ka hoʻonui.",
-  "options_models_refresh": "Heluhelu iā lākou i kēia manawa"
+  "options_models_refresh": "Heluhelu iā lākou i kēia manawa",
+  "error_file_access": "No ka hōʻuluʻulu ʻana i nā faila ma kēia kamepiula, e wehe i nā Kikoʻī o ka hoʻolōʻihi ma chrome://extensions a e hoʻā i ka ʻAe i ke komo ʻana i nā URL faila.",
+  "error_pdf_unreadable": "ʻAʻole hiki ke wehe i kēia PDF. Ua pale ʻia paha me ka ʻōlelo huna, a i ʻole ua pōʻino.",
+  "error_pdf_no_text": "ʻAʻohe kikokikona ma kēia PDF e hōʻuluʻulu ai. Ua hana ʻia paha me nā kiʻi i kāpena ʻia."
 }

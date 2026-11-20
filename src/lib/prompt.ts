@@ -7,6 +7,8 @@ export interface Article {
   url: string;
   /** True when the text was cut at the character cap. */
   truncated: boolean;
+  /** Set for a PDF document, so the prompt calls it a document rather than a web article. */
+  format?: 'pdf';
 }
 
 /** Longest text sent to the model; longer pages and selections are cut here. */
@@ -39,7 +41,9 @@ export function buildPrompt(article: Article, length: SummaryLength, language: L
   return [
     source === 'selection'
       ? 'Summarize the excerpt below, which the reader selected on a web page. Summarize only the excerpt, not the rest of the page.'
-      : 'Summarize the web article below.',
+      : article.format === 'pdf'
+        ? 'Summarize the PDF document below.'
+        : 'Summarize the web article below.',
     `Write the summary in ${lang} regardless of the article's language.`,
     LENGTH_RULES[length],
     'Format: simple Markdown only (paragraphs, "-" bullets, **bold**). No preamble, no title, no closing remarks.',

@@ -14,7 +14,7 @@
   "ui_working": "正在摘要…",
   "ui_idle_hint": "按一下擴充功能圖示即可摘要這個網頁。",
   "ui_truncated": "這個網頁很長，只摘要了開頭部分。",
-  "error_page_unreadable": "無法讀取這個網頁。不支援瀏覽器頁面、Chrome Web Store 和 PDF。",
+  "error_page_unreadable": "無法讀取這個網頁。不支援瀏覽器頁面和 Chrome Web Store。",
   "error_no_content": "這個網頁上找不到文章文字。",
   "error_needs_click": "按一下擴充功能圖示即可摘要這個網頁。分頁跳轉到其他網頁後，需要再按一下擴充功能才能讀取。",
   "error_host_missing": "本機元件未安裝或沒有回應。請在擴充功能的資料夾中執行：./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "模型清單讀取於 {date}。",
   "options_models_never": "尚未讀取模型清單。",
   "options_models_auto": "這些清單來自 Claude Code、Codex 和 Ollama，每天會重新讀取一次，在 Claude Code 或 Codex 更新時以及擴充功能更新時也會重新讀取。",
-  "options_models_refresh": "立即讀取"
+  "options_models_refresh": "立即讀取",
+  "error_file_access": "如要摘要這部電腦上的檔案，請在 chrome://extensions 開啟擴充功能的「詳細資料」，然後開啟「允許存取檔案網址」。",
+  "error_pdf_unreadable": "無法開啟這個 PDF。檔案可能受密碼保護或已損毀。",
+  "error_pdf_no_text": "這個 PDF 沒有可摘要的文字。檔案可能由掃描圖片組成。"
 }

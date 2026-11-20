@@ -14,7 +14,7 @@
   "ui_working": "Kokkuvõtte koostamine…",
   "ui_idle_hint": "Selle lehe kokkuvõtte tegemiseks klõpsa laienduse ikoonil.",
   "ui_truncated": "See leht oli pikk; kokku võeti ainult esimene osa.",
-  "error_page_unreadable": "Seda lehte ei saa lugeda. Brauseri lehti, Chrome Web Store'i ja PDF-faile ei toetata.",
+  "error_page_unreadable": "Seda lehte ei saa lugeda. Brauseri lehti ja Chrome Web Store'i ei toetata.",
   "error_no_content": "Sellelt lehelt ei leitud artikli teksti.",
   "error_needs_click": "Selle lehe kokkuvõtte tegemiseks klõpsa laienduse ikoonil. Pärast seda, kui vahekaart on uuele lehele liikunud, vajab laiendus selle lugemiseks uut klõpsu.",
   "error_host_missing": "Kohalik komponent pole installitud või ei vasta. Käivita laienduse kaustas: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Mudelite loendid loeti {date}.",
   "options_models_never": "Mudelite loendeid pole veel loetud.",
   "options_models_auto": "Need tulevad Claude Code'ist, Codexist ja Ollamast ning loetakse uuesti kord päevas, Claude Code'i või Codexi uuendamisel ja laienduse uuendamisel.",
-  "options_models_refresh": "Loe need kohe"
+  "options_models_refresh": "Loe need kohe",
+  "error_file_access": "Selle arvuti failidest kokkuvõtte tegemiseks ava chrome://extensions lehel laienduse Üksikasjad ja lülita sisse Luba juurdepääs failide URL-idele.",
+  "error_pdf_unreadable": "Seda PDF-faili ei saa avada. See võib olla parooliga kaitstud või kahjustatud.",
+  "error_pdf_no_text": "Selles PDF-failis pole teksti, millest kokkuvõtet teha. See võib koosneda skannitud piltidest."
 }

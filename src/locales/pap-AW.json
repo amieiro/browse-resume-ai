@@ -14,7 +14,7 @@
   "ui_working": "Ta resumiendo…",
   "ui_idle_hint": "Klik riba e icono di e extension pa resumi e pagina aki.",
   "ui_truncated": "E pagina tabata largo; solamente e prome parti a wordo resumi.",
-  "error_page_unreadable": "No por lesa e pagina aki. Paginanan di e navegador, e Chrome Web Store i PDF no ta soportá.",
+  "error_page_unreadable": "No por lesa e pagina aki. Paginanan di e navegador i e Chrome Web Store no ta soportá.",
   "error_no_content": "No a haya ningun texto di articulo riba e pagina aki.",
   "error_needs_click": "Klik riba e icono di e extension pa resumi e pagina aki. Despues cu e tab a cambia di pagina, e extension mester di un klik nobo pa les'é.",
   "error_host_missing": "E componente local no ta instalá of no ta contestando. Den e mapa di e extension, eherce: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Lista di modelo leza dia {date}.",
   "options_models_never": "E listanan di modelo no a wordo leza ainda.",
   "options_models_auto": "Nan ta bini di Claude Code, Codex y Ollama, y nan ta wordo leza di nobo un biaha pa dia, ora Claude Code of Codex wordo actualisa, y ora e extension wordo actualisa.",
-  "options_models_refresh": "Lesa nan awor"
+  "options_models_refresh": "Lesa nan awor",
+  "error_file_access": "Pa resumí archivonan riba e computer aki, habri e Detalles di e extension den chrome://extensions i activa Permiti acceso na URL di archivo.",
+  "error_pdf_unreadable": "No por habri e PDF aki. E por ta protegí cu un contraseña of dañá.",
+  "error_pdf_no_text": "E PDF aki no tin texto pa resumí. E por ta trahá di imagennan scaneá."
 }

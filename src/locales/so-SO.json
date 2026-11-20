@@ -14,7 +14,7 @@
   "ui_working": "Waa la soo koobayaa…",
   "ui_idle_hint": "Guji astaanta kordhinta si aad u soo koobto boggan.",
   "ui_truncated": "Boggani wuu dheeraa; qaybta koowaad oo keliya ayaa la soo koobay.",
-  "error_page_unreadable": "Boggan lama akhrin karo. Bogagga biraawsarka, Chrome Web Store iyo faylasha PDF lama taageero.",
+  "error_page_unreadable": "Boggan lama akhrin karo. Bogagga biraawsarka iyo Chrome Web Store lama taageero.",
   "error_no_content": "Boggan laguma helin qoraal maqaal.",
   "error_needs_click": "Guji astaanta kordhinta si aad u soo koobto boggan. Kadib marka tab-ku u gudbo bog kale, kordhintu waxay u baahan tahay guji cusub si ay u akhrido.",
   "error_host_missing": "Qaybta maxalliga ah lama rakibin ama ma jawaabayso. Gudaha galka kordhinta, socodsii: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Liisaska moodeellada waxaa la akhriyay {date}.",
   "options_models_never": "Liisaska moodeellada weli lama akhrin.",
   "options_models_auto": "Waxay ka yimaadaan Claude Code, Codex iyo Ollama, waxaana mar kale la akhriyaa hal mar maalintii, marka Claude Code ama Codex la cusboonaysiiyo, iyo marka kordhinta la cusboonaysiiyo.",
-  "options_models_refresh": "Hadda akhri"
+  "options_models_refresh": "Hadda akhri",
+  "error_file_access": "Si aad u soo koobto faylasha kombiyuutarkan, fur Faahfaahinta kordhinta ee chrome://extensions oo shid U oggolow gelitaanka URL-yada faylka.",
+  "error_pdf_unreadable": "PDF-kan lama furi karo. Waxaa laga yaabaa in lagu ilaaliyay furaha sirta ah ama uu dhaawacmay.",
+  "error_pdf_no_text": "PDF-kan ma laha qoraal la soo koobo. Waxaa laga yaabaa inuu ka kooban yahay sawirro la iskaan gareeyay."
 }

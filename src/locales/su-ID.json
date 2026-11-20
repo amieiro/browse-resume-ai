@@ -14,7 +14,7 @@
   "ui_working": "Keur nyimpulkeun…",
   "ui_idle_hint": "Klik ikon éksténsi pikeun nyimpulkeun ieu kaca.",
   "ui_truncated": "Ieu kaca panjang; ngan bagian kahijina anu disimpulkeun.",
-  "error_page_unreadable": "Ieu kaca teu bisa dibaca. Kaca panyungsi, Chrome Web Store sareng PDF henteu dirojong.",
+  "error_page_unreadable": "Ieu kaca teu bisa dibaca. Kaca panyungsi sareng Chrome Web Store henteu dirojong.",
   "error_no_content": "Teu kapendak téks artikel dina ieu kaca.",
   "error_needs_click": "Klik ikon éksténsi pikeun nyimpulkeun ieu kaca. Saatos tab pindah ka kaca séjén, éksténsi peryogi klik anyar pikeun macana.",
   "error_host_missing": "Komponén lokal teu acan dipasang atanapi henteu ngawaler. Dina polder éksténsi, jalankeun: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Daptar modél dibaca dina {date}.",
   "options_models_never": "Daptar modél can kungsi dibaca.",
   "options_models_auto": "Daptar éta asalna ti Claude Code, Codex jeung Ollama, sarta dibaca deui sakali sapoé, nalika Claude Code atawa Codex diropéa, jeung nalika éksténsi diropéa.",
-  "options_models_refresh": "Baca ayeuna"
+  "options_models_refresh": "Baca ayeuna",
+  "error_file_access": "Pikeun nyimpulkeun file dina ieu komputer, buka Rincian éksténsi di chrome://extensions teras hurungkeun Idinan aksés ka URL file.",
+  "error_pdf_unreadable": "Ieu PDF teu bisa dibuka. Panginten ditangtayungan ku kecap konci atanapi ruksak.",
+  "error_pdf_no_text": "Ieu PDF teu gaduh téks pikeun disimpulkeun. Panginten diwangun ku gambar hasil scan."
 }

@@ -14,7 +14,7 @@
   "ui_working": "È ɖò xó kpɛ́n wɛ…",
   "ui_idle_hint": "Zín extension ɔ sín wuntun ɔ jí bo na kpɛ́n xó wema bló elɔ ɔ tɔn.",
   "ui_truncated": "Wema bló elɔ ɔ gaga; akpáxwé nukɔntɔn ɔ kɛɖɛ wɛ è kpɛ́n.",
-  "error_page_unreadable": "È sixu xà wema bló elɔ ǎ. Navigateur sín wema bló lɛ, Chrome Web Store kpo PDF lɛ kpo ɖò alɔ jí ǎ.",
+  "error_page_unreadable": "È sixu xà wema bló elɔ ǎ. Navigateur sín wema bló lɛ kpo Chrome Web Store kpo ɖò alɔ jí ǎ.",
   "error_no_content": "È mɔ wekpa ɖě ɖò wema bló elɔ ɔ jí ǎ.",
   "error_needs_click": "Zín extension ɔ sín wuntun ɔ jí bo na kpɛ́n xó wema bló elɔ ɔ tɔn. Ée onglet ɔ yì wema bló ɖevo jí ɔ, extension ɔ ɖó na zín jí ɖó ǎ cobo na xà.",
   "error_host_missing": "È ɖó akpáxwé fí ɔ tɔn ɔ ǎ alǒ é ɖò gbè yí wɛ ǎ. Ðò extension ɔ sín dossier mɛ ɔ, bló: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "È xà modɛ́li lɛ sín tínmɛ ɖò {date}.",
   "options_models_never": "È ko xà modɛ́li lɛ sín tínmɛ ǎ.",
   "options_models_auto": "Ye gosin Claude Code, Codex kpo Ollama kpo mɛ, bɔ è nɔ lɛ́ xà ye azǎn ɖokpo ɖokpo, hwenu e è hɛn Claude Code alǒ Codex jɛ yɔyɔ́ é, kpo hwenu e è hɛn extension ɔ jɛ yɔyɔ́ é kpo.",
-  "options_models_refresh": "Xà ye dìn"
+  "options_models_refresh": "Xà ye dìn",
+  "error_file_access": "Bo na kpɛ́n xó fichier ɖěɖee ɖò ordinateur elɔ jí lɛ é tɔn ɔ, hun Détails extension ɔ tɔn ɖò chrome://extensions bo zé Autoriser l'accès aux URL de fichier dó jí.",
+  "error_pdf_unreadable": "È sixu hun PDF elɔ ǎ. Bɔ é sixu ɖò mɔ̌ ɖɔ è ɖó mɔ̌ xwé ná é kpo xó ɖě kpo, alǒ é gble.",
+  "error_pdf_no_text": "Wekpa ɖě ɖò PDF elɔ mɛ bo è na kpɛ́n xó tɔn ǎ. É sixu ɖò mɔ̌ ɖɔ foto e è scanné lɛ wɛ è zán bo blo é."
 }

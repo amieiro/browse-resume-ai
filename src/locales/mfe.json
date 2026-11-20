@@ -14,7 +14,7 @@
   "ui_working": "Pe rezime…",
   "ui_idle_hint": "Klik lor likonn extansion-la pou rezime sa paz-la.",
   "ui_truncated": "Sa paz-la ti long; zis premie parti inn rezime.",
-  "error_page_unreadable": "Pa kapav lir sa paz-la. Bann paz navigater, Chrome Web Store ek bann PDF pa siporte.",
+  "error_page_unreadable": "Pa kapav lir sa paz-la. Bann paz navigater ek Chrome Web Store pa siporte.",
   "error_no_content": "Pena okenn text lartik lor sa paz-la.",
   "error_needs_click": "Klik lor likonn extansion-la pou rezime sa paz-la. Kan longle-la al lor enn lot paz, extansion-la bizin enn nouvo klik pou lir li.",
   "error_host_missing": "Konpozan lokal-la pa instale ouswa li pa pe reponn. Dan dosie extansion-la, lans: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Lis model inn lir lor {date}.",
   "options_models_never": "Lis model pa ankor lir.",
   "options_models_auto": "Zot sorti dan Claude Code, Codex ek Ollama, e zot relir enn fwa par zour, kan Claude Code ouswa Codex mett azour, e kan extansion-la mett azour.",
-  "options_models_refresh": "Lir zot aster"
+  "options_models_refresh": "Lir zot aster",
+  "error_file_access": "Pou rezime bann fisie lor sa lordinater-la, ouver Détails extansion-la dan chrome://extensions ek aktiv Autoriser l'accès aux URL de fichier.",
+  "error_pdf_unreadable": "Pa kapav ouver sa PDF-la. Kapav li protez par enn modpas ouswa li abime.",
+  "error_pdf_no_text": "Sa PDF-la pena okenn text pou rezime. Kapav li fer ar bann zimaz skane."
 }

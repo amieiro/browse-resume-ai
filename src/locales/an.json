@@ -14,7 +14,7 @@
   "ui_working": "Resumindo…",
   "ui_idle_hint": "Fe clic en l'icono d'a extensión pa resumir esta pachina.",
   "ui_truncated": "Esta pachina yera larga; nomás s'ha resumiu la primera parte.",
-  "error_page_unreadable": "No se puede leyer esta pachina. As pachinas d'o navegador, a Chrome Web Store y os PDF no son compatibles.",
+  "error_page_unreadable": "No se puede leyer esta pachina. As pachinas d'o navegador y a Chrome Web Store no son compatibles.",
   "error_no_content": "No s'ha trobau texto d'articlo en esta pachina.",
   "error_needs_click": "Fe clic en l'icono d'a extensión pa resumir esta pachina. Dimpués que a pestanya cambie de pachina, l'extensión amenista un clic nuevo pa leyer-la.",
   "error_host_missing": "O componente local no ye instalau u no responde. En a carpeta d'a extensión, executa: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Listas de modelos leyidas o {date}.",
   "options_models_never": "Encara no s'han leyiu as listas de modelos.",
   "options_models_auto": "Vienen de Claude Code, Codex y Ollama, y se tornan a leyer una vegada a lo día, quan s'esvielle Claude Code u Codex, y quan s'esvielle a extensión.",
-  "options_models_refresh": "Leyer-las agora"
+  "options_models_refresh": "Leyer-las agora",
+  "error_file_access": "Pa resumir fichers d'este ordinador, ubre os Detalles de l'extensión en chrome://extensions y activa Permitir l'acceso a URL de fichers.",
+  "error_pdf_unreadable": "No se puede ubrir este PDF. Puede estar protechiu con clau u malmeso.",
+  "error_pdf_no_text": "Este PDF no tiene texto pa resumir. Puede estar feito d'imachens escaneadas."
 }

@@ -14,7 +14,7 @@
   "ui_working": "正在总结…",
   "ui_idle_hint": "点击扩展程序图标即可总结此页面。",
   "ui_truncated": "此页面较长，仅总结了开头部分。",
-  "error_page_unreadable": "无法读取此页面。不支持浏览器页面、Chrome Web Store 和 PDF。",
+  "error_page_unreadable": "无法读取此页面。不支持浏览器页面和 Chrome Web Store。",
   "error_no_content": "此页面上未找到文章文本。",
   "error_needs_click": "点击扩展程序图标即可总结此页面。标签页跳转后，扩展程序需要再次点击才能读取。",
   "error_host_missing": "本地组件未安装或没有响应。请在扩展程序的文件夹中运行：./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "模型列表读取于 {date}。",
   "options_models_never": "尚未读取模型列表。",
   "options_models_auto": "这些列表来自 Claude Code、Codex 和 Ollama，每天会重新读取一次，在 Claude Code 或 Codex 更新时以及扩展程序更新时也会重新读取。",
-  "options_models_refresh": "立即读取"
+  "options_models_refresh": "立即读取",
+  "error_file_access": "如需总结此计算机上的文件，请在 chrome://extensions 中打开该扩展程序的“详情”，然后开启“允许访问文件网址”。",
+  "error_pdf_unreadable": "无法打开此 PDF。它可能受密码保护或已损坏。",
+  "error_pdf_no_text": "此 PDF 中没有可总结的文本。它可能由扫描图片组成。"
 }

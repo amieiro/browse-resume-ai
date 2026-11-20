@@ -14,7 +14,7 @@
   "ui_working": "E dey summarize…",
   "ui_idle_hint": "Click di extension icon make e summarize dis page.",
   "ui_truncated": "Dis page long well well; na only di first part we summarize.",
-  "error_page_unreadable": "We no fit read dis page. Browser pages, di Chrome Web Store and PDF no dey work here.",
+  "error_page_unreadable": "We no fit read dis page. Browser pages and di Chrome Web Store no dey work here.",
   "error_no_content": "We no see any article text for dis page.",
   "error_needs_click": "Click di extension icon make e summarize dis page. After di tab don comot go anoda page, di extension need new click before e fit read am.",
   "error_host_missing": "Di local component no dey installed or e no dey answer. For di extension folder, run: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "We read di model lists for {date}.",
   "options_models_never": "We never read di model lists yet.",
   "options_models_auto": "Dem dey come from Claude Code, Codex and Ollama, and we dey read dem again once every day, when Claude Code or Codex update, and when di extension update.",
-  "options_models_refresh": "Read dem now"
+  "options_models_refresh": "Read dem now",
+  "error_file_access": "To summarize files wey dey dis computer, open di extension Details for chrome://extensions and on Allow access to file URLs.",
+  "error_pdf_unreadable": "We no fit open dis PDF. E fit get password wey dey protect am, or e don spoil.",
+  "error_pdf_no_text": "Dis PDF no get text wey we fit summarize. E fit be say na scanned pictures dem take make am."
 }

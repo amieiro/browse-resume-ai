@@ -14,7 +14,7 @@
   "ui_working": "Summarizing…",
   "ui_idle_hint": "Click the extension icon to summarize this page.",
   "ui_truncated": "This page was long; only the first part was summarized.",
-  "error_page_unreadable": "This page can't be read. Browser pages, the Chrome Web Store and PDFs are not supported.",
+  "error_page_unreadable": "This page can't be read. Browser pages and the Chrome Web Store are not supported.",
   "error_no_content": "No article text was found on this page.",
   "error_needs_click": "Click the extension icon to summarize this page. After the tab navigates, the extension needs a new click to read it.",
   "error_host_missing": "The local component isn't installed or isn't answering. In the extension's folder, run: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Model lists read on {date}.",
   "options_models_never": "The model lists haven't been read yet.",
   "options_models_auto": "They come from Claude Code, Codex and Ollama, and are read again once a day, when Claude Code or Codex is updated, and when the extension is updated.",
-  "options_models_refresh": "Read them now"
+  "options_models_refresh": "Read them now",
+  "error_file_access": "To summarize files on this computer, open the extension's Details in chrome://extensions and turn on Allow access to file URLs.",
+  "error_pdf_unreadable": "This PDF can't be opened. It may be protected with a password or damaged.",
+  "error_pdf_no_text": "This PDF has no text to summarize. It may be made of scanned images."
 }

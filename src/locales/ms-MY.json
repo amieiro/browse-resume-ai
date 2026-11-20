@@ -14,7 +14,7 @@
   "ui_working": "Meringkaskan…",
   "ui_idle_hint": "Klik ikon sambungan untuk meringkaskan halaman ini.",
   "ui_truncated": "Halaman ini panjang; hanya bahagian pertama yang diringkaskan.",
-  "error_page_unreadable": "Halaman ini tidak dapat dibaca. Halaman penyemak imbas, Chrome Web Store dan PDF tidak disokong.",
+  "error_page_unreadable": "Halaman ini tidak dapat dibaca. Halaman penyemak imbas dan Chrome Web Store tidak disokong.",
   "error_no_content": "Tiada teks artikel ditemui pada halaman ini.",
   "error_needs_click": "Klik ikon sambungan untuk meringkaskan halaman ini. Selepas tab menavigasi ke halaman lain, sambungan memerlukan klik baharu untuk membacanya.",
   "error_host_missing": "Komponen setempat tidak dipasang atau tidak bertindak balas. Dalam folder sambungan, jalankan: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Senarai model dibaca pada {date}.",
   "options_models_never": "Senarai model belum dibaca lagi.",
   "options_models_auto": "Senarai ini datang daripada Claude Code, Codex dan Ollama, dan dibaca semula sekali sehari, apabila Claude Code atau Codex dikemas kini, dan apabila sambungan dikemas kini.",
-  "options_models_refresh": "Baca sekarang"
+  "options_models_refresh": "Baca sekarang",
+  "error_file_access": "Untuk meringkaskan fail pada komputer ini, buka Butiran sambungan dalam chrome://extensions dan hidupkan Benarkan akses kepada URL fail.",
+  "error_pdf_unreadable": "PDF ini tidak dapat dibuka. PDF ini mungkin dilindungi kata laluan atau rosak.",
+  "error_pdf_no_text": "PDF ini tiada teks untuk diringkaskan. PDF ini mungkin terdiri daripada imej yang diimbas."
 }

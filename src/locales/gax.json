@@ -14,7 +14,7 @@
   "ui_working": "Cuunfaa jira…",
   "ui_idle_hint": "Fuula kana cuunfuuf mallattoo dabalataa (extension) cuqaasi.",
   "ui_truncated": "Fuulli kun dheeraa ture; kutaan jalqabaa qofti cuunfameera.",
-  "error_page_unreadable": "Fuulli kun dubbifamuu hin danda'u. Fuulonni brawuzarii, Chrome Web Store fi PDF hin deeggaraman.",
+  "error_page_unreadable": "Fuulli kun dubbifamuu hin danda'u. Fuulonni brawuzarii fi Chrome Web Store hin deeggaraman.",
   "error_no_content": "Fuula kana irratti barreeffamni barruu hin argamne.",
   "error_needs_click": "Fuula kana cuunfuuf mallattoo dabalataa cuqaasi. Erga taabiin fuula biraatti darbee booda, dabalataan dubbisuuf cuqaasa haaraa barbaada.",
   "error_host_missing": "Qaamni naannoo hin fe'amne ykn deebii hin kennu. Kuusaa dabalataa keessatti kana hojjechiisi: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Tarreeffamni moodeelotaa {date} dubbifame.",
   "options_models_never": "Tarreeffamni moodeelotaa ammallee hin dubbifamne.",
   "options_models_auto": "Isaan Claude Code, Codex fi Ollama irraa dhufu, guyyaatti al tokko, yeroo Claude Code ykn Codex haaromfamu fi yeroo dabalataan haaromfamu irra deebiin dubbifamu.",
-  "options_models_refresh": "Amma dubbisi"
+  "options_models_refresh": "Amma dubbisi",
+  "error_file_access": "Faayiloota kompiitara kana irra jiran cuunfuuf, chrome://extensions keessatti Bal'ina dabalataa bani, Faayila URL akka argatu eeyyami banii.",
+  "error_pdf_unreadable": "PDF kun banamuu hin danda'u. Jecha icciitiin eegamee ykn miidhamee ta'uu danda'a.",
+  "error_pdf_no_text": "PDF kun barreeffama cuunfamu hin qabu. Suuraalee iskaanii irraa hojjetame ta'uu danda'a."
 }

@@ -14,7 +14,7 @@
   "ui_working": "Po përmblidhet…",
   "ui_idle_hint": "Klikoni ikonën e zgjerimit që të përmblidhet kjo faqe.",
   "ui_truncated": "Kjo faqe ishte e gjatë; u përmblodh vetëm pjesa e parë.",
-  "error_page_unreadable": "Kjo faqe s'mund të lexohet. Faqet e shfletuesit, Chrome Web Store dhe PDF-të nuk mbulohen.",
+  "error_page_unreadable": "Kjo faqe s'mund të lexohet. Faqet e shfletuesit dhe Chrome Web Store nuk mbulohen.",
   "error_no_content": "S'u gjet tekst artikulli në këtë faqe.",
   "error_needs_click": "Klikoni ikonën e zgjerimit që të përmblidhet kjo faqe. Pasi skeda kalon në një faqe tjetër, zgjerimi lyp një klikim të ri për ta lexuar.",
   "error_host_missing": "Përbërësi vendor s'është i instaluar ose s'përgjigjet. Te dosja e zgjerimit, ekzekutoni: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Listat e modeleve u lexuan më {date}.",
   "options_models_never": "Listat e modeleve s'janë lexuar ende.",
   "options_models_auto": "Vijnë nga Claude Code, Codex dhe Ollama dhe lexohen sërish një herë në ditë, kur përditësohet Claude Code ose Codex, dhe kur përditësohet zgjerimi.",
-  "options_models_refresh": "Lexojini tani"
+  "options_models_refresh": "Lexojini tani",
+  "error_file_access": "Për të përmbledhur kartela në këtë kompjuter, hapni Hollësitë e zgjerimit te chrome://extensions dhe aktivizoni Lejo hyrje te URL kartelash.",
+  "error_pdf_unreadable": "Ky PDF s'mund të hapet. Mund të jetë i mbrojtur me fjalëkalim ose i dëmtuar.",
+  "error_pdf_no_text": "Ky PDF s'ka tekst për t'u përmbledhur. Mund të jetë i përbërë nga figura të skanuara."
 }

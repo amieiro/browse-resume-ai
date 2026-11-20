@@ -14,7 +14,7 @@
   "ui_working": "Podsumowowanie…",
   "ui_idle_hint": "Kliknij ikōnã rozszyrzynio, coby podsumować ta strōna.",
   "ui_truncated": "Strōna była dugo; podsumowane było ino jeji piyrszo czynść.",
-  "error_page_unreadable": "Niy idzie przeczytać tyj strōny. Strōny przeglōndarki, Chrome Web Store i zbiory PDF niy sōm spiyrane.",
+  "error_page_unreadable": "Niy idzie przeczytać tyj strōny. Strōny przeglōndarki i Chrome Web Store niy sōm spiyrane.",
   "error_no_content": "Na tyj strōnie niy znojdziōno tekstu artykułu.",
   "error_needs_click": "Kliknij ikōnã rozszyrzynio, coby podsumować ta strōna. Jak karta przejdzie na inszo strōna, rozszyrzynie potrzebuje nowego klikniyńcio, coby jã przeczytać.",
   "error_host_missing": "Lokalny kōmpōnynt niy ma zainstalowany abo niy ôdpowiado. We katalogu rozszyrzynio puść: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Wykazy modeli przeczytane {date}.",
   "options_models_never": "Wykazy modeli niy były jeszcze przeczytane.",
   "options_models_auto": "Bierōm sie z Claude Code, Codex i Ollama, a czyto sie je zaś roz na dziyń, kej Claude Code abo Codex sie zaktualizuje i kej rozszyrzynie sie zaktualizuje.",
-  "options_models_refresh": "Przeczytej je teroz"
+  "options_models_refresh": "Przeczytej je teroz",
+  "error_file_access": "Coby podsumować zbiory na tym kōmputrze, ôtwōrz Szczegōły rozszyrzynio w chrome://extensions i załōncz Zezwalej na dostymp do adresōw URL zbiorōw.",
+  "error_pdf_unreadable": "Niy idzie ôtworzić tego zbioru PDF. Może być zabezpieczōny hasłym abo poszkodzōny.",
+  "error_pdf_no_text": "W tym zbiorze PDF niy ma tekstu do podsumowanio. Może sie skłodać ze zeskanowanych ôbrozkōw."
 }

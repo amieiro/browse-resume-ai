@@ -14,7 +14,7 @@
   "ui_working": "Dreg saman…",
   "ui_idle_hint": "Smelltu á tákn viðbótarinnar til að draga þessa síðu saman.",
   "ui_truncated": "Þessi síða var löng; aðeins fyrsti hlutinn var dreginn saman.",
-  "error_page_unreadable": "Ekki er hægt að lesa þessa síðu. Síður vafrans, Chrome Web Store og PDF-skrár eru ekki studdar.",
+  "error_page_unreadable": "Ekki er hægt að lesa þessa síðu. Síður vafrans og Chrome Web Store eru ekki studdar.",
   "error_no_content": "Enginn greinartexti fannst á þessari síðu.",
   "error_needs_click": "Smelltu á tákn viðbótarinnar til að draga þessa síðu saman. Eftir að flipinn fer á aðra síðu þarf viðbótin nýjan smell til að lesa hana.",
   "error_host_missing": "Staðbundni hlutinn er ekki uppsettur eða svarar ekki. Keyrðu í möppu viðbótarinnar: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Líkanalistar lesnir {date}.",
   "options_models_never": "Líkanalistarnir hafa ekki verið lesnir enn.",
   "options_models_auto": "Þeir koma frá Claude Code, Codex og Ollama og eru lesnir aftur einu sinni á dag, þegar Claude Code eða Codex er uppfært og þegar viðbótin er uppfærð.",
-  "options_models_refresh": "Lesa þá núna"
+  "options_models_refresh": "Lesa þá núna",
+  "error_file_access": "Til að draga saman skrár á þessari tölvu skaltu opna Upplýsingar viðbótarinnar á chrome://extensions og kveikja á Leyfa aðgang að vefslóðum skráa.",
+  "error_pdf_unreadable": "Ekki er hægt að opna þessa PDF-skrá. Hún gæti verið varin með aðgangsorði eða skemmd.",
+  "error_pdf_no_text": "Þessi PDF-skrá inniheldur engan texta til að draga saman. Hún gæti verið gerð úr skönnuðum myndum."
 }

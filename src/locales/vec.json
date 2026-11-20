@@ -14,7 +14,7 @@
   "ui_working": "Drio riasumar…",
   "ui_idle_hint": "Struca l'icona de l'estension par riasumar sta pagina.",
   "ui_truncated": "Sta pagina la jera longa; xe stà riasumìa solo la prima parte.",
-  "error_page_unreadable": "No se pol lèzar sta pagina. Le pagine del navegador, el Chrome Web Store e i PDF no i xe suportài.",
+  "error_page_unreadable": "No se pol lèzar sta pagina. Le pagine del navegador e el Chrome Web Store no i xe suportài.",
   "error_no_content": "No xe stà catà testo de articolo in sta pagina.",
   "error_needs_click": "Struca l'icona de l'estension par riasumar sta pagina. Dopo che la scheda la ga canbià pagina, l'estension la ga bisogno de n'altro clic par lèzarla.",
   "error_host_missing": "El conponente locale no l'è instalà o no 'l risponde. Inte la cartela de l'estension, fa partir: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Liste dei modèli lete el {date}.",
   "options_models_never": "Le liste dei modèli no le xe stà gnancora lete.",
   "options_models_auto": "Le vien da Claude Code, Codex e Ollama, e le vien lete danovo na volta al dì, co Claude Code o Codex vien ajornà, e co l'estension vien ajornada.",
-  "options_models_refresh": "Lèzile desso"
+  "options_models_refresh": "Lèzile desso",
+  "error_file_access": "Par riasumar i file su sto computer, verzi i Detaji de l'estension in chrome://extensions e ativa Parmeti l'aceso ai URL dei file.",
+  "error_pdf_unreadable": "No se pol vèrzar sto PDF. El podarìa èsar protezesto co na password o danejà.",
+  "error_pdf_no_text": "Sto PDF no'l ga testo da riasumar. El podarìa èsar fato de imàzeni scansionàe."
 }

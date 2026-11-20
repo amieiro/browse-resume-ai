@@ -14,7 +14,7 @@
   "ui_working": "Nana timmina…",
   "ui_idle_hint": "Dobo e maandel ɓeyditte ngel ngam timminde ngoo hello.",
   "ui_truncated": "Ngoo hello ko juutngo; ko ɓolol arandewol tan timminaa.",
-  "error_page_unreadable": "Ngoo hello waawaa jangeede. Kelle wanngorde, Chrome Web Store e PDF ɗee wallitaaka.",
+  "error_page_unreadable": "Ngoo hello waawaa jangeede. Kelle wanngorde e Chrome Web Store wallitaaka.",
   "error_no_content": "Alaa binndi winndannde njiyaa e ngoo hello.",
   "error_needs_click": "Dobo e maandel ɓeyditte ngel ngam timminde ngoo hello. Caggal nde tabbere nde yahi e hello goɗngo, ɓeyditte ngel ina haani dobeede kadi ngam jangde ngo.",
   "error_host_missing": "Pecel nokkuyankeewal ngal aafaaka walla ngal jaabotaako. E runngere ɓeyditte ngel, yaltin: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Doggi misal ɗi njanngaa ko {date}.",
   "options_models_never": "Doggi misal ɗi njanngaaka tawo.",
   "options_models_auto": "Ɗi iwi ko e Claude Code, Codex e Ollama, ɗi njanngetee kadi laawol gootol ñalnde kala, so Claude Code walla Codex hesɗitinaama, e so ɓeydaari ndii hesɗitinaama.",
-  "options_models_refresh": "Janngu ɗi jooni"
+  "options_models_refresh": "Janngu ɗi jooni",
+  "error_file_access": "Ngam timminde fiilde ɗe ordinateer ɗoo, uddit Cifooji ɓeyditte ngel e chrome://extensions, hurmin Yamir naatgol e URL fiilde.",
+  "error_pdf_unreadable": "Ngal PDF waawaa udditeede. Ina waawi wonde ngal reenaama e finnde walla ngal bonii.",
+  "error_pdf_no_text": "Ngal PDF alaa binndi timminteeɗi. Ina waawi wonde ngal waɗaama e nate scannaaɗe."
 }

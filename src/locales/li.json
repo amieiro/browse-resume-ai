@@ -14,7 +14,7 @@
   "ui_working": "Aan 't saamevatte…",
   "ui_idle_hint": "Klik op 't icoon vaan de extensie om dees pagina saam te vatte.",
   "ui_truncated": "Dees pagina waor lank; allein 't ierste deil is saamegevat.",
-  "error_page_unreadable": "Dees pagina kin neet gelaeze weure. Browserpagina's, de Chrome Web Store en PDF's weure neet ongersteund.",
+  "error_page_unreadable": "Dees pagina kin neet gelaeze weure. Browserpagina's en de Chrome Web Store weure neet ongersteund.",
   "error_no_content": "Op dees pagina is gein artikeltèks gevonde.",
   "error_needs_click": "Klik op 't icoon vaan de extensie om dees pagina saam te vatte. Nao tot 't tabblaad nao 'n anger pagina is gegange, heet de extensie 'ne nuje klik nwuedig om 'm te laeze.",
   "error_host_missing": "De lokaal component is neet geïnstalleerd of geuf gein antwoord. Veur in de map vaan de extensie oet: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modellieste geleze op {date}.",
   "options_models_never": "De modellieste zien nog neet geleze.",
   "options_models_auto": "Ze kómme oet Claude Code, Codex en Ollama, en weure eine kier per daag opnuuj geleze, wienie Claude Code of Codex bijgewèrk weurt, en wienie de extensie bijgewèrk weurt.",
-  "options_models_refresh": "Lees ze noe"
+  "options_models_refresh": "Lees ze noe",
+  "error_file_access": "Um bestande op dees computer same te vatte, äöpen de Details vaan de extensie in chrome://extensions en zet Toegang tot bestands-URL's toestaon aan.",
+  "error_pdf_unreadable": "Dees PDF kin neet geäöpend weure. Hae is mesjiens mit e wachwoord beveilig of besjadig.",
+  "error_pdf_no_text": "Dees PDF haet gein tèks um same te vatte. Hae besteit mesjiens oet gesjande aafbeeldinge."
 }

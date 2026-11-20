@@ -14,7 +14,7 @@
   "ui_working": "Dree a riassumm…",
   "ui_idle_hint": "Schiscia l'icona de l'estension per riassumm questa pagina.",
   "ui_truncated": "Questa pagina l'era longa; l'è stada riassunta domà la primma part.",
-  "error_page_unreadable": "Se pò minga lensger questa pagina. I pagin del navigador, el Chrome Web Store e i PDF hinn minga supportaa.",
+  "error_page_unreadable": "Se pò minga lensger questa pagina. I pagin del navigador e el Chrome Web Store hinn minga supportaa.",
   "error_no_content": "Gh'è minga de test d'articol in questa pagina.",
   "error_needs_click": "Schiscia l'icona de l'estension per riassumm questa pagina. Dopo che la scheda la cambia pagina, l'estension la gh'ha bisogn d'on alter clic per lensgerla.",
   "error_host_missing": "El component local l'è minga installaa o el respond minga. In la cartella de l'estension, fa andà: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Lista di model legiuda el {date}.",
   "options_models_never": "I lista di model hinn minga stada legiude anmò.",
   "options_models_auto": "Rivan de Claude Code, Codex e Ollama, e vegnen legiude anmò ona voeulta al dì, quand che Claude Code o Codex el vegn aggiornaa, e quand che l'estension la vegn aggiornada.",
-  "options_models_refresh": "Lesele adess"
+  "options_models_refresh": "Lesele adess",
+  "error_file_access": "Per riassumer i file de quell computer chì, derva i Dettai de l'estension in chrome://extensions e impizza Permett l'access ai URL di file.",
+  "error_pdf_unreadable": "Se pò minga dervì quell PDF chì. El podariss vess protegiuu de ona password o danegiaa.",
+  "error_pdf_no_text": "Quell PDF chì el gh'ha minga de test de riassumer. El podariss vess faa de imagin scansionaa."
 }

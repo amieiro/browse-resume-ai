@@ -79,7 +79,7 @@ describe('locale files', () => {
   it.each(LANGUAGES.map((l) => l.code))('%s keeps commands untranslated', (code) => {
     const messages = read(code);
     for (const key of keys) {
-      for (const literal of ['./native-host/install.sh', 'codex login', 'ollama pull llama3.2', 'ollama.com']) {
+      for (const literal of ['./native-host/install.sh', 'codex login', 'ollama pull llama3.2', 'ollama.com', 'chrome://extensions']) {
         if (english[key]!.includes(literal)) expect(messages[key], `${key}`).toContain(literal);
       }
     }

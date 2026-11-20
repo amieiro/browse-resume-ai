@@ -14,7 +14,7 @@
   "ui_working": "Ta resumiendo…",
   "ui_idle_hint": "Klek riba e ikono di e ekstenshon pa resumí e página aki.",
   "ui_truncated": "E página tabata largu; ta solamente e promé parti a wòrdu resumí.",
-  "error_page_unreadable": "No por lesa e página aki. Páginanan di e nabegadó, e Chrome Web Store i PDF no ta soportá.",
+  "error_page_unreadable": "No por lesa e página aki. Páginanan di e nabegadó i e Chrome Web Store no ta soportá.",
   "error_no_content": "No a haña ningun teksto di artíkulo riba e página aki.",
   "error_needs_click": "Klek riba e ikono di e ekstenshon pa resumí e página aki. Despues ku e tab a kambia di página, e ekstenshon mester di un klek nobo pa les'é.",
   "error_host_missing": "E komponente lokal no ta instalá òf no ta kontestando. Den e map di e ekstenshon, ehekutá: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Lista di modelo lesá dia {date}.",
   "options_models_never": "E listanan di modelo no a wòrdu lesá ainda.",
   "options_models_auto": "Nan ta bini di Claude Code, Codex i Ollama, i nan ta wòrdu lesá di nobo un biaha pa dia, ora Claude Code òf Codex wòrdu aktualisá, i ora e ekstenshon wòrdu aktualisá.",
-  "options_models_refresh": "Lesa nan awor"
+  "options_models_refresh": "Lesa nan awor",
+  "error_file_access": "Pa resumí archivonan riba e kòmpiuter aki, habri e Detayenan di e èkstenshon den chrome://extensions i aktivá Permití akseso na URL di archivo.",
+  "error_pdf_unreadable": "No por habri e PDF aki. E por ta protehá ku un kontraseña òf dañá.",
+  "error_pdf_no_text": "E PDF aki no tin teksto pa resumí. E por ta traha di imágennan skèn."
 }

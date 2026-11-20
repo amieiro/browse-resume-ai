@@ -14,7 +14,7 @@
   "ui_working": "Mamintina…",
   "ui_idle_hint": "Tsindrio ny kisarin'ny fanitarana mba hamintinana ity pejy ity.",
   "ui_truncated": "Lava ity pejy ity; ny ampahany voalohany ihany no namintinana.",
-  "error_page_unreadable": "Tsy azo vakiana ity pejy ity. Tsy tohanana ny pejin'ny mpitety tranonkala, ny Chrome Web Store ary ny PDF.",
+  "error_page_unreadable": "Tsy azo vakiana ity pejy ity. Tsy tohanana ny pejin'ny mpitety tranonkala sy ny Chrome Web Store.",
   "error_no_content": "Tsy nahitana lahatsoratra tamin'ity pejy ity.",
   "error_needs_click": "Tsindrio ny kisarin'ny fanitarana mba hamintinana ity pejy ity. Rehefa nifindra pejy ny tabilao, mila tsindry vaovao ny fanitarana vao afaka mamaky azy.",
   "error_host_missing": "Tsy voapetraka na tsy mamaly ilay singa eo an-toerana. Ao amin'ny lahatahirin'ny fanitarana, alefaso: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Novakiana tamin'ny {date} ny lisitry ny modely.",
   "options_models_never": "Mbola tsy novakiana ny lisitry ny modely.",
   "options_models_auto": "Avy amin'ny Claude Code, Codex ary Ollama izy ireo, ary vakiana indray indray mandeha isan'andro, rehefa havaozina ny Claude Code na ny Codex, ary rehefa havaozina ny fanitarana.",
-  "options_models_refresh": "Vakio izao"
+  "options_models_refresh": "Vakio izao",
+  "error_file_access": "Mba hamintinana ireo rakitra ao amin'ity solosaina ity, sokafy ny Antsipiriany momba ilay fanitarana ao amin'ny chrome://extensions ary alefaso ny Avelao hiditra amin'ny URL-n'ny rakitra.",
+  "error_pdf_unreadable": "Tsy azo sokafana ity PDF ity. Mety voaaro amin'ny tenimiafina izy na simba.",
+  "error_pdf_no_text": "Tsy misy lahatsoratra azo fintinina ity PDF ity. Mety ho sary voaskana no namoronana azy."
 }

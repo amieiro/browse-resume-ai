@@ -14,7 +14,7 @@
   "ui_working": "Resumit en cors…",
   "ui_idle_hint": "Clicatz sus l'icòna de l'extension per resumir aquesta pagina.",
   "ui_truncated": "La pagina èra longa; sonque la primièra part es estada resumida.",
-  "error_page_unreadable": "Se pòt pas legir aquesta pagina. Las paginas del navegador, lo Chrome Web Store e los PDF son pas preses en carga.",
+  "error_page_unreadable": "Se pòt pas legir aquesta pagina. Las paginas del navegador e lo Chrome Web Store son pas presas en carga.",
   "error_no_content": "Cap de tèxte d'article es pas estat trobat sus aquesta pagina.",
   "error_needs_click": "Clicatz sus l'icòna de l'extension per resumir aquesta pagina. Aprèp que l'onglet a cambiat de pagina, l'extension a besonh d'un clic novèl per la legir.",
   "error_host_missing": "Lo component local es pas installat o respond pas. Dins lo dorsièr de l'extension, executatz: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Listas de modèls legidas lo {date}.",
   "options_models_never": "Las listas de modèls son pas encara estadas legidas.",
   "options_models_auto": "Venon de Claude Code, Codex e Ollama, e son legidas tornamai un còp per jorn, quand Claude Code o Codex es mes a jorn, e quand l'extension es mesa a jorn.",
-  "options_models_refresh": "Las legir ara"
+  "options_models_refresh": "Las legir ara",
+  "error_file_access": "Per resumir de fichièrs d'aqueste ordenador, dobrissètz los Detalhs de l'extension dins chrome://extensions e activatz Autorizar l'accès a las URL de fichièr.",
+  "error_pdf_unreadable": "Se pòt pas dobrir aqueste PDF. Benlèu es protegit per un senhal o damatjat.",
+  "error_pdf_no_text": "Aqueste PDF a pas cap de tèxte de resumir. Benlèu es fach d'imatges numerizats."
 }

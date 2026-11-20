@@ -14,7 +14,7 @@
   "ui_working": "Tiivistetään…",
   "ui_idle_hint": "Tiivistä tämä sivu klikkaamalla laajennuksen kuvaketta.",
   "ui_truncated": "Sivu oli pitkä, joten vain sen alkuosa tiivistettiin.",
-  "error_page_unreadable": "Tätä sivua ei voi lukea. Selaimen sivuja, Chrome Web Storea ja PDF-tiedostoja ei tueta.",
+  "error_page_unreadable": "Tätä sivua ei voi lukea. Selaimen sivuja ja Chrome Web Storea ei tueta.",
   "error_no_content": "Sivulta ei löytynyt artikkelitekstiä.",
   "error_needs_click": "Tiivistä tämä sivu klikkaamalla laajennuksen kuvaketta. Kun välilehdellä siirrytään toiselle sivulle, laajennus tarvitsee uuden klikkauksen lukeakseen sen.",
   "error_host_missing": "Paikallista komponenttia ei ole asennettu tai se ei vastaa. Suorita laajennuksen kansiossa: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Malliluettelot luettu {date}.",
   "options_models_never": "Malliluetteloita ei ole vielä luettu.",
   "options_models_auto": "Ne tulevat Claude Codesta, Codexista ja Ollamasta, ja ne luetaan uudelleen kerran päivässä, kun Claude Code tai Codex päivittyy ja kun laajennus päivittyy.",
-  "options_models_refresh": "Lue ne nyt"
+  "options_models_refresh": "Lue ne nyt",
+  "error_file_access": "Jos haluat tiivistää tämän tietokoneen tiedostoja, avaa laajennuksen Tiedot osoitteessa chrome://extensions ja ota käyttöön Salli tiedostojen URL-osoitteiden käyttö.",
+  "error_pdf_unreadable": "Tätä PDF-tiedostoa ei voi avata. Se voi olla salasanasuojattu tai vioittunut.",
+  "error_pdf_no_text": "Tässä PDF-tiedostossa ei ole tiivistettävää tekstiä. Se voi koostua skannatuista kuvista."
 }

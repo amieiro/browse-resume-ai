@@ -14,7 +14,7 @@
   "ui_working": "Összefoglalás…",
   "ui_idle_hint": "Az oldal összefoglalásához kattints a bővítmény ikonjára.",
   "ui_truncated": "Az oldal hosszú volt; csak az első része lett összefoglalva.",
-  "error_page_unreadable": "Ez az oldal nem olvasható. A böngésző saját oldalai, a Chrome Web Store és a PDF-fájlok nem támogatottak.",
+  "error_page_unreadable": "Ez az oldal nem olvasható. A böngésző saját oldalai és a Chrome Web Store nem támogatottak.",
   "error_no_content": "Ezen az oldalon nem található cikkszöveg.",
   "error_needs_click": "Az oldal összefoglalásához kattints a bővítmény ikonjára. Miután a lap új oldalra navigált, a bővítménynek új kattintásra van szüksége az olvasásához.",
   "error_host_missing": "A helyi összetevő nincs telepítve, vagy nem válaszol. A bővítmény mappájában futtasd: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "A modellek listáinak beolvasása: {date}.",
   "options_models_never": "A modellek listái még nincsenek beolvasva.",
   "options_models_auto": "A Claude Code-ból, a Codexből és az Ollamából származnak, és naponta egyszer, a Claude Code vagy a Codex frissítésekor, valamint a bővítmény frissítésekor újra beolvasásra kerülnek.",
-  "options_models_refresh": "Beolvasás most"
+  "options_models_refresh": "Beolvasás most",
+  "error_file_access": "A számítógépen lévő fájlok összefoglalásához nyisd meg a bővítmény Részletek oldalát a chrome://extensions címen, és kapcsold be a Hozzáférés engedélyezése a fájl URL-ekhez beállítást.",
+  "error_pdf_unreadable": "Ez a PDF nem nyitható meg. Lehet, hogy jelszóval védett vagy sérült.",
+  "error_pdf_no_text": "Ebben a PDF-ben nincs összefoglalható szöveg. Lehet, hogy beszkennelt képekből áll."
 }

@@ -14,7 +14,7 @@
   "ui_working": "Som tans op…",
   "ui_idle_hint": "Klik op die uitbreiding se ikoon om hierdie bladsy op te som.",
   "ui_truncated": "Hierdie bladsy was lank; net die eerste deel is opgesom.",
-  "error_page_unreadable": "Hierdie bladsy kan nie gelees word nie. Blaaierbladsye, die Chrome Web Store en PDF's word nie ondersteun nie.",
+  "error_page_unreadable": "Hierdie bladsy kan nie gelees word nie. Blaaierbladsye en die Chrome Web Store word nie ondersteun nie.",
   "error_no_content": "Geen artikelteks is op hierdie bladsy gevind nie.",
   "error_needs_click": "Klik op die uitbreiding se ikoon om hierdie bladsy op te som. Nadat die oortjie na 'n ander bladsy gegaan het, moet jy weer klik sodat die uitbreiding dit kan lees.",
   "error_host_missing": "Die plaaslike komponent is nie geïnstalleer nie of antwoord nie. Voer in die uitbreiding se vouer uit: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modellyste gelees op {date}.",
   "options_models_never": "Die modellyste is nog nie gelees nie.",
   "options_models_auto": "Hulle kom van Claude Code, Codex en Ollama, en word een keer per dag weer gelees, wanneer Claude Code of Codex bygewerk word, en wanneer die uitbreiding bygewerk word.",
-  "options_models_refresh": "Lees hulle nou"
+  "options_models_refresh": "Lees hulle nou",
+  "error_file_access": "Om lêers op hierdie rekenaar op te som, maak die uitbreiding se Besonderhede in chrome://extensions oop en skakel Laat toegang tot lêer-URL's toe aan.",
+  "error_pdf_unreadable": "Hierdie PDF kan nie oopgemaak word nie. Dit is dalk met 'n wagwoord beskerm of beskadig.",
+  "error_pdf_no_text": "Hierdie PDF het geen teks om op te som nie. Dit bestaan dalk uit geskandeerde beelde."
 }

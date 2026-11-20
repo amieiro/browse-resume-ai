@@ -14,7 +14,7 @@
   "ui_working": "Apibendrinama…",
   "ui_idle_hint": "Spustelėkite plėtinio piktogramą, kad apibendrintumėte šį puslapį.",
   "ui_truncated": "Puslapis buvo ilgas, todėl apibendrinta tik pirmoji jo dalis.",
-  "error_page_unreadable": "Šio puslapio nuskaityti nepavyksta. Naršyklės puslapiai, Chrome Web Store ir PDF failai nepalaikomi.",
+  "error_page_unreadable": "Šio puslapio nuskaityti nepavyksta. Naršyklės puslapiai ir Chrome Web Store nepalaikomi.",
   "error_no_content": "Šiame puslapyje nerasta straipsnio teksto.",
   "error_needs_click": "Spustelėkite plėtinio piktogramą, kad apibendrintumėte šį puslapį. Skirtukui atvėrus kitą puslapį, plėtiniui reikia naujo spustelėjimo, kad jį nuskaitytų.",
   "error_host_missing": "Vietinis komponentas neįdiegtas arba neatsako. Plėtinio aplanke paleiskite: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modelių sąrašai nuskaityti {date}.",
   "options_models_never": "Modelių sąrašai dar nenuskaityti.",
   "options_models_auto": "Jie gaunami iš Claude Code, Codex ir Ollama ir nuskaitomi iš naujo kartą per dieną, kai atnaujinamas Claude Code ar Codex ir kai atnaujinamas plėtinys.",
-  "options_models_refresh": "Nuskaityti dabar"
+  "options_models_refresh": "Nuskaityti dabar",
+  "error_file_access": "Kad galėtumėte apibendrinti šiame kompiuteryje esančius failus, chrome://extensions atidarykite plėtinio Išsami informacija ir įjunkite Leisti pasiekti failų URL.",
+  "error_pdf_unreadable": "Šio PDF failo atidaryti nepavyksta. Jis gali būti apsaugotas slaptažodžiu arba sugadintas.",
+  "error_pdf_no_text": "Šiame PDF faile nėra teksto, kurį būtų galima apibendrinti. Jį gali sudaryti nuskaityti vaizdai."
 }

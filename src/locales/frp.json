@@ -14,7 +14,7 @@
   "ui_working": "Rèsumâ en cors…",
   "ui_idle_hint": "Clicâd sur l'icôna de l'èxtension por rèsumar ceta pâge.",
   "ui_truncated": "Ceta pâge ére longe ; solament la premiére partia at étâ rèsumâ.",
-  "error_page_unreadable": "Ceta pâge pôt pas étre liéta. Les pâges du navigator, lo Chrome Web Store et los PDF sont pas prês en charge.",
+  "error_page_unreadable": "Ceta pâge pôt pas étre liéta. Les pâges du navigator et lo Chrome Web Store sont pas prês en charge.",
   "error_no_content": "Gins de tèxto d'articllo at étâ trovâ sur ceta pâge.",
   "error_needs_click": "Clicâd sur l'icôna de l'èxtension por rèsumar ceta pâge. Aprés que l'onglèt at changiê de pâge, l'èxtension at fôta d'un novél clic por la liére.",
   "error_host_missing": "Lo composent local est pas enstalâ ou ben rèpond pas. Dens lo dossiér de l'èxtension, ègzécutâd : ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Lists de modèlos liêtes lo {date}.",
   "options_models_never": "Les lists de modèlos sont p'oncor étâs liêtes.",
   "options_models_auto": "Vegnont de Claude Code, Codex et Ollama, et sont reliêtes yon côp per jorn, quand Claude Code ou ben Codex est betâ a jorn, et quand l'èxtension est betâye a jorn.",
-  "options_models_refresh": "Les liére ora"
+  "options_models_refresh": "Les liére ora",
+  "error_file_access": "Por rèsumar des fichiérs de ceti ordenator, uvrâd los Dètalys de l'èxtension dens chrome://extensions et activâd Ôtorisar l'accès a les URL de fichiér.",
+  "error_pdf_unreadable": "Ceti PDF pôt pas étre uvèrt. Pôt-étre qu'il est protègiê per un mot de pâssa ou ben abîmâ.",
+  "error_pdf_no_text": "Ceti PDF at gins de tèxto a rèsumar. Pôt-étre qu'il est fêt d'émâges scanâs."
 }

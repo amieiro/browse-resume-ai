@@ -14,7 +14,7 @@
   "ui_working": "Duke përmbledhur…",
   "ui_idle_hint": "Kliko ikonën e shtesës për ta përmbledhur këtë faqe.",
   "ui_truncated": "Kjo faqe ishte e gjatë; u përmblodh vetëm pjesa e parë.",
-  "error_page_unreadable": "Kjo faqe nuk mund të lexohet. Faqet e shfletuesit, Chrome Web Store dhe PDF-të nuk mbështeten.",
+  "error_page_unreadable": "Kjo faqe nuk mund të lexohet. Faqet e shfletuesit dhe Chrome Web Store nuk mbështeten.",
   "error_no_content": "Nuk u gjet tekst artikulli në këtë faqe.",
   "error_needs_click": "Kliko ikonën e shtesës për ta përmbledhur këtë faqe. Pasi skeda të kalojë në një faqe tjetër, shtesa ka nevojë për një klikim të ri për ta lexuar.",
   "error_host_missing": "Komponenti lokal nuk është i instaluar ose nuk përgjigjet. Në dosjen e shtesës, ekzekuto: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Listat e modeleve u lexuan më {date}.",
   "options_models_never": "Listat e modeleve nuk janë lexuar ende.",
   "options_models_auto": "Vijnë nga Claude Code, Codex dhe Ollama dhe lexohen përsëri një herë në ditë, kur përditësohet Claude Code ose Codex, dhe kur përditësohet shtesa.",
-  "options_models_refresh": "Lexoji tani"
+  "options_models_refresh": "Lexoji tani",
+  "error_file_access": "Për të përmbledhur skedarë në këtë kompjuter, hap Detajet e shtesës te chrome://extensions dhe aktivizo Lejo qasjen në URL-të e skedarëve.",
+  "error_pdf_unreadable": "Ky PDF nuk mund të hapet. Mund të jetë i mbrojtur me fjalëkalim ose i dëmtuar.",
+  "error_pdf_no_text": "Ky PDF nuk ka tekst për t'u përmbledhur. Mund të jetë i përbërë nga imazhe të skanuara."
 }

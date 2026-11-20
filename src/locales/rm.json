@@ -14,7 +14,7 @@
   "ui_working": "Resumar…",
   "ui_idle_hint": "Clicca sin il simbol da l'extensiun per resumar questa pagina.",
   "ui_truncated": "Questa pagina era lunga; mo l'emprima part è vegnida resumada.",
-  "error_page_unreadable": "Questa pagina na po betg vegnir legida. Paginas dal navigatur, il Chrome Web Store e datotecas PDF na vegnan betg sustegnidas.",
+  "error_page_unreadable": "Questa pagina na po betg vegnir legida. Paginas dal navigatur ed il Chrome Web Store na vegnan betg sustegnidas.",
   "error_no_content": "Sin questa pagina n'è vegnì chattà nagin text d'artitgel.",
   "error_needs_click": "Clicca sin il simbol da l'extensiun per resumar questa pagina. Suenter ch'il tab è ì sin ina autra pagina, dovra l'extensiun in nov clic per la leger.",
   "error_host_missing": "La cumponenta locala n'è betg installada u na respunda betg. Exequescha en l'ordinatur da l'extensiun: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Glistas da models legidas ils {date}.",
   "options_models_never": "Las glistas da models n'èn anc betg vegnidas legidas.",
   "options_models_auto": "Ellas derivan da Claude Code, Codex ed Ollama e vegnan legidas danovamain ina giada al di, cura che Claude Code u Codex vegn actualisà e cura che l'extensiun vegn actualisada.",
-  "options_models_refresh": "Leger ussa"
+  "options_models_refresh": "Leger ussa",
+  "error_file_access": "Per resumar datotecas sin quest computer, avra ils Detagls da l'extensiun en chrome://extensions ed activescha Permetter l'access a URLs da datotecas.",
+  "error_pdf_unreadable": "Quest PDF na po betg vegnir avert. El è forsa protegì cun in pled-clav u donnegià.",
+  "error_pdf_no_text": "Quest PDF na cuntegna nagin text per resumar. El consista forsa da maletgs scannads."
 }

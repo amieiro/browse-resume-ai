@@ -14,7 +14,7 @@
   "ui_working": "Rezumanta…",
   "ui_idle_hint": "Kliktez la ikono di la extensajo por rezumar ica pagino.",
   "ui_truncated": "Ica pagino esis longa; nur la unesma parto rezumesis.",
-  "error_page_unreadable": "Ica pagino ne povas lektesar. Pagini di la navigilo, la Chrome Web Store e PDF ne suportesas.",
+  "error_page_unreadable": "Ica pagino ne povas lektesar. Pagini di la navigilo e la Chrome Web Store ne suportesas.",
   "error_no_content": "Nula texto di artiklo trovesis en ica pagino.",
   "error_needs_click": "Kliktez la ikono di la extensajo por rezumar ica pagino. Pos ke la tabo navigas, la extensajo bezonas nova klikto por lektar ol.",
   "error_host_missing": "La lokala komponanto ne esas instalita o ne respondas. En la dosiero di la extensajo, exekutez: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Listi di modeli lektesis ye {date}.",
   "options_models_never": "La listi di modeli ankore ne lektesis.",
   "options_models_auto": "Li venas de Claude Code, Codex e Ollama, e lektesas itere un foyo per dio, kande Claude Code o Codex aktualigesas, e kande la extensajo aktualigesas.",
-  "options_models_refresh": "Lektar li nun"
+  "options_models_refresh": "Lektar li nun",
+  "error_file_access": "Por rezumar arkivi en ica komputilo, apertez la Detali di la extensajo en chrome://extensions ed aktivigez Permisar aceso ad URL di arkivi.",
+  "error_pdf_unreadable": "Ica PDF ne povas apertesar. Ol forsan protektesas per pasvorto o esas domajita.",
+  "error_pdf_no_text": "Ica PDF havas nula texto rezumenda. Ol forsan konsistas ek skanita imaji."
 }

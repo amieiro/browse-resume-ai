@@ -14,7 +14,7 @@
   "ui_working": "Ow perrhe…",
   "ui_idle_hint": "Klyckyewgh arwodh an keheans rag berrhe an folen ma.",
   "ui_truncated": "Hir o an folen ma; nyns yw berrhes saw an kynsa rann.",
-  "error_page_unreadable": "Ny yll an folen ma bos redys. Ny vydh folennow an peurel, an Chrome Web Store ha PDF skoodhys.",
+  "error_page_unreadable": "Ny yll an folen ma bos redys. Ny vydh folennow an peurel ha'n Chrome Web Store skoodhys.",
   "error_no_content": "Ny veu kevys tekst erthygel war an folen ma.",
   "error_needs_click": "Klyckyewgh arwodh an keheans rag berrhe an folen ma. Wosa an tab dhe vos dhe folen arall, an keheans a'n jeves edhom a glyck nowydh rag hy redya.",
   "error_host_missing": "Nyns yw an rann leel stallys po nyns usi ow korthybi. Y'n plegell a'n keheans, gwrewgh resek: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Rolyow patronyow redys war {date}.",
   "options_models_never": "Ny veu an rolyow patronyow redys hwath.",
   "options_models_auto": "I a dheu dhyworth Claude Code, Codex hag Ollama, hag i a vydh redys arta unwyth pub dydh, pan vydh Claude Code po Codex nowydhhes, ha pan vydh an ystynnans nowydhhes.",
-  "options_models_refresh": "Redyewgh i lemmyn"
+  "options_models_refresh": "Redyewgh i lemmyn",
+  "error_file_access": "Rag berrhe restrennow war an jynn-amontya ma, igor Manylyon an ystynnans yn chrome://extensions ha trel war Gasa hedhas dhe URLs restrennow.",
+  "error_pdf_unreadable": "Ny yll an PDF ma bos igerys. Martesen yma ger-tremena orth y witha, po ev yw dregys.",
+  "error_pdf_no_text": "Nyns eus tekst dhe verrhe y'n PDF ma. Martesen yth yw gwrys a imajys skannys."
 }

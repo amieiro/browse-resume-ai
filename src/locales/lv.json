@@ -14,7 +14,7 @@
   "ui_working": "Notiek apkopošana…",
   "ui_idle_hint": "Noklikšķiniet uz paplašinājuma ikonas, lai apkopotu šo lapu.",
   "ui_truncated": "Šī lapa bija gara; apkopota tika tikai pirmā daļa.",
-  "error_page_unreadable": "Šo lapu nevar nolasīt. Pārlūka lapas, Chrome Web Store un PDF netiek atbalstīti.",
+  "error_page_unreadable": "Šo lapu nevar nolasīt. Pārlūka lapas un Chrome Web Store netiek atbalstītas.",
   "error_no_content": "Šajā lapā netika atrasts raksta teksts.",
   "error_needs_click": "Noklikšķiniet uz paplašinājuma ikonas, lai apkopotu šo lapu. Pēc tam, kad cilnē atvērta cita lapa, paplašinājumam ir nepieciešams jauns klikšķis, lai to nolasītu.",
   "error_host_missing": "Lokālais komponents nav instalēts vai neatbild. Paplašinājuma mapē palaidiet: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modeļu saraksti nolasīti {date}.",
   "options_models_never": "Modeļu saraksti vēl nav nolasīti.",
   "options_models_auto": "Tie tiek iegūti no Claude Code, Codex un Ollama un tiek nolasīti atkārtoti reizi dienā, kad tiek atjaunināts Claude Code vai Codex un kad tiek atjaunināts paplašinājums.",
-  "options_models_refresh": "Nolasīt tagad"
+  "options_models_refresh": "Nolasīt tagad",
+  "error_file_access": "Lai apkopotu failus šajā datorā, vietnē chrome://extensions atveriet paplašinājuma sadaļu Informācija un ieslēdziet opciju Atļaut piekļuvi failu vietrāžiem URL.",
+  "error_pdf_unreadable": "Šo PDF nevar atvērt. Tas var būt aizsargāts ar paroli vai bojāts.",
+  "error_pdf_no_text": "Šajā PDF nav teksta, ko apkopot. Tas var sastāvēt no skenētiem attēliem."
 }

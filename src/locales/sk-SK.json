@@ -14,7 +14,7 @@
   "ui_working": "Zhŕňa sa…",
   "ui_idle_hint": "Kliknite na ikonu rozšírenia a táto stránka sa zhrnie.",
   "ui_truncated": "Táto stránka bola dlhá; zhrnula sa len jej prvá časť.",
-  "error_page_unreadable": "Túto stránku nie je možné prečítať. Stránky prehliadača, Chrome Web Store a súbory PDF nie sú podporované.",
+  "error_page_unreadable": "Túto stránku nie je možné prečítať. Stránky prehliadača a Chrome Web Store nie sú podporované.",
   "error_no_content": "Na tejto stránke sa nenašiel žiadny text článku.",
   "error_needs_click": "Kliknite na ikonu rozšírenia a táto stránka sa zhrnie. Keď karta prejde na inú stránku, rozšírenie potrebuje na jej prečítanie nové kliknutie.",
   "error_host_missing": "Lokálny komponent nie je nainštalovaný alebo neodpovedá. V priečinku rozšírenia spustite: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Zoznamy modelov boli načítané {date}.",
   "options_models_never": "Zoznamy modelov ešte neboli načítané.",
   "options_models_auto": "Pochádzajú z Claude Code, Codex a Ollama a znova sa načítavajú raz denne, keď sa aktualizuje Claude Code alebo Codex a keď sa aktualizuje rozšírenie.",
-  "options_models_refresh": "Načítať teraz"
+  "options_models_refresh": "Načítať teraz",
+  "error_file_access": "Ak chcete zhrnúť súbory v tomto počítači, otvorte Podrobnosti rozšírenia na stránke chrome://extensions a zapnite Povoliť prístup k webovým adresám súborov.",
+  "error_pdf_unreadable": "Tento súbor PDF nie je možné otvoriť. Môže byť chránený heslom alebo poškodený.",
+  "error_pdf_no_text": "Tento súbor PDF neobsahuje žiadny text na zhrnutie. Môže byť tvorený naskenovanými obrázkami."
 }

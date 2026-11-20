@@ -14,7 +14,7 @@
   "ui_working": "Kuyafinyetwa…",
   "ui_idle_hint": "Chofoza ku-ayikhoni yesengeto kute ufinyete leli khasi.",
   "ui_truncated": "Leli khasi belilidze; kufinyetwe incenye yekucala kuphela.",
-  "error_page_unreadable": "Leli khasi alifundzeki. Emakhasi esiphequluli, i-Chrome Web Store kanye nema-PDF akasekelwa.",
+  "error_page_unreadable": "Leli khasi alifundzeki. Emakhasi esiphequluli kanye ne-Chrome Web Store akasekelwa.",
   "error_no_content": "Akukho umbhalo we-athikili lotfoliwe kuleli khasi.",
   "error_needs_click": "Chofoza ku-ayikhoni yesengeto kute ufinyete leli khasi. Ngemuva kwekutsi ithebhu iye kulelinye likhasi, lesengeto sidzinga kuchofoza lokusha kute silifundze.",
   "error_host_missing": "Incenye yasekhaya ayifakiwe noma ayiphenduli. Kufolda yesengeto, sebentisa: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Luhlu lwemamodeli lufundvwe nga-{date}.",
   "options_models_never": "Luhlu lwemamodeli alukafundvwa.",
   "options_models_auto": "Luchamuka ku-Claude Code, Codex na-Ollama, futsi lufundvwa futsi kanye ngelilanga, nangabe i-Claude Code noma i-Codex ibuyeketiwe, nangabe sengeto sibuyeketiwe.",
-  "options_models_refresh": "Lufundze nyalo"
+  "options_models_refresh": "Lufundze nyalo",
+  "error_file_access": "Kute ufinyete emafayela lakulelikhompyutha, vula Imininingwane yesengeto ku-chrome://extensions bese uvula Vumela kufinyelela kuma-URL emafayela.",
+  "error_pdf_unreadable": "Le-PDF ayivuleki. Kungenteka ivikelwe ngephasiwedi noma yonakele.",
+  "error_pdf_no_text": "Le-PDF ayinawo umbhalo longawufinyeta. Kungenteka yentiwe ngetitfombe letiskeniwe."
 }

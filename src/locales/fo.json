@@ -14,7 +14,7 @@
   "ui_working": "Ger samandrátt…",
   "ui_idle_hint": "Trýst á ikonina hjá víðkanini fyri at gera samandrátt av hesi síðuni.",
   "ui_truncated": "Síðan var long; bert fyrsti partur er tikin við í samandráttin.",
-  "error_page_unreadable": "Hendan síðan kann ikki lesast. Síður í kagaranum, Chrome Web Store og PDF verða ikki studd.",
+  "error_page_unreadable": "Hendan síðan kann ikki lesast. Síður í kagaranum og Chrome Web Store verða ikki studd.",
   "error_no_content": "Eingin greinartekstur var funnin á hesi síðuni.",
   "error_needs_click": "Trýst á ikonina hjá víðkanini fyri at gera samandrátt av hesi síðuni. Tá ið teigurin er farin til eina aðra síðu, mást tú trýsta aftur, so víðkanin kann lesa hana.",
   "error_host_missing": "Staðbundni parturin er ikki innlagdur ella svarar ikki. Koyr hetta í mappuni hjá víðkanini: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Myndilslistar lisnir {date}.",
   "options_models_never": "Myndilslistarnir eru ikki lisnir enn.",
   "options_models_auto": "Teir koma frá Claude Code, Codex og Ollama og verða lisnir aftur einaferð um dagin, tá ið Claude Code ella Codex verður dagført, og tá ið víðkanin verður dagførd.",
-  "options_models_refresh": "Les teir nú"
+  "options_models_refresh": "Les teir nú",
+  "error_file_access": "Fyri at gera samandrátt av fílum á hesi teldu, lat Smálutir hjá víðkanini upp í chrome://extensions og tendra Loyv atgongd til fílu-URL'ar.",
+  "error_pdf_unreadable": "Hetta PDF-skjalið kann ikki latast upp. Tað kann vera vart við loyniorði ella skatt.",
+  "error_pdf_no_text": "Hetta PDF-skjalið hevur ongan tekst at gera samandrátt av. Tað kann vera gjørt av skannaðum myndum."
 }

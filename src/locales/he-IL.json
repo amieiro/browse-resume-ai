@@ -14,7 +14,7 @@
   "ui_working": "מסכם…",
   "ui_idle_hint": "יש ללחוץ על סמל התוסף כדי לסכם את הדף הזה.",
   "ui_truncated": "הדף היה ארוך; רק החלק הראשון סוכם.",
-  "error_page_unreadable": "לא ניתן לקרוא את הדף הזה. דפי דפדפן, Chrome Web Store וקובצי PDF אינם נתמכים.",
+  "error_page_unreadable": "לא ניתן לקרוא את הדף הזה. דפי דפדפן ו-Chrome Web Store אינם נתמכים.",
   "error_no_content": "לא נמצא טקסט של מאמר בדף הזה.",
   "error_needs_click": "יש ללחוץ על סמל התוסף כדי לסכם את הדף הזה. לאחר שהכרטיסייה עוברת לדף אחר, התוסף צריך לחיצה חדשה כדי לקרוא אותו.",
   "error_host_missing": "הרכיב המקומי לא מותקן או לא מגיב. בתיקיית התוסף, יש להריץ: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "רשימות המודלים נקראו ב-{date}.",
   "options_models_never": "רשימות המודלים עדיין לא נקראו.",
   "options_models_auto": "הן מגיעות מ-Claude Code, מ-Codex ומ-Ollama, ונקראות מחדש פעם ביום, כש-Claude Code או Codex מתעדכנים וכשההרחבה מתעדכנת.",
-  "options_models_refresh": "לקרוא אותן עכשיו"
+  "options_models_refresh": "לקרוא אותן עכשיו",
+  "error_file_access": "כדי לסכם קבצים במחשב הזה, יש לפתוח את הפרטים של התוסף ב-chrome://extensions ולהפעיל את האפשרות אפשר גישה לכתובות URL של קבצים.",
+  "error_pdf_unreadable": "לא ניתן לפתוח את קובץ ה-PDF הזה. ייתכן שהוא מוגן בסיסמה או פגום.",
+  "error_pdf_no_text": "בקובץ ה-PDF הזה אין טקסט לסיכום. ייתכן שהוא מורכב מתמונות סרוקות."
 }

@@ -14,7 +14,7 @@
   "ui_working": "Riassumme…",
   "ui_idle_hint": "Clicca in sce l'icona de l'estenscion pe riassumme sta pagina.",
   "ui_truncated": "Sta pagina a l'ea longa; o l'é stæto riassunto solo a primma parte.",
-  "error_page_unreadable": "No se peu lêze sta pagina. E pagine do navegatô, o Chrome Web Store e i PDF no son sopportæ.",
+  "error_page_unreadable": "No se peu lêze sta pagina. E pagine do navegatô e o Chrome Web Store no son sopportæ.",
   "error_no_content": "No s'é trovou de testo d'articolo in sta pagina.",
   "error_needs_click": "Clicca in sce l'icona de l'estenscion pe riassumme sta pagina. Dòppo che a scheda a l'à cangiou pagina, l'estenscion a gh'à bezeugno de 'n clic nêuvo pe lêzila.",
   "error_host_missing": "O conponente locale o no l'é instalou ò o no risponde. Inta cartella de l'estenscion, esegui: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Liste di modelli lezue o {date}.",
   "options_models_never": "E liste di modelli no son ancon stæte lezue.",
   "options_models_auto": "Vegnan da Claude Code, Codex e Ollama, e son lezue torna unna votta a-o giorno, quande Claude Code ò Codex o l'é agiornou, e quande l'estenscion a l'é agiornâ.",
-  "options_models_refresh": "Lezile oua"
+  "options_models_refresh": "Lezile oua",
+  "error_file_access": "Pe riassumme i file de sto computer, arvi i Dettaggi de l'estenscion in chrome://extensions e attiva Permetti l'accesso a-i URL di file.",
+  "error_pdf_unreadable": "No se peu arvî sto PDF. O poriæ ëse protezzuo da 'na password ò dannezzou.",
+  "error_pdf_no_text": "Sto PDF o no l'à de testo da riassumme. O poriæ ëse fæto de inmagini scannerizæ."
 }

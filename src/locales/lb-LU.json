@@ -14,7 +14,7 @@
   "ui_working": "Gëtt resuméiert…",
   "ui_idle_hint": "Klickt op d'Symbol vun der Extensioun, fir dës Säit ze resuméieren.",
   "ui_truncated": "Dës Säit war laang; nëmmen den éischten Deel gouf resuméiert.",
-  "error_page_unreadable": "Dës Säit kann net gelies ginn. Browsersäiten, de Chrome Web Store an PDFe ginn net ënnerstëtzt.",
+  "error_page_unreadable": "Dës Säit kann net gelies ginn. Browsersäiten an de Chrome Web Store ginn net ënnerstëtzt.",
   "error_no_content": "Op dëser Säit gouf keen Artikeltext fonnt.",
   "error_needs_click": "Klickt op d'Symbol vun der Extensioun, fir dës Säit ze resuméieren. Nodeems den Tab op eng aner Säit gewiesselt huet, brauch d'Extensioun en neie Klick, fir se ze liesen.",
   "error_host_missing": "Déi lokal Komponent ass net installéiert oder äntwert net. Fuert am Dossier vun der Extensioun aus: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modelllëschte gelies den {date}.",
   "options_models_never": "D'Modelllëschte goufen nach net gelies.",
   "options_models_auto": "Si kommen aus Claude Code, Codex an Ollama a ginn eemol am Dag nei gelies, wann Claude Code oder Codex aktualiséiert gëtt, a wann d'Erweiderung aktualiséiert gëtt.",
-  "options_models_refresh": "Elo liesen"
+  "options_models_refresh": "Elo liesen",
+  "error_file_access": "Fir Dateien op dësem Computer zesummenzefaassen, maach d'Detailer vun der Extensioun op chrome://extensions op a schalt Zougrëff op Datei-URLen erlaben un.",
+  "error_pdf_unreadable": "Dëse PDF kann net opgemaach ginn. E kéint mat engem Passwuert geschützt oder beschiedegt sinn.",
+  "error_pdf_no_text": "Dëse PDF huet keen Text fir zesummenzefaassen. E kéint aus gescannte Biller bestoen."
 }

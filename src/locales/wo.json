@@ -14,7 +14,7 @@
   "ui_working": "Mu ngi tënk…",
   "ui_idle_hint": "Bësal ci ikonu yokkute bi ngir tënk xët wii.",
   "ui_truncated": "Xët wii dafa gudd; xaaj bu jëkk bi rekk lañu tënk.",
-  "error_page_unreadable": "Mënuñu jàng xët wii. Xëti joowukaay bi, Chrome Web Store ak PDF yi nekkuñu ci li ñu jàppale.",
+  "error_page_unreadable": "Mënuñu jàng xët wii. Xëti joowukaay bi ak Chrome Web Store nekkuñu ci li ñu jàppale.",
   "error_no_content": "Gisuñu benn mbind bu artikal ci xët wii.",
   "error_needs_click": "Bësal ci ikonu yokkute bi ngir tënk xët wii. Su onglet bi demee ci beneen xët, yokkute bi soxla na bës bu bees ngir jàng ko.",
   "error_host_missing": "Sampuñu pàcc bu dëkk bi walla du tontu. Ci kàrtaabu yokkute bi, doxalal: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Limi modèl yi dañu leen jàng ci {date}.",
   "options_models_never": "Jàngaguñu limi modèl yi.",
   "options_models_auto": "Dañuy jóge ci Claude Code, Codex ak Ollama, te dañu leen di jàngaat benn yoon ci bés bi, bu Claude Code walla Codex yeesalikoo, ak bu yokkute bi yeesalikoo.",
-  "options_models_refresh": "Jàng leen léegi"
+  "options_models_refresh": "Jàng leen léegi",
+  "error_file_access": "Ngir tënk ay fichier yu nekk ci ordinatëer bii, ubbil Leeral yi ci yokkute bi ci chrome://extensions te taal May jot ci URL yu fichier yi.",
+  "error_pdf_unreadable": "Mënuñu ubbi PDF bii. Man na am mu aar ak baatu jàll walla mu yàqu.",
+  "error_pdf_no_text": "PDF bii amul benn mbind bu ñu mën a tënk. Man na am mu defaru ak ay nataal yu ñu skane."
 }

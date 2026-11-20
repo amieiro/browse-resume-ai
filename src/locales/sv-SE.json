@@ -14,7 +14,7 @@
   "ui_working": "Sammanfattar…",
   "ui_idle_hint": "Klicka på tilläggets ikon för att sammanfatta den här sidan.",
   "ui_truncated": "Sidan var lång; bara den första delen sammanfattades.",
-  "error_page_unreadable": "Den här sidan kan inte läsas. Webbläsarsidor, Chrome Web Store och PDF-filer stöds inte.",
+  "error_page_unreadable": "Den här sidan kan inte läsas. Webbläsarsidor och Chrome Web Store stöds inte.",
   "error_no_content": "Ingen artikeltext hittades på den här sidan.",
   "error_needs_click": "Klicka på tilläggets ikon för att sammanfatta den här sidan. När fliken har bytt sida behöver tillägget ett nytt klick för att läsa den.",
   "error_host_missing": "Den lokala komponenten är inte installerad eller svarar inte. Kör följande i tilläggets mapp: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modellistorna lästes in {date}.",
   "options_models_never": "Modellistorna har inte lästs in än.",
   "options_models_auto": "De kommer från Claude Code, Codex och Ollama och läses in igen en gång om dagen, när Claude Code eller Codex uppdateras och när tillägget uppdateras.",
-  "options_models_refresh": "Läs in dem nu"
+  "options_models_refresh": "Läs in dem nu",
+  "error_file_access": "Om du vill sammanfatta filer på den här datorn öppnar du tilläggets Information på chrome://extensions och aktiverar Tillåt åtkomst till webbadresser för filer.",
+  "error_pdf_unreadable": "Den här PDF-filen kan inte öppnas. Den kan vara lösenordsskyddad eller skadad.",
+  "error_pdf_no_text": "Den här PDF-filen har ingen text att sammanfatta. Den kan bestå av skannade bilder."
 }

@@ -13,6 +13,7 @@ import { execFileSync } from 'node:child_process';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import { getDocument } from 'pdfjs-dist/legacy/build/pdf.mjs';
 import { addBorder } from './add-border.mjs';
 import { EXTENSION_DIR, ROOT, argValue, launchChrome, loadPromptBuilder, sleep, summarizeWithHost } from './lib/shots.mjs';
 
@@ -25,6 +26,7 @@ const PAGES = {
   securityweek: 'https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/',
   newscientist: 'https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/',
   grapheneos: 'https://grapheneos.social/@GrapheneOS/117645038299496084',
+  arxiv: 'https://arxiv.org/pdf/1706.03762',
 };
 
 // One shot per page, length and language; the interface is in the same language as the summary.
@@ -48,6 +50,7 @@ const SHOTS = [
     name: 'feature-questions', page: 'grapheneos', language: 'en-US', length: 'short', mode: 'panel',
     questions: ['What does GrapheneOS ask regulators to do?', 'Which phone makers does it mention?'],
   },
+  { name: 'feature-pdf', page: 'arxiv', language: 'en-US', length: 'medium', mode: 'panel' },
 ];
 
 const HEIGHT = 820;
@@ -272,11 +275,18 @@ try {
   const id = await browser.installExtension(EXTENSION_DIR);
   const buildPrompt = await loadPromptBuilder();
   const buildQuestionPrompt = await loadPromptBuilder('src/lib/question-prompt.ts', 'buildQuestionPrompt');
+  const pdfToArticle = await loadPromptBuilder('src/lib/pdf-text.ts', 'pdfToArticle');
+  // A PDF tab only says it is a PDF; read the file with pdf.js and the extension's own reader.
+  const readPdf = async ({ url, title }) => {
+    const data = new Uint8Array(await (await fetch(url)).arrayBuffer());
+    return pdfToArticle(await getDocument({ data }).promise, url, title);
+  };
   const extracted = {};
   for (const shot of SHOTS.filter((s) => !ONLY || s.name === ONLY)) {
     const width = shot.mode === 'panel' ? WINDOW_WIDTH - PANEL_WIDTH - 1 : WINDOW_WIDTH;
     const page = await openArticle(browser, PAGES[shot.page], width);
     extracted[shot.page] ??= await page.evaluate(extractScript);
+    if (extracted[shot.page]?.pdf) extracted[shot.page] = await readPdf(extracted[shot.page]);
     const article = extracted[shot.page];
     if (!article) throw new Error(`No article text extracted from ${PAGES[shot.page]}`);
     console.log(`summarizing ${shot.name} (${shot.length}, ${shot.language}) with ${MODEL}...`);

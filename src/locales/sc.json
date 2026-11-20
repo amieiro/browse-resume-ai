@@ -14,7 +14,7 @@
   "ui_working": "Resumende…",
   "ui_idle_hint": "Incarca s'icona de s'estensione pro resumire custa pàgina.",
   "ui_truncated": "Custa pàgina fiat longa; est istada resumida isceti sa prima parte.",
-  "error_page_unreadable": "Custa pàgina non si podet lèghere. Sas pàginas de su navigadore, su Chrome Web Store e sos PDF non sunt suportados.",
+  "error_page_unreadable": "Custa pàgina non si podet lèghere. Sas pàginas de su navigadore e su Chrome Web Store non sunt suportados.",
   "error_no_content": "Non s'est agatadu testu de artìculu in custa pàgina.",
   "error_needs_click": "Incarca s'icona de s'estensione pro resumire custa pàgina. A pustis chi s'ischeda est andada a un'àtera pàgina, s'estensione tenet bisòngiu de un'àtera incarcada pro la lèghere.",
   "error_host_missing": "Su cumponente locale no est installadu o no est rispondende. In sa cartella de s'estensione, esecuta: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Listas de modellos lèghidas su {date}.",
   "options_models_never": "Sas listas de modellos no sunt istadas lèghidas galu.",
   "options_models_auto": "Benint dae Claude Code, Codex e Ollama, e las torrant a lèghere una borta a sa die, cando Claude Code o Codex benit atualizadu e cando s'estensione benit atualizada.",
-  "options_models_refresh": "Lèghe·las como"
+  "options_models_refresh": "Lèghe·las como",
+  "error_file_access": "Pro resumire archìvios in custu elaboradore, aberi sos Detàllios de s'estensione in chrome://extensions e ativa Permite s'atzessu a sos URL de sos archìvios.",
+  "error_pdf_unreadable": "Custu PDF non si podet abèrrere. Podet èssere protetu cun una crae o dannigiadu.",
+  "error_pdf_no_text": "Custu PDF non tenet testu de resumire. Podet èssere fatu de immàgines iscansionadas."
 }

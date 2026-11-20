@@ -14,7 +14,7 @@
   "ui_working": "要約しています…",
   "ui_idle_hint": "拡張機能のアイコンをクリックすると、このページを要約します。",
   "ui_truncated": "このページは長いため、最初の部分だけを要約しました。",
-  "error_page_unreadable": "このページは読み取れません。ブラウザのページ、Chrome Web Store、PDF には対応していません。",
+  "error_page_unreadable": "このページは読み取れません。ブラウザのページと Chrome Web Store には対応していません。",
   "error_no_content": "このページに記事のテキストが見つかりませんでした。",
   "error_needs_click": "拡張機能のアイコンをクリックすると、このページを要約します。タブで別のページに移動した後は、読み取るためにもう一度クリックする必要があります。",
   "error_host_missing": "ローカルコンポーネントがインストールされていないか、応答していません。拡張機能のフォルダで次を実行してください: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "モデル一覧の読み込み日時: {date}",
   "options_models_never": "モデル一覧はまだ読み込まれていません。",
   "options_models_auto": "一覧は Claude Code、Codex、Ollama から取得され、1 日に 1 回、Claude Code または Codex の更新時、および拡張機能の更新時に再度読み込まれます。",
-  "options_models_refresh": "今すぐ読み込む"
+  "options_models_refresh": "今すぐ読み込む",
+  "error_file_access": "このパソコン上のファイルを要約するには、chrome://extensions で拡張機能の「詳細」を開き、「ファイルの URL へのアクセスを許可する」をオンにしてください。",
+  "error_pdf_unreadable": "この PDF を開けません。パスワードで保護されているか、破損している可能性があります。",
+  "error_pdf_no_text": "この PDF には要約できるテキストがありません。スキャンした画像で構成されている可能性があります。"
 }

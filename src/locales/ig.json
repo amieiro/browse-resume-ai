@@ -14,7 +14,7 @@
   "ui_working": "Na-achịkọta…",
   "ui_idle_hint": "Pịa akara ngosi ndọtị ahụ iji chịkọta ibe a.",
   "ui_truncated": "Ibe a dị ogologo; ọ bụ naanị akụkụ mbụ ka a chịkọtara.",
-  "error_page_unreadable": "Enweghị ike ịgụ ibe a. Ibe ihe nchọgharị, Chrome Web Store na PDF anaghị arụ ọrụ ebe a.",
+  "error_page_unreadable": "Enweghị ike ịgụ ibe a. Ibe ihe nchọgharị na Chrome Web Store anaghị arụ ọrụ ebe a.",
   "error_no_content": "Achọtaghị ederede edemede ọ bụla na ibe a.",
   "error_needs_click": "Pịa akara ngosi ndọtị ahụ iji chịkọta ibe a. Mgbe taabụ ahụ gara ibe ọzọ, ndọtị ahụ chọrọ ịpị ọhụrụ iji gụọ ya.",
   "error_host_missing": "Akụrụngwa mpaghara etinyeghị ma ọ bụ ọ naghị aza. N'ime folda ndọtị ahụ, gbaa: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Agụrụ ndepụta ụdị na {date}.",
   "options_models_never": "Agụbeghị ndepụta ụdị.",
   "options_models_auto": "Ha si na Claude Code, Codex na Ollama, a na-agụkwa ha ọzọ otu ugboro kwa ụbọchị, mgbe e melitere Claude Code ma ọ bụ Codex, na mgbe e melitere ndọtị ahụ.",
-  "options_models_refresh": "Gụọ ha ugbu a"
+  "options_models_refresh": "Gụọ ha ugbu a",
+  "error_file_access": "Iji chịkọta faịlụ ndị dị na kọmputa a, mepee Nkọwa ndọtị ahụ na chrome://extensions ma gbanye Kwe ka ọ nweta URL faịlụ.",
+  "error_pdf_unreadable": "Enweghị ike imepe PDF a. Ọ nwere ike ịbụ na e ji paswọọdụ chebe ya ma ọ bụ na o mebiri emebi.",
+  "error_pdf_no_text": "PDF a enweghị ederede a ga-achịkọta. Ọ nwere ike ịbụ na e ji foto e nyochara (scan) mee ya."
 }

@@ -14,7 +14,7 @@
   "ui_working": "Shrnování…",
   "ui_idle_hint": "Kliknutím na ikonu rozšíření shrnete tuto stránku.",
   "ui_truncated": "Stránka byla dlouhá; shrnuta byla jen její první část.",
-  "error_page_unreadable": "Tuto stránku nelze přečíst. Stránky prohlížeče, Chrome Web Store a soubory PDF nejsou podporovány.",
+  "error_page_unreadable": "Tuto stránku nelze přečíst. Stránky prohlížeče a Chrome Web Store nejsou podporovány.",
   "error_no_content": "Na této stránce nebyl nalezen žádný text článku.",
   "error_needs_click": "Kliknutím na ikonu rozšíření shrnete tuto stránku. Po přechodu na jinou stránku v kartě potřebuje rozšíření nové kliknutí, aby ji mohlo přečíst.",
   "error_host_missing": "Místní komponenta není nainstalována nebo neodpovídá. Ve složce rozšíření spusťte: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Seznamy modelů načteny {date}.",
   "options_models_never": "Seznamy modelů zatím nebyly načteny.",
   "options_models_auto": "Pocházejí z Claude Code, Codex a Ollama a znovu se načítají jednou denně, při aktualizaci Claude Code nebo Codex a při aktualizaci rozšíření.",
-  "options_models_refresh": "Načíst je nyní"
+  "options_models_refresh": "Načíst je nyní",
+  "error_file_access": "Chcete-li shrnout soubory v tomto počítači, otevřete v chrome://extensions Podrobnosti rozšíření a zapněte Povolit přístup k adresám URL souborů.",
+  "error_pdf_unreadable": "Tento soubor PDF nelze otevřít. Může být chráněn heslem nebo poškozen.",
+  "error_pdf_no_text": "Tento soubor PDF neobsahuje žádný text ke shrnutí. Může se skládat z naskenovaných obrázků."
 }

@@ -14,7 +14,7 @@
   "ui_working": "Özetleniyor…",
   "ui_idle_hint": "Bu sayfayı özetlemek için uzantı simgesini tıklayın.",
   "ui_truncated": "Bu sayfa uzundu; yalnızca ilk kısmı özetlendi.",
-  "error_page_unreadable": "Bu sayfa okunamıyor. Tarayıcı sayfaları, Chrome Web Store ve PDF dosyaları desteklenmez.",
+  "error_page_unreadable": "Bu sayfa okunamıyor. Tarayıcı sayfaları ve Chrome Web Store desteklenmez.",
   "error_no_content": "Bu sayfada makale metni bulunamadı.",
   "error_needs_click": "Bu sayfayı özetlemek için uzantı simgesini tıklayın. Sekme başka bir sayfaya geçtikten sonra uzantının sayfayı okuyabilmesi için yeniden tıklamanız gerekir.",
   "error_host_missing": "Yerel bileşen yüklü değil veya yanıt vermiyor. Uzantının klasöründe şunu çalıştırın: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Model listeleri {date} tarihinde okundu.",
   "options_models_never": "Model listeleri henüz okunmadı.",
   "options_models_auto": "Listeler Claude Code, Codex ve Ollama'dan gelir; günde bir kez, Claude Code veya Codex güncellendiğinde ve uzantı güncellendiğinde yeniden okunur.",
-  "options_models_refresh": "Şimdi oku"
+  "options_models_refresh": "Şimdi oku",
+  "error_file_access": "Bu bilgisayardaki dosyaları özetlemek için chrome://extensions sayfasında uzantının Ayrıntılar bölümünü açın ve Dosya URL'lerine erişime izin ver seçeneğini etkinleştirin.",
+  "error_pdf_unreadable": "Bu PDF açılamıyor. Parola korumalı veya hasarlı olabilir.",
+  "error_pdf_no_text": "Bu PDF'de özetlenecek metin yok. Taranmış görüntülerden oluşuyor olabilir."
 }

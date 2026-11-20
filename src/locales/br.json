@@ -14,7 +14,7 @@
   "ui_working": "O tiverrañ…",
   "ui_idle_hint": "Klikit war arlun an askouezh evit diverrañ ar bajenn-mañ.",
   "ui_truncated": "Hir e oa ar bajenn-mañ; al lodenn gentañ hepken a zo bet diverret.",
-  "error_page_unreadable": "N'haller ket lenn ar bajenn-mañ. Pajennoù ar merdeer, ar Chrome Web Store hag ar restroù PDF n'int ket skoret.",
+  "error_page_unreadable": "N'haller ket lenn ar bajenn-mañ. Pajennoù ar merdeer hag ar Chrome Web Store n'int ket skoret.",
   "error_no_content": "N'eus bet kavet testenn pennad ebet war ar bajenn-mañ.",
   "error_needs_click": "Klikit war arlun an askouezh evit diverrañ ar bajenn-mañ. Goude m'eo aet an ivinell d'ur bajenn all, en deus ezhomm an askouezh eus ur c'hlik nevez evit he lenn.",
   "error_host_missing": "N'eo ket staliet an elfenn lec'hel pe ne respont ket. E teuliad an askouezh, lañsit: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Rolloù patromoù lennet d'an {date}.",
   "options_models_never": "N'eo ket bet lennet rolloù ar patromoù c'hoazh.",
   "options_models_auto": "Dont a reont eus Claude Code, Codex hag Ollama, hag adlennet e vezont ur wech bemdez, pa vez hizivaet Claude Code pe Codex, ha pa vez hizivaet an astenn.",
-  "options_models_refresh": "Lenn anezho bremañ"
+  "options_models_refresh": "Lenn anezho bremañ",
+  "error_file_access": "Evit diverrañ restroù an urzhiataer-mañ, digorit Munudoù an askouezh e chrome://extensions ha gweredekait Aotren an haeziñ d'an URLoù restr.",
+  "error_pdf_unreadable": "N'haller ket digeriñ ar PDF-mañ. Gwarezet eo gant ur ger-tremen pe gwastet marteze.",
+  "error_pdf_no_text": "N'eus testenn ebet da ziverrañ er PDF-mañ. Graet eo gant skeudennoù skanet marteze."
 }

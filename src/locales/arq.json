@@ -14,7 +14,7 @@
   "ui_working": "راهو يلخّص…",
   "ui_idle_hint": "اضغط على أيقونة الإضافة باش تلخّص هاد الصفحة.",
   "ui_truncated": "هاد الصفحة كانت طويلة؛ تلخّص غير الجزء الأول.",
-  "error_page_unreadable": "ما نقدروش نقراو هاد الصفحة. صفحات المتصفح، Chrome Web Store و ملفات PDF ماشي مدعومين.",
+  "error_page_unreadable": "ما نقدروش نقراو هاد الصفحة. صفحات المتصفح و Chrome Web Store ماشي مدعومين.",
   "error_no_content": "ما لقيناش نص مقال في هاد الصفحة.",
   "error_needs_click": "اضغط على أيقونة الإضافة باش تلخّص هاد الصفحة. كي تتبدّل الصفحة في اللسان، الإضافة تحتاج ضغطة جديدة باش تقراها.",
   "error_host_missing": "المكوّن المحلي ماشي مثبّت ولا ما راهش يجاوب. في مجلد الإضافة، شغّل: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "قوائم الموديلات تقراو في {date}.",
   "options_models_never": "قوائم الموديلات مازال ما تقراوش.",
   "options_models_auto": "يجيو من Claude Code وCodex وOllama، ويتعاود يتقراو مرة في النهار، كي يتحدّث Claude Code ولا Codex، وكي تتحدّث الإضافة.",
-  "options_models_refresh": "اقراهم دوك"
+  "options_models_refresh": "اقراهم دوك",
+  "error_file_access": "باش تلخّص الملفات اللي في هاد الكمبيوتر، حلّ «التفاصيل» تاع الإضافة في chrome://extensions وشعّل «السماح بالوصول إلى عناوين URL للملفات».",
+  "error_pdf_unreadable": "ما نقدروش نحلّو هاد PDF. يمكن محمي بكلمة سر ولا خاسر.",
+  "error_pdf_no_text": "هاد PDF ما فيهش نص باش نلخّصوه. يمكن مصنوع من تصاور مسكانيين."
 }

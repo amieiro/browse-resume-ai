@@ -14,7 +14,7 @@
   "ui_working": "Özətlənir…",
   "ui_idle_hint": "Bu səhifəni özətləmək üçün əlavə ikonuna klikləyin.",
   "ui_truncated": "Səhifə uzun idi, yalnız ilk hissə özətləndi.",
-  "error_page_unreadable": "Bu səhifə oxuna bilmir. Brauzer səhifələri, Chrome Web Store və PDF faylları dəstəklənmir.",
+  "error_page_unreadable": "Bu səhifə oxuna bilmir. Brauzer səhifələri və Chrome Web Store dəstəklənmir.",
   "error_no_content": "Bu səhifədə məqalə mətni tapılmadı.",
   "error_needs_click": "Bu səhifəni özətləmək üçün əlavə ikonuna klikləyin. Sekmədə başqa səhifəyə keçildikdən sonra əlavənin onu oxuması üçün yenidən klikləmək lazımdır.",
   "error_host_missing": "Yerli komponent quraşdırılmayıb və ya cavab vermir. Əlavənin qovluğunda bunu çalışdırın: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Model siyahıları {date} tarixində oxundu.",
   "options_models_never": "Model siyahıları hələ oxunmayıb.",
   "options_models_auto": "Onlar Claude Code, Codex və Ollama-dan gəlir və gündə bir dəfə, Claude Code və ya Codex güncəlləndikdə və uzantı güncəlləndikdə yenidən oxunur.",
-  "options_models_refresh": "İndi oxu"
+  "options_models_refresh": "İndi oxu",
+  "error_file_access": "Bu kompüterdəki faylları özətləmək üçün chrome://extensions səhifəsində əlavənin Detallar bölməsini açın və Fayl URL-lərinə girişə icazə verin seçimini aktiv edin.",
+  "error_pdf_unreadable": "Bu PDF açıla bilmir. Şifrə ilə qorunmuş və ya zədələnmiş ola bilər.",
+  "error_pdf_no_text": "Bu PDF-də özətləniləcək mətn yoxdur. Skan edilmiş şəkillərdən ibarət ola bilər."
 }

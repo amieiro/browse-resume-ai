@@ -14,7 +14,7 @@
   "ui_working": "Kifunzibwa…",
   "ui_idle_hint": "Nyiga akabonero k'ekyongerezo okufunza olupapula luno.",
   "ui_truncated": "Olupapula luno lubadde luwanvu; ekitundu ekisooka kyokka kye kifunziddwa.",
-  "error_page_unreadable": "Olupapula luno terusobola kusomebwa. Empapula za browser, Chrome Web Store ne PDF tebiwagirwa.",
+  "error_page_unreadable": "Olupapula luno terusobola kusomebwa. Empapula za browser ne Chrome Web Store tebiwagirwa.",
   "error_no_content": "Tewali bigambo bya lupapula ebizuuliddwa ku lupapula luno.",
   "error_needs_click": "Nyiga akabonero k'ekyongerezo okufunza olupapula luno. Ttabu bw'egenda ku lupapula olulala, ekyongerezo kyetaaga okunyigibwa omulundi omulala okulusoma.",
   "error_host_missing": "Ekitundu eky'omu kompyuta tekiteekeddwamu oba tekiddamu. Mu folda y'ekyongerezo, dduka: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Enkalala z'omuze zasomebwa ku {date}.",
   "options_models_never": "Enkalala z'omuze tezinnaba kusomebwa.",
   "options_models_auto": "Zivva mu Claude Code, Codex ne Ollama, era zisomebwa nate omulundi gumu buli lunaku, nga Claude Code oba Codex bizzibwa obuggya, era nga extension ezzibwa obuggya.",
-  "options_models_refresh": "Zisome kati"
+  "options_models_refresh": "Zisome kati",
+  "error_file_access": "Okufunza mu bufunze fayiro eziri ku kompyuta eno, ggulawo Details z'ekyongerwako mu chrome://extensions era otandike Allow access to file URLs.",
+  "error_pdf_unreadable": "PDF eno tesobola kuggulwawo. Eyinza okuba ng'ekuumibwa n'ekigambo ky'okuyingira oba eyonoonese.",
+  "error_pdf_no_text": "PDF eno terina bigambo bya kufunza. Eyinza okuba ng'ekoleddwa mu bifaananyi ebisikaanidwa."
 }

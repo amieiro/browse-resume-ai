@@ -14,7 +14,7 @@
   "ui_working": "N ap rezime…",
   "ui_idle_hint": "Klike sou ikòn ekstansyon an pou rezime paj sa a.",
   "ui_truncated": "Paj sa a te long; se sèlman premye pati a ki rezime.",
-  "error_page_unreadable": "Nou pa ka li paj sa a. Paj navigatè a, Chrome Web Store ak fichye PDF pa sipòte.",
+  "error_page_unreadable": "Nou pa ka li paj sa a. Paj navigatè a ak Chrome Web Store pa sipòte.",
   "error_no_content": "Nou pa jwenn tèks atik sou paj sa a.",
   "error_needs_click": "Klike sou ikòn ekstansyon an pou rezime paj sa a. Apre onglè a ale sou yon lòt paj, ekstansyon an bezwen yon nouvo klik pou li l.",
   "error_host_missing": "Konpozan lokal la pa enstale oswa li pa reponn. Nan dosye ekstansyon an, egzekite: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Lis modèl yo te li {date}.",
   "options_models_never": "Lis modèl yo poko li.",
   "options_models_auto": "Yo soti nan Claude Code, Codex ak Ollama, epi yo li yo ankò yon fwa pa jou, lè Claude Code oswa Codex mete ajou, ak lè ekstansyon an mete ajou.",
-  "options_models_refresh": "Li yo kounye a"
+  "options_models_refresh": "Li yo kounye a",
+  "error_file_access": "Pou rezime fichye ki sou òdinatè sa a, louvri Detay ekstansyon an nan chrome://extensions epi aktive Pèmèt aksè nan URL fichye yo.",
+  "error_pdf_unreadable": "Nou pa ka louvri PDF sa a. Li ka pwoteje ak yon modpas oswa li ka domaje.",
+  "error_pdf_no_text": "PDF sa a pa gen tèks pou rezime. Li ka fèt ak imaj ki eskane."
 }

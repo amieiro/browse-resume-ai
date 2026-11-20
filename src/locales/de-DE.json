@@ -14,7 +14,7 @@
   "ui_working": "Wird zusammengefasst…",
   "ui_idle_hint": "Klicke auf das Erweiterungssymbol, um diese Seite zusammenzufassen.",
   "ui_truncated": "Diese Seite war lang; nur der erste Teil wurde zusammengefasst.",
-  "error_page_unreadable": "Diese Seite kann nicht gelesen werden. Browserseiten, der Chrome Web Store und PDF-Dateien werden nicht unterstützt.",
+  "error_page_unreadable": "Diese Seite kann nicht gelesen werden. Browserseiten und der Chrome Web Store werden nicht unterstützt.",
   "error_no_content": "Auf dieser Seite wurde kein Artikeltext gefunden.",
   "error_needs_click": "Klicke auf das Erweiterungssymbol, um diese Seite zusammenzufassen. Nachdem der Tab eine neue Seite geladen hat, braucht die Erweiterung einen neuen Klick, um sie zu lesen.",
   "error_host_missing": "Die lokale Komponente ist nicht installiert oder antwortet nicht. Führe im Ordner der Erweiterung aus: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modelllisten gelesen am {date}.",
   "options_models_never": "Die Modelllisten wurden noch nicht gelesen.",
   "options_models_auto": "Sie stammen aus Claude Code, Codex und Ollama und werden einmal täglich, bei einem Update von Claude Code oder Codex und bei einem Update der Erweiterung neu gelesen.",
-  "options_models_refresh": "Jetzt lesen"
+  "options_models_refresh": "Jetzt lesen",
+  "error_file_access": "Um Dateien auf diesem Computer zusammenzufassen, öffne in chrome://extensions die Details der Erweiterung und aktiviere Zugriff auf Datei-URLs zulassen.",
+  "error_pdf_unreadable": "Dieses PDF kann nicht geöffnet werden. Es ist möglicherweise passwortgeschützt oder beschädigt.",
+  "error_pdf_no_text": "Dieses PDF enthält keinen Text zum Zusammenfassen. Es besteht möglicherweise aus gescannten Bildern."
 }

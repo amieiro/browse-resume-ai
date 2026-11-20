@@ -14,7 +14,7 @@
   "ui_working": "Gysgaldylýar…",
   "ui_idle_hint": "Bu sahypany gysgaltmak üçin giňeltmäniň nyşanyna basyň.",
   "ui_truncated": "Bu sahypa uzyn eken; diňe birinji bölegi gysgaldyldy.",
-  "error_page_unreadable": "Bu sahypany okap bolmaýar. Brauzer sahypalary, Chrome Web Store we PDF faýllary goldanylmaýar.",
+  "error_page_unreadable": "Bu sahypany okap bolmaýar. Brauzer sahypalary we Chrome Web Store goldanylmaýar.",
   "error_no_content": "Bu sahypada makala teksti tapylmady.",
   "error_needs_click": "Bu sahypany gysgaltmak üçin giňeltmäniň nyşanyna basyň. Goýma başga sahypa geçenden soň, ony okamak üçin giňeltmä täze basyş gerek.",
   "error_host_missing": "Ýerli komponent gurnalmandyr ýa-da jogap bermeýär. Giňeltmäniň bukjasynda işlediň: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Model sanawlary {date} senesinde okaldy.",
   "options_models_never": "Model sanawlary entek okalmady.",
   "options_models_auto": "Olar Claude Code, Codex we Ollama-dan gelýär we günde bir gezek, Claude Code ýa-da Codex täzelenende we giňeltme täzelenende täzeden okalýar.",
-  "options_models_refresh": "Häzir okaň"
+  "options_models_refresh": "Häzir okaň",
+  "error_file_access": "Bu kompýuterdäki faýllary gysgaltmak üçin chrome://extensions sahypasynda giňeltmäniň Jikme-jikliklerini açyň we Faýl URL-lerine girmäge rugsat ber funksiýasyny açyň.",
+  "error_pdf_unreadable": "Bu PDF faýlyny açyp bolmaýar. Ol parol bilen goralan ýa-da zaýalanan bolup biler.",
+  "error_pdf_no_text": "Bu PDF faýlynda gysgaltmak üçin tekst ýok. Ol skanirlenen suratlardan ybarat bolup biler."
 }

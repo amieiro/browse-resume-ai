@@ -14,7 +14,7 @@
   "ui_working": "Oppsummerer…",
   "ui_idle_hint": "Klikk på utvidelsesikonet for å oppsummere denne siden.",
   "ui_truncated": "Siden var lang; bare den første delen ble oppsummert.",
-  "error_page_unreadable": "Denne siden kan ikke leses. Nettlesersider, Chrome Web Store og PDF-er støttes ikke.",
+  "error_page_unreadable": "Denne siden kan ikke leses. Nettlesersider og Chrome Web Store støttes ikke.",
   "error_no_content": "Fant ingen artikkeltekst på denne siden.",
   "error_needs_click": "Klikk på utvidelsesikonet for å oppsummere denne siden. Etter at fanen har navigert, trenger utvidelsen et nytt klikk for å lese den.",
   "error_host_missing": "Den lokale komponenten er ikke installert eller svarer ikke. Kjør dette i mappen til utvidelsen: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Modellistene ble lest {date}.",
   "options_models_never": "Modellistene er ikke lest ennå.",
   "options_models_auto": "De kommer fra Claude Code, Codex og Ollama, og leses på nytt én gang om dagen, når Claude Code eller Codex oppdateres, og når utvidelsen oppdateres.",
-  "options_models_refresh": "Les dem nå"
+  "options_models_refresh": "Les dem nå",
+  "error_file_access": "For å oppsummere filer på denne datamaskinen, åpne Detaljer for utvidelsen i chrome://extensions og slå på Tillat tilgang til fil-nettadresser.",
+  "error_pdf_unreadable": "Denne PDF-en kan ikke åpnes. Den kan være passordbeskyttet eller skadet.",
+  "error_pdf_no_text": "Denne PDF-en har ingen tekst å oppsummere. Den kan bestå av skannede bilder."
 }

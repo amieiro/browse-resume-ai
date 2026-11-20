@@ -14,7 +14,7 @@
   "ui_working": "Riassunto in corso…",
   "ui_idle_hint": "Fai clic sull'icona dell'estensione per riassumere questa pagina.",
   "ui_truncated": "La pagina era lunga; è stata riassunta solo la prima parte.",
-  "error_page_unreadable": "Impossibile leggere questa pagina. Le pagine del browser, il Chrome Web Store e i PDF non sono supportati.",
+  "error_page_unreadable": "Impossibile leggere questa pagina. Le pagine del browser e il Chrome Web Store non sono supportati.",
   "error_no_content": "Nessun testo di articolo trovato in questa pagina.",
   "error_needs_click": "Fai clic sull'icona dell'estensione per riassumere questa pagina. Dopo che la scheda ha cambiato pagina, l'estensione ha bisogno di un nuovo clic per leggerla.",
   "error_host_missing": "Il componente locale non è installato o non risponde. Nella cartella dell'estensione, esegui: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Elenchi dei modelli letti il {date}.",
   "options_models_never": "Gli elenchi dei modelli non sono ancora stati letti.",
   "options_models_auto": "Provengono da Claude Code, Codex e Ollama e vengono riletti una volta al giorno, quando Claude Code o Codex viene aggiornato e quando l'estensione viene aggiornata.",
-  "options_models_refresh": "Leggili ora"
+  "options_models_refresh": "Leggili ora",
+  "error_file_access": "Per riassumere i file di questo computer, apri i Dettagli dell'estensione in chrome://extensions e attiva Consenti l'accesso agli URL dei file.",
+  "error_pdf_unreadable": "Impossibile aprire questo PDF. Potrebbe essere protetto da password o danneggiato.",
+  "error_pdf_no_text": "Questo PDF non contiene testo da riassumere. Potrebbe essere composto da immagini scansionate."
 }

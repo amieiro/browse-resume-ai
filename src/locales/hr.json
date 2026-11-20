@@ -14,7 +14,7 @@
   "ui_working": "Sažimanje…",
   "ui_idle_hint": "Kliknite ikonu proširenja da biste saželi ovu stranicu.",
   "ui_truncated": "Stranica je bila duga; sažet je samo prvi dio.",
-  "error_page_unreadable": "Ova se stranica ne može pročitati. Stranice preglednika, Chrome Web Store i PDF datoteke nisu podržani.",
+  "error_page_unreadable": "Ova se stranica ne može pročitati. Stranice preglednika i Chrome Web Store nisu podržani.",
   "error_no_content": "Na ovoj stranici nije pronađen tekst članka.",
   "error_needs_click": "Kliknite ikonu proširenja da biste saželi ovu stranicu. Nakon što kartica otvori drugu stranicu, proširenju je potreban novi klik da bi je pročitalo.",
   "error_host_missing": "Lokalna komponenta nije instalirana ili ne odgovara. U mapi proširenja pokrenite: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Popisi modela pročitani su {date}.",
   "options_models_never": "Popisi modela još nisu pročitani.",
   "options_models_auto": "Dolaze iz alata Claude Code, Codex i Ollama, a ponovno se čitaju jednom dnevno, kada se ažurira Claude Code ili Codex te kada se ažurira proširenje.",
-  "options_models_refresh": "Pročitaj ih sada"
+  "options_models_refresh": "Pročitaj ih sada",
+  "error_file_access": "Da biste saželi datoteke na ovom računalu, otvorite Pojedinosti proširenja na chrome://extensions i uključite Dopusti pristup URL-ovima datoteka.",
+  "error_pdf_unreadable": "Ovaj se PDF ne može otvoriti. Možda je zaštićen zaporkom ili oštećen.",
+  "error_pdf_no_text": "Ovaj PDF nema teksta za sažimanje. Možda se sastoji od skeniranih slika."
 }

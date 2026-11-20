@@ -14,7 +14,7 @@
   "ui_working": "Sóti gorér…",
   "ui_idle_hint": "Ey fata yán sóti goríbar lla extension or aikon ot klik gor.",
   "ui_truncated": "Ey fata yán lamba asil; óilla foila fail yán sóti gorá oiye.",
-  "error_page_unreadable": "Ey fata yán foriti no fare. Browser or fata, Chrome Web Store aar PDF sapórt no gore.",
+  "error_page_unreadable": "Ey fata yán foriti no fare. Browser or fata aar Chrome Web Store sapórt no gore.",
   "error_no_content": "Ey fata yán ot kunó lekar hotha no fá.",
   "error_needs_click": "Ey fata yán sóti goríbar lla extension or aikon ot klik gor. Tab yán ar ekkán fata ot zaígoi fore, extension yáre foríbar lla nayá klik ekkán lage.",
   "error_host_missing": "Lokal komfonent yán instal no gorá yáñ zuwab no dér. Extension or folder ot ey yán solá: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Model or list ókkol {date} ot foróa óiye.",
   "options_models_never": "Model or list ókkol óilla foróa no óiye.",
   "options_models_auto": "Yiín ókkol Claude Code, Codex arú Ollama ttu aye, arú din ot ekbar, Claude Code yáñ Codex abdet óile, arú eksténshon abdet óile abar foróa zagoi.",
-  "options_models_refresh": "Ehon foro"
+  "options_models_refresh": "Ehon foro",
+  "error_file_access": "Ey kompiutar or fail óilor sóddo goríbollá, chrome://extensions ot extension or Details hulo aar Allow access to file URLs on goró.",
+  "error_pdf_unreadable": "Ey PDF yán hulifarer no. Íba fasword dí héfazot gorá ói farer, nóile nosto ói gesé.",
+  "error_pdf_no_text": "Ey PDF yán ot sóddo goríbollá kunó lekha nái. Íba skén gorá sobi dí bana ói farer."
 }

@@ -14,7 +14,7 @@
   "ui_working": "Kupfupisa…",
   "ui_idle_hint": "Dzvanya aikoni yeekisitenshoni kuti upfupise peji rino.",
   "ui_truncated": "Peji iri raive refu; chikamu chekutanga chete ndicho chakapfupiswa.",
-  "error_page_unreadable": "Peji iri harigone kuverengwa. Mapeji ebhurauza, Chrome Web Store nemaPDF hazvitsigirwe.",
+  "error_page_unreadable": "Peji iri harigone kuverengwa. Mapeji ebhurauza neChrome Web Store hazvitsigirwe.",
   "error_no_content": "Hapana mavara echinyorwa akawanikwa papeji rino.",
   "error_needs_click": "Dzvanya aikoni yeekisitenshoni kuti upfupise peji rino. Mushure mekunge tebhu yaenda kune rimwe peji, ekisitenshoni inoda kudzvanywa patsva kuti iriverenge.",
   "error_host_missing": "Chikamu chemuno hachina kuiswa kana kuti hachisi kupindura. Mufolda yeekisitenshoni, mhanyisa: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Zvinyorwa zvemamodhero zvakaverengwa pa {date}.",
   "options_models_never": "Zvinyorwa zvemamodhero hazvisati zvaverengwa.",
   "options_models_auto": "Zvinobva kuClaude Code, Codex neOllama, uye zvinoverengwazve kamwe pazuva, kana Claude Code kana Codex yagadziridzwa, uye kana ekisitenshoni yagadziridzwa.",
-  "options_models_refresh": "Zviverenge izvozvi"
+  "options_models_refresh": "Zviverenge izvozvi",
+  "error_file_access": "Kuti upfupise mafaira ari pakombiyuta ino, vhura Ruzivo rweekisitenshoni pa chrome://extensions ubva wabatidza Bvumira kuwana maURL emafaira.",
+  "error_pdf_unreadable": "PDF iyi haigone kuvhurwa. Inogona kunge yakachengetedzwa nepasiwedhi kana kuti yakakuvara.",
+  "error_pdf_no_text": "PDF iyi haina mavara ekupfupisa. Inogona kunge yakagadzirwa nemifananidzo yakaskenwa."
 }

@@ -1,7 +1,7 @@
 {
   "name": "browse-resume-ai",
   "description": "Summarize the current web page with one click, using your Claude or ChatGPT subscription.",
-  "version": "0.7.3",
+  "version": "0.8.0",
   "private": true,
   "license": "GPL-2.0-or-later",
   "type": "module",
@@ -20,7 +20,8 @@
     "test:windows-scripts": "docker build -f test/windows/Dockerfile -t browse-resume-ai-windows-scripts . && docker run --rm browse-resume-ai-windows-scripts"
   },
   "dependencies": {
-    "@mozilla/readability": "^0.6.0"
+    "@mozilla/readability": "^0.6.0",
+    "pdfjs-dist": "^6.5.438"
   },
   "devDependencies": {
     "jsdom": "^25.0.1",

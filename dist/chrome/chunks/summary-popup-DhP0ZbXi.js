@@ -1,1 +1,0 @@
-import"./boot-B7-9lqo3.js";import{s as i}from"./summary-app-CAvFAcrj.js";try{}catch(t){console.error("[wxt] Failed to initialize plugins",t)}i(document.getElementById("app"),{startOnOpen:!0,followActiveTab:!1});

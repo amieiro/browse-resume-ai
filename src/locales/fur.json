@@ -14,7 +14,7 @@
   "ui_working": "Daûr a fâ il sunt…",
   "ui_idle_hint": "Fâs clic su la icone de estension par fâ il sunt di cheste pagjine.",
   "ui_truncated": "La pagjine e jere lungje; al è stât fat il sunt dome de prime part.",
-  "error_page_unreadable": "No si pues lei cheste pagjine. Lis pagjinis dal navigadôr, il Chrome Web Store e i PDF no son supuartâts.",
+  "error_page_unreadable": "No si pues lei cheste pagjine. Lis pagjinis dal navigadôr e il Chrome Web Store no son supuartâts.",
   "error_no_content": "Su cheste pagjine no si à cjatât test di articul.",
   "error_needs_click": "Fâs clic su la icone de estension par fâ il sunt di cheste pagjine. Dopo che la schede e à cambiât pagjine, la estension e à bisugne di un gnûf clic par leile.",
   "error_host_missing": "Il component locâl nol è instalât o nol rispuint. Te cartele de estension, eseguìs: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Listis dai modei letis ai {date}.",
   "options_models_never": "Lis listis dai modei no son ancjemò stadis letis.",
   "options_models_auto": "A vegnin di Claude Code, Codex e Ollama, e a vegnin letis di gnûf une volte al dì, cuant che Claude Code o Codex al ven inzornât e cuant che la estension e ven inzornade.",
-  "options_models_refresh": "Lei cumò"
+  "options_models_refresh": "Lei cumò",
+  "error_file_access": "Par fâ il sunt dai files di chest computer, vierç i Detais de estension in chrome://extensions e ative Permet l'acès ai URL dai files.",
+  "error_pdf_unreadable": "No si pues vierzi chest PDF. Al podarès jessi protezût cuntune password o ruvinât.",
+  "error_pdf_no_text": "Chest PDF nol à test di cui fâ il sunt. Al podarès jessi fat di imagjins scanerizadis."
 }

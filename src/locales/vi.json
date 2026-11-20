@@ -14,7 +14,7 @@
   "ui_working": "Đang tóm tắt…",
   "ui_idle_hint": "Nhấp vào biểu tượng tiện ích để tóm tắt trang này.",
   "ui_truncated": "Trang này dài; chỉ phần đầu được tóm tắt.",
-  "error_page_unreadable": "Không thể đọc trang này. Không hỗ trợ các trang của trình duyệt, Chrome Web Store và tệp PDF.",
+  "error_page_unreadable": "Không thể đọc trang này. Không hỗ trợ các trang của trình duyệt và Chrome Web Store.",
   "error_no_content": "Không tìm thấy nội dung bài viết trên trang này.",
   "error_needs_click": "Nhấp vào biểu tượng tiện ích để tóm tắt trang này. Sau khi thẻ chuyển sang trang khác, tiện ích cần một lần nhấp mới để đọc trang đó.",
   "error_host_missing": "Thành phần cục bộ chưa được cài đặt hoặc không phản hồi. Trong thư mục của tiện ích, hãy chạy: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Danh sách mô hình được đọc lúc {date}.",
   "options_models_never": "Chưa đọc danh sách mô hình.",
   "options_models_auto": "Danh sách lấy từ Claude Code, Codex và Ollama, và được đọc lại mỗi ngày một lần, khi Claude Code hoặc Codex được cập nhật, và khi tiện ích được cập nhật.",
-  "options_models_refresh": "Đọc ngay"
+  "options_models_refresh": "Đọc ngay",
+  "error_file_access": "Để tóm tắt các tệp trên máy tính này, hãy mở phần Chi tiết của tiện ích trong chrome://extensions và bật Cho phép truy cập vào URL của tệp.",
+  "error_pdf_unreadable": "Không thể mở tệp PDF này. Tệp có thể được bảo vệ bằng mật khẩu hoặc bị hỏng.",
+  "error_pdf_no_text": "Tệp PDF này không có văn bản để tóm tắt. Tệp có thể được tạo từ hình ảnh quét."
 }

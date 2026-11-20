@@ -1,6 +1,6 @@
 # Browse Resume AI
 
-A Chrome extension that summarizes the article in the current tab with one click, using the AI
+A Chrome extension that summarizes the article or PDF in the current tab with one click, using the AI
 subscription you already pay for: Claude (through Claude Code) or ChatGPT (through Codex), or with
 a model running on your own computer through Ollama. No API keys, no pay-per-use billing.
 
@@ -9,6 +9,8 @@ a model running on your own computer through Ollama. No API keys, no pay-per-use
 - Select some text and right-click **Summarize the selection** to summarize only that part, for
   pages where the article is not found or when you want one section.
 - Ask questions about the page under the summary; the answers come from the page text only.
+- PDFs open in Chrome are summarized too, from their text (read with
+  [pdf.js](https://mozilla.github.io/pdf.js/) inside the extension).
 - Choose the provider and model, the length (short, medium, long) and the summary language.
 - The summary appears in the side panel or in a popup; you pick which in the settings.
 - 201 languages, for both the summary and the interface: the languages of
@@ -61,6 +63,10 @@ _Summarize the selection: select text, right-click, and only that part is summar
 <img src="media/gallery/feature-questions.png" alt="Two questions about a GrapheneOS thread and their answers under the summary in the side panel" width="800">
 
 _Questions about the page: the answers appear under the summary and come from the page text only._
+
+<img src="media/gallery/feature-pdf.png" alt="The paper Attention Is All You Need open in Chrome's PDF viewer, and its summary in the side panel" width="800">
+
+_PDFs: a paper from arXiv in Chrome's PDF viewer, summarized from its text._
 
 <img src="media/gallery/securityweek-en-US-short.png" alt="A short summary of SecurityWeek in English (United States), in the side panel" width="800">
 
@@ -197,6 +203,10 @@ the selectors at the top change the provider, model, length and language for the
 use another shortcut, open `chrome://extensions/shortcuts`. If another extension already has
 <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>, Chrome leaves this one without a shortcut; set one there.
 
+A PDF open in Chrome is summarized the same way: the extension downloads the file and reads its
+text. PDFs made of scanned images have no text to read. For PDFs on your computer (`file://`), turn
+on **Allow access to file URLs** in the extension's **Details** in `chrome://extensions`.
+
 To summarize only part of a page, select the text, right-click it and choose **Summarize the
 selection**. The summary is marked **Selected text**, and **Summarize again** repeats it for the same
 selection (with the length or language you pick). The right-click menu also has **Summarize the
@@ -280,6 +290,7 @@ pdokiakaaeffjlabmofdppjakdhaimpi
 | `storage` | Save your settings and the per-tab summary for the session. |
 | `sidePanel` | Show summaries in the side panel. |
 | `nativeMessaging` | Talk to the local component. |
+| `offscreen` | Read PDFs with pdf.js in a hidden extension page (a service worker cannot run pdf.js). |
 | `contextMenus` | Add **Summarize the selection** and **Summarize the page** to the right-click menu. |
 
 ## For AI agents

@@ -14,7 +14,7 @@
   "ui_working": "Resumiendo…",
   "ui_idle_hint": "Primi l'iconu de la estensión pa resumir esta páxina.",
   "ui_truncated": "La páxina yera llarga; namás se resumió la primer parte.",
-  "error_page_unreadable": "Nun se pue lleer esta páxina. Les páxines del restolador, la Chrome Web Store y los PDF nun son compatibles.",
+  "error_page_unreadable": "Nun se pue lleer esta páxina. Les páxines del restolador y la Chrome Web Store nun son compatibles.",
   "error_no_content": "Nun s'atopó testu d'artículu nesta páxina.",
   "error_needs_click": "Primi l'iconu de la estensión pa resumir esta páxina. Dempués de que la llingüeta navegue, la estensión precisa un clic nuevu pa lleela.",
   "error_host_missing": "El componente local nun ta instaláu o nun respuende. Na carpeta de la estensión, executa: ./native-host/install.sh",
@@ -45,5 +45,8 @@
   "options_models_checked": "Llistes de modelos lleíes el {date}.",
   "options_models_never": "Entá nun se lleeron les llistes de modelos.",
   "options_models_auto": "Vienen de Claude Code, Codex y Ollama, y vuelven lleese una vegada al día, cuando s'anova Claude Code o Codex, y cuando s'anova la estensión.",
-  "options_models_refresh": "Lleeles agora"
+  "options_models_refresh": "Lleeles agora",
+  "error_file_access": "Pa resumir ficheros d'esti ordenador, abri los Detalles de la estensión en chrome://extensions y activa Permitir l'accesu a URLs de ficheros.",
+  "error_pdf_unreadable": "Nun se pue abrir esti PDF. Ye posible que tea protexíu con contraseña o estropiáu.",
+  "error_pdf_no_text": "Esti PDF nun tien testu pa resumir. Ye posible que tea fechu d'imáxenes escaniaes."
 }
